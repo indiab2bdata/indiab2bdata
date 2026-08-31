@@ -26,6 +26,9 @@ export const metadata: Metadata = {
   },
   description:
     "IndiaB2BData.com provides verified, fresh B2B mobile number, email and company databases across 700+ Indian cities. Boost your sales & marketing with genuine data.",
+  verification: {
+    google: "l8QOpKqoC429_x9cCAOktejf255UdfNx7oXbHJnHYUk",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
