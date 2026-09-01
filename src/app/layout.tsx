@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Montserrat, Poppins } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import { ModalProvider } from "@/components/modal-context";
 import { Header } from "@/components/header";
@@ -43,6 +44,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           <ContactModal />
         </ModalProvider>
       </body>
+      <GoogleAnalytics gaId="G-H4WEQ2BRZP" />
     </html>
   );
 }
