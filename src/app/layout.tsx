@@ -7,6 +7,7 @@ import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { FloatingButtons } from "@/components/floating-buttons";
 import { ContactModal } from "@/components/contact-modal";
+import { siteConfig } from "@/lib/site-config";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -21,6 +22,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteConfig.url),
   title: {
     default: "IndiaB2BData.com | Verified B2B Business Data Across India",
     template: "%s | IndiaB2BData.com",
