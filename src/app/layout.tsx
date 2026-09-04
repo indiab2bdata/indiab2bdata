@@ -7,6 +7,7 @@ import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { FloatingButtons } from "@/components/floating-buttons";
 import { ContactModal } from "@/components/contact-modal";
+import { JsonLd } from "@/components/json-ld";
 import { siteConfig } from "@/lib/site-config";
 
 const montserrat = Montserrat({
@@ -32,12 +33,29 @@ export const metadata: Metadata = {
   verification: {
     google: "l8QOpKqoC429_x9cCAOktejf255UdfNx7oXbHJnHYUk",
   },
+  other: {
+    "geo.region": "IN",
+    "geo.placename": "India",
+  },
+};
+
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: siteConfig.name,
+  url: siteConfig.url,
+  email: siteConfig.email,
+  telephone: siteConfig.phoneDisplay,
+  areaServed: { "@type": "Country", name: "India" },
+  description:
+    "Verified B2B mobile number, email and company databases across 700+ Indian cities and 500+ industries.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${montserrat.variable} ${poppins.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col bg-bgsoft text-ink">
+        <JsonLd data={organizationJsonLd} />
         <ModalProvider>
           <Header />
           <main className="flex-1">{children}</main>

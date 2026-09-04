@@ -19,6 +19,15 @@ export function ContactModal() {
   const { isOpen, source, closeModal } = useModal();
   const [status, setStatus] = useState<Status>({ state: "idle" });
 
+  // Reset the form status whenever the modal transitions to open, following
+  // React's "adjusting state on prop change" pattern (done during render,
+  // not in an effect, to avoid an extra cascading render).
+  const [wasOpen, setWasOpen] = useState(isOpen);
+  if (isOpen !== wasOpen) {
+    setWasOpen(isOpen);
+    if (isOpen) setStatus({ state: "idle" });
+  }
+
   useEffect(() => {
     if (!isOpen) return;
     document.body.style.overflow = "hidden";
@@ -31,10 +40,6 @@ export function ContactModal() {
       window.removeEventListener("keydown", onKeyDown);
     };
   }, [isOpen, closeModal]);
-
-  useEffect(() => {
-    if (isOpen) setStatus({ state: "idle" });
-  }, [isOpen]);
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();

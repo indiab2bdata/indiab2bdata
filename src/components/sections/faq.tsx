@@ -4,7 +4,9 @@ import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import { Reveal } from "@/components/reveal";
 
-const FAQS = [
+export type FaqItem = { question: string; answer: string };
+
+const DEFAULT_FAQS: FaqItem[] = [
   {
     question: "Is the data legally compliant to use?",
     answer:
@@ -27,26 +29,38 @@ const FAQS = [
   },
 ];
 
-export function Faq() {
+export function Faq({
+  items = DEFAULT_FAQS,
+  id = "faq",
+  eyebrow = "FAQs",
+  heading = "Common Questions",
+  background = "white",
+}: {
+  items?: FaqItem[];
+  id?: string;
+  eyebrow?: string;
+  heading?: string;
+  background?: "white" | "bgsoft";
+}) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const sectionBg = background === "white" ? "bg-white" : "bg-bgsoft";
+  const cardBg = background === "white" ? "bg-bgsoft" : "bg-white";
 
   return (
-    <section id="faq" className="bg-white py-20 md:py-28">
+    <section id={id} className={`${sectionBg} py-20 md:py-28`}>
       <div className="max-w-3xl mx-auto px-5 md:px-8">
         <Reveal className="text-center mb-12">
-          <span className="text-teal text-xs font-semibold uppercase tracking-[0.16em]">
-            FAQs
-          </span>
+          <span className="text-teal text-xs font-semibold uppercase tracking-[0.16em]">{eyebrow}</span>
           <h2 className="font-display font-extrabold text-3xl md:text-4xl text-navy mt-3 tracking-tight">
-            Common Questions
+            {heading}
           </h2>
         </Reveal>
 
         <div className="space-y-3">
-          {FAQS.map((faq, i) => {
+          {items.map((faq, i) => {
             const isOpen = openIndex === i;
             return (
-              <div key={faq.question} className="bg-bgsoft rounded-xl overflow-hidden">
+              <div key={faq.question} className={`${cardBg} rounded-xl overflow-hidden`}>
                 <button
                   onClick={() => setOpenIndex(isOpen ? null : i)}
                   className="w-full flex items-center justify-between gap-4 p-5 text-left font-semibold text-navy text-sm md:text-base"

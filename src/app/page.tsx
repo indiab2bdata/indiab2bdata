@@ -7,6 +7,8 @@ import { Pricing } from "@/components/sections/pricing";
 import { Testimonials } from "@/components/sections/testimonials";
 import { Faq } from "@/components/sections/faq";
 import { ContactCta } from "@/components/sections/contact-cta";
+import { RelatedLinks } from "@/components/related-links";
+import { keywordPages } from "@/lib/keyword-pages";
 
 export default function Home() {
   return (
@@ -19,6 +21,11 @@ export default function Home() {
       <Pricing />
       <Testimonials />
       <Faq />
+      <RelatedLinks
+        pages={keywordPages}
+        eyebrow="Browse by Category"
+        heading="Explore Our B2B & Company Databases"
+      />
       <ContactCta />
     </>
   );
