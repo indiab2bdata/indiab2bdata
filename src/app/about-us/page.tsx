@@ -5,6 +5,7 @@ import { PageHero } from "@/components/page-hero";
 import { Reveal } from "@/components/reveal";
 import { CountUp } from "@/components/count-up";
 import { ContactCta } from "@/components/sections/contact-cta";
+import { InlineCta } from "@/components/inline-cta";
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -74,7 +75,7 @@ export default function AboutUsPage() {
         </Reveal>
         <Reveal delay={0.1} className="rounded-3xl overflow-hidden shadow-xl">
           <Image
-            src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop"
+            src="/images/about/team.jpg"
             alt="Team working on B2B sales data"
             width={1200}
             height={900}
@@ -82,6 +83,8 @@ export default function AboutUsPage() {
           />
         </Reveal>
       </section>
+
+      <InlineCta id="about-story-cta" text="Want to see the quality of our data before you commit?" />
 
       <section className="bg-white py-20 md:py-28">
         <div className="max-w-7xl mx-auto px-5 md:px-8">
@@ -109,6 +112,8 @@ export default function AboutUsPage() {
           </div>
         </div>
       </section>
+
+      <InlineCta id="about-values-cta" text="Ready to reach genuine decision-makers across India?" buttonLabel="Talk to Our Team" />
 
       <section className="py-20 md:py-24 max-w-7xl mx-auto px-5 md:px-8">
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">

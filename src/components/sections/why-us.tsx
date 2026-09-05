@@ -36,7 +36,7 @@ export function WhyUs() {
       <div className="max-w-7xl mx-auto px-5 md:px-8 grid lg:grid-cols-2 gap-14 items-center">
         <Reveal className="rounded-3xl overflow-hidden shadow-xl order-2 lg:order-1">
           <Image
-            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop"
+            src="/images/home/why-us.jpg"
             alt="Data analytics dashboard on laptop"
             width={1200}
             height={800}

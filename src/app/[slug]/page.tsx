@@ -1,15 +1,18 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getKeywordPage, getOtherKeywordPages, keywordPages } from "@/lib/keyword-pages";
+import { getKeywordImage } from "@/lib/keyword-images";
 import { siteConfig } from "@/lib/site-config";
 import { JsonLd } from "@/components/json-ld";
 import { KeywordHero } from "@/components/keyword-hero";
 import { AnswerBox } from "@/components/answer-box";
 import { FeatureGrid } from "@/components/feature-grid";
+import { KeywordVisual } from "@/components/keyword-visual";
 import { Checklist } from "@/components/checklist";
 import { Faq } from "@/components/sections/faq";
 import { RelatedLinks } from "@/components/related-links";
 import { ContactCta } from "@/components/sections/contact-cta";
+import { InlineCta } from "@/components/inline-cta";
 import { Reveal } from "@/components/reveal";
 
 export const dynamicParams = false;
@@ -55,6 +58,7 @@ export default async function KeywordPage({ params }: { params: Params }) {
 
   const url = `${siteConfig.url}/${page.slug}`;
   const otherPages = getOtherKeywordPages(page.slug, 6);
+  const visual = getKeywordImage(page.slug, page.keyword);
 
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
@@ -116,11 +120,31 @@ export default async function KeywordPage({ params }: { params: Params }) {
         ))}
       </section>
 
+      <InlineCta id={`${page.slug}-intro-cta`} text={`See real sample records for ${page.keyword} — free, no obligation.`} />
+
       <section className="py-12 md:py-16 max-w-7xl mx-auto px-5 md:px-8">
         <FeatureGrid items={page.highlights} />
       </section>
 
-      <section className="bg-white py-16 md:py-20">
+      <KeywordVisual
+        image={visual.src}
+        alt={visual.alt}
+        keyword={page.keyword}
+        ctaId={`${page.slug}-visual-cta`}
+        benefits={page.highlights.slice(0, 3).map((point) => (
+          <div key={point.title} className="flex gap-3">
+            <span className="w-9 h-9 shrink-0 rounded-lg bg-teal/10 text-teal flex items-center justify-center">
+              <point.icon className="w-[18px] h-[18px]" strokeWidth={2} />
+            </span>
+            <div>
+              <p className="font-semibold text-navy text-sm">{point.title}</p>
+              <p className="text-muted text-sm mt-1">{point.description}</p>
+            </div>
+          </div>
+        ))}
+      />
+
+      <section className="bg-bgsoft py-16 md:py-20">
         <div className="max-w-4xl mx-auto px-5 md:px-8">
           <Reveal className="mb-8">
             <span className="text-teal text-xs font-semibold uppercase tracking-[0.16em]">Common Use Cases</span>
@@ -132,13 +156,17 @@ export default async function KeywordPage({ params }: { params: Params }) {
         </div>
       </section>
 
+      <InlineCta id={`${page.slug}-usecases-cta`} text={`Need ${page.keyword} filtered to your city or industry?`} buttonLabel="Talk to Our Team" />
+
       <Faq
         items={page.faqs}
         id={`${page.slug}-faq`}
         eyebrow="FAQs"
         heading="Frequently Asked Questions"
-        background="bgsoft"
+        background="white"
       />
+
+      <InlineCta id={`${page.slug}-faq-cta`} text="Still have questions? Get a free sample and see the data for yourself." />
 
       <RelatedLinks pages={otherPages} />
 
