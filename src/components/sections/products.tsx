@@ -55,15 +55,19 @@ export function Products() {
         </p>
       </Reveal>
 
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
         {PRODUCTS.map((product, i) => (
           <Reveal key={product.title} delay={(i % 3) * 0.08}>
-            <div className="group h-full bg-white rounded-2xl p-7 border border-slate-100 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_18px_40px_-12px_rgba(11,43,78,0.18)] hover:border-teal">
-              <div className="w-12 h-12 rounded-xl bg-navy/5 flex items-center justify-center mb-5 transition-colors group-hover:bg-teal/10">
-                <product.icon className="w-6 h-6 text-navy group-hover:text-teal transition-colors" strokeWidth={1.6} />
+            <div className="group relative h-full bg-white rounded-2xl p-7 border border-slate-200/60 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-teal/40 overflow-hidden">
+              <div
+                className="absolute -top-16 -right-16 w-32 h-32 rounded-full bg-teal/10 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                aria-hidden="true"
+              />
+              <div className="relative w-12 h-12 rounded-xl bg-teal/10 text-teal flex items-center justify-center mb-5 transition-colors group-hover:bg-teal group-hover:text-white">
+                <product.icon className="w-6 h-6" strokeWidth={1.6} />
               </div>
-              <h3 className="font-display font-bold text-lg text-navy">{product.title}</h3>
-              <p className="mt-2 text-sm text-muted leading-relaxed">{product.description}</p>
+              <h3 className="relative font-display font-bold text-lg text-navy">{product.title}</h3>
+              <p className="relative mt-2 text-sm text-muted leading-relaxed">{product.description}</p>
             </div>
           </Reveal>
         ))}

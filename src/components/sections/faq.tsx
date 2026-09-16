@@ -60,7 +60,10 @@ export function Faq({
           {items.map((faq, i) => {
             const isOpen = openIndex === i;
             return (
-              <div key={faq.question} className={`${cardBg} rounded-xl overflow-hidden`}>
+              <div
+                key={faq.question}
+                className={`${isOpen ? "bg-teal/[0.04] border-l-2 border-teal" : `${cardBg} border-l-2 border-transparent`} rounded-xl overflow-hidden transition-colors duration-300`}
+              >
                 <button
                   onClick={() => setOpenIndex(isOpen ? null : i)}
                   className="w-full flex items-center justify-between gap-4 p-5 text-left font-semibold text-navy text-sm md:text-base"
@@ -68,7 +71,7 @@ export function Faq({
                 >
                   {faq.question}
                   <ChevronDown
-                    className={`w-[18px] h-[18px] shrink-0 text-navy transition-transform ${isOpen ? "rotate-180" : ""}`}
+                    className={`w-[18px] h-[18px] shrink-0 text-teal transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`}
                   />
                 </button>
                 <div

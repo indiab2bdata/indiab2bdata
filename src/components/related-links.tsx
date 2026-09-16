@@ -28,7 +28,7 @@ export function RelatedLinks({
           <Reveal key={page.slug} delay={(i % 3) * 0.06}>
             <Link
               href={`/${page.slug}`}
-              className="group flex items-center justify-between gap-3 bg-white rounded-xl px-5 py-4 border border-slate-100 transition-all hover:-translate-y-0.5 hover:border-teal hover:shadow-[0_12px_28px_-10px_rgba(11,43,78,0.18)]"
+              className="group flex items-center justify-between gap-3 bg-white rounded-xl px-5 py-4 border border-slate-200/60 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-teal/40 hover:shadow-lg"
             >
               <span className="text-sm font-medium text-navy">{page.keyword}</span>
               <ArrowUpRight

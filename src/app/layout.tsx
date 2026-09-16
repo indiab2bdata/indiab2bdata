@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Montserrat, Poppins } from "next/font/google";
+import { Inter, Inter_Tight } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import { ModalProvider } from "@/components/modal-context";
@@ -10,16 +10,16 @@ import { ContactModal } from "@/components/contact-modal";
 import { JsonLd } from "@/components/json-ld";
 import { siteConfig } from "@/lib/site-config";
 
-const montserrat = Montserrat({
-  variable: "--font-montserrat",
+const interTight = Inter_Tight({
+  variable: "--font-heading",
   subsets: ["latin"],
   weight: ["600", "700", "800", "900"],
 });
 
-const poppins = Poppins({
-  variable: "--font-poppins",
+const inter = Inter({
+  variable: "--font-sans",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -53,7 +53,7 @@ const organizationJsonLd = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${montserrat.variable} ${poppins.variable} h-full antialiased`}>
+    <html lang="en" className={`${interTight.variable} ${inter.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col bg-bgsoft text-ink">
         <JsonLd data={organizationJsonLd} />
         <ModalProvider>

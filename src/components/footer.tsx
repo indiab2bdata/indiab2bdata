@@ -4,10 +4,11 @@ import { siteConfig } from "@/lib/site-config";
 
 const QUICK_LINKS = [
   { href: "/#offer", label: "Data Products" },
-  { href: "/#why", label: "Why Us" },
+  { href: "/database", label: "Database by State" },
   { href: "/#pricing", label: "Pricing" },
-  { href: "/#faq", label: "FAQs" },
+  { href: "/blog", label: "Guides" },
   { href: "/about-us", label: "About Us" },
+  { href: "/contact", label: "Contact" },
 ];
 
 const DATA_CATEGORIES = [
@@ -20,7 +21,7 @@ const DATA_CATEGORIES = [
 export function Footer() {
   return (
     <footer className="bg-navy-dark text-slate-300 pt-16 pb-8">
-      <div className="max-w-7xl mx-auto px-5 md:px-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div className="max-w-7xl mx-auto px-5 md:px-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-10">
         <div>
           <span className="font-display font-extrabold text-xl text-white">
             India<span className="text-teal-light">B2B</span>Data
@@ -37,7 +38,7 @@ export function Footer() {
           <ul className="space-y-2 text-sm">
             {QUICK_LINKS.map((link) => (
               <li key={link.href}>
-                <Link href={link.href} className="hover:text-teal-light transition">
+                <Link href={link.href} className="hover:text-teal-light hover:underline underline-offset-4 transition-colors">
                   {link.label}
                 </Link>
               </li>

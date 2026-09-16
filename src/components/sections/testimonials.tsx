@@ -1,3 +1,4 @@
+import { Quote } from "lucide-react";
 import { Reveal } from "@/components/reveal";
 
 const TESTIMONIALS = [
@@ -39,14 +40,15 @@ export function Testimonials() {
         </h2>
       </Reveal>
 
-      <div className="grid md:grid-cols-3 gap-6">
+      <div className="grid md:grid-cols-3 gap-6 md:gap-8">
         {TESTIMONIALS.map((t, i) => (
           <Reveal key={t.name} delay={i * 0.1}>
-            <div className="h-full bg-white rounded-2xl p-7 border border-slate-100 transition-shadow hover:shadow-lg">
-              <p className="text-navy/80 text-sm leading-relaxed">&ldquo;{t.quote}&rdquo;</p>
+            <div className="h-full bg-white rounded-2xl p-7 border border-slate-200/60 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+              <Quote className="w-7 h-7 text-teal/25" strokeWidth={1.5} fill="currentColor" />
+              <p className="text-navy/80 text-sm leading-relaxed mt-3">&ldquo;{t.quote}&rdquo;</p>
               <div className="flex items-center gap-3 mt-6">
                 <span
-                  className={`w-10 h-10 rounded-full ${t.color} text-white flex items-center justify-center font-display font-bold text-sm`}
+                  className={`w-10 h-10 rounded-full ${t.color} text-white flex items-center justify-center font-display font-bold text-sm ring-2 ring-offset-2 ring-teal/20`}
                 >
                   {t.initials}
                 </span>

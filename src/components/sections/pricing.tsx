@@ -66,18 +66,12 @@ export function Pricing() {
           </p>
         </Reveal>
 
-        <div className="grid md:grid-cols-3 gap-6 items-start">
-          {PLANS.map((plan, i) => (
-            <Reveal key={plan.id} delay={i * 0.1}>
-              <div
-                className={
-                  plan.highlight
-                    ? "rounded-2xl p-8 bg-navy text-white relative shadow-2xl md:scale-[1.03]"
-                    : "h-full rounded-2xl p-8 border border-slate-200 transition-all hover:-translate-y-1.5 hover:shadow-[0_18px_40px_-12px_rgba(11,43,78,0.18)] hover:border-teal"
-                }
-              >
+        <div className="grid md:grid-cols-3 gap-6 md:gap-8 items-start">
+          {PLANS.map((plan, i) => {
+            const card = (
+              <>
                 {plan.highlight && (
-                  <span className="absolute -top-3 right-8 bg-amber text-navy text-xs font-bold px-3 py-1 rounded-full">
+                  <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-amber text-navy text-xs font-bold px-4 py-1.5 rounded-full shadow-md z-10 whitespace-nowrap">
                     Most Popular
                   </span>
                 )}
@@ -116,15 +110,29 @@ export function Pricing() {
                   onClick={() => openModal(plan.id)}
                   className={
                     plan.highlight
-                      ? "w-full mt-8 bg-teal hover:bg-teal-dark text-white font-semibold py-3 rounded-full transition"
-                      : "w-full mt-8 border-2 border-navy text-navy font-semibold py-3 rounded-full hover:bg-navy hover:text-white transition"
+                      ? "w-full mt-8 bg-teal hover:bg-teal-dark active:scale-[0.98] text-white font-semibold py-3 rounded-full transition-all duration-200 shadow-md shadow-teal/25 hover:shadow-lg hover:scale-[1.02]"
+                      : "w-full mt-8 border-2 border-navy text-navy font-semibold py-3 rounded-full hover:bg-navy hover:text-white active:scale-[0.98] transition-all duration-200"
                   }
                 >
                   {plan.cta}
                 </button>
-              </div>
-            </Reveal>
-          ))}
+              </>
+            );
+
+            return (
+              <Reveal key={plan.id} delay={i * 0.1}>
+                {plan.highlight ? (
+                  <div className="relative rounded-2xl p-[1.5px] bg-gradient-to-b from-teal-light via-teal to-teal-dark shadow-2xl shadow-teal/20 md:scale-[1.04]">
+                    <div className="relative rounded-[15px] bg-navy text-white p-8 h-full">{card}</div>
+                  </div>
+                ) : (
+                  <div className="relative h-full rounded-2xl p-8 bg-white border border-slate-200/60 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-teal/40">
+                    {card}
+                  </div>
+                )}
+              </Reveal>
+            );
+          })}
         </div>
       </div>
     </section>

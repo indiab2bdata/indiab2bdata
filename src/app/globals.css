@@ -18,8 +18,14 @@
   --color-muted: #5b6b82;
   --color-bgsoft: #f6f9fc;
 
-  --font-display: var(--font-montserrat), sans-serif;
-  --font-body: var(--font-poppins), sans-serif;
+  /* Semantic aliases used by the design system */
+  --color-primary: var(--color-navy);
+  --color-primary-dark: var(--color-navy-dark);
+  --color-accent: var(--color-teal);
+  --color-accent-hover: var(--color-teal-dark);
+
+  --font-display: var(--font-heading), var(--font-montserrat), sans-serif;
+  --font-body: var(--font-sans), var(--font-poppins), sans-serif;
 }
 
 html {
@@ -35,6 +41,36 @@ body {
 ::selection {
   background: #0ea5a0;
   color: #fff;
+}
+
+/* Focus-visible ring for accessibility across all interactive elements */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+summary:focus-visible {
+  outline: 2px solid var(--color-teal);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Soft gradient mesh for hero / dark sections */
+.mesh-navy {
+  background-image:
+    radial-gradient(60% 55% at 15% 10%, rgba(20, 199, 192, 0.22), transparent 60%),
+    radial-gradient(50% 50% at 85% 0%, rgba(20, 199, 192, 0.14), transparent 60%),
+    radial-gradient(70% 60% at 50% 100%, rgba(255, 255, 255, 0.06), transparent 60%),
+    linear-gradient(180deg, var(--color-navy) 0%, var(--color-navy-light) 100%);
+}
+
+/* Faint grid pattern overlay */
+.grid-pattern {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 40%, transparent 90%);
 }
 
 /* Signature data-network pattern */

@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Check, MessageCircle } from "lucide-react";
+import { ArrowRight, Check, MessageCircle } from "lucide-react";
 import { DataNetwork } from "@/components/data-network";
 import { CountUp } from "@/components/count-up";
 import { Reveal } from "@/components/reveal";
@@ -21,8 +21,9 @@ export function Hero() {
   return (
     <section
       id="top"
-      className="relative pt-28 md:pt-36 pb-16 md:pb-24 overflow-hidden bg-gradient-to-b from-navy to-navy-light"
+      className="relative pt-28 md:pt-36 pb-16 md:pb-24 overflow-hidden mesh-navy"
     >
+      <div className="absolute inset-0 grid-pattern" aria-hidden="true" />
       <DataNetwork variant="hero" className="opacity-70" />
 
       <div className="relative max-w-7xl mx-auto px-5 md:px-8 grid lg:grid-cols-2 gap-12 items-center">
@@ -42,25 +43,29 @@ export function Hero() {
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <button
               onClick={() => openModal("hero")}
-              className="bg-teal hover:bg-teal-dark text-white font-semibold px-7 py-3.5 rounded-full transition shadow-lg shadow-teal/30 hover:shadow-xl hover:-translate-y-0.5"
+              className="group bg-teal hover:bg-teal-dark active:scale-[0.98] text-white font-semibold px-7 py-3.5 rounded-full transition-all duration-200 shadow-lg shadow-teal/30 hover:shadow-xl hover:shadow-teal/40 hover:scale-[1.02] inline-flex items-center gap-2"
             >
               Request Free Sample Data
+              <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" />
             </button>
             <a
               href={siteConfig.whatsappHref(siteConfig.defaultWhatsappMessage)}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-white/90 font-medium border border-white/25 hover:border-white/60 px-6 py-3.5 rounded-full transition"
+              className="flex items-center gap-2 text-white/90 font-medium border border-white/25 hover:border-white/60 hover:bg-white/5 px-6 py-3.5 rounded-full transition-all duration-200 active:scale-[0.98]"
             >
               <MessageCircle className="w-5 h-5 text-whats" fill="#25D366" strokeWidth={0} />
               Chat on WhatsApp
             </a>
           </div>
 
-          <div className="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-xl">
+          <div className="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-xl">
             {STATS.map((stat) => (
-              <div key={stat.label}>
-                <p className="font-display text-2xl md:text-3xl font-extrabold text-white">
+              <div
+                key={stat.label}
+                className="rounded-xl bg-white/[0.06] border border-white/10 px-4 py-3.5 backdrop-blur-sm"
+              >
+                <p className="font-display text-xl md:text-2xl font-extrabold text-white tracking-tight">
                   <CountUp value={stat.value} suffix={stat.suffix} />
                 </p>
                 <p className="text-slate-300 text-xs mt-1">{stat.label}</p>
@@ -70,7 +75,7 @@ export function Hero() {
         </div>
 
         <Reveal delay={0.15} className="relative">
-          <div className="rounded-3xl overflow-hidden shadow-2xl border-4 border-white/10">
+          <div className="rounded-3xl overflow-hidden shadow-2xl ring-1 ring-white/10">
             <Image
               src="/images/home/hero.jpg"
               alt="Sales team reviewing B2B data analytics"
@@ -80,7 +85,7 @@ export function Hero() {
               priority
             />
           </div>
-          <div className="absolute -bottom-6 -left-6 bg-white rounded-2xl shadow-xl px-5 py-4 flex items-center gap-3 max-w-[240px]">
+          <div className="absolute -bottom-6 -left-6 bg-white/90 backdrop-blur-md rounded-xl shadow-xl border border-white/50 px-5 py-4 flex items-center gap-3 max-w-[240px]">
             <span className="w-10 h-10 rounded-full bg-teal/10 text-teal flex items-center justify-center shrink-0">
               <Check className="w-5 h-5" strokeWidth={2.2} />
             </span>

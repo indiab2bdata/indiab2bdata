@@ -34,7 +34,7 @@ export function WhyUs() {
   return (
     <section id="why" className="bg-white py-20 md:py-28">
       <div className="max-w-7xl mx-auto px-5 md:px-8 grid lg:grid-cols-2 gap-14 items-center">
-        <Reveal className="rounded-3xl overflow-hidden shadow-xl order-2 lg:order-1">
+        <Reveal className="rounded-2xl overflow-hidden shadow-xl ring-1 ring-slate-200 order-2 lg:order-1">
           <Image
             src="/images/home/why-us.jpg"
             alt="Data analytics dashboard on laptop"
@@ -72,7 +72,7 @@ export function WhyUs() {
 
           <button
             onClick={() => openModal("why")}
-            className="mt-9 bg-navy hover:bg-navy-light text-white font-semibold px-7 py-3.5 rounded-full transition"
+            className="mt-9 bg-navy hover:bg-navy-light active:scale-[0.98] text-white font-semibold px-7 py-3.5 rounded-full transition-all duration-200 shadow-md shadow-navy/15 hover:shadow-lg hover:scale-[1.02]"
           >
             Talk to Our Team
           </button>
