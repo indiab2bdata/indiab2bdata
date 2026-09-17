@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { databaseStates, getDatabaseState } from "@/lib/database-pages";
 import { keywordPages } from "@/lib/keyword-pages";
 import { siteConfig } from "@/lib/site-config";
+import { pageMetadata, breadcrumbJsonLd, webPageJsonLd, faqJsonLd, serviceJsonLd } from "@/lib/seo";
 import { JsonLd } from "@/components/json-ld";
 import { KeywordHero } from "@/components/keyword-hero";
 import { AnswerBox } from "@/components/answer-box";
@@ -29,27 +30,18 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   const page = getDatabaseState(state);
   if (!page) return {};
 
-  const url = `${siteConfig.url}/database/${page.slug}`;
-
-  return {
+  return pageMetadata({
     title: page.title,
     description: page.metaDescription,
+    path: `/database/${page.slug}`,
     keywords: [`${page.name} B2B database`, `${page.name} business database`],
-    alternates: { canonical: url },
-    openGraph: {
-      title: page.title,
-      description: page.metaDescription,
-      url,
-      siteName: siteConfig.name,
-      locale: "en_IN",
-      type: "website",
+    image: {
+      url: `${siteConfig.url}/images/keywords/city-skyline.jpg`,
+      width: 1200,
+      height: 800,
+      alt: `City skyline representing business coverage across ${page.name}`,
     },
-    twitter: {
-      card: "summary",
-      title: page.title,
-      description: page.metaDescription,
-    },
-  };
+  });
 }
 
 export default async function DatabaseStatePage({ params }: { params: Params }) {
@@ -63,50 +55,30 @@ export default async function DatabaseStatePage({ params }: { params: Params }) 
     ["state-wise-company-database-india", "city-wise-company-database-india", "b2b-database-india"].includes(k.slug)
   );
 
-  const breadcrumbJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: siteConfig.url },
-      { "@type": "ListItem", position: 2, name: "Database by State", item: `${siteConfig.url}/database` },
-      { "@type": "ListItem", position: 3, name: page.name, item: url },
-    ],
-  };
+  const breadcrumbSchema = breadcrumbJsonLd([
+    { name: "Home", url: siteConfig.url },
+    { name: "Database by State", url: `${siteConfig.url}/database` },
+    { name: page.name, url },
+  ]);
 
-  const webPageJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
+  const webPageSchema = webPageJsonLd({
     name: page.title,
     description: page.metaDescription,
     url,
-    inLanguage: "en-IN",
     about: `${page.name} B2B database`,
-    isPartOf: { "@type": "WebSite", name: siteConfig.name, url: siteConfig.url },
-  };
+  });
 
-  const faqJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: page.faqs.map((faq) => ({
-      "@type": "Question",
-      name: faq.question,
-      acceptedAnswer: { "@type": "Answer", text: faq.answer },
-    })),
-  };
+  const faqSchema = faqJsonLd(page.faqs);
 
-  const serviceJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    serviceType: `${page.name} B2B Database`,
+  const stateServiceSchema = serviceJsonLd({
     name: `${page.name} B2B Database`,
     description: page.metaDescription,
-    areaServed: { "@type": "State", name: page.name },
-    provider: { "@type": "Organization", name: siteConfig.name, url: siteConfig.url },
-  };
+    areaServed: page.name,
+  });
 
   return (
     <>
-      <JsonLd data={[breadcrumbJsonLd, webPageJsonLd, faqJsonLd, serviceJsonLd]} />
+      <JsonLd data={[breadcrumbSchema, webPageSchema, faqSchema, stateServiceSchema]} />
 
       <KeywordHero
         eyebrow={page.eyebrow}
@@ -164,14 +136,14 @@ export default async function DatabaseStatePage({ params }: { params: Params }) 
             {page.cities.map((city) => (
               <span
                 key={city}
-                className="inline-flex items-center gap-1.5 text-navy/80 text-sm font-medium bg-white border border-slate-200/70 rounded-full px-4 py-2 shadow-sm"
+                className="inline-flex items-center gap-1.5 text-navy/80 text-sm font-medium bg-white border border-[#DCEAF3] rounded-full px-4 py-2 shadow-sm"
               >
                 <MapPin className="w-3.5 h-3.5 text-teal" strokeWidth={2} />
                 {city}
               </span>
             ))}
             {page.moreCities > 0 && (
-              <span className="inline-flex items-center text-muted text-sm font-medium bg-white border border-dashed border-slate-300 rounded-full px-4 py-2">
+              <span className="inline-flex items-center text-muted text-sm font-medium bg-white border border-dashed border-[#DCEAF3] rounded-full px-4 py-2">
                 +{page.moreCities} more cities
               </span>
             )}
@@ -207,7 +179,7 @@ export default async function DatabaseStatePage({ params }: { params: Params }) 
             <Reveal key={s.slug} delay={(i % 3) * 0.06}>
               <Link
                 href={`/database/${s.slug}`}
-                className="group flex items-center justify-between gap-3 bg-white rounded-xl px-5 py-4 border border-slate-200/60 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-teal/40 hover:shadow-lg"
+                className="group flex items-center justify-between gap-3 bg-white rounded-xl px-5 py-4 border border-[#DCEAF3] shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-teal/40 hover:shadow-lg"
               >
                 <span className="text-sm font-medium text-navy">{s.name} B2B Database</span>
                 <MapPin className="w-4 h-4 text-muted shrink-0 transition-colors group-hover:text-teal" strokeWidth={2} />

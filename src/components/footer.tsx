@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
@@ -5,6 +6,7 @@ import { siteConfig } from "@/lib/site-config";
 const QUICK_LINKS = [
   { href: "/#offer", label: "Data Products" },
   { href: "/database", label: "Database by State" },
+  { href: "/#why", label: "Why Us" },
   { href: "/#pricing", label: "Pricing" },
   { href: "/blog", label: "Guides" },
   { href: "/about-us", label: "About Us" },
@@ -23,10 +25,19 @@ export function Footer() {
     <footer className="bg-navy-dark text-slate-300 pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-5 md:px-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-10">
         <div>
-          <span className="font-display font-extrabold text-xl text-white">
-            India<span className="text-teal-light">B2B</span>Data
-            <span className="text-slate-400 font-normal text-sm">.com</span>
-          </span>
+          <div className="flex items-center gap-2">
+            <Image
+              src="/images/favicon.png"
+              alt="IndiaB2BData.com"
+              width={32}
+              height={32}
+              className="w-8 h-8 rounded-md"
+            />
+            <span className="font-display font-extrabold text-xl text-white">
+              India<span className="text-teal-light">B2B</span>Data
+              <span className="text-slate-400 font-normal text-sm">.com</span>
+            </span>
+          </div>
           <p className="mt-4 text-sm leading-relaxed text-slate-400">
             Verified B2B business data across India — mobile numbers, emails and company
             records for smarter sales &amp; marketing.

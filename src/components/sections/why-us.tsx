@@ -72,7 +72,7 @@ export function WhyUs() {
 
           <button
             onClick={() => openModal("why")}
-            className="mt-9 bg-navy hover:bg-navy-light active:scale-[0.98] text-white font-semibold px-7 py-3.5 rounded-full transition-all duration-200 shadow-md shadow-navy/15 hover:shadow-lg hover:scale-[1.02]"
+            className="mt-9 bg-navy hover:bg-navy-light active:scale-[0.98] text-white font-semibold px-7 py-3.5 rounded-full transition-all duration-200 shadow-md shadow-navy/15 hover:shadow-lg hover:scale-[1.02] cursor-pointer"
           >
             Talk to Our Team
           </button>

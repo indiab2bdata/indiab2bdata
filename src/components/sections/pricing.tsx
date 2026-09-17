@@ -110,8 +110,8 @@ export function Pricing() {
                   onClick={() => openModal(plan.id)}
                   className={
                     plan.highlight
-                      ? "w-full mt-8 bg-teal hover:bg-teal-dark active:scale-[0.98] text-white font-semibold py-3 rounded-full transition-all duration-200 shadow-md shadow-teal/25 hover:shadow-lg hover:scale-[1.02]"
-                      : "w-full mt-8 border-2 border-navy text-navy font-semibold py-3 rounded-full hover:bg-navy hover:text-white active:scale-[0.98] transition-all duration-200"
+                      ? "w-full mt-8 bg-teal hover:bg-teal-dark active:scale-[0.98] text-white font-semibold py-3 rounded-full transition-all duration-200 shadow-md shadow-teal/25 hover:shadow-lg hover:scale-[1.02] cursor-pointer"
+                      : "w-full mt-8 border-2 border-navy text-navy font-semibold py-3 rounded-full hover:bg-navy hover:text-white active:scale-[0.98] transition-all duration-200 cursor-pointer"
                   }
                 >
                   {plan.cta}
@@ -126,7 +126,7 @@ export function Pricing() {
                     <div className="relative rounded-[15px] bg-navy text-white p-8 h-full">{card}</div>
                   </div>
                 ) : (
-                  <div className="relative h-full rounded-2xl p-8 bg-white border border-slate-200/60 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-teal/40">
+                  <div className="relative h-full rounded-2xl p-8 bg-white border border-[#DCEAF3] shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-teal/40">
                     {card}
                   </div>
                 )}

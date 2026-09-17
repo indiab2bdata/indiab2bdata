@@ -1,26 +1,52 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/page-hero";
 import { LegalSection } from "@/components/legal-section";
+import { ContactCta } from "@/components/sections/contact-cta";
+import { JsonLd } from "@/components/json-ld";
 import { siteConfig } from "@/lib/site-config";
+import { pageMetadata, breadcrumbJsonLd, webPageJsonLd } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Privacy Policy",
-  description:
-    "Read the Privacy Policy of IndiaB2BData.com to understand how we collect, use and protect your information.",
-};
+const TITLE = "Privacy Policy";
+const DESCRIPTION =
+  "Read the Privacy Policy of IndiaB2BData.com to understand how we collect, use and protect your information.";
+
+export const metadata: Metadata = pageMetadata({
+  title: TITLE,
+  description: DESCRIPTION,
+  path: "/privacy-policy",
+});
+
+const breadcrumbItems = [
+  { label: "Home", href: "/" },
+  { label: "Privacy Policy" },
+];
+
+const breadcrumbSchema = breadcrumbJsonLd([
+  { name: "Home", url: siteConfig.url },
+  { name: "Privacy Policy", url: `${siteConfig.url}/privacy-policy` },
+]);
+
+const webPageSchema = webPageJsonLd({
+  name: `${TITLE} | ${siteConfig.name}`,
+  description: DESCRIPTION,
+  url: `${siteConfig.url}/privacy-policy`,
+});
 
 export default function PrivacyPolicyPage() {
   return (
     <>
+      <JsonLd data={[breadcrumbSchema, webPageSchema]} />
+
       <PageHero
         eyebrow="Legal"
         title="Privacy Policy"
         description="Last updated: 26 August 2026"
         compact
+        breadcrumbs={breadcrumbItems}
       />
 
       <section className="py-16 md:py-24 max-w-3xl mx-auto px-5 md:px-8">
-        <div className="bg-white rounded-2xl border border-slate-100 p-7 md:p-12 space-y-9 text-sm md:text-base text-navy/85 leading-relaxed">
+        <div className="bg-white rounded-2xl border border-[#DCEAF3] p-7 md:p-12 space-y-9 text-sm md:text-base text-navy/85 leading-relaxed">
           <p>
             IndiaB2BData.com (&ldquo;we&rdquo;, &ldquo;us&rdquo;, &ldquo;our&rdquo;) respects your
             privacy and is committed to protecting the personal information you share with us.
@@ -128,6 +154,8 @@ export default function PrivacyPolicyPage() {
           </LegalSection>
         </div>
       </section>
+
+      <ContactCta source="privacy-policy" />
     </>
   );
 }

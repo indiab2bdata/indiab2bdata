@@ -6,12 +6,43 @@ import { Reveal } from "@/components/reveal";
 import { CountUp } from "@/components/count-up";
 import { ContactCta } from "@/components/sections/contact-cta";
 import { InlineCta } from "@/components/inline-cta";
+import { RelatedLinks } from "@/components/related-links";
+import { JsonLd } from "@/components/json-ld";
+import { keywordPages } from "@/lib/keyword-pages";
+import { siteConfig } from "@/lib/site-config";
+import { pageMetadata, breadcrumbJsonLd, webPageJsonLd } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "About Us",
-  description:
-    "Learn about IndiaB2BData.com — India's trusted partner for verified B2B mobile number, email and company databases across 700+ cities.",
-};
+const TITLE = "About Us";
+const DESCRIPTION =
+  "Learn about IndiaB2BData.com — India's trusted partner for verified B2B mobile number, email and company databases across 700+ cities.";
+
+export const metadata: Metadata = pageMetadata({
+  title: TITLE,
+  description: DESCRIPTION,
+  path: "/about-us",
+  image: { url: `${siteConfig.url}/images/about/team.jpg`, width: 1200, height: 900, alt: "IndiaB2BData.com team" },
+});
+
+const breadcrumbItems = [
+  { label: "Home", href: "/" },
+  { label: "About Us" },
+];
+
+const breadcrumbSchema = breadcrumbJsonLd([
+  { name: "Home", url: siteConfig.url },
+  { name: "About Us", url: `${siteConfig.url}/about-us` },
+]);
+
+const webPageSchema = webPageJsonLd({
+  type: "AboutPage",
+  name: `${TITLE} | ${siteConfig.name}`,
+  description: DESCRIPTION,
+  url: `${siteConfig.url}/about-us`,
+});
+
+const relatedPages = keywordPages.filter((k) =>
+  ["b2b-database-india", "verified-business-database-india", "business-leads-india"].includes(k.slug)
+);
 
 const VALUES = [
   {
@@ -47,10 +78,13 @@ const STATS = [
 export default function AboutUsPage() {
   return (
     <>
+      <JsonLd data={[breadcrumbSchema, webPageSchema]} />
+
       <PageHero
         eyebrow="About IndiaB2BData.com"
         title="Helping Indian Businesses Reach the Right Customers"
         description="We build verified B2B databases so sales and marketing teams across India can spend their time selling — not chasing dead numbers."
+        breadcrumbs={breadcrumbItems}
       />
 
       <section className="py-20 md:py-28 max-w-7xl mx-auto px-5 md:px-8 grid lg:grid-cols-2 gap-14 items-center">
@@ -100,7 +134,7 @@ export default function AboutUsPage() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {VALUES.map((value, i) => (
               <Reveal key={value.title} delay={i * 0.08}>
-                <div className="h-full bg-bgsoft rounded-2xl p-7 border border-slate-100 transition-all hover:-translate-y-1.5 hover:shadow-[0_18px_40px_-12px_rgba(11,43,78,0.18)] hover:border-teal">
+                <div className="h-full bg-bgsoft rounded-2xl p-7 border border-[#DCEAF3] transition-all hover:-translate-y-1.5 hover:shadow-[0_18px_40px_-12px_rgba(11,43,78,0.18)] hover:border-teal">
                   <div className="w-12 h-12 rounded-xl bg-teal/10 flex items-center justify-center mb-5 text-teal">
                     <value.icon className="w-6 h-6" strokeWidth={1.8} />
                   </div>
@@ -127,6 +161,8 @@ export default function AboutUsPage() {
           ))}
         </div>
       </section>
+
+      <RelatedLinks pages={relatedPages} eyebrow="Explore" heading="Related Data Products" />
 
       <ContactCta />
     </>

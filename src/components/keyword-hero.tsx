@@ -1,9 +1,9 @@
 "use client";
 
-import { MessageCircle } from "lucide-react";
 import { DataNetwork } from "@/components/data-network";
 import { Breadcrumbs, type BreadcrumbItem } from "@/components/breadcrumbs";
 import { useModal } from "@/components/modal-context";
+import { WhatsAppIcon } from "@/components/icons/whatsapp-icon";
 import { siteConfig } from "@/lib/site-config";
 
 export function KeywordHero({
@@ -18,7 +18,7 @@ export function KeywordHero({
   const { openModal } = useModal();
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-navy to-navy-light pt-28 md:pt-36 pb-16 md:pb-20">
+    <section className="relative overflow-hidden mesh-navy pt-28 md:pt-36 pb-16 md:pb-20">
       <DataNetwork variant="cta" className="opacity-60" />
       <div className="relative max-w-4xl mx-auto px-5 md:px-8 text-center">
         <Breadcrumbs items={breadcrumbs} />
@@ -33,7 +33,7 @@ export function KeywordHero({
         <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
           <button
             onClick={() => openModal("keyword-hero")}
-            className="bg-teal hover:bg-teal-dark text-white font-semibold px-7 py-3.5 rounded-full transition shadow-lg shadow-teal/30 hover:shadow-xl hover:-translate-y-0.5"
+            className="bg-teal hover:bg-teal-dark text-white font-semibold px-7 py-3.5 rounded-full transition shadow-lg shadow-teal/30 hover:shadow-xl hover:-translate-y-0.5 cursor-pointer"
           >
             Request Free Sample Data
           </button>
@@ -43,7 +43,7 @@ export function KeywordHero({
             rel="noopener noreferrer"
             className="flex items-center gap-2 text-white/90 font-medium border border-white/25 hover:border-white/60 px-6 py-3.5 rounded-full transition"
           >
-            <MessageCircle className="w-5 h-5 text-whats" fill="#25D366" strokeWidth={0} />
+            <WhatsAppIcon className="w-5 h-5 text-whats" />
             Chat on WhatsApp
           </a>
         </div>

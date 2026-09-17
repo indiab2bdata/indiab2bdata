@@ -91,7 +91,7 @@ export function ContactModal() {
         <button
           onClick={closeModal}
           aria-label="Close"
-          className="absolute top-4 right-4 w-9 h-9 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center transition"
+          className="absolute top-4 right-4 w-9 h-9 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center transition cursor-pointer"
         >
           <X className="w-4 h-4 text-navy" strokeWidth={2} />
         </button>
@@ -119,7 +119,7 @@ export function ContactModal() {
                   type="text"
                   name="name"
                   placeholder="Your name"
-                  className="mt-1.5 w-full rounded-lg border border-slate-200 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-teal/40 focus:border-teal"
+                  className="mt-1.5 w-full rounded-lg border border-[#DCEAF3] px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-teal/40 focus:border-teal"
                 />
               </div>
               <div>
@@ -128,7 +128,7 @@ export function ContactModal() {
                   type="text"
                   name="company"
                   placeholder="Your company"
-                  className="mt-1.5 w-full rounded-lg border border-slate-200 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-teal/40 focus:border-teal"
+                  className="mt-1.5 w-full rounded-lg border border-[#DCEAF3] px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-teal/40 focus:border-teal"
                 />
               </div>
             </div>
@@ -141,7 +141,7 @@ export function ContactModal() {
                   type="tel"
                   name="phone"
                   placeholder="10-digit mobile number"
-                  className="mt-1.5 w-full rounded-lg border border-slate-200 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-teal/40 focus:border-teal"
+                  className="mt-1.5 w-full rounded-lg border border-[#DCEAF3] px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-teal/40 focus:border-teal"
                 />
               </div>
               <div>
@@ -150,7 +150,7 @@ export function ContactModal() {
                   type="email"
                   name="email"
                   placeholder="you@company.com"
-                  className="mt-1.5 w-full rounded-lg border border-slate-200 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-teal/40 focus:border-teal"
+                  className="mt-1.5 w-full rounded-lg border border-[#DCEAF3] px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-teal/40 focus:border-teal"
                 />
               </div>
             </div>
@@ -161,7 +161,7 @@ export function ContactModal() {
                 required
                 name="requirement"
                 defaultValue=""
-                className="mt-1.5 w-full rounded-lg border border-slate-200 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-teal/40 focus:border-teal bg-white"
+                className="mt-1.5 w-full rounded-lg border border-[#DCEAF3] px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-teal/40 focus:border-teal bg-white"
               >
                 <option value="" disabled>
                   Select data type
@@ -178,14 +178,14 @@ export function ContactModal() {
                 name="message"
                 rows={3}
                 placeholder="Target city/state, industry, approx. quantity..."
-                className="mt-1.5 w-full rounded-lg border border-slate-200 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-teal/40 focus:border-teal"
+                className="mt-1.5 w-full rounded-lg border border-[#DCEAF3] px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-teal/40 focus:border-teal"
               />
             </div>
 
             <button
               type="submit"
               disabled={status.state === "sending"}
-              className="w-full bg-teal hover:bg-teal-dark disabled:opacity-60 text-white font-semibold py-3.5 rounded-full transition"
+              className="w-full bg-teal hover:bg-teal-dark disabled:opacity-60 text-white font-semibold py-3.5 rounded-full transition cursor-pointer disabled:cursor-not-allowed"
             >
               {status.state === "sending" ? "Sending..." : "Request Free Sample"}
             </button>

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { Hero } from "@/components/sections/hero";
 import { TrustStrip } from "@/components/sections/trust-strip";
 import { Products } from "@/components/sections/products";
@@ -9,11 +10,37 @@ import { Faq } from "@/components/sections/faq";
 import { ContactCta } from "@/components/sections/contact-cta";
 import { RelatedLinks } from "@/components/related-links";
 import { InlineCta } from "@/components/inline-cta";
+import { JsonLd } from "@/components/json-ld";
 import { keywordPages } from "@/lib/keyword-pages";
+import { siteConfig } from "@/lib/site-config";
+import { DEFAULT_FAQS } from "@/lib/faq-data";
+import { pageMetadata, webPageJsonLd, faqJsonLd, itemListJsonLd } from "@/lib/seo";
+
+export const metadata: Metadata = pageMetadata({
+  title: siteConfig.defaultTitle,
+  titleTag: null,
+  description: siteConfig.defaultDescription,
+  path: "/",
+});
+
+const webPageSchema = webPageJsonLd({
+  name: siteConfig.defaultTitle,
+  description: siteConfig.defaultDescription,
+  url: siteConfig.url,
+  about: "B2B database India",
+});
+
+const faqSchema = faqJsonLd(DEFAULT_FAQS);
+
+const productListSchema = itemListJsonLd(
+  keywordPages.map((page) => ({ name: page.keyword, url: `${siteConfig.url}/${page.slug}` })),
+  "B2B & Company Databases"
+);
 
 export default function Home() {
   return (
     <>
+      <JsonLd data={[webPageSchema, faqSchema, productListSchema]} />
       <Hero />
       <TrustStrip />
       <Products />

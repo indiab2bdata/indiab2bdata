@@ -6,16 +6,44 @@ import { Reveal } from "@/components/reveal";
 import { RelatedLinks } from "@/components/related-links";
 import { InlineCta } from "@/components/inline-cta";
 import { ContactCta } from "@/components/sections/contact-cta";
+import { JsonLd } from "@/components/json-ld";
 import { databaseStates } from "@/lib/database-pages";
 import { keywordPages } from "@/lib/keyword-pages";
 import { siteConfig } from "@/lib/site-config";
+import { pageMetadata, breadcrumbJsonLd, webPageJsonLd, itemListJsonLd } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Business Database by State | India-Wide Coverage",
-  description:
-    "Browse verified B2B business databases state by state — Maharashtra, Gujarat, Tamil Nadu, Delhi, Uttar Pradesh, Karnataka, Haryana and Telangana. Mobile numbers, emails and company records.",
-  alternates: { canonical: `${siteConfig.url}/database` },
-};
+const TITLE = "Business Database by State | India-Wide Coverage";
+const DESCRIPTION =
+  "Browse verified B2B business databases state by state — Maharashtra, Gujarat, Tamil Nadu, Delhi, Uttar Pradesh, Karnataka, Haryana and Telangana. Mobile numbers, emails and company records.";
+
+export const metadata: Metadata = pageMetadata({
+  title: TITLE,
+  description: DESCRIPTION,
+  path: "/database",
+  image: { url: `${siteConfig.url}/images/keywords/city-skyline.jpg`, width: 1200, height: 800, alt: "City skyline representing pan-India business coverage" },
+});
+
+const breadcrumbItems = [
+  { label: "Home", href: "/" },
+  { label: "Database by State" },
+];
+
+const breadcrumbSchema = breadcrumbJsonLd([
+  { name: "Home", url: siteConfig.url },
+  { name: "Database by State", url: `${siteConfig.url}/database` },
+]);
+
+const webPageSchema = webPageJsonLd({
+  type: "CollectionPage",
+  name: `${TITLE} | ${siteConfig.name}`,
+  description: DESCRIPTION,
+  url: `${siteConfig.url}/database`,
+});
+
+const stateListSchema = itemListJsonLd(
+  databaseStates.map((state) => ({ name: `${state.name} B2B Database`, url: `${siteConfig.url}/database/${state.slug}` })),
+  "B2B Database by State"
+);
 
 export default function DatabaseHubPage() {
   const relatedKeywordPages = keywordPages.filter((k) =>
@@ -24,10 +52,13 @@ export default function DatabaseHubPage() {
 
   return (
     <>
+      <JsonLd data={[breadcrumbSchema, webPageSchema, stateListSchema]} />
+
       <PageHero
         eyebrow="Database by State"
         title="Verified B2B Business Database, State by State"
         description="Pick a state to see coverage, major cities and industries — or tell us your exact requirement and we'll build a custom list."
+        breadcrumbs={breadcrumbItems}
       />
 
       <section className="py-16 md:py-20 max-w-7xl mx-auto px-5 md:px-8">
@@ -47,7 +78,7 @@ export default function DatabaseHubPage() {
             <Reveal key={state.slug} delay={(i % 4) * 0.08}>
               <Link
                 href={`/database/${state.slug}`}
-                className="group relative h-full flex flex-col bg-white rounded-2xl p-7 border border-slate-200/60 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-teal/40 overflow-hidden"
+                className="group relative h-full flex flex-col bg-white rounded-2xl p-7 border border-[#DCEAF3] shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-teal/40 overflow-hidden"
               >
                 <div
                   className="absolute -top-16 -right-16 w-32 h-32 rounded-full bg-teal/10 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"

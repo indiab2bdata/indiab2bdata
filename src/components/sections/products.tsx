@@ -58,7 +58,7 @@ export function Products() {
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
         {PRODUCTS.map((product, i) => (
           <Reveal key={product.title} delay={(i % 3) * 0.08}>
-            <div className="group relative h-full bg-white rounded-2xl p-7 border border-slate-200/60 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-teal/40 overflow-hidden">
+            <div className="group relative h-full bg-white rounded-2xl p-7 border border-[#DCEAF3] shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-teal/40 overflow-hidden">
               <div
                 className="absolute -top-16 -right-16 w-32 h-32 rounded-full bg-teal/10 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                 aria-hidden="true"

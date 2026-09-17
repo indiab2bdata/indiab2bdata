@@ -1,22 +1,22 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f6f9fc;
-  --foreground: #101828;
+  --background: #f2f9fd;
+  --foreground: #102a43;
 }
 
 @theme inline {
-  --color-navy: #0b2b4e;
-  --color-navy-light: #123a66;
-  --color-navy-dark: #081d36;
-  --color-teal: #0ea5a0;
-  --color-teal-light: #14c7c0;
-  --color-teal-dark: #0b7f7b;
+  --color-navy: #102a43;
+  --color-navy-light: #123b72;
+  --color-navy-dark: #0d2236;
+  --color-teal: #0b78d0;
+  --color-teal-light: #16b8e8;
+  --color-teal-dark: #0868b5;
   --color-amber: #f5a623;
   --color-whats: #25d366;
-  --color-ink: #101828;
-  --color-muted: #5b6b82;
-  --color-bgsoft: #f6f9fc;
+  --color-ink: #102a43;
+  --color-muted: #52677d;
+  --color-bgsoft: #f2f9fd;
 
   /* Semantic aliases used by the design system */
   --color-primary: var(--color-navy);
@@ -24,8 +24,8 @@
   --color-accent: var(--color-teal);
   --color-accent-hover: var(--color-teal-dark);
 
-  --font-display: var(--font-heading), var(--font-montserrat), sans-serif;
-  --font-body: var(--font-sans), var(--font-poppins), sans-serif;
+  --font-display: var(--font-montserrat), sans-serif;
+  --font-body: var(--font-montserrat), sans-serif;
 }
 
 html {
@@ -39,7 +39,7 @@ body {
 }
 
 ::selection {
-  background: #0ea5a0;
+  background: #0b78d0;
   color: #fff;
 }
 
@@ -55,13 +55,13 @@ summary:focus-visible {
   border-radius: 4px;
 }
 
-/* Soft gradient mesh for hero / dark sections */
+/* Brand gradient mesh for hero / dark sections — logo gradient translated to the site */
 .mesh-navy {
   background-image:
-    radial-gradient(60% 55% at 15% 10%, rgba(20, 199, 192, 0.22), transparent 60%),
-    radial-gradient(50% 50% at 85% 0%, rgba(20, 199, 192, 0.14), transparent 60%),
+    radial-gradient(60% 55% at 15% 10%, rgba(22, 184, 232, 0.22), transparent 60%),
+    radial-gradient(50% 50% at 85% 0%, rgba(22, 184, 232, 0.16), transparent 60%),
     radial-gradient(70% 60% at 50% 100%, rgba(255, 255, 255, 0.06), transparent 60%),
-    linear-gradient(180deg, var(--color-navy) 0%, var(--color-navy-light) 100%);
+    linear-gradient(135deg, #123b72 0%, #0b78d0 55%, #16b8e8 100%);
 }
 
 /* Faint grid pattern overlay */
@@ -85,7 +85,7 @@ summary:focus-visible {
   height: 100%;
 }
 .data-net .node {
-  fill: #0ea5a0;
+  fill: #16b8e8;
   opacity: 0.55;
 }
 .data-net .node.pulse {
@@ -109,7 +109,7 @@ summary:focus-visible {
   }
 }
 .data-net .link {
-  stroke: #0ea5a0;
+  stroke: #16b8e8;
   stroke-width: 1;
   opacity: 0.18;
 }

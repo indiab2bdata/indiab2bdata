@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { getKeywordPage, getOtherKeywordPages, keywordPages } from "@/lib/keyword-pages";
 import { getKeywordImage } from "@/lib/keyword-images";
 import { siteConfig } from "@/lib/site-config";
+import { pageMetadata, breadcrumbJsonLd, webPageJsonLd, faqJsonLd, serviceJsonLd } from "@/lib/seo";
 import { JsonLd } from "@/components/json-ld";
 import { KeywordHero } from "@/components/keyword-hero";
 import { AnswerBox } from "@/components/answer-box";
@@ -28,27 +29,15 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   const page = getKeywordPage(slug);
   if (!page) return {};
 
-  const url = `${siteConfig.url}/${page.slug}`;
+  const visual = getKeywordImage(page.slug, page.keyword);
 
-  return {
+  return pageMetadata({
     title: page.title,
     description: page.metaDescription,
+    path: `/${page.slug}`,
     keywords: [page.keyword],
-    alternates: { canonical: url },
-    openGraph: {
-      title: page.title,
-      description: page.metaDescription,
-      url,
-      siteName: siteConfig.name,
-      locale: "en_IN",
-      type: "website",
-    },
-    twitter: {
-      card: "summary",
-      title: page.title,
-      description: page.metaDescription,
-    },
-  };
+    image: { url: `${siteConfig.url}${visual.src}`, width: 1200, height: 800, alt: visual.alt },
+  });
 }
 
 export default async function KeywordPage({ params }: { params: Params }) {
@@ -60,49 +49,28 @@ export default async function KeywordPage({ params }: { params: Params }) {
   const otherPages = getOtherKeywordPages(page.slug, 6);
   const visual = getKeywordImage(page.slug, page.keyword);
 
-  const breadcrumbJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: siteConfig.url },
-      { "@type": "ListItem", position: 2, name: page.keyword, item: url },
-    ],
-  };
+  const breadcrumbSchema = breadcrumbJsonLd([
+    { name: "Home", url: siteConfig.url },
+    { name: page.keyword, url },
+  ]);
 
-  const webPageJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
+  const webPageSchema = webPageJsonLd({
     name: page.title,
     description: page.metaDescription,
     url,
-    inLanguage: "en-IN",
     about: page.keyword,
-    isPartOf: { "@type": "WebSite", name: siteConfig.name, url: siteConfig.url },
-  };
+  });
 
-  const faqJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: page.faqs.map((faq) => ({
-      "@type": "Question",
-      name: faq.question,
-      acceptedAnswer: { "@type": "Answer", text: faq.answer },
-    })),
-  };
+  const faqSchema = faqJsonLd(page.faqs);
 
-  const serviceJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    serviceType: page.keyword,
+  const productServiceSchema = serviceJsonLd({
     name: page.keyword,
     description: page.metaDescription,
-    areaServed: { "@type": "Country", name: "India" },
-    provider: { "@type": "Organization", name: siteConfig.name, url: siteConfig.url },
-  };
+  });
 
   return (
     <>
-      <JsonLd data={[breadcrumbJsonLd, webPageJsonLd, faqJsonLd, serviceJsonLd]} />
+      <JsonLd data={[breadcrumbSchema, webPageSchema, faqSchema, productServiceSchema]} />
 
       <KeywordHero
         eyebrow={page.eyebrow}

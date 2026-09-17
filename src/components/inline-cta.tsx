@@ -24,7 +24,7 @@ export function InlineCta({
           </p>
           <button
             onClick={() => openModal(id)}
-            className="shrink-0 inline-flex items-center gap-1.5 bg-navy hover:bg-navy-light active:scale-[0.98] text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-all duration-200 whitespace-nowrap hover:scale-[1.02]"
+            className="shrink-0 inline-flex items-center gap-1.5 bg-navy hover:bg-navy-light active:scale-[0.98] text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-all duration-200 whitespace-nowrap hover:scale-[1.02] cursor-pointer"
           >
             {buttonLabel}
             <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" />

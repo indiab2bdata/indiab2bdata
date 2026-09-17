@@ -46,7 +46,7 @@ export function KeywordVisual({
 
           <button
             onClick={() => openModal(ctaId)}
-            className="mt-9 bg-teal hover:bg-teal-dark text-white font-semibold px-7 py-3.5 rounded-full transition inline-flex items-center gap-2 shadow-lg shadow-teal/30 hover:shadow-xl hover:-translate-y-0.5"
+            className="mt-9 bg-teal hover:bg-teal-dark text-white font-semibold px-7 py-3.5 rounded-full transition inline-flex items-center gap-2 shadow-lg shadow-teal/30 hover:shadow-xl hover:-translate-y-0.5 cursor-pointer"
           >
             Request Free Sample
             <ArrowRight className="w-4 h-4" />

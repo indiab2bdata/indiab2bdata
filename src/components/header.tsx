@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Menu, Phone, X } from "lucide-react";
@@ -9,10 +10,7 @@ import { useModal } from "@/components/modal-context";
 const NAV_LINKS = [
   { href: "/#offer", label: "Data Products" },
   { href: "/database", label: "Database by State" },
-  { href: "/#why", label: "Why Us" },
   { href: "/#pricing", label: "Pricing" },
-  { href: "/blog", label: "Guides" },
-  { href: "/about-us", label: "About Us" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -31,21 +29,22 @@ export function Header() {
   return (
     <header
       className={`fixed top-0 inset-x-0 z-40 backdrop-blur-md border-b transition-all duration-300 ${
-        scrolled ? "bg-white/85 border-slate-200 shadow-sm shadow-navy/5" : "bg-white/70 border-transparent"
+        scrolled ? "bg-white/85 border-[#DCEAF3] shadow-sm shadow-navy/5" : "bg-white border-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-5 md:px-8 h-16 md:h-[72px] flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2">
-          <span className="w-9 h-9 rounded-lg bg-navy flex items-center justify-center">
-            <span className="w-2.5 h-2.5 rounded-full bg-teal-light" />
-          </span>
-          <span className="font-display font-extrabold text-lg md:text-xl text-navy tracking-tight">
-            India<span className="text-teal">B2B</span>Data
-            <span className="text-muted font-normal text-sm">.com</span>
-          </span>
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/images/logo.svg"
+            alt="IndiaB2BData.com"
+            width={400}
+            height={200}
+            priority
+            className="h-14 md:h-28 w-auto object-cover"
+          />
         </Link>
 
-        <nav className="hidden lg:flex items-center gap-8 font-medium text-sm text-navy/80">
+        <nav className="hidden lg:flex items-center gap-8 font-medium text-sm text-muted">
           {NAV_LINKS.map((link) => (
             <Link
               key={link.href}
@@ -67,7 +66,7 @@ export function Header() {
           </a>
           <button
             onClick={() => openModal("nav")}
-            className="bg-teal hover:bg-teal-dark active:scale-[0.98] text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-all duration-200 shadow-md shadow-teal/20 hover:shadow-lg hover:shadow-teal/30 hover:scale-[1.02]"
+            className="bg-teal hover:bg-teal-dark active:scale-[0.98] text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-all duration-200 shadow-md shadow-teal/20 hover:shadow-lg hover:shadow-teal/30 hover:scale-[1.02] cursor-pointer"
           >
             Get Free Sample
           </button>
@@ -75,7 +74,7 @@ export function Header() {
 
         <button
           onClick={() => setMenuOpen((v) => !v)}
-          className="lg:hidden p-2 text-navy"
+          className="lg:hidden p-2 text-navy cursor-pointer"
           aria-label="Menu"
         >
           {menuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -83,7 +82,7 @@ export function Header() {
       </div>
 
       {menuOpen && (
-        <div className="lg:hidden border-t border-slate-100 bg-white px-5 py-4 space-y-3 font-medium text-navy">
+        <div className="lg:hidden border-t border-[#DCEAF3] bg-white px-5 py-4 space-y-3 font-medium text-navy">
           {NAV_LINKS.map((link) => (
             <Link
               key={link.href}
@@ -99,7 +98,7 @@ export function Header() {
               setMenuOpen(false);
               openModal("mobile");
             }}
-            className="w-full bg-teal text-white font-semibold py-2.5 rounded-full mt-2"
+            className="w-full bg-teal text-white font-semibold py-2.5 rounded-full mt-2 cursor-pointer"
           >
             Get Free Sample
           </button>

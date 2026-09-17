@@ -1,26 +1,52 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/page-hero";
 import { LegalSection } from "@/components/legal-section";
+import { ContactCta } from "@/components/sections/contact-cta";
+import { JsonLd } from "@/components/json-ld";
 import { siteConfig } from "@/lib/site-config";
+import { pageMetadata, breadcrumbJsonLd, webPageJsonLd } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Terms & Conditions",
-  description:
-    "Read the Terms and Conditions for using IndiaB2BData.com and purchasing our verified B2B data products.",
-};
+const TITLE = "Terms & Conditions";
+const DESCRIPTION =
+  "Read the Terms and Conditions for using IndiaB2BData.com and purchasing our verified B2B data products.";
+
+export const metadata: Metadata = pageMetadata({
+  title: TITLE,
+  description: DESCRIPTION,
+  path: "/terms-and-conditions",
+});
+
+const breadcrumbItems = [
+  { label: "Home", href: "/" },
+  { label: "Terms & Conditions" },
+];
+
+const breadcrumbSchema = breadcrumbJsonLd([
+  { name: "Home", url: siteConfig.url },
+  { name: "Terms & Conditions", url: `${siteConfig.url}/terms-and-conditions` },
+]);
+
+const webPageSchema = webPageJsonLd({
+  name: `${TITLE} | ${siteConfig.name}`,
+  description: DESCRIPTION,
+  url: `${siteConfig.url}/terms-and-conditions`,
+});
 
 export default function TermsAndConditionsPage() {
   return (
     <>
+      <JsonLd data={[breadcrumbSchema, webPageSchema]} />
+
       <PageHero
         eyebrow="Legal"
         title="Terms & Conditions"
         description="Last updated: 26 August 2026"
         compact
+        breadcrumbs={breadcrumbItems}
       />
 
       <section className="py-16 md:py-24 max-w-3xl mx-auto px-5 md:px-8">
-        <div className="bg-white rounded-2xl border border-slate-100 p-7 md:p-12 space-y-9 text-sm md:text-base text-navy/85 leading-relaxed">
+        <div className="bg-white rounded-2xl border border-[#DCEAF3] p-7 md:p-12 space-y-9 text-sm md:text-base text-navy/85 leading-relaxed">
           <p>
             These Terms &amp; Conditions (&ldquo;Terms&rdquo;) govern your use of the
             IndiaB2BData.com website and your purchase of any data products or services from us.
@@ -158,6 +184,8 @@ export default function TermsAndConditionsPage() {
           </LegalSection>
         </div>
       </section>
+
+      <ContactCta source="terms-and-conditions" />
     </>
   );
 }
