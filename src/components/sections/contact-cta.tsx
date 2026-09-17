@@ -1,122 +1,175 @@
+
 "use client";
 
-import { useState, type FormEvent } from "react";
 import { Phone } from "lucide-react";
 import { DataNetwork } from "@/components/data-network";
 import { Reveal } from "@/components/reveal";
 import { WhatsAppIcon } from "@/components/icons/whatsapp-icon";
+import { useContactForm } from "@/hooks/use-contact-form";
 import { siteConfig } from "@/lib/site-config";
 
-type Status = { state: "idle" | "sending" | "success" | "error"; message?: string };
+const inputClass =
+  "w-full rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm text-slate-800 placeholder:text-slate-400 shadow-sm transition-all focus:border-teal focus:outline-none focus:ring-2 focus:ring-teal/15";
 
-export function ContactCta({ source = "contact-cta-inline" }: { source?: string }) {
-  const [status, setStatus] = useState<Status>({ state: "idle" });
+const statusClass: Record<string, string> = {
+  success: "text-emerald-600 font-medium",
+  error: "text-red-500",
+  sending: "text-slate-500",
+};
 
-  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    const form = e.currentTarget;
-    setStatus({ state: "sending" });
-
-    try {
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        body: new FormData(form),
-      });
-      const data = await res.json().catch(() => ({ success: false }));
-
-      if (data.success) {
-        setStatus({ state: "success", message: "Thank you! Our team will contact you shortly." });
-        form.reset();
-      } else {
-        setStatus({
-          state: "error",
-          message: data.message || "Something went wrong. Please call or WhatsApp us directly.",
-        });
-      }
-    } catch {
-      setStatus({
-        state: "error",
-        message: "Could not connect. Please call or WhatsApp us directly.",
-      });
-    }
-  }
+export function ContactCta({
+  source = "contact-cta-inline",
+}: {
+  source?: string;
+}) {
+  const { status, handleSubmit } = useContactForm();
 
   return (
     <section
       id="contact"
-      className="relative py-20 md:py-28 mesh-navy overflow-hidden"
+      className="relative overflow-hidden bg-slate-50 py-16 md:py-20"
     >
-      <div className="absolute inset-0 grid-pattern" aria-hidden="true" />
-      <DataNetwork variant="cta" className="opacity-40" />
+      {/* Subtle background decoration */}
+      <div className="absolute inset-0 grid-pattern opacity-[0.18]" aria-hidden="true" />
+      <DataNetwork
+        variant="cta"
+        className="pointer-events-none opacity-[0.08]"
+      />
 
-      <Reveal className="relative max-w-xl mx-auto px-5 md:px-8 text-center">
-        <h2 className="font-display font-extrabold text-3xl md:text-4xl text-white tracking-tight">
-          Ready to Reach the Right Businesses?
-        </h2>
-        <p className="mt-4 text-slate-300 max-w-xl mx-auto">
-          Share your name and number — we&apos;ll send a free sample within a few hours, no
-          obligation, no hidden charges.
-        </p>
+      <Reveal className="relative mx-auto max-w-6xl px-5 md:px-8">
+        <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-[0_15px_50px_rgba(15,23,42,0.08)]">
+          <div className="grid lg:grid-cols-[1.05fr_0.95fr]">
+            
+            {/* Left Content */}
+            <div className="flex flex-col justify-center p-7 md:p-10 lg:p-12">
+              <span className="mb-4 text-sm font-semibold uppercase tracking-wider text-teal">
+                Get in Touch
+              </span>
 
-        <form onSubmit={handleSubmit} className="mt-8 flex flex-col sm:flex-row gap-3">
-          <input type="hidden" name="source" value={source} />
-          <input type="hidden" name="requirement" value="Custom / Pan-India Data" />
-          <input
-            required
-            type="text"
-            name="name"
-            placeholder="Your name"
-            aria-label="Your name"
-            className="flex-1 rounded-full border border-white/20 bg-white/10 px-5 py-3 text-sm text-white placeholder:text-slate-300 focus:outline-none focus:ring-2 focus:ring-teal/60 focus:border-teal"
-          />
-          <input
-            required
-            type="tel"
-            name="phone"
-            placeholder="Phone / WhatsApp number"
-            aria-label="Phone / WhatsApp number"
-            className="flex-1 rounded-full border border-white/20 bg-white/10 px-5 py-3 text-sm text-white placeholder:text-slate-300 focus:outline-none focus:ring-2 focus:ring-teal/60 focus:border-teal"
-          />
-          <button
-            type="submit"
-            disabled={status.state === "sending"}
-            className="bg-teal hover:bg-teal-dark disabled:opacity-60 active:scale-[0.98] text-white font-semibold px-7 py-3 rounded-full transition-all duration-200 shadow-lg shadow-teal/30 hover:shadow-xl hover:shadow-teal/40 whitespace-nowrap cursor-pointer disabled:cursor-not-allowed"
-          >
-            {status.state === "sending" ? "Sending..." : "Get Free Sample"}
-          </button>
-        </form>
+              <h2 className="font-display text-3xl font-extrabold tracking-tight text-slate-900 md:text-4xl">
+                Looking for Reliable Business Data?
+              </h2>
 
-        {status.state !== "idle" && status.message && (
-          <p
-            className={`mt-3 text-sm ${
-              status.state === "success"
-                ? "text-teal-light font-medium"
-                : status.state === "error"
-                  ? "text-red-300"
-                  : "text-slate-300"
-            }`}
-          >
-            {status.message}
-          </p>
-        )}
+              <p className="mt-4 max-w-xl text-base leading-7 text-slate-600">
+                Tell us what type of business data you need and our team will
+                help you find the right data for your sales and marketing
+                requirements.
+              </p>
 
-        <div className="mt-6 flex flex-wrap justify-center gap-4">
-          <a
-            href={siteConfig.phoneHref}
-            className="flex items-center gap-2 text-white/90 text-sm font-medium border border-white/25 hover:border-white/60 hover:bg-white/5 px-6 py-3 rounded-full transition-all duration-200 active:scale-[0.98]"
-          >
-            <Phone className="w-[18px] h-[18px]" strokeWidth={1.8} />
-            Call {siteConfig.phoneDisplay}
-          </a>
-          <a
-            href={siteConfig.whatsappHref(siteConfig.defaultWhatsappMessage)}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 text-white/90 text-sm font-medium border border-white/25 hover:border-white/60 hover:bg-white/5 px-6 py-3 rounded-full transition-all duration-200 active:scale-[0.98]"
-          >
-            <WhatsAppIcon className="w-[18px] h-[18px] text-whats" />
-            Chat on WhatsApp
-          </a>
+              <div className="mt-7 flex flex-wrap gap-3">
+                <a
+                  href={siteConfig.phoneHref}
+                  className="inline-flex items-center gap-2 rounded-lg border border-slate-200 bg-white px-5 py-2.5 text-sm font-medium text-slate-700 shadow-sm transition-all hover:border-slate-300 hover:shadow-md"
+                >
+                  <Phone className="h-4 w-4 text-slate-500" strokeWidth={1.8} />
+                  Call {siteConfig.phoneDisplay}
+                </a>
+
+                <a
+                  href={siteConfig.whatsappHref(
+                    siteConfig.defaultWhatsappMessage
+                  )}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-lg border border-slate-200 bg-white px-5 py-2.5 text-sm font-medium text-slate-700 shadow-sm transition-all hover:border-slate-300 hover:shadow-md"
+                >
+                  <WhatsAppIcon className="h-4 w-4 text-whats" />
+                  WhatsApp
+                </a>
+              </div>
+            </div>
+
+            {/* Right Form */}
+            <div className="border-t border-slate-100 bg-slate-50/70 p-7 md:p-10 lg:border-l lg:border-t-0">
+              <div className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm md:p-6">
+                <div className="mb-5">
+                  <h3 className="text-lg font-semibold text-slate-900">
+                    Request a Free Sample
+                  </h3>
+
+                  <p className="mt-1 text-sm text-slate-500">
+                    Share your details and we&apos;ll get back to you.
+                  </p>
+                </div>
+
+                <form onSubmit={handleSubmit} className="space-y-4">
+                  <input
+                    type="hidden"
+                    name="source"
+                    value={source}
+                  />
+
+                  <input
+                    type="hidden"
+                    name="requirement"
+                    value="Custom / Pan-India Data"
+                  />
+
+                  <div>
+                    <label
+                      htmlFor="contact-name"
+                      className="mb-1.5 block text-sm font-medium text-slate-700"
+                    >
+                      Full Name
+                    </label>
+
+                    <input
+                      id="contact-name"
+                      required
+                      type="text"
+                      name="name"
+                      placeholder="Enter your name"
+                      className={inputClass}
+                    />
+                  </div>
+
+                  <div>
+                    <label
+                      htmlFor="contact-phone"
+                      className="mb-1.5 block text-sm font-medium text-slate-700"
+                    >
+                      Phone / WhatsApp Number
+                    </label>
+
+                    <input
+                      id="contact-phone"
+                      required
+                      type="tel"
+                      name="phone"
+                      placeholder="Enter your phone number"
+                      className={inputClass}
+                    />
+                  </div>
+
+                  <button
+                    type="submit"
+                    disabled={status.state === "sending"}
+                    className="w-full rounded-lg bg-teal px-6 py-3 text-sm font-semibold text-white shadow-md shadow-teal/20 transition-all duration-200 hover:bg-teal-dark hover:shadow-lg hover:shadow-teal/25 active:scale-[0.99] disabled:cursor-not-allowed disabled:opacity-60"
+                  >
+                    {status.state === "sending"
+                      ? "Submitting..."
+                      : "Request Free Sample"}
+                  </button>
+                </form>
+
+                {status.state !== "idle" && status.message && (
+                  <p
+                    className={`mt-3 text-center text-sm ${
+                      statusClass[status.state] ?? "text-slate-500"
+                    }`}
+                  >
+                    {status.message}
+                  </p>
+                )}
+
+                <p className="mt-4 text-center text-xs text-slate-400">
+                  No obligation. We&apos;ll only use your details to respond to
+                  your enquiry.
+                </p>
+              </div>
+            </div>
+
+          </div>
         </div>
       </Reveal>
     </section>

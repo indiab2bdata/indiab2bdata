@@ -1,8 +1,9 @@
 "use client";
 
-import { useEffect, useState, type FormEvent } from "react";
+import { useEffect, useState } from "react";
 import { X } from "lucide-react";
 import { useModal } from "@/components/modal-context";
+import { useContactForm } from "@/hooks/use-contact-form";
 
 const REQUIREMENTS = [
   "Mobile Number Database",
@@ -13,11 +14,9 @@ const REQUIREMENTS = [
   "Custom / Pan-India Data",
 ];
 
-type Status = { state: "idle" | "sending" | "success" | "error"; message?: string };
-
 export function ContactModal() {
   const { isOpen, source, closeModal } = useModal();
-  const [status, setStatus] = useState<Status>({ state: "idle" });
+  const { status, setStatus, handleSubmit } = useContactForm(() => setTimeout(closeModal, 2200));
 
   // Reset the form status whenever the modal transitions to open, following
   // React's "adjusting state on prop change" pattern (done during render,
@@ -40,36 +39,6 @@ export function ContactModal() {
       window.removeEventListener("keydown", onKeyDown);
     };
   }, [isOpen, closeModal]);
-
-  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    const form = e.currentTarget;
-    setStatus({ state: "sending" });
-
-    try {
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        body: new FormData(form),
-      });
-      const data = await res.json().catch(() => ({ success: false }));
-
-      if (data.success) {
-        setStatus({ state: "success", message: "Thank you! Our team will contact you shortly." });
-        form.reset();
-        setTimeout(closeModal, 2200);
-      } else {
-        setStatus({
-          state: "error",
-          message: data.message || "Something went wrong. Please call or WhatsApp us directly.",
-        });
-      }
-    } catch {
-      setStatus({
-        state: "error",
-        message: "Could not connect. Please call or WhatsApp us directly.",
-      });
-    }
-  }
 
   return (
     <div
