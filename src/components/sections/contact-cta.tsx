@@ -39,7 +39,7 @@ export function ContactCta({
       <Reveal className="relative mx-auto max-w-6xl px-5 md:px-8">
         <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-[0_15px_50px_rgba(15,23,42,0.08)]">
           <div className="grid lg:grid-cols-[1.05fr_0.95fr]">
-            
+
             {/* Left Content */}
             <div className="flex flex-col justify-center p-7 md:p-10 lg:p-12">
               <span className="mb-4 text-sm font-semibold uppercase tracking-wider text-teal">
@@ -154,9 +154,8 @@ export function ContactCta({
 
                 {status.state !== "idle" && status.message && (
                   <p
-                    className={`mt-3 text-center text-sm ${
-                      statusClass[status.state] ?? "text-slate-500"
-                    }`}
+                    className={`mt-3 text-center text-sm ${statusClass[status.state] ?? "text-slate-500"
+                      }`}
                   >
                     {status.message}
                   </p>
