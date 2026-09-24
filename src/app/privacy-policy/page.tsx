@@ -150,6 +150,7 @@ export default function PrivacyPolicyPage() {
                   {siteConfig.email}
                 </a>
               </li>
+              <li>Address: {siteConfig.address.display}</li>
             </ul>
           </LegalSection>
         </div>

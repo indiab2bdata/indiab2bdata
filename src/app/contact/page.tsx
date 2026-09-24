@@ -70,10 +70,11 @@ const CONTACT_METHODS = [
   },
   {
     icon: MapPin,
-    title: "Coverage",
-    detail: "Serving all of India",
-    href: "/database",
-    cta: "Browse by state",
+    title: "Office",
+    detail: siteConfig.address.display,
+    href: siteConfig.mapsHref,
+    cta: "Get directions",
+    external: true,
   },
 ];
 

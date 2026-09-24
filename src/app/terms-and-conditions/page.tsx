@@ -180,6 +180,7 @@ export default function TermsAndConditionsPage() {
                   {siteConfig.email}
                 </a>
               </li>
+              <li>Address: {siteConfig.address.display}</li>
             </ul>
           </LegalSection>
         </div>

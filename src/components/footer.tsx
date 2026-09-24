@@ -77,9 +77,9 @@ export function Footer() {
               <Mail className="w-4 h-4 text-teal-light shrink-0" strokeWidth={1.8} />
               {siteConfig.email}
             </li>
-            <li className="flex items-center gap-2">
-              <MapPin className="w-4 h-4 text-teal-light shrink-0" strokeWidth={1.8} />
-              Serving all of India
+            <li className="flex items-start gap-2">
+              <MapPin className="w-4 h-4 mt-0.5 text-teal-light shrink-0" strokeWidth={1.8} />
+              {siteConfig.address.display}
             </li>
           </ul>
         </div>

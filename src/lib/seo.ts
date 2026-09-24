@@ -162,6 +162,14 @@ export const organizationJsonLd = {
   logo: `${siteConfig.url}/images/favicon.png`,
   email: siteConfig.email,
   telephone: siteConfig.phoneDisplay,
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: siteConfig.address.street,
+    addressLocality: siteConfig.address.city,
+    addressRegion: siteConfig.address.region,
+    postalCode: siteConfig.address.postalCode,
+    addressCountry: siteConfig.address.country,
+  },
   areaServed: { "@type": "Country", name: "India" },
   description:
     "Verified B2B mobile number, email and company databases across 700+ Indian cities and 500+ industries.",
