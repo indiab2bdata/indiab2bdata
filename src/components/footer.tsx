@@ -14,10 +14,14 @@ const QUICK_LINKS = [
 ];
 
 const DATA_CATEGORIES = [
-  "Mobile Number Database",
-  "Email Database",
-  "GST & Company Data",
-  "Bulk WhatsApp/SMS Data",
+  { href: "/mobile-number-database-india", label: "Mobile Number Database" },
+  { href: "/email-database-india", label: "Email Database" },
+  { href: "/gst-database-india", label: "GST & Company Data" },
+  { href: "/whatsapp-number-database-india", label: "WhatsApp Number Data" },
+  { href: "/bulk-sms-database-india", label: "Bulk SMS Data" },
+  { href: "/doctors-database-india", label: "Doctors Database" },
+  { href: "/importers-exporters-database-india", label: "Importers & Exporters" },
+  { href: "/dealers-distributors-database-india", label: "Dealers & Distributors" },
 ];
 
 export function Footer() {
@@ -61,7 +65,11 @@ export function Footer() {
           <p className="font-display font-bold text-white text-sm mb-4">Data Categories</p>
           <ul className="space-y-2 text-sm">
             {DATA_CATEGORIES.map((item) => (
-              <li key={item}>{item}</li>
+              <li key={item.href}>
+                <Link href={item.href} className="hover:text-teal-light hover:underline underline-offset-4 transition-colors">
+                  {item.label}
+                </Link>
+              </li>
             ))}
           </ul>
         </div>

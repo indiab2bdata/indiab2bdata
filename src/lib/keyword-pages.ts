@@ -8,17 +8,23 @@ import {
   Factory,
   FileText,
   Filter,
+  Globe,
   Headphones,
   Landmark,
   ListChecks,
+  Mail,
   MapPinned,
+  MessageSquare,
   Network,
   RefreshCcw,
   Search,
   ShieldCheck,
+  Smartphone,
   Sparkles,
+  Stethoscope,
   Target,
   TrendingUp,
+  Truck,
   UserCheck,
   Users,
   Zap,
@@ -26,6 +32,7 @@ import {
 
 export type KeywordFaq = { question: string; answer: string };
 export type KeywordHighlight = { icon: LucideIcon; title: string; description: string };
+export type KeywordSection = { heading: string; paragraphs: string[] };
 
 export type KeywordPage = {
   slug: string;
@@ -40,6 +47,12 @@ export type KeywordPage = {
   highlights: KeywordHighlight[];
   useCases: string[];
   faqs: KeywordFaq[];
+  /** Fields delivered in each record — rendered as a "What's included" checklist. */
+  dataFields?: string[];
+  /** Long-form H2 sections for topical depth. */
+  sections?: KeywordSection[];
+  /** Hand-picked related slugs; falls back to the first few pages when omitted. */
+  related?: string[];
 };
 
 export const keywordPages: KeywordPage[] = [
@@ -1089,6 +1102,650 @@ export const keywordPages: KeywordPage[] = [
       },
     ],
   },
+  {
+    slug: "mobile-number-database-india",
+    keyword: "mobile number database India",
+    title: "Mobile Number Database India | Free Sample",
+    metaDescription:
+      "Buy a verified mobile number database for India — business owner & decision-maker numbers by city, pincode and industry. DND-scrubbed Excel/CSV, from ₹2,999.",
+    eyebrow: "Mobile Number Database India",
+    h1: "Mobile Number Database India — Verified Business Owner & Decision-Maker Numbers",
+    answer:
+      "A mobile number database is a list of verified mobile numbers for business owners and decision-makers, tagged with company name, industry and city, that sales teams use for calling, WhatsApp and SMS outreach. IndiaB2BData.com's mobile number database covers 700+ Indian cities and 500+ industries. Every list is DND-scrubbed, deduplicated and delivered as an Excel/CSV file, with packages starting at ₹2,999.",
+    intro: [
+      "For most Indian sales teams, the phone is still the fastest way to close a deal. Business owners answer calls and read WhatsApp far more reliably than they open cold emails. A good calling list can turn one telecaller into a steady source of meetings, but only if the numbers on it are real.",
+      "That's where most purchased lists fail. Numbers are switched off, belong to the wrong person, are repeated three times, or sit on the DND registry. Your team burns half the day dialling dead numbers, and your cost per lead quietly doubles.",
+      "Our mobile number database is built from business-linked records, not random consumer dumps. Every number is tied to a company, an industry and a city, then deduplicated, checked for activity and scrubbed against DND/NDNC before it reaches you. You get a list your callers can actually work through, and you can check 15–20 free sample records before paying anything.",
+    ],
+    highlights: [
+      { icon: Smartphone, title: "Business-Linked Numbers", description: "Every number mapped to a company, industry and city." },
+      { icon: ShieldCheck, title: "DND-Scrubbed", description: "Checked against DND/NDNC registries before delivery." },
+      { icon: Filter, title: "City, Pincode & Industry Filters", description: "Build a list for exactly the market you sell to." },
+      { icon: RefreshCcw, title: "Refreshed Monthly", description: "Inactive and switched-off numbers removed on a regular cycle." },
+    ],
+    dataFields: [
+      "Contact person / business owner name",
+      "Mobile number (10-digit, DND-scrubbed)",
+      "Company or business name",
+      "Industry and business category",
+      "City, state and pincode",
+      "Business address and email, where available",
+    ],
+    sections: [
+      {
+        heading: "How to Choose a Mobile Number Database That Actually Works",
+        paragraphs: [
+          "Before you buy any mobile number list, ask for a sample and call 20 numbers yourself. If more than a few are switched off, wrong or unrelated to the business named, the full list will be worse. A trustworthy provider will always give you a sample first.",
+          "Next, check how the data is segmented. A list labelled \"all India business numbers\" is almost useless for a focused campaign. You want to filter by city or pincode, by industry, and ideally by business size, so every call goes to someone who could actually buy from you.",
+          "Finally, ask about freshness and compliance. Numbers change hands, businesses close and owners switch SIMs. A database that is refreshed monthly and scrubbed against DND/NDNC will give you far better connect rates and keep your brand on the right side of TRAI's rules.",
+        ],
+      },
+      {
+        heading: "Getting the Best Results From Your Calling List",
+        paragraphs: [
+          "Call during business hours, usually 10 AM to 1 PM and 3 PM to 6 PM, and keep your opening to one line that explains why you're calling. Business owners in India respond better to a clear offer than to a long pitch.",
+          "Combine channels. A short WhatsApp message after a missed call, or a follow-up SMS with your website link, often turns a cold number into a warm conversation. Because our numbers are business-linked, the same list works for calling, WhatsApp and SMS.",
+          "Track outcomes in a simple sheet or CRM: connected, not interested, call back, meeting booked. After the first few hundred calls you'll know which cities and industries respond best, and you can order your next list with sharper filters.",
+        ],
+      },
+    ],
+    useCases: [
+      "Telesales and cold-calling campaigns",
+      "WhatsApp Business and bulk SMS outreach",
+      "Loading prospects into auto-dialers and CRMs",
+      "Local lead generation for a single city or pincode",
+      "Real estate, insurance and loan sales teams",
+      "Franchise, dealership and channel partner recruitment",
+    ],
+    faqs: [
+      {
+        question: "What is a mobile number database?",
+        answer:
+          "It is a verified list of mobile numbers for business owners and decision-makers, usually with company name, industry and city, that sales teams use for calling, WhatsApp and SMS campaigns.",
+      },
+      {
+        question: "How much does a mobile number database cost in India?",
+        answer:
+          "Our Starter package is ₹2,999 for up to 5,000 records in one city or district. The Business package is ₹8,999 for up to 25,000 records across 5 cities or states. Pan-India lists are custom-quoted.",
+      },
+      {
+        question: "Are the mobile numbers DND-scrubbed?",
+        answer: "Yes. Every list is checked against DND/NDNC registries before delivery to help keep your outreach compliant.",
+      },
+      {
+        question: "Can I get mobile numbers for one city, pincode or industry only?",
+        answer:
+          "Yes. You can filter by city, state, pincode or industry, or combine them, for example real estate agents in Pune or restaurant owners in South Delhi.",
+      },
+      {
+        question: "Is buying a business mobile number database legal in India?",
+        answer:
+          "Using business contact data for B2B outreach is common practice. Stay compliant by using DND-scrubbed lists, calling during reasonable hours, honouring opt-out requests and registering on DLT before sending commercial SMS.",
+      },
+      {
+        question: "How is the mobile number data delivered?",
+        answer: "As an Excel (.xlsx) or CSV file sent over email or WhatsApp, usually within 2–6 working hours, ready to import into your dialer or CRM.",
+      },
+      {
+        question: "Can I see sample numbers before I buy?",
+        answer: "Yes. Every enquiry includes 15–20 free sample records so you can call them yourself and judge the quality.",
+      },
+    ],
+    related: [
+      "whatsapp-number-database-india",
+      "bulk-sms-database-india",
+      "business-leads-india",
+      "company-contact-database-india",
+      "city-wise-company-database-india",
+      "b2b-database-india",
+    ],
+  },
+  {
+    slug: "email-database-india",
+    keyword: "email database India",
+    title: "Email Database India | Verified B2B Emails",
+    metaDescription:
+      "Verified business email database for India — company & decision-maker emails by industry and city. Deliverability-checked lists for B2B email marketing, from ₹2,999.",
+    eyebrow: "Email Database India",
+    h1: "Email Database India — Verified Business Email Lists for B2B Marketing",
+    answer:
+      "An email database is a list of verified business email addresses, such as company, founder and decision-maker emails, used for B2B email marketing and cold outreach. IndiaB2BData.com's email database for India is segmented by industry and city, checked for deliverability before delivery, and supplied as an Excel/CSV file ready for any email tool.",
+    intro: [
+      "Email is still the cheapest way to reach thousands of businesses at once. One well-written campaign can go to 10,000 prospects for less than the cost of a single day of field sales. That's why almost every B2B company in India, from SaaS startups to industrial suppliers, runs email outreach.",
+      "The problem is list quality. A list full of dead addresses and spam traps drives up your bounce rate, and once your sender reputation drops, even your good emails start landing in spam. Many cheap email lists sold online are scraped free-mail dumps that do exactly this.",
+      "Our email database is built around business and corporate addresses, tied to a real company, industry and city. Lists are deduplicated and checked for deliverability before delivery, so your campaigns reach inboxes instead of bouncing. You can review free sample records before you order.",
+    ],
+    highlights: [
+      { icon: Mail, title: "Business Email Addresses", description: "Company and decision-maker emails, not random free-mail lists." },
+      { icon: BadgeCheck, title: "Deliverability-Checked", description: "Invalid and dead addresses removed to protect your sender reputation." },
+      { icon: Network, title: "500+ Industry Segments", description: "Separate lists for every major industry." },
+      { icon: MapPinned, title: "City & State Filters", description: "Target one city or run a pan-India campaign." },
+    ],
+    dataFields: [
+      "Business email address (deliverability-checked)",
+      "Contact person name and designation, where available",
+      "Company name and website",
+      "Industry and business category",
+      "City, state and pincode",
+      "Mobile number, where available",
+    ],
+    sections: [
+      {
+        heading: "How to Get High Deliverability From a B2B Email List",
+        paragraphs: [
+          "Never send cold email from your main company domain. Set up a separate sending domain, configure SPF, DKIM and DMARC records, and warm it up gradually for two to three weeks before sending larger volumes.",
+          "Start small. Send to a few hundred contacts a day, watch your bounce and spam-complaint rates, and increase volume only when the numbers look healthy. Sending 10,000 emails on day one from a new domain is the fastest way to get blacklisted.",
+          "Keep your emails short, personal and relevant to the industry you picked. Always include a clear unsubscribe link and remove anyone who opts out. That protects your reputation and keeps you within anti-spam norms.",
+        ],
+      },
+      {
+        heading: "Email Database vs Mobile Database: Which One Do You Need?",
+        paragraphs: [
+          "Email works best when you want scale and low cost: newsletters, product launches, webinar invites and long nurture sequences. It's also the better channel for IT, SaaS, consulting and corporate buyers who live in their inbox.",
+          "Mobile and WhatsApp work better for SMEs, traders, retailers and local businesses, where the owner decides quickly and rarely checks email. Many of our customers buy both and run a combined sequence: email first, then a call or WhatsApp to the people who opened.",
+        ],
+      },
+    ],
+    useCases: [
+      "B2B email marketing and newsletter campaigns",
+      "Cold email outreach sequences for sales teams",
+      "Event, webinar and product launch invitations",
+      "Building custom audiences for LinkedIn and ad platforms",
+      "SaaS and IT companies prospecting SMEs",
+      "Agencies running outreach for their clients",
+    ],
+    faqs: [
+      {
+        question: "What kind of emails are in the database?",
+        answer: "Business and corporate email addresses, such as company, founder, owner and department emails, along with company name, industry and city.",
+      },
+      {
+        question: "How much does an email database cost?",
+        answer:
+          "Packages start at ₹2,999 for up to 5,000 records in one city. The Business package is ₹8,999 for up to 25,000 records across 5 cities or states with industry filters. Pan-India lists are custom-quoted.",
+      },
+      {
+        question: "Will the emails bounce?",
+        answer:
+          "Lists are checked for deliverability before delivery to remove invalid addresses. No list is 100% bounce-free, but a verified list keeps bounce rates low.",
+      },
+      {
+        question: "Can I use this for cold email campaigns?",
+        answer:
+          "Yes. Most customers use it for B2B cold email and newsletters. Send from a warmed-up domain, keep volumes gradual and always include an unsubscribe option.",
+      },
+      {
+        question: "Which email tools can I use with this data?",
+        answer: "Any tool that accepts CSV uploads, including Mailchimp, Brevo, Zoho Campaigns, Instantly, Lemlist and most CRMs.",
+      },
+      {
+        question: "Can I get only emails for one industry or city?",
+        answer: "Yes. Tell us the industry, city or company size you need and we'll build a matching email list.",
+      },
+      {
+        question: "Is a free sample available?",
+        answer: "Yes. Every enquiry includes 15–20 free sample records so you can check quality before ordering.",
+      },
+    ],
+    related: [
+      "mobile-number-database-india",
+      "company-contact-database-india",
+      "b2b-leads-database-india",
+      "corporate-database-india",
+      "service-providers-database-india",
+      "b2b-database-india",
+    ],
+  },
+  {
+    slug: "whatsapp-number-database-india",
+    keyword: "WhatsApp number database India",
+    title: "WhatsApp Number Database India | B2B Data",
+    metaDescription:
+      "Verified WhatsApp number database for Indian businesses — WhatsApp-active owner & decision-maker numbers by city and industry. Ready for WhatsApp API campaigns.",
+    eyebrow: "WhatsApp Number Database India",
+    h1: "WhatsApp Number Database India — Reach Businesses Where They Actually Reply",
+    answer:
+      "A WhatsApp number database is a list of business mobile numbers that are active on WhatsApp, filtered by city and industry, used for WhatsApp Business and WhatsApp API campaigns. IndiaB2BData.com supplies WhatsApp-active business owner and decision-maker numbers across 700+ Indian cities, delivered in a format you can upload straight to WhatsApp API platforms.",
+    intro: [
+      "In India, WhatsApp is where business actually happens. Owners who ignore calls from unknown numbers still read their WhatsApp, often within minutes. That's why more sales and marketing teams now open conversations on WhatsApp instead of on a cold call.",
+      "But WhatsApp campaigns only work if the numbers are actually on WhatsApp. Send to a general mobile list and a large share of your messages simply won't deliver, which wastes API credits and makes your campaign reports misleading.",
+      "Our WhatsApp number database focuses on business numbers that are active on WhatsApp, segmented by industry and city. You get fewer undelivered messages, cleaner reports and more replies from the owners and decision-makers you actually want to reach.",
+    ],
+    highlights: [
+      { icon: MessageSquare, title: "WhatsApp-Active Numbers", description: "Business numbers active on WhatsApp." },
+      { icon: Target, title: "Targeted Segments", description: "Filter by industry, city and business type." },
+      { icon: ShieldCheck, title: "Deduplicated & Clean", description: "No duplicate or malformed numbers in your list." },
+      { icon: Zap, title: "Campaign-Ready Format", description: "Numbers in country-code format, ready for WhatsApp API tools." },
+    ],
+    dataFields: [
+      "WhatsApp-active mobile number (with +91 country code)",
+      "Contact person / business owner name",
+      "Company or business name",
+      "Industry and business category",
+      "City, state and pincode",
+      "Email address, where available",
+    ],
+    sections: [
+      {
+        heading: "How to Run WhatsApp Campaigns Without Getting Banned",
+        paragraphs: [
+          "Don't blast hundreds of messages from a regular WhatsApp or WhatsApp Business app. Meta detects bulk sending from personal accounts and bans numbers quickly. For campaigns, use the official WhatsApp Business API through an approved provider.",
+          "With the API, marketing messages go out as pre-approved templates. Keep them short, lead with a clear benefit, and add a quick-reply button so it takes one tap to respond. Messages with images or a catalogue link usually get better engagement than plain text.",
+          "Watch your quality rating inside the API dashboard. If many recipients block or report your messages, Meta lowers your sending limits. Well-targeted lists, relevant offers and an easy opt-out keep your rating high.",
+        ],
+      },
+      {
+        heading: "WhatsApp vs SMS vs Calling: When to Use Each",
+        paragraphs: [
+          "WhatsApp is best for rich content, such as catalogues, brochures, videos and price lists, and for two-way conversations. It feels personal and gets high read rates from SME owners.",
+          "SMS reaches every phone, including ones without WhatsApp, and is ideal for short offers and reminders. Calling is still the fastest way to qualify a lead and close a deal. The strongest campaigns use all three: WhatsApp to introduce, a call to qualify, and SMS for reminders.",
+        ],
+      },
+    ],
+    useCases: [
+      "WhatsApp Business API marketing campaigns",
+      "Sending catalogues, offers and price lists",
+      "Following up on cold calls over WhatsApp",
+      "Promoting events, webinars and local launches",
+      "Dealer and retailer engagement for brands",
+      "Re-engaging old leads with a new offer",
+    ],
+    faqs: [
+      {
+        question: "Are all numbers active on WhatsApp?",
+        answer: "The database focuses on business numbers that are active on WhatsApp, which keeps undelivered messages low compared with a general mobile list.",
+      },
+      {
+        question: "How much does WhatsApp number data cost?",
+        answer:
+          "Packages start at ₹2,999 for up to 5,000 records in one city, and ₹8,999 for up to 25,000 records across 5 cities or states. Larger or pan-India lists are custom-quoted.",
+      },
+      {
+        question: "Can I use this data with the WhatsApp Business API?",
+        answer:
+          "Yes. Numbers are delivered with the +91 country code in a clean CSV you can upload to WhatsApp API platforms. Follow Meta's messaging and opt-in policies when you run campaigns.",
+      },
+      {
+        question: "Can I send bulk messages from my normal WhatsApp?",
+        answer:
+          "We don't recommend it. Bulk sending from a personal or WhatsApp Business app account often gets the number banned. Use the official WhatsApp Business API for campaigns.",
+      },
+      {
+        question: "Can I target one city or industry on WhatsApp?",
+        answer: "Yes. WhatsApp number lists can be filtered by city, state, pincode and industry, the same as our other databases.",
+      },
+      {
+        question: "Is there a free sample?",
+        answer: "Yes. Every enquiry includes 15–20 free sample records so you can check quality before you order.",
+      },
+    ],
+    related: [
+      "mobile-number-database-india",
+      "bulk-sms-database-india",
+      "dealers-distributors-database-india",
+      "business-leads-india",
+      "email-database-india",
+      "b2b-database-india",
+    ],
+  },
+  {
+    slug: "bulk-sms-database-india",
+    keyword: "bulk SMS database India",
+    title: "Bulk SMS Database India | DND-Free Numbers",
+    metaDescription:
+      "Verified bulk SMS database for India — DND-scrubbed business mobile numbers by city, pincode and industry, ready for DLT-compliant SMS campaigns. From ₹2,999.",
+    eyebrow: "Bulk SMS Database India",
+    h1: "Bulk SMS Database India — DND-Scrubbed Numbers for SMS Campaigns",
+    answer:
+      "A bulk SMS database is a large, verified list of mobile numbers used to send promotional or transactional SMS campaigns. In India the list should be DND-scrubbed and the messages sent through a DLT-registered sender ID with approved templates. IndiaB2BData.com supplies DND-scrubbed business numbers by city, pincode and industry, ready to upload into any bulk SMS panel.",
+    intro: [
+      "Bulk SMS still gets some of the highest open rates of any channel in India. Almost every SMS is read, usually within minutes, and it reaches every phone, including basic handsets without internet or WhatsApp.",
+      "The catch is that TRAI's rules are strict. Promotional SMS to DND numbers gets blocked, every message must use a DLT-registered header and template, and sending to a bad list simply wastes credits on numbers that will never receive your message.",
+      "Our bulk SMS database is DND-scrubbed before delivery and segmented by city, pincode and industry. You pay only for numbers that can actually receive your message, and your campaign reaches a relevant local audience instead of a random one.",
+    ],
+    highlights: [
+      { icon: ShieldCheck, title: "DND/NDNC Scrubbed", description: "Numbers checked against DND registries before delivery." },
+      { icon: Smartphone, title: "Active Mobile Numbers", description: "Inactive and invalid numbers removed." },
+      { icon: MapPinned, title: "Local Targeting", description: "Filter by city, state or pincode." },
+      { icon: TrendingUp, title: "Better Credit Usage", description: "Fewer failed deliveries means less wasted SMS credit." },
+    ],
+    dataFields: [
+      "10-digit mobile number (DND-scrubbed)",
+      "Contact person / business owner name",
+      "Company or business name",
+      "Industry and business category",
+      "City, state and pincode",
+    ],
+    sections: [
+      {
+        heading: "How Bulk SMS Works in India: DLT, Headers and Templates",
+        paragraphs: [
+          "Since TRAI's TCCCPR regulations, every business that sends commercial SMS must register on a DLT (Distributed Ledger Technology) platform run by telecom operators such as Jio, Airtel or Vi. Registration covers your business entity, your sender IDs (headers) and your message templates.",
+          "Promotional messages can only go to non-DND numbers and only between 10 AM and 9 PM. Transactional and service messages have different rules. Your bulk SMS provider usually helps you register and map approved templates to your account.",
+          "Once you're registered, upload our CSV to your SMS panel, pick an approved template and send. Because the list is already DND-scrubbed, far fewer messages get rejected at the operator level.",
+        ],
+      },
+      {
+        heading: "Tips to Get More Responses From SMS Campaigns",
+        paragraphs: [
+          "Keep it under 160 characters, lead with the offer and include one clear action, such as a call-back number, a short link or a WhatsApp link. Mention the city or area where relevant, since local messages consistently perform better.",
+          "Send during business hours on weekdays, test two versions of your message on small batches, and scale the one that gets more responses. Pair SMS with a WhatsApp or calling follow-up for the people who click or reply.",
+        ],
+      },
+    ],
+    useCases: [
+      "Promotional SMS offers and sale announcements",
+      "Local store, clinic and showroom promotions",
+      "Event, exhibition and open-house invitations",
+      "Lead generation SMS with a call-back or link",
+      "Real estate project launches in a target area",
+      "Education and coaching admission campaigns",
+    ],
+    faqs: [
+      {
+        question: "Is the bulk SMS data DND-free?",
+        answer: "Yes. Numbers are scrubbed against DND/NDNC registries before delivery. Rescrub if you store the data for a long time before sending.",
+      },
+      {
+        question: "How much does a bulk SMS database cost?",
+        answer:
+          "Packages start at ₹2,999 for up to 5,000 numbers in one city or district, and ₹8,999 for up to 25,000 numbers across 5 cities or states. Pan-India lists are custom-quoted.",
+      },
+      {
+        question: "Do I need DLT registration to send bulk SMS?",
+        answer:
+          "Yes. In India, commercial SMS must be sent through a DLT-registered sender ID and approved templates, usually set up with help from your SMS provider.",
+      },
+      {
+        question: "What time can I send promotional SMS?",
+        answer: "Promotional SMS can only be sent to non-DND numbers between 10 AM and 9 PM, as per TRAI rules.",
+      },
+      {
+        question: "Can I get numbers for a specific area only?",
+        answer: "Yes. Lists can be filtered by city, state, pincode and industry.",
+      },
+      {
+        question: "What format is the SMS data in?",
+        answer: "An Excel (.xlsx) or CSV file that can be uploaded straight into most bulk SMS panels.",
+      },
+    ],
+    related: [
+      "mobile-number-database-india",
+      "whatsapp-number-database-india",
+      "city-wise-company-database-india",
+      "business-leads-india",
+      "state-wise-company-database-india",
+      "b2b-database-india",
+    ],
+  },
+  {
+    slug: "doctors-database-india",
+    keyword: "doctors database India",
+    title: "Doctors Database India | Clinics & Hospitals",
+    metaDescription:
+      "Verified doctors database for India — specialists, clinics and hospitals by speciality and city. Built for pharma, medical device & healthcare marketing. Free sample.",
+    eyebrow: "Doctors Database India",
+    h1: "Doctors Database India — Specialists, Clinics & Hospitals by City",
+    answer:
+      "A doctors database is a list of medical practitioners, clinics and hospitals, filtered by speciality and city, used by pharma companies, medical device makers, diagnostic labs and health-tech firms. IndiaB2BData.com's doctors database covers general physicians, specialists, dental and other clinics, and hospitals across India, with filters for speciality, practice type and city.",
+    intro: [
+      "Healthcare is one of the hardest markets to prospect. Pharma reps, device sellers, lab chains and health-tech startups all need to reach doctors, but practitioners are busy and scattered across lakhs of clinics, nursing homes and hospitals.",
+      "Without a proper list, field teams depend on cold visits, old contacts and word of mouth. Territories stay under-covered, new reps take months to ramp up, and product launches reach only the doctors a team already knows.",
+      "Our doctors database is segmented by speciality, practice type and city. You can reach cardiologists in Chennai, dental clinics in Jaipur or multi-speciality hospitals across Maharashtra without building a list from scratch, and plan every territory with real data.",
+    ],
+    highlights: [
+      { icon: Stethoscope, title: "Speciality-Wise Lists", description: "General physicians, specialists, dentists and more." },
+      { icon: Building2, title: "Clinics & Hospitals", description: "Practice and institution-level contacts." },
+      { icon: MapPinned, title: "City-Level Coverage", description: "Filter doctors by city, state or region." },
+      { icon: ShieldCheck, title: "Verified Records", description: "Checked and deduplicated before delivery." },
+    ],
+    dataFields: [
+      "Doctor name and qualification, where available",
+      "Speciality (e.g. cardiology, dentistry, paediatrics)",
+      "Clinic or hospital name",
+      "Contact number",
+      "Email address, where available",
+      "Practice address, city, state and pincode",
+    ],
+    sections: [
+      {
+        heading: "Specialities and Practice Types Covered",
+        paragraphs: [
+          "The database covers general physicians and a wide range of specialists, including cardiologists, orthopaedic surgeons, gynaecologists, paediatricians, dermatologists, ENT specialists, ophthalmologists, psychiatrists, diabetologists and dentists.",
+          "You can also filter by practice type: individual clinics, polyclinics, nursing homes, multi-speciality hospitals and diagnostic centres. Combine speciality, practice type and city to match your product and your field team's territory.",
+        ],
+      },
+      {
+        heading: "How Pharma and Medical Device Teams Use Doctor Data",
+        paragraphs: [
+          "Pharma companies use speciality-wise lists to plan rep territories, prioritise high-potential prescribers and support new product launches. Device and equipment companies use hospital and clinic lists to find buyers for diagnostic machines, surgical instruments and consumables.",
+          "Doctors are busy, so outreach needs to be respectful and relevant. Keep messages short, share clinically useful information rather than hard sales pitches, and honour any request to stop contacting them.",
+        ],
+      },
+    ],
+    useCases: [
+      "Pharma and medical rep territory planning",
+      "Medical device and equipment sales outreach",
+      "Health-tech, lab and diagnostics partnerships",
+      "CME, conference and medical event invitations",
+      "Hospital supplies and consumables distribution",
+      "Healthcare software and clinic management tools",
+    ],
+    faqs: [
+      {
+        question: "Which types of doctors are covered?",
+        answer: "General physicians and specialists such as cardiologists, dentists, orthopaedic surgeons, paediatricians, gynaecologists and dermatologists, plus clinics, nursing homes and hospitals.",
+      },
+      {
+        question: "Can I filter doctors by speciality and city?",
+        answer: "Yes. Combine speciality, practice type and city to build a list for your exact territory.",
+      },
+      {
+        question: "How much does a doctors database cost?",
+        answer:
+          "Packages start at ₹2,999 for up to 5,000 records in one city, and ₹8,999 for up to 25,000 records across 5 cities or states. Pan-India or multi-speciality lists are custom-quoted.",
+      },
+      {
+        question: "Does the database include hospitals as well as individual doctors?",
+        answer: "Yes. It covers individual practitioners as well as clinics, nursing homes, multi-speciality hospitals and diagnostic centres.",
+      },
+      {
+        question: "Who usually buys a doctors database?",
+        answer: "Pharma companies, medical device makers, diagnostic labs, health-tech startups, hospital suppliers and healthcare event organisers.",
+      },
+      {
+        question: "Can I see sample records first?",
+        answer: "Yes. Every enquiry includes 15–20 free sample records before you commit to a package.",
+      },
+    ],
+    related: [
+      "industry-wise-company-database-india",
+      "service-providers-database-india",
+      "city-wise-company-database-india",
+      "email-database-india",
+      "mobile-number-database-india",
+      "b2b-database-india",
+    ],
+  },
+  {
+    slug: "importers-exporters-database-india",
+    keyword: "importers and exporters database India",
+    title: "Importers & Exporters Database India | IEC",
+    metaDescription:
+      "Verified importers and exporters database for India — IEC-holding companies by product, port and city. For freight forwarders, CHA agents and trade services.",
+    eyebrow: "Importers & Exporters Database",
+    h1: "Importers & Exporters Database India — Reach Active Trading Companies",
+    answer:
+      "An importers and exporters database is a list of Indian companies engaged in international trade, typically holding an Import Export Code (IEC) from DGFT, filtered by product category, trade direction and city. It is used by freight forwarders, customs brokers, logistics firms, packaging suppliers and trade-finance providers. IndiaB2BData.com supplies verified importer and exporter contacts across India's major trade hubs.",
+    intro: [
+      "Every company that moves goods across borders needs freight, customs clearance, packaging, warehousing, insurance and trade finance. That makes importers and exporters one of the most valuable B2B segments in India, with repeat, high-value business for anyone who serves them.",
+      "They're also hard to find with a general business list. A \"manufacturing company\" may never have shipped abroad, while a small trading firm in Surat might export every week. Without trade-specific data, sales teams waste time on businesses that will never need their service.",
+      "Our importers and exporters database focuses on trading companies, segmented by product category, trade direction and city. Your team talks only to businesses that actually ship goods, whether you sell freight, compliance, finance or packaging.",
+    ],
+    highlights: [
+      { icon: Globe, title: "Active Trading Companies", description: "Businesses engaged in import and export activity." },
+      { icon: FileText, title: "IEC-Linked Records", description: "Companies holding an Import Export Code." },
+      { icon: Network, title: "By Product Category", description: "Filter by the goods a company trades in." },
+      { icon: MapPinned, title: "Port & City Coverage", description: "Mumbai, Chennai, Mundra, Kolkata, Delhi NCR and more." },
+    ],
+    dataFields: [
+      "Company name and IEC-linked details, where available",
+      "Contact person name and designation",
+      "Mobile number and email address",
+      "Product category / HS code group traded",
+      "Trade direction: importer, exporter or both",
+      "Company address, city, state and pincode",
+    ],
+    sections: [
+      {
+        heading: "Who Counts as an Importer or Exporter in India?",
+        paragraphs: [
+          "Any Indian business that imports or exports goods needs an Import Export Code (IEC), a 10-digit number issued by the Directorate General of Foreign Trade (DGFT). The IEC is linked to the company's PAN and is required for customs clearance, shipping and foreign exchange transactions.",
+          "IEC holders range from large manufacturers and merchant exporters to small trading firms, e-commerce sellers shipping abroad and service companies importing equipment. Our database lets you filter this wide group down to the product categories and trade hubs that matter to you.",
+        ],
+      },
+      {
+        heading: "How Logistics and Trade Service Companies Use This Data",
+        paragraphs: [
+          "Freight forwarders and shipping lines use exporter lists to find new shippers on their strongest trade lanes. Customs brokers and CHA agents target importers near the ports and ICDs they operate from, such as JNPT, Mundra, Chennai, Kolkata and Tughlakabad.",
+          "Trade finance, forex, cargo insurance and export consulting firms use the same data to reach businesses at the moment they need working capital or compliance help. Packaging, warehousing and 3PL providers target exporters by product category.",
+        ],
+      },
+    ],
+    useCases: [
+      "Freight forwarders and shipping lines finding new shippers",
+      "Customs brokers and CHA agents building a client base",
+      "Trade finance, forex and cargo insurance outreach",
+      "Packaging, warehousing and 3PL service sales",
+      "Export consultants and DGFT/compliance advisors",
+      "Overseas buyers sourcing Indian suppliers",
+    ],
+    faqs: [
+      {
+        question: "What is an IEC code?",
+        answer: "An Import Export Code is a 10-digit number issued by DGFT that Indian businesses need to import or export goods. Our database focuses on IEC-holding companies.",
+      },
+      {
+        question: "Can I get only exporters or only importers?",
+        answer: "Yes. Lists can be filtered by trade direction, as well as by product category and city.",
+      },
+      {
+        question: "Can I filter by product or HS code?",
+        answer: "Yes. Tell us the product category or HS code group you're targeting, such as textiles, engineering goods, chemicals or agri products, and we'll build a matching list.",
+      },
+      {
+        question: "How much does an importers and exporters database cost?",
+        answer:
+          "Packages start at ₹2,999 for up to 5,000 records in one city, and ₹8,999 for up to 25,000 records across 5 cities or states. Pan-India or product-specific lists are custom-quoted.",
+      },
+      {
+        question: "Who uses an importers and exporters database?",
+        answer: "Freight forwarders, customs brokers, logistics companies, trade-finance providers, packaging suppliers and export promotion consultants.",
+      },
+      {
+        question: "Is a free sample available?",
+        answer: "Yes. Every enquiry includes 15–20 free sample records so you can check quality first.",
+      },
+    ],
+    related: [
+      "manufacturer-database-india",
+      "dealers-distributors-database-india",
+      "gst-database-india",
+      "industry-wise-company-database-india",
+      "mca-company-database-india",
+      "b2b-database-india",
+    ],
+  },
+  {
+    slug: "dealers-distributors-database-india",
+    keyword: "dealers and distributors database India",
+    title: "Dealers & Distributors Database India",
+    metaDescription:
+      "Verified dealers and distributors database for India — wholesalers, stockists and traders by product category, city and district. Expand your channel network faster.",
+    eyebrow: "Dealers & Distributors Database",
+    h1: "Dealers & Distributors Database India — Build Your Channel Network Faster",
+    answer:
+      "A dealers and distributors database is a list of wholesalers, stockists, dealers and traders, filtered by product category, city and district. Brands and manufacturers use it to appoint new channel partners and enter new markets. IndiaB2BData.com's dealers and distributors database covers trading businesses across 700+ Indian cities, including tier-2 and tier-3 towns.",
+    intro: [
+      "Most Indian brands grow through distribution. Whether you make FMCG products, electricals, paints, pharma, building materials or auto parts, you can't open a new city until you find the right distributor there and the dealers who will stock your product.",
+      "Doing that the traditional way, by asking around in the market, visiting wholesale lanes and relying on referrals, can take months per city. Meanwhile, competitors who already have partners in place take the shelf space.",
+      "Our dealers and distributors database lists wholesalers, stockists, super-stockists, dealers and traders by product category and location. Your channel sales team can shortlist, call and sign partners in weeks instead of months, city after city.",
+    ],
+    highlights: [
+      { icon: Truck, title: "Wholesalers & Stockists", description: "Distributors, super-stockists, dealers and traders." },
+      { icon: Network, title: "By Product Category", description: "FMCG, electricals, pharma, hardware, auto parts and more." },
+      { icon: MapPinned, title: "City & District Coverage", description: "Find partners in tier-2 and tier-3 markets too." },
+      { icon: UserCheck, title: "Owner Contacts", description: "Reach the person who decides on new brands." },
+    ],
+    dataFields: [
+      "Business / firm name",
+      "Owner or proprietor name",
+      "Mobile number",
+      "Product categories dealt in",
+      "Business type: distributor, dealer, wholesaler or retailer",
+      "Address, city, district, state and pincode",
+    ],
+    sections: [
+      {
+        heading: "How to Appoint Distributors Using a Database",
+        paragraphs: [
+          "Start with a clear partner profile: the product category they already handle, the area they cover, their approximate size and whether they have their own delivery network. Then request a list filtered to that category and your target cities or districts.",
+          "Call the list with a short pitch covering your brand, the margins you offer, the schemes and support you provide, and why the area is a good opportunity. Shortlist the interested firms, visit the top few in person, and check their existing brands, godown capacity and retailer reach before signing.",
+          "Once you've appointed a distributor, use a dealer or retailer list for the same area to help them activate outlets faster. Brands that support new distributors with leads usually see much quicker offtake.",
+        ],
+      },
+      {
+        heading: "Categories and Markets Covered",
+        paragraphs: [
+          "The database covers distributors and dealers across FMCG and groceries, electricals and lighting, paints and hardware, building materials, pharma and surgical, mobile and electronics accessories, auto parts, agri inputs, stationery and more.",
+          "Coverage goes well beyond the metros. Much of India's distribution growth is happening in tier-2 and tier-3 cities and district towns, and those markets are included, so you can plan state-wide or district-wise expansion.",
+        ],
+      },
+    ],
+    useCases: [
+      "Appointing distributors for a new city or state",
+      "Launching a new brand or product line into retail",
+      "Filling gaps in an existing dealer network",
+      "Selling B2B services to trading businesses",
+      "Recruiting retailers to support a new distributor",
+      "Mapping competitor distribution in a region",
+    ],
+    faqs: [
+      {
+        question: "What's the difference between a dealer and a distributor?",
+        answer: "A distributor usually buys in bulk from the brand and supplies retailers across an area. A dealer typically sells to end customers or smaller shops. Our database covers both.",
+      },
+      {
+        question: "Can I find distributors for a specific product category?",
+        answer: "Yes. Tell us the product category, such as FMCG, electricals or pharma, and the cities or districts you're targeting.",
+      },
+      {
+        question: "How much does a dealers and distributors database cost?",
+        answer:
+          "Packages start at ₹2,999 for up to 5,000 records in one city or district, and ₹8,999 for up to 25,000 records across 5 cities or states. State-wide or pan-India lists are custom-quoted.",
+      },
+      {
+        question: "Does it cover smaller towns?",
+        answer: "Yes. Coverage includes tier-2 and tier-3 cities and districts, where most new distribution expansion happens.",
+      },
+      {
+        question: "Can I get only wholesalers or only retailers?",
+        answer: "Yes. Lists can be filtered by business type: distributor, super-stockist, wholesaler, dealer or retailer.",
+      },
+      {
+        question: "Can I get a free sample?",
+        answer: "Yes. Every enquiry includes 15–20 free sample records before you place an order.",
+      },
+    ],
+    related: [
+      "manufacturer-database-india",
+      "importers-exporters-database-india",
+      "state-wise-company-database-india",
+      "whatsapp-number-database-india",
+      "business-directory-india",
+      "b2b-database-india",
+    ],
+  },
 ];
 
 export function getKeywordPage(slug: string): KeywordPage | undefined {
@@ -1096,5 +1753,11 @@ export function getKeywordPage(slug: string): KeywordPage | undefined {
 }
 
 export function getOtherKeywordPages(slug: string, limit = 6): KeywordPage[] {
-  return keywordPages.filter((page) => page.slug !== slug).slice(0, limit);
+  const others = keywordPages.filter((page) => page.slug !== slug);
+  const related = getKeywordPage(slug)?.related ?? [];
+  const picked = related
+    .map((s) => others.find((page) => page.slug === s))
+    .filter((page): page is KeywordPage => Boolean(page));
+  const rest = others.filter((page) => !picked.includes(page));
+  return [...picked, ...rest].slice(0, limit);
 }

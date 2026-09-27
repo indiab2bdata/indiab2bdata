@@ -112,6 +112,39 @@ export default async function KeywordPage({ params }: { params: Params }) {
         ))}
       />
 
+      {page.dataFields && (
+        <section className="py-16 md:py-20">
+          <div className="max-w-4xl mx-auto px-5 md:px-8">
+            <Reveal className="mb-8">
+              <span className="text-teal text-xs font-semibold uppercase tracking-[0.16em]">Data Fields</span>
+              <h2 className="font-display font-extrabold text-2xl md:text-3xl text-navy mt-3 tracking-tight">
+                What Each Record Includes
+              </h2>
+            </Reveal>
+            <Checklist items={page.dataFields} />
+          </div>
+        </section>
+      )}
+
+      {page.sections && (
+        <section className="pb-12 md:pb-16 max-w-3xl mx-auto px-5 md:px-8 space-y-12">
+          {page.sections.map((section) => (
+            <Reveal key={section.heading}>
+              <h2 className="font-display font-extrabold text-2xl md:text-3xl text-navy tracking-tight">
+                {section.heading}
+              </h2>
+              <div className="mt-4 space-y-4">
+                {section.paragraphs.map((paragraph, i) => (
+                  <p key={i} className="text-muted leading-relaxed">
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
+            </Reveal>
+          ))}
+        </section>
+      )}
+
       <section className="bg-bgsoft py-16 md:py-20">
         <div className="max-w-4xl mx-auto px-5 md:px-8">
           <Reveal className="mb-8">
