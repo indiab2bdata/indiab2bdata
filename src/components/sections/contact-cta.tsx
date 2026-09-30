@@ -141,6 +141,23 @@ export function ContactCta({
                     />
                   </div>
 
+                  <div>
+                    <label
+                      htmlFor="contact-email"
+                      className="mb-1.5 block text-sm font-medium text-slate-700"
+                    >
+                      Email Address
+                    </label>
+
+                    <input
+                      id="contact-email"
+                      type="email"
+                      name="email"
+                      placeholder="Enter your email address"
+                      className={inputClass}
+                    />
+                  </div>
+
                   <button
                     type="submit"
                     disabled={status.state === "sending"}

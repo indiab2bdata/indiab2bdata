@@ -112,6 +112,59 @@ export default function ContactPage() {
         </div>
       </section>
 
+      <section className="bg-white py-4 md:py-8">
+        <div className="max-w-7xl mx-auto px-5 md:px-8 grid lg:grid-cols-[0.85fr_1.15fr] gap-8 items-start">
+          <div className="rounded-2xl border border-[#DCEAF3] bg-bgsoft p-6 shadow-sm">
+            <span className="text-teal text-xs font-semibold uppercase tracking-[0.16em]">
+              NAP Details
+            </span>
+            <h3 className="font-display font-extrabold text-2xl text-navy mt-3">
+              Talk to Our Sales Team
+            </h3>
+            <ul className="mt-5 space-y-4 text-sm text-muted">
+              <li className="flex items-start gap-3">
+                <Phone className="mt-0.5 h-4 w-4 text-teal shrink-0" strokeWidth={1.8} />
+                <span>
+                  <strong className="block text-navy">Phone</strong>
+                  {siteConfig.phoneDisplay}
+                </span>
+              </li>
+              <li className="flex items-start gap-3">
+                <Mail className="mt-0.5 h-4 w-4 text-teal shrink-0" strokeWidth={1.8} />
+                <span>
+                  <strong className="block text-navy">Email</strong>
+                  {siteConfig.email}
+                </span>
+              </li>
+              <li className="flex items-start gap-3">
+                <MapPin className="mt-0.5 h-4 w-4 text-teal shrink-0" strokeWidth={1.8} />
+                <span>
+                  <strong className="block text-navy">Office Address</strong>
+                  {siteConfig.address.display}
+                </span>
+              </li>
+            </ul>
+
+            <div className="mt-6 rounded-xl border border-[#DCEAF3] bg-white p-4">
+              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-teal">Response Time</p>
+              <p className="mt-2 text-sm text-muted leading-relaxed">
+                Most enquiries get a reply within 15–30 minutes on WhatsApp or email, and free sample data is usually shared within 2–6 working hours.
+              </p>
+            </div>
+          </div>
+
+          <div className="overflow-hidden rounded-2xl border border-[#DCEAF3] bg-white shadow-sm">
+            <iframe
+              title="IndiaB2BData.com office location"
+              src="https://www.google.com/maps?q=T-10%2C+Sai+Mandir+St%2C+Mamledarwadi%2C+Malad+West%2C+Mumbai%2C+Maharashtra&z=14&output=embed"
+              className="h-[420px] w-full border-0"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+          </div>
+        </div>
+      </section>
+
       <Faq
         id="contact-faq"
         eyebrow="FAQs"

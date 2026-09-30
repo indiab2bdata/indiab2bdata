@@ -7,9 +7,8 @@ const QUICK_LINKS = [
   { href: "/#offer", label: "Data Products" },
   { href: "/database", label: "Database by State" },
   { href: "/#why", label: "Why Us" },
-  { href: "/#pricing", label: "Pricing" },
   { href: "/blog", label: "Guides" },
-  { href: "/about-us", label: "About Us" },
+  { href: "/about", label: "About Us" },
   { href: "/contact", label: "Contact" },
 ];
 

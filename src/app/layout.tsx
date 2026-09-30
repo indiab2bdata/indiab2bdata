@@ -24,8 +24,18 @@ export const metadata: Metadata = {
     template: "%s | IndiaB2BData.com",
   },
   description: siteConfig.defaultDescription,
+  alternates: {
+    canonical: "/",
+    languages: {
+      "en-IN": "/",
+    },
+  },
   verification: {
     google: "l8QOpKqoC429_x9cCAOktejf255UdfNx7oXbHJnHYUk",
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
   other: {
     "geo.region": "IN",

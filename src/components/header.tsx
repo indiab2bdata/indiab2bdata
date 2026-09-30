@@ -10,7 +10,7 @@ import { useModal } from "@/components/modal-context";
 const NAV_LINKS = [
   { href: "/#offer", label: "Data Products" },
   { href: "/database", label: "Database by State" },
-  { href: "/#pricing", label: "Pricing" },
+  { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
 ];
 
