@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { databaseStates, getDatabaseState } from "@/lib/database-pages";
 import { keywordPages } from "@/lib/keyword-pages";
 import { siteConfig } from "@/lib/site-config";
+import { cities } from "@/components/city-pages/city-data.mjs";
 import { pageMetadata, breadcrumbJsonLd, webPageJsonLd, faqJsonLd, serviceJsonLd } from "@/lib/seo";
 import { JsonLd } from "@/components/json-ld";
 import { KeywordHero } from "@/components/keyword-hero";
@@ -49,6 +50,7 @@ export default async function DatabaseStatePage({ params }: { params: Params }) 
   const page = getDatabaseState(state);
   if (!page) notFound();
 
+  const cityPages = Object.values(cities).filter((city) => city.stateSlug === page.slug);
   const url = `${siteConfig.url}/database/${page.slug}`;
   const otherStates = databaseStates.filter((s) => s.slug !== page.slug).slice(0, 6);
   const relatedKeywordPages = keywordPages.filter((k) =>
@@ -148,6 +150,23 @@ export default async function DatabaseStatePage({ params }: { params: Params }) 
               </span>
             )}
           </div>
+          {cityPages.length > 0 && (
+            <div className="mt-8 border-t border-[#DCEAF3] pt-6">
+              <h3 className="font-display font-bold text-lg text-navy">Browse company databases by city</h3>
+              <div className="mt-3 flex flex-wrap gap-3">
+                {cityPages.map((city) => (
+                  <Link
+                    key={city.slug}
+                    href={`/database/${city.stateSlug}/${city.slug}`}
+                    className="inline-flex items-center gap-2 rounded-lg border border-[#DCEAF3] bg-white px-4 py-2 text-sm font-medium text-navy transition-colors hover:border-teal/50 hover:text-teal"
+                  >
+                    <MapPin className="h-4 w-4 text-teal" strokeWidth={2} />
+                    {city.city} company database
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </section>
 

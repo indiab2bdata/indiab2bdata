@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { siteConfig } from "@/lib/site-config";
 import { keywordPages } from "@/lib/keyword-pages";
 import { databaseStates } from "@/lib/database-pages";
+import { cities } from "@/components/city-pages/city-data.mjs";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
@@ -29,5 +30,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 1,
   }));
 
-  return [...staticRoutes, ...keywordRoutes, ...databaseRoutes];
+  const cityRoutes = Object.values(cities).map((city) => ({
+    url: `${siteConfig.url}/database/${city.stateSlug}/${city.slug}`,
+    lastModified,
+    changeFrequency: "monthly" as const,
+    priority: 1,
+  }));
+
+  return [...staticRoutes, ...keywordRoutes, ...databaseRoutes, ...cityRoutes];
 }
