@@ -7,7 +7,7 @@ import { ContactCta } from "@/components/sections/contact-cta";
 import { RelatedLinks } from "@/components/related-links";
 import { WhatsAppIcon } from "@/components/icons/whatsapp-icon";
 import { JsonLd } from "@/components/json-ld";
-import { keywordPages } from "@/lib/keyword-pages";
+import { getKeywordPagesBySlug } from "@/lib/keyword-pages";
 import { siteConfig } from "@/lib/site-config";
 import { DEFAULT_FAQS } from "@/lib/faq-data";
 import { pageMetadata, breadcrumbJsonLd, webPageJsonLd, faqJsonLd } from "@/lib/seo";
@@ -41,9 +41,7 @@ const webPageSchema = webPageJsonLd({
 
 const faqSchema = faqJsonLd(DEFAULT_FAQS);
 
-const relatedPages = keywordPages.filter((k) =>
-  ["b2b-database-india", "business-leads-india", "verified-business-database-india"].includes(k.slug)
-);
+const relatedPages = getKeywordPagesBySlug(["b2b-database-india", "company-database-india", "b2b-leads-database-india"]);
 
 const CONTACT_METHODS = [
   {

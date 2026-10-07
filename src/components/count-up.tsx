@@ -14,10 +14,13 @@ export function CountUp({
 }) {
   const ref = useRef<HTMLSpanElement>(null);
   const inView = useInView(ref, { once: true, margin: "-40px" });
-  const [display, setDisplay] = useState(0);
+  // Start at the final value so server-rendered HTML (and crawlers) see the real number;
+  // the count-up is a client-only enhancement.
+  const [display, setDisplay] = useState(value);
 
   useEffect(() => {
     if (!inView) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     const start = performance.now();
 
     let frame: number;

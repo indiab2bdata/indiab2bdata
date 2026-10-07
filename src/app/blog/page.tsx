@@ -4,7 +4,8 @@ import { RelatedLinks } from "@/components/related-links";
 import { InlineCta } from "@/components/inline-cta";
 import { ContactCta } from "@/components/sections/contact-cta";
 import { JsonLd } from "@/components/json-ld";
-import { keywordPages } from "@/lib/keyword-pages";
+import { getKeywordPagesBySlug } from "@/lib/keyword-pages";
+import { PopularCities } from "@/components/popular-cities";
 import { siteConfig } from "@/lib/site-config";
 import { pageMetadata, breadcrumbJsonLd, webPageJsonLd, itemListJsonLd } from "@/lib/seo";
 
@@ -38,23 +39,18 @@ const webPageSchema = webPageJsonLd({
 const GUIDE_SLUGS = [
   "gst-database-india",
   "mca-company-database-india",
-  "registered-companies-database-india",
   "newly-registered-companies-india",
-  "business-directory-india",
   "manufacturer-database-india",
-  "service-providers-database-india",
+  "industry-wise-company-database-india",
   "b2b-leads-database-india",
-  "verified-business-database-india",
+  "bulk-sms-database-india",
 ];
 
-const STATE_SLUGS = ["state-wise-company-database-india", "city-wise-company-database-india"];
-
 export default function BlogHubPage() {
-  const guides = keywordPages.filter((k) => GUIDE_SLUGS.includes(k.slug));
-  const stateGuides = keywordPages.filter((k) => STATE_SLUGS.includes(k.slug));
+  const guides = getKeywordPagesBySlug(GUIDE_SLUGS);
 
   const guideListSchema = itemListJsonLd(
-    [...guides, ...stateGuides].map((page) => ({ name: page.keyword, url: `${siteConfig.url}/${page.slug}` })),
+    guides.map((page) => ({ name: page.keyword, url: `${siteConfig.url}/${page.slug}` })),
     "Data & Compliance Guides"
   );
 
@@ -73,7 +69,7 @@ export default function BlogHubPage() {
 
       <InlineCta id="blog-guides-cta" text="Want data matched to a guide above? Tell us your exact requirement." />
 
-      <RelatedLinks pages={stateGuides} eyebrow="Coverage Guides" heading="State & City-Wise Coverage" />
+      <PopularCities eyebrow="Coverage Guides" heading="City-Wise Company Databases" />
 
       <ContactCta />
     </>

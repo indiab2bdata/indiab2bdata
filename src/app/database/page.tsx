@@ -8,7 +8,8 @@ import { InlineCta } from "@/components/inline-cta";
 import { ContactCta } from "@/components/sections/contact-cta";
 import { JsonLd } from "@/components/json-ld";
 import { databaseStates } from "@/lib/database-pages";
-import { keywordPages } from "@/lib/keyword-pages";
+import { getKeywordPagesBySlug } from "@/lib/keyword-pages";
+import { PopularCities } from "@/components/popular-cities";
 import { siteConfig } from "@/lib/site-config";
 import { pageMetadata, breadcrumbJsonLd, webPageJsonLd, itemListJsonLd } from "@/lib/seo";
 
@@ -46,9 +47,11 @@ const stateListSchema = itemListJsonLd(
 );
 
 export default function DatabaseHubPage() {
-  const relatedKeywordPages = keywordPages.filter((k) =>
-    ["state-wise-company-database-india", "city-wise-company-database-india", "b2b-database-india"].includes(k.slug)
-  );
+  const relatedKeywordPages = getKeywordPagesBySlug([
+    "b2b-database-india",
+    "company-database-india",
+    "industry-wise-company-database-india",
+  ]);
 
   return (
     <>
@@ -101,6 +104,8 @@ export default function DatabaseHubPage() {
           ))}
         </div>
       </section>
+
+      <PopularCities heading="Popular City Databases" />
 
       <InlineCta id="database-hub-cta" text="Don't see your state listed? We cover all of India — tell us what you need." buttonLabel="Talk to Our Team" />
 

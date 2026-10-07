@@ -44,7 +44,7 @@ export const cities = {
       ['Will every Noida record include a direct mobile number and email?', 'Field availability varies by record and segment. Review the sample for the actual phone and email fields available rather than assuming every row has both.'],
       ['How do I get the price and current record count?', 'Send your city, industry, preferred area and required fields. Ask for the matching count, sample, update information and quotation for that particular selection.']
     ],
-    related: [['Greater Noida company database', '/database/uttar-pradesh/greater-noida'], ['Uttar Pradesh business database', '/database/uttar-pradesh'], ['Manufacturer database India', '/manufacturer-database-india'], ['Company contact database India', '/company-contact-database-india']],
+    related: [['Greater Noida company database', '/database/uttar-pradesh/greater-noida'], ['Uttar Pradesh business database', '/database/uttar-pradesh'], ['Manufacturer database India', '/manufacturer-database-india'], ['B2B database India', '/b2b-database-india']],
     source: { label: 'Gautam Buddha Nagar district: economic background', url: 'https://gbnagar.nic.in/demography/' },
     closing: 'Tell us which Noida businesses you want to reach.'
   },
@@ -138,7 +138,7 @@ export const cities = {
       ['Can I ask for HR, procurement or other business-role contacts?', 'You can state the function you need. Role-level information depends on availability in the selected records; it is confirmed in the sample rather than guaranteed for every company.'],
       ['How is the Gurgaon database priced?', 'The quotation depends on the agreed selection, record quantity and fields. Send your requirement to receive the available count, sample, update details and price.']
     ],
-    related: [['Haryana business database', '/database/haryana'], ['Corporate database India', '/corporate-database-india'], ['Company contact database India', '/company-contact-database-india'], ['Noida company database', '/database/uttar-pradesh/noida']],
+    related: [['Haryana business database', '/database/haryana'], ['Corporate database India', '/corporate-database-india'], ['B2B database India', '/b2b-database-india'], ['Noida company database', '/database/uttar-pradesh/noida']],
     source: { label: 'District Gurugram: business and industrial background', url: 'https://gurugram.gov.in/about-district/' },
     closing: 'Build a Gurgaon brief your sales team can use.'
   },

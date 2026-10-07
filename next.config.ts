@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import { permanentRedirects } from "./src/lib/redirects";
 
 const nextConfig: NextConfig = {
   images: {
@@ -9,6 +10,7 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  redirects: async () => permanentRedirects,
 };
 
 export default nextConfig;

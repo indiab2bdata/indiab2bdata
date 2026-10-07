@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { databaseStates, getDatabaseState } from "@/lib/database-pages";
-import { keywordPages } from "@/lib/keyword-pages";
+import { getKeywordPagesBySlug } from "@/lib/keyword-pages";
 import { siteConfig } from "@/lib/site-config";
 import { cities } from "@/components/city-pages/city-data.mjs";
 import { pageMetadata, breadcrumbJsonLd, webPageJsonLd, faqJsonLd, serviceJsonLd } from "@/lib/seo";
@@ -51,11 +51,15 @@ export default async function DatabaseStatePage({ params }: { params: Params }) 
   if (!page) notFound();
 
   const cityPages = Object.values(cities).filter((city) => city.stateSlug === page.slug);
+  const cityPageByName = new Map(cityPages.map((city) => [city.city, city]));
+  const unlistedCityPages = cityPages.filter((city) => !page.cities.includes(city.city));
   const url = `${siteConfig.url}/database/${page.slug}`;
   const otherStates = databaseStates.filter((s) => s.slug !== page.slug).slice(0, 6);
-  const relatedKeywordPages = keywordPages.filter((k) =>
-    ["state-wise-company-database-india", "city-wise-company-database-india", "b2b-database-india"].includes(k.slug)
-  );
+  const relatedKeywordPages = getKeywordPagesBySlug([
+    "b2b-database-india",
+    "company-database-india",
+    "industry-wise-company-database-india",
+  ]);
 
   const breadcrumbSchema = breadcrumbJsonLd([
     { name: "Home", url: siteConfig.url },
@@ -135,26 +139,38 @@ export default async function DatabaseStatePage({ params }: { params: Params }) 
             </h2>
           </Reveal>
           <div className="flex flex-wrap gap-3">
-            {page.cities.map((city) => (
-              <span
-                key={city}
-                className="inline-flex items-center gap-1.5 text-navy/80 text-sm font-medium bg-white border border-[#DCEAF3] rounded-full px-4 py-2 shadow-sm"
-              >
-                <MapPin className="w-3.5 h-3.5 text-teal" strokeWidth={2} />
-                {city}
-              </span>
-            ))}
+            {page.cities.map((city) => {
+              const cityPage = cityPageByName.get(city);
+              return cityPage ? (
+                <Link
+                  key={city}
+                  href={`/database/${cityPage.stateSlug}/${cityPage.slug}`}
+                  className="inline-flex items-center gap-1.5 text-navy text-sm font-semibold bg-white border border-teal/40 rounded-full px-4 py-2 shadow-sm transition-colors hover:border-teal hover:text-teal"
+                >
+                  <MapPin className="w-3.5 h-3.5 text-teal" strokeWidth={2} />
+                  {city} company database
+                </Link>
+              ) : (
+                <span
+                  key={city}
+                  className="inline-flex items-center gap-1.5 text-navy/80 text-sm font-medium bg-white border border-[#DCEAF3] rounded-full px-4 py-2 shadow-sm"
+                >
+                  <MapPin className="w-3.5 h-3.5 text-teal" strokeWidth={2} />
+                  {city}
+                </span>
+              );
+            })}
             {page.moreCities > 0 && (
               <span className="inline-flex items-center text-muted text-sm font-medium bg-white border border-dashed border-[#DCEAF3] rounded-full px-4 py-2">
                 +{page.moreCities} more cities
               </span>
             )}
           </div>
-          {cityPages.length > 0 && (
+          {unlistedCityPages.length > 0 && (
             <div className="mt-8 border-t border-[#DCEAF3] pt-6">
               <h3 className="font-display font-bold text-lg text-navy">Browse company databases by city</h3>
               <div className="mt-3 flex flex-wrap gap-3">
-                {cityPages.map((city) => (
+                {unlistedCityPages.map((city) => (
                   <Link
                     key={city.slug}
                     href={`/database/${city.stateSlug}/${city.slug}`}

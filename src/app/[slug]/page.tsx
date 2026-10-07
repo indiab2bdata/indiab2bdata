@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getKeywordPage, getOtherKeywordPages, keywordPages } from "@/lib/keyword-pages";
+import { getKeywordPage, liveKeywordPages } from "@/lib/keyword-pages";
 import { getKeywordImage } from "@/lib/keyword-images";
 import { siteConfig } from "@/lib/site-config";
 import { pageMetadata, breadcrumbJsonLd, webPageJsonLd, faqJsonLd, serviceJsonLd } from "@/lib/seo";
@@ -11,7 +11,6 @@ import { FeatureGrid } from "@/components/feature-grid";
 import { KeywordVisual } from "@/components/keyword-visual";
 import { Checklist } from "@/components/checklist";
 import { Faq } from "@/components/sections/faq";
-import { RelatedLinks } from "@/components/related-links";
 import { ContactCta } from "@/components/sections/contact-cta";
 import { InlineCta } from "@/components/inline-cta";
 import { Reveal } from "@/components/reveal";
@@ -21,7 +20,7 @@ export const dynamicParams = false;
 type Params = Promise<{ slug: string }>;
 
 export function generateStaticParams() {
-  return keywordPages.map((page) => ({ slug: page.slug }));
+  return liveKeywordPages.map((page) => ({ slug: page.slug }));
 }
 
 export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
@@ -46,7 +45,6 @@ export default async function KeywordPage({ params }: { params: Params }) {
   if (!page) notFound();
 
   const url = `${siteConfig.url}/${page.slug}`;
-  const otherPages = getOtherKeywordPages(page.slug, 6);
   const visual = getKeywordImage(page.slug, page.keyword);
 
   const breadcrumbSchema = breadcrumbJsonLd([
@@ -168,8 +166,6 @@ export default async function KeywordPage({ params }: { params: Params }) {
       />
 
       <InlineCta id={`${page.slug}-faq-cta`} text="Still have questions? Get a free sample and see the data for yourself." />
-
-      <RelatedLinks pages={otherPages} />
 
       <ContactCta />
     </>

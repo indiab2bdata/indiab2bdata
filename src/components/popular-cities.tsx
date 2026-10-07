@@ -1,0 +1,37 @@
+import Link from "next/link";
+import { MapPin } from "lucide-react";
+import { Reveal } from "@/components/reveal";
+import { cities, cityPath } from "@/components/city-pages/city-data.mjs";
+
+export function PopularCities({
+  heading = "Popular Cities",
+  eyebrow = "City Databases",
+}: {
+  heading?: string;
+  eyebrow?: string;
+}) {
+  return (
+    <section className="py-16 md:py-20 max-w-7xl mx-auto px-5 md:px-8">
+      <Reveal className="max-w-2xl mb-10">
+        <span className="text-teal text-xs font-semibold uppercase tracking-[0.16em]">{eyebrow}</span>
+        <h2 className="font-display font-extrabold text-2xl md:text-3xl text-navy mt-3 tracking-tight">{heading}</h2>
+      </Reveal>
+
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        {Object.values(cities).map((city, i) => (
+          <Reveal key={city.slug} delay={(i % 3) * 0.06}>
+            <Link
+              href={cityPath(city)}
+              className="group flex items-center justify-between gap-3 bg-white rounded-xl px-5 py-4 border border-[#DCEAF3] shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-teal/40 hover:shadow-lg"
+            >
+              <span className="text-sm font-medium text-navy">
+                {city.city} <span className="text-muted font-normal">· {city.state}</span>
+              </span>
+              <MapPin className="w-4 h-4 text-muted shrink-0 transition-colors group-hover:text-teal" strokeWidth={2} />
+            </Link>
+          </Reveal>
+        ))}
+      </div>
+    </section>
+  );
+}

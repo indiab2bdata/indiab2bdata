@@ -8,7 +8,7 @@ import { ContactCta } from "@/components/sections/contact-cta";
 import { InlineCta } from "@/components/inline-cta";
 import { RelatedLinks } from "@/components/related-links";
 import { JsonLd } from "@/components/json-ld";
-import { keywordPages } from "@/lib/keyword-pages";
+import { getKeywordPagesBySlug } from "@/lib/keyword-pages";
 import { siteConfig } from "@/lib/site-config";
 import { pageMetadata, breadcrumbJsonLd, webPageJsonLd } from "@/lib/seo";
 
@@ -40,9 +40,7 @@ const webPageSchema = webPageJsonLd({
   url: `${siteConfig.url}/about`,
 });
 
-const relatedPages = keywordPages.filter((k) =>
-  ["b2b-database-india", "verified-business-database-india", "business-leads-india"].includes(k.slug)
-);
+const relatedPages = getKeywordPagesBySlug(["b2b-database-india", "company-database-india", "b2b-leads-database-india"]);
 
 const VALUES = [
   {

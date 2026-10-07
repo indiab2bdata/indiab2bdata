@@ -7,10 +7,9 @@ import { Process } from "@/components/sections/process";
 import { Testimonials } from "@/components/sections/testimonials";
 import { Faq } from "@/components/sections/faq";
 import { ContactCta } from "@/components/sections/contact-cta";
-import { RelatedLinks } from "@/components/related-links";
 import { InlineCta } from "@/components/inline-cta";
 import { JsonLd } from "@/components/json-ld";
-import { keywordPages } from "@/lib/keyword-pages";
+import { liveKeywordPages } from "@/lib/keyword-pages";
 import { siteConfig } from "@/lib/site-config";
 import { DEFAULT_FAQS } from "@/lib/faq-data";
 import { pageMetadata, webPageJsonLd, faqJsonLd, itemListJsonLd } from "@/lib/seo";
@@ -32,7 +31,7 @@ const webPageSchema = webPageJsonLd({
 const faqSchema = faqJsonLd(DEFAULT_FAQS);
 
 const productListSchema = itemListJsonLd(
-  keywordPages.map((page) => ({ name: page.keyword, url: `${siteConfig.url}/${page.slug}` })),
+  liveKeywordPages.map((page) => ({ name: page.keyword, url: `${siteConfig.url}/${page.slug}` })),
   "B2B & Company Databases"
 );
 
@@ -51,11 +50,6 @@ export default function Home() {
       <InlineCta id="home-testimonials-cta" text="Join hundreds of teams already reaching real decision-makers." />
       <Faq />
       <InlineCta id="home-faq-cta" text="Still have questions? Get a free sample and see the data for yourself." />
-      <RelatedLinks
-        pages={keywordPages}
-        eyebrow="Browse by Category"
-        heading="Explore Our B2B & Company Databases"
-      />
       <ContactCta />
     </>
   );

@@ -29,6 +29,7 @@ import {
   Users,
   Zap,
 } from "lucide-react";
+import { retiredKeywordRedirects } from "@/lib/redirects";
 
 export type KeywordFaq = { question: string; answer: string };
 export type KeywordHighlight = { icon: LucideIcon; title: string; description: string };
@@ -1748,16 +1749,15 @@ export const keywordPages: KeywordPage[] = [
   },
 ];
 
+/** Pages still served — retired slugs 301 to their merge target (see redirects.ts). */
+export const liveKeywordPages = keywordPages.filter((page) => !(page.slug in retiredKeywordRedirects));
+
 export function getKeywordPage(slug: string): KeywordPage | undefined {
-  return keywordPages.find((page) => page.slug === slug);
+  return liveKeywordPages.find((page) => page.slug === slug);
 }
 
-export function getOtherKeywordPages(slug: string, limit = 6): KeywordPage[] {
-  const others = keywordPages.filter((page) => page.slug !== slug);
-  const related = getKeywordPage(slug)?.related ?? [];
-  const picked = related
-    .map((s) => others.find((page) => page.slug === s))
+export function getKeywordPagesBySlug(slugs: string[]): KeywordPage[] {
+  return slugs
+    .map((slug) => getKeywordPage(slug))
     .filter((page): page is KeywordPage => Boolean(page));
-  const rest = others.filter((page) => !picked.includes(page));
-  return [...picked, ...rest].slice(0, limit);
 }
