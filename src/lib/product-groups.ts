@@ -1,4 +1,4 @@
-/** The 16 live data products, grouped for footer navigation. Labels are descriptive, not exact-match keywords. */
+/** The 22 live data products, grouped for footer navigation. Labels are descriptive, not exact-match keywords. */
 export const PRODUCT_GROUPS: { heading: string; links: { href: string; label: string }[] }[] = [
   {
     heading: "General",
@@ -30,7 +30,7 @@ export const PRODUCT_GROUPS: { heading: string; links: { href: string; label: st
     heading: "Segments",
     links: [
       { href: "/manufacturer-database-india", label: "Manufacturers" },
-      { href: "/doctors-database-india", label: "Doctors" },
+      { href: "/doctors-database", label: "Doctors" },
       { href: "/importers-exporters-database-india", label: "Importers & Exporters" },
       { href: "/dealers-distributors-database-india", label: "Dealers & Distributors" },
     ],
@@ -42,6 +42,22 @@ export const PRODUCT_GROUPS: { heading: string; links: { href: string; label: st
       { href: "/email-database-india", label: "Email Lists" },
       { href: "/whatsapp-number-database-india", label: "WhatsApp Numbers" },
       { href: "/bulk-sms-database-india", label: "Bulk SMS Data" },
+    ],
+  },
+  {
+    heading: "Consumer",
+    links: [
+      { href: "/b2b-b2c-companies-database", label: "B2B & B2C Data" },
+      { href: "/car-owners-database", label: "Car Owners" },
+      { href: "/job-seekers-database", label: "Job Seekers" },
+    ],
+  },
+  {
+    heading: "Education & Web",
+    links: [
+      { href: "/students-database", label: "Students" },
+      { href: "/school-colleges-database", label: "Schools & Colleges" },
+      { href: "/domain-whois-database", label: "Domain WHOIS Data" },
     ],
   },
 ];

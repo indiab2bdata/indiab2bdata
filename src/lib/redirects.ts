@@ -21,6 +21,11 @@ export const retiredKeywordRedirects: Record<string, string> = {
   "service-providers-database-india": "/industry-wise-company-database-india",
 };
 
+/** Keyword pages moved to a new slug (content unchanged). */
+const renamedKeywordRedirects: Record<string, string> = {
+  "/doctors-database-india": "/doctors-database",
+};
+
 /** URLs from the old static site that Google still has indexed. */
 const legacyRedirects: Record<string, string> = {
   "/about-us": "/about",
@@ -37,6 +42,11 @@ const legacyRedirects: Record<string, string> = {
 export const permanentRedirects = [
   ...Object.entries(retiredKeywordRedirects).map(([slug, destination]) => ({
     source: `/${slug}`,
+    destination,
+    permanent: true,
+  })),
+  ...Object.entries(renamedKeywordRedirects).map(([source, destination]) => ({
+    source,
     destination,
     permanent: true,
   })),

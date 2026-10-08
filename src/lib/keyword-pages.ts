@@ -2,13 +2,16 @@ import type { LucideIcon } from "lucide-react";
 import {
   BadgeCheck,
   BookOpen,
+  Briefcase,
   Building2,
   CalendarClock,
+  Car,
   Contact,
   Factory,
   FileText,
   Filter,
   Globe,
+  GraduationCap,
   Headphones,
   Landmark,
   ListChecks,
@@ -17,6 +20,7 @@ import {
   MessageSquare,
   Network,
   RefreshCcw,
+  School,
   Search,
   ShieldCheck,
   Smartphone,
@@ -104,6 +108,14 @@ export const keywordPages: KeywordPage[] = [
         answer:
           "Business and Enterprise packages include periodic refreshes, and the overall database is updated on a monthly cycle to remove inactive contacts.",
       },
+    ],
+    related: [
+      "company-database-india",
+      "b2b-leads-database-india",
+      "b2b-b2c-companies-database",
+      "industry-wise-company-database-india",
+      "doctors-database",
+      "school-colleges-database",
     ],
   },
   {
@@ -244,6 +256,14 @@ export const keywordPages: KeywordPage[] = [
         answer: "Records are periodically refreshed; Business and Enterprise packages include scheduled refresh cycles.",
       },
     ],
+    related: [
+      "corporate-database-india",
+      "mca-company-database-india",
+      "gst-database-india",
+      "b2b-b2c-companies-database",
+      "school-colleges-database",
+      "b2b-database-india",
+    ],
   },
   {
     slug: "indian-company-database",
@@ -378,6 +398,14 @@ export const keywordPages: KeywordPage[] = [
         question: "Does the Enterprise package include support?",
         answer: "Yes, it includes a dedicated account manager plus monthly refreshes.",
       },
+    ],
+    related: [
+      "company-database-india",
+      "mca-company-database-india",
+      "b2b-leads-database-india",
+      "email-database-india",
+      "job-seekers-database",
+      "industry-wise-company-database-india",
     ],
   },
   {
@@ -607,6 +635,14 @@ export const keywordPages: KeywordPage[] = [
         answer: "Share your specific niche and we'll build a custom segment for you.",
       },
     ],
+    related: [
+      "manufacturer-database-india",
+      "doctors-database",
+      "school-colleges-database",
+      "dealers-distributors-database-india",
+      "importers-exporters-database-india",
+      "company-database-india",
+    ],
   },
   {
     slug: "city-wise-company-database-india",
@@ -742,6 +778,14 @@ export const keywordPages: KeywordPage[] = [
         answer: "Yes, the state code embedded in the GSTIN can be used as a filter.",
       },
     ],
+    related: [
+      "mca-company-database-india",
+      "newly-registered-companies-india",
+      "company-database-india",
+      "importers-exporters-database-india",
+      "manufacturer-database-india",
+      "b2b-database-india",
+    ],
   },
   {
     slug: "mca-company-database-india",
@@ -786,6 +830,14 @@ export const keywordPages: KeywordPage[] = [
         question: "Is this different from the GST database?",
         answer: "Yes — this reflects Companies Act incorporation status, while the GST database reflects GST registration; a company can appear in one, both, or neither.",
       },
+    ],
+    related: [
+      "gst-database-india",
+      "newly-registered-companies-india",
+      "corporate-database-india",
+      "company-database-india",
+      "domain-whois-database",
+      "b2b-database-india",
     ],
   },
   {
@@ -877,6 +929,14 @@ export const keywordPages: KeywordPage[] = [
         answer: "New companies are actively purchasing setup-related services, making them a high-intent audience for relevant vendors.",
       },
     ],
+    related: [
+      "domain-whois-database",
+      "mca-company-database-india",
+      "gst-database-india",
+      "b2b-leads-database-india",
+      "email-database-india",
+      "b2b-database-india",
+    ],
   },
   {
     slug: "business-leads-india",
@@ -967,6 +1027,14 @@ export const keywordPages: KeywordPage[] = [
         answer: "Yes, every enquiry includes 15–20 free sample records before you commit.",
       },
     ],
+    related: [
+      "b2b-database-india",
+      "domain-whois-database",
+      "newly-registered-companies-india",
+      "b2b-b2c-companies-database",
+      "mobile-number-database-india",
+      "email-database-india",
+    ],
   },
   {
     slug: "company-contact-database-india",
@@ -1056,6 +1124,14 @@ export const keywordPages: KeywordPage[] = [
         question: "Can I get a free sample first?",
         answer: "Yes, every enquiry includes 15–20 free sample records before you commit to a package.",
       },
+    ],
+    related: [
+      "dealers-distributors-database-india",
+      "importers-exporters-database-india",
+      "industry-wise-company-database-india",
+      "gst-database-india",
+      "job-seekers-database",
+      "b2b-database-india",
     ],
   },
   {
@@ -1195,9 +1271,9 @@ export const keywordPages: KeywordPage[] = [
     related: [
       "whatsapp-number-database-india",
       "bulk-sms-database-india",
-      "business-leads-india",
-      "company-contact-database-india",
-      "city-wise-company-database-india",
+      "b2b-b2c-companies-database",
+      "car-owners-database",
+      "students-database",
       "b2b-database-india",
     ],
   },
@@ -1290,10 +1366,10 @@ export const keywordPages: KeywordPage[] = [
     ],
     related: [
       "mobile-number-database-india",
-      "company-contact-database-india",
       "b2b-leads-database-india",
       "corporate-database-india",
-      "service-providers-database-india",
+      "domain-whois-database",
+      "job-seekers-database",
       "b2b-database-india",
     ],
   },
@@ -1383,10 +1459,10 @@ export const keywordPages: KeywordPage[] = [
     related: [
       "mobile-number-database-india",
       "bulk-sms-database-india",
+      "students-database",
+      "car-owners-database",
       "dealers-distributors-database-india",
-      "business-leads-india",
-      "email-database-india",
-      "b2b-database-india",
+      "b2b-b2c-companies-database",
     ],
   },
   {
@@ -1473,18 +1549,18 @@ export const keywordPages: KeywordPage[] = [
     related: [
       "mobile-number-database-india",
       "whatsapp-number-database-india",
-      "city-wise-company-database-india",
-      "business-leads-india",
-      "state-wise-company-database-india",
+      "car-owners-database",
+      "students-database",
+      "b2b-b2c-companies-database",
       "b2b-database-india",
     ],
   },
   {
-    slug: "doctors-database-india",
+    slug: "doctors-database",
     keyword: "doctors database India",
     title: "Doctors Database India | Clinics & Hospitals",
     metaDescription:
-      "Verified doctors database for India — specialists, clinics and hospitals by speciality and city. Built for pharma, medical device & healthcare marketing. Free sample.",
+      "Verified doctors database for India — specialists, clinics and hospitals by speciality and city. For pharma, medical device & healthcare marketing. Free sample.",
     eyebrow: "Doctors Database India",
     h1: "Doctors Database India — Specialists, Clinics & Hospitals by City",
     answer:
@@ -1560,9 +1636,9 @@ export const keywordPages: KeywordPage[] = [
       },
     ],
     related: [
+      "school-colleges-database",
       "industry-wise-company-database-india",
-      "service-providers-database-india",
-      "city-wise-company-database-india",
+      "students-database",
       "email-database-india",
       "mobile-number-database-india",
       "b2b-database-india",
@@ -1741,9 +1817,585 @@ export const keywordPages: KeywordPage[] = [
     related: [
       "manufacturer-database-india",
       "importers-exporters-database-india",
-      "state-wise-company-database-india",
+      "car-owners-database",
       "whatsapp-number-database-india",
-      "business-directory-india",
+      "industry-wise-company-database-india",
+      "b2b-database-india",
+    ],
+  },
+  {
+    slug: "b2b-b2c-companies-database",
+    keyword: "B2B and B2C database India",
+    title: "B2B & B2C Companies Database India",
+    metaDescription:
+      "One provider for B2B company contacts and B2C consumer data in India. Filter by city, industry, income band or interest. DND-scrubbed, verified. Free sample.",
+    eyebrow: "B2B & B2C Companies Database",
+    h1: "B2B & B2C Database India — Company Contacts and Consumer Data in One Place",
+    answer:
+      "A B2B database lists businesses and their decision-makers; a B2C database lists individual consumers. Many Indian brands sell to both: a company that supplies dealers also runs consumer campaigns. IndiaB2BData.com supplies both types of data, verified and DND-scrubbed, filtered by city, industry, income band or interest.",
+    intro: [
+      "Most growing businesses in India don't sell to just one kind of customer. A solar installer pitches housing societies and factories. An insurance agency targets salaried individuals and small business owners. A software company sells to firms but also runs a consumer app. Using two separate data vendors for this means two sets of quality standards, two invoices and two ways of formatting files.",
+      "Our B2B and B2C database brings both into one order. Company records come with business name, category, GST details and decision-maker contacts. Consumer records come with city, pincode and, where available, profile filters such as age band, income band or interest. Both are deduplicated and DND-scrubbed before delivery.",
+    ],
+    highlights: [
+      { icon: Building2, title: "B2B Company Records", description: "Companies, owners and decision-makers by industry." },
+      { icon: Users, title: "B2C Consumer Data", description: "Individuals by city, pincode, income band and interest." },
+      { icon: Filter, title: "One Set of Filters", description: "Same city, state and pincode targeting for both." },
+      { icon: ShieldCheck, title: "DND-Scrubbed", description: "Checked against DND/NDNC lists before delivery." },
+    ],
+    dataFields: [
+      "B2B: company name, industry and business type",
+      "B2B: owner or decision-maker name and designation",
+      "B2C: consumer name, city, state and pincode",
+      "Mobile number (DND-scrubbed)",
+      "Email address, where available",
+      "Profile filters such as income band or interest, where available",
+    ],
+    sections: [
+      {
+        heading: "B2B vs B2C Data: What's the Difference?",
+        paragraphs: [
+          "B2B data is about organisations. Each record is a business: a manufacturer, a dealer, a clinic or a software firm, along with the person who makes buying decisions there. It is used for cold calling, account-based marketing, channel partner hunting and enterprise sales.",
+          "B2C data is about people. Each record is an individual consumer, typically with location and profile details. It is used for product launches, local promotions, insurance and loan campaigns, real estate projects and app installs. The sales cycle is shorter, the volumes are larger and the message has to be simpler.",
+        ],
+      },
+      {
+        heading: "When You Need Both",
+        paragraphs: [
+          "Brands that sell through dealers but also advertise to end buyers need both lists for the same city at the same time. So do real estate developers (channel partners plus home buyers), financial services firms (business loans plus personal loans) and education companies (institutions plus students).",
+          "Ordering both from one provider keeps your targeting consistent. If you're launching in Pune, you get Pune companies and Pune consumers built on the same city and pincode filters, delivered in the same file format, ready for one CRM import.",
+        ],
+      },
+      {
+        heading: "Using Consumer Data Responsibly",
+        paragraphs: [
+          "Consumer outreach in India is governed by TRAI's commercial communication rules and the Digital Personal Data Protection Act, 2023. Every number we deliver is scrubbed against the DND registry, and we recommend clear opt-out options in every message.",
+          "Keep campaigns relevant to the audience you've filtered for, avoid excessive frequency and stop contacting anyone who asks you to. Good practice protects your sender reputation as much as it protects the people you're reaching.",
+        ],
+      },
+    ],
+    useCases: [
+      "Brands selling to both dealers and end consumers",
+      "Real estate launches targeting channel partners and home buyers",
+      "Insurance, loan and credit card campaigns",
+      "City launches for D2C and app-based businesses",
+      "Local promotions for retail, gyms, salons and restaurants",
+      "Lead generation agencies serving mixed client portfolios",
+    ],
+    faqs: [
+      {
+        question: "What is a B2B and B2C database?",
+        answer:
+          "It's a combined data product: B2B records list businesses and their decision-makers, while B2C records list individual consumers. Both can be filtered by city, state and pincode, and ordered together.",
+      },
+      {
+        question: "Can I order only B2C consumer data?",
+        answer: "Yes. You can order B2B only, B2C only or a mix of both for the same locations.",
+      },
+      {
+        question: "What filters are available for consumer data?",
+        answer:
+          "City, state and pincode are always available. Depending on the segment, profile filters such as age band, income band, vehicle ownership or interest can also be applied.",
+      },
+      {
+        question: "How much does a B2B and B2C database cost?",
+        answer:
+          "Packages start at ₹2,999 for up to 5,000 records in one city, and ₹8,999 for up to 25,000 records across 5 cities or states. Larger or multi-segment lists are custom-quoted.",
+      },
+      {
+        question: "Is consumer data DND-scrubbed?",
+        answer: "Yes. Every mobile number is checked against the DND/NDNC registry before delivery.",
+      },
+      {
+        question: "Can I get a free sample?",
+        answer: "Yes. Every enquiry includes 15–20 free sample records before you place an order.",
+      },
+    ],
+    related: [
+      "b2b-database-india",
+      "car-owners-database",
+      "job-seekers-database",
+      "mobile-number-database-india",
+      "company-database-india",
+      "bulk-sms-database-india",
+    ],
+  },
+  {
+    slug: "students-database",
+    keyword: "students database India",
+    title: "Students Database India | School & College",
+    metaDescription:
+      "Verified students database for India — school, college and competitive exam aspirants by city, class and stream. For EdTech, coaching & admissions. Free sample.",
+    eyebrow: "Students Database India",
+    h1: "Students Database India — Reach Students and Parents by City, Class and Stream",
+    answer:
+      "A students database is a list of students (and often their parents) filtered by class, stream, course or exam, and by city. EdTech companies, coaching institutes, colleges and universities use it to promote courses and admissions. IndiaB2BData.com's students database covers school students, college students and competitive exam aspirants across India.",
+    intro: [
+      "Admissions season is short and competitive. Coaching centres, EdTech platforms, private universities and study-abroad consultants all try to reach the same students in the same few months. The teams that start with a clean, well-targeted list fill their batches; the rest spend their budget on ads that reach the wrong age group.",
+      "Our students database is segmented by education level, class or year, stream and city. You can reach Class 11–12 science students in Kota, B.Com students in Mumbai or engineering aspirants across Uttar Pradesh, and plan admissions campaigns with real numbers instead of guesses.",
+    ],
+    highlights: [
+      { icon: GraduationCap, title: "School to Post-Graduate", description: "Class 9–12, undergraduate, PG and exam aspirants." },
+      { icon: Filter, title: "Stream & Course Filters", description: "Science, commerce, arts, engineering, medical and more." },
+      { icon: MapPinned, title: "City-Wise Targeting", description: "Filter by city, district, state or pincode." },
+      { icon: ShieldCheck, title: "Verified & DND-Scrubbed", description: "Deduplicated and DND-checked before delivery." },
+    ],
+    dataFields: [
+      "Student name",
+      "Parent or guardian contact, where available",
+      "Mobile number (DND-scrubbed)",
+      "Email address, where available",
+      "Class, year or course and stream",
+      "City, state and pincode",
+    ],
+    sections: [
+      {
+        heading: "Segments Covered",
+        paragraphs: [
+          "School segments include Class 9–10 and Class 11–12 students, split by science, commerce and arts. Higher education segments cover undergraduate and postgraduate students in engineering, medical, management, commerce, arts and law.",
+          "We also cover competitive exam aspirants, including JEE, NEET, CA, CLAT, CUET, UPSC and banking exams, and students interested in studying abroad. Combine these segments with city filters to match your institute's catchment area.",
+        ],
+      },
+      {
+        heading: "How Education Businesses Use Student Data",
+        paragraphs: [
+          "Coaching institutes use class and stream lists to fill new batches before the academic year begins. EdTech platforms use them for app installs, free trial sign-ups and webinar registrations. Colleges and universities use them to drive applications ahead of counselling.",
+          "Timing matters most. Plan outreach around board results, entrance exam calendars and admission windows, and keep the message useful: scholarship dates, demo classes and counselling sessions work far better than generic promotions.",
+        ],
+      },
+      {
+        heading: "Reaching Students Responsibly",
+        paragraphs: [
+          "Many school students are minors, so outreach for those segments should be addressed to parents or guardians. Keep messages informative, avoid aggressive follow-ups and honour every opt-out request.",
+          "All numbers are scrubbed against the DND registry before delivery. Use the data only for genuine education-related communication, in line with TRAI rules and the Digital Personal Data Protection Act, 2023.",
+        ],
+      },
+    ],
+    useCases: [
+      "Coaching institute batch admissions",
+      "EdTech app installs and free trial campaigns",
+      "College and university admission drives",
+      "Study-abroad and overseas education counselling",
+      "Scholarship tests and education fairs",
+      "Student loans, laptops and education products",
+    ],
+    faqs: [
+      {
+        question: "What is a students database?",
+        answer:
+          "It's a list of students, and where relevant their parents, filtered by class, course, stream and location. Education businesses use it to promote admissions, courses and test-prep programmes.",
+      },
+      {
+        question: "Can I filter students by class and stream?",
+        answer: "Yes. Filter by class or year, stream (science, commerce, arts) or course, and combine with city, district or state.",
+      },
+      {
+        question: "Do you have data for competitive exam aspirants?",
+        answer: "Yes. Segments include JEE, NEET, CA, CLAT, CUET, UPSC, banking and study-abroad aspirants.",
+      },
+      {
+        question: "How much does a students database cost?",
+        answer:
+          "Packages start at ₹2,999 for up to 5,000 records in one city, and ₹8,999 for up to 25,000 records across 5 cities or states. State-wide or pan-India lists are custom-quoted.",
+      },
+      {
+        question: "Can I also get a list of schools and colleges?",
+        answer: "Yes. Our schools and colleges database covers institutions and their administrators, useful for B2B education sales.",
+      },
+      {
+        question: "Can I get a free sample?",
+        answer: "Yes. Every enquiry includes 15–20 free sample records before you place an order.",
+      },
+    ],
+    related: [
+      "school-colleges-database",
+      "job-seekers-database",
+      "mobile-number-database-india",
+      "whatsapp-number-database-india",
+      "bulk-sms-database-india",
+      "b2b-b2c-companies-database",
+    ],
+  },
+  {
+    slug: "job-seekers-database",
+    keyword: "job seekers database India",
+    title: "Job Seekers Database India | Candidates",
+    metaDescription:
+      "Verified job seekers database for India — freshers and experienced candidates by skill, qualification and city. For recruiters & HR teams. Free sample.",
+    eyebrow: "Job Seekers Database India",
+    h1: "Job Seekers Database India — Candidates by Skill, Experience and City",
+    answer:
+      "A job seekers database is a list of candidates who are looking for work, filtered by skill, qualification, experience and location. Recruitment agencies, HR teams, staffing firms and skilling institutes use it to fill roles faster. IndiaB2BData.com's job seekers database covers freshers and experienced professionals across India.",
+    intro: [
+      "Job portals are crowded and expensive. Recruiters pay for access, then compete with hundreds of other employers for the same profiles. For bulk hiring, such as BPO, retail, delivery, field sales or manufacturing roles, portal subscriptions rarely deliver the volume you need in a specific city.",
+      "Our job seekers database gives you direct access to candidates segmented by role, skill, qualification, experience band and location. You can reach freshers in Hyderabad, experienced accountants in Ahmedabad or ITI-qualified technicians across Tamil Nadu, and fill positions without waiting on applications.",
+    ],
+    highlights: [
+      { icon: Briefcase, title: "Freshers to Senior", description: "Entry-level to experienced professionals." },
+      { icon: Filter, title: "Skill & Role Filters", description: "IT, sales, BPO, accounts, technicians and more." },
+      { icon: MapPinned, title: "Location-Based Hiring", description: "Filter by current city, district or state." },
+      { icon: Zap, title: "Faster Bulk Hiring", description: "Large candidate pools for volume roles." },
+    ],
+    dataFields: [
+      "Candidate name",
+      "Mobile number (DND-scrubbed)",
+      "Email address, where available",
+      "Qualification and skill set",
+      "Experience band and functional area",
+      "Current city, state and pincode",
+    ],
+    sections: [
+      {
+        heading: "Roles and Skills Covered",
+        paragraphs: [
+          "The database covers IT and software roles, sales and business development, customer support and BPO, accounts and finance, HR and administration, healthcare staff, teaching, logistics and delivery, and skilled trades such as electricians, fitters and machine operators.",
+          "Filter by qualification (10th/12th, ITI, diploma, graduate, postgraduate, professional), by experience band (fresher, 1–3 years, 3–7 years, 7+ years) and by location to build a pool that matches your job description.",
+        ],
+      },
+      {
+        heading: "How Recruiters and HR Teams Use It",
+        paragraphs: [
+          "Staffing agencies use the database for volume hiring drives, walk-in interview invitations and campus-to-corporate programmes. In-house HR teams use it to fill hard-to-hire roles in new branch locations. Skilling and training institutes use it to recruit learners for placement-linked courses.",
+          "The best results come from specific, honest messages: the role, location, salary range and next step. Candidates respond quickly when the opportunity matches their profile and the process is clear.",
+        ],
+      },
+      {
+        heading: "Responsible Candidate Outreach",
+        paragraphs: [
+          "Only contact candidates about genuine job opportunities or relevant training. Never charge candidates for placement, and honour any request to stop contacting them.",
+          "Numbers are scrubbed against the DND registry before delivery, and the data should be used in line with TRAI rules and the Digital Personal Data Protection Act, 2023.",
+        ],
+      },
+    ],
+    useCases: [
+      "Bulk hiring for BPO, retail and field sales roles",
+      "Walk-in drive and job fair invitations",
+      "Staffing and recruitment agency sourcing",
+      "Hiring for new branch or plant locations",
+      "Skilling and placement-linked course admissions",
+      "Gig and delivery partner onboarding",
+    ],
+    faqs: [
+      {
+        question: "What is a job seekers database?",
+        answer:
+          "It's a list of candidates looking for work, with contact details and profile information such as skills, qualification, experience and location. Recruiters use it to reach candidates directly.",
+      },
+      {
+        question: "Can I filter candidates by skill and experience?",
+        answer: "Yes. Filter by functional area or skill, qualification, experience band and current location.",
+      },
+      {
+        question: "Do you have data for freshers?",
+        answer: "Yes. Fresher segments include recent graduates, diploma and ITI holders, and 12th-pass candidates for entry-level roles.",
+      },
+      {
+        question: "How much does a job seekers database cost?",
+        answer:
+          "Packages start at ₹2,999 for up to 5,000 records in one city, and ₹8,999 for up to 25,000 records across 5 cities or states. Pan-India or multi-role lists are custom-quoted.",
+      },
+      {
+        question: "Who usually buys this data?",
+        answer: "Recruitment and staffing agencies, corporate HR teams, BPOs, skilling institutes and companies opening new locations.",
+      },
+      {
+        question: "Can I get a free sample?",
+        answer: "Yes. Every enquiry includes 15–20 free sample records before you place an order.",
+      },
+    ],
+    related: [
+      "students-database",
+      "b2b-b2c-companies-database",
+      "industry-wise-company-database-india",
+      "mobile-number-database-india",
+      "email-database-india",
+      "whatsapp-number-database-india",
+    ],
+  },
+  {
+    slug: "car-owners-database",
+    keyword: "car owners database India",
+    title: "Car Owners Database India | Vehicle Owners",
+    metaDescription:
+      "Verified car owners database for India — vehicle owners by city, car segment and brand. For insurance, auto service, dealerships & finance teams. Free sample.",
+    eyebrow: "Car Owners Database India",
+    h1: "Car Owners Database India — Vehicle Owners by City, Segment and Brand",
+    answer:
+      "A car owners database is a list of individuals who own a vehicle, filtered by city, car segment, brand or model and ownership age. Motor insurers, dealerships, auto service centres and car loan providers use it to reach buyers at the right time. IndiaB2BData.com's car owners database covers owners across Indian metros and tier-2 cities.",
+    intro: [
+      "Car ownership tells you a lot about a customer. Car owners need insurance renewals, servicing, accessories, tyres and, every few years, a replacement vehicle. Car ownership also signals spending power, which makes these lists valuable for premium products well beyond the auto sector.",
+      "Our car owners database is segmented by city, car segment (hatchback, sedan, SUV, luxury), brand and, where available, ownership age. You can reach SUV owners in Bengaluru for an insurance campaign, or owners of 5+ year old cars in Lucknow for an exchange offer.",
+    ],
+    highlights: [
+      { icon: Car, title: "Segment & Brand Filters", description: "Hatchback, sedan, SUV and luxury, by brand." },
+      { icon: MapPinned, title: "City-Wise Coverage", description: "Metros and tier-2 cities across India." },
+      { icon: CalendarClock, title: "Ownership Age", description: "Target new owners or ageing vehicles." },
+      { icon: ShieldCheck, title: "DND-Scrubbed", description: "Checked against DND/NDNC lists before delivery." },
+    ],
+    dataFields: [
+      "Owner name",
+      "Mobile number (DND-scrubbed)",
+      "Email address, where available",
+      "Car brand, model or segment, where available",
+      "Ownership or registration year band, where available",
+      "City, state and pincode",
+    ],
+    sections: [
+      {
+        heading: "Who Buys Car Owner Data",
+        paragraphs: [
+          "Motor insurance companies and brokers use it for renewal and switching campaigns. Car dealerships use it for exchange offers and new model launches. Multi-brand service centres, detailing studios, tyre and battery dealers, and accessory stores use it to bring in local customers.",
+          "Because car ownership is a strong affluence signal, the list is also used by premium real estate developers, wealth management firms, credit card issuers, clubs and luxury retailers.",
+        ],
+      },
+      {
+        heading: "Targeting by Segment and Ownership Age",
+        paragraphs: [
+          "Segment filters let you match your offer to the customer. Luxury and SUV owners respond to premium services; hatchback owners are often first-time buyers and good targets for upgrades and car loans.",
+          "Ownership age is especially useful for timing. Owners of 3–5 year old cars are approaching their first major service and are likely candidates for exchange offers, while owners of new cars are best for accessories and extended warranties.",
+        ],
+      },
+      {
+        heading: "Responsible Use",
+        paragraphs: [
+          "Keep campaigns relevant: a clear offer, a local contact and an easy way to opt out. Avoid repeated messaging to the same owners in a short window.",
+          "All numbers are DND-scrubbed before delivery. Use the data for lawful marketing in line with TRAI rules and the Digital Personal Data Protection Act, 2023.",
+        ],
+      },
+    ],
+    useCases: [
+      "Motor insurance renewals and switching offers",
+      "Dealership exchange and new model launches",
+      "Car service, detailing and accessories promotions",
+      "Car loan and refinance campaigns",
+      "Premium real estate and wealth products",
+      "Tyre, battery and EV charging services",
+    ],
+    faqs: [
+      {
+        question: "What is a car owners database?",
+        answer:
+          "It's a list of vehicle owners with contact details, filtered by city and, where available, car segment, brand and ownership age. It's used for insurance, auto services and premium product marketing.",
+      },
+      {
+        question: "Can I filter by car brand or segment?",
+        answer: "Yes. Filter by segment (hatchback, sedan, SUV, luxury) and, where available, by brand or model.",
+      },
+      {
+        question: "Which cities are covered?",
+        answer: "All major metros plus tier-2 and tier-3 cities. Tell us your target cities and we'll confirm available volumes.",
+      },
+      {
+        question: "How much does a car owners database cost?",
+        answer:
+          "Packages start at ₹2,999 for up to 5,000 records in one city, and ₹8,999 for up to 25,000 records across 5 cities or states. Pan-India or brand-specific lists are custom-quoted.",
+      },
+      {
+        question: "Is the data DND-scrubbed?",
+        answer: "Yes. Every mobile number is checked against the DND/NDNC registry before delivery.",
+      },
+      {
+        question: "Can I get a free sample?",
+        answer: "Yes. Every enquiry includes 15–20 free sample records before you place an order.",
+      },
+    ],
+    related: [
+      "b2b-b2c-companies-database",
+      "dealers-distributors-database-india",
+      "mobile-number-database-india",
+      "whatsapp-number-database-india",
+      "bulk-sms-database-india",
+      "job-seekers-database",
+    ],
+  },
+  {
+    slug: "domain-whois-database",
+    keyword: "domain WHOIS database India",
+    title: "Domain WHOIS Database India | New Domains",
+    metaDescription:
+      "Domain WHOIS database for India — new and existing .in and .com domains with registrant details. For web, hosting & digital marketing sales. Free sample.",
+    eyebrow: "Domain WHOIS Database",
+    h1: "Domain WHOIS Database India — Leads from Newly Registered Websites",
+    answer:
+      "A domain WHOIS database is a list of registered website domains with their registration details: domain name, registration and expiry dates, registrar and, where publicly listed, the registrant's name, email and phone. Web designers, hosting providers and digital marketing agencies use it to reach businesses that have just registered a domain. IndiaB2BData.com supplies daily and monthly WHOIS lists for Indian registrants.",
+    intro: [
+      "A newly registered domain is one of the clearest buying signals in digital marketing. Someone who registered a domain yesterday probably needs a website, hosting, a business email, a logo, SEO or social media setup, and they haven't chosen a provider yet.",
+      "Our domain WHOIS database tracks newly registered and existing domains with Indian registrants, across .in, .co.in, .com and other popular extensions. Lists are available as a daily feed or monthly batches, filtered by state, city, extension or registration date.",
+    ],
+    highlights: [
+      { icon: Globe, title: "New Registrations Daily", description: "Fresh domains as they are registered." },
+      { icon: Filter, title: "Extension & Location", description: ".in, .com and more, by state or city." },
+      { icon: CalendarClock, title: "Registration & Expiry Dates", description: "Time outreach to new or expiring domains." },
+      { icon: RefreshCcw, title: "Daily or Monthly Feed", description: "One-time lists or recurring delivery." },
+    ],
+    dataFields: [
+      "Domain name and extension",
+      "Registration date and expiry date",
+      "Registrar name",
+      "Registrant name and organisation, where publicly listed",
+      "Registrant email and phone, where publicly listed",
+      "Registrant city, state and country",
+    ],
+    sections: [
+      {
+        heading: "Why New Domain Owners Are Strong Leads",
+        paragraphs: [
+          "Domain registration usually comes before everything else when a business goes online. In the days that follow, the owner is deciding who will build the website, host it, set up email and handle marketing. Reaching them in that window puts you ahead of competitors who wait for the owner to search.",
+          "Many new registrations are from new businesses, so the list doubles as a startup and small business lead source for accountants, GST consultants, payment gateways and office suppliers.",
+        ],
+      },
+      {
+        heading: "Privacy-Protected Records",
+        paragraphs: [
+          "Some registrants use WHOIS privacy protection, which hides their personal contact details behind the registrar's proxy. Those records still include the domain name, dates and registrar, but not direct contact details.",
+          "We only include contact details that were publicly listed at the time of collection, and we tell you up front what share of each batch has full contact data so you can plan volumes accurately.",
+        ],
+      },
+      {
+        heading: "Expiring Domains",
+        paragraphs: [
+          "Expiry dates make it possible to time renewal, migration and redesign offers. Hosting and domain resellers use expiring lists to win transfers, and agencies use them to pitch redesigns to sites that haven't been updated in years.",
+        ],
+      },
+    ],
+    useCases: [
+      "Website design and development sales",
+      "Web hosting, domain and business email offers",
+      "SEO, social media and digital marketing services",
+      "Logo, branding and content packages",
+      "Payment gateway, accounting and GST services for new businesses",
+      "Domain transfer and renewal campaigns",
+    ],
+    faqs: [
+      {
+        question: "What is a domain WHOIS database?",
+        answer:
+          "It's a list of registered domains with their WHOIS details: registration and expiry dates, registrar and, where publicly listed, registrant name, email and phone number.",
+      },
+      {
+        question: "Do all records include contact details?",
+        answer:
+          "No. Registrants who use WHOIS privacy protection won't have direct contact details. We only include details that were publicly listed and tell you the share of fully contactable records in each batch.",
+      },
+      {
+        question: "Can I get only newly registered domains?",
+        answer: "Yes. Choose a daily feed of new registrations or a monthly batch filtered by registration date.",
+      },
+      {
+        question: "Which extensions are covered?",
+        answer: ".in, .co.in, .com, .net, .org and other popular extensions with Indian registrants.",
+      },
+      {
+        question: "How much does a domain WHOIS database cost?",
+        answer:
+          "One-time lists start at ₹2,999. Daily and monthly recurring feeds are priced by volume and extension. Contact us for a quote.",
+      },
+      {
+        question: "Can I get a free sample?",
+        answer: "Yes. Every enquiry includes 15–20 free sample records before you place an order.",
+      },
+    ],
+    related: [
+      "newly-registered-companies-india",
+      "email-database-india",
+      "b2b-leads-database-india",
+      "mca-company-database-india",
+      "b2b-database-india",
+      "b2b-b2c-companies-database",
+    ],
+  },
+  {
+    slug: "school-colleges-database",
+    keyword: "schools and colleges database India",
+    title: "School & Colleges Database India",
+    metaDescription:
+      "Verified schools and colleges database for India — CBSE, ICSE, state board schools, colleges and universities with principal and admin contacts. Free sample.",
+    eyebrow: "Schools & Colleges Database",
+    h1: "Schools & Colleges Database India — Institutions, Principals and Administrators",
+    answer:
+      "A schools and colleges database is a list of educational institutions with their contact details, board or affiliation, type and location, often including the principal, director or administrator. Education suppliers, EdTech companies, publishers and service providers use it to sell to institutions. IndiaB2BData.com's database covers schools, colleges, universities, coaching centres and training institutes across India.",
+    intro: [
+      "India has lakhs of schools and tens of thousands of colleges, and each one buys books, uniforms, furniture, lab equipment, software, transport, security and training. Selling to them is a classic B2B problem: you need to know which institutions exist in your territory and who makes the purchasing decision.",
+      "Our schools and colleges database is filtered by institution type, board or affiliation, ownership (government, private, aided) and location. You can reach CBSE schools in Delhi NCR, engineering colleges in Tamil Nadu or private universities across India, with principal and admin contacts where available.",
+    ],
+    highlights: [
+      { icon: School, title: "Schools to Universities", description: "Schools, colleges, universities and institutes." },
+      { icon: Filter, title: "Board & Affiliation", description: "CBSE, ICSE, state boards, AICTE, UGC and more." },
+      { icon: UserCheck, title: "Decision-Maker Contacts", description: "Principals, directors and administrators." },
+      { icon: MapPinned, title: "District-Level Coverage", description: "Filter by city, district or state." },
+    ],
+    dataFields: [
+      "Institution name and type",
+      "Board, university or affiliation",
+      "Principal, director or administrator name, where available",
+      "Phone number and email address",
+      "Website, where available",
+      "Address, city, district, state and pincode",
+    ],
+    sections: [
+      {
+        heading: "Institutions Covered",
+        paragraphs: [
+          "School coverage includes CBSE, ICSE/ISC, IB, Cambridge and state board schools, split by pre-primary, primary, secondary and senior secondary levels, and by government, aided and private management.",
+          "Higher education coverage includes arts, science and commerce colleges, engineering, medical, pharmacy, nursing, management and law colleges, polytechnics, ITIs, universities, coaching centres and vocational training institutes.",
+        ],
+      },
+      {
+        heading: "Selling to Schools and Colleges",
+        paragraphs: [
+          "Institutional sales follow the academic calendar. Most purchasing decisions for books, uniforms, furniture and technology are made between January and April, before the new session begins. Budgets for events, training and infrastructure often open later in the year.",
+          "Address the principal or administrator by name, show how your product helps students or reduces staff workload, and offer a demo or trial. Institutions value references, so mention other schools or colleges you work with.",
+        ],
+      },
+      {
+        heading: "Schools Database vs Students Database",
+        paragraphs: [
+          "This database lists institutions, so it's the right choice for B2B education sales: selling to the school or college itself. If you want to reach the students or parents directly, for admissions or courses, use our students database instead.",
+        ],
+      },
+    ],
+    useCases: [
+      "EdTech, ERP and smart classroom software sales",
+      "Books, stationery and uniform suppliers",
+      "School furniture, lab and sports equipment",
+      "Teacher training and workshops",
+      "Campus recruitment and placement partnerships",
+      "Event, olympiad and competition invitations",
+    ],
+    faqs: [
+      {
+        question: "What is a schools and colleges database?",
+        answer:
+          "It's a list of educational institutions with contact details, type, board or affiliation and location, often including principal or administrator contacts. It's used for selling products and services to institutions.",
+      },
+      {
+        question: "Can I filter schools by board?",
+        answer: "Yes. Filter by CBSE, ICSE, IB, Cambridge or state board, and by government, aided or private management.",
+      },
+      {
+        question: "Does it include colleges and universities?",
+        answer: "Yes. Coverage includes colleges, universities, polytechnics, ITIs, coaching centres and training institutes.",
+      },
+      {
+        question: "How much does a schools and colleges database cost?",
+        answer:
+          "Packages start at ₹2,999 for up to 5,000 records in one city or district, and ₹8,999 for up to 25,000 records across 5 cities or states. State-wide or pan-India lists are custom-quoted.",
+      },
+      {
+        question: "Is this the same as a students database?",
+        answer: "No. This database lists institutions. Our separate students database lists students and parents for admissions marketing.",
+      },
+      {
+        question: "Can I get a free sample?",
+        answer: "Yes. Every enquiry includes 15–20 free sample records before you place an order.",
+      },
+    ],
+    related: [
+      "students-database",
+      "industry-wise-company-database-india",
+      "doctors-database",
+      "email-database-india",
+      "company-database-india",
       "b2b-database-india",
     ],
   },

@@ -19,7 +19,7 @@ export function Footer() {
     <footer className="bg-navy-dark text-slate-300 pt-16 pb-8">
       <nav
         aria-label="Data products"
-        className="max-w-7xl mx-auto px-5 md:px-8 mb-12 pb-12 border-b border-white/10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-x-8 gap-y-8"
+        className="max-w-7xl mx-auto px-5 md:px-8 mb-12 pb-12 border-b border-white/10 grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-8"
       >
         {PRODUCT_GROUPS.map((group) => (
           <div key={group.heading}>

@@ -76,9 +76,15 @@ const SLUG_TO_GROUP: Record<string, ImageGroup> = {
   "whatsapp-number-database-india": "office-team",
   "bulk-sms-database-india": "office-team",
   "email-database-india": "data-network",
-  "doctors-database-india": "support",
+  "doctors-database": "support",
   "importers-exporters-database-india": "warehouse",
   "dealers-distributors-database-india": "handshake",
+  "b2b-b2c-companies-database": "data-network",
+  "students-database": "office-team",
+  "job-seekers-database": "office-team",
+  "car-owners-database": "city-skyline",
+  "domain-whois-database": "data-network",
+  "school-colleges-database": "documents",
 };
 
 export function getKeywordImage(slug: string, keyword: string) {
