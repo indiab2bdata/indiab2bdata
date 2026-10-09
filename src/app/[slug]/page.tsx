@@ -76,11 +76,12 @@ export default async function KeywordPage({ params }: { params: Params }) {
         eyebrow={page.eyebrow}
         title={page.h1}
         breadcrumbs={[{ label: "Home", href: "/" }, { label: page.keyword }]}
+        image={visual.src}
       />
 
       <AnswerBox answer={page.answer} />
 
-      <section className="pt-12 md:pt-16 pb-4 max-w-3xl mx-auto px-5 md:px-8 space-y-4">
+      <section className="pt-12 md:pt-16 pb-4 max-w-6xl mx-auto px-5 md:px-8 space-y-4">
         {page.intro.map((paragraph, i) => (
           <Reveal key={i} delay={i * 0.06}>
             <p className="text-muted leading-relaxed">{paragraph}</p>
@@ -114,7 +115,7 @@ export default async function KeywordPage({ params }: { params: Params }) {
 
       {page.dataFields && (
         <section className="py-16 md:py-20">
-          <div className="max-w-4xl mx-auto px-5 md:px-8">
+          <div className="max-w-6xl mx-auto px-5 md:px-8">
             <Reveal className="mb-8">
               <span className="text-teal text-xs font-semibold uppercase tracking-[0.16em]">Data Fields</span>
               <h2 className="font-display font-extrabold text-2xl md:text-3xl text-navy mt-3 tracking-tight">
@@ -127,7 +128,7 @@ export default async function KeywordPage({ params }: { params: Params }) {
       )}
 
       {page.sections && (
-        <section className="pb-12 md:pb-16 max-w-3xl mx-auto px-5 md:px-8 space-y-12">
+        <section className="pb-12 md:pb-16 max-w-6xl mx-auto px-5 md:px-8 space-y-12">
           {page.sections.map((section) => (
             <Reveal key={section.heading}>
               <h2 className="font-display font-extrabold text-2xl md:text-3xl text-navy tracking-tight">
@@ -139,6 +140,24 @@ export default async function KeywordPage({ params }: { params: Params }) {
                     {paragraph}
                   </p>
                 ))}
+                {section.subsections?.map((sub) => (
+                  <div key={sub.heading} className="pt-2">
+                    <h3 className="font-display font-bold text-lg text-navy">{sub.heading}</h3>
+                    <p className="mt-1.5 text-muted leading-relaxed">{sub.text}</p>
+                  </div>
+                ))}
+                {section.bullets && (
+                  <ul className="list-disc pl-5 space-y-2 text-muted leading-relaxed marker:text-teal">
+                    {section.bullets.map((bullet) => (
+                      <li key={bullet}>{bullet}</li>
+                    ))}
+                  </ul>
+                )}
+                {section.closing?.map((paragraph, i) => (
+                  <p key={`closing-${i}`} className="text-muted leading-relaxed">
+                    {paragraph}
+                  </p>
+                ))}
               </div>
             </Reveal>
           ))}
@@ -146,7 +165,7 @@ export default async function KeywordPage({ params }: { params: Params }) {
       )}
 
       <section className="bg-bgsoft py-16 md:py-20">
-        <div className="max-w-4xl mx-auto px-5 md:px-8">
+        <div className="max-w-6xl mx-auto px-5 md:px-8">
           <Reveal className="mb-8">
             <span className="text-teal text-xs font-semibold uppercase tracking-[0.16em]">Common Use Cases</span>
             <h2 className="font-display font-extrabold text-2xl md:text-3xl text-navy mt-3 tracking-tight">

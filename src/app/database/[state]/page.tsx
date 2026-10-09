@@ -98,7 +98,7 @@ export default async function DatabaseStatePage({ params }: { params: Params }) 
 
       <AnswerBox answer={page.answer} />
 
-      <section className="pt-12 md:pt-16 pb-4 max-w-3xl mx-auto px-5 md:px-8 space-y-4">
+      <section className="pt-12 md:pt-16 pb-4 max-w-6xl mx-auto px-5 md:px-8 space-y-4">
         {page.intro.map((paragraph, i) => (
           <Reveal key={i} delay={i * 0.06}>
             <p className="text-muted leading-relaxed">{paragraph}</p>
@@ -131,7 +131,7 @@ export default async function DatabaseStatePage({ params }: { params: Params }) 
       />
 
       <section className="bg-bgsoft py-16 md:py-20">
-        <div className="max-w-5xl mx-auto px-5 md:px-8">
+        <div className="max-w-6xl mx-auto px-5 md:px-8">
           <Reveal className="mb-8">
             <span className="text-teal text-xs font-semibold uppercase tracking-[0.16em]">Cities Covered</span>
             <h2 className="font-display font-extrabold text-2xl md:text-3xl text-navy mt-3 tracking-tight">

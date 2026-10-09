@@ -16,7 +16,7 @@ export function InlineCta({
   const { openModal } = useModal();
 
   return (
-    <section className="py-6 md:py-8 max-w-4xl mx-auto px-5 md:px-8">
+    <section className="py-6 md:py-8 max-w-6xl mx-auto px-5 md:px-8">
       <Reveal>
         <div className="group flex flex-col sm:flex-row items-center justify-between gap-4 bg-teal/5 border border-teal/20 rounded-2xl px-6 py-5">
           <p className="text-sm md:text-base text-navy font-medium text-center sm:text-left">

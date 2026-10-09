@@ -45,7 +45,7 @@ export default function PrivacyPolicyPage() {
         breadcrumbs={breadcrumbItems}
       />
 
-      <section className="py-16 md:py-24 max-w-3xl mx-auto px-5 md:px-8">
+      <section className="py-16 md:py-24 max-w-6xl mx-auto px-5 md:px-8">
         <div className="bg-white rounded-2xl border border-[#DCEAF3] p-7 md:p-12 space-y-9 text-sm md:text-base text-navy/85 leading-relaxed">
           <p>
             IndiaB2BData.com (&ldquo;we&rdquo;, &ldquo;us&rdquo;, &ldquo;our&rdquo;) respects your

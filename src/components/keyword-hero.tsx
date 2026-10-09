@@ -1,6 +1,6 @@
 "use client";
 
-import { DataNetwork } from "@/components/data-network";
+import { HeroBackground } from "@/components/hero-background";
 import { Breadcrumbs, type BreadcrumbItem } from "@/components/breadcrumbs";
 import { useModal } from "@/components/modal-context";
 import { WhatsAppIcon } from "@/components/icons/whatsapp-icon";
@@ -10,16 +10,19 @@ export function KeywordHero({
   eyebrow,
   title,
   breadcrumbs,
+  image,
 }: {
   eyebrow: string;
   title: string;
   breadcrumbs: BreadcrumbItem[];
+  /** Background photo; defaults to the site-wide hero image. */
+  image?: string;
 }) {
   const { openModal } = useModal();
 
   return (
     <section className="relative overflow-hidden mesh-navy pt-28 md:pt-36 pb-16 md:pb-20">
-      <DataNetwork variant="cta" className="opacity-60" />
+      <HeroBackground image={image} />
       <div className="relative max-w-4xl mx-auto px-5 md:px-8 text-center">
         <Breadcrumbs items={breadcrumbs} />
 

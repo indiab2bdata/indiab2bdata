@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { DataNetwork } from "@/components/data-network";
+import { HeroBackground } from "@/components/hero-background";
 import { Breadcrumbs, type BreadcrumbItem } from "@/components/breadcrumbs";
 
 export function PageHero({
@@ -8,12 +8,15 @@ export function PageHero({
   description,
   compact = false,
   breadcrumbs,
+  image,
 }: {
   eyebrow: string;
   title: string;
   description?: ReactNode;
   compact?: boolean;
   breadcrumbs?: BreadcrumbItem[];
+  /** Background photo; defaults to the site-wide hero image. */
+  image?: string;
 }) {
   return (
     <section
@@ -21,7 +24,7 @@ export function PageHero({
         compact ? "pt-28 md:pt-36 pb-12 md:pb-16" : "pt-28 md:pt-36 pb-16 md:pb-20"
       }`}
     >
-      <DataNetwork variant="cta" className="opacity-60" />
+      <HeroBackground image={image} />
       <div className="relative max-w-4xl mx-auto px-5 md:px-8 text-center">
         {breadcrumbs && (
           <div className="flex justify-center mb-5">

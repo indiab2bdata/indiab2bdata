@@ -17,7 +17,7 @@ const CONTENT_UPDATED = {
   "/database": "2026-10-07",
   "/blog": "2026-10-07",
   "/contact": "2026-09-30",
-  keywordPages: "2026-10-09",
+  keywordPages: "2026-10-10",
   statePages: "2026-10-07",
   cityPages: "2026-10-07",
 } as const;

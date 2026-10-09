@@ -1,10 +1,11 @@
-/** The 22 live data products, grouped for footer navigation. Labels are descriptive, not exact-match keywords. */
+/** The 31 live data products, grouped for footer navigation. Labels are descriptive, not exact-match keywords. */
 export const PRODUCT_GROUPS: { heading: string; links: { href: string; label: string }[] }[] = [
   {
     heading: "General",
     links: [
       { href: "/b2b-database-india", label: "B2B Database" },
       { href: "/company-database-india", label: "Company Database" },
+      { href: "/b2b-leads-database-india", label: "B2B Sales Leads" },
     ],
   },
   {
@@ -23,16 +24,25 @@ export const PRODUCT_GROUPS: { heading: string; links: { href: string; label: st
     ],
   },
   {
-    heading: "Leads",
-    links: [{ href: "/b2b-leads-database-india", label: "B2B Sales Leads" }],
-  },
-  {
-    heading: "Segments",
+    heading: "Trade & Industry",
     links: [
       { href: "/manufacturer-database-india", label: "Manufacturers" },
-      { href: "/doctors-database", label: "Doctors" },
+      { href: "/apparel-garments-exporters-database-india", label: "Garment Exporters" },
       { href: "/importers-exporters-database-india", label: "Importers & Exporters" },
       { href: "/dealers-distributors-database-india", label: "Dealers & Distributors" },
+      { href: "/building-material-database-india", label: "Building Material" },
+      { href: "/beauty-parlours-salons-spa-database-india", label: "Salons & Spas" },
+    ],
+  },
+  {
+    heading: "Professionals",
+    links: [
+      { href: "/doctors-database", label: "Doctors" },
+      { href: "/advocates-lawyers-database-india", label: "Advocates & Lawyers" },
+      { href: "/agents-database-india", label: "Agents" },
+      { href: "/architect-interior-designers-database-india", label: "Architects & Interiors" },
+      { href: "/business-analysts-database-india", label: "Business Analysts" },
+      { href: "/bpo-call-centre-employees-database-india", label: "BPO Employees" },
     ],
   },
   {
@@ -57,6 +67,7 @@ export const PRODUCT_GROUPS: { heading: string; links: { href: string; label: st
     links: [
       { href: "/students-database", label: "Students" },
       { href: "/school-colleges-database", label: "Schools & Colleges" },
+      { href: "/teachers-database-india", label: "Teachers" },
       { href: "/domain-whois-database", label: "Domain WHOIS Data" },
     ],
   },
