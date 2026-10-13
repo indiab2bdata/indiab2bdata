@@ -10,11 +10,14 @@ import { RelatedLinks } from "@/components/related-links";
 import { JsonLd } from "@/components/json-ld";
 import { getKeywordPagesBySlug } from "@/lib/keyword-pages";
 import { siteConfig } from "@/lib/site-config";
-import { pageMetadata, breadcrumbJsonLd, webPageJsonLd } from "@/lib/seo";
+import { pageMetadata, breadcrumbJsonLd, webPageJsonLd, faqJsonLd } from "@/lib/seo";
+import { ABOUT_FAQS } from "@/lib/faq-data";
+import { Faq } from "@/components/sections/faq";
+import { CoverageLinks } from "@/components/coverage-links";
 
 const TITLE = "About Us";
 const DESCRIPTION =
-  "Learn about IndiaB2BData.com — India's trusted partner for verified B2B mobile number, email and company databases across 700+ cities.";
+  "Learn about IndiaB2BData.com - India's trusted partner for verified B2B mobile number, email and company databases across 700+ cities.";
 
 export const metadata: Metadata = pageMetadata({
   title: TITLE,
@@ -40,7 +43,14 @@ const webPageSchema = webPageJsonLd({
   url: `${siteConfig.url}/about`,
 });
 
-const relatedPages = getKeywordPagesBySlug(["b2b-database-india", "company-database-india", "b2b-leads-database-india"]);
+const relatedPages = getKeywordPagesBySlug([
+  "b2b-database-india",
+  "company-database-india",
+  "b2b-leads-database-india",
+  "gst-database-india",
+  "manufacturer-database-india",
+  "mobile-number-database-india",
+]);
 
 const VALUES = [
   {
@@ -76,12 +86,12 @@ const STATS = [
 export default function AboutPage() {
   return (
     <>
-      <JsonLd data={[breadcrumbSchema, webPageSchema]} />
+      <JsonLd data={[breadcrumbSchema, webPageSchema, faqJsonLd(ABOUT_FAQS)]} />
 
       <PageHero
         eyebrow="About IndiaB2BData.com"
         title="Helping Indian Businesses Reach the Right Customers"
-        description="We build verified B2B databases so sales and marketing teams across India can spend their time selling — not chasing dead numbers."
+        description="We build verified B2B databases so sales and marketing teams across India can spend their time selling - not chasing dead numbers."
         breadcrumbs={breadcrumbItems}
       />
 
@@ -96,12 +106,12 @@ export default function AboutPage() {
           <p className="mt-5 text-muted leading-relaxed">
             IndiaB2BData.com started with a simple observation: sales and marketing teams across
             India were losing hours every week dialling outdated numbers and chasing inactive
-            leads. We set out to fix that — by building clean, verified, and regularly refreshed
+            leads. We set out to fix that - by building clean, verified, and regularly refreshed
             B2B databases covering every industry, city and state in the country.
           </p>
           <p className="mt-4 text-muted leading-relaxed">
             Today, we work with real estate firms, EdTech companies, finance and insurance
-            agencies, manufacturers, healthcare providers and e-commerce brands — helping them
+            agencies, manufacturers, healthcare providers and e-commerce brands - helping them
             connect with genuine decision-makers instead of wasting budget on guesswork.
           </p>
         </Reveal>
@@ -159,6 +169,10 @@ export default function AboutPage() {
           ))}
         </div>
       </section>
+
+      <CoverageLinks topic="B2B Business Data" />
+
+      <Faq items={ABOUT_FAQS} id="about-faq" eyebrow="FAQs" heading="About IndiaB2BData.com - FAQs" background="white" />
 
       <RelatedLinks pages={relatedPages} eyebrow="Explore" heading="Related Data Products" />
 

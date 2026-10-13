@@ -7,7 +7,7 @@ const DEFAULT_OG_IMAGE: OgImage = {
   url: `${siteConfig.url}/images/home/hero.jpg`,
   width: 1200,
   height: 900,
-  alt: `${siteConfig.name} — Verified B2B business data across India`,
+  alt: `${siteConfig.name} - Verified B2B business data across India`,
 };
 
 /** Resolves a site-relative path to an absolute https://... URL. */
@@ -20,7 +20,7 @@ export function absoluteUrl(path: string) {
  * Builds the full title/description/canonical/OG/Twitter block for a page.
  * Every route should call this so canonical + social previews are never
  * silently missing (Next.js metadata is only shallow-merged from the root
- * layout, so a page that skips `openGraph` entirely loses it — see
+ * layout, so a page that skips `openGraph` entirely loses it - see
  * node_modules/next/dist/docs/.../generate-metadata.md#merging).
  */
 export function pageMetadata({
@@ -32,7 +32,7 @@ export function pageMetadata({
   image,
 }: {
   title: string;
-  /** Overrides the <title> tag independently of the OG/Twitter title — pass
+  /** Overrides the <title> tag independently of the OG/Twitter title - pass
    * `null` to skip the <title> tag entirely and let it inherit the layout's
    * default (used on the homepage, which shouldn't get the title template
    * applied twice). */
@@ -152,7 +152,7 @@ export function itemListJsonLd(items: { name: string; url: string }[], name?: st
   };
 }
 
-/** Sitewide entity — included once via the root layout. */
+/** Sitewide entity - included once via the root layout. */
 export const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",

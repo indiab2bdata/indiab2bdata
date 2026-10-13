@@ -7,11 +7,13 @@ import { JsonLd } from "@/components/json-ld";
 import { getKeywordPagesBySlug } from "@/lib/keyword-pages";
 import { PopularCities } from "@/components/popular-cities";
 import { siteConfig } from "@/lib/site-config";
-import { pageMetadata, breadcrumbJsonLd, webPageJsonLd, itemListJsonLd } from "@/lib/seo";
+import { pageMetadata, breadcrumbJsonLd, webPageJsonLd, itemListJsonLd, faqJsonLd } from "@/lib/seo";
+import { GUIDES_FAQS } from "@/lib/faq-data";
+import { Faq } from "@/components/sections/faq";
 
 const TITLE = "B2B Data Insights & Guides";
 const DESCRIPTION =
-  "Guides on B2B databases, GST & company data, business directories and lead generation in India — from the team at IndiaB2BData.com.";
+  "Guides on B2B databases, GST & company data, business directories and lead generation in India - from the team at IndiaB2BData.com.";
 
 export const metadata: Metadata = pageMetadata({
   title: TITLE,
@@ -44,6 +46,11 @@ const GUIDE_SLUGS = [
   "industry-wise-company-database-india",
   "b2b-leads-database-india",
   "bulk-sms-database-india",
+  "email-database-india",
+  "whatsapp-number-database-india",
+  "importers-exporters-database-india",
+  "dealers-distributors-database-india",
+  "ceo-cfo-cmo-it-heads-database-india",
 ];
 
 export default function BlogHubPage() {
@@ -56,12 +63,12 @@ export default function BlogHubPage() {
 
   return (
     <>
-      <JsonLd data={[breadcrumbSchema, webPageSchema, guideListSchema]} />
+      <JsonLd data={[breadcrumbSchema, webPageSchema, guideListSchema, faqJsonLd(GUIDES_FAQS)]} />
 
       <PageHero
         eyebrow="Insights & Guides"
         title="B2B Data Insights & Guides"
-        description="Practical guides on B2B databases, GST & company records, business directories and lead generation — written for Indian sales and marketing teams."
+        description="Practical guides on B2B databases, GST & company records, business directories and lead generation - written for Indian sales and marketing teams."
         breadcrumbs={breadcrumbItems}
       />
 
@@ -70,6 +77,8 @@ export default function BlogHubPage() {
       <InlineCta id="blog-guides-cta" text="Want data matched to a guide above? Tell us your exact requirement." />
 
       <PopularCities eyebrow="Coverage Guides" heading="City-Wise Company Databases" />
+
+      <Faq items={GUIDES_FAQS} id="guides-faq" eyebrow="FAQs" heading="B2B Data Questions, Answered" background="white" />
 
       <ContactCta />
     </>

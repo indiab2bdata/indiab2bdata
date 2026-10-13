@@ -44,9 +44,9 @@ export function KeywordHero({
             href={siteConfig.whatsappHref(siteConfig.defaultWhatsappMessage)}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 text-white/90 font-medium border border-white/25 hover:border-white/60 px-6 py-3.5 rounded-full transition"
+            className="group flex items-center gap-2.5 px-7 py-3.5 rounded-full bg-[#1fb355] hover:bg-[#18a04a] text-white font-semibold shadow-lg shadow-[#1fb355]/35 hover:shadow-xl hover:shadow-[#1fb355]/45 hover:-translate-y-0.5 active:scale-[0.98] ring-1 ring-white/20 transition-all duration-300"
           >
-            <WhatsAppIcon className="w-5 h-5 text-whats" />
+            <WhatsAppIcon className="w-5 h-5 text-white transition-transform duration-300 group-hover:scale-110" />
             Chat on WhatsApp
           </a>
         </div>

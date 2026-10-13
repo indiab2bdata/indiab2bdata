@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
 import { PRODUCT_GROUPS } from "@/lib/product-groups";
+import { databaseStates } from "@/lib/database-pages";
 import { cities, cityPath } from "@/components/city-pages/city-data.mjs";
 
 const QUICK_LINKS = [
@@ -12,6 +13,8 @@ const QUICK_LINKS = [
   { href: "/blog", label: "Guides" },
   { href: "/about", label: "About Us" },
   { href: "/contact", label: "Contact" },
+  { href: "/privacy-policy", label: "Privacy Policy" },
+  { href: "/terms-and-conditions", label: "Terms & Conditions" },
 ];
 
 export function Footer() {
@@ -37,7 +40,7 @@ export function Footer() {
         ))}
       </nav>
 
-      <div className="max-w-7xl mx-auto px-5 md:px-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-10">
+      <div className="max-w-7xl mx-auto px-5 md:px-8 grid sm:grid-cols-2 lg:grid-cols-5 gap-x-8 gap-y-10">
         <div>
           <div className="flex items-center gap-2">
             <Image
@@ -53,7 +56,7 @@ export function Footer() {
             </span>
           </div>
           <p className="mt-4 text-sm leading-relaxed text-slate-400">
-            Verified B2B business data across India — mobile numbers, emails and company
+            Verified B2B business data across India - mobile numbers, emails and company
             records for smarter sales &amp; marketing.
           </p>
         </div>
@@ -72,12 +75,27 @@ export function Footer() {
         </div>
 
         <div>
+          <p className="font-display font-bold text-white text-sm mb-4">
+            <Link href="/database" className="hover:text-teal-light transition-colors">Database by State</Link>
+          </p>
+          <ul className="space-y-2 text-sm">
+            {databaseStates.map((state) => (
+              <li key={state.slug}>
+                <Link href={`/database/${state.slug}`} className="hover:text-teal-light hover:underline underline-offset-4 transition-colors">
+                  {state.name} B2B Data
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
           <p className="font-display font-bold text-white text-sm mb-4">Popular Cities</p>
           <ul className="space-y-2 text-sm">
             {Object.values(cities).map((city) => (
               <li key={city.slug}>
                 <Link href={cityPath(city)} className="hover:text-teal-light hover:underline underline-offset-4 transition-colors">
-                  {city.city}
+                  {city.city} Company Data
                 </Link>
               </li>
             ))}
@@ -104,7 +122,7 @@ export function Footer() {
       </div>
 
       <div className="max-w-7xl mx-auto px-5 md:px-8 mt-12 pt-6 border-t border-white/10 flex flex-col sm:flex-row justify-between gap-3 text-xs text-slate-500">
-        <p>© 2026 IndiaB2BData.com — All rights reserved.</p>
+        <p>© 2026 IndiaB2BData.com - All rights reserved.</p>
         <p>
           Data provided for legitimate marketing use only.{" "}
           <Link href="/privacy-policy" className="hover:text-teal-light transition">

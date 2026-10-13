@@ -55,13 +55,13 @@ export type KeywordPage = {
   metaDescription: string;
   eyebrow: string;
   h1: string;
-  /** Short, direct, quotable answer for AEO/GEO — the first thing a reader (or an AI answer engine) sees. */
+  /** Short, direct, quotable answer for AEO/GEO - the first thing a reader (or an AI answer engine) sees. */
   answer: string;
   intro: string[];
   highlights: KeywordHighlight[];
   useCases: string[];
   faqs: KeywordFaq[];
-  /** Fields delivered in each record — rendered as a "What's included" checklist. */
+  /** Fields delivered in each record - rendered as a "What's included" checklist. */
   dataFields?: string[];
   /** Long-form H2 sections for topical depth. */
   sections?: KeywordSection[];
@@ -75,14 +75,14 @@ export const keywordPages: KeywordPage[] = [
     keyword: "B2B database India",
     title: "B2B Database India | Verified Business Contacts",
     metaDescription:
-      "Get a verified B2B database in India — 50L+ business contacts, 700+ cities, 500+ industries. Mobile numbers, emails and company records, refreshed monthly.",
+      "Get a verified B2B database in India - 50L+ business contacts, 700+ cities, 500+ industries. Mobile numbers, emails and company records, refreshed monthly.",
     eyebrow: "B2B Database India",
-    h1: "B2B Database India — Verified Business Contacts for Every Industry",
+    h1: "B2B Database India - Verified Business Contacts for Every Industry",
     answer:
-      "A B2B database is a structured collection of verified business contact records — company names, decision-maker mobile numbers, emails and GST/company details — used by sales and marketing teams to find and reach other businesses. IndiaB2BData.com maintains a B2B database of 50L+ verified records spanning 700+ Indian cities and 500+ industries.",
+      "A B2B database is a structured collection of verified business contact records - company names, decision-maker mobile numbers, emails and GST/company details - used by sales and marketing teams to find and reach other businesses. IndiaB2BData.com maintains a B2B database of 50L+ verified records spanning 700+ Indian cities and 500+ industries.",
     intro: [
       "Whether you're a sales team cold-calling new prospects, a marketing agency running WhatsApp campaigns, or a startup entering a new city, a reliable B2B database is the foundation of every outbound effort. Bad data wastes hours on disconnected numbers and bounced emails; a verified B2B database puts your team in front of real decision-makers instead.",
-      "Our B2B database India covers mobile numbers, corporate emails, GSTIN-linked company records and industry-wise segments — deduplicated, DND-scrubbed and refreshed every 30 days so you're always calling active contacts.",
+      "Our B2B database India covers mobile numbers, corporate emails, GSTIN-linked company records and industry-wise segments - deduplicated, DND-scrubbed and refreshed every 30 days so you're always calling active contacts.",
     ],
     highlights: [
       { icon: ShieldCheck, title: "Verified & Fresh", description: "Every record checked and refreshed monthly." },
@@ -100,7 +100,7 @@ export const keywordPages: KeywordPage[] = [
       {
         question: "What is a B2B database?",
         answer:
-          "A B2B database is a compiled, verified set of business contact records — typically mobile numbers, emails, company names and GST details — that sales and marketing teams use to reach other businesses directly instead of cold-searching.",
+          "A B2B database is a compiled, verified set of business contact records - typically mobile numbers, emails, company names and GST details - that sales and marketing teams use to reach other businesses directly instead of cold-searching.",
       },
       {
         question: "How is IndiaB2BData.com's B2B database sourced?",
@@ -132,14 +132,14 @@ export const keywordPages: KeywordPage[] = [
     keyword: "B2B data provider India",
     title: "B2B Data Provider India | Verified & Compliant Data",
     metaDescription:
-      "Looking for a trusted B2B data provider in India? Compare what to check for — accuracy, compliance, delivery speed — and see why teams choose IndiaB2BData.com.",
+      "Looking for a trusted B2B data provider in India? Compare what to check for - accuracy, compliance, delivery speed - and see why teams choose IndiaB2BData.com.",
     eyebrow: "B2B Data Provider India",
-    h1: "B2B Data Provider India — What to Look For, and Why Teams Choose Us",
+    h1: "B2B Data Provider India - What to Look For, and Why Teams Choose Us",
     answer:
-      "A B2B data provider is a company that compiles, verifies and licenses business contact data for sales and marketing use. When choosing a B2B data provider in India, prioritise verified accuracy, DND/TRAI compliance, industry breadth and delivery speed — IndiaB2BData.com covers all four across 700+ cities.",
+      "A B2B data provider is a company that compiles, verifies and licenses business contact data for sales and marketing use. When choosing a B2B data provider in India, prioritise verified accuracy, DND/TRAI compliance, industry breadth and delivery speed - IndiaB2BData.com covers all four across 700+ cities.",
     intro: [
-      "Not every B2B data provider is built the same. Some resell stale, unverified lists; others lock you into large minimum orders before you've even seen a sample. The difference shows up fast once your team starts dialling — either you reach real decision-makers, or you burn hours on dead numbers.",
-      "As a B2B data provider in India, we verify and deduplicate every record before delivery, scrub against DND/NDNC lists, and let you request a free sample before you commit to a package — so you can judge quality before you pay.",
+      "Not every B2B data provider is built the same. Some resell stale, unverified lists; others lock you into large minimum orders before you've even seen a sample. The difference shows up fast once your team starts dialling - either you reach real decision-makers, or you burn hours on dead numbers.",
+      "As a B2B data provider in India, we verify and deduplicate every record before delivery, scrub against DND/NDNC lists, and let you request a free sample before you commit to a package - so you can judge quality before you pay.",
     ],
     highlights: [
       { icon: BadgeCheck, title: "Verified Accuracy", description: "Every record checked and deduplicated before delivery." },
@@ -162,7 +162,7 @@ export const keywordPages: KeywordPage[] = [
       {
         question: "Is IndiaB2BData.com's data compliant to use?",
         answer:
-          "Yes — data is sourced from publicly available and permission-based channels, and DND numbers are scrubbed before delivery.",
+          "Yes - data is sourced from publicly available and permission-based channels, and DND numbers are scrubbed before delivery.",
       },
       {
         question: "In what format is the data delivered?",
@@ -171,7 +171,7 @@ export const keywordPages: KeywordPage[] = [
       {
         question: "Can I request a custom filter combination?",
         answer:
-          "Yes — tell us the city, industry, turnover band or designation you need and we'll build a custom list for you.",
+          "Yes - tell us the city, industry, turnover band or designation you need and we'll build a custom list for you.",
       },
     ],
   },
@@ -180,14 +180,14 @@ export const keywordPages: KeywordPage[] = [
     keyword: "business database India",
     title: "Business Database India | 50L+ Verified Contacts",
     metaDescription:
-      "Access a verified business database across India — 50L+ contacts, 700+ cities, every major industry. Built for sales prospecting and marketing outreach.",
+      "Access a verified business database across India - 50L+ contacts, 700+ cities, every major industry. Built for sales prospecting and marketing outreach.",
     eyebrow: "Business Database India",
-    h1: "Business Database India — Reach Every Industry, Every City",
+    h1: "Business Database India - Reach Every Industry, Every City",
     answer:
-      "A business database is a verified collection of company and contact records — names, phone numbers, emails and industry classification — used to identify and reach potential customers or partners. IndiaB2BData.com's business database spans 50L+ records across real estate, EdTech, finance, manufacturing, healthcare, e-commerce and 500+ other industries.",
+      "A business database is a verified collection of company and contact records - names, phone numbers, emails and industry classification - used to identify and reach potential customers or partners. IndiaB2BData.com's business database spans 50L+ records across real estate, EdTech, finance, manufacturing, healthcare, e-commerce and 500+ other industries.",
     intro: [
-      "Growing a business in India means reaching prospects across a huge range of cities, languages and industries. A generic contact list rarely fits — you need a business database that can be filtered down to exactly who you're trying to reach.",
-      "Our business database covers 700+ cities and lets you filter by city, pincode, industry, turnover band or job role, so every list you receive is built for your specific outreach — not a one-size-fits-all export.",
+      "Growing a business in India means reaching prospects across a huge range of cities, languages and industries. A generic contact list rarely fits - you need a business database that can be filtered down to exactly who you're trying to reach.",
+      "Our business database covers 700+ cities and lets you filter by city, pincode, industry, turnover band or job role, so every list you receive is built for your specific outreach - not a one-size-fits-all export.",
     ],
     highlights: [
       { icon: Target, title: "Precisely Filtered", description: "Narrow by city, industry, turnover or designation." },
@@ -208,7 +208,7 @@ export const keywordPages: KeywordPage[] = [
       },
       {
         question: "Can I get data for just one city or industry?",
-        answer: "Yes — the Starter package covers a single city or district; larger packages cover multiple cities or states.",
+        answer: "Yes - the Starter package covers a single city or district; larger packages cover multiple cities or states.",
       },
       {
         question: "Do you offer a free sample first?",
@@ -217,7 +217,7 @@ export const keywordPages: KeywordPage[] = [
       {
         question: "How do I place an order?",
         answer:
-          "Share your requirement, review the free sample, choose a package and confirm payment — most orders are delivered within 2–6 working hours.",
+          "Share your requirement, review the free sample, choose a package and confirm payment - most orders are delivered within 2–6 working hours.",
       },
     ],
   },
@@ -228,12 +228,12 @@ export const keywordPages: KeywordPage[] = [
     metaDescription:
       "Verified company database for India with GSTIN, turnover band, industry classification and contact details. Built for B2B targeting and credit screening.",
     eyebrow: "Company Database India",
-    h1: "Company Database India — Registered Company Records with GSTIN",
+    h1: "Company Database India - Registered Company Records with GSTIN",
     answer:
-      "A company database contains registered company-level details — legal/trade name, GSTIN, turnover band, industry classification and contact information — rather than just individual phone numbers. IndiaB2BData.com's company database is built for B2B targeting, vendor screening and tender research across India.",
+      "A company database contains registered company-level details - legal/trade name, GSTIN, turnover band, industry classification and contact information - rather than just individual phone numbers. IndiaB2BData.com's company database is built for B2B targeting, vendor screening and tender research across India.",
     intro: [
-      "Sometimes a contact number isn't enough — you need to know which company you're dealing with, how big it is, and what it's registered to do. Our company database adds that layer: GSTIN-linked records, turnover bands and business categories alongside contact details.",
-      "This makes it useful for more than outreach alone — teams use it for vendor due-diligence, credit-risk screening and identifying companies that match a specific size or category before making first contact.",
+      "Sometimes a contact number isn't enough - you need to know which company you're dealing with, how big it is, and what it's registered to do. Our company database adds that layer: GSTIN-linked records, turnover bands and business categories alongside contact details.",
+      "This makes it useful for more than outreach alone - teams use it for vendor due-diligence, credit-risk screening and identifying companies that match a specific size or category before making first contact.",
     ],
     highlights: [
       { icon: Landmark, title: "GSTIN-Linked Records", description: "Registered company details tied to GST numbers." },
@@ -258,7 +258,7 @@ export const keywordPages: KeywordPage[] = [
       },
       {
         question: "Is this data useful for vendor screening?",
-        answer: "Yes — many clients use it as a first-pass check on a vendor's registration and business category before onboarding.",
+        answer: "Yes - many clients use it as a first-pass check on a vendor's registration and business category before onboarding.",
       },
       {
         question: "How current is the company data?",
@@ -281,12 +281,12 @@ export const keywordPages: KeywordPage[] = [
     metaDescription:
       "A pan-India company database covering every major state and city. Verified, permission-based sourcing with city, state and pincode-level filters.",
     eyebrow: "Indian Company Database",
-    h1: "Indian Company Database — Every State, Every City",
+    h1: "Indian Company Database - Every State, Every City",
     answer:
       "An Indian company database is a nationwide collection of registered company and contact records covering businesses across India's states, cities and pincode clusters. IndiaB2BData.com's Indian company database spans 700+ cities, sourced from publicly available and permission-based channels and filterable down to the pincode level.",
     intro: [
-      "Expanding across India means dealing with huge regional variation — what works in Mumbai doesn't automatically translate to Lucknow or Coimbatore. An Indian company database that only covers a handful of metros isn't enough for a genuinely pan-India rollout.",
-      "Our database is built for exactly this: filter by state, city or pincode cluster to plan a phased rollout, or pull the full pan-India set for a nationwide campaign — all from the same verified source.",
+      "Expanding across India means dealing with huge regional variation - what works in Mumbai doesn't automatically translate to Lucknow or Coimbatore. An Indian company database that only covers a handful of metros isn't enough for a genuinely pan-India rollout.",
+      "Our database is built for exactly this: filter by state, city or pincode cluster to plan a phased rollout, or pull the full pan-India set for a nationwide campaign - all from the same verified source.",
     ],
     highlights: [
       { icon: MapPinned, title: "700+ Cities", description: "Coverage across every major state and city cluster." },
@@ -303,7 +303,7 @@ export const keywordPages: KeywordPage[] = [
     faqs: [
       {
         question: "Does the database cover smaller cities, not just metros?",
-        answer: "Yes — coverage spans 700+ cities including tier-2 and tier-3 towns, not just the major metros.",
+        answer: "Yes - coverage spans 700+ cities including tier-2 and tier-3 towns, not just the major metros.",
       },
       {
         question: "Can I get data for specific states only?",
@@ -324,13 +324,13 @@ export const keywordPages: KeywordPage[] = [
     keyword: "business data provider India",
     title: "Business Data Provider India | Verified Data Pipeline",
     metaDescription:
-      "A business data provider in India with a transparent verification pipeline — collection, verification, deduplication and DND scrubbing before delivery.",
+      "A business data provider in India with a transparent verification pipeline - collection, verification, deduplication and DND scrubbing before delivery.",
     eyebrow: "Business Data Provider India",
-    h1: "Business Data Provider India — How Our Data Pipeline Works",
+    h1: "Business Data Provider India - How Our Data Pipeline Works",
     answer:
-      "A business data provider supplies verified contact and company data for sales and marketing use, typically on a one-time or recurring basis. IndiaB2BData.com operates a four-stage pipeline — collection, verification, deduplication and DND scrubbing — before any business data reaches a client.",
+      "A business data provider supplies verified contact and company data for sales and marketing use, typically on a one-time or recurring basis. IndiaB2BData.com operates a four-stage pipeline - collection, verification, deduplication and DND scrubbing - before any business data reaches a client.",
     intro: [
-      "Agencies, call centres and internal sales teams all need a steady, reliable feed of business data — not just a single list. As a business data provider, our focus is on the pipeline behind the data, not just the export file you receive.",
+      "Agencies, call centres and internal sales teams all need a steady, reliable feed of business data - not just a single list. As a business data provider, our focus is on the pipeline behind the data, not just the export file you receive.",
       "Every batch goes through the same four steps: records are collected from public and permission-based sources, cross-checked for accuracy, deduplicated against our existing database, and scrubbed against DND/NDNC lists before delivery.",
     ],
     highlights: [
@@ -348,7 +348,7 @@ export const keywordPages: KeywordPage[] = [
     faqs: [
       {
         question: "Can you supply data on a recurring basis, not just once?",
-        answer: "Yes — Business and Enterprise packages include periodic refreshes so you get a continuing feed, not a one-off list.",
+        answer: "Yes - Business and Enterprise packages include periodic refreshes so you get a continuing feed, not a one-off list.",
       },
       {
         question: "Do you support white-label or agency use?",
@@ -371,12 +371,12 @@ export const keywordPages: KeywordPage[] = [
     metaDescription:
       "A corporate database of enterprise companies and senior decision-makers across India. Built for account-based marketing and enterprise B2B sales.",
     eyebrow: "Corporate Database India",
-    h1: "Corporate Database India — Enterprise Companies & Decision-Makers",
+    h1: "Corporate Database India - Enterprise Companies & Decision-Makers",
     answer:
-      "A corporate database focuses on larger enterprises and their senior decision-makers — CXOs, directors and department heads — rather than the full spectrum of small businesses. IndiaB2BData.com's corporate database is filtered by turnover band and designation, built for enterprise sales and account-based marketing.",
+      "A corporate database focuses on larger enterprises and their senior decision-makers - CXOs, directors and department heads - rather than the full spectrum of small businesses. IndiaB2BData.com's corporate database is filtered by turnover band and designation, built for enterprise sales and account-based marketing.",
     intro: [
       "Enterprise sales cycles are different: fewer accounts, higher deal sizes, and a real need to reach the right senior contact rather than a generic front-desk number. A general-purpose business list isn't built for that.",
-      "Our corporate database lets you filter down to larger companies by turnover band and industry, with contacts targeted at senior, decision-making roles — so your outreach reaches someone who can actually say yes.",
+      "Our corporate database lets you filter down to larger companies by turnover band and industry, with contacts targeted at senior, decision-making roles - so your outreach reaches someone who can actually say yes.",
     ],
     highlights: [
       { icon: Users, title: "Senior Decision-Makers", description: "Contacts filtered toward CXO and department-head roles." },
@@ -393,7 +393,7 @@ export const keywordPages: KeywordPage[] = [
     faqs: [
       {
         question: "Can I get contacts for senior roles specifically?",
-        answer: "Yes — records can be filtered toward CXO, director and department-head designations where available.",
+        answer: "Yes - records can be filtered toward CXO, director and department-head designations where available.",
       },
       {
         question: "Is this different from the standard business database?",
@@ -401,7 +401,7 @@ export const keywordPages: KeywordPage[] = [
       },
       {
         question: "Do you support account-based marketing (ABM) lists?",
-        answer: "Yes — tell us your target account list criteria (industry, size, region) and we'll build a matching list.",
+        answer: "Yes - tell us your target account list criteria (industry, size, region) and we'll build a matching list.",
       },
       {
         question: "Does the Enterprise package include support?",
@@ -410,11 +410,11 @@ export const keywordPages: KeywordPage[] = [
     ],
     related: [
       "company-database-india",
+      "ceo-cfo-cmo-it-heads-database-india",
       "business-analysts-database-india",
       "bpo-call-centre-employees-database-india",
       "mca-company-database-india",
       "b2b-leads-database-india",
-      "email-database-india",
     ],
   },
   {
@@ -422,14 +422,14 @@ export const keywordPages: KeywordPage[] = [
     keyword: "verified business database India",
     title: "Verified Business Database India | Accuracy You Can Trust",
     metaDescription:
-      "A verified business database for India — manually and automatically checked, deduplicated and DND-scrubbed. Free sample before you buy.",
+      "A verified business database for India - manually and automatically checked, deduplicated and DND-scrubbed. Free sample before you buy.",
     eyebrow: "Verified Business Database India",
-    h1: "Verified Business Database India — Accuracy Before Anything Else",
+    h1: "Verified Business Database India - Accuracy Before Anything Else",
     answer:
       "A verified business database is one where every record has been checked for accuracy, deduplicated and scrubbed against Do-Not-Disturb (DND) lists before it's delivered. IndiaB2BData.com verifies every record in its database this way, and offers a free sample so you can confirm accuracy before you buy.",
     intro: [
-      "\"Verified\" is a word a lot of data sellers use loosely. For us it means a specific process: every record is checked, deduplicated against our existing database, and scrubbed against DND/NDNC lists — every single time, not just on request.",
-      "That process is what keeps connect rates high and protects your sender reputation on WhatsApp and email — nobody wants to burn a campaign on numbers that were never real to begin with.",
+      "\"Verified\" is a word a lot of data sellers use loosely. For us it means a specific process: every record is checked, deduplicated against our existing database, and scrubbed against DND/NDNC lists - every single time, not just on request.",
+      "That process is what keeps connect rates high and protects your sender reputation on WhatsApp and email - nobody wants to burn a campaign on numbers that were never real to begin with.",
     ],
     highlights: [
       { icon: UserCheck, title: "Manual + Automated Checks", description: "Records verified before they ever reach a client." },
@@ -456,7 +456,7 @@ export const keywordPages: KeywordPage[] = [
       },
       {
         question: "Can I verify the quality myself before paying?",
-        answer: "Yes — every enquiry includes 15–20 free sample records to check before you commit.",
+        answer: "Yes - every enquiry includes 15–20 free sample records to check before you commit.",
       },
       {
         question: "What happens if a number turns out to be inactive?",
@@ -471,11 +471,11 @@ export const keywordPages: KeywordPage[] = [
     metaDescription:
       "A B2B business directory for India, organised by industry and city. Filter 500+ categories across 700+ cities and export a ready-to-use contact list.",
     eyebrow: "Business Directory India",
-    h1: "Business Directory India — Organised by Industry and City",
+    h1: "Business Directory India - Organised by Industry and City",
     answer:
       "A business directory lists companies organised by industry, city and category so buyers, sellers and marketers can discover the right businesses quickly. IndiaB2BData.com's directory-style database covers 500+ categories across 700+ Indian cities, filterable before you export a single record.",
     intro: [
-      "Unlike a static online directory you browse one listing at a time, ours is built to be filtered and exported in bulk — pick your industry category and city, and get a ready-to-use contact list instead of scrolling through pages of listings.",
+      "Unlike a static online directory you browse one listing at a time, ours is built to be filtered and exported in bulk - pick your industry category and city, and get a ready-to-use contact list instead of scrolling through pages of listings.",
       "It works well both ways: find suppliers and vendors in a category you need, or build a targeted local list of companies to reach with your own product or service.",
     ],
     highlights: [
@@ -497,7 +497,7 @@ export const keywordPages: KeywordPage[] = [
       },
       {
         question: "Can I search by both industry and city together?",
-        answer: "Yes — combine industry category and city/pincode filters to get exactly the segment you need.",
+        answer: "Yes - combine industry category and city/pincode filters to get exactly the segment you need.",
       },
       {
         question: "How many categories are covered?",
@@ -514,14 +514,14 @@ export const keywordPages: KeywordPage[] = [
     keyword: "company directory India",
     title: "Company Directory India | Look Up Verified Company Profiles",
     metaDescription:
-      "Search a verified company directory for India — company name, category, city and contact details. Built for due-diligence and quick company look-ups.",
+      "Search a verified company directory for India - company name, category, city and contact details. Built for due-diligence and quick company look-ups.",
     eyebrow: "Company Directory India",
-    h1: "Company Directory India — Look Up Any Company, Fast",
+    h1: "Company Directory India - Look Up Any Company, Fast",
     answer:
       "A company directory is a searchable listing of companies organised by name, category and city, used to quickly look up a specific company's profile rather than pull a bulk list. IndiaB2BData.com's company directory covers 700+ cities and 500+ categories, with verified contact details on request.",
     intro: [
-      "Sometimes you don't need a bulk export — you need to check one company. Before a meeting, a vendor onboarding, or a partnership call, it helps to quickly confirm who you're dealing with: their category, city and how to reach them.",
-      "Our company directory is built for that lookup use case as much as bulk list-building — search by company name or narrow by category and city to find the exact profile you need.",
+      "Sometimes you don't need a bulk export - you need to check one company. Before a meeting, a vendor onboarding, or a partnership call, it helps to quickly confirm who you're dealing with: their category, city and how to reach them.",
+      "Our company directory is built for that lookup use case as much as bulk list-building - search by company name or narrow by category and city to find the exact profile you need.",
     ],
     highlights: [
       { icon: BookOpen, title: "Searchable Listings", description: "Look up companies by name, category or city." },
@@ -538,7 +538,7 @@ export const keywordPages: KeywordPage[] = [
     faqs: [
       {
         question: "Can I look up a single specific company?",
-        answer: "Yes — search by company name, or narrow by category and city to find the profile you need.",
+        answer: "Yes - search by company name, or narrow by category and city to find the profile you need.",
       },
       {
         question: "What details does a directory listing include?",
@@ -550,7 +550,7 @@ export const keywordPages: KeywordPage[] = [
       },
       {
         question: "Can I still export a full list from the directory?",
-        answer: "Yes — you can filter by category and city and export the matching set in Excel/CSV.",
+        answer: "Yes - you can filter by category and city and export the matching set in Excel/CSV.",
       },
     ],
   },
@@ -559,13 +559,13 @@ export const keywordPages: KeywordPage[] = [
     keyword: "B2B companies database India",
     title: "B2B Companies Database India | Companies That Sell to Businesses",
     metaDescription:
-      "A database of B2B companies across India — manufacturers, wholesalers, distributors and service companies that sell to other businesses, not consumers.",
+      "A database of B2B companies across India - manufacturers, wholesalers, distributors and service companies that sell to other businesses, not consumers.",
     eyebrow: "B2B Companies Database India",
-    h1: "B2B Companies Database India — Companies That Sell to Other Businesses",
+    h1: "B2B Companies Database India - Companies That Sell to Other Businesses",
     answer:
-      "A B2B companies database lists companies whose customers are other businesses — manufacturers, wholesalers, distributors and B2B service providers — rather than individual consumers. IndiaB2BData.com's B2B companies database helps you find the right vendors, partners or buyers within India's business-to-business economy.",
+      "A B2B companies database lists companies whose customers are other businesses - manufacturers, wholesalers, distributors and B2B service providers - rather than individual consumers. IndiaB2BData.com's B2B companies database helps you find the right vendors, partners or buyers within India's business-to-business economy.",
     intro: [
-      "Not every company in a general business list is relevant if you're specifically selling to other businesses. A B2B companies database narrows the field to companies actually operating in the B2B space — the manufacturers, wholesalers and service providers who buy and sell to other businesses.",
+      "Not every company in a general business list is relevant if you're specifically selling to other businesses. A B2B companies database narrows the field to companies actually operating in the B2B space - the manufacturers, wholesalers and service providers who buy and sell to other businesses.",
       "This makes it easier to find genuine partners, vendors or buyers instead of sorting through consumer-facing businesses that will never be a fit for a B2B pitch.",
     ],
     highlights: [
@@ -588,7 +588,7 @@ export const keywordPages: KeywordPage[] = [
       },
       {
         question: "Does this include manufacturers and distributors?",
-        answer: "Yes — manufacturers, wholesalers, distributors and B2B service companies are all covered.",
+        answer: "Yes - manufacturers, wholesalers, distributors and B2B service companies are all covered.",
       },
       {
         question: "Can I filter by a specific B2B category?",
@@ -605,14 +605,14 @@ export const keywordPages: KeywordPage[] = [
     keyword: "industry wise company database India",
     title: "Industry Wise Company Database India | 500+ Sectors",
     metaDescription:
-      "A company database segmented by industry — 500+ sectors across India. Filter by real estate, EdTech, finance, manufacturing, healthcare and more.",
+      "A company database segmented by industry - 500+ sectors across India. Filter by real estate, EdTech, finance, manufacturing, healthcare and more.",
     eyebrow: "Industry Wise Company Database India",
-    h1: "Industry Wise Company Database India — 500+ Sectors Covered",
+    h1: "Industry Wise Company Database India - 500+ Sectors Covered",
     answer:
       "An industry-wise company database segments companies by sector or business category, letting you target one specific industry instead of a generic mixed list. IndiaB2BData.com covers 500+ industry segments, from real estate and EdTech to finance, manufacturing and healthcare.",
     intro: [
       "A campaign built for the finance sector rarely works if half the list is manufacturing companies. Industry-wise segmentation means your list is built around one specific sector from the start, not filtered down after the fact.",
-      "We classify companies into 500+ industry categories, so you can pick exactly the sector — or combination of sectors — most relevant to your product or service before a single record is delivered.",
+      "We classify companies into 500+ industry categories, so you can pick exactly the sector - or combination of sectors - most relevant to your product or service before a single record is delivered.",
     ],
     highlights: [
       { icon: Filter, title: "500+ Industry Segments", description: "Fine-grained categories, not broad buckets." },
@@ -633,7 +633,7 @@ export const keywordPages: KeywordPage[] = [
       },
       {
         question: "Can I combine more than one industry in a single order?",
-        answer: "Yes — tell us the combination of sectors you need and we'll build a matching list.",
+        answer: "Yes - tell us the combination of sectors you need and we'll build a matching list.",
       },
       {
         question: "Can I also filter by city within an industry?",
@@ -658,13 +658,13 @@ export const keywordPages: KeywordPage[] = [
     keyword: "city wise company database India",
     title: "City Wise Company Database India | 700+ Cities",
     metaDescription:
-      "A company database segmented by city across India — 700+ cities covered. Perfect for city launches, local campaigns and regional sales planning.",
+      "A company database segmented by city across India - 700+ cities covered. Perfect for city launches, local campaigns and regional sales planning.",
     eyebrow: "City Wise Company Database India",
-    h1: "City Wise Company Database India — Plan City by City",
+    h1: "City Wise Company Database India - Plan City by City",
     answer:
       "A city-wise company database segments company records by city, so you can run or plan a campaign one city at a time instead of buying a generic pan-India list. IndiaB2BData.com covers 700+ Indian cities, from major metros to tier-2 and tier-3 towns.",
     intro: [
-      "Launching in a new city works best with a list built for that city specifically — not a nationwide list you then filter down. City-wise segmentation means you get exactly the companies located in your target city from the start.",
+      "Launching in a new city works best with a list built for that city specifically - not a nationwide list you then filter down. City-wise segmentation means you get exactly the companies located in your target city from the start.",
       "This is especially useful for phased expansion: start with one city, measure results, then move to the next using the same filtered approach.",
     ],
     highlights: [
@@ -682,7 +682,7 @@ export const keywordPages: KeywordPage[] = [
     faqs: [
       {
         question: "Can I get data for just one city?",
-        answer: "Yes — our Starter package is built for a single city or district.",
+        answer: "Yes - our Starter package is built for a single city or district.",
       },
       {
         question: "Can I order multiple cities at once?",
@@ -690,7 +690,7 @@ export const keywordPages: KeywordPage[] = [
       },
       {
         question: "Does this include smaller cities, not just metros?",
-        answer: "Yes — coverage spans 700+ cities including tier-2 and tier-3 towns.",
+        answer: "Yes - coverage spans 700+ cities including tier-2 and tier-3 towns.",
       },
       {
         question: "Can I combine city and industry filters?",
@@ -705,11 +705,11 @@ export const keywordPages: KeywordPage[] = [
     metaDescription:
       "A company database segmented by state across India. Plan region-by-region rollouts with verified company records for every major state.",
     eyebrow: "State Wise Company Database India",
-    h1: "State Wise Company Database India — Plan Region by Region",
+    h1: "State Wise Company Database India - Plan Region by Region",
     answer:
       "A state-wise company database groups company records by state, useful for planning a regional rollout or comparing opportunity across different parts of India before committing to a full national campaign. IndiaB2BData.com's state-wise data covers every major state, filterable down to the city or pincode level.",
     intro: [
-      "India's markets vary enormously state to state — regulatory context, language, buying behaviour and competitive density all shift. A state-wise company database lets you plan around that variation instead of treating the whole country as one market.",
+      "India's markets vary enormously state to state - regulatory context, language, buying behaviour and competitive density all shift. A state-wise company database lets you plan around that variation instead of treating the whole country as one market.",
       "Use it to sequence a rollout state by state, or to compare a handful of candidate states side by side before deciding where to focus first.",
     ],
     highlights: [
@@ -727,7 +727,7 @@ export const keywordPages: KeywordPage[] = [
     faqs: [
       {
         question: "Can I order data for just one or two states?",
-        answer: "Yes — tell us which states you need and we'll build a matching list.",
+        answer: "Yes - tell us which states you need and we'll build a matching list.",
       },
       {
         question: "Can I filter further by city within a state?",
@@ -750,11 +750,11 @@ export const keywordPages: KeywordPage[] = [
     metaDescription:
       "A GST database for India with GSTIN, registration status and state code. Useful for compliance checks, vendor eligibility and B2B verification.",
     eyebrow: "GST Database India",
-    h1: "GST Database India — GSTIN-Linked Business Records",
+    h1: "GST Database India - GSTIN-Linked Business Records",
     answer:
       "A GST database is a set of business records linked to their GST Identification Number (GSTIN), including registration status and the state code embedded in the GSTIN. IndiaB2BData.com's GST database helps you verify a business's GST registration before onboarding it as a vendor or customer.",
     intro: [
-      "For many B2B transactions, confirming GST registration matters before money or goods change hands — it affects invoicing, input tax credit and basic trust in a new vendor or buyer. A GST database puts that information alongside the rest of a company's contact details.",
+      "For many B2B transactions, confirming GST registration matters before money or goods change hands - it affects invoicing, input tax credit and basic trust in a new vendor or buyer. A GST database puts that information alongside the rest of a company's contact details.",
       "Records include the GSTIN itself, registration status and the state code it encodes, so you can quickly sanity-check a business before treating it as GST-compliant.",
     ],
     highlights: [
@@ -780,7 +780,7 @@ export const keywordPages: KeywordPage[] = [
       },
       {
         question: "Is this the same as the GST & Company Database product?",
-        answer: "Yes — this is the same underlying GSTIN-linked dataset, with turnover band and industry classification included.",
+        answer: "Yes - this is the same underlying GSTIN-linked dataset, with turnover band and industry classification included.",
       },
       {
         question: "Can I filter by state using the GSTIN?",
@@ -801,14 +801,14 @@ export const keywordPages: KeywordPage[] = [
     keyword: "MCA company database India",
     title: "MCA Company Database India | Registered Companies & LLPs",
     metaDescription:
-      "A database of companies and LLPs registered with the Ministry of Corporate Affairs — incorporation details, company type and registered office.",
+      "A database of companies and LLPs registered with the Ministry of Corporate Affairs - incorporation details, company type and registered office.",
     eyebrow: "MCA Company Database India",
-    h1: "MCA Company Database India — Registered Companies & LLPs",
+    h1: "MCA Company Database India - Registered Companies & LLPs",
     answer:
       "An MCA company database lists companies and LLPs incorporated under India's Companies Act and registered with the Ministry of Corporate Affairs, including company type, incorporation details and registered office. IndiaB2BData.com's MCA-linked records help you target formally incorporated businesses rather than unregistered entities.",
     intro: [
-      "Not every business contact is a formally incorporated company — some are proprietorships or unregistered setups. When your outreach specifically needs Private Limited companies, LLPs or Public Limited entities, MCA-linked records narrow the field to exactly that.",
-      "These records reflect a company's formal incorporation status — useful when a deal, partnership or compliance requirement depends on dealing with a properly registered legal entity.",
+      "Not every business contact is a formally incorporated company - some are proprietorships or unregistered setups. When your outreach specifically needs Private Limited companies, LLPs or Public Limited entities, MCA-linked records narrow the field to exactly that.",
+      "These records reflect a company's formal incorporation status - useful when a deal, partnership or compliance requirement depends on dealing with a properly registered legal entity.",
     ],
     highlights: [
       { icon: FileText, title: "Incorporation Details", description: "Company type and registration information." },
@@ -829,7 +829,7 @@ export const keywordPages: KeywordPage[] = [
       },
       {
         question: "Can I filter by company type?",
-        answer: "Yes — tell us which entity types you need (e.g. only LLPs, or only Private Limited) and we'll build a matching list.",
+        answer: "Yes - tell us which entity types you need (e.g. only LLPs, or only Private Limited) and we'll build a matching list.",
       },
       {
         question: "Does this include the registered office address?",
@@ -837,7 +837,7 @@ export const keywordPages: KeywordPage[] = [
       },
       {
         question: "Is this different from the GST database?",
-        answer: "Yes — this reflects Companies Act incorporation status, while the GST database reflects GST registration; a company can appear in one, both, or neither.",
+        answer: "Yes - this reflects Companies Act incorporation status, while the GST database reflects GST registration; a company can appear in one, both, or neither.",
       },
     ],
     related: [
@@ -856,12 +856,12 @@ export const keywordPages: KeywordPage[] = [
     metaDescription:
       "A database of formally registered companies across India, with verified registration status for compliance-first vendor and partner selection.",
     eyebrow: "Registered Companies Database India",
-    h1: "Registered Companies Database India — Compliance-First Company Records",
+    h1: "Registered Companies Database India - Compliance-First Company Records",
     answer:
-      "A registered companies database includes only businesses with verifiable formal registration — whether GST, Companies Act incorporation, or both — as opposed to unregistered or informal setups. IndiaB2BData.com uses this to help clients build compliance-first vendor, partner and customer lists.",
+      "A registered companies database includes only businesses with verifiable formal registration - whether GST, Companies Act incorporation, or both - as opposed to unregistered or informal setups. IndiaB2BData.com uses this to help clients build compliance-first vendor, partner and customer lists.",
     intro: [
       "For procurement, partnerships or larger B2B deals, working only with formally registered companies is often a hard requirement, not a nice-to-have. A registered companies database is built around that constraint from the start.",
-      "We combine registration signals — GST status and Companies Act incorporation — so you can build a shortlist you're confident is compliance-ready before you make first contact.",
+      "We combine registration signals - GST status and Companies Act incorporation - so you can build a shortlist you're confident is compliance-ready before you make first contact.",
     ],
     highlights: [
       { icon: ShieldCheck, title: "Verified Registration", description: "Only formally registered businesses included." },
@@ -882,7 +882,7 @@ export const keywordPages: KeywordPage[] = [
       },
       {
         question: "Can I require both GST and Companies Act registration?",
-        answer: "Yes — tell us your compliance requirement and we'll filter accordingly.",
+        answer: "Yes - tell us your compliance requirement and we'll filter accordingly.",
       },
       {
         question: "Is this useful for procurement teams?",
@@ -899,14 +899,14 @@ export const keywordPages: KeywordPage[] = [
     keyword: "newly registered companies India",
     title: "Newly Registered Companies India | Fresh Incorporation Leads",
     metaDescription:
-      "A feed of newly registered and recently incorporated companies across India — ideal for reaching new businesses before your competitors do.",
+      "A feed of newly registered and recently incorporated companies across India - ideal for reaching new businesses before your competitors do.",
     eyebrow: "Newly Registered Companies India",
-    h1: "Newly Registered Companies India — Reach New Businesses First",
+    h1: "Newly Registered Companies India - Reach New Businesses First",
     answer:
-      "Newly registered companies are businesses that have recently completed GST or Companies Act incorporation and are actively setting up operations — often needing banking, insurance, office setup, compliance and other B2B services. IndiaB2BData.com tracks recently registered companies across India so you can reach them early.",
+      "Newly registered companies are businesses that have recently completed GST or Companies Act incorporation and are actively setting up operations - often needing banking, insurance, office setup, compliance and other B2B services. IndiaB2BData.com tracks recently registered companies across India so you can reach them early.",
     intro: [
-      "The first few months after a company registers are when it's actively buying — setting up banking, insurance, office infrastructure, software and compliance services. Reaching a business at this stage, before competitors do, is a real edge for B2B vendors selling into that window.",
-      "Rather than a static, full-market list, this feed is built around freshness — recently incorporated companies, updated regularly, so you're consistently reaching businesses early in their setup phase.",
+      "The first few months after a company registers are when it's actively buying - setting up banking, insurance, office infrastructure, software and compliance services. Reaching a business at this stage, before competitors do, is a real edge for B2B vendors selling into that window.",
+      "Rather than a static, full-market list, this feed is built around freshness - recently incorporated companies, updated regularly, so you're consistently reaching businesses early in their setup phase.",
     ],
     highlights: [
       { icon: CalendarClock, title: "Recently Incorporated", description: "Companies registered within a recent window." },
@@ -927,7 +927,7 @@ export const keywordPages: KeywordPage[] = [
       },
       {
         question: "Can I get this as a recurring feed, not a one-time list?",
-        answer: "Yes — Business and Enterprise packages can be set up as a recurring feed of newly registered companies.",
+        answer: "Yes - Business and Enterprise packages can be set up as a recurring feed of newly registered companies.",
       },
       {
         question: "Can I filter new companies by city or industry?",
@@ -954,12 +954,12 @@ export const keywordPages: KeywordPage[] = [
     metaDescription:
       "Get sales-ready business leads across India, matched to your target industry, city and company profile. Verified contacts, delivered fast.",
     eyebrow: "Business Leads India",
-    h1: "Business Leads India — Sales-Ready Contacts for Your Pipeline",
+    h1: "Business Leads India - Sales-Ready Contacts for Your Pipeline",
     answer:
-      "Business leads are contact records matched to a specific target profile — industry, city, company size — and intended to go straight into a sales pipeline rather than serve as a generic reference list. IndiaB2BData.com builds business leads to your ideal customer profile, verified and DND-scrubbed before delivery.",
+      "Business leads are contact records matched to a specific target profile - industry, city, company size - and intended to go straight into a sales pipeline rather than serve as a generic reference list. IndiaB2BData.com builds business leads to your ideal customer profile, verified and DND-scrubbed before delivery.",
     intro: [
-      "A lead is different from a generic contact — it's meant to be dialled or messaged today, not stored as reference data. That means accuracy and relevance matter more than raw volume.",
-      "We build business leads against your specific ideal customer profile — industry, city, company size, designation — so what lands in your CRM is ready for outreach, not a list that still needs heavy filtering.",
+      "A lead is different from a generic contact - it's meant to be dialled or messaged today, not stored as reference data. That means accuracy and relevance matter more than raw volume.",
+      "We build business leads against your specific ideal customer profile - industry, city, company size, designation - so what lands in your CRM is ready for outreach, not a list that still needs heavy filtering.",
     ],
     highlights: [
       { icon: Target, title: "Matched to Your ICP", description: "Built around your ideal customer profile." },
@@ -980,7 +980,7 @@ export const keywordPages: KeywordPage[] = [
       },
       {
         question: "Can I define my ideal customer profile for the leads?",
-        answer: "Yes — tell us industry, city, company size or designation and we'll build leads matching that profile.",
+        answer: "Yes - tell us industry, city, company size or designation and we'll build leads matching that profile.",
       },
       {
         question: "Are the leads verified before delivery?",
@@ -997,14 +997,14 @@ export const keywordPages: KeywordPage[] = [
     keyword: "B2B leads database India",
     title: "B2B Leads Database India | Decision-Maker Contacts",
     metaDescription:
-      "A B2B leads database with decision-maker contacts across India — filtered by industry, designation and company size for outbound sales teams.",
+      "A B2B leads database with decision-maker contacts across India - filtered by industry, designation and company size for outbound sales teams.",
     eyebrow: "B2B Leads Database India",
-    h1: "B2B Leads Database India — Reach the Right Decision-Maker",
+    h1: "B2B Leads Database India - Reach the Right Decision-Maker",
     answer:
-      "A B2B leads database provides contact records for decision-makers at other businesses — filtered by industry, designation and company size — built specifically for outbound B2B sales rather than consumer marketing. IndiaB2BData.com's B2B leads database covers 500+ industries with designation-level filtering.",
+      "A B2B leads database provides contact records for decision-makers at other businesses - filtered by industry, designation and company size - built specifically for outbound B2B sales rather than consumer marketing. IndiaB2BData.com's B2B leads database covers 500+ industries with designation-level filtering.",
     intro: [
       "Reaching a business isn't the same as reaching the person who can say yes. A B2B leads database is built around designation and role, not just a company's general contact number, so your outreach lands with someone who can actually make a decision.",
-      "Combine that with industry and company-size filters and you get a list built specifically for a B2B sales motion — cold calling, LinkedIn/email outreach, or account-based selling.",
+      "Combine that with industry and company-size filters and you get a list built specifically for a B2B sales motion - cold calling, LinkedIn/email outreach, or account-based selling.",
     ],
     highlights: [
       { icon: Users, title: "Decision-Maker Contacts", description: "Filtered toward relevant roles and designations." },
@@ -1021,7 +1021,7 @@ export const keywordPages: KeywordPage[] = [
     faqs: [
       {
         question: "Can I filter leads by designation?",
-        answer: "Yes — records can be filtered toward specific roles or designations where available.",
+        answer: "Yes - records can be filtered toward specific roles or designations where available.",
       },
       {
         question: "How is this different from the corporate database?",
@@ -1038,11 +1038,11 @@ export const keywordPages: KeywordPage[] = [
     ],
     related: [
       "b2b-database-india",
+      "ceo-cfo-cmo-it-heads-database-india",
+      "business-development-sales-professionals-database-india",
       "business-analysts-database-india",
       "domain-whois-database",
       "newly-registered-companies-india",
-      "b2b-b2c-companies-database",
-      "mobile-number-database-india",
     ],
   },
   {
@@ -1052,9 +1052,9 @@ export const keywordPages: KeywordPage[] = [
     metaDescription:
       "A company contact database with named contacts and designations, not just company switchboard numbers. Reach the right person at every company.",
     eyebrow: "Company Contact Database India",
-    h1: "Company Contact Database India — Reach the Right Person, Not a Switchboard",
+    h1: "Company Contact Database India - Reach the Right Person, Not a Switchboard",
     answer:
-      "A company contact database provides person-level details within a company — name, designation and direct contact information — rather than just a general company number. IndiaB2BData.com's company contact database is built so your outreach reaches an actual person, not a reception desk.",
+      "A company contact database provides person-level details within a company - name, designation and direct contact information - rather than just a general company number. IndiaB2BData.com's company contact database is built so your outreach reaches an actual person, not a reception desk.",
     intro: [
       "A generic company number often means a receptionist, an IVR menu, or a shared inbox nobody checks. A company contact database solves that by attaching a name and designation to the record, so you know exactly who you're calling or emailing.",
       "This matters most for outbound sales and partnership outreach, where getting past the front desk to the right person is usually the hardest part of the process.",
@@ -1078,7 +1078,7 @@ export const keywordPages: KeywordPage[] = [
       },
       {
         question: "Can I request a specific designation only?",
-        answer: "Yes — tell us the role or designation you need and we'll build a matching list.",
+        answer: "Yes - tell us the role or designation you need and we'll build a matching list.",
       },
       {
         question: "Is this more accurate than a general company number?",
@@ -1095,13 +1095,13 @@ export const keywordPages: KeywordPage[] = [
     keyword: "manufacturer database India",
     title: "Manufacturer Database India | Factories & Production Units",
     metaDescription:
-      "A verified manufacturer database across India — factories and production units by industry and city. Built for suppliers, buyers and B2B vendors.",
+      "A verified manufacturer database across India - factories and production units by industry and city. Built for suppliers, buyers and B2B vendors.",
     eyebrow: "Manufacturer Database India",
-    h1: "Manufacturer Database India — Factories & Production Units",
+    h1: "Manufacturer Database India - Factories & Production Units",
     answer:
       "A manufacturer database lists factories and production units across India, filtered by industry and city, used by suppliers looking to sell raw materials or machinery, and by buyers sourcing manufactured goods. IndiaB2BData.com's manufacturer database covers manufacturing hubs across 700+ cities.",
     intro: [
-      "Manufacturing is its own world — raw material and machinery suppliers need to reach factories directly, and buyers sourcing products need to find the right production units. A general business list rarely segments this cleanly.",
+      "Manufacturing is its own world - raw material and machinery suppliers need to reach factories directly, and buyers sourcing products need to find the right production units. A general business list rarely segments this cleanly.",
       "Our manufacturer database is filtered specifically to manufacturing and production companies, by industry and city, so you can reach the right factories without wading through unrelated business types.",
     ],
     highlights: [
@@ -1123,7 +1123,7 @@ export const keywordPages: KeywordPage[] = [
       },
       {
         question: "Can I target factories in a specific manufacturing hub?",
-        answer: "Yes — city and cluster filters can be applied to target known manufacturing hubs.",
+        answer: "Yes - city and cluster filters can be applied to target known manufacturing hubs.",
       },
       {
         question: "Is this useful for selling raw materials or machinery?",
@@ -1148,13 +1148,13 @@ export const keywordPages: KeywordPage[] = [
     keyword: "service providers database India",
     title: "Service Providers Database India | IT, Consulting & Agencies",
     metaDescription:
-      "A database of service-sector companies across India — IT services, consulting, agencies and professional services, filtered by category and city.",
+      "A database of service-sector companies across India - IT services, consulting, agencies and professional services, filtered by category and city.",
     eyebrow: "Service Providers Database India",
-    h1: "Service Providers Database India — IT, Consulting & Professional Services",
+    h1: "Service Providers Database India - IT, Consulting & Professional Services",
     answer:
-      "A service providers database lists companies in the service sector — IT services, consulting, agencies and other professional services — as opposed to product or manufacturing businesses. IndiaB2BData.com's service providers database is filtered by service category and city.",
+      "A service providers database lists companies in the service sector - IT services, consulting, agencies and other professional services - as opposed to product or manufacturing businesses. IndiaB2BData.com's service providers database is filtered by service category and city.",
     intro: [
-      "Selling to service-sector companies is different from selling to manufacturers or retailers — different buying cycles, different decision-makers, different pain points. A service providers database keeps that segment separate from the rest.",
+      "Selling to service-sector companies is different from selling to manufacturers or retailers - different buying cycles, different decision-makers, different pain points. A service providers database keeps that segment separate from the rest.",
       "Whether you're targeting IT services firms, consultancies, agencies or other professional service companies, filtering by service category and city gets you a list built for that specific segment.",
     ],
     highlights: [
@@ -1176,7 +1176,7 @@ export const keywordPages: KeywordPage[] = [
       },
       {
         question: "Can I filter by a specific service category?",
-        answer: "Yes — tell us the service category you need (e.g. IT services, marketing agencies) and we'll build a matching list.",
+        answer: "Yes - tell us the service category you need (e.g. IT services, marketing agencies) and we'll build a matching list.",
       },
       {
         question: "Can I combine service category and city filters?",
@@ -1193,9 +1193,9 @@ export const keywordPages: KeywordPage[] = [
     keyword: "mobile number database India",
     title: "Mobile Number Database India | Free Sample",
     metaDescription:
-      "Buy a verified mobile number database for India — business owner & decision-maker numbers by city, pincode and industry. DND-scrubbed Excel/CSV, from ₹2,999.",
+      "Buy a verified mobile number database for India - business owner & decision-maker numbers by city, pincode and industry. DND-scrubbed Excel/CSV, from ₹2,999.",
     eyebrow: "Mobile Number Database India",
-    h1: "Mobile Number Database India — Verified Business Owner & Decision-Maker Numbers",
+    h1: "Mobile Number Database India - Verified Business Owner & Decision-Maker Numbers",
     answer:
       "A mobile number database is a list of verified mobile numbers for business owners and decision-makers, tagged with company name, industry and city, that sales teams use for calling, WhatsApp and SMS outreach. IndiaB2BData.com's mobile number database covers 700+ Indian cities and 500+ industries. Every list is DND-scrubbed, deduplicated and delivered as an Excel/CSV file, with packages starting at ₹2,999.",
     intro: [
@@ -1279,11 +1279,11 @@ export const keywordPages: KeywordPage[] = [
     ],
     related: [
       "whatsapp-number-database-india",
+      "cab-users-database-india",
       "bulk-sms-database-india",
       "b2b-b2c-companies-database",
       "car-owners-database",
       "students-database",
-      "b2b-database-india",
     ],
   },
   {
@@ -1291,9 +1291,9 @@ export const keywordPages: KeywordPage[] = [
     keyword: "email database India",
     title: "Email Database India | Verified B2B Emails",
     metaDescription:
-      "Verified business email database for India — company & decision-maker emails by industry and city. Deliverability-checked lists for B2B email marketing, from ₹2,999.",
+      "Verified business email database for India - company & decision-maker emails by industry and city. Deliverability-checked lists for B2B email marketing, from ₹2,999.",
     eyebrow: "Email Database India",
-    h1: "Email Database India — Verified Business Email Lists for B2B Marketing",
+    h1: "Email Database India - Verified Business Email Lists for B2B Marketing",
     answer:
       "An email database is a list of verified business email addresses, such as company, founder and decision-maker emails, used for B2B email marketing and cold outreach. IndiaB2BData.com's email database for India is segmented by industry and city, checked for deliverability before delivery, and supplied as an Excel/CSV file ready for any email tool.",
     intro: [
@@ -1375,11 +1375,11 @@ export const keywordPages: KeywordPage[] = [
     ],
     related: [
       "mobile-number-database-india",
+      "ceo-cfo-cmo-it-heads-database-india",
       "b2b-leads-database-india",
       "corporate-database-india",
       "domain-whois-database",
       "job-seekers-database",
-      "b2b-database-india",
     ],
   },
   {
@@ -1387,9 +1387,9 @@ export const keywordPages: KeywordPage[] = [
     keyword: "WhatsApp number database India",
     title: "WhatsApp Number Database India | B2B Data",
     metaDescription:
-      "Verified WhatsApp number database for Indian businesses — WhatsApp-active owner & decision-maker numbers by city and industry. Ready for WhatsApp API campaigns.",
+      "Verified WhatsApp number database for Indian businesses - WhatsApp-active owner & decision-maker numbers by city and industry. Ready for WhatsApp API campaigns.",
     eyebrow: "WhatsApp Number Database India",
-    h1: "WhatsApp Number Database India — Reach Businesses Where They Actually Reply",
+    h1: "WhatsApp Number Database India - Reach Businesses Where They Actually Reply",
     answer:
       "A WhatsApp number database is a list of business mobile numbers that are active on WhatsApp, filtered by city and industry, used for WhatsApp Business and WhatsApp API campaigns. IndiaB2BData.com supplies WhatsApp-active business owner and decision-maker numbers across 700+ Indian cities, delivered in a format you can upload straight to WhatsApp API platforms.",
     intro: [
@@ -1479,9 +1479,9 @@ export const keywordPages: KeywordPage[] = [
     keyword: "bulk SMS database India",
     title: "Bulk SMS Database India | DND-Free Numbers",
     metaDescription:
-      "Verified bulk SMS database for India — DND-scrubbed business mobile numbers by city, pincode and industry, ready for DLT-compliant SMS campaigns. From ₹2,999.",
+      "Verified bulk SMS database for India - DND-scrubbed business mobile numbers by city, pincode and industry, ready for DLT-compliant SMS campaigns. From ₹2,999.",
     eyebrow: "Bulk SMS Database India",
-    h1: "Bulk SMS Database India — DND-Scrubbed Numbers for SMS Campaigns",
+    h1: "Bulk SMS Database India - DND-Scrubbed Numbers for SMS Campaigns",
     answer:
       "A bulk SMS database is a large, verified list of mobile numbers used to send promotional or transactional SMS campaigns. In India the list should be DND-scrubbed and the messages sent through a DLT-registered sender ID with approved templates. IndiaB2BData.com supplies DND-scrubbed business numbers by city, pincode and industry, ready to upload into any bulk SMS panel.",
     intro: [
@@ -1569,9 +1569,9 @@ export const keywordPages: KeywordPage[] = [
     keyword: "doctors database India",
     title: "Doctors Database India | Clinics & Hospitals",
     metaDescription:
-      "Verified doctors database for India — specialists, clinics and hospitals by speciality and city. For pharma, medical device & healthcare marketing. Free sample.",
+      "Verified doctors database for India - specialists, clinics and hospitals by speciality and city. For pharma, medical device & healthcare marketing. Free sample.",
     eyebrow: "Doctors Database India",
-    h1: "Doctors Database India — Specialists, Clinics & Hospitals by City",
+    h1: "Doctors Database India - Specialists, Clinics & Hospitals by City",
     answer:
       "A doctors database is a list of medical practitioners, clinics and hospitals, filtered by speciality and city, used by pharma companies, medical device makers, diagnostic labs and health-tech firms. IndiaB2BData.com's doctors database covers general physicians, specialists, dental and other clinics, and hospitals across India, with filters for speciality, practice type and city.",
     intro: [
@@ -1658,9 +1658,9 @@ export const keywordPages: KeywordPage[] = [
     keyword: "importers and exporters database India",
     title: "Importers & Exporters Database India | IEC",
     metaDescription:
-      "Verified importers and exporters database for India — IEC-holding companies by product, port and city. For freight forwarders, CHA agents and trade services.",
+      "Verified importers and exporters database for India - IEC-holding companies by product, port and city. For freight forwarders, CHA agents and trade services.",
     eyebrow: "Importers & Exporters Database",
-    h1: "Importers & Exporters Database India — Reach Active Trading Companies",
+    h1: "Importers & Exporters Database India - Reach Active Trading Companies",
     answer:
       "An importers and exporters database is a list of Indian companies engaged in international trade, typically holding an Import Export Code (IEC) from DGFT, filtered by product category, trade direction and city. It is used by freight forwarders, customs brokers, logistics firms, packaging suppliers and trade-finance providers. IndiaB2BData.com supplies verified importer and exporter contacts across India's major trade hubs.",
     intro: [
@@ -1735,11 +1735,11 @@ export const keywordPages: KeywordPage[] = [
     ],
     related: [
       "manufacturer-database-india",
+      "mobile-accessories-shops-database-india",
       "apparel-garments-exporters-database-india",
       "dealers-distributors-database-india",
       "gst-database-india",
       "industry-wise-company-database-india",
-      "mca-company-database-india",
     ],
   },
   {
@@ -1747,9 +1747,9 @@ export const keywordPages: KeywordPage[] = [
     keyword: "dealers and distributors database India",
     title: "Dealers & Distributors Database India",
     metaDescription:
-      "Verified dealers and distributors database for India — wholesalers, stockists and traders by product category, city and district. Expand your channel network faster.",
+      "Verified dealers and distributors database for India - wholesalers, stockists and traders by product category, city and district. Expand your channel network faster.",
     eyebrow: "Dealers & Distributors Database",
-    h1: "Dealers & Distributors Database India — Build Your Channel Network Faster",
+    h1: "Dealers & Distributors Database India - Build Your Channel Network Faster",
     answer:
       "A dealers and distributors database is a list of wholesalers, stockists, dealers and traders, filtered by product category, city and district. Brands and manufacturers use it to appoint new channel partners and enter new markets. IndiaB2BData.com's dealers and distributors database covers trading businesses across 700+ Indian cities, including tier-2 and tier-3 towns.",
     intro: [
@@ -1825,11 +1825,11 @@ export const keywordPages: KeywordPage[] = [
     ],
     related: [
       "manufacturer-database-india",
+      "channel-sales-professionals-database-india",
+      "mobile-accessories-shops-database-india",
       "building-material-database-india",
       "beauty-parlours-salons-spa-database-india",
       "agents-database-india",
-      "importers-exporters-database-india",
-      "car-owners-database",
     ],
   },
   {
@@ -1839,7 +1839,7 @@ export const keywordPages: KeywordPage[] = [
     metaDescription:
       "One provider for B2B company contacts and B2C consumer data in India. Filter by city, industry, income band or interest. DND-scrubbed, verified. Free sample.",
     eyebrow: "B2B & B2C Companies Database",
-    h1: "B2B & B2C Database India — Company Contacts and Consumer Data in One Place",
+    h1: "B2B & B2C Database India - Company Contacts and Consumer Data in One Place",
     answer:
       "A B2B database lists businesses and their decision-makers; a B2C database lists individual consumers. Many Indian brands sell to both: a company that supplies dealers also runs consumer campaigns. IndiaB2BData.com supplies both types of data, verified and DND-scrubbed, filtered by city, industry, income band or interest.",
     intro: [
@@ -1922,11 +1922,11 @@ export const keywordPages: KeywordPage[] = [
     ],
     related: [
       "b2b-database-india",
+      "cab-users-database-india",
       "beauty-parlours-salons-spa-database-india",
       "car-owners-database",
       "job-seekers-database",
       "mobile-number-database-india",
-      "company-database-india",
     ],
   },
   {
@@ -1934,9 +1934,9 @@ export const keywordPages: KeywordPage[] = [
     keyword: "students database India",
     title: "Students Database India | School & College",
     metaDescription:
-      "Verified students database for India — school, college and competitive exam aspirants by city, class and stream. For EdTech, coaching & admissions. Free sample.",
+      "Verified students database for India - school, college and competitive exam aspirants by city, class and stream. For EdTech, coaching & admissions. Free sample.",
     eyebrow: "Students Database India",
-    h1: "Students Database India — Reach Students and Parents by City, Class and Stream",
+    h1: "Students Database India - Reach Students and Parents by City, Class and Stream",
     answer:
       "A students database is a list of students (and often their parents) filtered by class, stream, course or exam, and by city. EdTech companies, coaching institutes, colleges and universities use it to promote courses and admissions. IndiaB2BData.com's students database covers school students, college students and competitive exam aspirants across India.",
     intro: [
@@ -2018,11 +2018,11 @@ export const keywordPages: KeywordPage[] = [
     ],
     related: [
       "school-colleges-database",
+      "cbse-schools-email-database-india",
       "teachers-database-india",
       "job-seekers-database",
       "mobile-number-database-india",
       "whatsapp-number-database-india",
-      "bulk-sms-database-india",
     ],
   },
   {
@@ -2030,9 +2030,9 @@ export const keywordPages: KeywordPage[] = [
     keyword: "job seekers database India",
     title: "Job Seekers Database India | Candidates",
     metaDescription:
-      "Verified job seekers database for India — freshers and experienced candidates by skill, qualification and city. For recruiters & HR teams. Free sample.",
+      "Verified job seekers database for India - freshers and experienced candidates by skill, qualification and city. For recruiters & HR teams. Free sample.",
     eyebrow: "Job Seekers Database India",
-    h1: "Job Seekers Database India — Candidates by Skill, Experience and City",
+    h1: "Job Seekers Database India - Candidates by Skill, Experience and City",
     answer:
       "A job seekers database is a list of candidates who are looking for work, filtered by skill, qualification, experience and location. Recruitment agencies, HR teams, staffing firms and skilling institutes use it to fill roles faster. IndiaB2BData.com's job seekers database covers freshers and experienced professionals across India.",
     intro: [
@@ -2126,9 +2126,9 @@ export const keywordPages: KeywordPage[] = [
     keyword: "car owners database India",
     title: "Car Owners Database India | Vehicle Owners",
     metaDescription:
-      "Verified car owners database for India — vehicle owners by city, car segment and brand. For insurance, auto service, dealerships & finance teams. Free sample.",
+      "Verified car owners database for India - vehicle owners by city, car segment and brand. For insurance, auto service, dealerships & finance teams. Free sample.",
     eyebrow: "Car Owners Database India",
-    h1: "Car Owners Database India — Vehicle Owners by City, Segment and Brand",
+    h1: "Car Owners Database India - Vehicle Owners by City, Segment and Brand",
     answer:
       "A car owners database is a list of individuals who own a vehicle, filtered by city, car segment, brand or model and ownership age. Motor insurers, dealerships, auto service centres and car loan providers use it to reach buyers at the right time. IndiaB2BData.com's car owners database covers owners across Indian metros and tier-2 cities.",
     intro: [
@@ -2210,11 +2210,11 @@ export const keywordPages: KeywordPage[] = [
     ],
     related: [
       "b2b-b2c-companies-database",
+      "cab-users-database-india",
       "dealers-distributors-database-india",
       "mobile-number-database-india",
       "whatsapp-number-database-india",
       "bulk-sms-database-india",
-      "job-seekers-database",
     ],
   },
   {
@@ -2222,9 +2222,9 @@ export const keywordPages: KeywordPage[] = [
     keyword: "domain WHOIS database India",
     title: "Domain WHOIS Database India | New Domains",
     metaDescription:
-      "Domain WHOIS database for India — new and existing .in and .com domains with registrant details. For web, hosting & digital marketing sales. Free sample.",
+      "Domain WHOIS database for India - new and existing .in and .com domains with registrant details. For web, hosting & digital marketing sales. Free sample.",
     eyebrow: "Domain WHOIS Database",
-    h1: "Domain WHOIS Database India — Leads from Newly Registered Websites",
+    h1: "Domain WHOIS Database India - Leads from Newly Registered Websites",
     answer:
       "A domain WHOIS database is a list of registered website domains with their registration details: domain name, registration and expiry dates, registrar and, where publicly listed, the registrant's name, email and phone. Web designers, hosting providers and digital marketing agencies use it to reach businesses that have just registered a domain. IndiaB2BData.com supplies daily and monthly WHOIS lists for Indian registrants.",
     intro: [
@@ -2318,9 +2318,9 @@ export const keywordPages: KeywordPage[] = [
     keyword: "schools and colleges database India",
     title: "School & Colleges Database India",
     metaDescription:
-      "Verified schools and colleges database for India — CBSE, ICSE, state board schools, colleges and universities with principal and admin contacts. Free sample.",
+      "Verified schools and colleges database for India - CBSE, ICSE, state board schools, colleges and universities with principal and admin contacts. Free sample.",
     eyebrow: "Schools & Colleges Database",
-    h1: "Schools & Colleges Database India — Institutions, Principals and Administrators",
+    h1: "Schools & Colleges Database India - Institutions, Principals and Administrators",
     answer:
       "A schools and colleges database is a list of educational institutions with their contact details, board or affiliation, type and location, often including the principal, director or administrator. Education suppliers, EdTech companies, publishers and service providers use it to sell to institutions. IndiaB2BData.com's database covers schools, colleges, universities, coaching centres and training institutes across India.",
     intro: [
@@ -2401,11 +2401,11 @@ export const keywordPages: KeywordPage[] = [
     ],
     related: [
       "students-database",
+      "cbse-schools-email-database-india",
       "teachers-database-india",
       "industry-wise-company-database-india",
       "doctors-database",
       "email-database-india",
-      "company-database-india",
     ],
   },
   {
@@ -2616,11 +2616,11 @@ export const keywordPages: KeywordPage[] = [
     ],
     related: [
       "school-colleges-database",
+      "cbse-schools-email-database-india",
       "bpo-call-centre-employees-database-india",
       "agents-database-india",
       "advocates-lawyers-database-india",
       "students-database",
-      "job-seekers-database",
     ],
   },
   {
@@ -3083,11 +3083,11 @@ export const keywordPages: KeywordPage[] = [
     ],
     related: [
       "teachers-database-india",
+      "channel-sales-professionals-database-india",
+      "business-development-sales-professionals-database-india",
       "bpo-call-centre-employees-database-india",
       "architect-interior-designers-database-india",
       "apparel-garments-exporters-database-india",
-      "advocates-lawyers-database-india",
-      "dealers-distributors-database-india",
     ],
   },
   {
@@ -3932,11 +3932,11 @@ export const keywordPages: KeywordPage[] = [
     ],
     related: [
       "job-seekers-database",
+      "business-development-sales-professionals-database-india",
       "business-analysts-database-india",
       "corporate-database-india",
       "agents-database-india",
       "teachers-database-india",
-      "students-database",
     ],
   },
   {
@@ -3944,7 +3944,7 @@ export const keywordPages: KeywordPage[] = [
     keyword: "building material database India",
     title: "Building Material Database India | Suppliers",
     metaDescription:
-      "Explore a building material and requisites database in India — manufacturers, dealers and suppliers by product category and city. Review fields and coverage.",
+      "Explore a building material and requisites database in India - manufacturers, dealers and suppliers by product category and city. Review fields and coverage.",
     eyebrow: "Building Material & Requisites Database",
     h1: "Building Material & Requisites Database in India",
     answer:
@@ -4246,16 +4246,602 @@ export const keywordPages: KeywordPage[] = [
     ],
     related: [
       "bpo-call-centre-employees-database-india",
+      "ceo-cfo-cmo-it-heads-database-india",
+      "business-development-sales-professionals-database-india",
       "corporate-database-india",
       "job-seekers-database",
       "b2b-leads-database-india",
+    ],
+  },
+  {
+    slug: "business-development-sales-professionals-database-india",
+    keyword: "business development and sales professionals database India",
+    title: "Sales & BD Professionals Database India",
+    metaDescription:
+      "Explore a business development and sales professionals database in India. Review available roles, industries, experience levels, locations and permitted uses.",
+    eyebrow: "Business Development & Sales Professionals Database",
+    h1: "Business Development & Sales Professionals Database in India",
+    answer:
+      "A business development and sales professionals database is a structured collection of professional records for people in sales, business development, key account and channel sales roles. Fields and coverage depend on the source. IndiaB2BData.com helps recruiters, training providers and B2B companies explore these records by role, industry, experience and location.",
+    intro: [
+      "Sales and business development teams drive revenue in every industry, from FMCG and pharma to SaaS, banking and real estate. That makes sales professionals one of the most sought-after audiences for recruiters, sales trainers and sales-technology vendors, and one of the hardest to reach in a specific city or industry.",
+      "A business development and sales professionals database organises available professional records so you can focus on the roles, industries and locations relevant to your requirement. Confirm the fields, coverage, source and permitted uses before choosing a dataset.",
+    ],
+    highlights: [
+      { icon: Target, title: "Sales & BD Roles", description: "Field sales, inside sales, BD, key accounts and channel." },
+      { icon: Filter, title: "Industry Filters", description: "FMCG, pharma, SaaS, BFSI, real estate and more." },
+      { icon: Users, title: "Experience Levels", description: "Executives to regional and national sales heads." },
+      { icon: MapPinned, title: "Territory Coverage", description: "Filter by city, state or region." },
+    ],
+    dataFields: [
+      "Professional name",
+      "Current designation",
+      "Current or recent employer, where available",
+      "Industry or sector, where recorded",
+      "Sales function, such as field, inside, channel or key accounts",
+      "Experience band",
+      "City, state and territory, where recorded",
+      "Professional email or contact number, where available and permitted",
+    ],
+    sections: [
+      {
+        heading: "Roles Covered",
+        paragraphs: ["Depending on the dataset, records may include professionals in roles such as:"],
+        subsections: [
+          {
+            heading: "Field Sales Executives",
+            text: "On-ground sales staff covering retail, distributor or customer territories, common in FMCG, pharma, telecom and building materials.",
+          },
+          {
+            heading: "Inside Sales and Telesales",
+            text: "Professionals selling over phone, email and video, especially in SaaS, EdTech, BFSI and B2B services.",
+          },
+          {
+            heading: "Business Development Managers",
+            text: "Professionals focused on new accounts, partnerships and market expansion.",
+          },
+          {
+            heading: "Key Account and Channel Sales",
+            text: "Managers handling large customers, distributors, dealers and channel partners.",
+          },
+          {
+            heading: "Sales Leadership",
+            text: "Area, regional, zonal and national sales heads, useful for senior hiring and leadership programmes.",
+          },
+        ],
+      },
+      {
+        heading: "Who Can Use This Database?",
+        paragraphs: [],
+        subsections: [
+          {
+            heading: "Recruiters and Staffing Firms",
+            text: "Source sales and BD candidates by industry, territory and experience for volume or senior hiring.",
+          },
+          {
+            heading: "Companies Building Sales Teams",
+            text: "Research the sales talent market in a new city or state before opening a branch or territory.",
+          },
+          {
+            heading: "Sales Training and Coaching Providers",
+            text: "Research professionals for negotiation, key account management and sales leadership programmes.",
+          },
+          {
+            heading: "CRM and Sales-Tech Vendors",
+            text: "Research potential users of CRM, sales engagement, field-force and lead-management tools.",
+          },
+        ],
+      },
+      {
+        heading: "Filter by Industry, Role and Territory",
+        paragraphs: ["Depending on available fields, records can be organised by:"],
+        bullets: [
+          "Industry, such as FMCG, pharma, SaaS, BFSI or real estate",
+          "Sales function: field, inside, channel or key accounts",
+          "Experience band and seniority",
+          "City, state or sales territory",
+        ],
+        closing: ["Share your requirement and ask us to confirm matching record counts before ordering."],
+      },
+      {
+        heading: "What to Check Before Choosing a Sales Professionals Database",
+        paragraphs: [],
+        bullets: [
+          "Role relevance: confirm the sales functions and seniority levels covered.",
+          "Industry fit: check that the records match your target sector.",
+          "Field completeness: review a sample to see which fields are populated.",
+          "Update information: sales professionals change roles often, so ask when records were last reviewed.",
+          "Source and permitted use: ask where the records come from and whether your intended use is allowed.",
+        ],
+      },
+      {
+        heading: "Responsible Use of Professional Data",
+        paragraphs: [
+          "Records in this database relate to individual professionals. Contact them only for relevant purposes such as genuine job opportunities, professional training or business-relevant communication, identify yourself clearly and honour every opt-out request.",
+          "Assess your obligations under the Digital Personal Data Protection Act, 2023 and TRAI's commercial communication rules before outreach. Buying a list does not, by itself, establish permission to contact everyone on it.",
+        ],
+      },
+    ],
+    useCases: [
+      "Sales and BD recruitment by industry and territory",
+      "Sales talent mapping for new branches",
+      "Sales training and leadership programme invitations",
+      "CRM and sales-tech market research",
+      "Senior sales leadership hiring",
+    ],
+    faqs: [
+      {
+        question: "What is a business development and sales professionals database?",
+        answer:
+          "It is a structured collection of professional records for people in sales and business development roles, with fields such as designation, industry, experience and location.",
+      },
+      {
+        question: "Can I filter by industry?",
+        answer: "Where the industry is recorded, records can be filtered by sector, such as FMCG, pharma, SaaS, BFSI or real estate.",
+      },
+      {
+        question: "Can I get only field sales or only inside sales professionals?",
+        answer: "Where the sales function is recorded, records can be filtered by field, inside, channel or key account roles.",
+      },
+      {
+        question: "Can I get senior sales leaders?",
+        answer: "Where designation or experience is recorded, records can be filtered by seniority. Confirm availability before ordering.",
+      },
+      {
+        question: "Is the database available in Excel format?",
+        answer: "Excel or CSV delivery may be available. Confirm the format and columns before purchase.",
+      },
+      {
+        question: "Can I use the data for recruitment or marketing?",
+        answer:
+          "Use depends on the data source, the permitted purpose and applicable privacy and communication rules. A purchase alone does not establish permission to contact every record.",
+      },
+      {
+        question: "Can I see a sample first?",
+        answer: "Yes. Request sample records to check roles, locations and fields before ordering.",
+      },
+    ],
+    related: [
+      "business-analysts-database-india",
+      "channel-sales-professionals-database-india",
+      "bpo-call-centre-employees-database-india",
+      "agents-database-india",
+      "job-seekers-database",
+      "corporate-database-india",
+    ],
+  },
+  {
+    slug: "cab-users-database-india",
+    keyword: "cab users database India",
+    title: "Cab Users Database India | Commuter Data",
+    metaDescription:
+      "Explore a cab users database in India — app-cab and taxi commuters by city. Review available fields, coverage, sample records and permitted uses.",
+    eyebrow: "Cab Users Database",
+    h1: "Cab Users Database in India",
+    answer:
+      "A cab users database is a structured collection of consumer records for people who regularly use app-based cabs, taxis or ride-hailing services, typically organised by city. Fields and coverage depend on the source. IndiaB2BData.com helps brands explore these records by city and, where available, profile filters.",
+    intro: [
+      "Regular cab users are typically urban, working-age and comfortable with app-based services. That makes them a relevant audience for mobility, travel, fintech, insurance, food delivery and lifestyle brands, especially in metros and fast-growing tier-2 cities.",
+      "A cab users database organises available consumer records by city and profile so you can focus your campaign on a defined audience. Confirm the fields, coverage, source and permitted uses before choosing a dataset.",
+    ],
+    highlights: [
+      { icon: Car, title: "Urban Commuters", description: "Regular app-cab and taxi users." },
+      { icon: MapPinned, title: "City-Wise Records", description: "Metros and major tier-2 cities." },
+      { icon: Filter, title: "Profile Filters", description: "Age band or locality, where available." },
+      { icon: ShieldCheck, title: "DND-Scrubbed", description: "Numbers checked against the DND registry." },
+    ],
+    dataFields: [
+      "Consumer name",
+      "Mobile number (DND-scrubbed), where available",
+      "Email address, where available",
+      "City, locality and pincode",
+      "Age band or profile filters, where available",
+    ],
+    sections: [
+      {
+        heading: "Who Can Use a Cab Users Database?",
+        paragraphs: [],
+        subsections: [
+          { heading: "Mobility and Travel Brands", text: "Ride-hailing, car rental, airport transfer and travel booking services can research urban commuter audiences in target cities." },
+          { heading: "Fintech and Insurance", text: "Wallets, credit cards and insurance providers can research digitally active urban consumers." },
+          { heading: "Food, Retail and Lifestyle Brands", text: "Delivery apps, D2C brands and lifestyle services can plan city launches around active app users." },
+          { heading: "Real Estate and Co-Working", text: "Projects near business districts and transit corridors can research commuters in those localities." },
+        ],
+      },
+      {
+        heading: "What to Check Before Choosing a Cab Users Database",
+        paragraphs: [],
+        bullets: [
+          "Source transparency: ask how records were compiled and what permissions apply.",
+          "City coverage: confirm the cities and localities included.",
+          "Field completeness: review a sample to see which fields are populated.",
+          "Update information: ask when the records were last reviewed.",
+          "Permitted use: confirm whether your planned outreach is allowed.",
+        ],
+      },
+      {
+        heading: "Responsible Use of Consumer Data",
+        paragraphs: [
+          "Records in this database relate to individual consumers. Keep campaigns relevant, identify yourself clearly, avoid excessive frequency and honour every opt-out request.",
+          "Use the data in line with TRAI's commercial communication rules and the Digital Personal Data Protection Act, 2023. Buying a list does not, by itself, establish permission to send unsolicited marketing messages.",
+        ],
+      },
+    ],
+    useCases: [
+      "Mobility and travel service launches",
+      "Fintech, wallet and insurance campaigns",
+      "City launches for app-based businesses",
+      "Real estate near business districts",
+      "Urban consumer market research",
+    ],
+    faqs: [
+      { question: "What is a cab users database?", answer: "It is a structured collection of consumer records for regular app-cab and taxi users, organised by city and, where available, profile filters." },
+      { question: "Which cities are covered?", answer: "Coverage varies by dataset. Share your target cities and ask us to confirm the number of matching records." },
+      { question: "Is the data DND-scrubbed?", answer: "Yes. Mobile numbers are checked against the DND/NDNC registry before delivery." },
+      { question: "Is it available in Excel format?", answer: "Excel or CSV delivery may be available. Confirm the format and columns before purchase." },
+      { question: "Can I use it for SMS or WhatsApp campaigns?", answer: "That depends on the source, permissions and applicable TRAI and data protection rules. A purchase alone does not allow unsolicited messages." },
+      { question: "Can I see a sample first?", answer: "Yes. Request sample records to check cities and fields before ordering." },
+    ],
+    related: [
+      "car-owners-database",
+      "b2b-b2c-companies-database",
+      "mobile-number-database-india",
+      "bulk-sms-database-india",
+      "whatsapp-number-database-india",
+      "job-seekers-database",
+    ],
+  },
+  {
+    slug: "cbse-schools-email-database-india",
+    keyword: "CBSE schools email database India",
+    title: "CBSE Schools Email IDs Database India",
+    metaDescription:
+      "Explore a CBSE schools email IDs database in India — CBSE-affiliated schools with principal and office emails by state and city. Review fields and coverage.",
+    eyebrow: "CBSE Schools Email IDs Database",
+    h1: "CBSE Schools Email IDs Database in India",
+    answer:
+      "A CBSE schools email IDs database is a list of CBSE-affiliated schools with their official email addresses and related details, such as school name, affiliation number, principal name and location. Education suppliers, EdTech companies and publishers use it to reach CBSE schools. IndiaB2BData.com helps you explore these records by state, city and school level.",
+    intro: [
+      "CBSE is India's largest school board by number of affiliated private schools, and those schools follow a common curriculum and academic calendar. That makes them a clear, well-defined audience for publishers, EdTech platforms, lab and sports suppliers, and teacher-training providers.",
+      "A CBSE schools email IDs database focuses on that segment, with official school and principal email addresses where available, so you can plan email outreach by state, city or school level. For schools across all boards, see our schools and colleges database.",
+    ],
+    highlights: [
+      { icon: School, title: "CBSE-Affiliated Schools", description: "Primary, secondary and senior secondary." },
+      { icon: Mail, title: "Official Email IDs", description: "School and principal emails, where available." },
+      { icon: MapPinned, title: "State & City Filters", description: "Target a region, city or district." },
+      { icon: FileText, title: "Excel or CSV Format", description: "Ready for your email platform." },
+    ],
+    dataFields: [
+      "School name",
+      "CBSE affiliation number, where available",
+      "School level: primary, secondary or senior secondary",
+      "Principal name, where available",
+      "Official school or principal email address",
+      "Phone number, where available",
+      "Address, city, district, state and pincode",
+    ],
+    sections: [
+      {
+        heading: "Who Can Use a CBSE Schools Email Database?",
+        paragraphs: [],
+        subsections: [
+          { heading: "Publishers and Book Distributors", text: "Reach CBSE schools with NCERT-aligned books, workbooks and reference material ahead of the new session." },
+          { heading: "EdTech and School ERP Providers", text: "Introduce learning platforms, smart-class solutions and school management software to CBSE schools." },
+          { heading: "Lab, Sports and Infrastructure Suppliers", text: "Reach schools that need lab equipment, sports gear, furniture and campus infrastructure." },
+          { heading: "Teacher Training and Olympiad Organisers", text: "Invite CBSE schools to CPD workshops, olympiads and inter-school competitions." },
+        ],
+      },
+      {
+        heading: "Timing Your Outreach to CBSE Schools",
+        paragraphs: [
+          "CBSE schools follow an April-to-March academic year. Purchasing decisions for books, uniforms and technology are usually made between January and March, while budgets for events, training and infrastructure often open later in the year.",
+          "Address the principal by name where possible, keep emails short and relevant to the school's needs, and include a clear way to opt out.",
+        ],
+      },
+      {
+        heading: "What to Check Before Choosing a CBSE Schools Database",
+        paragraphs: [],
+        bullets: [
+          "Coverage: confirm the states, cities and school levels included.",
+          "Email completeness: review a sample to see how many records include an email address.",
+          "Update information: ask when records were last reviewed, since principals and emails change.",
+          "Source and permitted use: ask how records were compiled and whether your intended use is allowed.",
+        ],
+      },
+    ],
+    useCases: [
+      "Textbook and reference material promotion",
+      "EdTech, smart-class and ERP outreach",
+      "Lab, sports and furniture supply",
+      "Teacher training and CPD invitations",
+      "Olympiad and competition invitations",
+    ],
+    faqs: [
+      { question: "What is a CBSE schools email IDs database?", answer: "It is a list of CBSE-affiliated schools with official email addresses and details such as school name, affiliation number, principal name and location." },
+      { question: "Does every record include an email address?", answer: "Not necessarily. Review a sample to see email completeness for your target region before ordering." },
+      { question: "Can I filter by state or city?", answer: "Yes, where location fields are available. Share your target regions and ask us to confirm coverage." },
+      { question: "Can I get only senior secondary schools?", answer: "Where the school level is recorded, records can be filtered by primary, secondary or senior secondary." },
+      { question: "Do you have schools from other boards?", answer: "Yes. Our schools and colleges database covers ICSE, IB, Cambridge and state board schools, plus colleges and universities." },
+      { question: "Can I see a sample first?", answer: "Yes. Request sample records to check fields and coverage before ordering." },
+    ],
+    related: [
+      "school-colleges-database",
+      "teachers-database-india",
+      "students-database",
       "email-database-india",
-      "advocates-lawyers-database-india",
+      "industry-wise-company-database-india",
+      "b2b-database-india",
+    ],
+  },
+  {
+    slug: "mobile-accessories-shops-database-india",
+    keyword: "cell phones and accessories shops database India",
+    title: "Mobile & Accessories Shops Database India",
+    metaDescription:
+      "Explore a cell phones and accessories shops database in India — mobile retailers, dealers and repair shops by city. Review fields, coverage and permitted uses.",
+    eyebrow: "Cell Phones & Accessories Shops Database",
+    h1: "Cell Phones & Accessories Shops Database in India",
+    answer:
+      "A cell phones and accessories shops database is a structured collection of business records for mobile phone retailers, accessories shops, multi-brand outlets, distributors and repair shops. IndiaB2BData.com helps brands and distributors explore these records by city, locality and business type.",
+    intro: [
+      "India has one of the world's largest mobile retail networks, with lakhs of phone and accessories shops in every city, town and market. Accessory brands, distributors, repair-parts suppliers and fintech companies all need to reach these retailers, usually one market at a time.",
+      "A cell phones and accessories shops database organises those business records by location and shop type, so you can plan distribution, beat routes and retailer onboarding with real data. Confirm the fields, coverage and permitted uses before ordering.",
+    ],
+    highlights: [
+      { icon: Smartphone, title: "Mobile Retailers", description: "Phone shops, multi-brand outlets and dealers." },
+      { icon: Filter, title: "Shop-Type Filters", description: "Accessories, repair, distributors and retail." },
+      { icon: MapPinned, title: "Market-Level Coverage", description: "Target a city, locality or pincode." },
+      { icon: Truck, title: "Distribution Planning", description: "Plan beats and retailer onboarding." },
+    ],
+    dataFields: [
+      "Shop or business name",
+      "Business type: retailer, accessories shop, repair shop or distributor, where recorded",
+      "Owner or contact name, where available",
+      "Business phone number, where available and permitted",
+      "Address, locality, city, state and pincode",
+      "GSTIN, where available",
+    ],
+    sections: [
+      {
+        heading: "Types of Mobile Businesses Covered",
+        paragraphs: [],
+        subsections: [
+          { heading: "Mobile Phone Retailers", text: "Single-brand and multi-brand phone stores in markets, malls and high streets." },
+          { heading: "Accessories Shops", text: "Shops selling chargers, cables, cases, earphones, power banks and screen guards." },
+          { heading: "Repair and Service Shops", text: "Mobile repair counters and service centres that buy spare parts and tools." },
+          { heading: "Distributors and Wholesalers", text: "Businesses supplying phones and accessories to retailers in a region." },
+        ],
+      },
+      {
+        heading: "Who Can Use This Database?",
+        paragraphs: [],
+        bullets: [
+          "Accessory and electronics brands expanding retail reach",
+          "Distributors planning beat routes and new markets",
+          "Spare-parts and tools suppliers for repair shops",
+          "Fintech, EMI and payments companies onboarding merchants",
+          "Telecom and recharge service providers",
+        ],
+      },
+      {
+        heading: "What to Check Before Choosing a Mobile Shops Database",
+        paragraphs: [],
+        bullets: [
+          "Shop-type fit: confirm the dataset covers the business types you sell to.",
+          "Location coverage: check the cities, markets or pincodes included.",
+          "Field completeness: review a sample to see which fields are populated.",
+          "Update information: small shops open, move and close often, so ask when records were last reviewed.",
+          "Permitted use: confirm the source and whether your planned outreach is allowed.",
+        ],
+        closing: ["Verify that an outlet is active before including it in a sales plan, and honour every opt-out request."],
+      },
+    ],
+    useCases: [
+      "Accessory brand retail expansion",
+      "Distributor beat and market planning",
+      "Spare-parts supply to repair shops",
+      "Merchant onboarding for EMI and payments",
+      "Competitor retail mapping",
+    ],
+    faqs: [
+      { question: "What is a cell phones and accessories shops database?", answer: "It is a structured collection of business records for mobile retailers, accessories shops, repair shops and distributors, organised by location and shop type." },
+      { question: "Can I get only repair shops or only accessories shops?", answer: "Where the business type is recorded, records can be filtered by shop type." },
+      { question: "Can I request a market or pincode-wise list?", answer: "Some datasets support city, locality or pincode filters. Share your target areas and ask us to confirm coverage." },
+      { question: "Is it available in Excel format?", answer: "Excel or CSV delivery may be available. Confirm the format and columns before purchase." },
+      { question: "Does every record include a phone number?", answer: "Not necessarily. Review a sample and the field list before deciding." },
+      { question: "Can I see a sample first?", answer: "Yes. Request sample records to check shop types, locations and fields before ordering." },
+    ],
+    related: [
+      "dealers-distributors-database-india",
+      "channel-sales-professionals-database-india",
+      "importers-exporters-database-india",
+      "beauty-parlours-salons-spa-database-india",
+      "gst-database-india",
+      "whatsapp-number-database-india",
+    ],
+  },
+  {
+    slug: "ceo-cfo-cmo-it-heads-database-india",
+    keyword: "CEO, CFO, CMO and IT heads database India",
+    title: "CEO, CFO, CMO & IT Heads Database India",
+    metaDescription:
+      "Explore a CXO database in India — CEOs, CFOs, CMOs, CIOs and IT heads by industry, company size and city. Review available fields, coverage and permitted uses.",
+    eyebrow: "CEO / CFO / CMO / IT Heads Database",
+    h1: "CEO, CFO, CMO & IT Heads Database in India",
+    answer:
+      "A CEO, CFO, CMO and IT heads database is a structured collection of professional records for senior decision-makers, including chief executives, finance heads, marketing heads, CIOs, CTOs and IT managers. IndiaB2BData.com helps B2B companies explore these records by designation, industry, company size and city.",
+    intro: [
+      "Enterprise and mid-market deals are decided at the top. Software vendors, consultancies, financial services firms and event organisers all need to reach the person who owns the budget, whether that is the CEO, the CFO, the CMO or the head of IT.",
+      "A CXO database organises available professional records by designation, industry and company size, so you can focus account-based campaigns on the decision-makers that matter. Confirm the fields, coverage, source and permitted uses before choosing a dataset.",
+    ],
+    highlights: [
+      { icon: UserCheck, title: "C-Suite Decision-Makers", description: "CEOs, CFOs, CMOs, CIOs and CTOs." },
+      { icon: Building2, title: "Company Size Filters", description: "Startups to large enterprises, where recorded." },
+      { icon: Filter, title: "Industry Filters", description: "IT, BFSI, manufacturing, healthcare and more." },
+      { icon: Target, title: "Account-Based Targeting", description: "Build lists around named accounts." },
+    ],
+    dataFields: [
+      "Professional name",
+      "Designation, such as CEO, CFO, CMO, CIO, CTO or IT head",
+      "Company name",
+      "Industry and company size band, where recorded",
+      "Business email address, where available and permitted",
+      "Office phone number, where available and permitted",
+      "City and state",
+      "LinkedIn or public profile URL, where available",
+    ],
+    sections: [
+      {
+        heading: "Designations Covered",
+        paragraphs: [],
+        subsections: [
+          { heading: "CEOs, Founders and Managing Directors", text: "Top decision-makers for strategic partnerships, enterprise deals and investor outreach." },
+          { heading: "CFOs and Finance Heads", text: "Budget owners for accounting, ERP, treasury, banking and compliance solutions." },
+          { heading: "CMOs and Marketing Heads", text: "Buyers of martech, advertising, research and agency services." },
+          { heading: "CIOs, CTOs and IT Heads", text: "Decision-makers for software, cloud, cybersecurity, hardware and IT services." },
+        ],
+      },
+      {
+        heading: "Who Can Use a CXO Database?",
+        paragraphs: [],
+        bullets: [
+          "SaaS, cloud and cybersecurity vendors running account-based campaigns",
+          "Consulting, audit and advisory firms",
+          "Banks, NBFCs and corporate finance providers",
+          "Marketing agencies and martech platforms",
+          "Business conferences, award shows and executive events",
+          "Executive search firms",
+        ],
+      },
+      {
+        heading: "What to Check Before Choosing a CXO Database",
+        paragraphs: [],
+        bullets: [
+          "Designation accuracy: senior people change roles often, so ask when records were last reviewed.",
+          "Company fit: confirm industry and company size filters match your ideal customer profile.",
+          "Email completeness: review a sample to see how many records include a business email.",
+          "Source and permitted use: ask how records were compiled and whether your intended outreach is allowed.",
+        ],
+        closing: [
+          "Keep outreach to senior executives brief, relevant and personalised, and honour every opt-out request. Assess your obligations under the Digital Personal Data Protection Act, 2023 before outreach.",
+        ],
+      },
+    ],
+    useCases: [
+      "Account-based marketing for enterprise sales",
+      "SaaS, cloud and cybersecurity outreach",
+      "Finance, banking and ERP solution sales",
+      "Executive event and award invitations",
+      "Executive search and leadership hiring",
+    ],
+    faqs: [
+      { question: "What is a CEO, CFO, CMO and IT heads database?", answer: "It is a structured collection of professional records for senior decision-makers, with fields such as designation, company, industry, company size and location." },
+      { question: "Can I get only CIOs and IT heads?", answer: "Yes, where designation is recorded. Lists can be filtered by role, such as CEO, CFO, CMO or IT head." },
+      { question: "Can I filter by company size or industry?", answer: "Where recorded, records can be filtered by industry and company size band." },
+      { question: "Does every record include an email address?", answer: "Not necessarily. Review a sample to check email completeness before ordering." },
+      { question: "Is it available in Excel format?", answer: "Excel or CSV delivery may be available. Confirm the format and columns before purchase." },
+      { question: "Can I see a sample first?", answer: "Yes. Request sample records to check designations and fields before ordering." },
+    ],
+    related: [
+      "corporate-database-india",
+      "b2b-leads-database-india",
+      "business-analysts-database-india",
+      "business-development-sales-professionals-database-india",
+      "email-database-india",
+      "company-database-india",
+    ],
+  },
+  {
+    slug: "channel-sales-professionals-database-india",
+    keyword: "channel sales persons database India",
+    title: "Channel Sales Persons Database India",
+    metaDescription:
+      "Explore a channel sales persons database in India — channel, distributor and dealer sales professionals by industry and territory. Review fields and coverage.",
+    eyebrow: "Channel Sales Persons Database",
+    h1: "Channel Sales Persons Database in India",
+    answer:
+      "A channel sales persons database is a structured collection of professional records for people who manage sales through distributors, dealers, resellers and retail partners, such as channel sales managers, area sales managers and distributor sales representatives. IndiaB2BData.com helps recruiters and B2B companies explore these records by industry, territory and experience.",
+    intro: [
+      "In FMCG, consumer durables, telecom, pharma, building materials and IT hardware, most revenue flows through a partner network. The people who build and run that network, from distributor sales reps to area and channel sales managers, are a specialised and highly sought-after talent pool.",
+      "A channel sales persons database focuses on those roles, so recruiters and companies can target channel experience specifically rather than general sales. For broader sales and business development roles, see our sales professionals database.",
+    ],
+    highlights: [
+      { icon: Network, title: "Channel & Partner Roles", description: "Distributor, dealer and reseller sales." },
+      { icon: Filter, title: "Industry Filters", description: "FMCG, durables, telecom, pharma, IT and more." },
+      { icon: MapPinned, title: "Territory Coverage", description: "Filter by city, state or sales region." },
+      { icon: Users, title: "Experience Levels", description: "Sales reps to regional channel heads." },
+    ],
+    dataFields: [
+      "Professional name",
+      "Designation, such as channel sales manager or ASM",
+      "Current or recent employer, where available",
+      "Industry, where recorded",
+      "Territory, city and state",
+      "Experience band",
+      "Professional email or contact number, where available and permitted",
+    ],
+    sections: [
+      {
+        heading: "Roles Covered",
+        paragraphs: [],
+        subsections: [
+          { heading: "Distributor Sales Representatives", text: "Front-line staff working with distributors and retailers on beat coverage and secondary sales." },
+          { heading: "Area and Territory Sales Managers", text: "Managers responsible for distributors, dealers and sales teams in a defined territory." },
+          { heading: "Channel Sales and Partner Managers", text: "Professionals who recruit, enable and manage resellers, system integrators and channel partners." },
+          { heading: "Regional and National Channel Heads", text: "Senior leaders running channel strategy across states or the whole country." },
+        ],
+      },
+      {
+        heading: "Who Can Use This Database?",
+        paragraphs: [],
+        bullets: [
+          "Recruiters hiring channel and distribution sales talent",
+          "Brands building a distribution network in new territories",
+          "Sales training providers running channel management programmes",
+          "Channel incentive and partner-management software vendors",
+        ],
+      },
+      {
+        heading: "What to Check Before Choosing a Channel Sales Database",
+        paragraphs: [],
+        bullets: [
+          "Role relevance: confirm the records are channel-focused rather than general sales.",
+          "Industry and territory fit: check that the records match your sector and regions.",
+          "Update information: sales professionals change roles often, so ask when records were last reviewed.",
+          "Source and permitted use: ask how records were compiled and whether your intended use is allowed.",
+        ],
+        closing: [
+          "Contact professionals only for relevant purposes such as genuine job opportunities or training, and honour every opt-out request, in line with the Digital Personal Data Protection Act, 2023.",
+        ],
+      },
+    ],
+    useCases: [
+      "Channel and distribution sales recruitment",
+      "Territory expansion and team building",
+      "Channel management training invitations",
+      "Partner-management software research",
+      "Sales talent mapping by industry",
+    ],
+    faqs: [
+      { question: "What is a channel sales persons database?", answer: "It is a structured collection of professional records for people managing sales through distributors, dealers, resellers and retail partners." },
+      { question: "How is this different from the sales professionals database?", answer: "This database focuses on channel and distribution sales roles. The sales professionals database covers all sales and business development functions." },
+      { question: "Can I filter by industry?", answer: "Where the industry is recorded, records can be filtered by sector, such as FMCG, telecom, pharma or IT hardware." },
+      { question: "Can I filter by territory?", answer: "Yes, where location fields are available. Share your target regions and ask us to confirm coverage." },
+      { question: "Is it available in Excel format?", answer: "Excel or CSV delivery may be available. Confirm the format and columns before purchase." },
+      { question: "Can I see a sample first?", answer: "Yes. Request sample records to check roles and fields before ordering." },
+    ],
+    related: [
+      "business-development-sales-professionals-database-india",
+      "dealers-distributors-database-india",
+      "agents-database-india",
+      "mobile-accessories-shops-database-india",
+      "job-seekers-database",
+      "manufacturer-database-india",
     ],
   },
 ];
 
-/** Pages still served — retired slugs 301 to their merge target (see redirects.ts). */
+/** Pages still served - retired slugs 301 to their merge target (see redirects.ts). */
 export const liveKeywordPages = keywordPages.filter((page) => !(page.slug in retiredKeywordRedirects));
 
 export function getKeywordPage(slug: string): KeywordPage | undefined {

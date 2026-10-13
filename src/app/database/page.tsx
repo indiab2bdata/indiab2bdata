@@ -11,11 +11,13 @@ import { databaseStates } from "@/lib/database-pages";
 import { getKeywordPagesBySlug } from "@/lib/keyword-pages";
 import { PopularCities } from "@/components/popular-cities";
 import { siteConfig } from "@/lib/site-config";
-import { pageMetadata, breadcrumbJsonLd, webPageJsonLd, itemListJsonLd } from "@/lib/seo";
+import { pageMetadata, breadcrumbJsonLd, webPageJsonLd, itemListJsonLd, faqJsonLd } from "@/lib/seo";
+import { DATABASE_HUB_FAQS } from "@/lib/faq-data";
+import { Faq } from "@/components/sections/faq";
 
 const TITLE = "Business Database by State | India-Wide Coverage";
 const DESCRIPTION =
-  "Browse verified B2B business databases state by state — Maharashtra, Gujarat, Tamil Nadu, Delhi, Uttar Pradesh, Karnataka, Haryana and Telangana. Mobile numbers, emails and company records.";
+  "Browse verified B2B business databases state by state - Maharashtra, Gujarat, Tamil Nadu, Delhi, Uttar Pradesh, Karnataka, Haryana and Telangana. Mobile numbers, emails and company records.";
 
 export const metadata: Metadata = pageMetadata({
   title: TITLE,
@@ -51,16 +53,22 @@ export default function DatabaseHubPage() {
     "b2b-database-india",
     "company-database-india",
     "industry-wise-company-database-india",
+    "gst-database-india",
+    "mca-company-database-india",
+    "newly-registered-companies-india",
+    "manufacturer-database-india",
+    "b2b-leads-database-india",
+    "dealers-distributors-database-india",
   ]);
 
   return (
     <>
-      <JsonLd data={[breadcrumbSchema, webPageSchema, stateListSchema]} />
+      <JsonLd data={[breadcrumbSchema, webPageSchema, stateListSchema, faqJsonLd(DATABASE_HUB_FAQS)]} />
 
       <PageHero
         eyebrow="Database by State"
         title="Verified B2B Business Database, State by State"
-        description="Pick a state to see coverage, major cities and industries — or tell us your exact requirement and we'll build a custom list."
+        description="Pick a state to see coverage, major cities and industries - or tell us your exact requirement and we'll build a custom list."
         breadcrumbs={breadcrumbItems}
       />
 
@@ -71,7 +79,7 @@ export default function DatabaseHubPage() {
             Choose Your State
           </h2>
           <p className="mt-4 text-muted leading-relaxed">
-            Every state database is verified, deduplicated and DND-scrubbed — filterable further by city,
+            Every state database is verified, deduplicated and DND-scrubbed - filterable further by city,
             industry or company size once you get in touch.
           </p>
         </Reveal>
@@ -107,7 +115,9 @@ export default function DatabaseHubPage() {
 
       <PopularCities heading="Popular City Databases" />
 
-      <InlineCta id="database-hub-cta" text="Don't see your state listed? We cover all of India — tell us what you need." buttonLabel="Talk to Our Team" />
+      <InlineCta id="database-hub-cta" text="Don't see your state listed? We cover all of India - tell us what you need." buttonLabel="Talk to Our Team" />
+
+      <Faq items={DATABASE_HUB_FAQS} id="database-hub-faq" eyebrow="FAQs" heading="State-Wise Database FAQs" background="white" />
 
       <RelatedLinks pages={relatedKeywordPages} eyebrow="Related Databases" heading="Explore More Data Products" />
 

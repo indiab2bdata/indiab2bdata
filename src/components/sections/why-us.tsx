@@ -52,7 +52,7 @@ export function WhyUs() {
             Built on Accuracy, Not Guesswork
           </h2>
           <p className="mt-4 text-muted leading-relaxed">
-            Every list is verified, deduplicated and formatted before it reaches you — so your
+            Every list is verified, deduplicated and formatted before it reaches you - so your
             team spends time selling, not cleaning spreadsheets.
           </p>
 

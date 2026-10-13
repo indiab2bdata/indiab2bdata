@@ -4,7 +4,7 @@ import { Reveal } from "@/components/reveal";
 const TESTIMONIALS = [
   {
     quote:
-      "Connect rate on our tele-calling improved a lot after we switched — numbers were genuinely active.",
+      "Connect rate on our tele-calling improved a lot after we switched - numbers were genuinely active.",
     initials: "RS",
     name: "Rohit Sharma",
     role: "Sales Head, Real Estate",
@@ -20,7 +20,7 @@ const TESTIMONIALS = [
   },
   {
     quote:
-      "We use their GST database every quarter for lead generation — consistent quality every single time.",
+      "We use their GST database every quarter for lead generation - consistent quality every single time.",
     initials: "AV",
     name: "Amit Verma",
     role: "Founder, Finance Agency",

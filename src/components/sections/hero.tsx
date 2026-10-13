@@ -44,7 +44,7 @@ export function Hero() {
         preload="auto"
       />
 
-      {/* Layered gradient overlay — deeper, richer, more luxurious */}
+      {/* Layered gradient overlay - deeper, richer, more luxurious */}
       <div
         className="absolute inset-0 bg-gradient-to-b from-navy-dark/90 via-navy-dark/65 to-navy-dark/95"
         aria-hidden="true"
@@ -60,13 +60,13 @@ export function Hero() {
       />
 
       <Reveal className="relative max-w-4xl mx-auto px-5 md:px-8 flex flex-col items-center text-center">
-        {/* Badge — glassmorphism with soft glow */}
+        {/* Badge - glassmorphism with soft glow */}
         <span className="inline-flex items-center gap-2 text-teal-light text-[11px] font-semibold uppercase tracking-[0.22em] mb-7 rounded-full px-4 py-1.5 border border-teal-light/30 bg-teal-light/[0.06] backdrop-blur-md shadow-[0_0_24px_-8px_rgba(22,184,232,0.45)]">
           <span className="w-1.5 h-1.5 rounded-full bg-teal-light shadow-[0_0_8px_2px_rgba(22,184,232,0.7)] animate-pulse" />
           India&apos;s Trusted B2B Data Partner
         </span>
 
-        {/* Headline — tightened tracking, brighter accent */}
+        {/* Headline - tightened tracking, brighter accent */}
         <h1 className="font-display font-extrabold text-white text-[2.15rem] sm:text-5xl xl:text-[3.75rem] leading-[1.08] tracking-[-0.02em] max-w-3xl">
           B2B Data That Actually{" "}
           <span className="relative inline-block text-teal-light">
@@ -76,13 +76,13 @@ export function Hero() {
           &amp; <span className="text-teal-light">Converts</span>
         </h1>
 
-        {/* Subheadline — better contrast & rhythm */}
+        {/* Subheadline - better contrast & rhythm */}
         <p className="mt-7 text-slate-200/85 text-base md:text-lg max-w-2xl leading-relaxed font-light">
           Verified mobile numbers, emails and company records for every industry, city and state
-          in India — built for sales teams who can&apos;t afford to waste a single call.
+          in India - built for sales teams who can&apos;t afford to waste a single call.
         </p>
 
-        {/* CTA buttons — elevated, refined */}
+        {/* CTA buttons - elevated, refined */}
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-3.5 w-full sm:w-auto">
           <button
             onClick={() => openModal("hero")}
@@ -98,9 +98,9 @@ export function Hero() {
             href={siteConfig.whatsappHref(siteConfig.defaultWhatsappMessage)}
             target="_blank"
             rel="noopener noreferrer"
-            className="group w-full sm:w-auto flex items-center justify-center gap-2.5 text-white/90 hover:text-white font-medium border border-white/15 hover:border-white/40 bg-white/[0.03] hover:bg-white/[0.08] backdrop-blur-md px-7 py-4 rounded-full transition-all duration-300 active:scale-[0.98] hover:-translate-y-0.5"
+            className="group w-full sm:w-auto flex items-center justify-center gap-2.5 px-7 py-4 rounded-full bg-[#1fb355] hover:bg-[#18a04a] text-white font-semibold shadow-lg shadow-[#1fb355]/35 hover:shadow-xl hover:shadow-[#1fb355]/45 hover:-translate-y-0.5 active:scale-[0.98] ring-1 ring-white/20 transition-all duration-300"
           >
-            <WhatsAppIcon className="w-5 h-5 text-whats transition-transform duration-300 group-hover:scale-110" />
+            <WhatsAppIcon className="w-5 h-5 text-white transition-transform duration-300 group-hover:scale-110" />
             Chat on WhatsApp
           </a>
         </div>
@@ -114,7 +114,7 @@ export function Hero() {
           <span className="h-px flex-1 bg-gradient-to-l from-transparent to-white/15" />
         </div>
 
-        {/* Stats grid — refined glass cards */}
+        {/* Stats grid - refined glass cards */}
         <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-2xl w-full">
           {STATS.map((stat) => (
             <div

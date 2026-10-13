@@ -54,11 +54,20 @@ export default async function DatabaseStatePage({ params }: { params: Params }) 
   const cityPageByName = new Map(cityPages.map((city) => [city.city, city]));
   const unlistedCityPages = cityPages.filter((city) => !page.cities.includes(city.city));
   const url = `${siteConfig.url}/database/${page.slug}`;
-  const otherStates = databaseStates.filter((s) => s.slug !== page.slug).slice(0, 6);
+  const otherStates = databaseStates.filter((s) => s.slug !== page.slug);
   const relatedKeywordPages = getKeywordPagesBySlug([
     "b2b-database-india",
     "company-database-india",
     "industry-wise-company-database-india",
+    "manufacturer-database-india",
+    "gst-database-india",
+    "mca-company-database-india",
+    "b2b-leads-database-india",
+    "mobile-number-database-india",
+    "email-database-india",
+    "dealers-distributors-database-india",
+    "importers-exporters-database-india",
+    "ceo-cfo-cmo-it-heads-database-india",
   ]);
 
   const breadcrumbSchema = breadcrumbJsonLd([
@@ -106,7 +115,7 @@ export default async function DatabaseStatePage({ params }: { params: Params }) 
         ))}
       </section>
 
-      <InlineCta id={`database-${page.slug}-intro-cta`} text={`See real sample records for ${page.name} — free, no obligation.`} />
+      <InlineCta id={`database-${page.slug}-intro-cta`} text={`See real sample records for ${page.name} - free, no obligation.`} />
 
       <section className="py-12 md:py-16 max-w-7xl mx-auto px-5 md:px-8">
         <FeatureGrid items={page.highlights} />
@@ -196,7 +205,7 @@ export default async function DatabaseStatePage({ params }: { params: Params }) 
         items={page.faqs}
         id={`database-${page.slug}-faq`}
         eyebrow="FAQs"
-        heading={`Frequently Asked Questions — ${page.name}`}
+        heading={`Frequently Asked Questions - ${page.name}`}
         background="white"
       />
 

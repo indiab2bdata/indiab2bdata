@@ -14,7 +14,7 @@ import { pageMetadata, breadcrumbJsonLd, webPageJsonLd, faqJsonLd } from "@/lib/
 
 const TITLE = "Contact Us";
 const DESCRIPTION =
-  "Get in touch with IndiaB2BData.com — call, WhatsApp or email us for a free sample of verified B2B mobile number, email and company data across India.";
+  "Get in touch with IndiaB2BData.com - call, WhatsApp or email us for a free sample of verified B2B mobile number, email and company data across India.";
 
 export const metadata: Metadata = pageMetadata({
   title: TITLE,
@@ -84,7 +84,7 @@ export default function ContactPage() {
       <PageHero
         eyebrow="Contact Us"
         title="Let's Get You the Right Data"
-        description="Call, WhatsApp or email us with your requirement — most teams get a free sample within a few hours."
+        description="Call, WhatsApp or email us with your requirement - most teams get a free sample within a few hours."
         breadcrumbs={breadcrumbItems}
       />
 

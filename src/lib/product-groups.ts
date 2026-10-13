@@ -1,4 +1,4 @@
-/** The 31 live data products, grouped for footer navigation. Labels are descriptive, not exact-match keywords. */
+/** The 37 live data products, grouped for footer navigation. Labels are descriptive, not exact-match keywords. */
 export const PRODUCT_GROUPS: { heading: string; links: { href: string; label: string }[] }[] = [
   {
     heading: "General",
@@ -32,16 +32,20 @@ export const PRODUCT_GROUPS: { heading: string; links: { href: string; label: st
       { href: "/dealers-distributors-database-india", label: "Dealers & Distributors" },
       { href: "/building-material-database-india", label: "Building Material" },
       { href: "/beauty-parlours-salons-spa-database-india", label: "Salons & Spas" },
+      { href: "/mobile-accessories-shops-database-india", label: "Mobile & Accessories Shops" },
     ],
   },
   {
     heading: "Professionals",
     links: [
+      { href: "/ceo-cfo-cmo-it-heads-database-india", label: "CEO / CFO / CMO / IT Heads" },
       { href: "/doctors-database", label: "Doctors" },
       { href: "/advocates-lawyers-database-india", label: "Advocates & Lawyers" },
       { href: "/agents-database-india", label: "Agents" },
       { href: "/architect-interior-designers-database-india", label: "Architects & Interiors" },
       { href: "/business-analysts-database-india", label: "Business Analysts" },
+      { href: "/business-development-sales-professionals-database-india", label: "Sales & BD Professionals" },
+      { href: "/channel-sales-professionals-database-india", label: "Channel Sales" },
       { href: "/bpo-call-centre-employees-database-india", label: "BPO Employees" },
     ],
   },
@@ -60,6 +64,7 @@ export const PRODUCT_GROUPS: { heading: string; links: { href: string; label: st
       { href: "/b2b-b2c-companies-database", label: "B2B & B2C Data" },
       { href: "/car-owners-database", label: "Car Owners" },
       { href: "/job-seekers-database", label: "Job Seekers" },
+      { href: "/cab-users-database-india", label: "Cab Users" },
     ],
   },
   {
@@ -67,8 +72,16 @@ export const PRODUCT_GROUPS: { heading: string; links: { href: string; label: st
     links: [
       { href: "/students-database", label: "Students" },
       { href: "/school-colleges-database", label: "Schools & Colleges" },
+      { href: "/cbse-schools-email-database-india", label: "CBSE Schools Emails" },
       { href: "/teachers-database-india", label: "Teachers" },
       { href: "/domain-whois-database", label: "Domain WHOIS Data" },
     ],
   },
 ];
+
+/** The footer group a product page belongs to, plus its sibling links (self excluded). */
+export function getProductGroup(slug: string) {
+  const group = PRODUCT_GROUPS.find((g) => g.links.some((link) => link.href === `/${slug}`));
+  if (!group) return undefined;
+  return { heading: group.heading, siblings: group.links.filter((link) => link.href !== `/${slug}`) };
+}

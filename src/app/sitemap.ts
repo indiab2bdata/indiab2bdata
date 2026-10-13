@@ -6,7 +6,7 @@ import { cities, cityPath } from "@/components/city-pages/city-data.mjs";
 
 /**
  * Date each page's main content last changed. Bump the matching entry when you edit that
- * page's copy — not for header/footer/styling changes. priority & changefreq are omitted
+ * page's copy - not for header/footer/styling changes. priority & changefreq are omitted
  * on purpose (Google ignores them).
  */
 const CONTENT_UPDATED = {

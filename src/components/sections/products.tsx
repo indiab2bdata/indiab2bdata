@@ -24,7 +24,7 @@ const PRODUCTS = [
     icon: Layers,
     title: "Industry-Wise Leads",
     description:
-      "Pre-segmented lists across 500+ industries — real estate, education, finance, healthcare and more.",
+      "Pre-segmented lists across 500+ industries - real estate, education, finance, healthcare and more.",
   },
   {
     icon: MessageSquareText,
@@ -35,7 +35,7 @@ const PRODUCTS = [
     icon: Globe2,
     title: "Custom / Pan-India Data",
     description:
-      "Tell us your exact target — state, city cluster or niche — we'll build a custom list for you.",
+      "Tell us your exact target - state, city cluster or niche - we'll build a custom list for you.",
   },
 ];
 
@@ -50,7 +50,7 @@ export function Products() {
           Data Products Built for Every Team
         </h2>
         <p className="mt-4 text-muted leading-relaxed">
-          Pick a ready-made database or tell us exactly who you want to reach — we&apos;ll
+          Pick a ready-made database or tell us exactly who you want to reach - we&apos;ll
           customise it by city, industry, turnover or designation.
         </p>
       </Reveal>

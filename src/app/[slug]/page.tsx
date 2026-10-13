@@ -15,6 +15,8 @@ import { RelatedLinks } from "@/components/related-links";
 import { ContactCta } from "@/components/sections/contact-cta";
 import { InlineCta } from "@/components/inline-cta";
 import { Reveal } from "@/components/reveal";
+import { CoverageLinks } from "@/components/coverage-links";
+import { getProductGroup } from "@/lib/product-groups";
 
 export const dynamicParams = false;
 
@@ -36,7 +38,7 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
     description: page.metaDescription,
     path: `/${page.slug}`,
     keywords: [page.keyword],
-    image: { url: `${siteConfig.url}${visual.src}`, width: 1200, height: 800, alt: visual.alt },
+    image: { url: `${siteConfig.url}${visual.src}`, width: visual.width, height: visual.height, alt: visual.alt },
   });
 }
 
@@ -48,6 +50,8 @@ export default async function KeywordPage({ params }: { params: Params }) {
   const url = `${siteConfig.url}/${page.slug}`;
   const visual = getKeywordImage(page.slug, page.keyword);
   const relatedPages = getKeywordPagesBySlug(page.related ?? []);
+  const productGroup = getProductGroup(page.slug);
+  const relatedHrefs = new Set(relatedPages.map((p) => `/${p.slug}`));
 
   const breadcrumbSchema = breadcrumbJsonLd([
     { name: "Home", url: siteConfig.url },
@@ -89,7 +93,7 @@ export default async function KeywordPage({ params }: { params: Params }) {
         ))}
       </section>
 
-      <InlineCta id={`${page.slug}-intro-cta`} text={`See real sample records for ${page.keyword} — free, no obligation.`} />
+      <InlineCta id={`${page.slug}-intro-cta`} text={`See real sample records for ${page.keyword} - free, no obligation.`} />
 
       <section className="py-12 md:py-16 max-w-7xl mx-auto px-5 md:px-8">
         <FeatureGrid items={page.highlights} />
@@ -189,6 +193,12 @@ export default async function KeywordPage({ params }: { params: Params }) {
       <InlineCta id={`${page.slug}-faq-cta`} text="Still have questions? Get a free sample and see the data for yourself." />
 
       <RelatedLinks pages={relatedPages} eyebrow="Explore More" heading="Related Databases" />
+
+      <CoverageLinks
+        topic={page.keyword}
+        categoryHeading={productGroup?.heading}
+        categoryLinks={productGroup?.siblings.filter((link) => !relatedHrefs.has(link.href))}
+      />
 
       <ContactCta />
     </>

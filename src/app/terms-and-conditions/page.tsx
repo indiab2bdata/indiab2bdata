@@ -56,8 +56,8 @@ export default function TermsAndConditionsPage() {
 
           <LegalSection title="1. Our Services">
             <p>
-              IndiaB2BData.com provides verified B2B contact databases — including mobile
-              numbers, email addresses, GST/company records and industry-wise leads — compiled
+              IndiaB2BData.com provides verified B2B contact databases - including mobile
+              numbers, email addresses, GST/company records and industry-wise leads - compiled
               from publicly available and permission-based sources across India. Sample records
               and full data lists are delivered digitally, typically as Excel/CSV files, over
               email or WhatsApp.
@@ -143,7 +143,7 @@ export default function TermsAndConditionsPage() {
 
           <LegalSection title="9. Intellectual Property">
             <p>
-              All content on this website — including text, design, graphics and logos — is the
+              All content on this website - including text, design, graphics and logos - is the
               property of IndiaB2BData.com and may not be copied or reused without permission.
               This does not apply to the data records you purchase, which are licensed to you as
               described in Section 2.

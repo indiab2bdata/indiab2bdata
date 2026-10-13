@@ -55,7 +55,7 @@ summary:focus-visible {
   border-radius: 4px;
 }
 
-/* Brand gradient mesh for hero / dark sections — logo gradient translated to the site */
+/* Brand gradient mesh for hero / dark sections - logo gradient translated to the site */
 .mesh-navy {
   background-image:
     radial-gradient(60% 55% at 15% 10%, rgba(22, 184, 232, 0.22), transparent 60%),
