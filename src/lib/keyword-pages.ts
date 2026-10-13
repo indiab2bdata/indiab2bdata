@@ -4839,6 +4839,442 @@ export const keywordPages: KeywordPage[] = [
       "manufacturer-database-india",
     ],
   },
+  {
+    slug: "chartered-accountants-database-india",
+    keyword: "chartered accountants database India",
+    title: "Chartered Accountants Database India | CA Firms & Practitioners",
+    metaDescription:
+      "Chartered accountants database in India - CA practitioners and CA firms with contact details, city, specialisation and firm size. Get a free sample.",
+    eyebrow: "Chartered Accountants Database",
+    h1: "Chartered Accountants Database in India",
+    answer:
+      "A chartered accountants database is a structured list of practising CAs and CA firms in India, with name, firm, specialisation (audit, tax, GST, advisory), city and contact details. IndiaB2BData.com supplies verified CA records filterable by city, state and practice area for B2B marketing and partnerships.",
+    intro: [
+      "India has over 4 lakh ICAI members, and practising CAs advise lakhs of MSMEs on GST, income tax, audit and company compliance. That makes them one of the most influential referral channels in Indian B2B: a CA's recommendation often decides which accounting software, bank, loan product or compliance service a business uses.",
+      "Our chartered accountants database helps fintech, SaaS, banking, insurance and training companies reach CAs and CA firms directly - by city, firm size and practice area - instead of relying on generic business lists.",
+    ],
+    highlights: [
+      { icon: Landmark, title: "CAs & CA Firms", description: "Individual practitioners and partnership firms." },
+      { icon: Filter, title: "Practice Filters", description: "Audit, direct tax, GST, advisory and more." },
+      { icon: MapPinned, title: "City-Wise Coverage", description: "Metro, tier-2 and tier-3 cities across India." },
+      { icon: ShieldCheck, title: "Verified Contacts", description: "Checked, deduplicated and DND-scrubbed." },
+    ],
+    dataFields: [
+      "CA / partner name",
+      "Firm name",
+      "Practice area, such as audit, tax or GST, where available",
+      "Mobile number and email ID",
+      "Office address, city, state and pincode",
+      "Firm size / number of partners, where available",
+    ],
+    sections: [
+      {
+        heading: "Who Can Use a CA Database?",
+        paragraphs: [],
+        bullets: [
+          "Accounting, GST and payroll software companies selling through CAs",
+          "Banks and NBFCs building MSME loan referral partnerships",
+          "Insurance companies and wealth managers seeking CA tie-ups",
+          "Professional training and CPE/certification providers",
+          "Recruiters hiring audit, tax and finance talent",
+        ],
+      },
+      {
+        heading: "What to Check Before Buying a CA Database",
+        paragraphs: [],
+        bullets: [
+          "Practice relevance: confirm whether records are practising CAs, firms, or CAs in employment.",
+          "Location fit: check coverage in your target cities before ordering.",
+          "Freshness: ask when records were last verified.",
+          "Permitted use: use the data for relevant professional outreach and honour opt-outs under the DPDP Act, 2023.",
+        ],
+      },
+    ],
+    useCases: [
+      "Selling accounting, GST and compliance software",
+      "MSME loan and banking referral partnerships",
+      "Webinars and CPE event invitations",
+      "Finance and audit recruitment",
+      "Insurance and investment advisory tie-ups",
+    ],
+    faqs: [
+      { question: "What is a chartered accountants database?", answer: "It is a list of practising chartered accountants and CA firms in India with contact details, location and practice area, used for B2B marketing, partnerships and recruitment." },
+      { question: "How many chartered accountants are there in India?", answer: "ICAI has over 4 lakh members, and a large share of them practise through individual offices or CA firms across India." },
+      { question: "Can I get a city-wise list of CA firms?", answer: "Yes. CA records can be filtered by city, state and pincode, for example CA firms in Mumbai, Delhi, Ahmedabad or Pune." },
+      { question: "Can I filter CAs by specialisation?", answer: "Where recorded, you can filter by practice area such as audit, income tax, GST, company law or advisory." },
+      { question: "In what format is the CA database delivered?", answer: "In Excel or CSV, ready to import into a CRM, dialer or email tool." },
+      { question: "Can I get a free sample?", answer: "Yes. Download the sample format on this page or request 15-20 real sample records before ordering." },
+    ],
+    related: [
+      "gst-database-india",
+      "advocates-lawyers-database-india",
+      "mca-company-database-india",
+      "ceo-cfo-cmo-it-heads-database-india",
+      "chief-managers-database-india",
+      "newly-registered-companies-india",
+    ],
+  },
+  {
+    slug: "chemical-pharma-companies-database-india",
+    keyword: "chemical and pharma companies database India",
+    title: "Chemical & Pharma Companies Database India | Manufacturers List",
+    metaDescription:
+      "Chemical and pharmaceutical companies database in India - manufacturers, API makers, formulators and traders with contacts. Gujarat, Maharashtra, Telangana and more.",
+    eyebrow: "Chemical & Pharma Companies Database",
+    h1: "Chemical & Pharma Companies Database in India",
+    answer:
+      "A chemical and pharma companies database lists Indian chemical manufacturers, API and bulk-drug makers, pharma formulators and chemical traders with company name, contact person, product category, GSTIN and location. IndiaB2BData.com covers major clusters such as Ahmedabad-Vapi-Ankleshwar, Hyderabad, Mumbai-Thane and Baddi.",
+    intro: [
+      "India is the world's largest supplier of generic medicines and a major global chemicals producer. The industry is highly clustered: Gujarat (Ankleshwar, Vapi, Dahej, Vadodara) for chemicals and dyes, Hyderabad for APIs and bulk drugs, Baddi in Himachal Pradesh for formulations, and Maharashtra for both.",
+      "Our chemical and pharma companies database lets suppliers of raw materials, packaging, lab equipment, machinery and services reach these manufacturers by cluster, product segment and company size.",
+    ],
+    highlights: [
+      { icon: Factory, title: "Manufacturers & Traders", description: "API, formulation, specialty and bulk chemicals." },
+      { icon: MapPinned, title: "Cluster Coverage", description: "Gujarat, Hyderabad, Baddi, Maharashtra and more." },
+      { icon: Filter, title: "Segment Filters", description: "Pharma, agrochemicals, dyes, petrochemicals." },
+      { icon: BadgeCheck, title: "GST-Linked Records", description: "GSTIN and company details where available." },
+    ],
+    dataFields: [
+      "Company name and GSTIN / CIN, where available",
+      "Contact person and designation (owner, plant head, purchase manager)",
+      "Mobile number and email ID",
+      "Product segment, such as API, formulation, specialty or bulk chemicals",
+      "Plant / office address, city, state and pincode",
+      "Company size and website, where available",
+    ],
+    sections: [
+      {
+        heading: "Segments Covered",
+        paragraphs: [],
+        subsections: [
+          { heading: "Pharmaceutical Manufacturers", text: "API and bulk-drug makers, formulators, contract manufacturers (CMOs) and third-party manufacturing units." },
+          { heading: "Chemical Manufacturers", text: "Specialty, fine, bulk, dyes and pigments, agrochemical and petrochemical producers." },
+          { heading: "Traders & Distributors", text: "Chemical traders, pharma distributors and C&F agents." },
+        ],
+      },
+      {
+        heading: "Who Uses This Database?",
+        paragraphs: [],
+        bullets: [
+          "Raw material, solvent and excipient suppliers",
+          "Packaging, lab equipment and process machinery companies",
+          "Regulatory, testing and validation service providers",
+          "Logistics and cold-chain companies",
+        ],
+      },
+    ],
+    useCases: [
+      "Raw material and intermediate sales",
+      "Machinery and lab equipment marketing",
+      "Contract manufacturing partnerships",
+      "Export and distribution tie-ups",
+      "Market research on pharma and chemical clusters",
+    ],
+    faqs: [
+      { question: "What is a chemical and pharma companies database?", answer: "It is a list of chemical and pharmaceutical manufacturers, formulators and traders in India with contact details, product segment and location." },
+      { question: "Which states have the most pharma and chemical companies?", answer: "Gujarat and Maharashtra are the largest hubs for chemicals and pharma, followed by Telangana (Hyderabad), Himachal Pradesh (Baddi), Andhra Pradesh and Tamil Nadu." },
+      { question: "Can I get only API manufacturers?", answer: "Yes. Records can be filtered by segment such as API/bulk drugs, formulations, specialty chemicals or agrochemicals, where recorded." },
+      { question: "Does it include purchase manager contacts?", answer: "Where available, records include decision-makers such as owners, directors, plant heads and purchase managers." },
+      { question: "Is the data available for a single industrial area like Vapi or Ankleshwar?", answer: "Yes. You can order by city, district or pincode cluster." },
+      { question: "Can I see a sample?", answer: "Yes. Download the sample format on this page or request real sample records." },
+    ],
+    related: [
+      "manufacturer-database-india",
+      "chemists-medical-stores-database-india",
+      "industry-wise-company-database-india",
+      "importers-exporters-database-india",
+      "doctors-database",
+      "gst-database-india",
+    ],
+  },
+  {
+    slug: "chemists-medical-stores-database-india",
+    keyword: "chemists and medical stores database India",
+    title: "Chemists & Medical Stores Database India | Pharmacy List",
+    metaDescription:
+      "Chemists and medical stores database in India - retail pharmacies and drug distributors with owner name, mobile number and address, city-wise. Free sample.",
+    eyebrow: "Chemists & Medical Stores Database",
+    h1: "Chemists & Medical Stores Database in India",
+    answer:
+      "A chemists and medical stores database lists retail pharmacies, medical shops and pharma distributors in India with store name, owner name, mobile number, drug licence details where available, and full address. IndiaB2BData.com provides city-wise and pincode-wise chemist lists for pharma, FMCG and healthcare marketing.",
+    intro: [
+      "India has lakhs of retail chemists, and they remain the last mile for medicines, OTC products, wellness, nutrition and personal-care brands. For pharma companies and distributors, reaching chemists directly is the fastest way to build secondary sales and product visibility.",
+      "Our chemist database covers retail medical stores, pharmacy chains and wholesale drug distributors, filterable by city, locality and pincode - ideal for field force planning, distributor appointment and retail outreach.",
+    ],
+    highlights: [
+      { icon: Stethoscope, title: "Retail & Wholesale", description: "Medical stores, pharmacy chains, distributors." },
+      { icon: MapPinned, title: "Pincode-Level", description: "Plan beats and territories precisely." },
+      { icon: Smartphone, title: "Owner Mobile Numbers", description: "Direct to the store owner or pharmacist." },
+      { icon: ShieldCheck, title: "Verified & DND-Scrubbed", description: "Checked before every delivery." },
+    ],
+    dataFields: [
+      "Medical store / pharmacy name",
+      "Owner or pharmacist name",
+      "Mobile number and email, where available",
+      "Store type: retail, wholesale or chain",
+      "Drug licence number, where available",
+      "Address, locality, city, state and pincode",
+    ],
+    sections: [
+      {
+        heading: "Who Uses a Chemist Database?",
+        paragraphs: [],
+        bullets: [
+          "Pharma and OTC companies building retail reach",
+          "Nutraceutical, wellness and personal-care brands",
+          "Pharmacy software, POS and e-pharmacy platforms",
+          "Distributors appointing sub-stockists",
+          "Medical devices and diagnostics companies",
+        ],
+      },
+      {
+        heading: "Tips for Reaching Chemists",
+        paragraphs: [],
+        bullets: [
+          "Plan by pincode so medical reps can cover stores in efficient beats.",
+          "Use WhatsApp for scheme and offer updates, as many chemists already order through it.",
+          "Call outside peak hours, typically late morning or mid-afternoon.",
+          "Follow the DPDP Act, 2023 and TRAI rules, and honour opt-out requests.",
+        ],
+      },
+    ],
+    useCases: [
+      "Pharma and OTC retail distribution",
+      "Medical rep beat and territory planning",
+      "Pharmacy software and e-pharmacy onboarding",
+      "WhatsApp scheme and offer campaigns",
+      "Wellness and nutrition product launches",
+    ],
+    faqs: [
+      { question: "What is a chemists and medical stores database?", answer: "It is a list of retail pharmacies, medical shops and drug distributors in India with store name, owner name, mobile number and address." },
+      { question: "Can I get a pincode-wise medical store list?", answer: "Yes. Chemist records can be filtered by city, locality and pincode for territory and beat planning." },
+      { question: "Does it include drug licence numbers?", answer: "Drug licence details are included where available. Confirm the fields you need when you request a sample." },
+      { question: "Are wholesale distributors included?", answer: "Yes. You can choose retail chemists, wholesalers/distributors or both." },
+      { question: "Who buys chemist and pharmacy data?", answer: "Pharma and OTC companies, nutraceutical brands, pharmacy software vendors, e-pharmacies and distributors." },
+      { question: "Can I see a sample before buying?", answer: "Yes. Download the sample format on this page or request real sample records." },
+    ],
+    related: [
+      "doctors-database",
+      "chemical-pharma-companies-database-india",
+      "dealers-distributors-database-india",
+      "mobile-number-database-india",
+      "whatsapp-number-database-india",
+      "b2b-b2c-companies-database",
+    ],
+  },
+  {
+    slug: "chief-managers-database-india",
+    keyword: "chief managers database India",
+    title: "Chief Managers Database India | Senior Manager Contacts",
+    metaDescription:
+      "Chief managers database in India - senior and chief managers in banking, PSUs, manufacturing and corporates, with designation, company and contact details.",
+    eyebrow: "Chief Managers Database",
+    h1: "Chief Managers Database in India",
+    answer:
+      "A chief managers database lists senior professionals holding chief manager, senior manager and AGM-level roles in Indian banks, PSUs and corporates, with name, designation, department, organisation, city and contact details. IndiaB2BData.com helps B2B sellers and recruiters reach these mid-to-senior decision-makers.",
+    intro: [
+      "In Indian banks, PSUs and large corporates, the chief manager is often the person who evaluates vendors, approves branch-level spending or runs a department. They sit between frontline managers and the CXO layer - close enough to operations to need solutions, senior enough to recommend or sign off on them.",
+      "Our chief managers database focuses on this layer, filterable by industry, department (finance, operations, HR, IT, credit, procurement) and location. For top leadership, see our CEO, CFO, CMO and IT heads database.",
+    ],
+    highlights: [
+      { icon: Briefcase, title: "Senior Management", description: "Chief manager, senior manager and AGM roles." },
+      { icon: Landmark, title: "Banks, PSUs & Corporates", description: "Public and private sector organisations." },
+      { icon: Filter, title: "Department Filters", description: "Finance, credit, HR, IT, operations, procurement." },
+      { icon: MapPinned, title: "Pan-India", description: "Head offices, zonal offices and branches." },
+    ],
+    dataFields: [
+      "Name and designation",
+      "Department / function",
+      "Organisation name and industry",
+      "Mobile number and official email, where available",
+      "Office city, state and pincode",
+      "Experience band, where available",
+    ],
+    sections: [
+      {
+        heading: "Who Uses a Chief Managers Database?",
+        paragraphs: [],
+        bullets: [
+          "Enterprise software and IT service providers",
+          "Training, leadership and certification providers",
+          "Executive recruiters and HR consultants",
+          "Financial products and wealth management firms",
+          "Event and conference organisers",
+        ],
+      },
+      {
+        heading: "What to Check Before Buying",
+        paragraphs: [],
+        bullets: [
+          "Designation accuracy: senior roles change often, so ask when records were last verified.",
+          "Sector mix: confirm the split between banks, PSUs and private companies.",
+          "Permitted use: use the data for relevant professional outreach only and honour opt-outs under the DPDP Act, 2023.",
+        ],
+      },
+    ],
+    useCases: [
+      "Enterprise and B2B solution selling",
+      "Leadership training and conference invitations",
+      "Senior-level hiring and headhunting",
+      "Financial and investment product marketing",
+      "Account-based marketing to banks and PSUs",
+    ],
+    faqs: [
+      { question: "What is a chief managers database?", answer: "It is a list of chief managers, senior managers and AGM-level professionals in Indian banks, PSUs and companies, with designation, organisation and contact details." },
+      { question: "Which organisations are covered?", answer: "Public and private sector banks, PSUs, insurance companies, manufacturing firms, IT companies and large corporates across India." },
+      { question: "How is this different from the CEO/CFO database?", answer: "This database targets the senior management layer below the CXO level. The CEO, CFO, CMO and IT heads database covers top leadership." },
+      { question: "Can I filter by department?", answer: "Yes, where recorded - for example finance, credit, HR, IT, operations or procurement." },
+      { question: "Can I target bank chief managers only?", answer: "Yes. You can order by industry such as banking and financial services." },
+      { question: "Is a free sample available?", answer: "Yes. Download the sample format on this page or request real sample records." },
+    ],
+    related: [
+      "ceo-cfo-cmo-it-heads-database-india",
+      "corporate-database-india",
+      "business-analysts-database-india",
+      "business-development-sales-professionals-database-india",
+      "chartered-accountants-database-india",
+      "email-database-india",
+    ],
+  },
+  {
+    slug: "civil-engineers-database-india",
+    keyword: "civil engineers database India",
+    title: "Civil Engineers Database India | Engineers & Contractors",
+    metaDescription:
+      "Civil engineers database in India - site engineers, project managers, structural consultants and contractors with contact details, city-wise. Free sample.",
+    eyebrow: "Civil Engineers Database",
+    h1: "Civil Engineers Database in India",
+    answer:
+      "A civil engineers database lists civil engineers, site and project engineers, structural consultants and civil contractors in India with name, role, company, experience, city and contact details. IndiaB2BData.com supplies verified civil engineering contacts for building material, equipment, software and recruitment outreach.",
+    intro: [
+      "India's construction sector - housing, roads, metros, industrial parks and smart-city projects - runs on civil engineers. They specify cement, steel, tiles, waterproofing and equipment on site, so they are a key influencer audience for building material brands and construction-tech companies.",
+      "Our civil engineers database covers site engineers, project managers, structural and design consultants, and civil contractors, filterable by city, experience and employer type.",
+    ],
+    highlights: [
+      { icon: Building2, title: "Engineers & Contractors", description: "Site, project, structural and contractors." },
+      { icon: Users, title: "Experience Bands", description: "Freshers to senior project managers." },
+      { icon: MapPinned, title: "City-Wise", description: "Metro and growing infrastructure cities." },
+      { icon: ShieldCheck, title: "Verified Contacts", description: "Checked and DND-scrubbed." },
+    ],
+    dataFields: [
+      "Engineer / contractor name",
+      "Role, such as site engineer, project manager or structural consultant",
+      "Company or firm name",
+      "Experience band",
+      "Mobile number and email ID",
+      "City, state and pincode",
+    ],
+    sections: [
+      {
+        heading: "Who Uses a Civil Engineers Database?",
+        paragraphs: [],
+        bullets: [
+          "Cement, steel, tiles, paint and waterproofing brands",
+          "Construction equipment and machinery dealers",
+          "Construction and structural design software companies",
+          "Infrastructure and real estate recruiters",
+          "Training institutes offering certification courses",
+        ],
+      },
+      {
+        heading: "Why Target Civil Engineers?",
+        paragraphs: [
+          "Civil engineers and contractors make or influence most material choices on a construction site. Reaching them directly - instead of only through dealers - builds brand preference at the point where specifications are decided.",
+        ],
+      },
+    ],
+    useCases: [
+      "Building material influencer marketing",
+      "Construction equipment sales",
+      "Engineering software and SaaS promotion",
+      "Infrastructure and construction recruitment",
+      "Technical seminar and site-meet invitations",
+    ],
+    faqs: [
+      { question: "What is a civil engineers database?", answer: "It is a list of civil engineers, project managers, structural consultants and civil contractors in India with role, company, city and contact details." },
+      { question: "Does it include civil contractors?", answer: "Yes. You can order engineers, contractors or both." },
+      { question: "Can I filter by experience?", answer: "Yes, where recorded - from freshers to senior project managers with 15+ years of experience." },
+      { question: "Can I get civil engineers in one city?", answer: "Yes. Records can be filtered by city, state and pincode." },
+      { question: "Who buys civil engineer data?", answer: "Building material brands, construction equipment dealers, engineering software companies and recruiters." },
+      { question: "Is a free sample available?", answer: "Yes. Download the sample format on this page or request real sample records." },
+    ],
+    related: [
+      "building-material-database-india",
+      "architect-interior-designers-database-india",
+      "manufacturer-database-india",
+      "dealers-distributors-database-india",
+      "job-seekers-database",
+      "industry-wise-company-database-india",
+    ],
+  },
+  {
+    slug: "club-mahindra-members-database",
+    keyword: "Club Mahindra members database",
+    title: "Club Mahindra Members Database | Holiday Membership Audience",
+    metaDescription:
+      "Holiday and vacation membership audience data in India, including Club Mahindra members - affluent, travel-oriented families by city. Independent provider, not affiliated with Mahindra.",
+    eyebrow: "Holiday Membership Audience Data",
+    h1: "Club Mahindra Members Database - Holiday Membership Audience",
+    answer:
+      "A Club Mahindra members database refers to a list of holiday and vacation-ownership members in India - typically affluent, travel-oriented families. IndiaB2BData.com offers holiday-membership audience data from publicly available and permission-based sources for premium brand marketing. We are an independent provider and are not affiliated with Club Mahindra or Mahindra Holidays & Resorts.",
+    intro: [
+      "Holiday membership owners are among the most attractive consumer segments in India: they have high disposable income, travel several times a year, and spend on premium lifestyle, financial and real estate products.",
+      "Our holiday membership audience data helps travel, luxury, real estate, insurance and wealth brands reach this segment by city. Records are compiled from lawful sources; we do not hold or sell any company's internal customer records.",
+    ],
+    highlights: [
+      { icon: Sparkles, title: "Affluent Audience", description: "High-income, travel-oriented families." },
+      { icon: MapPinned, title: "City-Wise", description: "Metros and tier-2 cities across India." },
+      { icon: Target, title: "Premium Targeting", description: "Ideal for luxury and lifestyle offers." },
+      { icon: ShieldCheck, title: "Compliant Sourcing", description: "DND-scrubbed, permission-conscious data." },
+    ],
+    dataFields: [
+      "Name",
+      "Mobile number (DND-scrubbed)",
+      "Email ID, where available",
+      "Membership type / tenure band, where available",
+      "City, state and pincode",
+    ],
+    sections: [
+      {
+        heading: "Who Markets to Holiday Membership Owners?",
+        paragraphs: [],
+        bullets: [
+          "Travel, tour and luxury hospitality brands",
+          "Premium real estate and second-home developers",
+          "Insurance, credit card and wealth management firms",
+          "Premium car and lifestyle brands",
+        ],
+      },
+      {
+        heading: "Important Note on Sourcing and Use",
+        paragraphs: [
+          "IndiaB2BData.com is not affiliated with, endorsed by or connected to Club Mahindra or Mahindra Holidays & Resorts India Ltd. Brand names are used only to describe the audience segment. Use this data only for relevant offers, never impersonate any brand, and honour every opt-out under the Digital Personal Data Protection Act, 2023 and TRAI rules.",
+        ],
+      },
+    ],
+    useCases: [
+      "Luxury travel and hospitality promotions",
+      "Premium real estate and holiday-home sales",
+      "Insurance and wealth management outreach",
+      "Premium credit card and lifestyle campaigns",
+    ],
+    faqs: [
+      { question: "What is a Club Mahindra members database?", answer: "It refers to a list of holiday and vacation-ownership members in India, an affluent and travel-oriented consumer segment used for premium brand marketing." },
+      { question: "Are you affiliated with Club Mahindra?", answer: "No. IndiaB2BData.com is an independent data provider and is not affiliated with Club Mahindra or Mahindra Holidays & Resorts India Ltd." },
+      { question: "Where does this data come from?", answer: "From publicly available and permission-based sources. We do not hold or sell any company's internal customer records." },
+      { question: "Can I target a specific city?", answer: "Yes. Holiday membership audience data can be filtered by city and state." },
+      { question: "Who uses holiday membership audience data?", answer: "Travel, luxury, premium real estate, insurance and wealth management brands." },
+      { question: "Can I see a sample?", answer: "Yes. Download the sample format on this page or request sample records." },
+    ],
+    related: [
+      "car-owners-database",
+      "cab-users-database-india",
+      "b2b-b2c-companies-database",
+      "mobile-number-database-india",
+      "whatsapp-number-database-india",
+      "ceo-cfo-cmo-it-heads-database-india",
+    ],
+  },
 ];
 
 /** Pages still served - retired slugs 301 to their merge target (see redirects.ts). */

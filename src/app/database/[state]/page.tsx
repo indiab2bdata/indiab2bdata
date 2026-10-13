@@ -17,6 +17,7 @@ import { ContactCta } from "@/components/sections/contact-cta";
 import { InlineCta } from "@/components/inline-cta";
 import { Reveal } from "@/components/reveal";
 import { MapPin } from "lucide-react";
+import { SampleDownload } from "@/components/sample-download";
 
 export const dynamicParams = false;
 
@@ -200,6 +201,8 @@ export default async function DatabaseStatePage({ params }: { params: Params }) 
         text={`Need ${page.name} data filtered to a specific city or industry?`}
         buttonLabel="Talk to Our Team"
       />
+
+      <SampleDownload slug={`${page.slug}-b2b-database`} label={`${page.name} B2B Database`} state={page.name} />
 
       <Faq
         items={page.faqs}

@@ -1,4 +1,4 @@
-/** The 37 live data products, grouped for footer navigation. Labels are descriptive, not exact-match keywords. */
+/** The 43 live data products, grouped for footer navigation. Labels are descriptive, not exact-match keywords. */
 export const PRODUCT_GROUPS: { heading: string; links: { href: string; label: string }[] }[] = [
   {
     heading: "General",
@@ -33,6 +33,8 @@ export const PRODUCT_GROUPS: { heading: string; links: { href: string; label: st
       { href: "/building-material-database-india", label: "Building Material" },
       { href: "/beauty-parlours-salons-spa-database-india", label: "Salons & Spas" },
       { href: "/mobile-accessories-shops-database-india", label: "Mobile & Accessories Shops" },
+      { href: "/chemical-pharma-companies-database-india", label: "Chemical & Pharma Companies" },
+      { href: "/chemists-medical-stores-database-india", label: "Chemists & Medical Stores" },
     ],
   },
   {
@@ -47,6 +49,9 @@ export const PRODUCT_GROUPS: { heading: string; links: { href: string; label: st
       { href: "/business-development-sales-professionals-database-india", label: "Sales & BD Professionals" },
       { href: "/channel-sales-professionals-database-india", label: "Channel Sales" },
       { href: "/bpo-call-centre-employees-database-india", label: "BPO Employees" },
+      { href: "/chartered-accountants-database-india", label: "Chartered Accountants" },
+      { href: "/chief-managers-database-india", label: "Chief Managers" },
+      { href: "/civil-engineers-database-india", label: "Civil Engineers" },
     ],
   },
   {
@@ -65,6 +70,7 @@ export const PRODUCT_GROUPS: { heading: string; links: { href: string; label: st
       { href: "/car-owners-database", label: "Car Owners" },
       { href: "/job-seekers-database", label: "Job Seekers" },
       { href: "/cab-users-database-india", label: "Cab Users" },
+      { href: "/club-mahindra-members-database", label: "Holiday Club Members" },
     ],
   },
   {

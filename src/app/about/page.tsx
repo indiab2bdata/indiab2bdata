@@ -14,6 +14,7 @@ import { pageMetadata, breadcrumbJsonLd, webPageJsonLd, faqJsonLd } from "@/lib/
 import { ABOUT_FAQS } from "@/lib/faq-data";
 import { Faq } from "@/components/sections/faq";
 import { CoverageLinks } from "@/components/coverage-links";
+import { SampleDownload } from "@/components/sample-download";
 
 const TITLE = "About Us";
 const DESCRIPTION =
@@ -169,6 +170,8 @@ export default function AboutPage() {
           ))}
         </div>
       </section>
+
+      <SampleDownload slug="b2b-database-india" label="B2B Business Database" />
 
       <CoverageLinks topic="B2B Business Data" />
 

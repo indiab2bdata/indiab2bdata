@@ -11,6 +11,7 @@ import { getKeywordPagesBySlug } from "@/lib/keyword-pages";
 import { siteConfig } from "@/lib/site-config";
 import { DEFAULT_FAQS } from "@/lib/faq-data";
 import { pageMetadata, breadcrumbJsonLd, webPageJsonLd, faqJsonLd } from "@/lib/seo";
+import { SampleDownload } from "@/components/sample-download";
 
 const TITLE = "Contact Us";
 const DESCRIPTION =
@@ -162,6 +163,8 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+
+      <SampleDownload slug="b2b-database-india" label="B2B Business Database" />
 
       <Faq
         id="contact-faq"

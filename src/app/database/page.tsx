@@ -14,6 +14,7 @@ import { siteConfig } from "@/lib/site-config";
 import { pageMetadata, breadcrumbJsonLd, webPageJsonLd, itemListJsonLd, faqJsonLd } from "@/lib/seo";
 import { DATABASE_HUB_FAQS } from "@/lib/faq-data";
 import { Faq } from "@/components/sections/faq";
+import { SampleDownload } from "@/components/sample-download";
 
 const TITLE = "Business Database by State | India-Wide Coverage";
 const DESCRIPTION =
@@ -112,6 +113,8 @@ export default function DatabaseHubPage() {
           ))}
         </div>
       </section>
+
+      <SampleDownload slug="state-wise-business-database" label="State-Wise Business Database" />
 
       <PopularCities heading="Popular City Databases" />
 

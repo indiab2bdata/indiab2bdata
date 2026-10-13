@@ -13,6 +13,7 @@ import { liveKeywordPages } from "@/lib/keyword-pages";
 import { siteConfig } from "@/lib/site-config";
 import { DEFAULT_FAQS } from "@/lib/faq-data";
 import { pageMetadata, webPageJsonLd, faqJsonLd, itemListJsonLd } from "@/lib/seo";
+import { SampleDownload } from "@/components/sample-download";
 
 export const metadata: Metadata = pageMetadata({
   title: siteConfig.defaultTitle,
@@ -43,6 +44,7 @@ export default function Home() {
       <TrustStrip />
       <Products />
       <InlineCta id="home-products-cta" text="Not sure which data product fits? Tell us what you need." buttonLabel="Talk to Our Team" />
+      <SampleDownload slug="b2b-database-india" label="B2B Business Database" />
       <WhyUs />
       <Process />
       <InlineCta id="home-process-cta" text="Ready to start? Get your free sample within a few hours." />

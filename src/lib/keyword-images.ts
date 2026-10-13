@@ -100,6 +100,12 @@ const SLUG_TO_GROUP: Record<string, ImageGroup> = {
   "mobile-accessories-shops-database-india": "warehouse",
   "ceo-cfo-cmo-it-heads-database-india": "office-team",
   "channel-sales-professionals-database-india": "handshake",
+  "chartered-accountants-database-india": "documents",
+  "chemical-pharma-companies-database-india": "factory",
+  "chemists-medical-stores-database-india": "support",
+  "chief-managers-database-india": "office-team",
+  "civil-engineers-database-india": "city-skyline",
+  "club-mahindra-members-database": "city-skyline",
 };
 
 /** Topic-specific photo per page (CC0, from StockSnap/Rawpixel via Openverse), in /images/topics/<slug>.jpg. */

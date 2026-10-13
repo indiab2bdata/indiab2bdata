@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { SampleDownload } from "@/components/sample-download";
 import CityPage from "@/components/city-pages/CityPage.js";
 import { cities } from "@/components/city-pages/city-data.mjs";
 import { metadataFor } from "@/components/city-pages/render-city.mjs";
@@ -27,5 +28,10 @@ export default async function CityDatabasePage({ params }: { params: Params }) {
 
   if (!page) notFound();
 
-  return <CityPage cityKey={page.slug} />;
+  return (
+    <>
+      <CityPage cityKey={page.slug} />
+      <SampleDownload slug={`${page.slug}-company-database`} label={`${page.city} Company Database`} city={page.city} state={page.state} />
+    </>
+  );
 }

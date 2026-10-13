@@ -17,6 +17,7 @@ import { InlineCta } from "@/components/inline-cta";
 import { Reveal } from "@/components/reveal";
 import { CoverageLinks } from "@/components/coverage-links";
 import { getProductGroup } from "@/lib/product-groups";
+import { SampleDownload } from "@/components/sample-download";
 
 export const dynamicParams = false;
 
@@ -94,6 +95,8 @@ export default async function KeywordPage({ params }: { params: Params }) {
       </section>
 
       <InlineCta id={`${page.slug}-intro-cta`} text={`See real sample records for ${page.keyword} - free, no obligation.`} />
+
+      <SampleDownload slug={page.slug} label={page.keyword} />
 
       <section className="py-12 md:py-16 max-w-7xl mx-auto px-5 md:px-8">
         <FeatureGrid items={page.highlights} />

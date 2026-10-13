@@ -10,6 +10,7 @@ import { siteConfig } from "@/lib/site-config";
 import { pageMetadata, breadcrumbJsonLd, webPageJsonLd, itemListJsonLd, faqJsonLd } from "@/lib/seo";
 import { GUIDES_FAQS } from "@/lib/faq-data";
 import { Faq } from "@/components/sections/faq";
+import { SampleDownload } from "@/components/sample-download";
 
 const TITLE = "B2B Data Insights & Guides";
 const DESCRIPTION =
@@ -73,6 +74,8 @@ export default function BlogHubPage() {
       />
 
       <RelatedLinks pages={guides} eyebrow="Popular Guides" heading="Data & Compliance Guides" />
+
+      <SampleDownload slug="b2b-leads-database-india" label="B2B Leads Database" />
 
       <InlineCta id="blog-guides-cta" text="Want data matched to a guide above? Tell us your exact requirement." />
 
