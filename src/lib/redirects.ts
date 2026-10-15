@@ -24,6 +24,8 @@ export const retiredKeywordRedirects: Record<string, string> = {
 /** Keyword pages moved to a new slug (content unchanged). */
 const renamedKeywordRedirects: Record<string, string> = {
   "/doctors-database-india": "/doctors-database",
+  "/dealers-database-india": "/dealers-distributors-database-india",
+  "/dealers-database": "/dealers-distributors-database-india",
 };
 
 /** URLs from the old static site that Google still has indexed. */

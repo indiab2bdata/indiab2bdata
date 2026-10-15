@@ -26,7 +26,16 @@ export type SampleProfile =
   | "ca"
   | "chemist"
   | "civilEngineer"
-  | "holidayMember";
+  | "holidayMember"
+  | "property"
+  | "director"
+  | "proprietor"
+  | "itDealer"
+  | "itServices"
+  | "consultant"
+  | "contractor"
+  | "cardHolder"
+  | "supportExec";
 
 const NAMES = ["Rahul Sharma", "Priya Mehta", "Amit Verma", "Sneha Iyer", "Vikram Singh", "Neha Gupta", "Arjun Reddy", "Kavita Joshi", "Rohan Das", "Pooja Nair", "Sanjay Patel", "Anjali Rao"];
 const COMPANIES = ["Sample Tech Pvt Ltd", "Demo Industries", "Example Traders", "Test Solutions LLP", "Dummy Enterprises", "Placeholder Exports", "Mock Infra Pvt Ltd", "Specimen Foods", "Trial Textiles", "Prototype Pharma"];
@@ -74,12 +83,30 @@ const PROFILES: Record<SampleProfile, Column[]> = {
   chemist: [["Medical Store Name", (c) => `Sample Medicals ${c.i + 1}`], ["Owner / Pharmacist", (c) => c.name], ["Store Type", (c) => pick(["Retail", "Wholesale", "Chain"], c.i)], ["Drug Licence No.", (c) => `XX-XXX-${2000 + c.i}`], phone, ["Address", (c) => `Shop XX, Sample Road, ${c.city}`], ...loc],
   civilEngineer: [["Engineer Name", (c) => c.name], ["Role", (c) => pick(["Site Engineer", "Project Manager", "Structural Consultant", "Civil Contractor", "QS Engineer"], c.i)], company, ["Experience (Yrs)", (c) => String(1 + (c.i % 18))], phone, mail, ...loc],
   holidayMember: [["Member Name", (c) => c.name], phone, mail, ["Membership Tenure", (c) => pick(["1-3 Yrs", "3-5 Yrs", "5-10 Yrs", "10+ Yrs"], c.i)], ["Family Size", (c) => String(2 + (c.i % 4))], ...loc],
+  property: [["Name", (c) => c.name], ["Profile", (c) => pick(["Owner", "Buyer", "Builder", "Broker"], c.i)], ["Segment", (c) => pick(["Residential", "Commercial"], c.i)], ["Property Type", (c) => pick(["2BHK Flat", "Villa", "Office", "Shop", "Plot", "Warehouse"], c.i)], ["Locality", (c) => `Sample Nagar ${c.i + 1}`], phone, mail, ...loc],
+  director: [["Name", (c) => c.name], ["Designation", (c) => pick(["Managing Director", "Chairman", "Whole-Time Director", "Company Secretary"], c.i)], company, ["CIN", (c) => `U7XXXX${c.state.slice(0, 2).toUpperCase()}20XXPTCXXX${100 + c.i}`], ["Company Type", (c) => pick(["Private", "Public", "Listed"], c.i)], industry, phone, mail, ...loc],
+  proprietor: [["Proprietor Name", (c) => c.name], ["Business Name", (c) => `Sample Traders ${c.i + 1}`], ["Constitution", (c) => pick(["Proprietorship", "Partnership"], c.i)], ["GSTIN", (c) => `27XXXXX${1000 + c.i}X1ZX`], industry, phone, ["Address", (c) => `Shop XX, Sample Market, ${c.city}`], ...loc],
+  itDealer: [["Dealer Name", (c) => `Sample Computers ${c.i + 1}`], ["Owner Name", (c) => c.name], ["Dealer Type", (c) => pick(["Retail", "Wholesale", "System Integrator", "Service Centre"], c.i)], ["Brands Handled", (c) => pick(["HP, Dell", "Lenovo, Asus", "Acer, HP", "Dell, Lenovo"], c.i)], ["GSTIN", (c) => `07XXXXX${1000 + c.i}X1ZX`], phone, mail, ...loc],
+  itServices: [company, ["Website", (c) => `www.example${c.i + 1}.com`], ["Decision Maker", (c) => c.name], ["Designation", (c) => pick(["Founder", "CTO", "IT Head", "Director", "Procurement Head"], c.i)], ["Service Category", (c) => pick(["Software Development", "Cloud Services", "ISP / Broadband", "Networking", "Telecom VAS", "Managed IT"], c.i)], ["Employees", (c) => pick(["1-10", "11-50", "51-200", "201-500"], c.i)], phone, mail, ...loc],
+  consultant: [["Consultant / Firm", (c) => `Sample Consultants ${c.i + 1}`], person, ["Specialisation", (c) => pick(["Management", "HR & Recruitment", "Tax & GST", "Engineering", "IT / ERP", "Marketing", "Immigration"], c.i)], phone, mail, ["Website", (c) => `www.example${c.i + 1}.in`], ...loc],
+  contractor: [["Contractor / Firm", (c) => `Sample Constructions ${c.i + 1}`], ["Owner Name", (c) => c.name], ["Contractor Type", (c) => pick(["Civil", "Electrical", "Plumbing", "HVAC", "Interior", "Road / PWD"], c.i)], ["Registration", (c) => pick(["PWD Class A", "CPWD", "Municipal", "Private"], c.i)], ["GSTIN", (c) => `27XXXXX${1000 + c.i}X1ZX`], phone, mail, ...loc],
+  cardHolder: [["Name", (c) => c.name], phone, mail, ["Card Tier Band", (c) => pick(["Entry", "Premium", "Super-Premium"], c.i)], ["Occupation", (c) => pick(["Salaried", "Self-Employed", "Business Owner"], c.i)], ...loc],
+  supportExec: [person, ["Designation", (c) => pick(["Support Executive", "Senior Executive", "Team Leader", "CX Manager", "Tech Support"], c.i)], ["Industry", (c) => pick(["E-commerce", "Telecom", "BFSI", "SaaS", "BPO"], c.i)], ["Process", (c) => pick(["Voice", "Chat", "Email", "Technical"], c.i)], ["Experience (Yrs)", (c) => String(c.i % 9)], ["Languages", (c) => pick(["English, Hindi", "English, Tamil", "English, Kannada"], c.i)], phone, mail, ...loc],
   domain: [["Domain Name", (c) => `example${c.i + 1}.in`], ["Registrant Name", (c) => c.name], ["Registrant Org", (c) => c.company], ["Created Date", (c) => `2026-0${1 + (c.i % 9)}-0${1 + (c.i % 9)}`], ["Registrar", () => "Sample Registrar"], phone, mail, ...loc],
 };
 
 /** Map a page slug to the column format that product actually ships with. */
 export function sampleProfileFor(slug: string): SampleProfile {
   const rules: [RegExp, SampleProfile][] = [
+    [/contractors/, "contractor"],
+    [/credit-card/, "cardHolder"],
+    [/customer-support/, "supportExec"],
+    [/properties-database/, "property"],
+    [/md-chairman/, "director"],
+    [/proprietors/, "proprietor"],
+    [/laptop-dealers/, "itDealer"],
+    [/it-telecom-services/, "itServices"],
+    [/consultants/, "consultant"],
     [/chartered-accountants/, "ca"],
     [/chemists-medical/, "chemist"],
     [/chemical-pharma/, "trade"],

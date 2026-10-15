@@ -1,4 +1,4 @@
-/** The 43 live data products, grouped for footer navigation. Labels are descriptive, not exact-match keywords. */
+/** The 52 live data products, grouped for footer navigation. Labels are descriptive, not exact-match keywords. */
 export const PRODUCT_GROUPS: { heading: string; links: { href: string; label: string }[] }[] = [
   {
     heading: "General",
@@ -13,6 +13,9 @@ export const PRODUCT_GROUPS: { heading: string; links: { href: string; label: st
     links: [
       { href: "/corporate-database-india", label: "Corporate Data" },
       { href: "/industry-wise-company-database-india", label: "Industry-Wise Lists" },
+      { href: "/company-proprietors-database-india", label: "Company Proprietors" },
+      { href: "/computer-it-telecom-services-database-india", label: "IT & Telecom Services" },
+      { href: "/consultants-consulting-services-database-india", label: "Consulting Firms" },
     ],
   },
   {
@@ -35,12 +38,15 @@ export const PRODUCT_GROUPS: { heading: string; links: { href: string; label: st
       { href: "/mobile-accessories-shops-database-india", label: "Mobile & Accessories Shops" },
       { href: "/chemical-pharma-companies-database-india", label: "Chemical & Pharma Companies" },
       { href: "/chemists-medical-stores-database-india", label: "Chemists & Medical Stores" },
+      { href: "/computer-laptop-dealers-database-india", label: "Computer & Laptop Dealers" },
+      { href: "/contractors-database-india", label: "Contractors" },
     ],
   },
   {
     heading: "Professionals",
     links: [
       { href: "/ceo-cfo-cmo-it-heads-database-india", label: "CEO / CFO / CMO / IT Heads" },
+      { href: "/company-md-chairman-secretary-database-india", label: "MDs, Chairmen & Company Secretaries" },
       { href: "/doctors-database", label: "Doctors" },
       { href: "/advocates-lawyers-database-india", label: "Advocates & Lawyers" },
       { href: "/agents-database-india", label: "Agents" },
@@ -52,6 +58,7 @@ export const PRODUCT_GROUPS: { heading: string; links: { href: string; label: st
       { href: "/chartered-accountants-database-india", label: "Chartered Accountants" },
       { href: "/chief-managers-database-india", label: "Chief Managers" },
       { href: "/civil-engineers-database-india", label: "Civil Engineers" },
+      { href: "/customer-support-executives-database-india", label: "Customer Support Executives" },
     ],
   },
   {
@@ -71,6 +78,8 @@ export const PRODUCT_GROUPS: { heading: string; links: { href: string; label: st
       { href: "/job-seekers-database", label: "Job Seekers" },
       { href: "/cab-users-database-india", label: "Cab Users" },
       { href: "/club-mahindra-members-database", label: "Holiday Club Members" },
+      { href: "/commercial-residential-properties-database-india", label: "Property Owners" },
+      { href: "/credit-card-holders-database-india", label: "Credit Card Holders" },
     ],
   },
   {
