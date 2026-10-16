@@ -7,6 +7,7 @@ import { Reveal } from "@/components/reveal";
 import { WhatsAppIcon } from "@/components/icons/whatsapp-icon";
 import { useContactForm } from "@/hooks/use-contact-form";
 import { siteConfig } from "@/lib/site-config";
+import { SubmitButton } from "@/components/submit-button";
 
 const inputClass =
   "w-full rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm text-slate-800 placeholder:text-slate-400 shadow-sm transition-all focus:border-teal focus:outline-none focus:ring-2 focus:ring-teal/15";
@@ -158,15 +159,9 @@ export function ContactCta({
                     />
                   </div>
 
-                  <button
-                    type="submit"
-                    disabled={status.state === "sending"}
-                    className="w-full rounded-lg bg-teal px-6 py-3 text-sm font-semibold text-white shadow-md shadow-teal/20 transition-all duration-200 hover:bg-teal-dark hover:shadow-lg hover:shadow-teal/25 active:scale-[0.99] disabled:cursor-not-allowed disabled:opacity-60"
-                  >
-                    {status.state === "sending"
-                      ? "Submitting..."
-                      : "Request Free Sample"}
-                  </button>
+                  <SubmitButton status={status} className="px-6 py-3 text-sm shadow-md shadow-teal/20">
+                    Request Free Sample
+                  </SubmitButton>
                 </form>
 
                 {status.state !== "idle" && status.message && (

@@ -3,11 +3,9 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { A11y, Keyboard, Navigation, Pagination } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/pagination";
 import { PRODUCT_GROUPS } from "@/lib/product-groups";
 import { siteConfig } from "@/lib/site-config";
 import { getKeywordImage } from "@/lib/keyword-images";
@@ -61,41 +59,65 @@ const GROUP_META: Record<string, { image: string; alt: string; summary: string }
 const GRID_LIMIT = 3;
 const tabId = (heading: string) => `industry-${heading.toLowerCase().replace(/[^a-z]+/g, "-")}`;
 
-function ProductCard({ href, label, description, index }: { href: string; label: string; description?: string; index: number }) {
-  const visual = getKeywordImage(href.slice(1), `${label} database India`);
+/** Icons drawn once per page and referenced by every card with <use>, instead of repeating the paths 60+ times. */
+function IconSprite() {
   return (
-    <div className="group relative isolate flex h-full flex-col overflow-hidden rounded-2xl border border-[#DCEAF3] bg-white p-6 transition-all duration-300 hover:border-teal/40 hover:shadow-[0_18px_40px_-20px_rgba(11,43,78,0.35)]">
-      <Image
-        src={visual.src}
-        alt=""
-        aria-hidden="true"
-        fill
-        sizes="(min-width: 1280px) 360px, (min-width: 640px) 50vw, 90vw"
-        className="-z-20 object-cover opacity-[0.14] grayscale-[30%] transition-all duration-500 group-hover:scale-105 group-hover:opacity-25"
-      />
-      <div aria-hidden="true" className="absolute inset-0 -z-10 bg-gradient-to-t from-white via-white/85 to-white/40" />
-      <span className="font-display text-xs font-bold tracking-[0.16em] text-teal/70">{String(index + 1).padStart(2, "0")}</span>
-      <Link href={href} className="mt-3 block after:absolute after:inset-0 after:rounded-2xl">
-        <h5 className="font-display text-lg font-bold leading-snug text-navy transition-colors group-hover:text-teal">
-          {label}
-        </h5>
-      </Link>
-      {description && <p className="mt-2 mb-5 line-clamp-2 text-sm leading-relaxed text-muted">{description}</p>}
+    <svg width="0" height="0" className="absolute" aria-hidden="true" focusable="false">
+      <defs>
+        <symbol id="ind-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M5 12h14M12 5l7 7-7 7" />
+        </symbol>
+        <symbol id="ind-wa" viewBox="0 0 24 24">
+          <WhatsAppIcon />
+        </symbol>
+      </defs>
+    </svg>
+  );
+}
 
-      <div className="mt-auto flex items-center justify-between gap-3 border-t border-[#EEF4F8] pt-4">
-        <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-navy transition-colors group-hover:text-teal">
+const Icon = ({ id }: { id: string }) => (
+  <svg className="ind-icon" aria-hidden="true">
+    <use href={`#${id}`} />
+  </svg>
+);
+
+function ProductCard({
+  href,
+  label,
+  description,
+  index,
+  showImage,
+}: {
+  href: string;
+  label: string;
+  description?: string;
+  index: number;
+  /** Only the open tab paints its background photos; hidden tabs stay text-only (links still crawlable). */
+  showImage: boolean;
+}) {
+  const visual = showImage ? getKeywordImage(href.slice(1), `${label} database India`) : null;
+  return (
+    <div className="ind-card">
+      {visual && <Image src={visual.src} alt={visual.alt} fill sizes="(min-width: 1280px) 360px, (min-width: 640px) 50vw, 90vw" className="ind-card-bg" />}
+      <div aria-hidden="true" className="ind-card-fade" />
+      <span className="ind-card-num">{String(index + 1).padStart(2, "0")}</span>
+      <Link href={href} className="ind-card-link">
+        <h5 className="ind-card-title">{label}</h5>
+      </Link>
+      {description && <p className="ind-card-desc">{description}</p>}
+      <div className="ind-card-foot">
+        <span className="ind-card-cta">
           View database
-          <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-0.5" />
+          <Icon id="ind-arrow" />
         </span>
         <a
-          href={siteConfig.whatsappHref(`Hi, I'm interested in the ${label} database. Please share a free sample and pricing.`)}
+          href={siteConfig.whatsappHref(`Hi, I'm interested in the ${label} database.`)}
           target="_blank"
           rel="noopener noreferrer"
           aria-label={`Enquire about ${label} database on WhatsApp`}
-          title="Enquire on WhatsApp"
-          className="relative z-10 inline-flex h-9 w-9 items-center justify-center rounded-full bg-[#25D366]/10 text-[#1DA851] transition-colors hover:bg-[#25D366] hover:text-white"
+          className="ind-card-wa"
         >
-          <WhatsAppIcon className="h-[18px] w-[18px]" />
+          <Icon id="ind-wa" />
         </a>
       </div>
     </div>
@@ -108,6 +130,7 @@ export function IndustryDirectory({ descriptions = {} }: { descriptions?: Record
 
   return (
     <div className="mt-24">
+      <IconSprite />
       <div className="mb-8 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
         <div>
           <span className="text-xs font-semibold uppercase tracking-[0.16em] text-teal">Browse by Industry</span>
@@ -154,8 +177,25 @@ export function IndustryDirectory({ descriptions = {} }: { descriptions?: Record
         const meta = GROUP_META[group.heading];
         const id = tabId(group.heading);
         const useSlider = group.links.length > GRID_LIMIT;
+
+        // Closed tabs keep only a flat link list (2 nodes per link instead of ~14 per card), so every product
+        // stays crawlable without bloating the DOM. Full cards render when the tab is opened.
+        if (group.heading !== active) {
+          return (
+            <div key={group.heading} id={id} role="tabpanel" aria-labelledby={`${id}-tab`} hidden>
+              <ul>
+                {group.links.map((link) => (
+                  <li key={link.href}>
+                    <Link href={link.href}>{link.label}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          );
+        }
+
         const cards = group.links.map((link, i) => (
-          <ProductCard key={link.href} index={i} href={link.href} label={link.label} description={descriptions[link.href]} />
+          <ProductCard key={link.href} index={i} href={link.href} label={link.label} description={descriptions[link.href]} showImage />
         ));
 
         return (

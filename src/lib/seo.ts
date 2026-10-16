@@ -161,7 +161,6 @@ export const organizationJsonLd = {
   url: siteConfig.url,
   logo: `${siteConfig.url}/images/favicon.png`,
   image: [`${siteConfig.url}/images/favicon.png`, DEFAULT_OG_IMAGE.url],
-  email: siteConfig.email,
   telephone: siteConfig.phoneDisplay,
   address: {
     "@type": "PostalAddress",
@@ -178,7 +177,6 @@ export const organizationJsonLd = {
     "@type": "ContactPoint",
     telephone: siteConfig.phoneDisplay,
     contactType: "sales",
-    email: siteConfig.email,
     areaServed: "IN",
     availableLanguage: ["en", "hi"],
   },

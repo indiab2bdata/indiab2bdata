@@ -12,6 +12,7 @@ import { siteConfig } from "@/lib/site-config";
 import { DEFAULT_FAQS } from "@/lib/faq-data";
 import { pageMetadata, breadcrumbJsonLd, webPageJsonLd, faqJsonLd } from "@/lib/seo";
 import { SampleDownload } from "@/components/sample-download";
+import { ProtectedEmail } from "@/components/protected-email";
 
 const TITLE = "Contact Us";
 const DESCRIPTION =
@@ -63,8 +64,8 @@ const CONTACT_METHODS = [
   {
     icon: Mail,
     title: "Email",
-    detail: siteConfig.email,
-    href: `mailto:${siteConfig.email}`,
+    detail: "Send your requirement by email - we reply within working hours.",
+    href: "",
     cta: "Send email",
   },
   {
@@ -91,23 +92,39 @@ export default function ContactPage() {
 
       <section className="py-16 md:py-20 max-w-7xl mx-auto px-5 md:px-8">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-          {CONTACT_METHODS.map((method, i) => (
-            <Reveal key={method.title} delay={i * 0.08}>
-              <a
-                href={method.href}
-                target={method.external ? "_blank" : undefined}
-                rel={method.external ? "noopener noreferrer" : undefined}
-                className="group h-full flex flex-col bg-white rounded-2xl p-7 border border-[#DCEAF3] shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-teal/40"
-              >
+          {CONTACT_METHODS.map((method, i) => {
+            const cardClass =
+              "group h-full flex flex-col bg-white rounded-2xl p-7 border border-[#DCEAF3] shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-teal/40";
+            const body = (
+              <>
                 <div className="w-12 h-12 rounded-xl bg-teal/10 text-teal flex items-center justify-center mb-5 transition-colors group-hover:bg-teal group-hover:text-white">
                   <method.icon className="w-6 h-6" strokeWidth={1.6} />
                 </div>
                 <h3 className="font-display font-bold text-lg text-navy">{method.title}</h3>
                 <p className="mt-2 text-sm text-muted leading-relaxed flex-1">{method.detail}</p>
                 <span className="mt-4 text-sm font-semibold text-teal">{method.cta} →</span>
-              </a>
-            </Reveal>
-          ))}
+              </>
+            );
+            return (
+              <Reveal key={method.title} delay={i * 0.08}>
+                {method.title === "Email" ? (
+                  // mailto is built in the browser so the address never sits in the static HTML
+                  <ProtectedEmail showAddress={false} className={cardClass}>
+                    {body}
+                  </ProtectedEmail>
+                ) : (
+                  <a
+                    href={method.href}
+                    target={method.external ? "_blank" : undefined}
+                    rel={method.external ? "noopener noreferrer" : undefined}
+                    className={cardClass}
+                  >
+                    {body}
+                  </a>
+                )}
+              </Reveal>
+            );
+          })}
         </div>
       </section>
 
@@ -132,7 +149,7 @@ export default function ContactPage() {
                 <Mail className="mt-0.5 h-4 w-4 text-teal shrink-0" strokeWidth={1.8} />
                 <span>
                   <strong className="block text-navy">Email</strong>
-                  {siteConfig.email}
+                  <ProtectedEmail className="hover:text-teal transition-colors" />
                 </span>
               </li>
               <li className="flex items-start gap-3">

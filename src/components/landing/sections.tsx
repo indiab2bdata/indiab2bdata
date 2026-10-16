@@ -4,6 +4,7 @@ import { Breadcrumbs, type BreadcrumbItem } from "@/components/breadcrumbs";
 import { Reveal } from "@/components/reveal";
 import { LeadForm } from "@/components/landing/lead-form";
 import { siteConfig } from "@/lib/site-config";
+import { ProtectedEmail } from "@/components/protected-email";
 
 function Eyebrow({ children, light = false }: { children: React.ReactNode; light?: boolean }) {
   return (
@@ -201,7 +202,7 @@ export function HowItWorks({ title = "How We Build & Deliver Your Data" }: { tit
 export function ContactSplit({ title, text, source, requirement }: { title: string; text: string; source: string; requirement: string }) {
   const items = [
     { icon: Phone, label: "Call / WhatsApp", value: siteConfig.phoneDisplay, href: siteConfig.phoneHref },
-    { icon: Mail, label: "Email", value: siteConfig.email, href: `mailto:${siteConfig.email}` },
+    { icon: Mail, label: "Email", value: "email", href: "" },
     { icon: MapPin, label: "Address", value: siteConfig.address.display },
   ];
   return (
@@ -219,7 +220,9 @@ export function ContactSplit({ title, text, source, requirement }: { title: stri
                 </span>
                 <span>
                   <span className="block text-sm font-semibold text-navy">{it.label}</span>
-                  {it.href ? (
+                  {it.label === "Email" ? (
+                    <ProtectedEmail className="text-sm text-muted transition-colors hover:text-teal" />
+                  ) : it.href ? (
                     <a href={it.href} className="text-sm text-muted transition-colors hover:text-teal">
                       {it.value}
                     </a>

@@ -10,7 +10,6 @@ export const siteConfig = {
   phoneHref: `tel:+${PHONE_DIGITS}`,
   whatsappHref: (message: string) =>
     `https://wa.me/${PHONE_DIGITS}?text=${encodeURIComponent(message)}`,
-  email: "info@indiab2bdata.com",
   address: {
     street: "T-10, Sai Mandir St, Malad, Navy Colony, Mamledarwadi, Malad West",
     city: "Mumbai",

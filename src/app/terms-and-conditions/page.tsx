@@ -5,6 +5,7 @@ import { ContactCta } from "@/components/sections/contact-cta";
 import { JsonLd } from "@/components/json-ld";
 import { siteConfig } from "@/lib/site-config";
 import { pageMetadata, breadcrumbJsonLd, webPageJsonLd } from "@/lib/seo";
+import { ProtectedEmail } from "@/components/protected-email";
 
 const TITLE = "Terms & Conditions";
 const DESCRIPTION =
@@ -176,9 +177,7 @@ export default function TermsAndConditionsPage() {
               </li>
               <li>
                 Email:{" "}
-                <a href={`mailto:${siteConfig.email}`} className="text-teal-dark font-medium">
-                  {siteConfig.email}
-                </a>
+                <ProtectedEmail className="text-teal-dark font-medium" />
               </li>
               <li>Address: {siteConfig.address.display}</li>
             </ul>

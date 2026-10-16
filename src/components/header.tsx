@@ -40,7 +40,8 @@ export function Header() {
             width={400}
             height={200}
             priority
-            className="h-14 md:h-28 w-auto object-cover"
+            sizes="224px"
+            className="h-14 md:h-28 w-auto object-contain"
           />
         </Link>
 

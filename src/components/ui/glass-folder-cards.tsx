@@ -722,7 +722,8 @@ export default function GlassFolder({
       data-place={labelPlacement}
       style={{ width, height: (H + HEADROOM) * k, ...style }}
     >
-      <style>{GF_CSS}</style>
+      {/* href + precedence lets React 19 hoist this once into <head>, however many folders render */}
+      <style href="glass-folder-css" precedence="default">{GF_CSS}</style>
       <div className="gf-stage" style={{ transform: "translateY(" + HEADROOM * k + "px) scale(" + k + ")" }}>
         <div className="gf-tilt">
           <div className="gf-shadow" aria-hidden="true" />

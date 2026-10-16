@@ -1,12 +1,13 @@
   import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
-import { GoogleAnalytics } from "@next/third-parties/google";
+import Script from "next/script";
 import "./globals.css";
 import { ModalProvider } from "@/components/modal-context";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { FloatingButtons } from "@/components/floating-buttons";
 import { ContactModal } from "@/components/contact-modal";
+import { Toaster } from "sonner";
 import { JsonLd } from "@/components/json-ld";
 import { siteConfig } from "@/lib/site-config";
 import { organizationJsonLd, websiteJsonLd } from "@/lib/seo";
@@ -14,8 +15,10 @@ import { organizationJsonLd, websiteJsonLd } from "@/lib/seo";
 const montserrat = Montserrat({
   variable: "--font-montserrat",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800", "900"],
+  weight: ["400", "500", "600", "700", "800"],
 });
+
+const GA_ID = "G-H4WEQ2BRZP";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -50,9 +53,17 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           <Footer />
           <FloatingButtons />
           <ContactModal />
+          <Toaster position="top-center" richColors closeButton toastOptions={{ style: { fontFamily: "var(--font-montserrat), sans-serif" } }} />
         </ModalProvider>
       </body>
-      <GoogleAnalytics gaId="G-H4WEQ2BRZP" />
+      {/* lazyOnload: analytics loads after the page is interactive and never blocks rendering (no preload in <head>). */}
+      <Script id="ga-init" strategy="lazyOnload">
+        {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag("js", new Date());
+gtag("config", "${GA_ID}");`}
+      </Script>
+      <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="lazyOnload" />
     </html>
   );
 }

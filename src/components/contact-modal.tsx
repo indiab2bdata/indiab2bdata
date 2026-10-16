@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { X } from "lucide-react";
 import { useModal } from "@/components/modal-context";
 import { useContactForm } from "@/hooks/use-contact-form";
+import { SubmitButton } from "@/components/submit-button";
 
 const REQUIREMENTS = [
   "Mobile Number Database",
@@ -16,7 +17,7 @@ const REQUIREMENTS = [
 
 export function ContactModal() {
   const { isOpen, source, closeModal } = useModal();
-  const { status, setStatus, handleSubmit } = useContactForm(() => setTimeout(closeModal, 2200));
+  const { status, setStatus, handleSubmit } = useContactForm(closeModal);
 
   // Reset the form status whenever the modal transitions to open, following
   // React's "adjusting state on prop change" pattern (done during render,
@@ -151,13 +152,9 @@ export function ContactModal() {
               />
             </div>
 
-            <button
-              type="submit"
-              disabled={status.state === "sending"}
-              className="w-full bg-teal hover:bg-teal-dark disabled:opacity-60 text-white font-semibold py-3.5 rounded-full transition cursor-pointer disabled:cursor-not-allowed"
-            >
-              {status.state === "sending" ? "Sending..." : "Request Free Sample"}
-            </button>
+            <SubmitButton status={status} className="py-3.5">
+              Request Free Sample
+            </SubmitButton>
 
             {status.state !== "idle" && status.message && (
               <p

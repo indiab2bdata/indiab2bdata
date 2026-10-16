@@ -12,8 +12,8 @@ export type TestimonialCard = {
   color?: string;
 };
 
-const Card = ({ card }: { card: TestimonialCard }) => (
-  <figure className="mx-3 w-80 shrink-0 rounded-2xl border border-[#DCEAF3] bg-white p-6 shadow-sm transition-shadow duration-200 hover:shadow-lg">
+const Card = ({ card, hidden }: { card: TestimonialCard; hidden?: boolean }) => (
+  <figure aria-hidden={hidden || undefined} className="mx-3 w-80 shrink-0 rounded-2xl border border-[#DCEAF3] bg-white p-6 shadow-sm transition-shadow duration-200 hover:shadow-lg">
     <Quote className="h-6 w-6 text-teal/25" strokeWidth={1.5} fill="currentColor" aria-hidden="true" />
     <blockquote className="mt-3 text-sm leading-relaxed text-navy/80">&ldquo;{card.quote}&rdquo;</blockquote>
     <figcaption className="mt-5 flex items-center gap-3">
@@ -48,9 +48,7 @@ function MarqueeRow({ data, reverse = false, speed = 30 }: { data: TestimonialCa
       >
         {loop.map((c, i) => (
           // Only the first copy is exposed to assistive tech; the rest are visual repeats.
-          <div key={i} aria-hidden={i >= data.length || undefined}>
-            <Card card={c} />
-          </div>
+          <Card key={i} card={c} hidden={i >= data.length} />
         ))}
       </div>
       <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-16 bg-gradient-to-l from-bgsoft to-transparent md:w-32" />

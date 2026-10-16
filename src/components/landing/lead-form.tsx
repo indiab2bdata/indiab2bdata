@@ -2,6 +2,7 @@
 
 import { Send } from "lucide-react";
 import { useContactForm } from "@/hooks/use-contact-form";
+import { SubmitButton } from "@/components/submit-button";
 
 const field =
   "w-full rounded-lg border border-[#DCEAF3] bg-white px-3.5 py-2.5 text-sm text-navy placeholder:text-slate-400 focus:border-teal focus:outline-none focus:ring-2 focus:ring-teal/30";
@@ -60,14 +61,10 @@ export function LeadForm({
           />
         </label>
 
-        <button
-          type="submit"
-          disabled={status.state === "sending"}
-          className="inline-flex w-full cursor-pointer items-center justify-center gap-2 rounded-full bg-teal py-3 text-sm font-semibold text-white transition hover:bg-teal-dark disabled:cursor-not-allowed disabled:opacity-60"
-        >
+        <SubmitButton status={status} className="py-3 text-sm">
           <Send className="h-4 w-4" />
-          {status.state === "sending" ? "Sending..." : "Request Free Sample"}
-        </button>
+          Request Free Sample
+        </SubmitButton>
 
         {status.state !== "idle" && status.message ? (
           <p className={`text-center text-sm ${status.state === "success" ? "font-medium text-teal-dark" : "text-red-500"}`} role="status">

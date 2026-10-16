@@ -38,8 +38,9 @@ export function WhyUs() {
           <Image
             src="/images/home/why-us.jpg"
             alt="Data analytics dashboard on laptop"
-            width={1200}
-            height={800}
+            width={1600}
+            height={1140}
+            sizes="(min-width: 1024px) 50vw, 100vw"
             className="w-full h-[420px] object-cover"
           />
         </Reveal>

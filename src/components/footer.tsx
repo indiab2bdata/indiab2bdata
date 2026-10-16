@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
 import { databaseStates } from "@/lib/database-pages";
+import { ProtectedEmail } from "@/components/protected-email";
 
 const QUICK_LINKS = [
   { href: "/#offer", label: "Data Products" },
@@ -100,7 +101,7 @@ export function Footer() {
             </li>
             <li className="flex items-center gap-2">
               <Mail className="w-4 h-4 text-teal-light shrink-0" strokeWidth={1.8} />
-              {siteConfig.email}
+              <ProtectedEmail className="hover:text-teal-light transition-colors" />
             </li>
             <li className="flex items-start gap-2">
               <MapPin className="w-4 h-4 mt-0.5 text-teal-light shrink-0" strokeWidth={1.8} />

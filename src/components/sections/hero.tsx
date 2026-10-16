@@ -1,5 +1,7 @@
 "use client";
 
+import { useEffect, useState } from "react";
+import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { CountUp } from "@/components/count-up";
 import { Reveal } from "@/components/reveal";
@@ -14,6 +16,48 @@ const STATS = [
   { value: 10, suffix: "K+", label: "Businesses Served" },
 ];
 
+type NetworkInfo = { saveData?: boolean; effectiveType?: string };
+
+/**
+ * Mounts a single background video (desktop or mobile, never both) once the window has loaded,
+ * so it never competes with first paint. Skipped for reduced motion, data saver and slow connections.
+ */
+function HeroVideo() {
+  const [src, setSrc] = useState<string | null>(null);
+
+  useEffect(() => {
+    const conn = (navigator as Navigator & { connection?: NetworkInfo }).connection;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    if (conn?.saveData || (conn?.effectiveType && /(^|-)2g$|^3g$/.test(conn.effectiveType))) return;
+
+    const pick = () =>
+      setSrc(window.matchMedia("(min-width: 768px)").matches ? "/images/hero/hero-desktop.mp4" : "/images/hero/hero-mob.mp4");
+    const start = () => {
+      const idle = (window as Window & { requestIdleCallback?: (cb: () => void) => number }).requestIdleCallback;
+      if (idle) idle(pick);
+      else window.setTimeout(pick, 300);
+    };
+    if (document.readyState === "complete") start();
+    else window.addEventListener("load", start, { once: true });
+    return () => window.removeEventListener("load", start);
+  }, []);
+
+  if (!src) return null;
+  return (
+    <video
+      key={src}
+      className="absolute inset-0 h-full w-full object-cover"
+      src={src}
+      autoPlay
+      muted
+      loop
+      playsInline
+      preload="none"
+      aria-hidden="true"
+    />
+  );
+}
+
 export function Hero() {
   const { openModal } = useModal();
 
@@ -22,27 +66,17 @@ export function Hero() {
       id="top"
       className="relative min-h-screen flex items-center pt-28 pb-20 md:pt-32 md:pb-24 overflow-hidden bg-navy"
     >
-      {/* Background videos */}
-      <video
-        className="absolute inset-0 w-full h-full object-cover hidden md:block"
-        src="/images/hero/hero-desktop.mp4"
-        poster="/images/home/hero.jpg"
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="auto"
+      {/* Poster paints immediately (LCP); the video is layered on top only after the page has loaded. */}
+      <Image
+        src="/images/home/hero.jpg"
+        alt="Sales team working with verified B2B business data"
+        fill
+        preload
+        fetchPriority="high"
+        sizes="100vw"
+        className="object-cover"
       />
-      <video
-        className="absolute inset-0 w-full h-full object-cover md:hidden"
-        src="/images/hero/hero-mob.mp4"
-        poster="/images/home/hero.jpg"
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="auto"
-      />
+      <HeroVideo />
 
       {/* Layered gradient overlay - deeper, richer, more luxurious */}
       <div

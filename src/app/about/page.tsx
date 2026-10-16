@@ -23,7 +23,7 @@ export const metadata: Metadata = pageMetadata({
   title: TITLE,
   description: DESCRIPTION,
   path: "/about",
-  image: { url: `${siteConfig.url}/images/about/team.jpg`, width: 1200, height: 900, alt: "IndiaB2BData.com team" },
+  image: { url: `${siteConfig.url}/images/about/team.jpg`, width: 1600, height: 1067, alt: "IndiaB2BData.com team" },
 });
 
 const breadcrumbItems = [
@@ -123,8 +123,9 @@ export default function AboutPage() {
           <Image
             src="/images/about/team.jpg"
             alt="Team working on B2B sales data"
-            width={1200}
-            height={900}
+            width={1600}
+            height={1067}
+            sizes="(min-width: 1024px) 50vw, 100vw"
             className="w-full h-[380px] md:h-[440px] object-cover"
           />
         </Reveal>
