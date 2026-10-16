@@ -799,7 +799,7 @@ export const keywordPages: KeywordPage[] = [
   {
     slug: "mca-company-database-india",
     keyword: "MCA company database India",
-    title: "MCA Company Database India | Registered Companies & LLPs",
+    title: "MCA Company Database India | Companies & LLPs",
     metaDescription:
       "A database of companies and LLPs registered with the Ministry of Corporate Affairs - incorporation details, company type and registered office.",
     eyebrow: "MCA Company Database India",
@@ -897,7 +897,7 @@ export const keywordPages: KeywordPage[] = [
   {
     slug: "newly-registered-companies-india",
     keyword: "newly registered companies India",
-    title: "Newly Registered Companies India | Fresh Incorporation Leads",
+    title: "Newly Registered Companies India | New Company Leads",
     metaDescription:
       "A feed of newly registered and recently incorporated companies across India - ideal for reaching new businesses before your competitors do.",
     eyebrow: "Newly Registered Companies India",
@@ -1093,7 +1093,7 @@ export const keywordPages: KeywordPage[] = [
   {
     slug: "manufacturer-database-india",
     keyword: "manufacturer database India",
-    title: "Manufacturer Database India | Factories & Production Units",
+    title: "Manufacturer Database India | Factories & Units",
     metaDescription:
       "A verified manufacturer database across India - factories and production units by industry and city. Built for suppliers, buyers and B2B vendors.",
     eyebrow: "Manufacturer Database India",
@@ -4842,7 +4842,7 @@ export const keywordPages: KeywordPage[] = [
   {
     slug: "chartered-accountants-database-india",
     keyword: "chartered accountants database India",
-    title: "Chartered Accountants Database India | CA Firms & Practitioners",
+    title: "Chartered Accountants Database India | CA Firms",
     metaDescription:
       "Chartered accountants database in India - CA practitioners and CA firms with contact details, city, specialisation and firm size. Get a free sample.",
     eyebrow: "Chartered Accountants Database",
@@ -4917,7 +4917,7 @@ export const keywordPages: KeywordPage[] = [
   {
     slug: "chemical-pharma-companies-database-india",
     keyword: "chemical and pharma companies database India",
-    title: "Chemical & Pharma Companies Database India | Manufacturers List",
+    title: "Chemical & Pharma Companies Database India",
     metaDescription:
       "Chemical and pharmaceutical companies database in India - manufacturers, API makers, formulators and traders with contacts. Gujarat, Maharashtra, Telangana and more.",
     eyebrow: "Chemical & Pharma Companies Database",
@@ -4990,7 +4990,7 @@ export const keywordPages: KeywordPage[] = [
   {
     slug: "chemists-medical-stores-database-india",
     keyword: "chemists and medical stores database India",
-    title: "Chemists & Medical Stores Database India | Pharmacy List",
+    title: "Chemists & Medical Stores Database India",
     metaDescription:
       "Chemists and medical stores database in India - retail pharmacies and drug distributors with owner name, mobile number and address, city-wise. Free sample.",
     eyebrow: "Chemists & Medical Stores Database",
@@ -5065,7 +5065,7 @@ export const keywordPages: KeywordPage[] = [
   {
     slug: "chief-managers-database-india",
     keyword: "chief managers database India",
-    title: "Chief Managers Database India | Senior Manager Contacts",
+    title: "Chief Managers Database India | Senior Managers",
     metaDescription:
       "Chief managers database in India - senior and chief managers in banking, PSUs, manufacturing and corporates, with designation, company and contact details.",
     eyebrow: "Chief Managers Database",
@@ -5139,7 +5139,7 @@ export const keywordPages: KeywordPage[] = [
   {
     slug: "civil-engineers-database-india",
     keyword: "civil engineers database India",
-    title: "Civil Engineers Database India | Engineers & Contractors",
+    title: "Civil Engineers Database India",
     metaDescription:
       "Civil engineers database in India - site engineers, project managers, structural consultants and contractors with contact details, city-wise. Free sample.",
     eyebrow: "Civil Engineers Database",
@@ -5278,7 +5278,7 @@ export const keywordPages: KeywordPage[] = [
   {
     slug: "commercial-residential-properties-database-india",
     keyword: "commercial and residential properties database India",
-    title: "Commercial & Residential Properties Database India | Property Owners",
+    title: "Commercial & Residential Properties Database India",
     metaDescription:
       "Commercial and residential properties database in India - property owners, buyers, builders and brokers with contact details, city-wise. Free sample format.",
     eyebrow: "Property Database",
@@ -5352,7 +5352,7 @@ export const keywordPages: KeywordPage[] = [
   {
     slug: "company-md-chairman-secretary-database-india",
     keyword: "company MD, chairman and secretary database India",
-    title: "Company MD, Chairman & Company Secretary Database India",
+    title: "MD, Chairman & Company Secretary Database India",
     metaDescription:
       "Database of managing directors, chairmen, directors and company secretaries of Indian companies - with company, designation and contact details. Free sample.",
     eyebrow: "Board & Directors Database",
@@ -5423,7 +5423,7 @@ export const keywordPages: KeywordPage[] = [
   {
     slug: "company-proprietors-database-india",
     keyword: "company proprietors database India",
-    title: "Company Proprietors Database India | Business Owners List",
+    title: "Company Proprietors Database India | Business Owners",
     metaDescription:
       "Company proprietors database in India - owners of proprietorship firms, shops and MSMEs with mobile number, business name, industry and city. Free sample.",
     eyebrow: "Business Owners Database",
@@ -5495,7 +5495,7 @@ export const keywordPages: KeywordPage[] = [
   {
     slug: "computer-laptop-dealers-database-india",
     keyword: "computer and laptop dealers database India",
-    title: "Computer & Laptop Dealers Database India | IT Hardware Dealers",
+    title: "Computer & Laptop Dealers Database India",
     metaDescription:
       "Computer and laptop dealers database in India - IT hardware dealers, resellers, system integrators and repair shops with owner contacts, city-wise. Free sample.",
     eyebrow: "Computer & Laptop Dealers Database",
@@ -5712,7 +5712,7 @@ export const keywordPages: KeywordPage[] = [
   {
     slug: "contractors-database-india",
     keyword: "contractors database India",
-    title: "Contractors Database India | Civil, Electrical & Government Contractors",
+    title: "Contractors Database India | Civil, Electrical & Govt",
     metaDescription:
       "Contractors database in India - civil, electrical, plumbing, interior, road and government contractors with owner contacts, trade and city. Free sample format.",
     eyebrow: "Contractors Database",
@@ -5864,7 +5864,7 @@ export const keywordPages: KeywordPage[] = [
   {
     slug: "customer-support-executives-database-india",
     keyword: "customer support executives database India",
-    title: "Customer Support Executives Database India | Customer Service Professionals",
+    title: "Customer Support Executives Database India",
     metaDescription:
       "Customer support executives database in India - customer service, helpdesk, CX and support team professionals by industry, experience and city. Free sample.",
     eyebrow: "Customer Support Executives Database",

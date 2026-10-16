@@ -2,9 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
-import { PRODUCT_GROUPS } from "@/lib/product-groups";
 import { databaseStates } from "@/lib/database-pages";
-import { cities, cityPath } from "@/components/city-pages/city-data.mjs";
 
 const QUICK_LINKS = [
   { href: "/#offer", label: "Data Products" },
@@ -17,29 +15,20 @@ const QUICK_LINKS = [
   { href: "/terms-and-conditions", label: "Terms & Conditions" },
 ];
 
+/** Hub-level products only - the full 52-product directory lives on the homepage (#offer). */
+const CORE_DATABASES = [
+  { href: "/b2b-database-india", label: "B2B Database" },
+  { href: "/company-database-india", label: "Company Database" },
+  { href: "/b2b-leads-database-india", label: "B2B Sales Leads" },
+  { href: "/gst-database-india", label: "GST Data" },
+  { href: "/mca-company-database-india", label: "MCA / ROC Records" },
+  { href: "/manufacturer-database-india", label: "Manufacturers" },
+  { href: "/#offer", label: "All Data Products" },
+];
+
 export function Footer() {
   return (
     <footer className="bg-navy-dark text-slate-300 pt-16 pb-8">
-      <nav
-        aria-label="Data products"
-        className="max-w-7xl mx-auto px-5 md:px-8 mb-12 pb-12 border-b border-white/10 grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-8"
-      >
-        {PRODUCT_GROUPS.map((group) => (
-          <div key={group.heading}>
-            <p className="font-display font-bold text-white text-sm mb-4">{group.heading}</p>
-            <ul className="space-y-2 text-sm">
-              {group.links.map((link) => (
-                <li key={link.href}>
-                  <Link href={link.href} className="hover:text-teal-light hover:underline underline-offset-4 transition-colors">
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </nav>
-
       <div className="max-w-7xl mx-auto px-5 md:px-8 grid sm:grid-cols-2 lg:grid-cols-5 gap-x-8 gap-y-10">
         <div>
           <div className="flex items-center gap-2">
@@ -90,12 +79,12 @@ export function Footer() {
         </div>
 
         <div>
-          <p className="font-display font-bold text-white text-sm mb-4">Popular Cities</p>
+          <p className="font-display font-bold text-white text-sm mb-4">Core Databases</p>
           <ul className="space-y-2 text-sm">
-            {Object.values(cities).map((city) => (
-              <li key={city.slug}>
-                <Link href={cityPath(city)} className="hover:text-teal-light hover:underline underline-offset-4 transition-colors">
-                  {city.city} Company Data
+            {CORE_DATABASES.map((link) => (
+              <li key={link.href}>
+                <Link href={link.href} className="hover:text-teal-light hover:underline underline-offset-4 transition-colors">
+                  {link.label}
                 </Link>
               </li>
             ))}

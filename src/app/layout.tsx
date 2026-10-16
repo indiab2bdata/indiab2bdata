@@ -24,12 +24,8 @@ export const metadata: Metadata = {
     template: "%s | IndiaB2BData.com",
   },
   description: siteConfig.defaultDescription,
-  alternates: {
-    canonical: "/",
-    languages: {
-      "en-IN": "/",
-    },
-  },
+  // No root canonical: every page sets its own via pageMetadata(), and a root default of "/"
+  // would silently canonicalise any page that forgets to override it to the homepage.
   verification: {
     google: "l8QOpKqoC429_x9cCAOktejf255UdfNx7oXbHJnHYUk",
   },
