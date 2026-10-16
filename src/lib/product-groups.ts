@@ -1,4 +1,4 @@
-/** The 52 live data products, grouped for footer navigation. Labels are descriptive, not exact-match keywords. */
+/** The 64 live data products, grouped for footer navigation. Labels are descriptive, not exact-match keywords. */
 export const PRODUCT_GROUPS: { heading: string; links: { href: string; label: string }[] }[] = [
   {
     heading: "General",
@@ -40,6 +40,9 @@ export const PRODUCT_GROUPS: { heading: string; links: { href: string; label: st
       { href: "/chemists-medical-stores-database-india", label: "Chemists & Medical Stores" },
       { href: "/computer-laptop-dealers-database-india", label: "Computer & Laptop Dealers" },
       { href: "/contractors-database-india", label: "Contractors" },
+      { href: "/digital-photography-studios-database-india", label: "Photography Studios" },
+      { href: "/energy-power-sector-database-delhi-ncr", label: "Energy & Power (Delhi NCR)" },
+      { href: "/entertainment-media-database-india", label: "Entertainment & Media" },
     ],
   },
   {
@@ -59,6 +62,11 @@ export const PRODUCT_GROUPS: { heading: string; links: { href: string; label: st
       { href: "/chief-managers-database-india", label: "Chief Managers" },
       { href: "/civil-engineers-database-india", label: "Civil Engineers" },
       { href: "/customer-support-executives-database-india", label: "Customer Support Executives" },
+      { href: "/designers-database-india", label: "Designers" },
+      { href: "/dtp-operators-database-india", label: "DTP Operators" },
+      { href: "/economic-analysts-database-india", label: "Economic Analysts" },
+      { href: "/bank-employees-database-delhi-ncr", label: "Bank Employees (Delhi NCR)" },
+      { href: "/engineers-service-engineers-database-india", label: "Engineers & Service Engineers" },
     ],
   },
   {
@@ -80,6 +88,9 @@ export const PRODUCT_GROUPS: { heading: string; links: { href: string; label: st
       { href: "/club-mahindra-members-database", label: "Holiday Club Members" },
       { href: "/commercial-residential-properties-database-india", label: "Property Owners" },
       { href: "/credit-card-holders-database-india", label: "Credit Card Holders" },
+      { href: "/debit-card-holders-database-india", label: "Debit Card Holders" },
+      { href: "/demat-account-holders-database-india", label: "Demat Account Holders" },
+      { href: "/dining-leisure-customers-database-india", label: "Dining & Leisure Customers" },
     ],
   },
   {
@@ -87,6 +98,7 @@ export const PRODUCT_GROUPS: { heading: string; links: { href: string; label: st
     links: [
       { href: "/students-database", label: "Students" },
       { href: "/school-colleges-database", label: "Schools & Colleges" },
+      { href: "/educational-institutes-database-india", label: "Educational Institutes" },
       { href: "/cbse-schools-email-database-india", label: "CBSE Schools Emails" },
       { href: "/teachers-database-india", label: "Teachers" },
       { href: "/domain-whois-database", label: "Domain WHOIS Data" },

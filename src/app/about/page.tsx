@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { Handshake, MapPinned, ShieldCheck, Zap } from "lucide-react";
-import { PageHero } from "@/components/page-hero";
 import { Reveal } from "@/components/reveal";
 import { CountUp } from "@/components/count-up";
-import { ContactCta } from "@/components/sections/contact-cta";
+import { SplitHero, ContactSplit } from "@/components/landing/sections";
 import { InlineCta } from "@/components/inline-cta";
 import { RelatedLinks } from "@/components/related-links";
 import { JsonLd } from "@/components/json-ld";
@@ -89,11 +88,15 @@ export default function AboutPage() {
     <>
       <JsonLd data={[breadcrumbSchema, webPageSchema, faqJsonLd(ABOUT_FAQS)]} />
 
-      <PageHero
+      <SplitHero
         eyebrow="About IndiaB2BData.com"
         title="Helping Indian Businesses Reach the Right Customers"
         description="We build verified B2B databases so sales and marketing teams across India can spend their time selling - not chasing dead numbers."
         breadcrumbs={breadcrumbItems}
+        chips={["50L+ Verified Records","700+ Cities","500+ Industries"]}
+        source="about-hero-form"
+        requirement="B2B Business Database"
+        formTitle="Get Your Free Sample"
       />
 
       <section className="py-20 md:py-28 max-w-7xl mx-auto px-5 md:px-8 grid lg:grid-cols-2 gap-14 items-center">
@@ -179,7 +182,12 @@ export default function AboutPage() {
 
       <RelatedLinks pages={relatedPages} eyebrow="Explore" heading="Related Data Products" />
 
-      <ContactCta />
+      <ContactSplit
+        title="Ready to Reach Genuine Decision-Makers?"
+        text="Share your target audience, location and quantity - we'll send free sample records and a custom quote."
+        source="about-footer-form"
+        requirement="B2B Business Database"
+      />
     </>
   );
 }

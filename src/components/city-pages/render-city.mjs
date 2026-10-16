@@ -1,4 +1,4 @@
-import { cities, SITE, SALES_PHONE, cityPath, cityUrl, whatsappUrl } from './city-data.mjs';
+import { cities, SITE, SALES_PHONE, cityUrl, whatsappUrl } from './city-data.mjs';
 
 export const escapeHtml = value => String(value).replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
 const e = escapeHtml;

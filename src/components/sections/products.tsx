@@ -1,7 +1,33 @@
 import Link from "next/link";
 import { Building2, Globe2, Layers, Mail, MessageSquareText, Smartphone } from "lucide-react";
 import { Reveal } from "@/components/reveal";
-import { PRODUCT_GROUPS } from "@/lib/product-groups";
+import { IndustryDirectory } from "@/components/industry-directory";
+import { liveKeywordPages } from "@/lib/keyword-pages";
+
+/** Hand-written blurbs where the meta description does not make a good one-liner. */
+const BLURB_OVERRIDES: Record<string, string> = {
+  "/industry-wise-company-database-india": "Company lists segmented across 500+ industries and sub-sectors",
+  "/teachers-database-india": "School and college teachers by subject, board and city",
+  "/advocates-lawyers-database-india": "Advocates, law firms and legal practitioners by court and practice area",
+  "/agents-database-india": "Real estate, insurance, travel and other agents by city and category",
+  "/apparel-garments-exporters-database-india": "Garment manufacturers and exporters across Tiruppur, Ludhiana, NCR and more",
+  "/architect-interior-designers-database-india": "Architects, interior designers and design firms by city",
+  "/beauty-parlours-salons-spa-database-india": "Salons, beauty parlours and spas with owner contacts, city-wise",
+  "/bpo-call-centre-employees-database-india": "Voice and non-voice BPO professionals by process, experience and city",
+  "/business-analysts-database-india": "Business and data analysts by industry, experience and city",
+  "/business-development-sales-professionals-database-india": "Sales and BD professionals by industry, seniority and city",
+  "/company-md-chairman-secretary-database-india": "Managing directors, chairmen and company secretaries of Indian companies",
+  "/club-mahindra-members-database": "Holiday-membership audience - affluent, travel-oriented families by city",
+};
+
+/** One-line card blurb: the part of each meta description after the dash, up to the first sentence. */
+const CARD_DESCRIPTIONS = Object.fromEntries(
+  liveKeywordPages.map((page) => {
+    const afterDash = page.metaDescription.split(/ [-—] /)[1] ?? page.metaDescription;
+    const sentence = afterDash.split(/\.\s/)[0].replace(/\.$/, "");
+    return [`/${page.slug}`, BLURB_OVERRIDES[`/${page.slug}`] ?? sentence.charAt(0).toUpperCase() + sentence.slice(1)];
+  })
+);
 
 const PRODUCTS = [
   {
@@ -83,22 +109,7 @@ export function Products() {
         ))}
       </div>
 
-      <nav aria-label="All data products" className="mt-16 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-8 gap-y-8">
-        {PRODUCT_GROUPS.map((group) => (
-          <div key={group.heading}>
-            <h3 className="font-display font-bold text-navy text-sm mb-3">{group.heading}</h3>
-            <ul className="space-y-2 text-sm">
-              {group.links.map((link) => (
-                <li key={link.href}>
-                  <Link href={link.href} className="text-muted hover:text-teal hover:underline underline-offset-4 transition-colors">
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </nav>
+      <IndustryDirectory descriptions={CARD_DESCRIPTIONS} />
     </section>
   );
 }

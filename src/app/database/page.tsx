@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRight, MapPinned } from "lucide-react";
-import { PageHero } from "@/components/page-hero";
 import { Reveal } from "@/components/reveal";
 import { RelatedLinks } from "@/components/related-links";
 import { InlineCta } from "@/components/inline-cta";
-import { ContactCta } from "@/components/sections/contact-cta";
+import { SplitHero, ContactSplit } from "@/components/landing/sections";
 import { JsonLd } from "@/components/json-ld";
 import { databaseStates } from "@/lib/database-pages";
 import { getKeywordPagesBySlug } from "@/lib/keyword-pages";
@@ -66,11 +65,15 @@ export default function DatabaseHubPage() {
     <>
       <JsonLd data={[breadcrumbSchema, webPageSchema, stateListSchema, faqJsonLd(DATABASE_HUB_FAQS)]} />
 
-      <PageHero
+      <SplitHero
         eyebrow="Database by State"
         title="Verified B2B Business Database, State by State"
         description="Pick a state to see coverage, major cities and industries - or tell us your exact requirement and we'll build a custom list."
         breadcrumbs={breadcrumbItems}
+        chips={["8 State Hubs","700+ Cities","Industry Filters","DND-Scrubbed"]}
+        source="database-hub-hero-form"
+        requirement="State-Wise Business Database"
+        formTitle="Get Your State-Wise Data"
       />
 
       <section className="py-16 md:py-20 max-w-7xl mx-auto px-5 md:px-8">
@@ -124,7 +127,12 @@ export default function DatabaseHubPage() {
 
       <RelatedLinks pages={relatedKeywordPages} eyebrow="Related Databases" heading="Explore More Data Products" />
 
-      <ContactCta />
+      <ContactSplit
+        title="Need Data for a Specific State or City?"
+        text="Share your target audience, location and quantity - we'll send free sample records and a custom quote."
+        source="database-hub-footer-form"
+        requirement="State-Wise Business Database"
+      />
     </>
   );
 }

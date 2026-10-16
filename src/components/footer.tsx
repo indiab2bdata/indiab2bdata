@@ -120,6 +120,10 @@ export function Footer() {
           ·{" "}
           <Link href="/terms-and-conditions" className="hover:text-teal-light transition">
             Terms &amp; Conditions
+          </Link>{" "}
+          ·{" "}
+          <Link href="/image-credits" className="hover:text-teal-light transition">
+            Image Credits
           </Link>
         </p>
       </div>

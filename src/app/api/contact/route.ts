@@ -12,7 +12,27 @@ type LeadPayload = {
   receivedAt: string;
 };
 
+/** Escapes visitor-supplied text before it goes into the HTML email body. */
+function escapeHtml(value: string) {
+  return value
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
 function formatLeadEmail(lead: LeadPayload) {
+  const h = {
+    name: escapeHtml(lead.name),
+    phone: escapeHtml(lead.phone),
+    email: escapeHtml(lead.email || "Not provided"),
+    company: escapeHtml(lead.company || "Not provided"),
+    requirement: escapeHtml(lead.requirement),
+    source: escapeHtml(lead.source),
+    receivedAt: escapeHtml(lead.receivedAt),
+    message: escapeHtml(lead.message || "No additional notes").replace(/\n/g, "<br />"),
+  };
   const lines = [
     "New sample request received",
     "===========================",
@@ -34,17 +54,17 @@ function formatLeadEmail(lead: LeadPayload) {
       <div style="font-family: Arial, sans-serif; color: #0f172a; line-height: 1.6;">
         <h2 style="margin: 0 0 12px; color: #0f172a;">New sample request received</h2>
         <ul style="padding-left: 18px; margin: 0 0 12px;">
-          <li><strong>Name:</strong> ${lead.name}</li>
-          <li><strong>Phone:</strong> ${lead.phone}</li>
-          <li><strong>Email:</strong> ${lead.email || "Not provided"}</li>
-          <li><strong>Company:</strong> ${lead.company || "Not provided"}</li>
-          <li><strong>Requirement:</strong> ${lead.requirement}</li>
-          <li><strong>Source:</strong> ${lead.source}</li>
-          <li><strong>Received At:</strong> ${lead.receivedAt}</li>
+          <li><strong>Name:</strong> ${h.name}</li>
+          <li><strong>Phone:</strong> ${h.phone}</li>
+          <li><strong>Email:</strong> ${h.email}</li>
+          <li><strong>Company:</strong> ${h.company}</li>
+          <li><strong>Requirement:</strong> ${h.requirement}</li>
+          <li><strong>Source:</strong> ${h.source}</li>
+          <li><strong>Received At:</strong> ${h.receivedAt}</li>
         </ul>
         <div>
           <strong>Message / Notes:</strong>
-          <p style="margin: 8px 0 0;">${(lead.message || "No additional notes").replace(/\n/g, "<br />")}</p>
+          <p style="margin: 8px 0 0;">${h.message}</p>
         </div>
       </div>
     `,
@@ -114,7 +134,7 @@ export async function POST(request: Request) {
       from: smtpFrom,
       to: smtpTo,
       replyTo: lead.email || undefined,
-      subject: `New sample request from ${lead.name}`,
+      subject: `New sample request from ${lead.name.replace(/[\r\n]+/g, " ").slice(0, 80)}`,
       text,
       html,
     });

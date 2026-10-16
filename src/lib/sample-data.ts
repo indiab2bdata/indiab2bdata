@@ -35,7 +35,19 @@ export type SampleProfile =
   | "consultant"
   | "contractor"
   | "cardHolder"
-  | "supportExec";
+  | "supportExec"
+  | "debitHolder"
+  | "designer"
+  | "studio"
+  | "diner"
+  | "investor"
+  | "dtp"
+  | "economist"
+  | "institute"
+  | "banker"
+  | "energy"
+  | "serviceEngineer"
+  | "media";
 
 const NAMES = ["Rahul Sharma", "Priya Mehta", "Amit Verma", "Sneha Iyer", "Vikram Singh", "Neha Gupta", "Arjun Reddy", "Kavita Joshi", "Rohan Das", "Pooja Nair", "Sanjay Patel", "Anjali Rao"];
 const COMPANIES = ["Sample Tech Pvt Ltd", "Demo Industries", "Example Traders", "Test Solutions LLP", "Dummy Enterprises", "Placeholder Exports", "Mock Infra Pvt Ltd", "Specimen Foods", "Trial Textiles", "Prototype Pharma"];
@@ -92,12 +104,36 @@ const PROFILES: Record<SampleProfile, Column[]> = {
   contractor: [["Contractor / Firm", (c) => `Sample Constructions ${c.i + 1}`], ["Owner Name", (c) => c.name], ["Contractor Type", (c) => pick(["Civil", "Electrical", "Plumbing", "HVAC", "Interior", "Road / PWD"], c.i)], ["Registration", (c) => pick(["PWD Class A", "CPWD", "Municipal", "Private"], c.i)], ["GSTIN", (c) => `27XXXXX${1000 + c.i}X1ZX`], phone, mail, ...loc],
   cardHolder: [["Name", (c) => c.name], phone, mail, ["Card Tier Band", (c) => pick(["Entry", "Premium", "Super-Premium"], c.i)], ["Occupation", (c) => pick(["Salaried", "Self-Employed", "Business Owner"], c.i)], ...loc],
   supportExec: [person, ["Designation", (c) => pick(["Support Executive", "Senior Executive", "Team Leader", "CX Manager", "Tech Support"], c.i)], ["Industry", (c) => pick(["E-commerce", "Telecom", "BFSI", "SaaS", "BPO"], c.i)], ["Process", (c) => pick(["Voice", "Chat", "Email", "Technical"], c.i)], ["Experience (Yrs)", (c) => String(c.i % 9)], ["Languages", (c) => pick(["English, Hindi", "English, Tamil", "English, Kannada"], c.i)], phone, mail, ...loc],
+  debitHolder: [["Name", (c) => c.name], phone, mail, ["Income Band", (c) => pick(["Below 3 LPA", "3-6 LPA", "6-12 LPA", "12+ LPA"], c.i)], ["Age Band", (c) => pick(["18-25", "26-35", "36-45", "46-60"], c.i)], ...loc],
+  designer: [["Designer / Studio", (c) => c.name], ["Specialisation", (c) => pick(["Graphic", "UI/UX", "Fashion", "Product", "Jewellery", "Motion"], c.i)], ["Work Type", (c) => pick(["Freelance", "In-house", "Studio"], c.i)], ["Portfolio", (c) => `www.example${c.i + 1}.in`], phone, mail, ...loc],
+  studio: [["Studio Name", (c) => `Sample Studio ${c.i + 1}`], ["Owner / Photographer", (c) => c.name], ["Services", (c) => pick(["Wedding", "Events", "Product", "Portrait", "Video", "Printing"], c.i)], phone, mail, ["Address", (c) => `Shop XX, Sample Road, ${c.city}`], ...loc],
+  diner: [["Name", (c) => c.name], phone, mail, ["Interest", (c) => pick(["Dining", "Travel", "Movies", "Events", "Fitness"], c.i)], ["Spending Band", (c) => pick(["Mid-Market", "Upper-Mid", "Premium"], c.i)], ...loc],
+  investor: [["Name", (c) => c.name], phone, mail, ["Investor Type", (c) => pick(["New Investor", "Long-Term", "Active Trader"], c.i)], ["Age Band", (c) => pick(["18-25", "26-35", "36-45", "46-60"], c.i)], ...loc],
+  dtp: [["Name / DTP Centre", (c) => c.name], ["Role", (c) => pick(["DTP Operator", "Typesetter", "Layout Artist", "Centre Owner"], c.i)], ["Software", (c) => pick(["CorelDRAW", "InDesign", "Photoshop", "PageMaker"], c.i)], ["Languages", (c) => pick(["English, Hindi", "English, Marathi", "English, Tamil"], c.i)], phone, mail, ...loc],
+  economist: [["Analyst Name", (c) => c.name], ["Designation", (c) => pick(["Economist", "Research Analyst", "Policy Analyst", "Credit Analyst", "Equity Analyst"], c.i)], ["Organisation Type", (c) => pick(["Bank", "Brokerage", "Rating Agency", "Think Tank", "Consultancy", "Research Firm"], c.i)], ["Specialisation", (c) => pick(["Macroeconomics", "Sector Research", "Credit", "Equity", "Public Policy"], c.i)], ["Experience (Yrs)", (c) => String(2 + (c.i % 15))], phone, mail, ...loc],
+  institute: [["Institute Name", (c) => `Sample Institute ${c.i + 1}`], ["Institute Type", (c) => pick(["Coaching Centre", "University", "ITI", "Polytechnic", "Skill Institute"], c.i)], ["Courses", (c) => pick(["JEE / NEET", "UPSC / SSC", "B.Tech / MBA", "Electrician / Fitter", "IT / Computer"], c.i)], ["Decision Maker", (c) => c.name], ["Designation", (c) => pick(["Director", "Owner", "Principal", "Admissions Head"], c.i)], phone, mail, ["Website", (c) => `www.sampleinstitute${c.i + 1}.in`], ...loc],
+  banker: [["Employee Name", (c) => c.name], ["Designation", (c) => pick(["Officer", "Relationship Manager", "Branch Manager", "Chief Manager", "Credit Manager"], c.i)], ["Bank Type", (c) => pick(["Public Sector", "Private", "Foreign", "Small Finance", "Cooperative"], c.i)], ["Department", (c) => pick(["Retail Banking", "Credit", "Operations", "Treasury", "HR"], c.i)], ["Branch Locality", (c) => pick(["Connaught Place", "Sector 18, Noida", "Cyber City, Gurgaon", "Raj Nagar, Ghaziabad", "Sector 15, Faridabad"], c.i)], phone, mail, ["City", (c) => pick(["Delhi", "Noida", "Gurgaon", "Ghaziabad", "Faridabad", "Greater Noida"], c.i)], ["State", (c) => pick(["Delhi", "Uttar Pradesh", "Haryana", "Uttar Pradesh", "Haryana", "Uttar Pradesh"], c.i)]],
+  energy: [company, ["Segment", (c) => pick(["Solar EPC", "Distribution", "Transmission", "Electrical Contractor", "Equipment Dealer", "Energy Consultant"], c.i)], ["Company Type", (c) => pick(["Private", "PSU", "EPC Contractor", "Dealer", "Consultant"], c.i)], ["Decision Maker", (c) => c.name], ["Designation", (c) => pick(["Director", "Project Head", "Procurement Manager", "Chief Engineer"], c.i)], phone, mail, ["City", (c) => pick(["Delhi", "Noida", "Gurgaon", "Ghaziabad", "Faridabad", "Greater Noida"], c.i)], ["State", (c) => pick(["Delhi", "Uttar Pradesh", "Haryana", "Uttar Pradesh", "Haryana", "Uttar Pradesh"], c.i)]],
+  serviceEngineer: [["Engineer Name", (c) => c.name], ["Discipline", (c) => pick(["Mechanical", "Electrical", "Electronics", "HVAC", "IT Hardware", "Biomedical"], c.i)], ["Designation", (c) => pick(["Service Engineer", "Field Engineer", "Maintenance Engineer", "Service Manager"], c.i)], industry, ["Experience (Yrs)", (c) => String(1 + (c.i % 15))], phone, mail, ...loc],
+  media: [company, ["Segment", (c) => pick(["Film / TV Production", "OTT", "Advertising Agency", "Digital Agency", "Print / Publishing", "Events"], c.i)], ["Decision Maker", (c) => c.name], ["Designation", (c) => pick(["Founder", "Producer", "Creative Director", "Head of Marketing"], c.i)], phone, mail, ["Website", (c) => `www.example${c.i + 1}.com`], ...loc],
   domain: [["Domain Name", (c) => `example${c.i + 1}.in`], ["Registrant Name", (c) => c.name], ["Registrant Org", (c) => c.company], ["Created Date", (c) => `2026-0${1 + (c.i % 9)}-0${1 + (c.i % 9)}`], ["Registrar", () => "Sample Registrar"], phone, mail, ...loc],
 };
 
 /** Map a page slug to the column format that product actually ships with. */
 export function sampleProfileFor(slug: string): SampleProfile {
   const rules: [RegExp, SampleProfile][] = [
+    [/energy-power/, "energy"],
+    [/service-engineers/, "serviceEngineer"],
+    [/entertainment-media/, "media"],
+    [/bank-employees/, "banker"],
+    [/educational-institutes/, "institute"],
+    [/economic-analysts/, "economist"],
+    [/debit-card/, "debitHolder"],
+    [/^designers-database/, "designer"],
+    [/photography-studios/, "studio"],
+    [/dining-leisure/, "diner"],
+    [/demat-account/, "investor"],
+    [/dtp-operators/, "dtp"],
     [/contractors/, "contractor"],
     [/credit-card/, "cardHolder"],
     [/customer-support/, "supportExec"],

@@ -83,7 +83,7 @@ export const DATABASE_HUB_FAQS: FaqItem[] = [
   {
     question: "Which Indian state has the most businesses?",
     answer:
-      "Maharashtra, Uttar Pradesh, Tamil Nadu and Gujarat have the largest numbers of registered businesses and GST registrations in India, which is why they are our most requested state databases.",
+      "Large commercial states such as Maharashtra, Uttar Pradesh, Tamil Nadu and Gujarat are among those with the most registered businesses, and they are among our most requested state databases.",
   },
   {
     question: "Can I get a city-wise company database instead of a full state?",

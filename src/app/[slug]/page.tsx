@@ -5,23 +5,26 @@ import { getKeywordImage } from "@/lib/keyword-images";
 import { siteConfig } from "@/lib/site-config";
 import { pageMetadata, breadcrumbJsonLd, webPageJsonLd, faqJsonLd, serviceJsonLd } from "@/lib/seo";
 import { JsonLd } from "@/components/json-ld";
-import { KeywordHero } from "@/components/keyword-hero";
-import { AnswerBox } from "@/components/answer-box";
 import { FeatureGrid } from "@/components/feature-grid";
-import { KeywordVisual } from "@/components/keyword-visual";
-import { Checklist } from "@/components/checklist";
 import { Faq } from "@/components/sections/faq";
 import { RelatedLinks } from "@/components/related-links";
-import { ContactCta } from "@/components/sections/contact-cta";
 import { InlineCta } from "@/components/inline-cta";
 import { Reveal } from "@/components/reveal";
 import { CoverageLinks } from "@/components/coverage-links";
 import { getProductGroup } from "@/lib/product-groups";
 import { SampleDownload } from "@/components/sample-download";
+import { SplitHero, StatStrip, RecordAnatomy, NumberedCards, HowItWorks, ContactSplit } from "@/components/landing/sections";
 
 export const dynamicParams = false;
 
 type Params = Promise<{ slug: string }>;
+
+/** Site-wide figures already stated on the homepage and About page. */
+const STATS = [
+  { value: "50L+", label: "Verified Records" },
+  { value: "700+", label: "Cities Covered" },
+  { value: "2-6 hrs", label: "Typical Delivery" },
+];
 
 export function generateStaticParams() {
   return liveKeywordPages.map((page) => ({ slug: page.slug }));
@@ -53,6 +56,7 @@ export default async function KeywordPage({ params }: { params: Params }) {
   const relatedPages = getKeywordPagesBySlug(page.related ?? []);
   const productGroup = getProductGroup(page.slug);
   const relatedHrefs = new Set(relatedPages.map((p) => `/${p.slug}`));
+  const productName = page.eyebrow.replace(/ India$/, "");
 
   const breadcrumbSchema = breadcrumbJsonLd([
     { name: "Home", url: siteConfig.url },
@@ -77,91 +81,72 @@ export default async function KeywordPage({ params }: { params: Params }) {
     <>
       <JsonLd data={[breadcrumbSchema, webPageSchema, faqSchema, productServiceSchema]} />
 
-      <KeywordHero
+      <SplitHero
+        breadcrumbs={[{ label: "Home", href: "/" }, { label: page.keyword }]}
         eyebrow={page.eyebrow}
         title={page.h1}
-        breadcrumbs={[{ label: "Home", href: "/" }, { label: page.keyword }]}
+        description={page.answer}
+        chips={page.highlights.map((h) => h.title)}
         image={visual.src}
+        source={`${page.slug}-hero-form`}
+        requirement={productName}
+        formTitle={`Get Your ${productName}`}
       />
 
-      <AnswerBox answer={page.answer} />
+      <StatStrip items={STATS} />
 
-      <section className="pt-12 md:pt-16 pb-4 max-w-6xl mx-auto px-5 md:px-8 space-y-4">
-        {page.intro.map((paragraph, i) => (
-          <Reveal key={i} delay={i * 0.06}>
-            <p className="text-muted leading-relaxed">{paragraph}</p>
+      <RecordAnatomy
+        eyebrow="Overview"
+        title={`What You Get with Our ${productName}`}
+        paragraphs={page.intro}
+        fields={page.dataFields ?? page.highlights.map((h) => `${h.title} - ${h.description}`)}
+      />
+
+      <section className="bg-bgsoft py-20 md:py-24">
+        <div className="mx-auto max-w-7xl px-5 md:px-8">
+          <Reveal className="mx-auto mb-12 max-w-2xl text-center">
+            <span className="text-xs font-semibold uppercase tracking-[0.16em] text-teal">Why IndiaB2BData</span>
+            <h2 className="mt-3 font-display text-3xl font-extrabold tracking-tight text-navy md:text-4xl">
+              Built for Accurate, Targeted Outreach
+            </h2>
           </Reveal>
-        ))}
+          <FeatureGrid items={page.highlights} />
+        </div>
       </section>
-
-      <InlineCta id={`${page.slug}-intro-cta`} text={`See real sample records for ${page.keyword} - free, no obligation.`} />
-
-      <SampleDownload slug={page.slug} label={page.keyword} />
-
-      <section className="py-12 md:py-16 max-w-7xl mx-auto px-5 md:px-8">
-        <FeatureGrid items={page.highlights} />
-      </section>
-
-      <KeywordVisual
-        image={visual.src}
-        alt={visual.alt}
-        keyword={page.keyword}
-        ctaId={`${page.slug}-visual-cta`}
-        benefits={page.highlights.slice(0, 3).map((point) => (
-          <div key={point.title} className="flex gap-3">
-            <span className="w-9 h-9 shrink-0 rounded-lg bg-teal/10 text-teal flex items-center justify-center">
-              <point.icon className="w-[18px] h-[18px]" strokeWidth={2} />
-            </span>
-            <div>
-              <p className="font-semibold text-navy text-sm">{point.title}</p>
-              <p className="text-muted text-sm mt-1">{point.description}</p>
-            </div>
-          </div>
-        ))}
-      />
-
-      {page.dataFields && (
-        <section className="py-16 md:py-20">
-          <div className="max-w-6xl mx-auto px-5 md:px-8">
-            <Reveal className="mb-8">
-              <span className="text-teal text-xs font-semibold uppercase tracking-[0.16em]">Data Fields</span>
-              <h2 className="font-display font-extrabold text-2xl md:text-3xl text-navy mt-3 tracking-tight">
-                What Each Record Includes
-              </h2>
-            </Reveal>
-            <Checklist items={page.dataFields} />
-          </div>
-        </section>
-      )}
 
       {page.sections && (
-        <section className="pb-12 md:pb-16 max-w-6xl mx-auto px-5 md:px-8 space-y-12">
+        <section className="mx-auto max-w-5xl space-y-14 px-5 py-20 md:px-8 md:py-24">
           {page.sections.map((section) => (
             <Reveal key={section.heading}>
-              <h2 className="font-display font-extrabold text-2xl md:text-3xl text-navy tracking-tight">
-                {section.heading}
-              </h2>
-              <div className="mt-4 space-y-4">
+              <h2 className="font-display text-2xl font-extrabold tracking-tight text-navy md:text-3xl">{section.heading}</h2>
+              <div className="mt-5 space-y-4">
                 {section.paragraphs.map((paragraph, i) => (
-                  <p key={i} className="text-muted leading-relaxed">
+                  <p key={i} className="leading-relaxed text-muted">
                     {paragraph}
                   </p>
                 ))}
-                {section.subsections?.map((sub) => (
-                  <div key={sub.heading} className="pt-2">
-                    <h3 className="font-display font-bold text-lg text-navy">{sub.heading}</h3>
-                    <p className="mt-1.5 text-muted leading-relaxed">{sub.text}</p>
+                {section.subsections && (
+                  <div className="grid gap-4 pt-2 sm:grid-cols-2">
+                    {section.subsections.map((sub) => (
+                      <div key={sub.heading} className="rounded-2xl border border-[#DCEAF3] bg-white p-5">
+                        <h3 className="font-display text-base font-bold text-navy">{sub.heading}</h3>
+                        <p className="mt-1.5 text-sm leading-relaxed text-muted">{sub.text}</p>
+                      </div>
+                    ))}
                   </div>
-                ))}
+                )}
                 {section.bullets && (
-                  <ul className="list-disc pl-5 space-y-2 text-muted leading-relaxed marker:text-teal">
+                  <ul className="grid gap-3 sm:grid-cols-2">
                     {section.bullets.map((bullet) => (
-                      <li key={bullet}>{bullet}</li>
+                      <li key={bullet} className="flex gap-3 rounded-xl bg-bgsoft p-4 text-sm leading-relaxed text-navy/85">
+                        <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-teal" aria-hidden="true" />
+                        {bullet}
+                      </li>
                     ))}
                   </ul>
                 )}
                 {section.closing?.map((paragraph, i) => (
-                  <p key={`closing-${i}`} className="text-muted leading-relaxed">
+                  <p key={`closing-${i}`} className="leading-relaxed text-muted">
                     {paragraph}
                   </p>
                 ))}
@@ -171,29 +156,20 @@ export default async function KeywordPage({ params }: { params: Params }) {
         </section>
       )}
 
-      <section className="bg-bgsoft py-16 md:py-20">
-        <div className="max-w-6xl mx-auto px-5 md:px-8">
-          <Reveal className="mb-8">
-            <span className="text-teal text-xs font-semibold uppercase tracking-[0.16em]">Common Use Cases</span>
-            <h2 className="font-display font-extrabold text-2xl md:text-3xl text-navy mt-3 tracking-tight">
-              Who Uses This Data
-            </h2>
-          </Reveal>
-          <Checklist items={page.useCases} />
-        </div>
-      </section>
+      <SampleDownload slug={page.slug} label={page.keyword} />
 
-      <InlineCta id={`${page.slug}-usecases-cta`} text={`Need ${page.keyword} filtered to your city or industry?`} buttonLabel="Talk to Our Team" />
-
-      <Faq
-        items={page.faqs}
-        id={`${page.slug}-faq`}
-        eyebrow="FAQs"
-        heading="Frequently Asked Questions"
-        background="white"
+      <NumberedCards
+        eyebrow="Use Cases"
+        title={`How Businesses Use Our ${productName}`}
+        text="Teams across India use this data to reach the right people faster - by phone, email, WhatsApp or SMS."
+        items={page.useCases}
       />
 
-      <InlineCta id={`${page.slug}-faq-cta`} text="Still have questions? Get a free sample and see the data for yourself." />
+      <HowItWorks title={`How We Build & Deliver Your ${productName}`} />
+
+      <InlineCta id={`${page.slug}-process-cta`} text={`Need ${page.keyword} filtered to your city or industry?`} buttonLabel="Talk to Our Team" />
+
+      <Faq items={page.faqs} id={`${page.slug}-faq`} eyebrow="FAQs" heading={`Frequently Asked Questions - ${productName}`} background="white" />
 
       <RelatedLinks pages={relatedPages} eyebrow="Explore More" heading="Related Databases" />
 
@@ -203,7 +179,12 @@ export default async function KeywordPage({ params }: { params: Params }) {
         categoryLinks={productGroup?.siblings.filter((link) => !relatedHrefs.has(link.href))}
       />
 
-      <ContactCta />
+      <ContactSplit
+        title={`Ready to Get Your ${productName}?`}
+        text="Share your target audience, location and quantity - we'll send free sample records and a custom quote."
+        source={`${page.slug}-footer-form`}
+        requirement={productName}
+      />
     </>
   );
 }

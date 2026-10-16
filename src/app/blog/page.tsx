@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import { PageHero } from "@/components/page-hero";
 import { RelatedLinks } from "@/components/related-links";
 import { InlineCta } from "@/components/inline-cta";
-import { ContactCta } from "@/components/sections/contact-cta";
+import { SplitHero, ContactSplit } from "@/components/landing/sections";
 import { JsonLd } from "@/components/json-ld";
 import { getKeywordPagesBySlug } from "@/lib/keyword-pages";
 import { PopularCities } from "@/components/popular-cities";
@@ -66,11 +65,15 @@ export default function BlogHubPage() {
     <>
       <JsonLd data={[breadcrumbSchema, webPageSchema, guideListSchema, faqJsonLd(GUIDES_FAQS)]} />
 
-      <PageHero
+      <SplitHero
         eyebrow="Insights & Guides"
         title="B2B Data Insights & Guides"
         description="Practical guides on B2B databases, GST & company records, business directories and lead generation - written for Indian sales and marketing teams."
         breadcrumbs={breadcrumbItems}
+        chips={["Practical Guides","Compliance Tips","Free Sample Data"]}
+        source="guides-hero-form"
+        requirement="B2B Data Consultation"
+        formTitle="Not Sure Which Data You Need?"
       />
 
       <RelatedLinks pages={guides} eyebrow="Popular Guides" heading="Data & Compliance Guides" />
@@ -83,7 +86,12 @@ export default function BlogHubPage() {
 
       <Faq items={GUIDES_FAQS} id="guides-faq" eyebrow="FAQs" heading="B2B Data Questions, Answered" background="white" />
 
-      <ContactCta />
+      <ContactSplit
+        title="Talk to a B2B Data Specialist"
+        text="Share your target audience, location and quantity - we'll send free sample records and a custom quote."
+        source="guides-footer-form"
+        requirement="B2B Data Consultation"
+      />
     </>
   );
 }

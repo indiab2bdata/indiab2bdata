@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Hero } from "@/components/sections/hero";
 import { TrustStrip } from "@/components/sections/trust-strip";
 import { Products } from "@/components/sections/products";
+import { DataFolders } from "@/components/sections/data-folders";
 import { WhyUs } from "@/components/sections/why-us";
 import { Process } from "@/components/sections/process";
 import { Testimonials } from "@/components/sections/testimonials";
@@ -43,6 +44,7 @@ export default function Home() {
       <Hero />
       <TrustStrip />
       <Products />
+      <DataFolders />
       <InlineCta id="home-products-cta" text="Not sure which data product fits? Tell us what you need." buttonLabel="Talk to Our Team" />
       <SampleDownload slug="b2b-database-india" label="B2B Business Database" />
       <WhyUs />

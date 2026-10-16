@@ -26,6 +26,7 @@ const renamedKeywordRedirects: Record<string, string> = {
   "/doctors-database-india": "/doctors-database",
   "/dealers-database-india": "/dealers-distributors-database-india",
   "/dealers-database": "/dealers-distributors-database-india",
+  "/d-mat-account-holders-database-india": "/demat-account-holders-database-india",
 };
 
 /** URLs from the old static site that Google still has indexed. */

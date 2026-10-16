@@ -115,6 +115,18 @@ const SLUG_TO_GROUP: Record<string, ImageGroup> = {
   "contractors-database-india": "city-skyline",
   "credit-card-holders-database-india": "data-network",
   "customer-support-executives-database-india": "office-team",
+  "debit-card-holders-database-india": "data-network",
+  "designers-database-india": "office-team",
+  "digital-photography-studios-database-india": "support",
+  "dining-leisure-customers-database-india": "city-skyline",
+  "demat-account-holders-database-india": "growth",
+  "dtp-operators-database-india": "documents",
+  "economic-analysts-database-india": "growth",
+  "educational-institutes-database-india": "documents",
+  "bank-employees-database-delhi-ncr": "office-team",
+  "energy-power-sector-database-delhi-ncr": "factory",
+  "engineers-service-engineers-database-india": "factory",
+  "entertainment-media-database-india": "city-skyline",
 };
 
 /** Topic-specific photo per page (CC0, from StockSnap/Rawpixel via Openverse), in /images/topics/<slug>.jpg. */

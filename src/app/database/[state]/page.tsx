@@ -7,13 +7,10 @@ import { siteConfig } from "@/lib/site-config";
 import { cities } from "@/components/city-pages/city-data.mjs";
 import { pageMetadata, breadcrumbJsonLd, webPageJsonLd, faqJsonLd, serviceJsonLd } from "@/lib/seo";
 import { JsonLd } from "@/components/json-ld";
-import { KeywordHero } from "@/components/keyword-hero";
-import { AnswerBox } from "@/components/answer-box";
 import { FeatureGrid } from "@/components/feature-grid";
-import { KeywordVisual } from "@/components/keyword-visual";
 import { Faq } from "@/components/sections/faq";
 import { RelatedLinks } from "@/components/related-links";
-import { ContactCta } from "@/components/sections/contact-cta";
+import { SplitHero, StatStrip, RecordAnatomy, HowItWorks, ContactSplit } from "@/components/landing/sections";
 import { InlineCta } from "@/components/inline-cta";
 import { Reveal } from "@/components/reveal";
 import { MapPin } from "lucide-react";
@@ -96,49 +93,50 @@ export default async function DatabaseStatePage({ params }: { params: Params }) 
     <>
       <JsonLd data={[breadcrumbSchema, webPageSchema, faqSchema, stateServiceSchema]} />
 
-      <KeywordHero
-        eyebrow={page.eyebrow}
-        title={page.h1}
+      <SplitHero
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Database by State", href: "/database" },
           { label: page.name },
         ]}
-      />
-
-      <AnswerBox answer={page.answer} />
-
-      <section className="pt-12 md:pt-16 pb-4 max-w-6xl mx-auto px-5 md:px-8 space-y-4">
-        {page.intro.map((paragraph, i) => (
-          <Reveal key={i} delay={i * 0.06}>
-            <p className="text-muted leading-relaxed">{paragraph}</p>
-          </Reveal>
-        ))}
-      </section>
-
-      <InlineCta id={`database-${page.slug}-intro-cta`} text={`See real sample records for ${page.name} - free, no obligation.`} />
-
-      <section className="py-12 md:py-16 max-w-7xl mx-auto px-5 md:px-8">
-        <FeatureGrid items={page.highlights} />
-      </section>
-
-      <KeywordVisual
+        eyebrow={page.eyebrow}
+        title={page.h1}
+        description={page.answer}
+        chips={page.highlights.map((h) => h.title)}
         image="/images/keywords/city-skyline.jpg"
-        alt={`City skyline representing business coverage across ${page.name}`}
-        keyword={`${page.name} B2B Database`}
-        ctaId={`database-${page.slug}-visual-cta`}
-        benefits={page.highlights.slice(0, 3).map((point) => (
-          <div key={point.title} className="flex gap-3">
-            <span className="w-9 h-9 shrink-0 rounded-lg bg-teal/10 text-teal flex items-center justify-center">
-              <point.icon className="w-[18px] h-[18px]" strokeWidth={2} />
-            </span>
-            <div>
-              <p className="font-semibold text-navy text-sm">{point.title}</p>
-              <p className="text-muted text-sm mt-1">{point.description}</p>
-            </div>
-          </div>
-        ))}
+        source={`database-${page.slug}-hero-form`}
+        requirement={`${page.name} B2B Database`}
+        formTitle={`Get Your ${page.name} Business Data`}
       />
+
+      <StatStrip
+        items={[
+          { value: `${page.cities.length + page.moreCities}+`, label: `Cities in ${page.name}` },
+          { value: "500+", label: "Industry Categories" },
+          { value: "2-6 hrs", label: "Typical Delivery" },
+        ]}
+      />
+
+      <RecordAnatomy
+        eyebrow="Overview"
+        title={`Business Contacts Across ${page.name}`}
+        paragraphs={page.intro}
+        fields={[
+          "Company / business name",
+          "Contact person and designation",
+          "Mobile number (DND-scrubbed)",
+          "Email ID, where available",
+          "Industry and business category",
+          `Address, city and pincode across ${page.name}`,
+          "GSTIN, where available",
+        ]}
+      />
+
+      <section className="bg-bgsoft py-20 md:py-24">
+        <div className="mx-auto max-w-7xl px-5 md:px-8">
+          <FeatureGrid items={page.highlights} />
+        </div>
+      </section>
 
       <section className="bg-bgsoft py-16 md:py-20">
         <div className="max-w-6xl mx-auto px-5 md:px-8">
@@ -238,7 +236,14 @@ export default async function DatabaseStatePage({ params }: { params: Params }) 
 
       <RelatedLinks pages={relatedKeywordPages} eyebrow="Related Databases" heading="Explore More Data Products" />
 
-      <ContactCta />
+      <HowItWorks title={`How We Build Your ${page.name} Database`} />
+
+      <ContactSplit
+        title={`Ready to Reach Businesses in ${page.name}?`}
+        text="Share your target city, industry and quantity - we'll send free sample records and a custom quote."
+        source={`database-${page.slug}-footer-form`}
+        requirement={`${page.name} B2B Database`}
+      />
     </>
   );
 }

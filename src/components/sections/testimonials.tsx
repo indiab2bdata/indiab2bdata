@@ -1,7 +1,7 @@
-import { Quote } from "lucide-react";
 import { Reveal } from "@/components/reveal";
+import TestimonialMarquee, { type TestimonialCard } from "@/components/ui/testimonial-marquee";
 
-const TESTIMONIALS = [
+const TESTIMONIALS: TestimonialCard[] = [
   {
     quote:
       "Connect rate on our tele-calling improved a lot after we switched - numbers were genuinely active.",
@@ -30,37 +30,15 @@ const TESTIMONIALS = [
 
 export function Testimonials() {
   return (
-    <section className="py-20 md:py-28 max-w-7xl mx-auto px-5 md:px-8">
-      <Reveal className="max-w-2xl mb-14">
-        <span className="text-teal text-xs font-semibold uppercase tracking-[0.16em]">
-          Client Feedback
-        </span>
+    <section className="bg-bgsoft py-20 md:py-28">
+      <Reveal className="mx-auto mb-12 max-w-2xl px-5 text-center md:px-8">
+        <span className="text-teal text-xs font-semibold uppercase tracking-[0.16em]">Client Feedback</span>
         <h2 className="font-display font-extrabold text-3xl md:text-4xl text-navy mt-3 tracking-tight">
           What Our Clients Say
         </h2>
       </Reveal>
 
-      <div className="grid md:grid-cols-3 gap-6 md:gap-8">
-        {TESTIMONIALS.map((t, i) => (
-          <Reveal key={t.name} delay={i * 0.1}>
-            <div className="h-full bg-white rounded-2xl p-7 border border-[#DCEAF3] shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
-              <Quote className="w-7 h-7 text-teal/25" strokeWidth={1.5} fill="currentColor" />
-              <p className="text-navy/80 text-sm leading-relaxed mt-3">&ldquo;{t.quote}&rdquo;</p>
-              <div className="flex items-center gap-3 mt-6">
-                <span
-                  className={`w-10 h-10 rounded-full ${t.color} text-white flex items-center justify-center font-display font-bold text-sm ring-2 ring-offset-2 ring-teal/20`}
-                >
-                  {t.initials}
-                </span>
-                <div>
-                  <p className="font-semibold text-navy text-sm">{t.name}</p>
-                  <p className="text-muted text-xs">{t.role}</p>
-                </div>
-              </div>
-            </div>
-          </Reveal>
-        ))}
-      </div>
+      <TestimonialMarquee row1={TESTIMONIALS} row2={[...TESTIMONIALS].reverse()} />
     </section>
   );
 }
