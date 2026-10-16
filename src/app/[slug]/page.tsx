@@ -88,6 +88,7 @@ export default async function KeywordPage({ params }: { params: Params }) {
         description={page.answer}
         chips={page.highlights.map((h) => h.title)}
         image={visual.src}
+        imageAlt={visual.alt}
         source={`${page.slug}-hero-form`}
         requirement={productName}
         formTitle={`Get Your ${productName}`}

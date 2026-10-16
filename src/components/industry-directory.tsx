@@ -98,7 +98,7 @@ function ProductCard({
   const visual = showImage ? getKeywordImage(href.slice(1), `${label} database India`) : null;
   return (
     <div className="ind-card">
-      {visual && <Image src={visual.src} alt={visual.alt} fill sizes="(min-width: 1280px) 360px, (min-width: 640px) 50vw, 90vw" className="ind-card-bg" />}
+      {visual && <Image src={visual.src} alt={visual.alt} fill sizes="(min-width: 1280px) 360px, (min-width: 640px) 50vw, 90vw" className="ind-card-bg" style={{ objectFit: "cover" }} />}
       <div aria-hidden="true" className="ind-card-fade" />
       <span className="ind-card-num">{String(index + 1).padStart(2, "0")}</span>
       <Link href={href} className="ind-card-link">
@@ -203,7 +203,7 @@ export function IndustryDirectory({ descriptions = {} }: { descriptions?: Record
             <div className="grid gap-6 lg:grid-cols-[300px_minmax(0,1fr)]">
               {meta && (
                 <div className="relative isolate flex min-h-[240px] flex-col justify-end overflow-hidden rounded-2xl bg-navy-dark p-7 lg:min-h-full">
-                  <Image src={meta.image} alt={meta.alt} fill sizes="(min-width: 1024px) 300px, 100vw" className="-z-10 object-cover opacity-55" />
+                  <Image src={meta.image} alt={meta.alt} fill sizes="(min-width: 1024px) 300px, 100vw" className="-z-10 object-cover opacity-55" style={{ objectFit: "cover" }} />
                   <div className="absolute inset-0 -z-10 bg-gradient-to-t from-navy-dark via-navy-dark/80 to-navy-dark/30" />
                   <p className="text-xs font-semibold uppercase tracking-[0.16em] text-teal-light">
                     {group.links.length} {group.links.length === 1 ? "database" : "databases"}

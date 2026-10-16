@@ -104,6 +104,7 @@ export default async function DatabaseStatePage({ params }: { params: Params }) 
         description={page.answer}
         chips={page.highlights.map((h) => h.title)}
         image="/images/keywords/city-skyline.jpg"
+        imageAlt={`City skyline representing business coverage across ${page.name}`}
         source={`database-${page.slug}-hero-form`}
         requirement={`${page.name} B2B Database`}
         formTitle={`Get Your ${page.name} Business Data`}

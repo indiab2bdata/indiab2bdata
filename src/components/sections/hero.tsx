@@ -75,6 +75,7 @@ export function Hero() {
         fetchPriority="high"
         sizes="100vw"
         className="object-cover"
+        style={{ objectFit: "cover" }}
       />
       <HeroVideo />
 

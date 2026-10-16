@@ -30,6 +30,7 @@ export function SplitHero({
   description,
   chips,
   image,
+  imageAlt,
   source,
   requirement,
   formTitle,
@@ -40,13 +41,14 @@ export function SplitHero({
   description: string;
   chips: string[];
   image?: string;
+  imageAlt?: string;
   source: string;
   requirement: string;
   formTitle?: string;
 }) {
   return (
     <section className="relative overflow-hidden mesh-navy pb-16 pt-28 md:pb-20 md:pt-36">
-      <HeroBackground image={image} />
+      <HeroBackground image={image} alt={imageAlt} />
       <div className="relative mx-auto grid max-w-7xl items-center gap-10 px-5 md:px-8 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)] lg:gap-14">
         <div>
           <Breadcrumbs items={breadcrumbs} />
