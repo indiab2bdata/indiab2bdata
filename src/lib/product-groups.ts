@@ -1,4 +1,4 @@
-/** The 64 live data products, grouped for footer navigation. Labels are descriptive, not exact-match keywords. */
+/** The 65 live data products, grouped for footer navigation. Labels are descriptive, not exact-match keywords. */
 export const PRODUCT_GROUPS: { heading: string; links: { href: string; label: string }[] }[] = [
   {
     heading: "General",
@@ -43,6 +43,7 @@ export const PRODUCT_GROUPS: { heading: string; links: { href: string; label: st
       { href: "/digital-photography-studios-database-india", label: "Photography Studios" },
       { href: "/energy-power-sector-database-delhi-ncr", label: "Energy & Power (Delhi NCR)" },
       { href: "/entertainment-media-database-india", label: "Entertainment & Media" },
+      { href: "/event-management-organisers-database-india", label: "Event Organisers" },
     ],
   },
   {

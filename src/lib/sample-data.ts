@@ -47,7 +47,8 @@ export type SampleProfile =
   | "banker"
   | "energy"
   | "serviceEngineer"
-  | "media";
+  | "media"
+  | "eventOrganiser";
 
 const NAMES = ["Rahul Sharma", "Priya Mehta", "Amit Verma", "Sneha Iyer", "Vikram Singh", "Neha Gupta", "Arjun Reddy", "Kavita Joshi", "Rohan Das", "Pooja Nair", "Sanjay Patel", "Anjali Rao"];
 const COMPANIES = ["Sample Tech Pvt Ltd", "Demo Industries", "Example Traders", "Test Solutions LLP", "Dummy Enterprises", "Placeholder Exports", "Mock Infra Pvt Ltd", "Specimen Foods", "Trial Textiles", "Prototype Pharma"];
@@ -116,12 +117,14 @@ const PROFILES: Record<SampleProfile, Column[]> = {
   energy: [company, ["Segment", (c) => pick(["Solar EPC", "Distribution", "Transmission", "Electrical Contractor", "Equipment Dealer", "Energy Consultant"], c.i)], ["Company Type", (c) => pick(["Private", "PSU", "EPC Contractor", "Dealer", "Consultant"], c.i)], ["Decision Maker", (c) => c.name], ["Designation", (c) => pick(["Director", "Project Head", "Procurement Manager", "Chief Engineer"], c.i)], phone, mail, ["City", (c) => pick(["Delhi", "Noida", "Gurgaon", "Ghaziabad", "Faridabad", "Greater Noida"], c.i)], ["State", (c) => pick(["Delhi", "Uttar Pradesh", "Haryana", "Uttar Pradesh", "Haryana", "Uttar Pradesh"], c.i)]],
   serviceEngineer: [["Engineer Name", (c) => c.name], ["Discipline", (c) => pick(["Mechanical", "Electrical", "Electronics", "HVAC", "IT Hardware", "Biomedical"], c.i)], ["Designation", (c) => pick(["Service Engineer", "Field Engineer", "Maintenance Engineer", "Service Manager"], c.i)], industry, ["Experience (Yrs)", (c) => String(1 + (c.i % 15))], phone, mail, ...loc],
   media: [company, ["Segment", (c) => pick(["Film / TV Production", "OTT", "Advertising Agency", "Digital Agency", "Print / Publishing", "Events"], c.i)], ["Decision Maker", (c) => c.name], ["Designation", (c) => pick(["Founder", "Producer", "Creative Director", "Head of Marketing"], c.i)], phone, mail, ["Website", (c) => `www.example${c.i + 1}.com`], ...loc],
+  eventOrganiser: [["Company / Organiser", (c) => `Sample Events ${c.i + 1}`], ["Decision Maker", (c) => c.name], ["Designation", (c) => pick(["Founder", "Owner", "Event Head", "Director"], c.i)], ["Specialisation", (c) => pick(["Corporate & MICE", "Wedding", "Exhibition", "Concert", "Social Events"], c.i)], phone, mail, ["Website", (c) => `www.example${c.i + 1}.in`], ...loc],
   domain: [["Domain Name", (c) => `example${c.i + 1}.in`], ["Registrant Name", (c) => c.name], ["Registrant Org", (c) => c.company], ["Created Date", (c) => `2026-0${1 + (c.i % 9)}-0${1 + (c.i % 9)}`], ["Registrar", () => "Sample Registrar"], phone, mail, ...loc],
 };
 
 /** Map a page slug to the column format that product actually ships with. */
 export function sampleProfileFor(slug: string): SampleProfile {
   const rules: [RegExp, SampleProfile][] = [
+    [/event-management/, "eventOrganiser"],
     [/energy-power/, "energy"],
     [/service-engineers/, "serviceEngineer"],
     [/entertainment-media/, "media"],

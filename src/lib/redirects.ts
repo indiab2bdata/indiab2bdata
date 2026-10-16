@@ -26,6 +26,8 @@ const renamedKeywordRedirects: Record<string, string> = {
   "/doctors-database-india": "/doctors-database",
   "/dealers-database-india": "/dealers-distributors-database-india",
   "/dealers-database": "/dealers-distributors-database-india",
+  "/exporters-database-india": "/importers-exporters-database-india",
+  "/exporters-database": "/importers-exporters-database-india",
   "/d-mat-account-holders-database-india": "/demat-account-holders-database-india",
 };
 

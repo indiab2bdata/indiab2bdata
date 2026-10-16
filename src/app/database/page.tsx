@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowUpRight, MapPinned } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
+import { StateLandmarkIcon, stateLandmarkColor, stateLandmarkName } from "@/components/icons/state-landmarks";
 import { Reveal } from "@/components/reveal";
 import { RelatedLinks } from "@/components/related-links";
 import { InlineCta } from "@/components/inline-cta";
@@ -93,21 +94,27 @@ export default function DatabaseHubPage() {
             <Reveal key={state.slug} delay={(i % 4) * 0.08}>
               <Link
                 href={`/database/${state.slug}`}
-                className="group relative h-full flex flex-col bg-white rounded-2xl p-7 border border-[#DCEAF3] shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-teal/40 overflow-hidden"
+                style={{ "--sc": stateLandmarkColor(state.slug) } as React.CSSProperties}
+                className="group relative h-full flex flex-col bg-white rounded-2xl p-7 border border-[#DCEAF3] shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_-18px_var(--sc)] hover:border-[color-mix(in_srgb,var(--sc)_45%,white)] overflow-hidden"
               >
+                {/* each state carries its own accent colour: top bar, glow, icon tile, caption and link */}
+                <span className="absolute inset-x-0 top-0 h-1 bg-[var(--sc)]" aria-hidden="true" />
                 <div
-                  className="absolute -top-16 -right-16 w-32 h-32 rounded-full bg-teal/10 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                  className="absolute -top-16 -right-16 w-36 h-36 rounded-full bg-[color-mix(in_srgb,var(--sc)_22%,transparent)] blur-2xl opacity-60 group-hover:opacity-100 transition-opacity duration-300"
                   aria-hidden="true"
                 />
-                <div className="relative w-12 h-12 rounded-xl bg-teal/10 text-teal flex items-center justify-center mb-5 transition-colors group-hover:bg-teal group-hover:text-white">
-                  <MapPinned className="w-6 h-6" strokeWidth={1.6} />
+                <div className="relative w-14 h-14 rounded-xl bg-[color-mix(in_srgb,var(--sc)_13%,white)] text-[var(--sc)] ring-1 ring-[color-mix(in_srgb,var(--sc)_25%,white)] flex items-center justify-center mb-5 transition-colors duration-300 group-hover:bg-[var(--sc)] group-hover:text-white">
+                  <StateLandmarkIcon state={state.slug} className="w-8 h-8" aria-hidden="true" />
                 </div>
                 <h3 className="relative font-display font-bold text-lg text-navy">{state.name}</h3>
+                {stateLandmarkName(state.slug) && (
+                  <p className="relative mt-0.5 text-[11px] font-semibold uppercase tracking-[0.12em] text-[var(--sc)]">{stateLandmarkName(state.slug)}</p>
+                )}
                 <p className="relative mt-2 text-sm text-muted leading-relaxed flex-1">
                   {state.cities.slice(0, 3).join(", ")}
                   {state.moreCities > 0 ? ` +${state.cities.length - 3 + state.moreCities} more` : ""}
                 </p>
-                <span className="relative mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-teal">
+                <span className="relative mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-[var(--sc)]">
                   View Database
                   <ArrowUpRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                 </span>
