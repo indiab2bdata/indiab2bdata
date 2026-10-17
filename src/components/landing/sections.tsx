@@ -101,7 +101,7 @@ export function RecordAnatomy({
 }: {
   eyebrow: string;
   title: string;
-  paragraphs: string[];
+  paragraphs: React.ReactNode[];
   fields: string[];
   cardTitle?: string;
 }) {

@@ -22,6 +22,14 @@ const CONTENT_UPDATED = {
   cityPages: "2026-10-07",
 } as const;
 
+const KEYWORD_CONTENT_UPDATED: Record<string, string> = {
+  "facebook-users-database-india": "2026-10-17",
+  "females-database-india": "2026-10-17",
+  "fabric-clothing-stores-database-india": "2026-10-17",
+  "female-consumer-bangalore-database": "2026-10-17",
+  "financial-analysts-managers-industry-database": "2026-10-17",
+};
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = (
     ["", "/about", "/privacy-policy", "/terms-and-conditions", "/database", "/blog", "/contact"] as const
@@ -32,7 +40,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const keywordRoutes = liveKeywordPages.map((page) => ({
     url: `${siteConfig.url}/${page.slug}`,
-    lastModified: CONTENT_UPDATED.keywordPages,
+    lastModified: KEYWORD_CONTENT_UPDATED[page.slug] ?? CONTENT_UPDATED.keywordPages,
   }));
 
   const databaseRoutes = databaseStates.map((state) => ({

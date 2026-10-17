@@ -48,7 +48,12 @@ export type SampleProfile =
   | "energy"
   | "serviceEngineer"
   | "media"
-  | "eventOrganiser";
+  | "eventOrganiser"
+  | "clothingStore"
+  | "socialUser"
+  | "female"
+  | "bangaloreFemale"
+  | "financialProfessional";
 
 const NAMES = ["Rahul Sharma", "Priya Mehta", "Amit Verma", "Sneha Iyer", "Vikram Singh", "Neha Gupta", "Arjun Reddy", "Kavita Joshi", "Rohan Das", "Pooja Nair", "Sanjay Patel", "Anjali Rao"];
 const COMPANIES = ["Sample Tech Pvt Ltd", "Demo Industries", "Example Traders", "Test Solutions LLP", "Dummy Enterprises", "Placeholder Exports", "Mock Infra Pvt Ltd", "Specimen Foods", "Trial Textiles", "Prototype Pharma"];
@@ -75,6 +80,28 @@ const industry: Column = ["Industry", (c) => c.industry];
 const designation: Column = ["Designation", (c) => pick(["Owner", "Director", "Purchase Manager", "Sales Head", "Partner", "Proprietor"], c.i)];
 
 const PROFILES: Record<SampleProfile, Column[]> = {
+  bangaloreFemale: [
+    ["Name", (c) => pick(["Priya Mehta", "Sneha Iyer", "Neha Gupta", "Kavita Joshi", "Pooja Nair", "Anjali Rao"], c.i)],
+    phone,
+    ["Email ID", (c) => `consumer${c.i + 1}@example.com`],
+    ["Age Band", (c) => pick(["18-25", "26-35", "36-45", "46-60"], c.i)],
+    ["Occupation", (c) => pick(["Homemaker", "Salaried", "Self-Employed", "Student", "Business Owner"], c.i)],
+    ["Interest", (c) => pick(["Fashion", "Beauty", "Fitness", "Education", "Shopping"], c.i)],
+    ["Locality", (c) => pick(["Whitefield", "Indiranagar", "Koramangala", "HSR Layout", "Jayanagar", "JP Nagar", "Electronic City"], c.i)],
+    ["City", () => "Bengaluru"],
+    ["State", () => "Karnataka"],
+    ["Pincode", () => "560XXX"],
+  ],
+  financialProfessional: [
+    person,
+    ["Designation", (c) => pick(["Financial Analyst", "Finance Manager", "FP&A Analyst", "Financial Controller", "Credit Analyst", "Treasury Manager"], c.i)],
+    company,
+    ["Industry", (c) => pick(["Banking", "Manufacturing", "IT Services", "Investment Services", "NBFC", "Consulting"], c.i)],
+    ["Organisation Type", (c) => pick(["Bank", "Corporate", "Corporate", "Investment Firm", "NBFC", "Consulting Firm"], c.i)],
+    ["Specialisation", (c) => pick(["Financial Analysis", "Budgeting", "Planning & Analysis", "Financial Reporting", "Credit Research", "Treasury"], c.i)],
+    ["Experience (Yrs)", (c) => String(2 + (c.i % 15))],
+    phone, mail, ...loc,
+  ],
   business: [company, person, designation, phone, mail, industry, ["Address", (c) => `Plot XX, Sample Area, ${c.city}`], ...loc],
   email: [person, designation, company, mail, ["Website", (c) => `www.example${c.i + 1}.com`], industry, ...loc],
   whatsapp: [person, company, ["WhatsApp Number", (c) => `+91 ${mobile(c)}`], industry, ...loc],
@@ -118,13 +145,21 @@ const PROFILES: Record<SampleProfile, Column[]> = {
   serviceEngineer: [["Engineer Name", (c) => c.name], ["Discipline", (c) => pick(["Mechanical", "Electrical", "Electronics", "HVAC", "IT Hardware", "Biomedical"], c.i)], ["Designation", (c) => pick(["Service Engineer", "Field Engineer", "Maintenance Engineer", "Service Manager"], c.i)], industry, ["Experience (Yrs)", (c) => String(1 + (c.i % 15))], phone, mail, ...loc],
   media: [company, ["Segment", (c) => pick(["Film / TV Production", "OTT", "Advertising Agency", "Digital Agency", "Print / Publishing", "Events"], c.i)], ["Decision Maker", (c) => c.name], ["Designation", (c) => pick(["Founder", "Producer", "Creative Director", "Head of Marketing"], c.i)], phone, mail, ["Website", (c) => `www.example${c.i + 1}.com`], ...loc],
   eventOrganiser: [["Company / Organiser", (c) => `Sample Events ${c.i + 1}`], ["Decision Maker", (c) => c.name], ["Designation", (c) => pick(["Founder", "Owner", "Event Head", "Director"], c.i)], ["Specialisation", (c) => pick(["Corporate & MICE", "Wedding", "Exhibition", "Concert", "Social Events"], c.i)], phone, mail, ["Website", (c) => `www.example${c.i + 1}.in`], ...loc],
+  clothingStore: [["Shop / Business Name", (c) => `Sample Fabrics ${c.i + 1}`], ["Owner Name", (c) => c.name], ["Store Type", (c) => pick(["Fabric / Cloth", "Saree & Suits", "Readymade Garments", "Boutique", "Wholesale"], c.i)], phone, mail, ["GSTIN", (c) => `27XXXXX${1000 + c.i}X1ZX`], ...loc],
+  socialUser: [["Name", (c) => c.name], phone, mail, ["Age Band", (c) => pick(["18-25", "26-35", "36-45", "46-60"], c.i)], ["Gender", (c) => pick(["Male", "Female"], c.i)], ["Interest", (c) => pick(["Shopping", "Travel", "Food", "Fitness", "Finance", "Education"], c.i)], ...loc],
+  female: [["Name", (c) => c.name], phone, mail, ["Age Band", (c) => pick(["18-25", "26-35", "36-45", "46-60"], c.i)], ["Occupation", (c) => pick(["Homemaker", "Salaried", "Self-Employed", "Student", "Business Owner"], c.i)], ["Interest", (c) => pick(["Fashion", "Beauty", "Health", "Finance", "Education"], c.i)], ...loc],
   domain: [["Domain Name", (c) => `example${c.i + 1}.in`], ["Registrant Name", (c) => c.name], ["Registrant Org", (c) => c.company], ["Created Date", (c) => `2026-0${1 + (c.i % 9)}-0${1 + (c.i % 9)}`], ["Registrar", () => "Sample Registrar"], phone, mail, ...loc],
 };
 
 /** Map a page slug to the column format that product actually ships with. */
 export function sampleProfileFor(slug: string): SampleProfile {
   const rules: [RegExp, SampleProfile][] = [
+    [/^female-consumer-bangalore-database$/, "bangaloreFemale"],
+    [/^financial-analysts-managers-industry-database$/, "financialProfessional"],
     [/event-management/, "eventOrganiser"],
+    [/fabric-clothing/, "clothingStore"],
+    [/facebook-users/, "socialUser"],
+    [/females/, "female"],
     [/energy-power/, "energy"],
     [/service-engineers/, "serviceEngineer"],
     [/entertainment-media/, "media"],

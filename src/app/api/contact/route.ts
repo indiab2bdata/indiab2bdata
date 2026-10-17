@@ -119,6 +119,10 @@ export async function POST(request: Request) {
       host: smtpHost,
       port: smtpPort,
       secure: smtpPort === 465,
+      // fail fast instead of hanging the visitor's request for over a minute
+      connectionTimeout: 10_000,
+      greetingTimeout: 10_000,
+      socketTimeout: 15_000,
       auth: {
         user: smtpUser,
         pass: smtpPass,

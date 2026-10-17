@@ -1,4 +1,4 @@
-/** The 65 live data products, grouped for footer navigation. Labels are descriptive, not exact-match keywords. */
+/** Live data products, grouped for footer navigation. Labels are descriptive, not exact-match keywords. */
 export const PRODUCT_GROUPS: { heading: string; links: { href: string; label: string }[] }[] = [
   {
     heading: "General",
@@ -44,6 +44,7 @@ export const PRODUCT_GROUPS: { heading: string; links: { href: string; label: st
       { href: "/energy-power-sector-database-delhi-ncr", label: "Energy & Power (Delhi NCR)" },
       { href: "/entertainment-media-database-india", label: "Entertainment & Media" },
       { href: "/event-management-organisers-database-india", label: "Event Organisers" },
+      { href: "/fabric-clothing-stores-database-india", label: "Fabric & Clothing Stores" },
     ],
   },
   {
@@ -66,6 +67,7 @@ export const PRODUCT_GROUPS: { heading: string; links: { href: string; label: st
       { href: "/designers-database-india", label: "Designers" },
       { href: "/dtp-operators-database-india", label: "DTP Operators" },
       { href: "/economic-analysts-database-india", label: "Economic Analysts" },
+      { href: "/financial-analysts-managers-industry-database", label: "Financial Analysts / Managers / Industry" },
       { href: "/bank-employees-database-delhi-ncr", label: "Bank Employees (Delhi NCR)" },
       { href: "/engineers-service-engineers-database-india", label: "Engineers & Service Engineers" },
     ],
@@ -92,6 +94,9 @@ export const PRODUCT_GROUPS: { heading: string; links: { href: string; label: st
       { href: "/debit-card-holders-database-india", label: "Debit Card Holders" },
       { href: "/demat-account-holders-database-india", label: "Demat Account Holders" },
       { href: "/dining-leisure-customers-database-india", label: "Dining & Leisure Customers" },
+      { href: "/facebook-users-database-india", label: "Social Media Users" },
+      { href: "/females-database-india", label: "Women Consumers" },
+      { href: "/female-consumer-bangalore-database", label: "Female Consumers (Bangalore)" },
     ],
   },
   {

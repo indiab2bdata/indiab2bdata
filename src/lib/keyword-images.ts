@@ -128,6 +128,11 @@ const SLUG_TO_GROUP: Record<string, ImageGroup> = {
   "engineers-service-engineers-database-india": "factory",
   "entertainment-media-database-india": "city-skyline",
   "event-management-organisers-database-india": "handshake",
+  "fabric-clothing-stores-database-india": "warehouse",
+  "facebook-users-database-india": "data-network",
+  "females-database-india": "office-team",
+  "female-consumer-bangalore-database": "city-skyline",
+  "financial-analysts-managers-industry-database": "documents",
 };
 
 /** Topic-specific photo per page (CC0, from StockSnap/Rawpixel via Openverse), in /images/topics/<slug>.jpg. */

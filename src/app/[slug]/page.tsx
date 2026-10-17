@@ -7,9 +7,11 @@ import { pageMetadata, breadcrumbJsonLd, webPageJsonLd, faqJsonLd, serviceJsonLd
 import { JsonLd } from "@/components/json-ld";
 import { FeatureGrid } from "@/components/feature-grid";
 import { Faq } from "@/components/sections/faq";
+import { Testimonials } from "@/components/sections/testimonials";
 import { RelatedLinks } from "@/components/related-links";
 import { InlineCta } from "@/components/inline-cta";
 import { Reveal } from "@/components/reveal";
+import { LinkedText } from "@/components/linked-text";
 import { CoverageLinks } from "@/components/coverage-links";
 import { getProductGroup } from "@/lib/product-groups";
 import { SampleDownload } from "@/components/sample-download";
@@ -99,7 +101,7 @@ export default async function KeywordPage({ params }: { params: Params }) {
       <RecordAnatomy
         eyebrow="Overview"
         title={`What You Get with Our ${productName}`}
-        paragraphs={page.intro}
+        paragraphs={page.intro.map((text, index) => <LinkedText key={index} text={text} links={page.contentLinks} />)}
         fields={page.dataFields ?? page.highlights.map((h) => `${h.title} - ${h.description}`)}
       />
 
@@ -123,7 +125,7 @@ export default async function KeywordPage({ params }: { params: Params }) {
               <div className="mt-5 space-y-4">
                 {section.paragraphs.map((paragraph, i) => (
                   <p key={i} className="leading-relaxed text-muted">
-                    {paragraph}
+                    <LinkedText text={paragraph} links={page.contentLinks} />
                   </p>
                 ))}
                 {section.subsections && (
@@ -148,7 +150,7 @@ export default async function KeywordPage({ params }: { params: Params }) {
                 )}
                 {section.closing?.map((paragraph, i) => (
                   <p key={`closing-${i}`} className="leading-relaxed text-muted">
-                    {paragraph}
+                    <LinkedText text={paragraph} links={page.contentLinks} />
                   </p>
                 ))}
               </div>
@@ -169,6 +171,8 @@ export default async function KeywordPage({ params }: { params: Params }) {
       <HowItWorks title={`How We Build & Deliver Your ${productName}`} />
 
       <InlineCta id={`${page.slug}-process-cta`} text={`Need ${page.keyword} filtered to your city or industry?`} buttonLabel="Talk to Our Team" />
+
+      {page.showTestimonials && <Testimonials />}
 
       <Faq items={page.faqs} id={`${page.slug}-faq`} eyebrow="FAQs" heading={`Frequently Asked Questions - ${productName}`} background="white" />
 

@@ -36,6 +36,7 @@ import {
 import { retiredKeywordRedirects } from "@/lib/redirects";
 
 export type KeywordFaq = { question: string; answer: string };
+export type KeywordContentLink = { text: string; href: string };
 export type KeywordHighlight = { icon: LucideIcon; title: string; description: string };
 export type KeywordSection = {
   heading: string;
@@ -58,6 +59,8 @@ export type KeywordPage = {
   /** Short, direct, quotable answer for AEO/GEO - the first thing a reader (or an AI answer engine) sees. */
   answer: string;
   intro: string[];
+  /** Explicit phrases to link within the introduction and section paragraphs. */
+  contentLinks?: KeywordContentLink[];
   highlights: KeywordHighlight[];
   useCases: string[];
   faqs: KeywordFaq[];
@@ -65,6 +68,8 @@ export type KeywordPage = {
   dataFields?: string[];
   /** Long-form H2 sections for topical depth. */
   sections?: KeywordSection[];
+  /** Show the existing site-wide client testimonials on this page. */
+  showTestimonials?: boolean;
   /** Hand-picked related slugs; falls back to the first few pages when omitted. */
   related?: string[];
 };
@@ -6435,6 +6440,7 @@ export const keywordPages: KeywordPage[] = [
       { question: "Can I see a sample?", answer: "Yes. Download the sample format on this page or request real sample records." },
     ],
     related: [
+      "financial-analysts-managers-industry-database",
       "business-analysts-database-india",
       "chief-managers-database-india",
       "ceo-cfo-cmo-it-heads-database-india",
@@ -6908,6 +6914,431 @@ export const keywordPages: KeywordPage[] = [
       "designers-database-india",
       "beauty-parlours-salons-spa-database-india",
       "company-proprietors-database-india",
+    ],
+  },
+  {
+    slug: "fabric-clothing-stores-database-india",
+    keyword: "fabric clothing stores database India",
+    title: "Fabric & Clothing Stores Database India | Garment Shops List",
+    metaDescription:
+      "Fabric and clothing stores database in India - cloth merchants, saree and suit shops, readymade garment showrooms and boutiques with owner contacts, city-wise. Free sample.",
+    eyebrow: "Fabric & Clothing Stores Database",
+    showTestimonials: true,
+    h1: "Fabric / Clothing Stores Database in India",
+    answer:
+      "A fabric and clothing stores database lists cloth and apparel retailers in India - fabric and cloth merchants, saree and suit shops, readymade garment showrooms, boutiques and wholesale cloth traders - with shop name, owner name, store type, contact details and city. IndiaB2BData.com supplies city-wise clothing store data for textile mills, wholesalers and brands.",
+    intro: [
+      "India's clothing trade runs through lakhs of retail and wholesale stores - cloth markets in Surat, Ludhiana, Delhi's Chandni Chowk and Kolkata's Burrabazar, saree shops in Varanasi and Kanchipuram, and readymade garment showrooms in every town. These stores buy from mills, wholesalers and brands season after season.",
+      "Our fabric and clothing stores database helps suppliers reach store owners directly, filtered by store type and city. For export-focused manufacturers, see our apparel and garments exporters database.",
+      "To expand beyond retail stores, explore our manufacturer database for production businesses and our dealers and distributors database for wholesale and channel partners.",
+    ],
+    contentLinks: [
+      { text: "apparel and garments exporters database", href: "/apparel-garments-exporters-database-india" },
+      { text: "manufacturer database", href: "/manufacturer-database-india" },
+      { text: "dealers and distributors database", href: "/dealers-distributors-database-india" },
+      { text: "company proprietors database", href: "/company-proprietors-database-india" },
+      { text: "women consumers database", href: "/females-database-india" },
+    ],
+    highlights: [
+      { icon: Sparkles, title: "All Store Types", description: "Fabric, sarees, readymade, boutiques, wholesale." },
+      { icon: UserCheck, title: "Owner Contacts", description: "Shop owners and proprietors." },
+      { icon: Filter, title: "Store-Type Filters", description: "Pick retail, wholesale or segment." },
+      { icon: MapPinned, title: "City-Wise", description: "Textile hubs, metros and tier-2 towns." },
+    ],
+    dataFields: [
+      "Shop / business name",
+      "Owner or proprietor name",
+      "Store type: fabric, saree & suits, readymade garments, boutique or wholesale",
+      "Mobile number and email ID, where available",
+      "GSTIN and shop address, where available",
+      "City, state and pincode",
+    ],
+    sections: [
+      {
+        heading: "Store Types Covered",
+        paragraphs: [],
+        subsections: [
+          { heading: "Fabric & Cloth Merchants", text: "Shirting, suiting, dress material and cloth retailers and wholesalers." },
+          { heading: "Saree & Ethnic Wear Shops", text: "Saree, suit, lehenga and ethnic wear stores." },
+          { heading: "Readymade Garment Showrooms", text: "Men's, women's and kids' wear showrooms and multi-brand outlets." },
+          { heading: "Boutiques & Tailoring Shops", text: "Designer boutiques and tailoring and stitching shops." },
+        ],
+      },
+      {
+        heading: "Who Uses a Clothing Stores Database?",
+        paragraphs: [],
+        bullets: [
+          "Textile mills, powerloom units and fabric wholesalers",
+          "Garment manufacturers and apparel brands seeking retailers",
+          "Hangers, packaging, mannequin and store-fixture suppliers",
+          "Billing software, POS and retail-tech companies",
+          "Sales agents and distributors in the textile trade",
+        ],
+        closing: [
+          "For owner-led business outreach, explore the company proprietors database. If your campaign targets shoppers rather than clothing stores, use the women consumers database to discuss a consumer audience.",
+        ],
+      },
+    ],
+    useCases: [
+      "Retailer acquisition for garment brands",
+      "Fabric and wholesale trade outreach",
+      "Store fixtures and packaging sales",
+      "POS and billing software promotion",
+      "Season and festive collection launches",
+    ],
+    faqs: [
+      { question: "What is a fabric and clothing stores database?", answer: "It is a list of cloth and apparel retailers and wholesalers in India - fabric merchants, saree shops, readymade garment showrooms and boutiques - with owner contacts and location." },
+      { question: "Can I get only wholesale cloth traders?", answer: "Yes. Records can be filtered by store type, such as wholesale, fabric retail, sarees, readymade or boutiques." },
+      { question: "Which cities are covered?", answer: "All major cities and textile hubs, including Surat, Ludhiana, Delhi, Mumbai, Kolkata, Jaipur, Tiruppur and Varanasi." },
+      { question: "Who buys clothing store data?", answer: "Textile mills, garment brands, wholesalers, store-fixture suppliers and retail software companies." },
+      { question: "How is this different from the garment exporters database?", answer: "This database covers domestic retail and wholesale stores. The garment exporters database covers manufacturers and exporters." },
+      { question: "Can I see a sample?", answer: "Yes. Download the sample format on this page or request real sample records." },
+    ],
+    related: [
+      "apparel-garments-exporters-database-india",
+      "manufacturer-database-india",
+      "dealers-distributors-database-india",
+      "designers-database-india",
+      "company-proprietors-database-india",
+      "females-database-india",
+    ],
+  },
+  {
+    slug: "facebook-users-database-india",
+    keyword: "Facebook users database India",
+    title: "Facebook Users Database India | Social Media Users Data",
+    metaDescription:
+      "Facebook users database in India - opt-in social media active consumers with mobile, email, age band, gender, interests and city. For digital campaigns and custom audiences. Free sample.",
+    eyebrow: "Social Media Users Database",
+    showTestimonials: true,
+    h1: "Facebook Users Database in India",
+    answer:
+      "A Facebook users database is a list of social-media-active consumers in India, compiled from opt-in sources, with name, mobile number, email ID, age band, gender, interests and city. Marketers use it to build custom audiences and run SMS, WhatsApp and email campaigns. IndiaB2BData.com supplies city-wise social media user data; it is not sourced from or affiliated with Meta or Facebook.",
+    intro: [
+      "India has one of the world's largest social media audiences, spread across metros, tier-2 cities and small towns. Brands, apps and local businesses want to reach these digitally active consumers on the channels where they respond - ads, SMS, WhatsApp and email.",
+      "Our Facebook users database lists opt-in social-media-active consumers, filtered by age band, gender, interest and city, so you can upload custom audiences or run direct campaigns. For bulk contact lists, see our mobile number database.",
+      "If your campaign uses a specific channel, compare our WhatsApp number database and email database to discuss the contact fields and coverage you need.",
+    ],
+    contentLinks: [
+      { text: "mobile number database", href: "/mobile-number-database-india" },
+      { text: "WhatsApp number database", href: "/whatsapp-number-database-india" },
+      { text: "email database", href: "/email-database-india" },
+      { text: "women consumers database", href: "/females-database-india" },
+      { text: "dining and leisure customers database", href: "/dining-leisure-customers-database-india" },
+    ],
+    highlights: [
+      { icon: Smartphone, title: "Digitally Active", description: "Consumers active on social media." },
+      { icon: Users, title: "Demographic Filters", description: "Age band, gender and interests." },
+      { icon: Target, title: "Custom Audiences", description: "Ready to upload for ad matching." },
+      { icon: MapPinned, title: "City-Wise", description: "Metros, tier-2 and tier-3 cities." },
+    ],
+    dataFields: [
+      "Name",
+      "Mobile number and email ID",
+      "Age band and gender",
+      "Interests: shopping, travel, food, fitness, finance, education",
+      "City, state and pincode",
+    ],
+    sections: [
+      {
+        heading: "Audience Segments",
+        paragraphs: [],
+        subsections: [
+          { heading: "Young Adults", text: "18-25 users for education, apps, fashion and entertainment." },
+          { heading: "Working Professionals", text: "26-40 users for finance, real estate, travel and premium brands." },
+          { heading: "Interest Groups", text: "Shoppers, travellers, foodies, fitness and finance enthusiasts." },
+          { heading: "Local Audiences", text: "City- and pincode-level users for local business promotion." },
+        ],
+      },
+      {
+        heading: "Who Uses a Facebook Users Database?",
+        paragraphs: [],
+        bullets: [
+          "Digital marketing agencies building custom and lookalike audiences",
+          "E-commerce, D2C brands and mobile apps",
+          "Real estate, education and financial services marketers",
+          "Restaurants, salons, gyms and local businesses",
+          "Event, travel and entertainment promoters",
+        ],
+        closing: [
+          "For a women-focused audience, explore our women consumers database. For hospitality and lifestyle offers, see the dining and leisure customers database.",
+          "Data is compiled from opt-in sources. Follow TRAI DND and DPDP Act rules when contacting consumers.",
+        ],
+      },
+    ],
+    useCases: [
+      "Custom audience uploads for ad campaigns",
+      "SMS and WhatsApp promotions",
+      "Email marketing campaigns",
+      "App install and sign-up drives",
+      "Local store and event promotion",
+    ],
+    faqs: [
+      { question: "What is a Facebook users database?", answer: "It is a list of social-media-active consumers in India, from opt-in sources, with mobile, email, age band, gender, interests and city." },
+      { question: "Is this data from Facebook or Meta?", answer: "No. The data is compiled from opt-in consumer sources and is not sourced from or affiliated with Meta or Facebook." },
+      { question: "Can I filter by age and gender?", answer: "Yes. Records can be filtered by age band, gender, interest and city." },
+      { question: "Can I upload it as a custom audience?", answer: "Yes. Mobile and email fields are delivered in a format ready for custom audience matching on ad platforms." },
+      { question: "Which cities are covered?", answer: "All major metros and tier-2 and tier-3 cities across India." },
+      { question: "Can I see a sample?", answer: "Yes. Download the sample format on this page or request real sample records." },
+    ],
+    related: [
+      "mobile-number-database-india",
+      "whatsapp-number-database-india",
+      "email-database-india",
+      "bulk-sms-database-india",
+      "females-database-india",
+      "dining-leisure-customers-database-india",
+    ],
+  },
+  {
+    slug: "females-database-india",
+    keyword: "females database India",
+    title: "Females Database India | Women Consumers Data List",
+    metaDescription:
+      "Females database in India - opt-in women consumers, homemakers and working women with mobile, email, age band, occupation, interests and city. For women-focused campaigns. Free sample.",
+    eyebrow: "Women Consumers Database",
+    showTestimonials: true,
+    h1: "Females Database in India",
+    answer:
+      "A females database is a list of women consumers in India, compiled from opt-in sources - homemakers, working women, students and women entrepreneurs - with name, mobile number, email ID, age band, occupation, interests and city. IndiaB2BData.com supplies city-wise female consumer data for brands selling fashion, beauty, health, finance and education products.",
+    intro: [
+      "Women drive a large share of household purchase decisions in India - from groceries, fashion and beauty to education, health and savings products. Brands, salons, boutiques, insurers and edtech firms all run campaigns built specifically for women.",
+      "Our females database lists opt-in women consumers, filtered by age band, occupation, interest and city, so you can run SMS, WhatsApp, email and ad campaigns aimed at the right audience.",
+      "For a Bengaluru-only requirement, see our female consumer Bangalore database. For a broader digitally active audience, compare our Facebook users database.",
+    ],
+    contentLinks: [
+      { text: "female consumer Bangalore database", href: "/female-consumer-bangalore-database" },
+      { text: "Facebook users database", href: "/facebook-users-database-india" },
+      { text: "fabric and clothing stores database", href: "/fabric-clothing-stores-database-india" },
+      { text: "salons and spas database", href: "/beauty-parlours-salons-spa-database-india" },
+      { text: "WhatsApp number database", href: "/whatsapp-number-database-india" },
+    ],
+    highlights: [
+      { icon: Users, title: "Women Consumers", description: "Homemakers, working women, students." },
+      { icon: Filter, title: "Demographic Filters", description: "Age band, occupation and interests." },
+      { icon: Smartphone, title: "Multi-Channel", description: "Mobile, WhatsApp and email ready." },
+      { icon: MapPinned, title: "City-Wise", description: "Metros, tier-2 and tier-3 cities." },
+    ],
+    dataFields: [
+      "Name",
+      "Mobile number and email ID",
+      "Age band",
+      "Occupation: homemaker, salaried, self-employed, student or business owner",
+      "Interests: fashion, beauty, health, finance, education",
+      "City, state and pincode",
+    ],
+    sections: [
+      {
+        heading: "Segments Covered",
+        paragraphs: [],
+        subsections: [
+          { heading: "Homemakers", text: "Household decision-makers for FMCG, kitchen, home and kids' products." },
+          { heading: "Working Women", text: "Salaried professionals for finance, insurance, fashion and travel." },
+          { heading: "Young Women & Students", text: "18-25 audience for education, beauty, fashion and apps." },
+          { heading: "Women Entrepreneurs", text: "Business owners for loans, B2B services and business tools." },
+        ],
+      },
+      {
+        heading: "Who Uses a Females Database?",
+        paragraphs: [],
+        bullets: [
+          "Fashion, jewellery, boutique and clothing brands",
+          "Beauty, salon, skincare and wellness businesses",
+          "Health, fitness, maternity and childcare brands",
+          "Banks, insurers and investment platforms",
+          "Edtech, skill training and coaching institutes",
+        ],
+        closing: [
+          "Brands planning retail partnerships can use the fabric and clothing stores database, while beauty businesses can explore the salons and spas database. For mobile-led campaigns, compare the WhatsApp number database.",
+          "Data is compiled from opt-in sources. Follow TRAI DND and DPDP Act rules when contacting consumers.",
+        ],
+      },
+    ],
+    useCases: [
+      "Fashion and beauty product launches",
+      "Salon, spa and wellness promotions",
+      "Women-focused insurance and savings plans",
+      "Education and skill course enrolment",
+      "Festive and Women's Day campaigns",
+    ],
+    faqs: [
+      { question: "What is a females database?", answer: "It is a list of women consumers in India, from opt-in sources, with mobile, email, age band, occupation, interests and city." },
+      { question: "Can I filter by age and occupation?", answer: "Yes. Records can be filtered by age band, occupation such as homemaker or working woman, interest and city." },
+      { question: "Which cities are covered?", answer: "All major metros and tier-2 and tier-3 cities across India." },
+      { question: "Who buys female consumer data?", answer: "Fashion and beauty brands, salons, health and wellness companies, financial services firms and education providers." },
+      { question: "Is the data legal to use?", answer: "Data is compiled from opt-in sources. Follow TRAI DND and DPDP Act rules, and include an opt-out in every campaign." },
+      { question: "Can I see a sample?", answer: "Yes. Download the sample format on this page or request real sample records." },
+    ],
+    related: [
+      "female-consumer-bangalore-database",
+      "facebook-users-database-india",
+      "fabric-clothing-stores-database-india",
+      "beauty-parlours-salons-spa-database-india",
+      "mobile-number-database-india",
+      "whatsapp-number-database-india",
+      "dining-leisure-customers-database-india",
+    ],
+  },
+  {
+    slug: "female-consumer-bangalore-database",
+    keyword: "Female Consumer Bangalore Database",
+    title: "Female Consumer Bangalore Database | Women Consumers",
+    metaDescription:
+      "Female consumer database in Bangalore - women consumer segments by locality, age band and interests. Request available fields, coverage and a sample format.",
+    eyebrow: "Female Consumer Bangalore Database",
+    showTestimonials: true,
+    h1: "Female Consumer Bangalore Database",
+    answer:
+      "A female consumer Bangalore database is a city-focused list of adult women consumers in Bengaluru, organised by locality and available audience attributes. IndiaB2BData.com helps brands scope a Bangalore audience for fashion, beauty, retail, education and lifestyle campaigns. Ask for current coverage and available fields before ordering.",
+    intro: [
+      "For a boutique, salon, fitness studio or local retailer, a Bangalore-only audience is more useful than a nationwide consumer list. Define your service area first so your campaign reaches people in the neighbourhoods your business serves.",
+      "Share the localities, adult age bands, interests and campaign channel you need. Our team can confirm which filters and contact fields are available and prepare an Excel or CSV delivery for the agreed audience.",
+      "For campaigns aimed at digitally active shoppers, compare our Facebook users database and ask about available Bengaluru coverage.",
+    ],
+    contentLinks: [
+      { text: "women consumers database", href: "/females-database-india" },
+      { text: "Facebook users database", href: "/facebook-users-database-india" },
+      { text: "fabric and clothing stores database", href: "/fabric-clothing-stores-database-india" },
+      { text: "salons and spas database", href: "/beauty-parlours-salons-spa-database-india" },
+      { text: "dining and leisure customers database", href: "/dining-leisure-customers-database-india" },
+    ],
+    highlights: [
+      { icon: MapPinned, title: "Bangalore Focus", description: "Scope your audience within Bengaluru rather than across India." },
+      { icon: Filter, title: "Locality Filters", description: "Request neighbourhood or pincode coverage for your service area." },
+      { icon: Users, title: "Adult Women Consumers", description: "Discuss age bands, occupation and interests where available." },
+      { icon: FileText, title: "Sample Format", description: "Preview the columns before confirming your requirement." },
+    ],
+    dataFields: [
+      "Consumer name",
+      "Mobile number and email ID, where available and permitted",
+      "Adult age band, where recorded",
+      "Occupation and interests, where recorded",
+      "Bangalore locality",
+      "City: Bengaluru, state: Karnataka and pincode, where available",
+    ],
+    sections: [
+      {
+        heading: "Plan Your Bangalore Coverage",
+        paragraphs: [
+          "Tell us whether you need city-wide coverage or a smaller service area. Example areas to discuss include Whitefield, Indiranagar, Koramangala, HSR Layout, Jayanagar, JP Nagar and Electronic City; availability and counts are confirmed for each request.",
+          "Bangalore and Bengaluru refer to the same city. This page focuses on that city; choose our women consumers database for a broader India-wide requirement.",
+        ],
+      },
+      {
+        heading: "Build a Relevant Consumer Segment",
+        paragraphs: [
+          "Start with your product and service radius, then request recorded attributes that fit your campaign. Field availability varies by segment, so confirm the sample, audience size and delivery scope with the team.",
+          "For retail partnerships rather than consumer outreach, explore our fabric and clothing stores database and salons and spas database. For restaurant or leisure offers, see the dining and leisure customers database. Confirm Bangalore coverage for any of these requirements.",
+        ],
+        subsections: [
+          { heading: "Fashion & Retail", text: "Local boutique launches, store openings and relevant shopping offers." },
+          { heading: "Beauty & Wellness", text: "Salon, spa, fitness and wellness promotions within a service area." },
+          { heading: "Education & Skills", text: "Adult learning, professional training and skill-development invitations." },
+          { heading: "Local Events", text: "Workshops, exhibitions and community events for an appropriate audience." },
+        ],
+      },
+    ],
+    useCases: [
+      "Bangalore boutique and retail store launches",
+      "Neighbourhood salon and wellness promotions",
+      "Adult education and skills course campaigns",
+      "Local workshops, exhibitions and event invitations",
+    ],
+    faqs: [
+      { question: "Is this database specific to Bangalore?", answer: "Yes. This page is for a Bengaluru-focused requirement. Share your preferred localities or pincodes so the team can confirm available coverage." },
+      { question: "Can I request Whitefield, HSR Layout or Koramangala?", answer: "You can request these or other Bangalore localities. Available records and locality filters are confirmed before an order." },
+      { question: "Which demographic filters can I request?", answer: "Adult age bands, occupation and interests can be discussed where those attributes are recorded. Ask for a sample and the available field list." },
+      { question: "How does this differ from the women consumers database?", answer: "This is a Bangalore-specific audience requirement. The women consumers database supports broader city-wise requirements across India." },
+      { question: "Can I download a sample?", answer: "Yes. The download on this page contains fictional, masked Bangalore records to demonstrate the file format. Use the enquiry form to discuss actual availability." },
+    ],
+    related: [
+      "females-database-india",
+      "beauty-parlours-salons-spa-database-india",
+      "fabric-clothing-stores-database-india",
+      "dining-leisure-customers-database-india",
+    ],
+  },
+  {
+    slug: "financial-analysts-managers-industry-database",
+    keyword: "Financial Analysts/ Managers/ Industry Database",
+    title: "Financial Analysts & Managers Industry Database India",
+    metaDescription:
+      "Financial analysts and managers database in India - professional contacts by finance role, employer, sector and city. Request coverage and a sample format.",
+    eyebrow: "Financial Analysts & Managers Database",
+    showTestimonials: true,
+    h1: "Financial Analysts/ Managers/ Industry Database",
+    answer:
+      "A financial analysts, managers and industry database is a professional contact list for finance teams and financial-services organisations in India. It can be scoped around financial analysts, finance managers, research specialists and related employers, with role, company, industry, city and permitted business contact fields where available.",
+    intro: [
+      "Finance professionals work in banks, NBFCs, investment firms, consulting companies and finance departments across other industries. A useful contact list distinguishes job function and employer sector so your offer reaches the right team.",
+      "Share the designations, sectors and cities you need. IndiaB2BData.com can confirm available coverage for software sales, professional training, events, research products or recruitment, then agree the fields and delivery format with you.",
+      "If you need senior finance decision-makers, compare our CEO and CFO database. For accounting and tax professionals, explore our chartered accountants database.",
+    ],
+    contentLinks: [
+      { text: "CEO and CFO database", href: "/ceo-cfo-cmo-it-heads-database-india" },
+      { text: "chartered accountants database", href: "/chartered-accountants-database-india" },
+      { text: "economic analysts database", href: "/economic-analysts-database-india" },
+      { text: "business analysts database", href: "/business-analysts-database-india" },
+      { text: "bank employees database", href: "/bank-employees-database-delhi-ncr" },
+    ],
+    highlights: [
+      { icon: TrendingUp, title: "Finance Roles", description: "Financial analysis, planning, research and finance management." },
+      { icon: Building2, title: "Industry Segments", description: "Request financial services or finance teams in other sectors." },
+      { icon: Filter, title: "Role & City Filters", description: "Define job function, employer type, seniority and location." },
+      { icon: FileText, title: "Excel & CSV Format", description: "Review sample columns and confirm the available fields." },
+    ],
+    dataFields: [
+      "Professional name",
+      "Designation and finance function",
+      "Employer or organisation name",
+      "Industry and organisation type",
+      "Specialisation or experience band, where available",
+      "Professional email and business contact number, where available and permitted",
+      "City and state",
+    ],
+    sections: [
+      {
+        heading: "Financial Professionals & Industry Segments",
+        paragraphs: [
+          "Build your requirement around the work a professional does and the organisation they work for. Coverage of each segment and designation is confirmed before delivery.",
+        ],
+        subsections: [
+          { heading: "Financial Analysts", text: "Corporate finance, financial planning and analysis, budgeting and reporting roles." },
+          { heading: "Finance Managers", text: "Finance managers, controllers, treasury managers and finance department heads." },
+          { heading: "Research & Risk Professionals", text: "Equity, credit, investment research and risk-analysis roles where available." },
+          { heading: "Financial Services Organisations", text: "Banks, NBFCs, investment businesses and advisory firms, filtered by employer type." },
+        ],
+      },
+      {
+        heading: "Choose Your Roles, Sectors & Cities",
+        paragraphs: [
+          "Request a specific combination, such as finance managers in manufacturing companies or research analysts at financial-services firms. Include your preferred cities and seniority bands so the team can check matching records.",
+          "This page focuses on finance functions and industry contacts. Our economic analysts database is more relevant for economists and policy research, while our business analysts database covers business processes and systems roles.",
+          "For a banking-specific requirement in Delhi NCR, explore our bank employees database.",
+        ],
+      },
+    ],
+    useCases: [
+      "Finance, accounting and analytics software sales",
+      "Professional training and certification invitations",
+      "Financial research and data-platform outreach",
+      "Finance conferences, webinars and industry events",
+      "Recruitment for analyst and finance management roles",
+    ],
+    faqs: [
+      { question: "Who is included in this database?", answer: "You can request financial analysts, finance managers, planning and analysis teams, research specialists and related financial-services industry contacts. The team confirms available roles and employer coverage." },
+      { question: "Can I filter by industry and designation?", answer: "Yes, request your preferred finance roles, employer sectors, seniority and cities. Availability is confirmed for the combination you need." },
+      { question: "Does it cover finance managers outside banking?", answer: "You can request corporate finance teams in sectors such as manufacturing, IT services, retail and consulting. Confirm sector coverage with the team." },
+      { question: "Does it contain personal financial information?", answer: "This is a professional contact database. The proposed fields describe roles, employers and business contacts, not bank accounts, balances, investments or transaction history." },
+      { question: "How is it delivered?", answer: "The agreed fields can be delivered in Excel or CSV format. Confirm record count, available contact fields and delivery timing before ordering." },
+      { question: "Can I see a sample format?", answer: "Yes. Download the fictional, masked sample on this page to preview finance-specific columns, or use the enquiry form to discuss current coverage." },
+    ],
+    related: [
+      "economic-analysts-database-india",
+      "business-analysts-database-india",
+      "chartered-accountants-database-india",
+      "ceo-cfo-cmo-it-heads-database-india",
+      "bank-employees-database-delhi-ncr",
     ],
   },
 ];
