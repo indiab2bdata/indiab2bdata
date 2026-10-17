@@ -53,7 +53,13 @@ export type SampleProfile =
   | "socialUser"
   | "female"
   | "bangaloreFemale"
-  | "financialProfessional";
+  | "financialProfessional"
+  | "foodStore"
+  | "freelancer"
+  | "frequentFlyer"
+  | "furnitureStore"
+  | "petroleum"
+  | "jeweller";
 
 const NAMES = ["Rahul Sharma", "Priya Mehta", "Amit Verma", "Sneha Iyer", "Vikram Singh", "Neha Gupta", "Arjun Reddy", "Kavita Joshi", "Rohan Das", "Pooja Nair", "Sanjay Patel", "Anjali Rao"];
 const COMPANIES = ["Sample Tech Pvt Ltd", "Demo Industries", "Example Traders", "Test Solutions LLP", "Dummy Enterprises", "Placeholder Exports", "Mock Infra Pvt Ltd", "Specimen Foods", "Trial Textiles", "Prototype Pharma"];
@@ -148,6 +154,12 @@ const PROFILES: Record<SampleProfile, Column[]> = {
   clothingStore: [["Shop / Business Name", (c) => `Sample Fabrics ${c.i + 1}`], ["Owner Name", (c) => c.name], ["Store Type", (c) => pick(["Fabric / Cloth", "Saree & Suits", "Readymade Garments", "Boutique", "Wholesale"], c.i)], phone, mail, ["GSTIN", (c) => `27XXXXX${1000 + c.i}X1ZX`], ...loc],
   socialUser: [["Name", (c) => c.name], phone, mail, ["Age Band", (c) => pick(["18-25", "26-35", "36-45", "46-60"], c.i)], ["Gender", (c) => pick(["Male", "Female"], c.i)], ["Interest", (c) => pick(["Shopping", "Travel", "Food", "Fitness", "Finance", "Education"], c.i)], ...loc],
   female: [["Name", (c) => c.name], phone, mail, ["Age Band", (c) => pick(["18-25", "26-35", "36-45", "46-60"], c.i)], ["Occupation", (c) => pick(["Homemaker", "Salaried", "Self-Employed", "Student", "Business Owner"], c.i)], ["Interest", (c) => pick(["Fashion", "Beauty", "Health", "Finance", "Education"], c.i)], ...loc],
+  foodStore: [["Shop / Business Name", (c) => `Sample Mart ${c.i + 1}`], ["Owner Name", (c) => c.name], ["Store Type", (c) => pick(["Kirana / Grocery", "Supermarket", "Bakery", "Sweet Shop", "Dairy Outlet", "Beverage Distributor"], c.i)], phone, mail, ["GSTIN", (c) => `27XXXXX${1000 + c.i}X1ZX`], ...loc],
+  freelancer: [["Freelancer Name", (c) => c.name], ["Primary Skill", (c) => pick(["Web Development", "Graphic Design", "Content Writing", "Digital Marketing", "Video Editing", "Consulting"], c.i)], ["Experience (Yrs)", (c) => String(1 + (c.i % 12))], phone, mail, ["Portfolio", (c) => `www.example${c.i + 1}.in`], ...loc],
+  frequentFlyer: [["Name", (c) => c.name], phone, mail, ["Travel Type", (c) => pick(["Business", "Leisure", "Domestic", "International"], c.i)], ["Income Band", (c) => pick(["10-20 LPA", "20-35 LPA", "35-50 LPA", "50 LPA+"], c.i)], ["Occupation", (c) => pick(["Salaried", "Business Owner", "Self-Employed", "Senior Executive"], c.i)], ...loc],
+  furnitureStore: [["Business Name", (c) => `Sample Furniture ${c.i + 1}`], ["Owner Name", (c) => c.name], ["Business Type", (c) => pick(["Furniture Showroom", "Modular Furniture", "Office Furniture", "Furnishing & Decor", "Manufacturer / Workshop"], c.i)], phone, mail, ["GSTIN", (c) => `27XXXXX${1000 + c.i}X1ZX`], ...loc],
+  petroleum: [["Company / Outlet", (c) => `Sample Fuels ${c.i + 1}`], ["Decision Maker", (c) => c.name], ["Designation", (c) => pick(["Owner", "Dealer", "Plant Head", "Operations Manager", "Purchase Manager"], c.i)], ["Segment", (c) => pick(["Petrol Pump", "LPG Distributor", "CNG Station", "Lubricants", "Oil & Gas Company", "Petrochemicals"], c.i)], phone, mail, ...loc],
+  jeweller: [["Shop / Business Name", (c) => `Sample Jewellers ${c.i + 1}`], ["Owner Name", (c) => c.name], ["Business Type", (c) => pick(["Gold Jeweller", "Diamond Jeweller", "Silver Jewellery", "Gemstone Dealer", "Bullion Trader", "Manufacturer"], c.i)], phone, mail, ["GSTIN", (c) => `27XXXXX${1000 + c.i}X1ZX`], ...loc],
   domain: [["Domain Name", (c) => `example${c.i + 1}.in`], ["Registrant Name", (c) => c.name], ["Registrant Org", (c) => c.company], ["Created Date", (c) => `2026-0${1 + (c.i % 9)}-0${1 + (c.i % 9)}`], ["Registrar", () => "Sample Registrar"], phone, mail, ...loc],
 };
 
@@ -156,6 +168,12 @@ export function sampleProfileFor(slug: string): SampleProfile {
   const rules: [RegExp, SampleProfile][] = [
     [/^female-consumer-bangalore-database$/, "bangaloreFemale"],
     [/^financial-analysts-managers-industry-database$/, "financialProfessional"],
+    [/food-beverage-stores/, "foodStore"],
+    [/freelancers/, "freelancer"],
+    [/frequent-flyer/, "frequentFlyer"],
+    [/furniture-stores/, "furnitureStore"],
+    [/gas-petroleum/, "petroleum"],
+    [/gems-jewellery/, "jeweller"],
     [/event-management/, "eventOrganiser"],
     [/fabric-clothing/, "clothingStore"],
     [/facebook-users/, "socialUser"],

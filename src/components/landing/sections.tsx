@@ -34,6 +34,8 @@ export function SplitHero({
   source,
   requirement,
   formTitle,
+  formSubtitle,
+  formButtonLabel,
 }: {
   breadcrumbs: BreadcrumbItem[];
   eyebrow: string;
@@ -45,6 +47,8 @@ export function SplitHero({
   source: string;
   requirement: string;
   formTitle?: string;
+  formSubtitle?: string;
+  formButtonLabel?: string;
 }) {
   return (
     <section className="relative overflow-hidden mesh-navy pb-16 pt-28 md:pb-20 md:pt-36">
@@ -68,7 +72,7 @@ export function SplitHero({
           </ul>
         </div>
         <div className="lg:justify-self-end lg:w-full lg:max-w-[460px]">
-          <LeadForm source={source} requirement={requirement} title={formTitle} />
+          <LeadForm source={source} requirement={requirement} title={formTitle} subtitle={formSubtitle} buttonLabel={formButtonLabel} />
         </div>
       </div>
     </section>
@@ -201,7 +205,7 @@ export function HowItWorks({ title = "How We Build & Deliver Your Data" }: { tit
 }
 
 /** Contact details on the left, lead form on the right - closes every landing page. */
-export function ContactSplit({ title, text, source, requirement }: { title: string; text: string; source: string; requirement: string }) {
+export function ContactSplit({ title, text, source, requirement, formTitle, formSubtitle, formButtonLabel }: { title: string; text: string; source: string; requirement: string; formTitle?: string; formSubtitle?: string; formButtonLabel?: string }) {
   const items = [
     { icon: Phone, label: "Call / WhatsApp", value: siteConfig.phoneDisplay, href: siteConfig.phoneHref },
     { icon: Mail, label: "Email", value: "email", href: "" },
@@ -237,7 +241,7 @@ export function ContactSplit({ title, text, source, requirement }: { title: stri
           </ul>
         </Reveal>
         <Reveal delay={0.1}>
-          <LeadForm source={source} requirement={requirement} title="Send Your Data Requirement" subtitle="We reply to every enquiry within working hours." />
+          <LeadForm source={source} requirement={requirement} title={formTitle ?? "Send Your Data Requirement"} subtitle={formSubtitle ?? "We reply to every enquiry within working hours."} buttonLabel={formButtonLabel} />
         </Reveal>
       </div>
     </section>

@@ -13,11 +13,13 @@ export function LeadForm({
   requirement,
   title = "Get Your Free Sample",
   subtitle = "Tell us your target - we'll share sample records and a custom quote within a few hours.",
+  buttonLabel = "Request Free Sample",
 }: {
   source: string;
   requirement: string;
   title?: string;
   subtitle?: string;
+  buttonLabel?: string;
 }) {
   const { status, handleSubmit } = useContactForm();
 
@@ -63,7 +65,7 @@ export function LeadForm({
 
         <SubmitButton status={status} className="py-3 text-sm">
           <Send className="h-4 w-4" />
-          Request Free Sample
+          {buttonLabel}
         </SubmitButton>
 
         {status.state !== "idle" && status.message ? (

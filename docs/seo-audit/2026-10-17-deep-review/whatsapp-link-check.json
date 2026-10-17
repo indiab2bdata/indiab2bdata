@@ -1,0 +1,406 @@
+{
+  "date": "2026-10-17",
+  "pastedAudit": {
+    "warnings": 68,
+    "allWhatsApp": true,
+    "allStatus429": true
+  },
+  "localPagesChecked": 96,
+  "localWhatsAppLinkOccurrences": 237,
+  "correctPhonePaths": true,
+  "repeatedDatabaseWording": 0,
+  "cityContextsVerified": 5,
+  "externalSample": {
+    "requestsMade": 1,
+    "status": 302,
+    "redirectHost": "api.whatsapp.com",
+    "messageSent": false,
+    "note": "Short-link redirect checked; account registration and message delivery not tested."
+  },
+  "pages": [
+    {
+      "path": "/",
+      "whatsAppLinks": 7
+    },
+    {
+      "path": "/about",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/privacy-policy",
+      "whatsAppLinks": 3
+    },
+    {
+      "path": "/terms-and-conditions",
+      "whatsAppLinks": 3
+    },
+    {
+      "path": "/database",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/blog",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/contact",
+      "whatsAppLinks": 4
+    },
+    {
+      "path": "/b2b-database-india",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/company-database-india",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/corporate-database-india",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/industry-wise-company-database-india",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/gst-database-india",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/mca-company-database-india",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/newly-registered-companies-india",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/b2b-leads-database-india",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/manufacturer-database-india",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/mobile-number-database-india",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/email-database-india",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/whatsapp-number-database-india",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/bulk-sms-database-india",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/doctors-database",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/importers-exporters-database-india",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/dealers-distributors-database-india",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/b2b-b2c-companies-database",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/students-database",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/job-seekers-database",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/car-owners-database",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/domain-whois-database",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/school-colleges-database",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/teachers-database-india",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/advocates-lawyers-database-india",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/agents-database-india",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/apparel-garments-exporters-database-india",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/architect-interior-designers-database-india",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/beauty-parlours-salons-spa-database-india",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/bpo-call-centre-employees-database-india",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/building-material-database-india",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/business-analysts-database-india",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/business-development-sales-professionals-database-india",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/cab-users-database-india",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/cbse-schools-email-database-india",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/mobile-accessories-shops-database-india",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/ceo-cfo-cmo-it-heads-database-india",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/channel-sales-professionals-database-india",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/chartered-accountants-database-india",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/chemical-pharma-companies-database-india",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/chemists-medical-stores-database-india",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/chief-managers-database-india",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/civil-engineers-database-india",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/club-mahindra-members-database",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/commercial-residential-properties-database-india",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/company-md-chairman-secretary-database-india",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/company-proprietors-database-india",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/computer-laptop-dealers-database-india",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/computer-it-telecom-services-database-india",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/consultants-consulting-services-database-india",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/contractors-database-india",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/credit-card-holders-database-india",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/customer-support-executives-database-india",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/debit-card-holders-database-india",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/designers-database-india",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/digital-photography-studios-database-india",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/dining-leisure-customers-database-india",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/demat-account-holders-database-india",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/dtp-operators-database-india",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/economic-analysts-database-india",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/educational-institutes-database-india",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/bank-employees-database-delhi-ncr",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/energy-power-sector-database-delhi-ncr",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/engineers-service-engineers-database-india",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/entertainment-media-database-india",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/event-management-organisers-database-india",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/fabric-clothing-stores-database-india",
+      "whatsAppLinks": 3
+    },
+    {
+      "path": "/facebook-users-database-india",
+      "whatsAppLinks": 3
+    },
+    {
+      "path": "/females-database-india",
+      "whatsAppLinks": 3
+    },
+    {
+      "path": "/female-consumer-bangalore-database",
+      "whatsAppLinks": 3
+    },
+    {
+      "path": "/financial-analysts-managers-industry-database",
+      "whatsAppLinks": 3
+    },
+    {
+      "path": "/food-beverage-stores-database-india",
+      "whatsAppLinks": 3
+    },
+    {
+      "path": "/freelancers-database-india",
+      "whatsAppLinks": 3
+    },
+    {
+      "path": "/frequent-flyer-database-india",
+      "whatsAppLinks": 3
+    },
+    {
+      "path": "/furniture-stores-dealers-database-india",
+      "whatsAppLinks": 3
+    },
+    {
+      "path": "/gas-petroleum-companies-database-india",
+      "whatsAppLinks": 3
+    },
+    {
+      "path": "/gems-jewellery-shops-database-india",
+      "whatsAppLinks": 3
+    },
+    {
+      "path": "/database/maharashtra",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/database/gujarat",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/database/tamil-nadu",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/database/delhi",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/database/uttar-pradesh",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/database/karnataka",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/database/haryana",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/database/telangana",
+      "whatsAppLinks": 2
+    },
+    {
+      "path": "/database/uttar-pradesh/noida",
+      "whatsAppLinks": 7
+    },
+    {
+      "path": "/database/uttar-pradesh/greater-noida",
+      "whatsAppLinks": 7
+    },
+    {
+      "path": "/database/haryana/gurgaon",
+      "whatsAppLinks": 7
+    },
+    {
+      "path": "/database/maharashtra/mumbai",
+      "whatsAppLinks": 7
+    },
+    {
+      "path": "/database/maharashtra/pune",
+      "whatsAppLinks": 7
+    }
+  ]
+}

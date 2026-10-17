@@ -93,7 +93,9 @@ export default async function KeywordPage({ params }: { params: Params }) {
         imageAlt={visual.alt}
         source={`${page.slug}-hero-form`}
         requirement={productName}
-        formTitle={`Get Your ${productName}`}
+        formTitle={page.cta?.heroTitle ?? `Get Your ${productName}`}
+        formSubtitle={page.cta?.heroSubtitle}
+        formButtonLabel={page.cta?.buttonLabel}
       />
 
       <StatStrip items={STATS} />
@@ -133,7 +135,7 @@ export default async function KeywordPage({ params }: { params: Params }) {
                     {section.subsections.map((sub) => (
                       <div key={sub.heading} className="rounded-2xl border border-[#DCEAF3] bg-white p-5">
                         <h3 className="font-display text-base font-bold text-navy">{sub.heading}</h3>
-                        <p className="mt-1.5 text-sm leading-relaxed text-muted">{sub.text}</p>
+                        <p className="mt-1.5 text-sm leading-relaxed text-muted"><LinkedText text={sub.text} links={page.contentLinks} /></p>
                       </div>
                     ))}
                   </div>
@@ -143,7 +145,7 @@ export default async function KeywordPage({ params }: { params: Params }) {
                     {section.bullets.map((bullet) => (
                       <li key={bullet} className="flex gap-3 rounded-xl bg-bgsoft p-4 text-sm leading-relaxed text-navy/85">
                         <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-teal" aria-hidden="true" />
-                        {bullet}
+                        <LinkedText text={bullet} links={page.contentLinks} />
                       </li>
                     ))}
                   </ul>
@@ -164,13 +166,18 @@ export default async function KeywordPage({ params }: { params: Params }) {
       <NumberedCards
         eyebrow="Use Cases"
         title={`How Businesses Use Our ${productName}`}
-        text="Teams across India use this data to reach the right people faster - by phone, email, WhatsApp or SMS."
+        text={page.useCasesIntro ?? "Teams across India use this data to reach the right people faster - by phone, email, WhatsApp or SMS."}
         items={page.useCases}
       />
 
       <HowItWorks title={`How We Build & Deliver Your ${productName}`} />
 
-      <InlineCta id={`${page.slug}-process-cta`} text={`Need ${page.keyword} filtered to your city or industry?`} buttonLabel="Talk to Our Team" />
+      <InlineCta
+        id={`${page.slug}-process-cta`}
+        text={page.cta?.text ?? `Need ${page.keyword} filtered to your city or industry?`}
+        buttonLabel={page.cta?.buttonLabel ?? "Talk to Our Team"}
+        whatsappMessage={page.cta ? `Hi, I would like to discuss the ${page.keyword}. Please help me check coverage and sample options.` : undefined}
+      />
 
       {page.showTestimonials && <Testimonials />}
 
@@ -185,10 +192,13 @@ export default async function KeywordPage({ params }: { params: Params }) {
       />
 
       <ContactSplit
-        title={`Ready to Get Your ${productName}?`}
-        text="Share your target audience, location and quantity - we'll send free sample records and a custom quote."
+        title={page.cta?.footerTitle ?? `Ready to Get Your ${productName}?`}
+        text={page.cta?.footerText ?? "Share your target audience, location and quantity - we'll send free sample records and a custom quote."}
         source={`${page.slug}-footer-form`}
         requirement={productName}
+        formTitle={page.cta?.heroTitle}
+        formSubtitle={page.cta?.heroSubtitle}
+        formButtonLabel={page.cta?.buttonLabel}
       />
     </>
   );

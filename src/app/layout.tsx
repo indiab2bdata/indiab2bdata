@@ -11,6 +11,13 @@ import { Toaster } from "sonner";
 import { JsonLd } from "@/components/json-ld";
 import { siteConfig } from "@/lib/site-config";
 import { organizationJsonLd, websiteJsonLd } from "@/lib/seo";
+import { cities, cityPath } from "@/components/city-pages/city-data.mjs";
+
+const cityEnquiryPages = Object.values(cities).map((city) => ({
+  href: cityPath(city),
+  city: city.city,
+  state: city.state,
+}));
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -52,7 +59,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           <main className="flex-1">{children}</main>
           <Footer />
           <FloatingButtons />
-          <ContactModal />
+          <ContactModal cityPages={cityEnquiryPages} />
           <Toaster position="top-center" richColors closeButton toastOptions={{ style: { fontFamily: "var(--font-montserrat), sans-serif" } }} />
         </ModalProvider>
       </body>

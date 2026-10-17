@@ -64,6 +64,15 @@ export type KeywordPage = {
   highlights: KeywordHighlight[];
   useCases: string[];
   faqs: KeywordFaq[];
+  useCasesIntro?: string;
+  cta?: {
+    heroTitle: string;
+    heroSubtitle: string;
+    buttonLabel: string;
+    text: string;
+    footerTitle: string;
+    footerText: string;
+  };
   /** Fields delivered in each record - rendered as a "What's included" checklist. */
   dataFields?: string[];
   /** Long-form H2 sections for topical depth. */
@@ -5215,7 +5224,7 @@ export const keywordPages: KeywordPage[] = [
   {
     slug: "club-mahindra-members-database",
     keyword: "Club Mahindra members database",
-    title: "Club Mahindra Members Database | Holiday Membership Audience",
+    title: "Club Mahindra Members Database",
     metaDescription:
       "Holiday and vacation membership audience data in India, including Club Mahindra members - affluent, travel-oriented families by city. Independent provider, not affiliated with Mahindra.",
     eyebrow: "Holiday Membership Audience Data",
@@ -5793,7 +5802,7 @@ export const keywordPages: KeywordPage[] = [
   {
     slug: "credit-card-holders-database-india",
     keyword: "credit card holders database India",
-    title: "Credit Card Holders Database India | Affluent Consumer Audience",
+    title: "Credit Card Holders Database India",
     metaDescription:
       "Credit card holders audience data in India - salaried and affluent consumers by city and card tier, for premium and financial marketing. No card numbers or financial details.",
     eyebrow: "Credit Card Holders Audience Data",
@@ -5939,7 +5948,7 @@ export const keywordPages: KeywordPage[] = [
   {
     slug: "debit-card-holders-database-india",
     keyword: "debit card holders database India",
-    title: "Debit Card Holders Database India | Banked Consumer Audience",
+    title: "Debit Card Holders Database India",
     metaDescription:
       "Debit card holders audience data in India - banked, digitally active consumers by city and income band, for marketing. No card numbers, PINs or bank details.",
     eyebrow: "Debit Card Holders Audience Data",
@@ -6015,7 +6024,7 @@ export const keywordPages: KeywordPage[] = [
   {
     slug: "designers-database-india",
     keyword: "designers database India",
-    title: "Designers Database India | Graphic, Fashion, Web & Product Designers",
+    title: "Designers Database India",
     metaDescription:
       "Designers database in India - graphic, UI/UX, web, fashion, product and jewellery designers and design studios with contact details, city-wise. Free sample.",
     eyebrow: "Designers Database",
@@ -6093,7 +6102,7 @@ export const keywordPages: KeywordPage[] = [
   {
     slug: "digital-photography-studios-database-india",
     keyword: "digital photography studios database India",
-    title: "Photography Studios Database India | Photographers & Studios List",
+    title: "Photography Studios Database India",
     metaDescription:
       "Digital photography studios database in India - photo studios, wedding photographers, videographers and photo labs with owner contacts, city-wise. Free sample.",
     eyebrow: "Photography Studios Database",
@@ -6158,7 +6167,7 @@ export const keywordPages: KeywordPage[] = [
   {
     slug: "dining-leisure-customers-database-india",
     keyword: "dining and leisure customers database India",
-    title: "Dining & Leisure Customers Database India | Lifestyle Audience",
+    title: "Dining & Leisure Customers Database",
     metaDescription:
       "Dining and leisure customers audience data in India - consumers who eat out, travel and spend on entertainment, by city. For restaurant, hospitality and lifestyle marketing.",
     eyebrow: "Dining & Leisure Audience Data",
@@ -6304,7 +6313,7 @@ export const keywordPages: KeywordPage[] = [
   {
     slug: "dtp-operators-database-india",
     keyword: "DTP operators database India",
-    title: "DTP Operators Database India | Desktop Publishing Professionals",
+    title: "DTP Operators Database India",
     metaDescription:
       "DTP operators database in India - desktop publishing operators, typesetters, layout artists and DTP centres with contact details, city-wise. Free sample format.",
     eyebrow: "DTP Operators Database",
@@ -6370,7 +6379,7 @@ export const keywordPages: KeywordPage[] = [
   {
     slug: "economic-analysts-database-india",
     keyword: "economic analysts database India",
-    title: "Economic Analysts Database India | Economists & Research Analysts",
+    title: "Economic Analysts Database India",
     metaDescription:
       "Economic analysts database in India - economists, research analysts, policy and market analysts in banks, think tanks, consultancies and government bodies. Free sample.",
     eyebrow: "Economic Analysts Database",
@@ -6452,7 +6461,7 @@ export const keywordPages: KeywordPage[] = [
   {
     slug: "educational-institutes-database-india",
     keyword: "educational institutes database India",
-    title: "Educational Institutes Database India | Coaching, Training & Universities",
+    title: "Educational Institutes Database India",
     metaDescription:
       "Educational institutes database in India - coaching centres, universities, ITIs, polytechnics, training and skill institutes with decision-maker contacts, city-wise.",
     eyebrow: "Educational Institutes Database",
@@ -6528,7 +6537,7 @@ export const keywordPages: KeywordPage[] = [
   {
     slug: "bank-employees-database-delhi-ncr",
     keyword: "bank employees database Delhi NCR",
-    title: "Bank Employees Database Delhi NCR | Banking Professionals List",
+    title: "Bank Employees Database Delhi NCR",
     metaDescription:
       "Bank employees database for Delhi NCR - banking professionals in public, private and cooperative banks across Delhi, Noida, Gurgaon, Ghaziabad and Faridabad. Free sample.",
     eyebrow: "Delhi NCR Bank Employees Database",
@@ -6610,7 +6619,7 @@ export const keywordPages: KeywordPage[] = [
   {
     slug: "energy-power-sector-database-delhi-ncr",
     keyword: "energy and power sector database Delhi NCR",
-    title: "Energy & Power Sector Database Delhi NCR | Power, Solar & Utility Companies",
+    title: "Energy & Power Database Delhi NCR",
     metaDescription:
       "Energy and power sector database for Delhi NCR - power utilities, solar EPC firms, electrical contractors, PSU offices and energy professionals in Delhi, Noida, Gurgaon and Faridabad.",
     eyebrow: "Delhi NCR Energy & Power Database",
@@ -6685,7 +6694,7 @@ export const keywordPages: KeywordPage[] = [
   {
     slug: "engineers-service-engineers-database-india",
     keyword: "engineers and service engineers database India",
-    title: "Engineers & Service Engineers Database India | Field & Maintenance Engineers",
+    title: "Engineers & Service Engineers Database",
     metaDescription:
       "Engineers and service engineers database in India - mechanical, electrical, electronics, HVAC and field service engineers by skill, experience and city. Free sample.",
     eyebrow: "Engineers Database",
@@ -6769,7 +6778,7 @@ export const keywordPages: KeywordPage[] = [
   {
     slug: "entertainment-media-database-india",
     keyword: "entertainment and media database India",
-    title: "Entertainment & Media Database India | Production Houses, Agencies & Media",
+    title: "Entertainment & Media Database India",
     metaDescription:
       "Entertainment and media database in India - production houses, ad agencies, publishers, broadcasters, event companies and media professionals by city. Free sample.",
     eyebrow: "Entertainment & Media Database",
@@ -6844,7 +6853,7 @@ export const keywordPages: KeywordPage[] = [
   {
     slug: "event-management-organisers-database-india",
     keyword: "event management organisers database India",
-    title: "Event Management Companies Database India | Event Organisers List",
+    title: "Event Management Database India",
     metaDescription:
       "Event management organisers database in India - corporate event agencies, wedding planners, exhibition organisers and event companies with owner contacts, city-wise. Free sample.",
     eyebrow: "Event Organisers Database",
@@ -6919,427 +6928,1744 @@ export const keywordPages: KeywordPage[] = [
   {
     slug: "fabric-clothing-stores-database-india",
     keyword: "fabric clothing stores database India",
-    title: "Fabric & Clothing Stores Database India | Garment Shops List",
-    metaDescription:
-      "Fabric and clothing stores database in India - cloth merchants, saree and suit shops, readymade garment showrooms and boutiques with owner contacts, city-wise. Free sample.",
+    title: "Fabric & Clothing Stores Database India",
+    metaDescription: "Find fabric shops, garment retailers and boutiques for your next sales campaign. Choose your cities and store types, then request a clothing-store sample.",
     eyebrow: "Fabric & Clothing Stores Database",
     showTestimonials: true,
-    h1: "Fabric / Clothing Stores Database in India",
-    answer:
-      "A fabric and clothing stores database lists cloth and apparel retailers in India - fabric and cloth merchants, saree and suit shops, readymade garment showrooms, boutiques and wholesale cloth traders - with shop name, owner name, store type, contact details and city. IndiaB2BData.com supplies city-wise clothing store data for textile mills, wholesalers and brands.",
+    h1: "Fabric & Clothing Stores Database in India",
+    answer: "Find clothing stores that fit what you sell. Whether you supply dress material, ready-to-wear collections, packaging or retail software, start with the right shop type and location. Share your target market with IndiaB2BData.com and ask for a sample before choosing a list.",
     intro: [
-      "India's clothing trade runs through lakhs of retail and wholesale stores - cloth markets in Surat, Ludhiana, Delhi's Chandni Chowk and Kolkata's Burrabazar, saree shops in Varanasi and Kanchipuram, and readymade garment showrooms in every town. These stores buy from mills, wholesalers and brands season after season.",
-      "Our fabric and clothing stores database helps suppliers reach store owners directly, filtered by store type and city. For export-focused manufacturers, see our apparel and garments exporters database.",
-      "To expand beyond retail stores, explore our manufacturer database for production businesses and our dealers and distributors database for wholesale and channel partners.",
+      "A fabric wholesaler and a boutique owner buy differently. One may need regular stock in volume; the other may be looking for a small seasonal collection. Your prospect list should reflect that difference.",
+      "Start with the stores you actually want to supply: cloth merchants, saree shops, garment showrooms, boutiques or wholesale traders. Add your target cities and any exclusions, such as branches you already serve.",
+      "If you need production businesses, explore the manufacturer database. For export-focused companies, use the garment exporters database. Keeping these groups separate makes your first conversation more relevant."
     ],
     contentLinks: [
-      { text: "apparel and garments exporters database", href: "/apparel-garments-exporters-database-india" },
-      { text: "manufacturer database", href: "/manufacturer-database-india" },
-      { text: "dealers and distributors database", href: "/dealers-distributors-database-india" },
-      { text: "company proprietors database", href: "/company-proprietors-database-india" },
-      { text: "women consumers database", href: "/females-database-india" },
+      {
+        text: "manufacturer database",
+        href: "/manufacturer-database-india"
+      },
+      {
+        text: "garment exporters database",
+        href: "/apparel-garments-exporters-database-india"
+      },
+      {
+        text: "dealers and distributors database",
+        href: "/dealers-distributors-database-india"
+      },
+      {
+        text: "furniture stores and dealers database",
+        href: "/furniture-stores-dealers-database-india"
+      },
+      {
+        text: "company proprietors database",
+        href: "/company-proprietors-database-india"
+      },
+      {
+        text: "women consumers database",
+        href: "/females-database-india"
+      }
     ],
     highlights: [
-      { icon: Sparkles, title: "All Store Types", description: "Fabric, sarees, readymade, boutiques, wholesale." },
-      { icon: UserCheck, title: "Owner Contacts", description: "Shop owners and proprietors." },
-      { icon: Filter, title: "Store-Type Filters", description: "Pick retail, wholesale or segment." },
-      { icon: MapPinned, title: "City-Wise", description: "Textile hubs, metros and tier-2 towns." },
+      {
+        icon: Filter,
+        title: "Choose the Store Type",
+        description: "Separate fabric shops, boutiques, garment stores and wholesalers."
+      },
+      {
+        icon: MapPinned,
+        title: "Define Your Territory",
+        description: "Build a brief around the cities and markets your team can serve."
+      },
+      {
+        icon: UserCheck,
+        title: "Focus on the Buyer",
+        description: "Ask which owner or business contact fields are populated."
+      },
+      {
+        icon: FileText,
+        title: "See a Sample First",
+        description: "Review the file structure and relevant records before ordering."
+      }
     ],
     dataFields: [
-      "Shop / business name",
-      "Owner or proprietor name",
-      "Store type: fabric, saree & suits, readymade garments, boutique or wholesale",
-      "Mobile number and email ID, where available",
-      "GSTIN and shop address, where available",
-      "City, state and pincode",
-    ],
+          "Shop / business name",
+          "Owner or proprietor name",
+          "Store type: fabric, saree & suits, readymade garments, boutique or wholesale",
+          "Mobile number and email ID, where available",
+          "GSTIN and shop address, where available",
+          "City, state and pincode",
+        ],
     sections: [
       {
-        heading: "Store Types Covered",
-        paragraphs: [],
-        subsections: [
-          { heading: "Fabric & Cloth Merchants", text: "Shirting, suiting, dress material and cloth retailers and wholesalers." },
-          { heading: "Saree & Ethnic Wear Shops", text: "Saree, suit, lehenga and ethnic wear stores." },
-          { heading: "Readymade Garment Showrooms", text: "Men's, women's and kids' wear showrooms and multi-brand outlets." },
-          { heading: "Boutiques & Tailoring Shops", text: "Designer boutiques and tailoring and stitching shops." },
+        heading: "Which clothing stores should be on your list?",
+        paragraphs: [
+          "Think about the next buyer you want to speak to, rather than asking for every clothing business in India. A clear store category usually tells your sales team more than a large, mixed list."
         ],
+        subsections: [
+          {
+            heading: "Fabric & dress-material shops",
+            text: "Useful for mills, cloth wholesalers and suppliers selling shirting, suiting or unstitched material."
+          },
+          {
+            heading: "Saree & ethnic-wear retailers",
+            text: "A more focused brief for sarees, suits, lehengas and related collections."
+          },
+          {
+            heading: "Readymade stores & boutiques",
+            text: "For brands looking for retail stockists, independent showrooms or boutique partnerships."
+          },
+          {
+            heading: "Wholesale & channel partners",
+            text: "If distribution is your main goal, compare the dealers and distributors database instead of mixing all store types together."
+          }
+        ]
       },
       {
-        heading: "Who Uses a Clothing Stores Database?",
-        paragraphs: [],
+        heading: "Build the list around your sales route",
+        paragraphs: [
+          "Tell us where you can deliver, your product category and the sort of shop you want to reach. Include whether you need independent stores, wholesalers or a combination.",
+          "For upholstery and furnishing products, the furniture stores and dealers database may be a better starting point. For owner-led businesses across several trades, compare the company proprietors database."
+        ],
         bullets: [
-          "Textile mills, powerloom units and fabric wholesalers",
-          "Garment manufacturers and apparel brands seeking retailers",
-          "Hangers, packaging, mannequin and store-fixture suppliers",
-          "Billing software, POS and retail-tech companies",
-          "Sales agents and distributors in the textile trade",
-        ],
-        closing: [
-          "For owner-led business outreach, explore the company proprietors database. If your campaign targets shoppers rather than clothing stores, use the women consumers database to discuss a consumer audience.",
-        ],
+          "Choose the cities or market areas your team covers.",
+          "Specify retail, wholesale or boutique requirements.",
+          "List existing customers or unsuitable categories to exclude.",
+          "Ask to see which contact and location fields are available."
+        ]
       },
+      {
+        heading: "Stores, shoppers and the next step",
+        paragraphs: [
+          "A store-owner list is for trade sales. If you want to promote a collection to individual shoppers, discuss the women consumers database as a separate audience requirement.",
+          "Send your store types and cities through the sample form. Check the sample's category fit, location detail and contact-field completeness, then ask for a quote for the agreed scope."
+        ]
+      }
     ],
     useCases: [
-      "Retailer acquisition for garment brands",
-      "Fabric and wholesale trade outreach",
-      "Store fixtures and packaging sales",
-      "POS and billing software promotion",
-      "Season and festive collection launches",
+      "Find stockists for a new apparel collection",
+      "Introduce fabric ranges to relevant shop owners",
+      "Offer packaging, display fixtures or mannequins",
+      "Demonstrate billing and retail software",
+      "Plan a city-by-city wholesale sales route"
     ],
     faqs: [
-      { question: "What is a fabric and clothing stores database?", answer: "It is a list of cloth and apparel retailers and wholesalers in India - fabric merchants, saree shops, readymade garment showrooms and boutiques - with owner contacts and location." },
-      { question: "Can I get only wholesale cloth traders?", answer: "Yes. Records can be filtered by store type, such as wholesale, fabric retail, sarees, readymade or boutiques." },
-      { question: "Which cities are covered?", answer: "All major cities and textile hubs, including Surat, Ludhiana, Delhi, Mumbai, Kolkata, Jaipur, Tiruppur and Varanasi." },
-      { question: "Who buys clothing store data?", answer: "Textile mills, garment brands, wholesalers, store-fixture suppliers and retail software companies." },
-      { question: "How is this different from the garment exporters database?", answer: "This database covers domestic retail and wholesale stores. The garment exporters database covers manufacturers and exporters." },
-      { question: "Can I see a sample?", answer: "Yes. Download the sample format on this page or request real sample records." },
+      {
+        question: "Can I request only saree shops or boutiques?",
+        answer: "Yes—describe the store category you need and the cities you serve. The team will check the available matching records before confirming the scope."
+      },
+      {
+        question: "Does this cover manufacturers as well as shops?",
+        answer: "This page focuses on retail and wholesale stores. Ask for a separate manufacturer or garment-exporter requirement if your buyers are production businesses."
+      },
+      {
+        question: "What will the sample show?",
+        answer: "The download demonstrates the column format using fictional, masked records. Use the enquiry form to request a representative sample for your actual requirement."
+      },
+      {
+        question: "Can you build a list for one city?",
+        answer: "Share the city and store types you want. Ask the team to confirm current coverage and whether locality-level detail is recorded."
+      },
+      {
+        question: "How do I get a price?",
+        answer: "Send the target cities, store categories and approximate quantity. Request confirmation of the record count, populated fields, format and delivery timing with your quote."
+      }
     ],
     related: [
-      "apparel-garments-exporters-database-india",
       "manufacturer-database-india",
+      "apparel-garments-exporters-database-india",
       "dealers-distributors-database-india",
-      "designers-database-india",
+      "furniture-stores-dealers-database-india",
       "company-proprietors-database-india",
-      "females-database-india",
+      "females-database-india"
     ],
+    useCasesIntro: "Use the list to support a specific trade conversation, from introducing a collection to arranging a product demonstration.",
+    cta: {
+      heroTitle: "Find Stores That Fit Your Product",
+      heroSubtitle: "Tell us your cities, store types and approximate quantity. Ask for a relevant sample and a clear quote.",
+      buttonLabel: "Request Store Sample",
+      text: "Which stores would you like to supply next? Send your cities and product category, and let’s scope the right list.",
+      footerTitle: "Let’s Build Your Clothing-Store Shortlist",
+      footerText: "Share where you sell, what you supply and who you want to speak to. We’ll confirm available coverage, sample options and pricing."
+    },
   },
   {
     slug: "facebook-users-database-india",
     keyword: "Facebook users database India",
-    title: "Facebook Users Database India | Social Media Users Data",
-    metaDescription:
-      "Facebook users database in India - opt-in social media active consumers with mobile, email, age band, gender, interests and city. For digital campaigns and custom audiences. Free sample.",
+    title: "Facebook Users Database India | Consumer Audience Enquiries",
+    metaDescription: "Plan a focused consumer campaign with audience requirements by city, age band and interests. Ask about sources, available contact fields and sample options.",
     eyebrow: "Social Media Users Database",
     showTestimonials: true,
     h1: "Facebook Users Database in India",
-    answer:
-      "A Facebook users database is a list of social-media-active consumers in India, compiled from opt-in sources, with name, mobile number, email ID, age band, gender, interests and city. Marketers use it to build custom audiences and run SMS, WhatsApp and email campaigns. IndiaB2BData.com supplies city-wise social media user data; it is not sourced from or affiliated with Meta or Facebook.",
+    answer: "A useful audience list starts with the people you want to reach and the offer you have for them. Tell us your target cities, adult age groups and campaign channel. We’ll help you check whether the available consumer segment fits your brief before you order.",
     intro: [
-      "India has one of the world's largest social media audiences, spread across metros, tier-2 cities and small towns. Brands, apps and local businesses want to reach these digitally active consumers on the channels where they respond - ads, SMS, WhatsApp and email.",
-      "Our Facebook users database lists opt-in social-media-active consumers, filtered by age band, gender, interest and city, so you can upload custom audiences or run direct campaigns. For bulk contact lists, see our mobile number database.",
-      "If your campaign uses a specific channel, compare our WhatsApp number database and email database to discuss the contact fields and coverage you need.",
+      "A local store opening and a nationwide app launch need very different audiences. Before looking at record counts, decide who the offer is for, where those people live and how you plan to contact them.",
+      "This is an independent consumer-audience enquiry, not a Facebook or Meta account export. Ask how any social-media activity is identified and what source information is available; a phone number alone does not establish that someone uses Facebook.",
+      "For a channel-specific requirement, compare the mobile number database, email database or WhatsApp number database. Choose the contact fields your campaign needs rather than paying for columns you will not use."
     ],
     contentLinks: [
-      { text: "mobile number database", href: "/mobile-number-database-india" },
-      { text: "WhatsApp number database", href: "/whatsapp-number-database-india" },
-      { text: "email database", href: "/email-database-india" },
-      { text: "women consumers database", href: "/females-database-india" },
-      { text: "dining and leisure customers database", href: "/dining-leisure-customers-database-india" },
+      {
+        text: "mobile number database",
+        href: "/mobile-number-database-india"
+      },
+      {
+        text: "email database",
+        href: "/email-database-india"
+      },
+      {
+        text: "WhatsApp number database",
+        href: "/whatsapp-number-database-india"
+      },
+      {
+        text: "women consumers database",
+        href: "/females-database-india"
+      },
+      {
+        text: "female consumer Bangalore database",
+        href: "/female-consumer-bangalore-database"
+      },
+      {
+        text: "frequent flyer database",
+        href: "/frequent-flyer-database-india"
+      },
+      {
+        text: "dining and leisure customers database",
+        href: "/dining-leisure-customers-database-india"
+      }
     ],
     highlights: [
-      { icon: Smartphone, title: "Digitally Active", description: "Consumers active on social media." },
-      { icon: Users, title: "Demographic Filters", description: "Age band, gender and interests." },
-      { icon: Target, title: "Custom Audiences", description: "Ready to upload for ad matching." },
-      { icon: MapPinned, title: "City-Wise", description: "Metros, tier-2 and tier-3 cities." },
+      {
+        icon: Target,
+        title: "Start with the Campaign",
+        description: "Define the offer and audience before deciding on a list."
+      },
+      {
+        icon: MapPinned,
+        title: "Choose Your Locations",
+        description: "Discuss the cities or service areas that matter to your business."
+      },
+      {
+        icon: Filter,
+        title: "Check Recorded Attributes",
+        description: "Ask which age bands and interest fields are actually available."
+      },
+      {
+        icon: FileText,
+        title: "Review Before Ordering",
+        description: "See the sample format and clarify the source of audience labels."
+      }
     ],
     dataFields: [
-      "Name",
-      "Mobile number and email ID",
-      "Age band and gender",
-      "Interests: shopping, travel, food, fitness, finance, education",
-      "City, state and pincode",
-    ],
+          "Name",
+          "Mobile number and email ID",
+          "Age band and gender",
+          "Interests: shopping, travel, food, fitness, finance, education",
+          "City, state and pincode",
+        ],
     sections: [
       {
-        heading: "Audience Segments",
-        paragraphs: [],
-        subsections: [
-          { heading: "Young Adults", text: "18-25 users for education, apps, fashion and entertainment." },
-          { heading: "Working Professionals", text: "26-40 users for finance, real estate, travel and premium brands." },
-          { heading: "Interest Groups", text: "Shoppers, travellers, foodies, fitness and finance enthusiasts." },
-          { heading: "Local Audiences", text: "City- and pincode-level users for local business promotion." },
+        heading: "Turn a broad audience idea into a clear brief",
+        paragraphs: [
+          "“People interested in shopping” is a starting point, but it is too broad for many campaigns. Add a location, an adult age range if relevant, and the product or service you want to introduce."
         ],
+        subsections: [
+          {
+            heading: "Local offers",
+            text: "Set a realistic service radius for a store, gym, salon or event."
+          },
+          {
+            heading: "Product launches",
+            text: "Explain the category and the type of customer you want to reach."
+          },
+          {
+            heading: "App & service enquiries",
+            text: "Describe the intended user and the action you want them to take."
+          },
+          {
+            heading: "Channel planning",
+            text: "Specify email, phone, messaging or an advertising use so you can discuss the appropriate fields and recorded permissions."
+          }
+        ]
       },
       {
-        heading: "Who Uses a Facebook Users Database?",
-        paragraphs: [],
-        bullets: [
-          "Digital marketing agencies building custom and lookalike audiences",
-          "E-commerce, D2C brands and mobile apps",
-          "Real estate, education and financial services marketers",
-          "Restaurants, salons, gyms and local businesses",
-          "Event, travel and entertainment promoters",
-        ],
-        closing: [
-          "For a women-focused audience, explore our women consumers database. For hospitality and lifestyle offers, see the dining and leisure customers database.",
-          "Data is compiled from opt-in sources. Follow TRAI DND and DPDP Act rules when contacting consumers.",
-        ],
+        heading: "Choose a more specific audience when it helps",
+        paragraphs: [
+          "For a women-focused campaign, compare the women consumers database. If your offer is limited to Bengaluru, the female consumer Bangalore database gives that enquiry a clearer geographic focus.",
+          "Travel brands can discuss the frequent flyer database, while hospitality and leisure businesses can explore the dining and leisure customers database. These are different audience briefs; do not assume that one segment automatically includes the others."
+        ]
       },
+      {
+        heading: "What to check before you run a campaign",
+        paragraphs: [
+          "Review how the audience was described, what the sample contains and how recently the relevant attributes were recorded. If a field is important to your campaign, ask to see it rather than assuming it will be present.",
+          "Tell the team which platform or contact channel you intend to use. Check the source and recorded permissions for that use before treating an audience list as ready for an advertising upload."
+        ]
+      }
     ],
     useCases: [
-      "Custom audience uploads for ad campaigns",
-      "SMS and WhatsApp promotions",
-      "Email marketing campaigns",
-      "App install and sign-up drives",
-      "Local store and event promotion",
+      "Scope an audience for a local store opening",
+      "Plan a focused product or app launch",
+      "Discuss city-specific consumer outreach",
+      "Compare channel and interest requirements",
+      "Prepare a sample brief for a marketing team"
     ],
     faqs: [
-      { question: "What is a Facebook users database?", answer: "It is a list of social-media-active consumers in India, from opt-in sources, with mobile, email, age band, gender, interests and city." },
-      { question: "Is this data from Facebook or Meta?", answer: "No. The data is compiled from opt-in consumer sources and is not sourced from or affiliated with Meta or Facebook." },
-      { question: "Can I filter by age and gender?", answer: "Yes. Records can be filtered by age band, gender, interest and city." },
-      { question: "Can I upload it as a custom audience?", answer: "Yes. Mobile and email fields are delivered in a format ready for custom audience matching on ad platforms." },
-      { question: "Which cities are covered?", answer: "All major metros and tier-2 and tier-3 cities across India." },
-      { question: "Can I see a sample?", answer: "Yes. Download the sample format on this page or request real sample records." },
+      {
+        question: "Is this a Facebook or Meta data export?",
+        answer: "No. This is an independent consumer-audience enquiry. Ask for the source and basis of any social-media-use attribute before relying on it."
+      },
+      {
+        question: "Does every record identify a Facebook account?",
+        answer: "Do not assume that. Confirm what is actually recorded; this page does not promise Facebook account IDs, profiles, passwords or account access."
+      },
+      {
+        question: "Can I request a city and an adult age band?",
+        answer: "Include both in your brief. The team can check whether matching records and the requested attributes are available."
+      },
+      {
+        question: "Can I upload the list to an advertising platform?",
+        answer: "A list is not automatically suitable for an upload. Discuss your intended use and check the source, recorded permissions and the platform’s requirements first."
+      },
+      {
+        question: "How do I see the format and get a quote?",
+        answer: "Download the fictional sample to inspect the layout, then send your audience, city and channel requirements through the form for a coverage check and quote."
+      }
     ],
     related: [
       "mobile-number-database-india",
-      "whatsapp-number-database-india",
       "email-database-india",
-      "bulk-sms-database-india",
+      "whatsapp-number-database-india",
       "females-database-india",
-      "dining-leisure-customers-database-india",
+      "female-consumer-bangalore-database",
+      "frequent-flyer-database-india",
+      "dining-leisure-customers-database-india"
     ],
+    useCasesIntro: "Match the audience to the offer first, then decide which contact fields and channels are appropriate.",
+    cta: {
+      heroTitle: "Tell Us Who You Want to Reach",
+      heroSubtitle: "Share your offer, target cities and intended channel. We’ll check the available audience fields and sample options.",
+      buttonLabel: "Discuss My Audience",
+      text: "Have a campaign in mind? Send the offer, location and audience you need, and ask for a sample that fits.",
+      footerTitle: "Make Your Next Audience Brief More Specific",
+      footerText: "Tell us who the offer is for and how you plan to use the data. We’ll help you check the available scope before you decide."
+    },
   },
   {
     slug: "females-database-india",
     keyword: "females database India",
-    title: "Females Database India | Women Consumers Data List",
-    metaDescription:
-      "Females database in India - opt-in women consumers, homemakers and working women with mobile, email, age band, occupation, interests and city. For women-focused campaigns. Free sample.",
+    title: "Females Database India | Women Consumer Audience Lists",
+    metaDescription: "Scope a women consumer audience by city, adult age band and relevant interests. Review available fields and request a sample for your campaign.",
     eyebrow: "Women Consumers Database",
     showTestimonials: true,
-    h1: "Females Database in India",
-    answer:
-      "A females database is a list of women consumers in India, compiled from opt-in sources - homemakers, working women, students and women entrepreneurs - with name, mobile number, email ID, age band, occupation, interests and city. IndiaB2BData.com supplies city-wise female consumer data for brands selling fashion, beauty, health, finance and education products.",
+    h1: "Women Consumers Database in India",
+    answer: "Reach a women consumer audience that makes sense for your offer. A local workshop, a new collection and an adult learning course each need a different brief. Share the locations and audience details that matter, then review the available sample before choosing a list.",
     intro: [
-      "Women drive a large share of household purchase decisions in India - from groceries, fashion and beauty to education, health and savings products. Brands, salons, boutiques, insurers and edtech firms all run campaigns built specifically for women.",
-      "Our females database lists opt-in women consumers, filtered by age band, occupation, interest and city, so you can run SMS, WhatsApp, email and ad campaigns aimed at the right audience.",
-      "For a Bengaluru-only requirement, see our female consumer Bangalore database. For a broader digitally active audience, compare our Facebook users database.",
+      "Women are not a single customer group. The audience for a professional course may be quite different from the audience for a neighbourhood store launch. Start with the need your product meets, rather than treating gender as the whole brief.",
+      "Tell us the cities, adult age bands and relevant recorded interests you want to discuss. Occupation or other audience fields can help when they are available, but your sample should show what is actually populated.",
+      "For a city-specific requirement, explore the female consumer Bangalore database. For a broader social-media audience enquiry, compare the Facebook users database and check its source and available attributes."
     ],
     contentLinks: [
-      { text: "female consumer Bangalore database", href: "/female-consumer-bangalore-database" },
-      { text: "Facebook users database", href: "/facebook-users-database-india" },
-      { text: "fabric and clothing stores database", href: "/fabric-clothing-stores-database-india" },
-      { text: "salons and spas database", href: "/beauty-parlours-salons-spa-database-india" },
-      { text: "WhatsApp number database", href: "/whatsapp-number-database-india" },
+      {
+        text: "female consumer Bangalore database",
+        href: "/female-consumer-bangalore-database"
+      },
+      {
+        text: "Facebook users database",
+        href: "/facebook-users-database-india"
+      },
+      {
+        text: "fabric and clothing stores database",
+        href: "/fabric-clothing-stores-database-india"
+      },
+      {
+        text: "gems and jewellery shops database",
+        href: "/gems-jewellery-shops-database-india"
+      },
+      {
+        text: "salons and spas database",
+        href: "/beauty-parlours-salons-spa-database-india"
+      },
+      {
+        text: "WhatsApp number database",
+        href: "/whatsapp-number-database-india"
+      }
     ],
     highlights: [
-      { icon: Users, title: "Women Consumers", description: "Homemakers, working women, students." },
-      { icon: Filter, title: "Demographic Filters", description: "Age band, occupation and interests." },
-      { icon: Smartphone, title: "Multi-Channel", description: "Mobile, WhatsApp and email ready." },
-      { icon: MapPinned, title: "City-Wise", description: "Metros, tier-2 and tier-3 cities." },
+      {
+        icon: Users,
+        title: "A More Relevant Audience",
+        description: "Build the brief around your offer, not gender alone."
+      },
+      {
+        icon: MapPinned,
+        title: "City-Level Planning",
+        description: "Choose the locations where your business can serve customers."
+      },
+      {
+        icon: Filter,
+        title: "Discuss Useful Filters",
+        description: "Request adult age bands, interests or occupation fields when relevant."
+      },
+      {
+        icon: FileText,
+        title: "Inspect the Sample",
+        description: "Check column completeness and audience fit before ordering."
+      }
     ],
     dataFields: [
-      "Name",
-      "Mobile number and email ID",
-      "Age band",
-      "Occupation: homemaker, salaried, self-employed, student or business owner",
-      "Interests: fashion, beauty, health, finance, education",
-      "City, state and pincode",
-    ],
+          "Name",
+          "Mobile number and email ID",
+          "Age band",
+          "Occupation: homemaker, salaried, self-employed, student or business owner",
+          "Interests: fashion, beauty, health, finance, education",
+          "City, state and pincode",
+        ],
     sections: [
       {
-        heading: "Segments Covered",
-        paragraphs: [],
-        subsections: [
-          { heading: "Homemakers", text: "Household decision-makers for FMCG, kitchen, home and kids' products." },
-          { heading: "Working Women", text: "Salaried professionals for finance, insurance, fashion and travel." },
-          { heading: "Young Women & Students", text: "18-25 audience for education, beauty, fashion and apps." },
-          { heading: "Women Entrepreneurs", text: "Business owners for loans, B2B services and business tools." },
+        heading: "Start with the offer, then choose the audience",
+        paragraphs: [
+          "Be specific about the product, price range, service area and action you want someone to take. This helps you avoid combining unrelated audiences in one campaign."
         ],
+        subsections: [
+          {
+            heading: "Retail & fashion",
+            text: "Describe the collection, store location and customer need rather than requesting a general national list."
+          },
+          {
+            heading: "Learning & professional development",
+            text: "Explain the course level, adult eligibility and whether location matters."
+          },
+          {
+            heading: "Events & workshops",
+            text: "Set out the event topic, venue and practical travel radius."
+          },
+          {
+            heading: "Lifestyle services",
+            text: "Tell us the service area and relevant interests; do not infer personal health or financial circumstances from a broad audience label."
+          }
+        ]
       },
       {
-        heading: "Who Uses a Females Database?",
-        paragraphs: [],
-        bullets: [
-          "Fashion, jewellery, boutique and clothing brands",
-          "Beauty, salon, skincare and wellness businesses",
-          "Health, fitness, maternity and childcare brands",
-          "Banks, insurers and investment platforms",
-          "Edtech, skill training and coaching institutes",
-        ],
-        closing: [
-          "Brands planning retail partnerships can use the fabric and clothing stores database, while beauty businesses can explore the salons and spas database. For mobile-led campaigns, compare the WhatsApp number database.",
-          "Data is compiled from opt-in sources. Follow TRAI DND and DPDP Act rules when contacting consumers.",
-        ],
+        heading: "Consumer outreach or business partnerships?",
+        paragraphs: [
+          "If you sell to retailers rather than individual shoppers, use the fabric and clothing stores database or gems and jewellery shops database. They serve a trade-sales requirement, not a consumer campaign.",
+          "Beauty suppliers looking for business customers can explore the salons and spas database. Keep that shortlist separate from the women consumers you hope to attract to a local service."
+        ]
       },
+      {
+        heading: "Review your contact plan before you order",
+        paragraphs: [
+          "Tell us how you intend to contact the audience and ask about the source and recorded preferences. Confirm the fields you need, how missing values are handled and the scope covered by the quote.",
+          "For a messaging-specific requirement, compare the WhatsApp number database. A consumer phone number should not be treated as proof that the person wants to receive a campaign."
+        ]
+      }
     ],
     useCases: [
-      "Fashion and beauty product launches",
-      "Salon, spa and wellness promotions",
-      "Women-focused insurance and savings plans",
-      "Education and skill course enrolment",
-      "Festive and Women's Day campaigns",
+      "Plan an audience for a local store launch",
+      "Promote a relevant workshop or exhibition",
+      "Scope an adult education campaign",
+      "Discuss location-based lifestyle offers",
+      "Build separate briefs for different customer groups"
     ],
     faqs: [
-      { question: "What is a females database?", answer: "It is a list of women consumers in India, from opt-in sources, with mobile, email, age band, occupation, interests and city." },
-      { question: "Can I filter by age and occupation?", answer: "Yes. Records can be filtered by age band, occupation such as homemaker or working woman, interest and city." },
-      { question: "Which cities are covered?", answer: "All major metros and tier-2 and tier-3 cities across India." },
-      { question: "Who buys female consumer data?", answer: "Fashion and beauty brands, salons, health and wellness companies, financial services firms and education providers." },
-      { question: "Is the data legal to use?", answer: "Data is compiled from opt-in sources. Follow TRAI DND and DPDP Act rules, and include an opt-out in every campaign." },
-      { question: "Can I see a sample?", answer: "Yes. Download the sample format on this page or request real sample records." },
+      {
+        question: "Is this a list of all women in a city?",
+        answer: "No. It is an enquiry for an available consumer segment, not a complete population register. Ask for the coverage and fields relevant to your brief."
+      },
+      {
+        question: "Can I request adult age bands or interests?",
+        answer: "Yes, include the attributes that matter. The team will check which are recorded and available for your requested locations."
+      },
+      {
+        question: "Can I get Bangalore-only coverage?",
+        answer: "Use the dedicated Bangalore page and specify your localities or service radius so the team can check the match."
+      },
+      {
+        question: "What does the download contain?",
+        answer: "It is a fictional, masked example of the file format. Request a representative sample separately to assess your actual audience requirement."
+      },
+      {
+        question: "What should I send for a quote?",
+        answer: "Share your offer, target cities, adult audience criteria, intended contact channel and approximate quantity. Ask for coverage and populated fields to be confirmed before ordering."
+      }
     ],
     related: [
       "female-consumer-bangalore-database",
       "facebook-users-database-india",
       "fabric-clothing-stores-database-india",
+      "gems-jewellery-shops-database-india",
       "beauty-parlours-salons-spa-database-india",
-      "mobile-number-database-india",
-      "whatsapp-number-database-india",
-      "dining-leisure-customers-database-india",
+      "whatsapp-number-database-india"
     ],
+    useCasesIntro: "Use a clear offer and service area to make your audience brief more useful.",
+    cta: {
+      heroTitle: "Build a Women Consumer Audience Brief",
+      heroSubtitle: "Tell us your offer, cities and adult audience criteria. Ask for the available fields and a relevant sample.",
+      buttonLabel: "Request Audience Sample",
+      text: "Who is your offer for? Share your locations and audience criteria so we can check the right segment.",
+      footerTitle: "Let’s Find an Audience That Fits Your Offer",
+      footerText: "Describe your campaign and intended channel. We’ll confirm available coverage, sample options and pricing for that requirement."
+    },
   },
   {
     slug: "female-consumer-bangalore-database",
     keyword: "Female Consumer Bangalore Database",
-    title: "Female Consumer Bangalore Database | Women Consumers",
-    metaDescription:
-      "Female consumer database in Bangalore - women consumer segments by locality, age band and interests. Request available fields, coverage and a sample format.",
+    title: "Female Consumer Bangalore Database | Local Audience Enquiries",
+    metaDescription: "Plan a Bangalore women consumer campaign by locality and service area. Share your offer, check available audience fields and request a relevant sample.",
     eyebrow: "Female Consumer Bangalore Database",
     showTestimonials: true,
-    h1: "Female Consumer Bangalore Database",
-    answer:
-      "A female consumer Bangalore database is a city-focused list of adult women consumers in Bengaluru, organised by locality and available audience attributes. IndiaB2BData.com helps brands scope a Bangalore audience for fashion, beauty, retail, education and lifestyle campaigns. Ask for current coverage and available fields before ordering.",
+    h1: "Female Consumer Database for Bangalore",
+    answer: "Planning a campaign for women consumers in Bangalore? Start with the neighbourhoods your business serves. Share your offer, service radius and adult audience criteria, and ask IndiaB2BData.com to check the available Bengaluru coverage before you order.",
     intro: [
-      "For a boutique, salon, fitness studio or local retailer, a Bangalore-only audience is more useful than a nationwide consumer list. Define your service area first so your campaign reaches people in the neighbourhoods your business serves.",
-      "Share the localities, adult age bands, interests and campaign channel you need. Our team can confirm which filters and contact fields are available and prepare an Excel or CSV delivery for the agreed audience.",
-      "For campaigns aimed at digitally active shoppers, compare our Facebook users database and ask about available Bengaluru coverage.",
+      "A salon in Whitefield and a workshop in Jayanagar do not need the same city-wide audience. A useful local list follows the area people can realistically travel from, not just the city name.",
+      "Tell us the localities you want to include, any areas to leave out and the customer need your offer addresses. Bangalore and Bengaluru refer to the same city; the important detail is the coverage within it.",
+      "If your campaign extends to other cities, compare the women consumers database. If you need a broader digital-audience brief, explore the Facebook users database and confirm what is actually recorded."
     ],
     contentLinks: [
-      { text: "women consumers database", href: "/females-database-india" },
-      { text: "Facebook users database", href: "/facebook-users-database-india" },
-      { text: "fabric and clothing stores database", href: "/fabric-clothing-stores-database-india" },
-      { text: "salons and spas database", href: "/beauty-parlours-salons-spa-database-india" },
-      { text: "dining and leisure customers database", href: "/dining-leisure-customers-database-india" },
+      {
+        text: "women consumers database",
+        href: "/females-database-india"
+      },
+      {
+        text: "Facebook users database",
+        href: "/facebook-users-database-india"
+      },
+      {
+        text: "fabric and clothing stores database",
+        href: "/fabric-clothing-stores-database-india"
+      },
+      {
+        text: "salons and spas database",
+        href: "/beauty-parlours-salons-spa-database-india"
+      },
+      {
+        text: "gems and jewellery shops database",
+        href: "/gems-jewellery-shops-database-india"
+      },
+      {
+        text: "dining and leisure customers database",
+        href: "/dining-leisure-customers-database-india"
+      }
     ],
     highlights: [
-      { icon: MapPinned, title: "Bangalore Focus", description: "Scope your audience within Bengaluru rather than across India." },
-      { icon: Filter, title: "Locality Filters", description: "Request neighbourhood or pincode coverage for your service area." },
-      { icon: Users, title: "Adult Women Consumers", description: "Discuss age bands, occupation and interests where available." },
-      { icon: FileText, title: "Sample Format", description: "Preview the columns before confirming your requirement." },
+      {
+        icon: MapPinned,
+        title: "Neighbourhood First",
+        description: "Start with the places your business can genuinely serve."
+      },
+      {
+        icon: Filter,
+        title: "Clear Locality Brief",
+        description: "Specify areas, pincodes or a service radius to discuss."
+      },
+      {
+        icon: Users,
+        title: "Adult Audience Criteria",
+        description: "Choose relevant age bands and interests when recorded."
+      },
+      {
+        icon: FileText,
+        title: "Check the Local Sample",
+        description: "Look at the locality and contact fields before confirming scope."
+      }
     ],
     dataFields: [
-      "Consumer name",
-      "Mobile number and email ID, where available and permitted",
-      "Adult age band, where recorded",
-      "Occupation and interests, where recorded",
-      "Bangalore locality",
-      "City: Bengaluru, state: Karnataka and pincode, where available",
-    ],
+          "Consumer name",
+          "Mobile number and email ID, where available and permitted",
+          "Adult age band, where recorded",
+          "Occupation and interests, where recorded",
+          "Bangalore locality",
+          "City: Bengaluru, state: Karnataka and pincode, where available",
+        ],
     sections: [
       {
-        heading: "Plan Your Bangalore Coverage",
+        heading: "Plan around your Bangalore service area",
         paragraphs: [
-          "Tell us whether you need city-wide coverage or a smaller service area. Example areas to discuss include Whitefield, Indiranagar, Koramangala, HSR Layout, Jayanagar, JP Nagar and Electronic City; availability and counts are confirmed for each request.",
-          "Bangalore and Bengaluru refer to the same city. This page focuses on that city; choose our women consumers database for a broader India-wide requirement.",
-        ],
+          "Whitefield, Indiranagar, Koramangala, HSR Layout, Jayanagar, JP Nagar and Electronic City are examples of areas you can include in a brief. Naming them here is not a promise of record counts; ask the team to check the localities you need.",
+          "For a delivery-based business, share your delivery area. For a venue-based offer, tell us where the venue is and how far your customers are likely to travel."
+        ]
       },
       {
-        heading: "Build a Relevant Consumer Segment",
+        heading: "Make the audience brief useful",
         paragraphs: [
-          "Start with your product and service radius, then request recorded attributes that fit your campaign. Field availability varies by segment, so confirm the sample, audience size and delivery scope with the team.",
-          "For retail partnerships rather than consumer outreach, explore our fabric and clothing stores database and salons and spas database. For restaurant or leisure offers, see the dining and leisure customers database. Confirm Bangalore coverage for any of these requirements.",
+          "Explain the offer in a sentence: a boutique opening, an evening course, a fitness class or a weekend event. Add the adult audience criteria that matter and the contact channel you plan to use."
         ],
-        subsections: [
-          { heading: "Fashion & Retail", text: "Local boutique launches, store openings and relevant shopping offers." },
-          { heading: "Beauty & Wellness", text: "Salon, spa, fitness and wellness promotions within a service area." },
-          { heading: "Education & Skills", text: "Adult learning, professional training and skill-development invitations." },
-          { heading: "Local Events", text: "Workshops, exhibitions and community events for an appropriate audience." },
-        ],
+        bullets: [
+          "Target localities or pincodes and any exclusions.",
+          "The product, service or event you want to promote.",
+          "Relevant adult age bands or recorded interests.",
+          "Your intended channel and approximate audience size."
+        ]
       },
+      {
+        heading: "Choose business contacts when you need trade partners",
+        paragraphs: [
+          "Selling stock to retailers is a different requirement from promoting a consumer offer. For trade partnerships, explore the fabric and clothing stores database, salons and spas database or gems and jewellery shops database, and request Bangalore filters.",
+          "For dining and hospitality offers, compare the dining and leisure customers database. In each case, confirm the local coverage rather than assuming a national category has every neighbourhood you need."
+        ]
+      },
+      {
+        heading: "See the fields before you choose the quantity",
+        paragraphs: [
+          "Review the sample's location detail, contact-field completeness and audience labels. Ask about the source and recorded preferences for your intended use.",
+          "The download on this page shows fictional Bangalore records for format preview. Send your actual localities through the enquiry form to discuss a representative sample and a quote."
+        ]
+      }
     ],
     useCases: [
-      "Bangalore boutique and retail store launches",
-      "Neighbourhood salon and wellness promotions",
-      "Adult education and skills course campaigns",
-      "Local workshops, exhibitions and event invitations",
+      "Scope a boutique or store-opening campaign",
+      "Plan local salon and lifestyle promotions",
+      "Invite an adult audience to a course or workshop",
+      "Promote a neighbourhood event",
+      "Build separate audience briefs for different service areas"
     ],
     faqs: [
-      { question: "Is this database specific to Bangalore?", answer: "Yes. This page is for a Bengaluru-focused requirement. Share your preferred localities or pincodes so the team can confirm available coverage." },
-      { question: "Can I request Whitefield, HSR Layout or Koramangala?", answer: "You can request these or other Bangalore localities. Available records and locality filters are confirmed before an order." },
-      { question: "Which demographic filters can I request?", answer: "Adult age bands, occupation and interests can be discussed where those attributes are recorded. Ask for a sample and the available field list." },
-      { question: "How does this differ from the women consumers database?", answer: "This is a Bangalore-specific audience requirement. The women consumers database supports broader city-wise requirements across India." },
-      { question: "Can I download a sample?", answer: "Yes. The download on this page contains fictional, masked Bangalore records to demonstrate the file format. Use the enquiry form to discuss actual availability." },
+      {
+        question: "Can I request one locality instead of all Bangalore?",
+        answer: "Yes. Name the locality, pincodes or service radius you need and ask the team to confirm available matching records."
+      },
+      {
+        question: "Are Whitefield and HSR Layout guaranteed to be covered?",
+        answer: "Coverage and record counts need to be checked for your request. The area examples on this page describe possible filters, not confirmed availability."
+      },
+      {
+        question: "Does the list include only adults?",
+        answer: "This page is for adult audience requirements. Confirm the recorded age bands and how records without suitable age information are handled."
+      },
+      {
+        question: "How is this different from the India-wide page?",
+        answer: "This enquiry starts with Bengaluru and its localities. The India-wide women consumers page is a starting point for requirements spanning other cities."
+      },
+      {
+        question: "How do I request a sample and quote?",
+        answer: "Send your offer, localities, adult audience criteria and intended channel. Ask the team to confirm the sample options, fields, quantity and price."
+      }
     ],
     related: [
       "females-database-india",
-      "beauty-parlours-salons-spa-database-india",
+      "facebook-users-database-india",
       "fabric-clothing-stores-database-india",
-      "dining-leisure-customers-database-india",
+      "beauty-parlours-salons-spa-database-india",
+      "gems-jewellery-shops-database-india",
+      "dining-leisure-customers-database-india"
     ],
+    useCasesIntro: "Keep the campaign local enough to be useful to the person receiving it.",
+    cta: {
+      heroTitle: "Tell Us Your Bangalore Localities",
+      heroSubtitle: "Share your service area, offer and adult audience criteria. We’ll check the available local coverage and sample options.",
+      buttonLabel: "Check Bangalore Coverage",
+      text: "Whitefield, Jayanagar or another neighbourhood? Send the areas you serve and let’s check the match.",
+      footerTitle: "Let’s Scope Your Bangalore Campaign",
+      footerText: "Share the localities you want to reach and what you are promoting. Ask for the available fields, a relevant sample and a quote."
+    },
   },
   {
     slug: "financial-analysts-managers-industry-database",
     keyword: "Financial Analysts/ Managers/ Industry Database",
-    title: "Financial Analysts & Managers Industry Database India",
-    metaDescription:
-      "Financial analysts and managers database in India - professional contacts by finance role, employer, sector and city. Request coverage and a sample format.",
+    title: "Financial Analysts & Finance Managers Database India",
+    metaDescription: "Find finance professionals by role, employer sector and city. Scope analyst, FP&A, treasury or finance-manager contacts and request a relevant sample.",
     eyebrow: "Financial Analysts & Managers Database",
     showTestimonials: true,
-    h1: "Financial Analysts/ Managers/ Industry Database",
-    answer:
-      "A financial analysts, managers and industry database is a professional contact list for finance teams and financial-services organisations in India. It can be scoped around financial analysts, finance managers, research specialists and related employers, with role, company, industry, city and permitted business contact fields where available.",
+    h1: "Financial Analysts & Finance Managers Database in India",
+    answer: "Get your offer in front of the right finance function. A treasury manager, an FP&A analyst and a research specialist handle different problems. Tell us the roles, employer sectors and cities you need so we can check a shortlist that fits your product, event or hiring brief.",
     intro: [
-      "Finance professionals work in banks, NBFCs, investment firms, consulting companies and finance departments across other industries. A useful contact list distinguishes job function and employer sector so your offer reaches the right team.",
-      "Share the designations, sectors and cities you need. IndiaB2BData.com can confirm available coverage for software sales, professional training, events, research products or recruitment, then agree the fields and delivery format with you.",
-      "If you need senior finance decision-makers, compare our CEO and CFO database. For accounting and tax professionals, explore our chartered accountants database.",
+      "A budgeting tool needs a different conversation from a market-data subscription. Start by naming the finance task your offer helps with, then choose the people likely to own that task.",
+      "Use the brief to separate finance managers, financial analysts, controllers, treasury teams and research roles. Add the type of employer you want, such as a manufacturing company, consulting firm or financial-services business.",
+      "For senior decision-makers, compare the CEO and CFO database. For accounting and tax practices rather than in-house teams, explore the chartered accountants database."
     ],
     contentLinks: [
-      { text: "CEO and CFO database", href: "/ceo-cfo-cmo-it-heads-database-india" },
-      { text: "chartered accountants database", href: "/chartered-accountants-database-india" },
-      { text: "economic analysts database", href: "/economic-analysts-database-india" },
-      { text: "business analysts database", href: "/business-analysts-database-india" },
-      { text: "bank employees database", href: "/bank-employees-database-delhi-ncr" },
+      {
+        text: "CEO and CFO database",
+        href: "/ceo-cfo-cmo-it-heads-database-india"
+      },
+      {
+        text: "chartered accountants database",
+        href: "/chartered-accountants-database-india"
+      },
+      {
+        text: "economic analysts database",
+        href: "/economic-analysts-database-india"
+      },
+      {
+        text: "business analysts database",
+        href: "/business-analysts-database-india"
+      },
+      {
+        text: "bank employees database",
+        href: "/bank-employees-database-delhi-ncr"
+      },
+      {
+        text: "consulting services database",
+        href: "/consultants-consulting-services-database-india"
+      }
     ],
     highlights: [
-      { icon: TrendingUp, title: "Finance Roles", description: "Financial analysis, planning, research and finance management." },
-      { icon: Building2, title: "Industry Segments", description: "Request financial services or finance teams in other sectors." },
-      { icon: Filter, title: "Role & City Filters", description: "Define job function, employer type, seniority and location." },
-      { icon: FileText, title: "Excel & CSV Format", description: "Review sample columns and confirm the available fields." },
+      {
+        icon: Briefcase,
+        title: "Role-Level Targeting",
+        description: "Specify the finance function, designation and seniority you need."
+      },
+      {
+        icon: Building2,
+        title: "Employer Context",
+        description: "Separate corporate finance teams from financial-services firms."
+      },
+      {
+        icon: MapPinned,
+        title: "Location Filters",
+        description: "Request the cities your sales or recruitment team covers."
+      },
+      {
+        icon: FileText,
+        title: "Sample Before Scope",
+        description: "Check titles, employer fields and contact completeness."
+      }
     ],
     dataFields: [
-      "Professional name",
-      "Designation and finance function",
-      "Employer or organisation name",
-      "Industry and organisation type",
-      "Specialisation or experience band, where available",
-      "Professional email and business contact number, where available and permitted",
-      "City and state",
-    ],
+          "Professional name",
+          "Designation and finance function",
+          "Employer or organisation name",
+          "Industry and organisation type",
+          "Specialisation or experience band, where available",
+          "Professional email and business contact number, where available and permitted",
+          "City and state",
+        ],
     sections: [
       {
-        heading: "Financial Professionals & Industry Segments",
+        heading: "Choose the finance team that owns the problem",
         paragraphs: [
-          "Build your requirement around the work a professional does and the organisation they work for. Coverage of each segment and designation is confirmed before delivery.",
+          "A broad “finance professionals” list can mix several audiences. A clearer role brief gives your sales team a better reason to start a conversation."
         ],
         subsections: [
-          { heading: "Financial Analysts", text: "Corporate finance, financial planning and analysis, budgeting and reporting roles." },
-          { heading: "Finance Managers", text: "Finance managers, controllers, treasury managers and finance department heads." },
-          { heading: "Research & Risk Professionals", text: "Equity, credit, investment research and risk-analysis roles where available." },
-          { heading: "Financial Services Organisations", text: "Banks, NBFCs, investment businesses and advisory firms, filtered by employer type." },
-        ],
+          {
+            heading: "Financial planning & analysis",
+            text: "For budgeting, forecasting, management reporting and planning products."
+          },
+          {
+            heading: "Finance managers & controllers",
+            text: "For accounting workflows, reporting systems, controls and departmental tools."
+          },
+          {
+            heading: "Treasury & working capital",
+            text: "For cash-management, treasury software and relevant business services."
+          },
+          {
+            heading: "Research & risk",
+            text: "For financial research, market information and specialist analytical tools."
+          }
+        ]
       },
       {
-        heading: "Choose Your Roles, Sectors & Cities",
+        heading: "Keep adjacent roles separate",
         paragraphs: [
-          "Request a specific combination, such as finance managers in manufacturing companies or research analysts at financial-services firms. Include your preferred cities and seniority bands so the team can check matching records.",
-          "This page focuses on finance functions and industry contacts. Our economic analysts database is more relevant for economists and policy research, while our business analysts database covers business processes and systems roles.",
-          "For a banking-specific requirement in Delhi NCR, explore our bank employees database.",
-        ],
+          "For economists, policy researchers and market research, see the economic analysts database. For process, requirements and systems work, compare the business analysts database.",
+          "If your requirement is specifically banking professionals in Delhi NCR, use the bank employees database. For advisory firms rather than individual employees, explore the consulting services database."
+        ]
       },
+      {
+        heading: "Turn the shortlist into a useful outreach plan",
+        paragraphs: [
+          "Tell us what you sell or the role you are hiring for, which employer sectors matter and the seniority you want. Include any organisations you already serve or need to exclude.",
+          "Review a sample for job-title fit, employer context and the business contact fields you require. Ask for record counts and the delivery scope to be agreed before choosing a quantity."
+        ],
+        bullets: [
+          "For sales: state the finance workflow your product improves.",
+          "For events: explain the topic and intended professional audience.",
+          "For hiring: share the role, experience and location requirements.",
+          "For research: specify the function and employer categories you need."
+        ]
+      }
     ],
     useCases: [
-      "Finance, accounting and analytics software sales",
-      "Professional training and certification invitations",
-      "Financial research and data-platform outreach",
-      "Finance conferences, webinars and industry events",
-      "Recruitment for analyst and finance management roles",
+      "Introduce budgeting and forecasting software",
+      "Demonstrate finance and accounting tools",
+      "Invite finance teams to a specialist event",
+      "Discuss research and market-data products",
+      "Source candidates for finance management roles"
     ],
     faqs: [
-      { question: "Who is included in this database?", answer: "You can request financial analysts, finance managers, planning and analysis teams, research specialists and related financial-services industry contacts. The team confirms available roles and employer coverage." },
-      { question: "Can I filter by industry and designation?", answer: "Yes, request your preferred finance roles, employer sectors, seniority and cities. Availability is confirmed for the combination you need." },
-      { question: "Does it cover finance managers outside banking?", answer: "You can request corporate finance teams in sectors such as manufacturing, IT services, retail and consulting. Confirm sector coverage with the team." },
-      { question: "Does it contain personal financial information?", answer: "This is a professional contact database. The proposed fields describe roles, employers and business contacts, not bank accounts, balances, investments or transaction history." },
-      { question: "How is it delivered?", answer: "The agreed fields can be delivered in Excel or CSV format. Confirm record count, available contact fields and delivery timing before ordering." },
-      { question: "Can I see a sample format?", answer: "Yes. Download the fictional, masked sample on this page to preview finance-specific columns, or use the enquiry form to discuss current coverage." },
+      {
+        question: "Can I request finance managers outside banking?",
+        answer: "Yes. Specify the employer sectors you want, such as manufacturing, IT services, retail or consulting, and ask for current matching coverage."
+      },
+      {
+        question: "Can financial analysts and CFOs be separated?",
+        answer: "They should be separate requirements when seniority matters. Use the finance brief for analyst and manager roles and discuss the executive category for CFOs."
+      },
+      {
+        question: "Which fields should I expect?",
+        answer: "Ask for name, designation, employer, sector, city and the available business contact fields. Specialisation and experience information should be checked in the sample."
+      },
+      {
+        question: "Does this include personal financial information?",
+        answer: "No. This is a professional-contact requirement, not a source of bank accounts, balances, investments or transaction histories."
+      },
+      {
+        question: "How do I get a relevant sample?",
+        answer: "Send the role names, employer sectors, cities and purpose of your enquiry. Ask for sample records that reflect those filters, followed by a quote for the agreed scope."
+      }
     ],
     related: [
+      "ceo-cfo-cmo-it-heads-database-india",
+      "chartered-accountants-database-india",
       "economic-analysts-database-india",
       "business-analysts-database-india",
-      "chartered-accountants-database-india",
-      "ceo-cfo-cmo-it-heads-database-india",
       "bank-employees-database-delhi-ncr",
+      "consultants-consulting-services-database-india"
     ],
+    useCasesIntro: "Give each outreach message a professional reason to exist, tied to the recipient’s function.",
+    cta: {
+      heroTitle: "Find the Finance Roles You Need",
+      heroSubtitle: "Send the functions, employer sectors and cities you want. Ask for a role-matched sample and quote.",
+      buttonLabel: "Request Finance Sample",
+      text: "Selling to FP&A, treasury or finance heads? Tell us the function and employer type so we can narrow your brief.",
+      footerTitle: "Let’s Build Your Finance Contact Shortlist",
+      footerText: "Share the designations and industries you want to reach. We’ll confirm available coverage, populated fields and sample options."
+    },
+  },
+  {
+    slug: "food-beverage-stores-database-india",
+    keyword: "food beverage stores database India",
+    title: "Food & Beverage Stores Database India | Retail Store Leads",
+    metaDescription: "Build a food-retail prospect list by city and store type. Discuss kirana shops, supermarkets, bakeries or beverage outlets and request a relevant sample.",
+    eyebrow: "Food & Beverage Stores Database",
+    showTestimonials: true,
+    h1: "Food & Beverage Stores Database in India",
+    answer: "Find food retailers that fit your product and delivery route. From kirana shops and supermarkets to bakeries, dairy outlets and beverage stores, a useful list starts with the category you supply. Share your territory and store brief, then ask for a sample.",
+    intro: [
+      "Adding more shops to a sales route only helps if they can stock what you sell. A snack brand, a refrigeration supplier and a bakery-packaging business each need a different retail shortlist.",
+      "Tell us your product category, the towns or neighbourhoods you cover and the type of shop you want to approach. Separate direct retailers from distributors so your team knows what kind of partnership to propose.",
+      "If you need channel partners, start with the dealers and distributors database. If your buyers are food producers rather than stores, compare the manufacturer database and request the appropriate industry filters."
+    ],
+    contentLinks: [
+      {
+        text: "dealers and distributors database",
+        href: "/dealers-distributors-database-india"
+      },
+      {
+        text: "manufacturer database",
+        href: "/manufacturer-database-india"
+      },
+      {
+        text: "company proprietors database",
+        href: "/company-proprietors-database-india"
+      },
+      {
+        text: "GST database",
+        href: "/gst-database-india"
+      },
+      {
+        text: "dining and leisure customers database",
+        href: "/dining-leisure-customers-database-india"
+      },
+      {
+        text: "fabric and clothing stores database",
+        href: "/fabric-clothing-stores-database-india"
+      }
+    ],
+    highlights: [
+      {
+        icon: Filter,
+        title: "Store-Type Focus",
+        description: "Specify kirana, supermarket, bakery, dairy or beverage requirements."
+      },
+      {
+        icon: MapPinned,
+        title: "Territory Planning",
+        description: "Match the list to places your team can deliver and support."
+      },
+      {
+        icon: UserCheck,
+        title: "Business Contacts",
+        description: "Check which owner and store contact fields are available."
+      },
+      {
+        icon: FileText,
+        title: "Practical Sample Review",
+        description: "Inspect the category and address detail before choosing a quantity."
+      }
+    ],
+    dataFields: [
+          "Shop / business name",
+          "Owner or proprietor name",
+          "Store type: kirana, supermarket, bakery, sweet shop, dairy or beverage distributor",
+          "Mobile number and email ID, where available",
+          "GSTIN and shop address, where available",
+          "City, state and pincode",
+        ],
+    sections: [
+      {
+        heading: "Choose the outlets your product belongs in",
+        paragraphs: [
+          "The more clearly you describe the outlet, the easier it is to avoid an unfocused file."
+        ],
+        subsections: [
+          {
+            heading: "Kirana & provision stores",
+            text: "A starting point for everyday food, snacks and packaged consumer goods."
+          },
+          {
+            heading: "Supermarkets & mini marts",
+            text: "For suppliers seeking stores with broader product ranges and different stocking needs."
+          },
+          {
+            heading: "Bakeries & sweet shops",
+            text: "Relevant for ingredients, boxes, display equipment and specialist store services."
+          },
+          {
+            heading: "Dairy & beverage businesses",
+            text: "Specify whether you want retailers, distributors or both so the categories stay clear."
+          }
+        ]
+      },
+      {
+        heading: "Build a territory your sales team can work",
+        paragraphs: [
+          "Send your target towns, delivery limits and product category. If your salespeople work market-by-market, ask whether address and locality fields are populated well enough to help plan visits.",
+          "For owner-led businesses across several trades, compare the company proprietors database. If business-registration fields are central to your requirement, discuss the GST database as a separate option."
+        ]
+      },
+      {
+        heading: "A retailer list is different from a diner audience",
+        paragraphs: [
+          "Supplying a food shop is a B2B conversation. Promoting a restaurant offer to individuals is a consumer campaign; the dining and leisure customers database is the more relevant enquiry for that.",
+          "For packaging, POS or equipment sales across other retail categories, the fabric and clothing stores database can support a separate shortlist. Keep each store category distinct so your pitch fits the business."
+        ]
+      },
+      {
+        heading: "What to send for your sample",
+        paragraphs: [
+          "Tell us what you supply, the store types you want, your locations and your approximate quantity. Add any chains, customer accounts or business types you need to exclude.",
+          "Check the sample for category fit, usable location detail and the contact fields your team needs. Confirm the final scope, format and price before ordering."
+        ]
+      }
+    ],
+    useCases: [
+      "Introduce a packaged-food range to retailers",
+      "Build a new distribution territory",
+      "Offer refrigeration and display equipment",
+      "Demonstrate POS or ordering software",
+      "Find bakery and sweet-shop packaging buyers"
+    ],
+    faqs: [
+      {
+        question: "Can I request only bakeries or kirana shops?",
+        answer: "Yes. Name the outlet category and locations you want. Ask the team to check the matching records and whether retail and wholesale categories can be separated."
+      },
+      {
+        question: "Are distributors included?",
+        answer: "Make that a specific part of your brief. A distributor list serves a different sales goal from a list of retail outlets."
+      },
+      {
+        question: "Can I use the list for field visits?",
+        answer: "Ask to see address and locality completeness in a sample first. Do not assume every record contains enough detail for a visit."
+      },
+      {
+        question: "What does the sample download show?",
+        answer: "It demonstrates the file format with fictional, masked store records. Request a representative sample separately for your actual territory."
+      },
+      {
+        question: "What information is needed for a quote?",
+        answer: "Send your store types, target locations, approximate volume, required fields and exclusions. Ask for the available scope and delivery timing to be confirmed."
+      }
+    ],
+    related: [
+      "dealers-distributors-database-india",
+      "manufacturer-database-india",
+      "company-proprietors-database-india",
+      "gst-database-india",
+      "dining-leisure-customers-database-india",
+      "fabric-clothing-stores-database-india"
+    ],
+    useCasesIntro: "Use the store category and delivery area to make every trade conversation more relevant.",
+    cta: {
+      heroTitle: "Build Your Next Retail Sales Route",
+      heroSubtitle: "Tell us your product, store categories and target towns. Ask for a sample that fits your delivery area.",
+      buttonLabel: "Request Food-Store Sample",
+      text: "Which shops should stock your product next? Share your territory and outlet types to check the available list.",
+      footerTitle: "Let’s Find the Right Food-Retail Buyers",
+      footerText: "Send your product category, locations and store requirements. We’ll confirm sample options, available fields and a quote."
+    },
+  },
+  {
+    slug: "freelancers-database-india",
+    keyword: "freelancers database India",
+    title: "Freelancers Database India | Skill-Based Contact Enquiries",
+    metaDescription: "Find independent professionals for a clear project or business brief. Choose skills, experience and locations, then request a freelancer sample.",
+    eyebrow: "Freelancers Database",
+    showTestimonials: true,
+    h1: "Freelancers Database in India",
+    answer: "Looking for independent professionals for a project, partnership or relevant business offer? Start with the skill and level of experience you need. Share the work involved, your location requirements and your purpose, then review a sample shortlist before deciding.",
+    intro: [
+      "“We need a freelancer” is rarely enough of a brief. A Shopify build, a product catalogue and a video-editing project call for different skills, portfolios and working arrangements.",
+      "Describe the work in plain language, then add the specialism and experience you want. If location does not matter, say so; it can be more useful to prioritise the skill than a city.",
+      "For creative work, compare the designers database or photography studios database. For an agency or established advisory business rather than an independent professional, explore the consulting services database."
+    ],
+    contentLinks: [
+      {
+        text: "designers database",
+        href: "/designers-database-india"
+      },
+      {
+        text: "photography studios database",
+        href: "/digital-photography-studios-database-india"
+      },
+      {
+        text: "consulting services database",
+        href: "/consultants-consulting-services-database-india"
+      },
+      {
+        text: "DTP operators database",
+        href: "/dtp-operators-database-india"
+      },
+      {
+        text: "IT and telecom services database",
+        href: "/computer-it-telecom-services-database-india"
+      },
+      {
+        text: "job seekers database",
+        href: "/job-seekers-database"
+      }
+    ],
+    highlights: [
+      {
+        icon: Briefcase,
+        title: "Skills Before Volume",
+        description: "Name the work and specialism your shortlist should match."
+      },
+      {
+        icon: Filter,
+        title: "Experience Requirements",
+        description: "Describe the level of responsibility and experience you need."
+      },
+      {
+        icon: MapPinned,
+        title: "Local or Remote",
+        description: "Tell us whether the role requires a particular city."
+      },
+      {
+        icon: FileText,
+        title: "Portfolio Context",
+        description: "Ask which portfolio, skill and business contact fields are recorded."
+      }
+    ],
+    dataFields: [
+          "Freelancer name",
+          "Primary skill: design, development, writing, marketing, video or consulting",
+          "Experience in years",
+          "Mobile number and email ID",
+          "Portfolio or website, where available",
+          "City, state and pincode",
+        ],
+    sections: [
+      {
+        heading: "A sharper project brief makes a better shortlist",
+        paragraphs: [
+          "Explain the deliverable, the tools or discipline involved and whether the work is one-off or ongoing. A contact list can help you find people to approach; it does not replace reviewing their work."
+        ],
+        subsections: [
+          {
+            heading: "Development & technical work",
+            text: "Specify web, app, software, testing or support requirements and the skills you need."
+          },
+          {
+            heading: "Design & production",
+            text: "Separate brand design, UI/UX, print layout, animation and video work."
+          },
+          {
+            heading: "Content & marketing",
+            text: "Describe the subject, format, language or marketing discipline involved."
+          },
+          {
+            heading: "Business support",
+            text: "Explain the advisory, training or operational task rather than requesting a general professional category."
+          }
+        ]
+      },
+      {
+        heading: "Pick the right professional category",
+        paragraphs: [
+          "For print and layout production, see the DTP operators database. For suppliers with a company-level service offering, compare the IT and telecom services database.",
+          "If you are hiring for an employee role rather than contract work, the job seekers database is a better starting point. Be clear about the working arrangement so you approach people with a suitable proposal."
+        ]
+      },
+      {
+        heading: "For hiring, tools or partnerships",
+        paragraphs: [
+          "Agencies can use a focused brief to source people for a project. Software and training providers can describe the professional group their product serves. These are different reasons to contact someone and should not be mixed in one generic message.",
+          "Check the sample's skill labels, location and portfolio completeness. Availability, rates and suitability still need to be discussed directly with each professional."
+        ]
+      }
+    ],
+    useCases: [
+      "Source independent talent for a defined project",
+      "Build a specialist contractor shortlist",
+      "Discuss software for a relevant professional group",
+      "Invite practitioners to a focused training programme",
+      "Find potential collaborators for agency work"
+    ],
+    faqs: [
+      {
+        question: "Can I request a specific skill?",
+        answer: "Yes. Describe the discipline and tools involved, along with experience and location requirements. Ask the team to confirm the available match."
+      },
+      {
+        question: "Does being listed mean a freelancer is available now?",
+        answer: "No. Current availability, rates, portfolio quality and suitability need to be confirmed with the professional."
+      },
+      {
+        question: "Can I look for remote professionals?",
+        answer: "State that location is flexible and explain the work. The team can check which skill and location fields are available."
+      },
+      {
+        question: "How is this different from a job-seeker list?",
+        answer: "This enquiry is about independent or project-based work. For employee hiring, use the job-seeker category and state the role you want to fill."
+      },
+      {
+        question: "What should I send to request a sample?",
+        answer: "Share a short project or business brief, required skills, experience, location constraints and approximate shortlist size. Ask for a representative sample and quote."
+      }
+    ],
+    related: [
+      "designers-database-india",
+      "digital-photography-studios-database-india",
+      "consultants-consulting-services-database-india",
+      "dtp-operators-database-india",
+      "computer-it-telecom-services-database-india",
+      "job-seekers-database"
+    ],
+    useCasesIntro: "Be clear about whether you are offering work, a partnership or a product that helps the professional do their job.",
+    cta: {
+      heroTitle: "Tell Us the Skill You’re Looking For",
+      heroSubtitle: "Share the work, experience level and whether location matters. Ask for a focused sample shortlist.",
+      buttonLabel: "Request Freelancer Sample",
+      text: "Need a designer, developer or another specialist? Send the project brief so we can check a relevant shortlist.",
+      footerTitle: "Let’s Turn Your Project into a Clear Talent Brief",
+      footerText: "Explain what needs doing and who would be a good fit. We’ll confirm the available categories, fields and sample options."
+    },
+  },
+  {
+    slug: "frequent-flyer-database-india",
+    keyword: "frequent flyer database India",
+    title: "Frequent Flyer Database India | Traveller Audience Enquiries",
+    metaDescription: "Scope a traveller audience for a relevant travel or hospitality offer. Discuss locations, recorded travel attributes and sample options before ordering.",
+    eyebrow: "Frequent Flyer Database",
+    showTestimonials: true,
+    h1: "Frequent Flyer Database in India",
+    answer: "Planning an offer for people who travel regularly? Tell us whether you are promoting a hotel, holiday, airport service or another travel-related product. Start with the traveller profile and locations you need, then check the source and available audience attributes in a sample.",
+    intro: [
+      "A business trip and a family holiday involve different needs. Even people who fly often do not all want the same hotel, package or service, so a travel-related offer needs more detail than a “premium audience” label.",
+      "Describe the offer, the cities you can serve and the travel attributes you want to discuss. Do not assume flying frequency establishes someone’s income or spending budget; ask what is actually recorded.",
+      "This is an independent audience-data enquiry, not an airline or loyalty-programme export. It does not provide booking access, ticket details or travel-account credentials."
+    ],
+    contentLinks: [
+      {
+        text: "holiday club members database",
+        href: "/club-mahindra-members-database"
+      },
+      {
+        text: "dining and leisure customers database",
+        href: "/dining-leisure-customers-database-india"
+      },
+      {
+        text: "cab users database",
+        href: "/cab-users-database-india"
+      },
+      {
+        text: "executive contacts database",
+        href: "/ceo-cfo-cmo-it-heads-database-india"
+      },
+      {
+        text: "Facebook users database",
+        href: "/facebook-users-database-india"
+      }
+    ],
+    highlights: [
+      {
+        icon: Globe,
+        title: "A Travel-Focused Brief",
+        description: "Explain the service and type of travel you are targeting."
+      },
+      {
+        icon: MapPinned,
+        title: "Relevant Locations",
+        description: "Start with the cities or airport service areas you cover."
+      },
+      {
+        icon: Filter,
+        title: "Check the Attributes",
+        description: "Ask how travel-related labels are defined and recorded."
+      },
+      {
+        icon: FileText,
+        title: "Review the Sample",
+        description: "Assess the source and field completeness before ordering."
+      }
+    ],
+    dataFields: [
+          "Name",
+          "Mobile number and email ID",
+          "Travel type: business, leisure, domestic or international",
+          "Income band and occupation, where available",
+          "City, state and pincode",
+        ],
+    sections: [
+      {
+        heading: "Make the offer fit the traveller",
+        paragraphs: [
+          "Start with the problem your offer solves: an airport transfer, a work-trip stay, a weekend break or a holiday-planning service. The offer gives the audience brief a useful direction."
+        ],
+        subsections: [
+          {
+            heading: "Business travel services",
+            text: "Describe the work-travel need without assuming all travellers are senior executives."
+          },
+          {
+            heading: "Leisure & holiday offers",
+            text: "Explain the destination, departure locations and type of trip you are promoting."
+          },
+          {
+            heading: "Airport & local services",
+            text: "State the airports and service radius you can support."
+          },
+          {
+            heading: "Hospitality partnerships",
+            text: "Clarify whether you need individual travellers or business decision-makers."
+          }
+        ]
+      },
+      {
+        heading: "Compare nearby audience categories",
+        paragraphs: [
+          "For a holiday-membership audience enquiry, explore the holiday club members database. For restaurant and leisure offers, compare the dining and leisure customers database.",
+          "The cab users database may suit a local transport brief. If you need professional contacts for a corporate travel proposal, use the executive contacts database as a separate B2B requirement."
+        ]
+      },
+      {
+        heading: "Check what a travel label actually means",
+        paragraphs: [
+          "Ask how the segment was described and when the relevant attributes were recorded. A consumer contact record is not evidence of a particular future trip, airline booking or willingness to buy.",
+          "For a broader digital-audience enquiry, compare the Facebook users database. Keep the audience source and recorded preferences in view when choosing your contact channel."
+        ]
+      }
+    ],
+    useCases: [
+      "Discuss an audience for a hotel or resort offer",
+      "Scope a holiday-planning campaign",
+      "Plan airport transfer or local travel promotions",
+      "Compare business and leisure audience requirements",
+      "Separate corporate travel sales from consumer outreach"
+    ],
+    faqs: [
+      {
+        question: "Is this information supplied by an airline?",
+        answer: "This page does not offer an airline or loyalty-programme export. Ask for source information and the basis of any travel-related audience label."
+      },
+      {
+        question: "Does it include PNRs or upcoming itineraries?",
+        answer: "No. This is not a source of booking references, flight itineraries, ticket records, loyalty numbers or account access."
+      },
+      {
+        question: "Can I separate business and leisure audiences?",
+        answer: "You can request those attributes, but ask how they are defined and whether they are recorded for the available segment."
+      },
+      {
+        question: "Does frequent travel mean the audience is high-income?",
+        answer: "Not necessarily. Do not infer income or a purchase budget from travel activity alone. Check the actual recorded fields."
+      },
+      {
+        question: "How do I request a relevant sample?",
+        answer: "Send your travel offer, locations, intended channel and audience criteria. Ask for available source details, fields, sample options and a quote."
+      }
+    ],
+    related: [
+      "club-mahindra-members-database",
+      "dining-leisure-customers-database-india",
+      "cab-users-database-india",
+      "ceo-cfo-cmo-it-heads-database-india",
+      "facebook-users-database-india"
+    ],
+    useCasesIntro: "Match the offer to a defined travel need instead of treating every traveller as the same customer.",
+    cta: {
+      heroTitle: "Tell Us About Your Travel Offer",
+      heroSubtitle: "Share the service, locations and traveller profile you need. Ask which audience attributes and sample options are available.",
+      buttonLabel: "Discuss Traveller Audience",
+      text: "Hotel stay, holiday or airport service? Tell us what you offer so we can check the audience brief.",
+      footerTitle: "Let’s Scope a Relevant Traveller Audience",
+      footerText: "Send your offer and target locations. We’ll help you check the available fields, source information and sample options before you choose."
+    },
+  },
+  {
+    slug: "furniture-stores-dealers-database-india",
+    keyword: "furniture stores dealers database India",
+    title: "Furniture Stores & Dealers Database India | Trade Contacts",
+    metaDescription: "Find furniture showrooms, dealers and furnishing businesses by location and category. Share your product range and request a relevant trade sample.",
+    eyebrow: "Furniture & Furnishing Database",
+    showTestimonials: true,
+    h1: "Furniture Stores & Dealers Database in India",
+    answer: "Find furniture businesses that fit your product range. A modular-kitchen dealer, an office-furniture showroom and a soft-furnishing shop buy different things. Tell us what you supply and where you sell, then ask for a sample built around the right business category.",
+    intro: [
+      "A large furniture list is not much use if most of the shops cannot stock your product. Start with what you sell: fittings, upholstery, finished furniture, display systems, software or a trade service.",
+      "Separate showrooms, dealers, workshops and furnishing shops in your brief. Add the locations your team can deliver to and the type of business relationship you want to build.",
+      "If your product is specified for projects, explore the architects and interior designers database. For production businesses rather than retail outlets, compare the manufacturer database."
+    ],
+    contentLinks: [
+      {
+        text: "architects and interior designers database",
+        href: "/architect-interior-designers-database-india"
+      },
+      {
+        text: "manufacturer database",
+        href: "/manufacturer-database-india"
+      },
+      {
+        text: "dealers and distributors database",
+        href: "/dealers-distributors-database-india"
+      },
+      {
+        text: "contractors database",
+        href: "/contractors-database-india"
+      },
+      {
+        text: "building material database",
+        href: "/building-material-database-india"
+      },
+      {
+        text: "property owners database",
+        href: "/commercial-residential-properties-database-india"
+      }
+    ],
+    highlights: [
+      {
+        icon: Building2,
+        title: "Relevant Business Types",
+        description: "Separate showrooms, dealers, workshops and furnishing retailers."
+      },
+      {
+        icon: MapPinned,
+        title: "A Workable Territory",
+        description: "Choose the cities your team can supply and support."
+      },
+      {
+        icon: UserCheck,
+        title: "Buyer Context",
+        description: "Ask which owner and business-contact fields are populated."
+      },
+      {
+        icon: FileText,
+        title: "Check the Category Fit",
+        description: "Review a sample against your actual product range."
+      }
+    ],
+    dataFields: [
+          "Business / showroom name",
+          "Owner or proprietor name",
+          "Business type: furniture showroom, modular or office furniture dealer, furnishing or decor shop",
+          "Mobile number and email ID, where available",
+          "GSTIN and business address, where available",
+          "City, state and pincode",
+        ],
+    sections: [
+      {
+        heading: "Start with the furniture category",
+        paragraphs: [
+          "Describe the products a suitable buyer would sell or use. That makes the enquiry more useful than simply asking for all furniture businesses."
+        ],
+        subsections: [
+          {
+            heading: "Furniture showrooms",
+            text: "For finished-product brands, retail partnerships and showroom services."
+          },
+          {
+            heading: "Office & modular furniture",
+            text: "For workspace products, fittings and specialised supplier relationships."
+          },
+          {
+            heading: "Furnishing & decor shops",
+            text: "For curtains, upholstery, textiles, accessories and relevant retail services."
+          },
+          {
+            heading: "Workshops & production units",
+            text: "For materials, machinery or components; request a production-focused category."
+          }
+        ]
+      },
+      {
+        heading: "Connect the list to the way you sell",
+        paragraphs: [
+          "For channel expansion, the dealers and distributors database can support a separate distributor brief. For site and installation work, compare the contractors database.",
+          "Suppliers serving the wider construction trade can explore the building material database. Keep product fit in mind: a materials dealer and a furniture showroom may sit in the same supply chain without buying the same thing."
+        ]
+      },
+      {
+        heading: "Trade buyers and homebuyers need different briefs",
+        paragraphs: [
+          "If your aim is to sell a sofa to an individual household, a furniture-business list is the wrong starting point. Discuss the property owners database separately and check what audience information is available.",
+          "For trade sales, send your product category, price position, business types and delivery areas. Review a sample for useful category labels, location detail and contact fields before agreeing the quantity."
+        ]
+      }
+    ],
+    useCases: [
+      "Find retail partners for a furniture range",
+      "Introduce fittings, fabric or component supplies",
+      "Arrange showroom product demonstrations",
+      "Offer furniture retail and inventory software",
+      "Build a project-related trade shortlist"
+    ],
+    faqs: [
+      {
+        question: "Can I request only office-furniture dealers?",
+        answer: "Yes. Describe the category and cities you want, and ask the team to check matching business records."
+      },
+      {
+        question: "Are manufacturers included with retailers?",
+        answer: "Do not assume they are interchangeable. State whether you want production units, showrooms, dealers or separate lists for each."
+      },
+      {
+        question: "Can I look for interior designers as well?",
+        answer: "Use the dedicated architects and interior designers category for project-specification contacts. Keep that brief separate from a retail-stockist requirement."
+      },
+      {
+        question: "Which contact fields are available?",
+        answer: "Check the sample for business name, category, location and available owner or business contact fields. Extra fields should be confirmed before ordering."
+      },
+      {
+        question: "How do I get a sample and quote?",
+        answer: "Send your product range, preferred business types, target locations and approximate volume. Ask for the relevant sample and the agreed delivery scope."
+      }
+    ],
+    related: [
+      "architect-interior-designers-database-india",
+      "manufacturer-database-india",
+      "dealers-distributors-database-india",
+      "contractors-database-india",
+      "building-material-database-india",
+      "commercial-residential-properties-database-india"
+    ],
+    useCasesIntro: "Build the shortlist around the product and buying role, from retail stocking to project specification.",
+    cta: {
+      heroTitle: "Find Buyers for Your Furniture Range",
+      heroSubtitle: "Share what you supply, the business types you want and your sales territory. Ask for a matching sample.",
+      buttonLabel: "Request Furniture Sample",
+      text: "Looking for stockists, showrooms or workshops? Send your product range and cities to narrow the list.",
+      footerTitle: "Let’s Build Your Furniture Trade Shortlist",
+      footerText: "Tell us what you sell and who should buy it. We’ll confirm the available categories, contact fields and sample options."
+    },
+  },
+  {
+    slug: "gas-petroleum-companies-database-india",
+    keyword: "gas petroleum companies database India",
+    title: "Gas & Petroleum Companies Database India | B2B Contacts",
+    metaDescription: "Scope oil and gas companies, fuel outlets, LPG distributors or lubricant businesses by segment and location. Request a relevant business-contact sample.",
+    eyebrow: "Gas & Petroleum Companies Database",
+    showTestimonials: true,
+    h1: "Gas & Petroleum Companies Database in India",
+    answer: "Find the right part of the gas and petroleum supply chain for your offer. A fuel-outlet dealer and a plant procurement team have different needs. Tell us your product, target business segment and locations so we can check a relevant business-contact shortlist.",
+    intro: [
+      "Selling fuel-management software to an outlet is different from offering equipment or maintenance services to an industrial operator. Before discussing volume, decide which business type and buying role your offer fits.",
+      "Build your brief around the segment: fuel retail, LPG distribution, CNG-related businesses, lubricants or oil and gas companies. Make any operator, geography or designation requirements explicit.",
+      "For adjacent utilities in Delhi NCR, compare the energy and power sector database. For chemical-sector businesses, explore the chemical and pharma companies database and specify the chemical categories you need."
+    ],
+    contentLinks: [
+      {
+        text: "energy and power sector database",
+        href: "/energy-power-sector-database-delhi-ncr"
+      },
+      {
+        text: "chemical and pharma companies database",
+        href: "/chemical-pharma-companies-database-india"
+      },
+      {
+        text: "engineers and service engineers database",
+        href: "/engineers-service-engineers-database-india"
+      },
+      {
+        text: "manufacturer database",
+        href: "/manufacturer-database-india"
+      },
+      {
+        text: "dealers and distributors database",
+        href: "/dealers-distributors-database-india"
+      }
+    ],
+    highlights: [
+      {
+        icon: Factory,
+        title: "Segment-Led Brief",
+        description: "Separate fuel outlets, distributors and industrial businesses."
+      },
+      {
+        icon: Briefcase,
+        title: "Relevant Buying Roles",
+        description: "Specify procurement, operations, ownership or technical roles."
+      },
+      {
+        icon: MapPinned,
+        title: "Location Requirements",
+        description: "Choose the territories and industrial areas you want to cover."
+      },
+      {
+        icon: FileText,
+        title: "Confirm the Scope",
+        description: "Check business classification and available contact fields."
+      }
+    ],
+    dataFields: [
+          "Company / outlet name",
+          "Decision maker name and designation",
+          "Segment: oil & gas company, petrol pump, LPG / CNG distributor, lubricants or petrochemicals",
+          "Mobile number and email ID, where available",
+          "Website and business address, where available",
+          "City, state and pincode",
+        ],
+    sections: [
+      {
+        heading: "Which part of the industry buys your product?",
+        paragraphs: [
+          "Start with the buying situation. Do you supply outlet equipment, industrial components, lubricant products, software or a specialist engineering service?"
+        ],
+        subsections: [
+          {
+            heading: "Fuel retail outlets",
+            text: "For relevant outlet equipment, automation, maintenance and business services."
+          },
+          {
+            heading: "Gas distribution businesses",
+            text: "Specify LPG, CNG or other business categories rather than treating them as one group."
+          },
+          {
+            heading: "Lubricant businesses",
+            text: "Describe whether you need dealers, distributors, blenders or other trade partners."
+          },
+          {
+            heading: "Industrial operators",
+            text: "Name the company type and purchasing function you want, then confirm matching coverage."
+          }
+        ]
+      },
+      {
+        heading: "Follow the right industrial contact path",
+        paragraphs: [
+          "For technical professionals rather than company records, compare the engineers and service engineers database. For broader production businesses, explore the manufacturer database.",
+          "If your goal is channel development, use the dealers and distributors database and describe the relevant petroleum or lubricant category. A distributor brief should stay separate from an end-user sales list."
+        ]
+      },
+      {
+        heading: "Give the team a procurement-ready brief",
+        paragraphs: [
+          "Tell us what your product or service does, which business segment buys it, the locations you support and the job functions you want to approach. Include existing accounts and categories you need to exclude.",
+          "Review company classifications, role information and populated contact fields in the sample. A contact list does not establish procurement authority, current project needs or approved-vendor status; those are points to confirm in your business conversation."
+        ]
+      }
+    ],
+    useCases: [
+      "Introduce outlet equipment and spare parts",
+      "Discuss industrial maintenance services",
+      "Offer metering or fuel-management software",
+      "Build a lubricant-channel shortlist",
+      "Invite relevant buyers to a technical product demonstration"
+    ],
+    faqs: [
+      {
+        question: "Can I request only petrol pumps or LPG distributors?",
+        answer: "Yes. Specify the exact business category and locations so the team can check matching records and avoid unrelated segments."
+      },
+      {
+        question: "Does this include every oil and gas operator?",
+        answer: "No complete-industry coverage is implied. Ask for current coverage of the company types, territories and roles in your brief."
+      },
+      {
+        question: "Can I request procurement or operations contacts?",
+        answer: "Include the functions and seniority you need. Ask to see how job roles are recorded and which business contact fields are available."
+      },
+      {
+        question: "Does the list confirm who can approve a purchase?",
+        answer: "No. A designation is useful context, but procurement authority and vendor processes must be established with the organisation."
+      },
+      {
+        question: "What should I send for a quote?",
+        answer: "Share your product or service, target segments, territories, required roles and approximate quantity. Ask for a relevant sample and agreed delivery scope."
+      }
+    ],
+    related: [
+      "energy-power-sector-database-delhi-ncr",
+      "chemical-pharma-companies-database-india",
+      "engineers-service-engineers-database-india",
+      "manufacturer-database-india",
+      "dealers-distributors-database-india"
+    ],
+    useCasesIntro: "Choose the industry segment and buying role that give your offer a clear business purpose.",
+    cta: {
+      heroTitle: "Find the Right Petroleum-Sector Buyers",
+      heroSubtitle: "Tell us your product, business segment, locations and target buying roles. Ask for a relevant B2B sample.",
+      buttonLabel: "Request Industry Sample",
+      text: "Fuel retail, gas distribution or industrial operators? Send your target segment so we can check the right list.",
+      footerTitle: "Let’s Scope Your Oil & Gas Contact Requirement",
+      footerText: "Share the companies and roles you need to reach. We’ll confirm available coverage, field detail and sample options for your brief."
+    },
+  },
+  {
+    slug: "gems-jewellery-shops-database-india",
+    keyword: "gems jewellery shops database India",
+    title: "Gems & Jewellery Shops Database India | Jeweller Contacts",
+    metaDescription: "Find jewellery retailers, gemstone dealers or trade businesses for your offer. Choose business types and cities, then request a jeweller sample.",
+    eyebrow: "Gems & Jewellery Shops Database",
+    showTestimonials: true,
+    h1: "Gems & Jewellery Shops Database in India",
+    answer: "Find jewellery businesses that fit your product or service. Whether you supply collections, packaging, displays, software or security equipment, start with the right trade category and location. Share the buyers you want to reach and ask for a relevant sample.",
+    intro: [
+      "A neighbourhood gold jeweller, a gemstone trader and a jewellery manufacturer work in different ways. Mixing them into one sales list can leave your team making the wrong pitch.",
+      "Tell us the trade category, target cities and relationship you want to build. A manufacturer looking for retail stockists needs a different shortlist from a supplier selling tools to workshops.",
+      "For cross-border trade businesses, compare the importers and exporters database. For production units, explore the manufacturer database and describe the jewellery segment you need."
+    ],
+    contentLinks: [
+      {
+        text: "importers and exporters database",
+        href: "/importers-exporters-database-india"
+      },
+      {
+        text: "manufacturer database",
+        href: "/manufacturer-database-india"
+      },
+      {
+        text: "company proprietors database",
+        href: "/company-proprietors-database-india"
+      },
+      {
+        text: "fabric and clothing stores database",
+        href: "/fabric-clothing-stores-database-india"
+      },
+      {
+        text: "women consumers database",
+        href: "/females-database-india"
+      },
+      {
+        text: "female consumer Bangalore database",
+        href: "/female-consumer-bangalore-database"
+      }
+    ],
+    highlights: [
+      {
+        icon: Sparkles,
+        title: "Trade-Category Focus",
+        description: "Distinguish retailers, gemstone dealers, wholesalers and workshops."
+      },
+      {
+        icon: MapPinned,
+        title: "Your Sales Territory",
+        description: "Choose the cities and markets where you can do business."
+      },
+      {
+        icon: UserCheck,
+        title: "Business Contact Context",
+        description: "Check owner, business and contact-field availability."
+      },
+      {
+        icon: FileText,
+        title: "Review Before Buying",
+        description: "Look at category fit and field completeness in a sample."
+      }
+    ],
+    dataFields: [
+          "Shop / business name",
+          "Owner or proprietor name",
+          "Business type: gold, diamond or silver jeweller, gemstone dealer, bullion trader or manufacturer",
+          "Mobile number and email ID, where available",
+          "GSTIN and shop address, where available",
+          "City, state and pincode",
+        ],
+    sections: [
+      {
+        heading: "Choose the jewellery businesses you want to approach",
+        paragraphs: [
+          "Start with what a suitable buyer sells or produces, then add the type of business relationship you want."
+        ],
+        subsections: [
+          {
+            heading: "Gold, diamond & silver retailers",
+            text: "For brands and suppliers looking for stores that could stock or use their products."
+          },
+          {
+            heading: "Gemstone & specialist traders",
+            text: "Describe the stones, products or trade category relevant to your offer."
+          },
+          {
+            heading: "Wholesalers & manufacturers",
+            text: "Separate trade distribution from production if the buying needs differ."
+          },
+          {
+            heading: "Store-service buyers",
+            text: "For relevant packaging, displays, billing systems and retail security products."
+          }
+        ]
+      },
+      {
+        heading: "Make the first conversation relevant",
+        paragraphs: [
+          "Tell us what you supply and why a jeweller would consider it. Collection launches, store equipment and software demonstrations each need a different opening.",
+          "For owner-led firms across several business categories, compare the company proprietors database. Suppliers working across fashion retail can build a separate shortlist from the fabric and clothing stores database."
+        ]
+      },
+      {
+        heading: "Keep trade partnerships separate from shopper campaigns",
+        paragraphs: [
+          "This page is for jewellery business contacts. If your campaign is aimed at individual shoppers, discuss the women consumers database as a different audience requirement.",
+          "For a Bangalore-only consumer offer, explore the female consumer Bangalore database. Confirm the audience fit and local coverage rather than treating a list of jewellers as a shopper audience."
+        ]
+      },
+      {
+        heading: "Ask for the sample that fits your trade brief",
+        paragraphs: [
+          "Send your preferred business categories, cities, product or service and approximate quantity. Ask which fields are populated and whether the categories can be separated clearly.",
+          "A business listing is not proof of licensing, certification, turnover or current buying interest. Check the details that matter to your relationship directly with the business."
+        ]
+      }
+    ],
+    useCases: [
+      "Find retail stockists for a jewellery collection",
+      "Offer packaging and display products",
+      "Demonstrate jewellery billing or inventory tools",
+      "Introduce store security products",
+      "Invite relevant businesses to a trade event"
+    ],
+    faqs: [
+      {
+        question: "Can I request only diamond or silver jewellers?",
+        answer: "Yes. Describe the product and business categories you need, along with the cities you want to cover, and ask for a matching sample."
+      },
+      {
+        question: "Can retailers and manufacturers be separated?",
+        answer: "State which category you need or request separate lists. They represent different buying situations and should not be treated as interchangeable."
+      },
+      {
+        question: "Does the list verify certification or business size?",
+        answer: "Do not assume that. Ask what is actually recorded and independently check any certification, licensing or scale information important to the relationship."
+      },
+      {
+        question: "Is this useful for jewellery shopper campaigns?",
+        answer: "This page focuses on businesses. For individual shoppers, discuss an appropriate consumer audience separately."
+      },
+      {
+        question: "How do I get a relevant sample and price?",
+        answer: "Send your trade category, target locations, required fields and approximate quantity. Ask for coverage, sample options, format and delivery timing with the quote."
+      }
+    ],
+    related: [
+      "importers-exporters-database-india",
+      "manufacturer-database-india",
+      "company-proprietors-database-india",
+      "fabric-clothing-stores-database-india",
+      "females-database-india",
+      "female-consumer-bangalore-database"
+    ],
+    useCasesIntro: "Focus on the business need behind your offer, from stocking a collection to improving a store’s operations.",
+    cta: {
+      heroTitle: "Find Jewellers Who Fit Your Offer",
+      heroSubtitle: "Share your product, preferred trade categories and cities. Ask for a relevant business sample and quote.",
+      buttonLabel: "Request Jeweller Sample",
+      text: "Retail stockists, gemstone traders or workshops? Tell us who should be on your shortlist.",
+      footerTitle: "Let’s Build Your Jewellery Trade Shortlist",
+      footerText: "Tell us what you supply and the businesses you want to reach. We’ll confirm available coverage, sample options and pricing."
+    },
   },
 ];
 

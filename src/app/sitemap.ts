@@ -28,6 +28,12 @@ const KEYWORD_CONTENT_UPDATED: Record<string, string> = {
   "fabric-clothing-stores-database-india": "2026-10-17",
   "female-consumer-bangalore-database": "2026-10-17",
   "financial-analysts-managers-industry-database": "2026-10-17",
+  "food-beverage-stores-database-india": "2026-10-17",
+  "freelancers-database-india": "2026-10-17",
+  "frequent-flyer-database-india": "2026-10-17",
+  "furniture-stores-dealers-database-india": "2026-10-17",
+  "gas-petroleum-companies-database-india": "2026-10-17",
+  "gems-jewellery-shops-database-india": "2026-10-17",
 };
 
 export default function sitemap(): MetadataRoute.Sitemap {

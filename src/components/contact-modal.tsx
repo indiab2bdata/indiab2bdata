@@ -10,26 +10,32 @@ import { WhatsAppIcon } from "@/components/icons/whatsapp-icon";
 import { PRODUCT_GROUPS } from "@/lib/product-groups";
 import { databaseStates } from "@/lib/database-pages";
 import { buildSampleCsv, sampleProfileFor } from "@/lib/sample-data";
-import { siteConfig } from "@/lib/site-config";
+import { formatDataProduct, siteConfig } from "@/lib/site-config";
 
 const GENERAL = "Not sure yet - help me choose";
 const CUSTOM = "Custom / Pan-India Data";
 const BENEFITS = ["15-20 sample records", "Shared in a few hours", "DND-scrubbed", "No payment needed"];
 
-/** The product (and sample format) for the page the visitor is on. */
-function contextFor(pathname: string) {
+type CityEnquiryPage = { href: string; city: string; state: string };
+type SampleContext = { requirement: string; slug: string; state?: string; city?: string };
+
+/** Match exact city routes before their parent state, using a lightweight server-supplied list. */
+function contextFor(pathname: string, cityPages: CityEnquiryPage[]): SampleContext {
+  const route = pathname.replace(/\/+$/, "") || "/";
   for (const group of PRODUCT_GROUPS) {
-    const hit = group.links.find((l) => l.href === pathname);
-    if (hit) return { requirement: hit.label, slug: pathname.slice(1), state: undefined as string | undefined };
+    const hit = group.links.find((l) => l.href === route);
+    if (hit) return { requirement: hit.label, slug: route.slice(1) };
   }
-  const state = databaseStates.find((s) => pathname.startsWith(`/database/${s.slug}`));
+  const city = cityPages.find((page) => page.href === route);
+  if (city) return { requirement: `${city.city} Company Database`, slug: "b2b-database-india", state: city.state, city: city.city };
+  const state = databaseStates.find((s) => route === `/database/${s.slug}`);
   if (state) return { requirement: `${state.name} B2B Database`, slug: "b2b-database-india", state: state.name };
   return { requirement: GENERAL, slug: "b2b-database-india", state: undefined };
 }
 
 /** First 3 columns x 3 rows of the masked dummy sample - a visual of what the buyer will receive. */
-function previewRows(slug: string, state?: string) {
-  const lines = buildSampleCsv(sampleProfileFor(slug), 3, state ? { state } : undefined)
+function previewRows(slug: string, state?: string, city?: string) {
+  const lines = buildSampleCsv(sampleProfileFor(slug), 3, state || city ? { state, city } : undefined)
     .replace(/^﻿/, "")
     .split("\r\n")
     .filter(Boolean)
@@ -42,12 +48,12 @@ const field =
   "w-full rounded-xl border border-[#DCEAF3] bg-white px-4 py-3 text-base sm:text-sm text-navy placeholder:text-slate-400 transition focus:border-teal focus:outline-none focus:ring-4 focus:ring-teal/15";
 const label = "mb-1.5 block text-xs font-semibold text-navy/70";
 
-export function ContactModal() {
+export function ContactModal({ cityPages }: { cityPages: CityEnquiryPage[] }) {
   const { isOpen, source, closeModal } = useModal();
   const { status, setStatus, handleSubmit } = useContactForm(closeModal);
   const pathname = usePathname();
-  const ctx = contextFor(pathname);
-  const preview = useMemo(() => previewRows(ctx.slug, ctx.state), [ctx.slug, ctx.state]);
+  const ctx = contextFor(pathname, cityPages);
+  const preview = useMemo(() => previewRows(ctx.slug, ctx.state, ctx.city), [ctx.slug, ctx.state, ctx.city]);
 
   // Reset per open ("adjusting state on prop change", done during render).
   const [wasOpen, setWasOpen] = useState(isOpen);
@@ -76,7 +82,7 @@ export function ContactModal() {
   }, [isOpen, closeModal]);
 
   const product = ctx.requirement === GENERAL ? "B2B Data" : ctx.requirement;
-  const whatsappText = `Hi, I'd like a free sample of ${ctx.requirement === GENERAL ? "your B2B data" : `the ${ctx.requirement} database`}.`;
+  const whatsappText = `Hi, I'd like a free sample of ${ctx.requirement === GENERAL ? "your B2B data" : `the ${formatDataProduct(ctx.requirement)}`}.`;
 
   return (
     <div
@@ -188,6 +194,7 @@ export function ContactModal() {
               </label>
               <div className="relative">
                 <select id="sm-requirement" required name="requirement" defaultValue={ctx.requirement} className={`${field} cursor-pointer appearance-none pr-10 font-medium`}>
+                  {ctx.city && <option value={ctx.requirement}>{ctx.requirement}</option>}
                   <option value={GENERAL}>{GENERAL}</option>
                   {PRODUCT_GROUPS.map((g) => (
                     <optgroup key={g.heading} label={g.heading}>

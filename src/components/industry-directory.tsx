@@ -7,7 +7,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { A11y, Keyboard, Navigation, Pagination } from "swiper/modules";
 import { PRODUCT_GROUPS } from "@/lib/product-groups";
-import { siteConfig } from "@/lib/site-config";
+import { formatDataProduct, siteConfig } from "@/lib/site-config";
 import { getKeywordImage } from "@/lib/keyword-images";
 import { WhatsAppIcon } from "@/components/icons/whatsapp-icon";
 
@@ -111,10 +111,10 @@ function ProductCard({
           <Icon id="ind-arrow" />
         </span>
         <a
-          href={siteConfig.whatsappHref(`Hi, I'm interested in the ${label} database.`)}
+          href={siteConfig.whatsappHref(`Hi, I'm interested in the ${formatDataProduct(label)}.`)}
           target="_blank"
           rel="noopener noreferrer"
-          aria-label={`Enquire about ${label} database on WhatsApp`}
+          aria-label={`Enquire about ${formatDataProduct(label)} on WhatsApp`}
           className="ind-card-wa"
         >
           <Icon id="ind-wa" />

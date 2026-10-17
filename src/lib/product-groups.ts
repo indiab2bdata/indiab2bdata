@@ -45,6 +45,10 @@ export const PRODUCT_GROUPS: { heading: string; links: { href: string; label: st
       { href: "/entertainment-media-database-india", label: "Entertainment & Media" },
       { href: "/event-management-organisers-database-india", label: "Event Organisers" },
       { href: "/fabric-clothing-stores-database-india", label: "Fabric & Clothing Stores" },
+      { href: "/food-beverage-stores-database-india", label: "Food & Beverage Stores" },
+      { href: "/furniture-stores-dealers-database-india", label: "Furniture & Furnishing" },
+      { href: "/gas-petroleum-companies-database-india", label: "Gas & Petroleum Companies" },
+      { href: "/gems-jewellery-shops-database-india", label: "Gems & Jewellery Shops" },
     ],
   },
   {
@@ -70,6 +74,7 @@ export const PRODUCT_GROUPS: { heading: string; links: { href: string; label: st
       { href: "/financial-analysts-managers-industry-database", label: "Financial Analysts / Managers / Industry" },
       { href: "/bank-employees-database-delhi-ncr", label: "Bank Employees (Delhi NCR)" },
       { href: "/engineers-service-engineers-database-india", label: "Engineers & Service Engineers" },
+      { href: "/freelancers-database-india", label: "Freelancers" },
     ],
   },
   {
@@ -97,6 +102,7 @@ export const PRODUCT_GROUPS: { heading: string; links: { href: string; label: st
       { href: "/facebook-users-database-india", label: "Social Media Users" },
       { href: "/females-database-india", label: "Women Consumers" },
       { href: "/female-consumer-bangalore-database", label: "Female Consumers (Bangalore)" },
+      { href: "/frequent-flyer-database-india", label: "Frequent Flyers" },
     ],
   },
   {

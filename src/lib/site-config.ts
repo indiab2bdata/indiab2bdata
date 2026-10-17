@@ -1,5 +1,11 @@
 const PHONE_DIGITS = "918929695846";
 
+/** Keep product names readable when a label already contains data or database wording. */
+export function formatDataProduct(label: string) {
+  const name = label.trim();
+  return /\b(?:database|data|leads|contacts|lists)\b/i.test(name) ? name : `${name} database`;
+}
+
 export const siteConfig = {
   name: "IndiaB2BData.com",
   url: "https://www.indiab2bdata.com",
