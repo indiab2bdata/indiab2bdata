@@ -59,7 +59,13 @@ export type SampleProfile =
   | "frequentFlyer"
   | "furnitureStore"
   | "petroleum"
-  | "jeweller";
+  | "jeweller"
+  | "seniorManager"
+  | "governmentEmployee"
+  | "graphicDesigner"
+  | "gymnasium"
+  | "healthBeautyBusiness"
+  | "highIncomeEmployee";
 
 const NAMES = ["Rahul Sharma", "Priya Mehta", "Amit Verma", "Sneha Iyer", "Vikram Singh", "Neha Gupta", "Arjun Reddy", "Kavita Joshi", "Rohan Das", "Pooja Nair", "Sanjay Patel", "Anjali Rao"];
 const COMPANIES = ["Sample Tech Pvt Ltd", "Demo Industries", "Example Traders", "Test Solutions LLP", "Dummy Enterprises", "Placeholder Exports", "Mock Infra Pvt Ltd", "Specimen Foods", "Trial Textiles", "Prototype Pharma"];
@@ -86,6 +92,65 @@ const industry: Column = ["Industry", (c) => c.industry];
 const designation: Column = ["Designation", (c) => pick(["Owner", "Director", "Purchase Manager", "Sales Head", "Partner", "Proprietor"], c.i)];
 
 const PROFILES: Record<SampleProfile, Column[]> = {
+  highIncomeEmployee: [
+    ["Name", (c) => c.name],
+    ["Designation", (c) => pick(["Senior Manager", "Technical Lead", "Department Head", "Principal Consultant"], c.i)],
+    ["Employer", (c) => c.company],
+    industry,
+    ["Audience Segment", () => "High-income employee (fictional)"],
+    ["Illustrative Annual Income Band", (c) => pick(["INR 20-30 lakh (fictional)", "INR 30-50 lakh (fictional)", "INR 50 lakh+ (fictional)"], c.i)],
+    ["Classification Basis", () => "Fictional format example; not verified income or wealth"],
+    ["Illustrative Record Date", () => "2026-10-17"],
+    phone, ["Email ID", (c) => "professional" + (c.i + 1) + "@example.com"],
+    ["City", (c) => c.city], ["State", (c) => c.state],
+  ],
+  graphicDesigner: [
+    ["Designer Name", (c) => c.name],
+    ["Specialisation", (c) => pick(["Brand Identity", "Packaging Design", "Print Design", "Digital Creatives", "Publication Design", "Advertising Design"], c.i)],
+    ["Work Type", (c) => pick(["Freelance", "Studio", "In-house"], c.i)],
+    ["Studio / Employer", (c) => pick(["Independent Designer", "Sample Design Studio", "Example Brand Team"], c.i)],
+    phone, ["Email ID", (c) => "designer" + (c.i + 1) + "@example.com"],
+    ["Portfolio / Website", (c) => "https://example.com/designer-" + (c.i + 1)],
+    ["City", (c) => c.city], ["State", (c) => c.state],
+  ],
+  gymnasium: [
+    ["Gym / Fitness Centre Name", (c) => "Sample Fitness Business " + (c.i + 1)],
+    ["Business Type", (c) => pick(["Independent Gym", "Fitness Centre", "Fitness Studio"], c.i)],
+    ["Contact Person", (c) => c.name],
+    ["Contact Role", (c) => pick(["Owner", "Centre Manager", "Studio Manager"], c.i)],
+    phone, ["Email ID", (c) => "gym" + (c.i + 1) + "@example.com"],
+    ["Facilities / Services", (c) => pick(["Strength Equipment", "Cardio and Strength", "Group Fitness Classes"], c.i)],
+    ["Business Address", (c) => "Sample Fitness Area, " + c.city],
+    ...loc, ["Website", (c) => "https://example.com/fitness-" + (c.i + 1)],
+  ],
+  healthBeautyBusiness: [
+    ["Shop / Business Name", (c) => "Sample Health Beauty Business " + (c.i + 1)],
+    ["Business Type", (c) => pick(["Retail Shop", "Retail Shop", "Wholesaler", "Retail Shop"], c.i)],
+    ["Product Category", (c) => pick(["Cosmetics", "Personal Care", "Beauty Supplies", "Wellness Products"], c.i)],
+    ["Contact Person", (c) => c.name],
+    phone, ["Email ID", (c) => "beautybusiness" + (c.i + 1) + "@example.com"],
+    ["Business Address", (c) => "Sample Retail Area, " + c.city],
+    ...loc, ["Website / Business Profile", (c) => "https://example.com/beauty-business-" + (c.i + 1)],
+  ],
+  governmentEmployee: [
+    ["Employee Name", (c) => c.name],
+    ["Designation", (c) => pick(["Administrative Officer", "Accounts Assistant", "Office Superintendent", "Technical Assistant", "Training Coordinator", "Records Assistant"], c.i)],
+    ["Department", (c) => pick(["Administration", "Accounts", "Administration", "Technical Services", "Training", "Records"], c.i)],
+    ["Office / Organisation", (c) => "Fictional Public Office " + (c.i + 1)],
+    ["Organisation Type", (c) => pick(["Central Government", "State Government", "Local Body"], c.i)],
+    ["Work Contact Number", mobile],
+    ["Work Email", (c) => "employee" + (c.i + 1) + "@example.com"],
+    ["Office Location", (c) => "Sample Office Area, " + c.city],
+    ...loc,
+  ],
+  seniorManager: [
+    person,
+    ["Designation", (c) => pick(["General Manager", "General Manager - Operations", "Senior Manager - Procurement", "Senior Manager - HR", "Senior Manager - Finance", "Senior Manager - IT"], c.i)],
+    ["Department", (c) => pick(["General Management", "Operations", "Procurement", "HR", "Finance", "IT"], c.i)],
+    company, industry,
+    ["Experience (Yrs)", (c) => String(8 + (c.i % 15))],
+    phone, mail, ...loc,
+  ],
   bangaloreFemale: [
     ["Name", (c) => pick(["Priya Mehta", "Sneha Iyer", "Neha Gupta", "Kavita Joshi", "Pooja Nair", "Anjali Rao"], c.i)],
     phone,
@@ -166,6 +231,12 @@ const PROFILES: Record<SampleProfile, Column[]> = {
 /** Map a page slug to the column format that product actually ships with. */
 export function sampleProfileFor(slug: string): SampleProfile {
   const rules: [RegExp, SampleProfile][] = [
+    [/^hni-high-income-employees-database-india$/, "highIncomeEmployee"],
+    [/^graphic-designers-database-india$/, "graphicDesigner"],
+    [/^gymnasiums-database-india$/, "gymnasium"],
+    [/^health-beauty-shops-business-database-india$/, "healthBeautyBusiness"],
+    [/^government-employees-database-india$/, "governmentEmployee"],
+    [/^general-senior-managers-database-india$/, "seniorManager"],
     [/^female-consumer-bangalore-database$/, "bangaloreFemale"],
     [/^financial-analysts-managers-industry-database$/, "financialProfessional"],
     [/food-beverage-stores/, "foodStore"],

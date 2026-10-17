@@ -3636,7 +3636,9 @@ export const keywordPages: KeywordPage[] = [
     intro: [
       "India's beauty and wellness sector is made up of lakhs of small and mid-sized businesses, from neighbourhood beauty parlours to salon chains, day spas and bridal studios. For brands and suppliers that sell to these businesses, finding the right outlets in a city usually means searching maps, directories and social media one listing at a time.",
       "A beauty parlours, salons and spa database brings those business records into a structured file that you can filter by location and business type. Before choosing a dataset, confirm the categories, localities, contact fields and permitted uses that apply to it.",
+      "For retail outlets selling cosmetics or personal-care products, compare the health and beauty shops database. If your offer serves fitness businesses, explore the gymnasiums database as a separate audience."
     ],
+    contentLinks: [{"text":"health and beauty shops database","href":"/health-beauty-shops-business-database-india"},{"text":"gymnasiums database","href":"/gymnasiums-database-india"}],
     highlights: [
       { icon: Sparkles, title: "Parlours, Salons & Spas", description: "Beauty, grooming and wellness businesses." },
       { icon: Filter, title: "Business-Type Filters", description: "Unisex salons, barbershops, spas, bridal studios." },
@@ -5089,6 +5091,11 @@ export const keywordPages: KeywordPage[] = [
     intro: [
       "In Indian banks, PSUs and large corporates, the chief manager is often the person who evaluates vendors, approves branch-level spending or runs a department. They sit between frontline managers and the CXO layer - close enough to operations to need solutions, senior enough to recommend or sign off on them.",
       "Our chief managers database focuses on this layer, filterable by industry, department (finance, operations, HR, IT, credit, procurement) and location. For top leadership, see our CEO, CFO, CMO and IT heads database.",
+      "For a broader brief across business units and departments, explore the general and senior managers database. Share the role responsibilities you need so we can check the best fit. For a brief defined by public-sector employment, compare the government employees database and specify the employer types you require.",
+    ],
+    contentLinks: [
+      { text: "general and senior managers database", href: "/general-senior-managers-database-india" },
+      { text: "government employees database", href: "/government-employees-database-india" },
     ],
     highlights: [
       { icon: Briefcase, title: "Senior Management", description: "Chief manager, senior manager and AGM roles." },
@@ -6034,7 +6041,9 @@ export const keywordPages: KeywordPage[] = [
     intro: [
       "India's design economy spans freelance graphic designers, UI/UX teams in tech companies, fashion and textile designers in Delhi, Mumbai, Jaipur and Tiruppur, and jewellery designers in Surat and Mumbai. Designers choose the software, fonts, stock content, printers and materials their clients pay for.",
       "Our designers database covers freelancers, in-house designers and design studios, filterable by specialisation and city. For architects and interior designers, see our dedicated architect and interior designers database.",
+      "For a brief focused on branding, packaging, print or digital creatives, explore the graphic designers database. It helps you discuss graphic design roles separately from other design disciplines."
     ],
+    contentLinks: [{"text":"graphic designers database","href":"/graphic-designers-database-india"}],
     highlights: [
       { icon: Sparkles, title: "All Design Fields", description: "Graphic, UI/UX, fashion, product, jewellery." },
       { icon: Users, title: "Freelancers & Studios", description: "Independent designers and agencies." },
@@ -7570,7 +7579,8 @@ export const keywordPages: KeywordPage[] = [
     intro: [
       "A budgeting tool needs a different conversation from a market-data subscription. Start by naming the finance task your offer helps with, then choose the people likely to own that task.",
       "Use the brief to separate finance managers, financial analysts, controllers, treasury teams and research roles. Add the type of employer you want, such as a manufacturing company, consulting firm or financial-services business.",
-      "For senior decision-makers, compare the CEO and CFO database. For accounting and tax practices rather than in-house teams, explore the chartered accountants database."
+      "For senior decision-makers, compare the CEO and CFO database. For accounting and tax practices rather than in-house teams, explore the chartered accountants database.",
+      "If your offer also serves operations, HR, procurement or IT teams, compare the general and senior managers database for a broader department-based requirement.",
     ],
     contentLinks: [
       {
@@ -7596,7 +7606,8 @@ export const keywordPages: KeywordPage[] = [
       {
         text: "consulting services database",
         href: "/consultants-consulting-services-database-india"
-      }
+      },
+      { text: "general and senior managers database", href: "/general-senior-managers-database-india" },
     ],
     highlights: [
       {
@@ -8055,7 +8066,8 @@ export const keywordPages: KeywordPage[] = [
     intro: [
       "A business trip and a family holiday involve different needs. Even people who fly often do not all want the same hotel, package or service, so a travel-related offer needs more detail than a “premium audience” label.",
       "Describe the offer, the cities you can serve and the travel attributes you want to discuss. Do not assume flying frequency establishes someone’s income or spending budget; ask what is actually recorded.",
-      "This is an independent audience-data enquiry, not an airline or loyalty-programme export. It does not provide booking access, ticket details or travel-account credentials."
+      "This is an independent audience-data enquiry, not an airline or loyalty-programme export. It does not provide booking access, ticket details or travel-account credentials.",
+      "If your brief specifically requires income or wealth criteria, compare the HNI and high income employees database and confirm the classification basis separately from travel activity."
     ],
     contentLinks: [
       {
@@ -8077,6 +8089,10 @@ export const keywordPages: KeywordPage[] = [
       {
         text: "Facebook users database",
         href: "/facebook-users-database-india"
+      },
+      {
+        text: "HNI and high income employees database",
+        href: "/hni-high-income-employees-database-india"
       }
     ],
     highlights: [
@@ -8666,6 +8682,979 @@ export const keywordPages: KeywordPage[] = [
       footerTitle: "Let’s Build Your Jewellery Trade Shortlist",
       footerText: "Tell us what you supply and the businesses you want to reach. We’ll confirm available coverage, sample options and pricing."
     },
+  },
+  {
+    slug: "general-senior-managers-database-india",
+    keyword: "General Managers / Senior Managers Database India",
+    title: "General & Senior Managers Database India",
+    metaDescription: "Explore general managers and senior managers database options in India. Discuss departments, cities and industries, then request a sample and quote.",
+    eyebrow: "General & Senior Managers Database",
+    "h1": "General Managers & Senior Managers Database in India",
+    answer: "A general managers and senior managers database helps you shortlist professionals responsible for business units, departments and day-to-day operations. Share the roles, industries and locations you need so we can check available coverage and sample options before you order.",
+    intro: [
+      "A job title is only the starting point. A general manager running a manufacturing unit may need very different services from a senior manager in finance or HR. Tell us what you offer and which team would use it, and we can discuss a more useful shortlist.",
+      "Ask for department, company, industry and location details alongside available contact fields. These help your team understand why a person belongs in the campaign instead of relying on seniority alone.",
+      "If your brief specifically names chief managers or AGM roles, compare the chief managers database. For executive leadership, explore the CEO and CFO database as a separate audience.",
+      "For a separately defined income or wealth audience, explore the HNI and high income employees database. A management title alone does not establish either classification."
+    ],
+    contentLinks: [
+      {
+        text: "chief managers database",
+        href: "/chief-managers-database-india"
+      },
+      {
+        text: "CEO and CFO database",
+        href: "/ceo-cfo-cmo-it-heads-database-india"
+      },
+      {
+        text: "financial analysts and managers database",
+        href: "/financial-analysts-managers-industry-database"
+      },
+      {
+        text: "sales and business development professionals database",
+        href: "/business-development-sales-professionals-database-india"
+      },
+      {
+        text: "corporate database",
+        href: "/corporate-database-india"
+      },
+      {
+        text: "industry-wise company database",
+        href: "/industry-wise-company-database-india"
+      },
+      {
+        text: "HNI and high income employees database",
+        href: "/hni-high-income-employees-database-india"
+      }
+    ],
+    highlights: [
+      {
+        icon: Briefcase,
+        title: "Role & Department Fit",
+        description: "Discuss general management and the senior functions relevant to your offer."
+      },
+      {
+        icon: Building2,
+        title: "Company Context",
+        description: "Check available company and industry fields before selecting a list."
+      },
+      {
+        icon: MapPinned,
+        title: "Your Target Locations",
+        description: "Share the cities or states your team can serve."
+      },
+      {
+        icon: FileText,
+        title: "Sample Before Selection",
+        description: "Review the format, role labels and field completeness first."
+      }
+    ],
+    dataFields: [
+      "Contact person name",
+      "Designation and department, where available",
+      "Company name and industry",
+      "Mobile number and email ID, where available",
+      "Experience, where recorded",
+      "City, state and pincode"
+    ],
+    sections: [
+      {
+        heading: "Start with the responsibility behind the title",
+        paragraphs: [
+          "Describe the problem your product solves. Operations software, recruitment support and procurement services usually need different contacts, even when each buyer has a senior manager title."
+        ],
+        subsections: [
+          {
+            heading: "General managers",
+            text: "Useful when your offer relates to a business unit, branch or wider operational responsibility. Confirm the scope of the role rather than assuming company-wide authority."
+          },
+          {
+            heading: "Senior department managers",
+            text: "Discuss operations, procurement, HR, finance, IT or sales roles according to the team that would evaluate your service."
+          }
+        ]
+      },
+      {
+        heading: "Choose a more focused professional audience",
+        paragraphs: [
+          "For budgeting, financial planning or analysis tools, explore the financial analysts and managers database. For pipeline building, sales training or distribution support, compare the sales and business development professionals database.",
+          "Keep these audiences separate when the message or buying need changes. A focused introduction gives the recipient a clearer reason to consider a conversation."
+        ]
+      },
+      {
+        heading: "Match manager roles to the companies you serve",
+        paragraphs: [
+          "Share your preferred industries and service area along with the roles you want. A city-specific consulting service and a nationwide software provider will need different shortlists.",
+          "Use the corporate database to explore a company-led requirement, or the industry-wise company database when sector selection comes first. Ask which role and company filters are available for your chosen segment."
+        ]
+      },
+      {
+        heading: "Review a matching sample before you order",
+        paragraphs: [
+          "Send the designations, departments, industries, locations and approximate quantity you need. Ask us to confirm available records, populated fields, file format, delivery timing and pricing.",
+          "The downloadable preview illustrates the file structure using fictional, masked records. Request a matching sample to assess your requirement. A manager title does not establish purchasing authority or current interest; confirm responsibility during your conversation."
+        ]
+      }
+    ],
+    useCasesIntro: "Build your approach around the team that would benefit from your product or service.",
+    useCases: [
+      "Introduce operations and workflow software to relevant managers",
+      "Offer procurement or supplier services to the appropriate department",
+      "Discuss recruitment and management training with HR teams",
+      "Invite suitable professionals to industry events and workshops",
+      "Plan department-specific consulting and business service outreach"
+    ],
+    faqs: [
+      {
+        question: "Can I request general managers and senior managers separately?",
+        answer: "Yes. Specify the designations you need and whether you want separate segments. We will confirm available coverage and sample options for that brief."
+      },
+      {
+        question: "Can I filter the list by department or industry?",
+        answer: "Share your preferred departments, industries and locations. Filter availability depends on the selected segment, so check a matching sample before ordering."
+      },
+      {
+        question: "Are these contacts the final purchasing decision-makers?",
+        answer: "That depends on the company and role. General and senior managers may evaluate a service, recommend suppliers or manage a budget, but a title alone does not confirm final approval authority."
+      },
+      {
+        question: "Which fields can I expect in the file?",
+        answer: "Ask about contact name, designation, department, company, industry, location and available mobile or email fields. Confirm completeness and any additional fields in the sample and quote."
+      },
+      {
+        question: "Does the download contain real manager contact details?",
+        answer: "The public download contains fictional, masked examples to demonstrate the layout. Contact our team to discuss sample options for your actual requirement."
+      },
+      {
+        question: "How do I get a sample and price?",
+        answer: "Use the enquiry form to share the roles, departments, industries, cities and approximate quantity you need. We will confirm available coverage, sample options, format, timing and pricing."
+      }
+    ],
+    related: [
+      "chief-managers-database-india",
+      "ceo-cfo-cmo-it-heads-database-india",
+      "financial-analysts-managers-industry-database",
+      "business-development-sales-professionals-database-india",
+      "corporate-database-india",
+      "industry-wise-company-database-india"
+    ],
+    showTestimonials: true,
+    cta: {
+      heroTitle: "Find Managers Who Fit Your Offer",
+      heroSubtitle: "Share your target roles, departments and locations. Ask for coverage, a matching sample and a quote.",
+      buttonLabel: "Request Manager Sample",
+      text: "Which team should hear from you? Tell us the manager roles, industries and locations you want to reach.",
+      footerTitle: "Build Your Manager Shortlist",
+      footerText: "Send your role and department requirements, target industries, locations and approximate quantity. We will confirm available coverage, sample options and pricing."
+    }
+  },
+  {
+    slug: "government-employees-database-india",
+    keyword: "Government Employees Database India",
+    title: "Government Employees Database India",
+    metaDescription: "Explore government employees database options in India. Discuss departments, roles and locations, check available fields, and request a sample and quote.",
+    eyebrow: "Government Employees Database",
+    h1: "Government Employees Database in India",
+    answer: "A government employees database organises employee and workplace details by role, department and location. Tell us which public-sector audience you need so we can check available coverage, contact fields and sample options before you order.",
+    intro: [
+      "Government employees work across many different services and offices. A training programme for administrative staff needs a different shortlist from a workshop for teachers or a software demonstration for a department team. Start with the people your offer would help.",
+      "Share the departments, designations and locations you want to reach. If your brief includes central government, state government, local bodies or public-sector undertakings, name those groups separately so we can confirm what is available rather than treating them as one audience.",
+      "For teaching roles, compare the teachers database. If you need institution-level contacts instead of individual employees, explore the schools and colleges database and describe the ownership type you require."
+    ],
+    contentLinks: [
+      {
+        text: "teachers database",
+        href: "/teachers-database-india"
+      },
+      {
+        text: "schools and colleges database",
+        href: "/school-colleges-database"
+      },
+      {
+        text: "chief managers database",
+        href: "/chief-managers-database-india"
+      },
+      {
+        text: "general and senior managers database",
+        href: "/general-senior-managers-database-india"
+      },
+      {
+        text: "bank employees database for Delhi NCR",
+        href: "/bank-employees-database-delhi-ncr"
+      },
+      {
+        text: "database directory",
+        href: "/database"
+      }
+    ],
+    highlights: [
+      {
+        icon: Landmark,
+        title: "Department Context",
+        description: "Describe the government bodies and office types relevant to your brief."
+      },
+      {
+        icon: Briefcase,
+        title: "Role-Based Selection",
+        description: "Specify designations and responsibilities before choosing a segment."
+      },
+      {
+        icon: MapPinned,
+        title: "Location Requirements",
+        description: "Ask about coverage for the states and cities you want to serve."
+      },
+      {
+        icon: FileText,
+        title: "Review a Sample First",
+        description: "Check the available fields, format and audience fit before ordering."
+      }
+    ],
+    dataFields: [
+      "Employee or contact person name, where available",
+      "Designation and department, where recorded",
+      "Organisation or office name",
+      "Government body or organisation type, where recorded",
+      "Available work contact number and email fields",
+      "Office location, city, state and pincode, where available"
+    ],
+    sections: [
+      {
+        heading: "Define the government employee audience you need",
+        paragraphs: [
+          "A useful brief explains both the employer and the person’s function. Give us the departments or office types you need, then add the roles, locations and approximate quantity. Ask us to confirm each segment in the quote."
+        ],
+        subsections: [
+          {
+            heading: "Central and state government offices",
+            text: "Name the departments and geographic area you need. Do not assume that availability in one office or state means complete coverage across every government service."
+          },
+          {
+            heading: "Local bodies and public-sector organisations",
+            text: "Specify municipal bodies or public-sector undertakings separately. Employer type matters when choosing a relevant audience and should be checked in the sample."
+          },
+          {
+            heading: "Administrative and specialist roles",
+            text: "Describe the function behind the designation, such as administration, accounts, technical work or education. This helps keep the shortlist aligned with your offer."
+          }
+        ]
+      },
+      {
+        heading: "Choose a specialist list when the role matters most",
+        paragraphs: [
+          "For a brief centred on senior responsibilities, compare the chief managers database or the general and senior managers database. These are broader professional categories; ask which employer types and departments can be identified.",
+          "For banking roles in that region, explore the bank employees database for Delhi NCR. Specify public-sector bank staff if that is your requirement, and confirm the employer mix rather than assuming every banking contact is a government employee."
+        ]
+      },
+      {
+        heading: "Make the first approach useful to the recipient",
+        paragraphs: [
+          "Explain the practical value of your programme, service or event in a few clear sentences. A role-specific training invitation or relevant product demonstration is easier to assess than a broad message sent to unrelated departments.",
+          "Keep the contact’s role and office context visible when planning your approach. An employee listing does not establish purchasing authority, an open tender or interest in your offer. If your goal is supplying an organisation, confirm the appropriate procurement route directly."
+        ]
+      },
+      {
+        heading: "Check the sample, coverage and quote together",
+        paragraphs: [
+          "Tell us your preferred departments, roles, employer types and locations, plus the contact fields you need. Ask about field completeness, available record counts, update information, file format, delivery timing and pricing.",
+          "The public CSV preview uses fictional names and masked details to demonstrate the layout. Request a matching sample to assess actual coverage. IndiaB2BData is an independent provider; this page is not an official government employee registry.",
+          "Still deciding between employee, professional and organisation-level data? Use the database directory to compare categories before sending your enquiry."
+        ]
+      }
+    ],
+    useCasesIntro: "Select the roles that would benefit from your offer and confirm the contact context before starting outreach.",
+    useCases: [
+      "Invite relevant staff to professional training and workshops",
+      "Introduce role-specific workflow or productivity tools",
+      "Plan department-focused conference and seminar invitations",
+      "Discuss services with the appropriate administrative function",
+      "Compare office and location coverage for a focused campaign"
+    ],
+    faqs: [
+      {
+        question: "Does this cover every government employee in India?",
+        answer: "Do not assume complete nationwide coverage. Share the departments, employer types, roles and locations you need, and ask us to confirm the available segments and record counts."
+      },
+      {
+        question: "Can I request central or state government employees separately?",
+        answer: "Specify those as separate requirements, along with your target departments and locations. We will check whether the available records support that selection."
+      },
+      {
+        question: "Are public-sector banks and PSU employees included automatically?",
+        answer: "No. Name public-sector banks, undertakings or local bodies explicitly in your brief. Confirm the employer mix and coverage in a matching sample and quote."
+      },
+      {
+        question: "Which contact fields are available?",
+        answer: "Ask about names, designations, departments, office details, locations and available work contact fields. Field availability and completeness depend on the selected segment."
+      },
+      {
+        question: "Is this an official government database?",
+        answer: "No. IndiaB2BData is an independent provider. A listing does not imply government endorsement, purchasing authority or a current procurement opportunity."
+      },
+      {
+        question: "How do I request a sample and price?",
+        answer: "Use the enquiry form to send your department, role, employer type, location, field and quantity requirements. The public download is a fictional format preview; ask our team about matching sample options, coverage and pricing."
+      }
+    ],
+    related: [
+      "teachers-database-india",
+      "school-colleges-database",
+      "chief-managers-database-india",
+      "general-senior-managers-database-india",
+      "bank-employees-database-delhi-ncr",
+      "educational-institutes-database-india"
+    ],
+    showTestimonials: true,
+    cta: {
+      heroTitle: "Find the Right Government Employee Segment",
+      heroSubtitle: "Share your departments, roles and locations. Ask for available coverage, a matching sample and pricing.",
+      buttonLabel: "Request Government Data Sample",
+      text: "Which departments and roles fit your offer? Send your target locations and fields so we can check suitable coverage.",
+      footerTitle: "Discuss Your Government Employee Data Requirement",
+      footerText: "Tell us the employer types, departments, roles, locations and approximate quantity you need. We will confirm available fields, sample options, delivery timing and a quote."
+    }
+  },
+  {
+    slug: "graphic-designers-database-india",
+    keyword: "Graphic Designers Database India",
+    title: "Graphic Designers Database India",
+    metaDescription: "Explore graphic designers database options in India. Discuss branding, print and digital design roles, check city coverage, and request a sample and quote.",
+    eyebrow: "Graphic Designers Database",
+    h1: "Graphic Designers Database in India",
+    answer: "A graphic designers database helps you shortlist professionals and studios working on visual communication, from brand identities and packaging to print and digital creatives. Share your preferred specialisations, work types and locations so we can check available coverage and sample options.",
+    intro: [
+      "A packaging designer, a freelance brand designer and an in-house social media designer may all use different tools and services. Start with the kind of work your offer supports, then describe the people you want to reach.",
+      "Ask for specialisation, studio or employer, work type and location alongside available contact fields. Those details help your team build a relevant introduction instead of treating every creative professional as the same prospect.",
+      "If you need several creative disciplines, compare the broader designers database. For independent professionals across different services, explore the freelancers database and specify graphic design as your required skill area."
+    ],
+    contentLinks: [
+      {
+        text: "designers database",
+        href: "/designers-database-india"
+      },
+      {
+        text: "freelancers database",
+        href: "/freelancers-database-india"
+      },
+      {
+        text: "DTP operators database",
+        href: "/dtp-operators-database-india"
+      },
+      {
+        text: "photography studios database",
+        href: "/digital-photography-studios-database-india"
+      },
+      {
+        text: "entertainment and media database",
+        href: "/entertainment-media-database-india"
+      },
+      {
+        text: "database directory",
+        href: "/database"
+      }
+    ],
+    highlights: [
+      {
+        icon: Sparkles,
+        title: "Graphic Design Focus",
+        description: "Describe the branding, print or digital design work relevant to your offer."
+      },
+      {
+        icon: Briefcase,
+        title: "Work-Type Context",
+        description: "Discuss freelancers, studio teams and in-house roles separately."
+      },
+      {
+        icon: MapPinned,
+        title: "Your Target Locations",
+        description: "Check available coverage for the cities and states you want to serve."
+      },
+      {
+        icon: FileText,
+        title: "Sample Before Selection",
+        description: "Review specialisation labels, contact fields and the file format first."
+      }
+    ],
+    dataFields: [
+      "Designer or contact person name",
+      "Graphic design specialisation, where recorded",
+      "Work type: freelance, in-house or studio, where identified",
+      "Studio or employer name, where available",
+      "Business contact number and email, where available",
+      "Portfolio or website, where available",
+      "City and state"
+    ],
+    sections: [
+      {
+        heading: "Choose the design work your offer supports",
+        paragraphs: [
+          "Tell us what a suitable contact creates and how your product or service fits that work. A print supplier and a digital asset platform will usually need different shortlists."
+        ],
+        subsections: [
+          {
+            heading: "Branding and packaging",
+            text: "For briefs involving identities, packaging artwork and brand materials. Ask which specialisation labels are present in the available records."
+          },
+          {
+            heading: "Print and publication design",
+            text: "For work on brochures, catalogues and other printed materials. If production layout is the main requirement, compare the DTP operators database."
+          },
+          {
+            heading: "Digital and campaign creatives",
+            text: "For social content, advertising assets and other visual communication. Specify whether you need independent designers, agencies or in-house teams."
+          }
+        ]
+      },
+      {
+        heading: "Separate freelancers, studios and in-house teams",
+        paragraphs: [
+          "A freelancer may choose their own subscriptions, while a studio may purchase through a partner or administrator. In-house designers may recommend a tool without approving the purchase. Use the work context to plan a suitable first conversation.",
+          "Share your target work types and locations. Ask which employer, role and portfolio fields are available before deciding how to organise your campaign."
+        ]
+      },
+      {
+        heading: "Build a wider creative shortlist when needed",
+        paragraphs: [
+          "A creative production brief may involve more than graphic design. Explore the photography studios database for image-production businesses, or the entertainment and media database for a broader agency and production requirement.",
+          "Keep each category separate when the buying need changes. The database directory can help you compare other professional and business categories before sending your enquiry."
+        ]
+      },
+      {
+        heading: "Review the sample against your actual brief",
+        paragraphs: [
+          "Send your design specialisations, work types, target cities, required fields and approximate quantity. Ask about available records, field completeness, file format, delivery timing and pricing.",
+          "The public CSV download contains fictional, masked examples of the layout. Request a matching sample to assess your requirement. A listing or portfolio link does not establish availability for a project, software proficiency or purchasing authority."
+        ]
+      }
+    ],
+    useCasesIntro: "Match your offer to a designer’s work and employment context before starting a conversation.",
+    useCases: [
+      "Introduce relevant design software and workflow tools",
+      "Offer printing, packaging and production services",
+      "Invite suitable professionals to design workshops",
+      "Discuss creative partnerships with studios and freelancers",
+      "Build an initial shortlist for project or hiring enquiries"
+    ],
+    faqs: [
+      {
+        question: "How is this different from the broader designers database?",
+        answer: "This page focuses on graphic design and visual communication. The broader designers category also covers other disciplines; specify the exact specialisations you need in either case."
+      },
+      {
+        question: "Can I request freelancers or design studios separately?",
+        answer: "Share your preferred work types and locations. We will check whether the available records support that selection and confirm it in the sample and quote."
+      },
+      {
+        question: "Are portfolios and software skills included?",
+        answer: "Portfolio or website fields may be available, but do not assume every record includes one. Confirm any skill fields in the sample and assess a professional’s work directly before hiring."
+      },
+      {
+        question: "Can I select designers in a particular city?",
+        answer: "Tell us the cities or states you need, together with the design specialisations. Ask us to confirm coverage and available quantities for that combination."
+      },
+      {
+        question: "How do I request a sample and price?",
+        answer: "Use the enquiry form to share your specialisations, work types, locations, fields and approximate quantity. The public download demonstrates the format with fictional records; ask our team for matching sample options and a quote."
+      }
+    ],
+    related: [
+      "designers-database-india",
+      "freelancers-database-india",
+      "dtp-operators-database-india",
+      "digital-photography-studios-database-india",
+      "entertainment-media-database-india"
+    ],
+    showTestimonials: true,
+    cta: {
+      heroTitle: "Find Graphic Designers Who Fit Your Brief",
+      heroSubtitle: "Share your specialisations, work types and cities. Ask for a relevant sample and quote.",
+      buttonLabel: "Request Graphic Designer Sample",
+      text: "Branding, packaging or digital creatives? Tell us which designers would benefit from your offer.",
+      footerTitle: "Build Your Graphic Design Shortlist",
+      footerText: "Send your target specialisations, work types, locations and approximate quantity. We will confirm available coverage, sample options and pricing."
+    }
+  },
+  {
+    slug: "gymnasiums-database-india",
+    keyword: "Gymnasiums Database India",
+    title: "Gymnasiums Database India",
+    metaDescription: "Explore gymnasiums and fitness centre database options in India. Discuss business types, locations and contact fields, then request a sample and quote.",
+    eyebrow: "Gymnasiums Database",
+    h1: "Gymnasiums & Fitness Centres Database in India",
+    answer: "A gymnasiums database organises business records for gyms and fitness centres, with available location, business-type and contact details. Share the outlets and cities you want to reach so we can check suitable coverage for equipment, software, services or trade partnerships.",
+    intro: [
+      "An independent neighbourhood gym and a fitness chain can have different buying processes. An equipment supplier may need the owner or purchasing team, while a booking platform may need an operations contact. Start with what you sell and who would evaluate it.",
+      "Tell us whether your brief is for gyms, fitness centres or specialist studios, then add your service area. Ask which business categories, facilities and contact roles can actually be identified in the available records.",
+      "This page focuses on businesses. For adjacent retail outlets, compare the health and beauty shops database. For grooming and spa establishments, explore the salons and spas database as a separate business segment."
+    ],
+    contentLinks: [
+      {
+        text: "health and beauty shops database",
+        href: "/health-beauty-shops-business-database-india"
+      },
+      {
+        text: "salons and spas database",
+        href: "/beauty-parlours-salons-spa-database-india"
+      },
+      {
+        text: "company proprietors database",
+        href: "/company-proprietors-database-india"
+      },
+      {
+        text: "dealers and distributors database",
+        href: "/dealers-distributors-database-india"
+      },
+      {
+        text: "event organisers database",
+        href: "/event-management-organisers-database-india"
+      },
+      {
+        text: "database directory",
+        href: "/database"
+      }
+    ],
+    highlights: [
+      {
+        icon: Target,
+        title: "Business-Type Fit",
+        description: "Specify gyms, fitness centres or studios that match your offer."
+      },
+      {
+        icon: Users,
+        title: "Relevant Business Contacts",
+        description: "Ask about owner, manager and business contact-field availability."
+      },
+      {
+        icon: MapPinned,
+        title: "Your Sales Territory",
+        description: "Check city and locality coverage within the area your team can serve."
+      },
+      {
+        icon: FileText,
+        title: "Review Before Ordering",
+        description: "Look at business categories and field completeness in a sample."
+      }
+    ],
+    dataFields: [
+      "Gym or fitness centre name",
+      "Business type, where identified",
+      "Owner, manager or contact person, where available",
+      "Business phone number and email, where available",
+      "Facilities or services, where recorded",
+      "Business address, locality, city, state and pincode",
+      "Website, where available"
+    ],
+    sections: [
+      {
+        heading: "Choose the fitness businesses you want to serve",
+        paragraphs: [
+          "Define the type of outlet before deciding how many records you need. Your product, installation area and support model should guide the shortlist."
+        ],
+        subsections: [
+          {
+            heading: "Independent gyms",
+            text: "For briefs focused on locally operated gyms. Ask which owner or manager fields are available and confirm responsibility during your introduction."
+          },
+          {
+            heading: "Fitness centres and specialist studios",
+            text: "Name the activities or facility types relevant to your offer. Confirm whether those distinctions are recorded rather than assuming every centre offers the same services."
+          },
+          {
+            heading: "Chains and multiple outlets",
+            text: "Say whether you need individual branches or a central business contact. Ask how branches and repeated company contacts are represented in the file."
+          }
+        ]
+      },
+      {
+        heading: "Match the contact to the buying conversation",
+        paragraphs: [
+          "Equipment, maintenance, access systems and membership software each solve a different operational problem. Explain the value to the business and identify the role likely to evaluate it.",
+          "For a broader owner-led business brief, compare the company proprietors database. If you want distribution partners for fitness products, explore the dealers and distributors database and specify the product category."
+        ]
+      },
+      {
+        heading: "Plan outreach around your service territory",
+        paragraphs: [
+          "Share the cities and localities where you can deliver, install or support your offer. Grouping suitable outlets by location can help your team plan introductions and visits.",
+          "For a fitness trade show or business event, the event organisers database may support a separate partnership brief. Use the database directory to compare other categories where your product has a clear business use."
+        ]
+      },
+      {
+        heading: "Ask for a sample that matches your gym brief",
+        paragraphs: [
+          "Send your preferred outlet types, target area, contact roles, required fields and approximate quantity. Ask us to confirm record availability, category labels, field completeness, format, delivery timing and pricing.",
+          "The downloadable CSV uses fictional, masked business records to demonstrate the structure. This is a gym business category; it does not represent gym members, attendance histories or individual health information. Confirm the buying need directly with each business."
+        ]
+      }
+    ],
+    useCasesIntro: "Focus on an operational need at the gym or fitness business you want to approach.",
+    useCases: [
+      "Introduce fitness equipment and installation services",
+      "Offer equipment servicing and maintenance",
+      "Demonstrate membership, booking and access software",
+      "Discuss business supply and distribution partnerships",
+      "Invite suitable gym businesses to trade events"
+    ],
+    faqs: [
+      {
+        question: "Does this list gyms or individual gym members?",
+        answer: "It is a business-focused category for gyms and fitness centres. It does not provide a membership audience or individual fitness and health records."
+      },
+      {
+        question: "Can I request only independent gyms or fitness studios?",
+        answer: "Specify the business types and locations you need. We will check which distinctions are available and confirm coverage through sample options and a quote."
+      },
+      {
+        question: "Are owner or manager contact details included?",
+        answer: "Ask which contact roles and business phone or email fields are populated for your selected segment. Do not assume every record identifies a purchasing decision-maker."
+      },
+      {
+        question: "Can branches and chain headquarters be separated?",
+        answer: "Tell us whether you need outlet records or a central business contact. Ask how branch names, addresses and repeated contacts are handled in the available file."
+      },
+      {
+        question: "How do I get a gym database sample and price?",
+        answer: "Send your outlet types, cities, required fields and approximate quantity through the enquiry form. The public download is a fictional format preview; ask our team for matching sample options, availability and pricing."
+      }
+    ],
+    related: [
+      "health-beauty-shops-business-database-india",
+      "beauty-parlours-salons-spa-database-india",
+      "company-proprietors-database-india",
+      "dealers-distributors-database-india",
+      "event-management-organisers-database-india"
+    ],
+    showTestimonials: true,
+    cta: {
+      heroTitle: "Find Gyms That Fit Your Offer",
+      heroSubtitle: "Share your outlet types, sales territory and contact requirements. Ask for a sample and quote.",
+      buttonLabel: "Request Gym Business Sample",
+      text: "Equipment, maintenance or software? Tell us the gym businesses and locations you want to reach.",
+      footerTitle: "Build Your Gym Business Shortlist",
+      footerText: "Send your target outlet types, locations, required fields and approximate quantity. We will confirm available coverage, sample options and pricing."
+    }
+  },
+  {
+    slug: "health-beauty-shops-business-database-india",
+    keyword: "Health / Beauty Shops / Business Database India",
+    title: "Health & Beauty Shops Database India",
+    metaDescription: "Explore health and beauty shops database options in India. Discuss cosmetics, personal-care and wellness retail categories, then request a sample and quote.",
+    eyebrow: "Health & Beauty Shops / Business Database",
+    h1: "Health & Beauty Shops and Business Database in India",
+    answer: "A health and beauty shops database helps you shortlist businesses selling cosmetics, grooming, personal-care and wellness products. Describe your product category, business types and target locations so we can check available retail and trade coverage before you order.",
+    intro: [
+      "Selling a skincare range to a specialist shop is a different conversation from offering billing software to a personal-care retailer. Start with what your product helps the business do, then choose the outlets that fit.",
+      "Share the retail categories, owner or business contact requirements and locations you need. If your brief includes wholesalers or wellness businesses, identify those separately so the available categories can be checked in a sample.",
+      "For service establishments rather than retail shops, compare the salons and spas database. For medicine retail and pharmacy businesses, explore the chemists and medical stores database as a separate category."
+    ],
+    contentLinks: [
+      {
+        text: "salons and spas database",
+        href: "/beauty-parlours-salons-spa-database-india"
+      },
+      {
+        text: "chemists and medical stores database",
+        href: "/chemists-medical-stores-database-india"
+      },
+      {
+        text: "dealers and distributors database",
+        href: "/dealers-distributors-database-india"
+      },
+      {
+        text: "gymnasiums database",
+        href: "/gymnasiums-database-india"
+      },
+      {
+        text: "company proprietors database",
+        href: "/company-proprietors-database-india"
+      },
+      {
+        text: "database directory",
+        href: "/database"
+      }
+    ],
+    highlights: [
+      {
+        icon: Sparkles,
+        title: "Product-Category Fit",
+        description: "Specify cosmetics, grooming, personal-care or wellness retail requirements."
+      },
+      {
+        icon: Building2,
+        title: "Business-Type Context",
+        description: "Discuss retailers, trade businesses and service outlets separately."
+      },
+      {
+        icon: MapPinned,
+        title: "Local Market Selection",
+        description: "Check available coverage for your preferred cities and retail areas."
+      },
+      {
+        icon: FileText,
+        title: "Sample Before Buying",
+        description: "Review category labels and available business contact fields first."
+      }
+    ],
+    dataFields: [
+      "Shop or business name",
+      "Business type and product category, where recorded",
+      "Owner, proprietor or contact person, where available",
+      "Business phone number and email, where available",
+      "Business address, locality, city, state and pincode",
+      "Website or business profile, where available"
+    ],
+    sections: [
+      {
+        heading: "Choose the outlets that fit your product",
+        paragraphs: [
+          "Describe what you sell and the kind of business that could stock or use it. Ask which categories are recorded so the shortlist reflects your distribution or service plan."
+        ],
+        subsections: [
+          {
+            heading: "Cosmetics and beauty product shops",
+            text: "For product ranges and services intended for beauty retail. Name any specialist category you need and confirm whether it can be identified."
+          },
+          {
+            heading: "Grooming and personal-care retailers",
+            text: "For briefs involving everyday care and grooming products. Specify standalone stores, multi-category retailers or other outlet types where relevant."
+          },
+          {
+            heading: "Wellness retail and trade businesses",
+            text: "Describe the product category and retail or wholesale relationship you want. Check the available business labels instead of treating every wellness business as a stockist."
+          }
+        ]
+      },
+      {
+        heading: "Keep retail, distribution and services distinct",
+        paragraphs: [
+          "A shop buying stock and a distributor supplying other businesses have different needs. For a channel expansion brief, compare the dealers and distributors database and specify health, beauty or personal-care products.",
+          "If your offer serves fitness facilities, explore the gymnasiums database. Build a separate introduction for each business category rather than assuming the same stock or service requirement."
+        ]
+      },
+      {
+        heading: "Give your field team a workable territory",
+        paragraphs: [
+          "Share the cities and local markets your team can cover, along with your preferred business types. Location details can help organise product introductions, store visits and follow-up assignments.",
+          "For owner-led businesses across more than one sector, compare the company proprietors database. Use the database directory to explore other categories when they support a separate sales brief."
+        ]
+      },
+      {
+        heading: "Review business fit before choosing a file",
+        paragraphs: [
+          "Send your product categories, retailer or trade requirements, target locations, required fields and approximate quantity. Ask about available coverage, field completeness, file format, delivery timing and pricing.",
+          "The public CSV download contains fictional, masked business examples. A listing does not verify brands stocked, licensing, turnover or current buying interest. Confirm any details essential to your trade relationship directly with the business."
+        ]
+      }
+    ],
+    useCasesIntro: "Choose the retail or trade relationship you want to build, then match the business category to it.",
+    useCases: [
+      "Introduce cosmetics and personal-care product ranges",
+      "Find potential retail stockists in a sales territory",
+      "Offer shop billing, inventory and e-commerce tools",
+      "Discuss packaging, displays and retail supplies",
+      "Invite relevant businesses to product demonstrations"
+    ],
+    faqs: [
+      {
+        question: "How is this different from the salons and spas database?",
+        answer: "This page focuses on shops and businesses selling health, beauty and personal-care products. The salons and spas category focuses on service establishments. Specify your required business types when requesting coverage."
+      },
+      {
+        question: "Does this contain shopper or patient information?",
+        answer: "This is a business-focused category. It is not a shopper audience or a source of individual medical and patient records."
+      },
+      {
+        question: "Can I request wholesalers or distributors instead of shops?",
+        answer: "Describe the trade role and product categories you need. We will check availability; you can also compare the dedicated dealers and distributors category."
+      },
+      {
+        question: "Does a listing confirm brands stocked or licences?",
+        answer: "Do not assume that. Ask which fields are recorded and verify any stock, certification, licensing or business-size details important to your relationship directly with the business."
+      },
+      {
+        question: "How do I request a sample and quote?",
+        answer: "Send your product categories, business types, locations, required fields and approximate quantity through the enquiry form. Ask our team for matching sample options, available coverage, timing and pricing. The public CSV is a fictional format preview."
+      }
+    ],
+    related: [
+      "beauty-parlours-salons-spa-database-india",
+      "chemists-medical-stores-database-india",
+      "dealers-distributors-database-india",
+      "gymnasiums-database-india",
+      "company-proprietors-database-india"
+    ],
+    showTestimonials: true,
+    cta: {
+      heroTitle: "Find Health & Beauty Businesses That Fit",
+      heroSubtitle: "Share your product category, outlet types and target cities. Ask for a business sample and quote.",
+      buttonLabel: "Request Health & Beauty Sample",
+      text: "Looking for retail stockists or trade partners? Tell us your product category and target markets.",
+      footerTitle: "Build Your Health & Beauty Business Shortlist",
+      footerText: "Send your target business categories, locations, required fields and approximate quantity. We will confirm available coverage, sample options and pricing."
+    }
+  },
+  {
+    slug: "hni-high-income-employees-database-india",
+    keyword: "HNI / High Income Employees Database India",
+    title: "HNI & High Income Employees Database",
+    metaDescription: "Discuss HNI and high income employee database options in India. Define audience criteria, check locations and available fields, and request a sample and quote.",
+    eyebrow: "HNI / High Income Employees Database",
+    h1: "HNI & High Income Employees Database in India",
+    answer: "An HNI or high income employees database is an audience category that needs clear selection criteria. Tell us whether your brief concerns a recorded income band, professional role or separately defined wealth segment, then check available fields, locations and classification details in a matching sample.",
+    intro: [
+      "A useful audience brief starts with your offer. An executive learning programme, premium travel service and professional networking event each need a different reason for someone to respond. A broad premium-audience label is only a starting point.",
+      "HNI means high-net-worth individual. Income describes earnings, while net worth concerns assets after liabilities; the two labels are not interchangeable. State which audience you need and ask how that classification is defined and supported in the available records.",
+      "If your requirement is primarily about job responsibility, compare the general and senior managers database or the executive contacts database. A senior designation can help describe a professional audience, but it does not by itself establish income or HNI status."
+    ],
+    contentLinks: [
+      {
+        text: "general and senior managers database",
+        href: "/general-senior-managers-database-india"
+      },
+      {
+        text: "executive contacts database",
+        href: "/ceo-cfo-cmo-it-heads-database-india"
+      },
+      {
+        text: "frequent flyer database",
+        href: "/frequent-flyer-database-india"
+      },
+      {
+        text: "holiday club members database",
+        href: "/club-mahindra-members-database"
+      },
+      {
+        text: "dining and leisure customers database",
+        href: "/dining-leisure-customers-database-india"
+      },
+      {
+        text: "database directory",
+        href: "/database"
+      }
+    ],
+    highlights: [
+      {
+        icon: Filter,
+        title: "Clear Audience Criteria",
+        description: "Specify income bands, professional roles or a separate wealth-segment requirement."
+      },
+      {
+        icon: Briefcase,
+        title: "Professional Context",
+        description: "Ask which designation, employer and industry fields are available."
+      },
+      {
+        icon: MapPinned,
+        title: "Relevant Locations",
+        description: "Start with the cities or service areas your offer can cover."
+      },
+      {
+        icon: FileText,
+        title: "Check the Sample",
+        description: "Review classification details and field completeness before selecting a segment."
+      }
+    ],
+    dataFields: [
+      "Contact name, where available",
+      "Designation, employer and industry, where recorded",
+      "Recorded income or audience band, if available",
+      "Classification basis and record date, where recorded",
+      "Available contact number and email fields",
+      "City and state"
+    ],
+    sections: [
+      {
+        heading: "Define what you mean by HNI or high income",
+        paragraphs: [
+          "Share the criteria behind your audience request rather than only a label. Ask us which criteria the available records actually support, how they were recorded and when they were last reviewed."
+        ],
+        subsections: [
+          {
+            heading: "High income employees",
+            text: "Specify the income band and whether your brief concerns annual salary, total compensation or another recorded measure. Ask what the available field represents and avoid treating a designation as a substitute."
+          },
+          {
+            heading: "HNI audience requirements",
+            text: "Describe the wealth criteria you need separately. Ask whether there is a documented basis for the segment; do not assume an income list establishes net worth."
+          },
+          {
+            heading: "Senior professional audiences",
+            text: "If your offer is tied to a person’s work, role and employer context may be more useful than an income label. Keep those professional criteria explicit in the brief."
+          }
+        ]
+      },
+      {
+        heading: "Choose the audience around the offer",
+        paragraphs: [
+          "Explain the product, programme or service and the practical reason a recipient might consider it. Add your preferred cities, audience criteria and any professional context that matters.",
+          "For a travel-specific brief, compare the frequent flyer database or holiday club members database. For a hospitality or lifestyle offer, explore the dining and leisure customers database. These describe different audience contexts and do not establish an individual’s wealth or budget."
+        ]
+      },
+      {
+        heading: "Keep the first conversation specific",
+        paragraphs: [
+          "A short introduction should explain who you are, why the offer may be relevant and what the next step involves. Match the invitation to the recorded audience context rather than making assumptions about spending power.",
+          "A segment label does not confirm current interest, purchasing intent or suitability for a particular product. Use the available context to decide whether an introduction makes sense, then confirm the recipient’s needs directly."
+        ]
+      },
+      {
+        heading: "Review the classification and sample together",
+        paragraphs: [
+          "Send your audience definition, preferred income or wealth criteria, locations, required fields and approximate quantity. Ask us to confirm what is available, the basis and date of any classification, field completeness, format, delivery timing and pricing.",
+          "The public CSV preview uses fictional names, masked contacts and illustrative income bands to show the layout. It is not evidence of anyone’s earnings or wealth. Request a matching sample and confirm the segment definition before choosing a file.",
+          "If another audience would suit the offer better, use the database directory to compare professional, business and consumer categories."
+        ]
+      }
+    ],
+    useCasesIntro: "Build a clear audience brief around a relevant service or invitation, then confirm the available selection criteria.",
+    useCases: [
+      "Discuss an audience for executive learning programmes",
+      "Plan relevant premium travel and hospitality introductions",
+      "Invite suitable professionals to networking events",
+      "Explore audiences for concierge and lifestyle services",
+      "Compare location and professional criteria for a focused brief"
+    ],
+    faqs: [
+      {
+        question: "Are HNI and high income employees the same audience?",
+        answer: "No. HNI refers to net worth, while high income refers to earnings. Define the audience and measurement criteria separately, and ask which classification the available records support."
+      },
+      {
+        question: "Can I request a particular annual income band?",
+        answer: "State the band and what it should measure, such as annual salary or total compensation. Ask whether a corresponding field is available, how it is recorded and how recent it is; do not assume every record includes it."
+      },
+      {
+        question: "Does a senior job title confirm income or wealth?",
+        answer: "No. A designation describes a professional role. It does not establish earnings, assets, net worth or current spending budget."
+      },
+      {
+        question: "Are the income and HNI classifications verified?",
+        answer: "Do not assume verification from a segment label. Ask for the classification criteria, basis, date and any limitations in the selected records. Confirm those details before deciding whether the audience fits your requirement."
+      },
+      {
+        question: "What does the public CSV sample contain?",
+        answer: "It contains fictional names, masked contact details and illustrative income bands for format review only. It does not disclose real earnings or demonstrate HNI status."
+      },
+      {
+        question: "How do I get a matching sample and price?",
+        answer: "Use the enquiry form to describe the audience criteria, locations, professional context, fields and approximate quantity you need. We will confirm available coverage, classification details, sample options, delivery timing and pricing."
+      }
+    ],
+    related: [
+      "general-senior-managers-database-india",
+      "ceo-cfo-cmo-it-heads-database-india",
+      "frequent-flyer-database-india",
+      "club-mahindra-members-database",
+      "dining-leisure-customers-database-india"
+    ],
+    showTestimonials: true,
+    cta: {
+      heroTitle: "Define Your HNI or High Income Audience",
+      heroSubtitle: "Share your offer, audience criteria and locations. Ask about coverage, classification details and a matching sample.",
+      buttonLabel: "Request HNI Audience Sample",
+      text: "What makes someone a good fit for your offer? Share your audience criteria so we can check suitable coverage.",
+      footerTitle: "Discuss Your HNI & High Income Audience Brief",
+      footerText: "Send your audience definition, target cities, required fields and approximate quantity. We will confirm available criteria, sample options and pricing."
+    }
   },
 ];
 

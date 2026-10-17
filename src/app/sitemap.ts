@@ -23,6 +23,15 @@ const CONTENT_UPDATED = {
 } as const;
 
 const KEYWORD_CONTENT_UPDATED: Record<string, string> = {
+  "hni-high-income-employees-database-india": "2026-10-17",
+  "graphic-designers-database-india": "2026-10-17",
+  "gymnasiums-database-india": "2026-10-17",
+  "health-beauty-shops-business-database-india": "2026-10-17",
+  "designers-database-india": "2026-10-17",
+  "beauty-parlours-salons-spa-database-india": "2026-10-17",
+  "government-employees-database-india": "2026-10-17",
+  "chief-managers-database-india": "2026-10-17",
+  "general-senior-managers-database-india": "2026-10-17",
   "facebook-users-database-india": "2026-10-17",
   "females-database-india": "2026-10-17",
   "fabric-clothing-stores-database-india": "2026-10-17",
