@@ -1681,6 +1681,13 @@ export const keywordPages: KeywordPage[] = [
       "Every company that moves goods across borders needs freight, customs clearance, packaging, warehousing, insurance and trade finance. That makes importers and exporters one of the most valuable B2B segments in India, with repeat, high-value business for anyone who serves them.",
       "They're also hard to find with a general business list. A \"manufacturing company\" may never have shipped abroad, while a small trading firm in Surat might export every week. Without trade-specific data, sales teams waste time on businesses that will never need their service.",
       "Our importers and exporters database focuses on trading companies, segmented by product category, trade direction and city. Your team talks only to businesses that actually ship goods, whether you sell freight, compliance, finance or packaging.",
+      "For an import-buyer-only brief, explore the importers database. Specify the products and business roles you need, and confirm the basis of the recorded trade direction in a matching sample."
+    ],
+    contentLinks: [
+      {
+        text: "importers database",
+        href: "/importers-database-india"
+      }
     ],
     highlights: [
       { icon: Globe, title: "Active Trading Companies", description: "Businesses engaged in import and export activity." },
@@ -1770,6 +1777,13 @@ export const keywordPages: KeywordPage[] = [
       "Most Indian brands grow through distribution. Whether you make FMCG products, electricals, paints, pharma, building materials or auto parts, you can't open a new city until you find the right distributor there and the dealers who will stock your product.",
       "Doing that the traditional way, by asking around in the market, visiting wholesale lanes and relying on referrals, can take months per city. Meanwhile, competitors who already have partners in place take the shelf space.",
       "Our dealers and distributors database lists wholesalers, stockists, super-stockists, dealers and traders by product category and location. Your channel sales team can shortlist, call and sign partners in weeks instead of months, city after city.",
+      "For a product-focused trade brief, compare the home, garden and pet suppliers database. Share your categories and target markets so the available supplier types can be checked separately."
+    ],
+    contentLinks: [
+      {
+        text: "home, garden and pet suppliers database",
+        href: "/home-garden-pets-suppliers-database-india"
+      }
     ],
     highlights: [
       { icon: Truck, title: "Wholesalers & Stockists", description: "Distributors, super-stockists, dealers and traders." },
@@ -2435,6 +2449,13 @@ export const keywordPages: KeywordPage[] = [
     intro: [
       "Access a teachers database in India to identify relevant education professionals for research, recruitment, educational partnerships and professional outreach. Explore available teacher records by location, institution type and other supported criteria.",
       "Our teachers database service helps businesses and education-sector organisations find relevant records in a structured format, making it easier to organise information and identify suitable professional audiences.",
+      "For higher-education faculty, compare the lecturers and professors database. Share the subjects, academic roles and institution types you need so the available coverage can be checked."
+    ],
+    contentLinks: [
+      {
+        text: "lecturers and professors database",
+        href: "/lecturers-professors-database-india"
+      }
     ],
     highlights: [
       { icon: GraduationCap, title: "School & College Educators", description: "School, college, coaching and training professionals." },
@@ -2650,6 +2671,13 @@ export const keywordPages: KeywordPage[] = [
     intro: [
       "Find relevant legal professionals and law-firm records for professional research, business development, event invitations, legal-sector services and industry outreach. Explore the available advocates and lawyers database by geography, practice area and other supported criteria.",
       "A structured legal professionals database can help organisations organise relevant professional information and identify audiences that match their requirements. Available coverage and contact fields depend on the dataset and its sources.",
+      "For an organisation-level brief rather than individual practitioners, explore the legal firms database. Specify your practice categories, office locations and preferred business contact roles."
+    ],
+    contentLinks: [
+      {
+        text: "legal firms database",
+        href: "/legal-firms-database-india"
+      }
     ],
     highlights: [
       { icon: Landmark, title: "Advocates & Law Firms", description: "Individual practitioners, law firms or both." },
@@ -5592,6 +5620,17 @@ export const keywordPages: KeywordPage[] = [
     intro: [
       "India's IT and telecom services industry ranges from global IT majors to lakhs of small software firms, web agencies, local ISPs and telecom franchises. They buy cloud, hardware, software licences, office space, recruitment and financial services - and they partner with each other constantly.",
       "Our IT and telecom services database lets you target these companies by service category, company size and city, reaching founders, CTOs, IT heads and procurement contacts.",
+      "For a software and IT business brief, compare the IT companies database. If your audience is individual developers, testers or technical specialists, explore the IT professionals database as a separate requirement."
+    ],
+    contentLinks: [
+      {
+        text: "IT companies database",
+        href: "/it-companies-database-india"
+      },
+      {
+        text: "IT professionals database",
+        href: "/it-professionals-database-india"
+      }
     ],
     highlights: [
       { icon: Globe, title: "IT & Telecom Firms", description: "Software, IT services, ISPs and telecom." },
@@ -5666,6 +5705,13 @@ export const keywordPages: KeywordPage[] = [
     intro: [
       "Consultants sit at the centre of Indian B2B buying. A management or HR consultant often recommends software, vendors and service providers to dozens of clients, which makes consultants valuable both as customers and as referral partners.",
       "Our consultants database covers independent professionals and consulting firms across specialisations, filterable by consulting type, city and firm size.",
+      "If your brief concerns people working in recruitment, learning, payroll or HR leadership, compare the HR and human resources database. Specify whether you need in-house professionals or external HR partners."
+    ],
+    contentLinks: [
+      {
+        text: "HR and human resources database",
+        href: "/hr-human-resources-database-india"
+      }
     ],
     highlights: [
       { icon: Briefcase, title: "Firms & Independents", description: "Solo consultants to multi-partner firms." },
@@ -6872,6 +6918,13 @@ export const keywordPages: KeywordPage[] = [
     intro: [
       "India's events industry runs on a large network of organisers - from MICE agencies handling corporate conferences in Delhi NCR, Mumbai and Bengaluru to wedding planners in Jaipur, Udaipur and Goa and exhibition organisers filling convention centres across the country. Every event pulls in venues, decorators, caterers, AV and lighting suppliers, printers and travel partners.",
       "Our event management organisers database helps those suppliers and venues reach organisers directly, filtered by event specialisation and city. For the wider media and entertainment industry, see our entertainment and media database.",
+      "For venue and property partnerships, compare the hotels, restaurants and bars database. Share the establishment types, target locations and contact roles you need for a separate hospitality brief."
+    ],
+    contentLinks: [
+      {
+        text: "hotels, restaurants and bars database",
+        href: "/hotels-restaurants-bars-database-india"
+      }
     ],
     highlights: [
       { icon: Sparkles, title: "All Event Types", description: "Corporate, wedding, exhibitions, concerts, parties." },
@@ -7745,7 +7798,8 @@ export const keywordPages: KeywordPage[] = [
     intro: [
       "Adding more shops to a sales route only helps if they can stock what you sell. A snack brand, a refrigeration supplier and a bakery-packaging business each need a different retail shortlist.",
       "Tell us your product category, the towns or neighbourhoods you cover and the type of shop you want to approach. Separate direct retailers from distributors so your team knows what kind of partnership to propose.",
-      "If you need channel partners, start with the dealers and distributors database. If your buyers are food producers rather than stores, compare the manufacturer database and request the appropriate industry filters."
+      "If you need channel partners, start with the dealers and distributors database. If your buyers are food producers rather than stores, compare the manufacturer database and request the appropriate industry filters.",
+      "If your customers prepare or serve food on site, explore the hotels, restaurants and bars database. Specify the establishment types and purchasing contacts relevant to your offer."
     ],
     contentLinks: [
       {
@@ -7771,6 +7825,10 @@ export const keywordPages: KeywordPage[] = [
       {
         text: "fabric and clothing stores database",
         href: "/fabric-clothing-stores-database-india"
+      },
+      {
+        text: "hotels, restaurants and bars database",
+        href: "/hotels-restaurants-bars-database-india"
       }
     ],
     highlights: [
@@ -8222,7 +8280,8 @@ export const keywordPages: KeywordPage[] = [
     intro: [
       "A large furniture list is not much use if most of the shops cannot stock your product. Start with what you sell: fittings, upholstery, finished furniture, display systems, software or a trade service.",
       "Separate showrooms, dealers, workshops and furnishing shops in your brief. Add the locations your team can deliver to and the type of business relationship you want to build.",
-      "If your product is specified for projects, explore the architects and interior designers database. For production businesses rather than retail outlets, compare the manufacturer database."
+      "If your product is specified for projects, explore the architects and interior designers database. For production businesses rather than retail outlets, compare the manufacturer database.",
+      "For a wider product brief covering household goods, garden products or pet supplies, explore the home, garden and pet suppliers database. Specify the product range and trade roles you need."
     ],
     contentLinks: [
       {
@@ -8248,6 +8307,10 @@ export const keywordPages: KeywordPage[] = [
       {
         text: "property owners database",
         href: "/commercial-residential-properties-database-india"
+      },
+      {
+        text: "home, garden and pet suppliers database",
+        href: "/home-garden-pets-suppliers-database-india"
       }
     ],
     highlights: [
@@ -8531,7 +8594,8 @@ export const keywordPages: KeywordPage[] = [
     intro: [
       "A neighbourhood gold jeweller, a gemstone trader and a jewellery manufacturer work in different ways. Mixing them into one sales list can leave your team making the wrong pitch.",
       "Tell us the trade category, target cities and relationship you want to build. A manufacturer looking for retail stockists needs a different shortlist from a supplier selling tools to workshops.",
-      "For cross-border trade businesses, compare the importers and exporters database. For production units, explore the manufacturer database and describe the jewellery segment you need."
+      "For cross-border trade businesses, compare the importers and exporters database. For production units, explore the manufacturer database and describe the jewellery segment you need.",
+      "For a retail-focused brief centred on showroom buyers and store contacts, explore the jewellers database. Specify your jewellery categories, retail formats and target cities."
     ],
     contentLinks: [
       {
@@ -8557,6 +8621,10 @@ export const keywordPages: KeywordPage[] = [
       {
         text: "female consumer Bangalore database",
         href: "/female-consumer-bangalore-database"
+      },
+      {
+        text: "jewellers database",
+        href: "/jewellers-database-india"
       }
     ],
     highlights: [
@@ -8695,7 +8763,8 @@ export const keywordPages: KeywordPage[] = [
       "A job title is only the starting point. A general manager running a manufacturing unit may need very different services from a senior manager in finance or HR. Tell us what you offer and which team would use it, and we can discuss a more useful shortlist.",
       "Ask for department, company, industry and location details alongside available contact fields. These help your team understand why a person belongs in the campaign instead of relying on seniority alone.",
       "If your brief specifically names chief managers or AGM roles, compare the chief managers database. For executive leadership, explore the CEO and CFO database as a separate audience.",
-      "For a separately defined income or wealth audience, explore the HNI and high income employees database. A management title alone does not establish either classification."
+      "For a separately defined income or wealth audience, explore the HNI and high income employees database. A management title alone does not establish either classification.",
+      "For a people-function brief, explore the HR and human resources database. Specify recruitment, learning, payroll or HR leadership roles so your enquiry reflects the team you need."
     ],
     contentLinks: [
       {
@@ -8725,6 +8794,10 @@ export const keywordPages: KeywordPage[] = [
       {
         text: "HNI and high income employees database",
         href: "/hni-high-income-employees-database-india"
+      },
+      {
+        text: "HR and human resources database",
+        href: "/hr-human-resources-database-india"
       }
     ],
     highlights: [
@@ -9654,6 +9727,1445 @@ export const keywordPages: KeywordPage[] = [
       text: "What makes someone a good fit for your offer? Share your audience criteria so we can check suitable coverage.",
       footerTitle: "Discuss Your HNI & High Income Audience Brief",
       footerText: "Send your audience definition, target cities, required fields and approximate quantity. We will confirm available criteria, sample options and pricing."
+    }
+  },
+  {
+    slug: "home-garden-pets-suppliers-database-india",
+    keyword: "Home / Garden / Pets Suppliers Database India",
+    title: "Home, Garden & Pet Suppliers Database",
+    metaDescription: "Explore home, garden and pet suppliers database options in India. Specify product categories, trade roles and cities, then request a sample and quote.",
+    eyebrow: "Home / Garden / Pets Suppliers Database",
+    h1: "Home, Garden & Pets Suppliers Database in India",
+    answer: "A home, garden and pets suppliers database helps you shortlist businesses supplying household products, gardening essentials and pet supplies. Share the product categories, supplier types and locations you need so we can check available trade coverage, contact fields and sample options.",
+    intro: [
+      "A homeware wholesaler, a garden tools distributor and a pet accessories supplier serve different markets. Start with the products you want to source or sell, then describe the trade relationship you want to build.",
+      "Tell us whether you need manufacturers, wholesalers, distributors or retail stockists. Add the cities you can work with and any product specialisation that matters. Those details make the shortlist more useful than a broad household or lifestyle category.",
+      "For furniture showrooms and furnishing dealers, compare the furniture stores and dealers database. For a wider channel-partner search, explore the dealers and distributors database and specify your product category."
+    ],
+    contentLinks: [
+      {
+        text: "furniture stores and dealers database",
+        href: "/furniture-stores-dealers-database-india"
+      },
+      {
+        text: "dealers and distributors database",
+        href: "/dealers-distributors-database-india"
+      },
+      {
+        text: "manufacturer database",
+        href: "/manufacturer-database-india"
+      },
+      {
+        text: "importers and exporters database",
+        href: "/importers-exporters-database-india"
+      },
+      {
+        text: "company proprietors database",
+        href: "/company-proprietors-database-india"
+      },
+      {
+        text: "database directory",
+        href: "/database"
+      }
+    ],
+    highlights: [
+      {
+        icon: Filter,
+        title: "Product-Category Focus",
+        description: "Specify household, gardening or pet supply categories that match your brief."
+      },
+      {
+        icon: Building2,
+        title: "Relevant Trade Roles",
+        description: "Separate manufacturers, wholesalers, distributors and retail stockists."
+      },
+      {
+        icon: MapPinned,
+        title: "Your Target Markets",
+        description: "Check available supplier coverage for your preferred cities and states."
+      },
+      {
+        icon: FileText,
+        title: "Sample Before Selection",
+        description: "Review category labels, business details and populated contact fields first."
+      }
+    ],
+    dataFields: [
+      "Supplier or business name",
+      "Business type or trade role, where identified",
+      "Home, garden or pet supplies category and product range, where recorded",
+      "Owner, proprietor or contact person, where available",
+      "Business phone number and email, where available",
+      "Business address, city, state and pincode",
+      "Website, where available"
+    ],
+    sections: [
+      {
+        heading: "Choose the product category before the list size",
+        paragraphs: [
+          "Describe the products a suitable supplier should handle. Ask which distinctions are recorded so you can review the category fit in a matching sample."
+        ],
+        subsections: [
+          {
+            heading: "Home and household supplies",
+            text: "For briefs involving homeware, kitchenware, storage, decor or other household product categories. Specify the range and whether you need production or distribution businesses."
+          },
+          {
+            heading: "Garden and outdoor supplies",
+            text: "Name the tools, planters, nursery supplies or other garden products relevant to your brief. Ask which business and product labels are available for your target locations."
+          },
+          {
+            heading: "Pet products and accessories",
+            text: "Specify pet accessories, grooming supplies or other product ranges you need. This is a business supplier category, so describe the trade role and product fit rather than a pet-owner audience."
+          }
+        ]
+      },
+      {
+        heading: "Separate sourcing from stockist and distribution searches",
+        paragraphs: [
+          "If you are sourcing products, identify the type of supplier and range you need. If you represent a brand, describe the retailer, wholesaler or distributor that could carry your products. These are different trade conversations.",
+          "For a production-focused requirement, compare the manufacturer database. For cross-border trade businesses, explore the importers and exporters database and state the product categories you need. Confirm those specialisations in the available records."
+        ]
+      },
+      {
+        heading: "Build a territory your team can work with",
+        paragraphs: [
+          "Share the cities, states and markets relevant to your delivery, sourcing or sales plan. Ask which location fields are populated so you can organise suitable businesses for introductions and follow-up.",
+          "For owner-led firms across several sectors, compare the company proprietors database. The database directory can help you find adjacent business categories when your offer supports more than one market."
+        ]
+      },
+      {
+        heading: "Review a matching supplier sample before ordering",
+        paragraphs: [
+          "Send your product categories, trade roles, locations, required fields and approximate quantity. Ask us to confirm available records, field completeness, format, delivery timing and pricing.",
+          "The downloadable CSV contains fictional, masked supplier examples to demonstrate the layout. A listing does not establish current stock, brand authorisation, minimum order quantity or supply terms. Check these details directly with the business before making a trade commitment."
+        ]
+      }
+    ],
+    useCasesIntro: "Start with the trade relationship you want to build, then choose the businesses that fit your product range.",
+    useCases: [
+      "Build an initial sourcing shortlist for household products",
+      "Find potential distributors and retail stockists for a product range",
+      "Introduce relevant gardening tools and business supplies",
+      "Discuss pet product wholesale and distribution partnerships",
+      "Invite suitable suppliers to trade events and product demonstrations"
+    ],
+    faqs: [
+      {
+        question: "Can I request only home, garden or pet suppliers?",
+        answer: "Yes. Specify the category and product range you need, along with your target locations. We will check which segments are available and confirm sample options and coverage."
+      },
+      {
+        question: "Can manufacturers and wholesalers be separated?",
+        answer: "Tell us the trade roles you want. Ask how business types are recorded and whether the selected file can distinguish manufacturers, wholesalers, distributors and retail stockists."
+      },
+      {
+        question: "Does the pet category contain pet-owner contacts?",
+        answer: "This page focuses on suppliers and businesses handling pet products. It is not a list of individual pet owners or household purchasing histories."
+      },
+      {
+        question: "Does a listing confirm stock or supply terms?",
+        answer: "No. Confirm the product range, current availability, authorisations, minimum order quantities and commercial terms directly with the supplier. Ask which product fields are actually recorded in the sample."
+      },
+      {
+        question: "How do I request a sample and price?",
+        answer: "Use the enquiry form to send your product categories, supplier types, target locations, required fields and approximate quantity. The public CSV is a fictional format preview; ask our team for matching sample options, availability, delivery timing and a quote."
+      }
+    ],
+    related: [
+      "furniture-stores-dealers-database-india",
+      "dealers-distributors-database-india",
+      "manufacturer-database-india",
+      "importers-exporters-database-india",
+      "company-proprietors-database-india"
+    ],
+    showTestimonials: true,
+    cta: {
+      heroTitle: "Find Suppliers Who Fit Your Product Brief",
+      heroSubtitle: "Share your home, garden or pet product categories, supplier types and target markets. Ask for a matching sample and quote.",
+      buttonLabel: "Request Supplier Sample",
+      text: "Homeware, garden products or pet supplies? Tell us the range, trade roles and locations you want to explore.",
+      footerTitle: "Build Your Home, Garden & Pet Supplier Shortlist",
+      footerText: "Send your product categories, preferred supplier types, locations and approximate quantity. We will confirm available coverage, sample options and pricing."
+    }
+  },
+  {
+    slug: "hotels-restaurants-bars-database-india",
+    keyword: "Hotels / Restaurants / Bars Database India",
+    title: "Hotels, Restaurants & Bars Database India",
+    metaDescription: "Explore hotels, restaurants and bars database options in India. Choose establishment types, locations and contact roles, then request a sample and quote.",
+    eyebrow: "Hotels / Restaurants / Bars Database",
+    h1: "Hotels, Restaurants & Bars Database in India",
+    answer: "A hotels, restaurants and bars database helps you shortlist hospitality businesses by establishment type and location, with available business and contact details. Share what you supply and the properties or outlets you want to approach so we can check matching coverage and sample options.",
+    intro: [
+      "A hotel purchasing team, an independent restaurant owner and a bar operations manager can need very different products. Start with the business problem you solve, whether that is kitchen equipment, furnishings, supplies or hospitality software.",
+      "Tell us the establishment types, locations and contact roles you need. If your brief covers several formats, request separate categories so your team can tailor the first conversation to each business.",
+      "For shops selling food and beverages, compare the food and beverage stores database. For venue partnerships and event-related services, explore the event organisers database as a separate trade audience."
+    ],
+    contentLinks: [
+      {
+        text: "food and beverage stores database",
+        href: "/food-beverage-stores-database-india"
+      },
+      {
+        text: "event organisers database",
+        href: "/event-management-organisers-database-india"
+      },
+      {
+        text: "furniture stores and dealers database",
+        href: "/furniture-stores-dealers-database-india"
+      },
+      {
+        text: "home, garden and pet suppliers database",
+        href: "/home-garden-pets-suppliers-database-india"
+      },
+      {
+        text: "company proprietors database",
+        href: "/company-proprietors-database-india"
+      },
+      {
+        text: "database directory",
+        href: "/database"
+      }
+    ],
+    highlights: [
+      {
+        icon: Building2,
+        title: "Establishment-Type Fit",
+        description: "Discuss hotels, restaurants and bars as distinct business categories."
+      },
+      {
+        icon: UserCheck,
+        title: "Business Contact Context",
+        description: "Ask which owner, manager and department contact fields are available."
+      },
+      {
+        icon: MapPinned,
+        title: "Your Service Territory",
+        description: "Check locations where your team can deliver, install or provide support."
+      },
+      {
+        icon: FileText,
+        title: "Sample Before Selection",
+        description: "Review business types, location fields and contact completeness first."
+      }
+    ],
+    dataFields: [
+      "Hotel, restaurant or bar name",
+      "Establishment type and operating format, where recorded",
+      "Owner, manager or contact person, where available",
+      "Contact role or department, where identified",
+      "Business phone number and email, where available",
+      "Business address, locality, city, state and pincode",
+      "Website, where available"
+    ],
+    sections: [
+      {
+        heading: "Choose the hospitality businesses that fit your offer",
+        paragraphs: [
+          "Describe the type of establishment you can serve before choosing a list size. A linen supplier, a restaurant billing platform and a furniture brand will each need a different shortlist."
+        ],
+        subsections: [
+          {
+            heading: "Hotels and accommodation businesses",
+            text: "Name the property formats and locations relevant to your product. Ask which establishment labels and department contacts are recorded, including whether a contact represents one property or a wider business."
+          },
+          {
+            heading: "Restaurants and food-service outlets",
+            text: "Specify the formats you need, such as independent restaurants or chain outlets. If service style or cuisine matters, ask whether those attributes are available rather than assuming every record includes them."
+          },
+          {
+            heading: "Bars and hospitality venues",
+            text: "Describe the venue types and operational services you support. Confirm the business category and appropriate contact role before planning your introduction."
+          }
+        ]
+      },
+      {
+        heading: "Match the contact to the buying conversation",
+        paragraphs: [
+          "An owner may review a new supplier, while operations, housekeeping or food-and-beverage teams may evaluate specific products. A general business number can be a starting point, but it does not identify the person who approves a purchase.",
+          "For a broader owner-led business requirement, compare the company proprietors database. Tell us whether you need individual outlets, property-level contacts or a central office, and ask how repeated business contacts are represented."
+        ]
+      },
+      {
+        heading: "Build a territory and supply brief your team can use",
+        paragraphs: [
+          "Share the cities and local areas where you can deliver, install or maintain your offer. Use establishment type and location together to organise relevant introductions and visits.",
+          "For adjacent furnishing businesses, explore the furniture stores and dealers database. For household and related supply categories, compare the home, garden and pet suppliers database and specify the products you need. The database directory can help you explore other trade categories."
+        ]
+      },
+      {
+        heading: "Check a matching sample before ordering",
+        paragraphs: [
+          "Send your establishment types, target locations, contact roles, required fields and approximate quantity. Ask us to confirm available records, field completeness, file format, delivery timing and pricing.",
+          "The public CSV preview uses fictional, masked hospitality records to demonstrate the layout. This page focuses on business establishments. Confirm current operations, purchasing responsibility and any property details important to your offer directly with the business."
+        ]
+      }
+    ],
+    useCasesIntro: "Build your approach around an operational need at the property, outlet or hospitality business you want to serve.",
+    useCases: [
+      "Introduce commercial kitchen equipment and servicing",
+      "Offer linen, housekeeping and business supplies",
+      "Demonstrate booking, billing and inventory software",
+      "Discuss furniture, decor and fit-out requirements",
+      "Develop venue, event and hospitality trade partnerships"
+    ],
+    faqs: [
+      {
+        question: "Can I request hotels, restaurants or bars separately?",
+        answer: "Yes. Specify the establishment types and locations you need. We will check the available category labels, coverage and matching sample options."
+      },
+      {
+        question: "Can I select independent businesses or chain outlets?",
+        answer: "Share your preferred operating formats and whether you need outlet-level or central business contacts. Ask which distinctions are recorded and how branch records are organised in the available file."
+      },
+      {
+        question: "Are owner and purchasing-manager details included?",
+        answer: "Contact-role availability depends on the selected segment. Ask which owner, manager, department and general business contact fields are populated in the sample; a listing does not establish purchasing authority."
+      },
+      {
+        question: "Does this contain hotel guest or restaurant customer details?",
+        answer: "This page focuses on hospitality businesses and available business contacts. It is not a guest list, a booking-history export or an individual dining-customer audience."
+      },
+      {
+        question: "How do I request a sample and quote?",
+        answer: "Use the enquiry form to send your establishment types, locations, contact roles, fields and approximate quantity. The public download is a fictional format preview. Ask our team for matching sample options, availability, delivery timing and pricing."
+      }
+    ],
+    related: [
+      "food-beverage-stores-database-india",
+      "event-management-organisers-database-india",
+      "furniture-stores-dealers-database-india",
+      "home-garden-pets-suppliers-database-india",
+      "company-proprietors-database-india"
+    ],
+    showTestimonials: true,
+    cta: {
+      heroTitle: "Find Hospitality Businesses That Fit Your Offer",
+      heroSubtitle: "Share your establishment types, locations and contact requirements. Ask for a relevant business sample and quote.",
+      buttonLabel: "Request Hospitality Sample",
+      text: "Hotels, restaurants or bars? Tell us what you supply and which businesses your team can serve.",
+      footerTitle: "Build Your Hospitality Business Shortlist",
+      footerText: "Send your target establishment types, locations, contact roles and approximate quantity. We will confirm available coverage, sample options and pricing."
+    }
+  },
+  {
+    slug: "hr-human-resources-database-india",
+    keyword: "HR / Human Resources Database India",
+    title: "HR & Human Resources Database India",
+    metaDescription: "Explore HR and human resources database options in India. Specify HR functions, roles, industries and cities, then request a matching sample and quote.",
+    eyebrow: "HR / Human Resources Database",
+    h1: "HR & Human Resources Database in India",
+    answer: "An HR and human resources database helps you shortlist professionals working in recruitment, people operations, learning, payroll and HR leadership. Share the functions, seniority, employer industries and locations you need so we can check available coverage, contact fields and sample options.",
+    intro: [
+      "A recruitment platform needs a different conversation from a payroll tool or a leadership training programme. Start with the HR task your offer supports, then choose the professionals likely to evaluate or use it.",
+      "Tell us whether your brief concerns HR heads, managers, business partners or specialist teams. Add the employer sectors and locations that matter. Function and company context help your team make a more relevant introduction than a broad HR label alone.",
+      "For management roles across several departments, compare the general and senior managers database. If company selection comes first, explore the corporate database and specify the HR contacts you need within those organisations."
+    ],
+    contentLinks: [
+      {
+        text: "general and senior managers database",
+        href: "/general-senior-managers-database-india"
+      },
+      {
+        text: "corporate database",
+        href: "/corporate-database-india"
+      },
+      {
+        text: "consulting firms database",
+        href: "/consultants-consulting-services-database-india"
+      },
+      {
+        text: "job seekers database",
+        href: "/job-seekers-database"
+      },
+      {
+        text: "industry-wise company database",
+        href: "/industry-wise-company-database-india"
+      },
+      {
+        text: "database directory",
+        href: "/database"
+      }
+    ],
+    highlights: [
+      {
+        icon: Users,
+        title: "HR Function Focus",
+        description: "Discuss recruitment, HR operations, learning, payroll or leadership requirements."
+      },
+      {
+        icon: Briefcase,
+        title: "Role & Employer Context",
+        description: "Specify seniority and the employer sectors relevant to your offer."
+      },
+      {
+        icon: MapPinned,
+        title: "Your Target Locations",
+        description: "Check available HR contact coverage for your preferred cities and states."
+      },
+      {
+        icon: FileText,
+        title: "Sample Before Selection",
+        description: "Review role labels, function fields and available contact details first."
+      }
+    ],
+    dataFields: [
+      "HR professional or contact person name",
+      "Designation and HR function, where recorded",
+      "Employer or organisation name",
+      "Industry and experience, where available",
+      "Business contact number and email, where available",
+      "City and state"
+    ],
+    sections: [
+      {
+        heading: "Choose the HR function your offer serves",
+        paragraphs: [
+          "Describe the workflow or business need behind your offer. A focused brief helps distinguish the teams that would use a product from the people who might approve it."
+        ],
+        subsections: [
+          {
+            heading: "HR leadership and business partners",
+            text: "For briefs involving people strategy, department priorities or cross-functional HR programmes. Specify HR heads, directors, managers or business partners rather than assuming every senior contact has the same responsibility."
+          },
+          {
+            heading: "Talent acquisition and recruitment",
+            text: "For hiring tools, recruitment partnerships and related services. Ask which recruitment or talent acquisition roles can be identified in the available records."
+          },
+          {
+            heading: "Learning, payroll and HR operations",
+            text: "For training, onboarding, employee administration and payroll workflows. State the specialist function you need and confirm which labels are present in a matching sample."
+          }
+        ]
+      },
+      {
+        heading: "Separate in-house HR teams from external partners",
+        paragraphs: [
+          "An in-house HR manager and an external recruitment or HR consultant may evaluate the same service for different reasons. Tell us which relationship you want to build and ask whether those employer types can be separated.",
+          "For an external advisory or service-provider brief, compare the consulting firms database and name the HR specialisation you require. If you are looking for candidates rather than HR professionals, explore the job seekers database as a separate audience."
+        ]
+      },
+      {
+        heading: "Match roles to the employers you want to serve",
+        paragraphs: [
+          "Share the sectors and cities where your service is relevant. A local training provider and a nationwide HR software business may need different coverage and a different first introduction.",
+          "For a sector-led shortlist, use the industry-wise company database and describe the HR functions you want to reach. The database directory can help you compare other professional and company categories when your offer crosses departments."
+        ]
+      },
+      {
+        heading: "Review an HR sample against your brief",
+        paragraphs: [
+          "Send your preferred HR functions, designations, employer sectors, locations, required fields and approximate quantity. Ask us to confirm available records, field completeness, file format, delivery timing and pricing.",
+          "The public CSV preview contains fictional names and masked contact details to demonstrate the structure. A job title does not establish an open vacancy, a current buying project or final purchasing authority. Confirm the person’s responsibility and needs during your conversation."
+        ]
+      }
+    ],
+    useCasesIntro: "Build your introduction around the HR workflow, team or employer requirement your product can support.",
+    useCases: [
+      "Introduce HRMS, recruitment and employee administration software",
+      "Discuss recruitment and staffing partnerships",
+      "Offer relevant learning and leadership programmes",
+      "Demonstrate payroll and onboarding workflow tools",
+      "Invite suitable HR professionals to conferences and workshops"
+    ],
+    faqs: [
+      {
+        question: "Can I request HR heads or HR managers separately?",
+        answer: "Share the designations, seniority and locations you need. We will check the available role labels and confirm suitable coverage and sample options."
+      },
+      {
+        question: "Can recruitment, learning and payroll roles be separated?",
+        answer: "Specify the HR functions relevant to your offer. Function-level selection depends on how the available records are categorised, so confirm the distinctions in a matching sample."
+      },
+      {
+        question: "Does this include external HR consultants?",
+        answer: "State whether you need in-house teams, recruitment firms or external consultants. Ask which employer types are available and whether separate segments can be supplied; you can also compare the consulting firms category."
+      },
+      {
+        question: "Is this an internal employee or payroll database?",
+        answer: "This page concerns professional contact enquiries for people working in HR. It does not provide access to an employer’s HR system, payroll records or employee files."
+      },
+      {
+        question: "Does an HR contact mean the company is hiring?",
+        answer: "No. A professional listing does not establish an active vacancy, recruitment budget or interest in a service. Confirm the company’s current needs directly."
+      },
+      {
+        question: "How do I request an HR sample and quote?",
+        answer: "Use the enquiry form to send your functions, roles, employer industries, target locations, required fields and approximate quantity. The public download is a fictional format preview. Ask our team about matching sample options, availability, timing and pricing."
+      }
+    ],
+    related: [
+      "general-senior-managers-database-india",
+      "corporate-database-india",
+      "consultants-consulting-services-database-india",
+      "job-seekers-database",
+      "industry-wise-company-database-india"
+    ],
+    showTestimonials: true,
+    cta: {
+      heroTitle: "Find the HR Professionals Who Fit Your Offer",
+      heroSubtitle: "Share your HR functions, target roles, employer sectors and cities. Ask for a matching sample and quote.",
+      buttonLabel: "Request HR Contact Sample",
+      text: "Recruitment, learning, payroll or HR leadership? Tell us which team would benefit from your offer.",
+      footerTitle: "Build Your HR Professional Shortlist",
+      footerText: "Send your target functions, designations, industries, locations and approximate quantity. We will confirm available coverage, sample options and pricing."
+    }
+  },
+  {
+    slug: "importers-database-india",
+    keyword: "Importers Database India",
+    title: "Importers Database India",
+    metaDescription: "Explore importers database options in India. Specify product categories, business roles, locations and contact fields, then request a sample and quote.",
+    eyebrow: "Importers Database",
+    h1: "Importers Database in India",
+    answer: "An importers database helps you shortlist Indian businesses identified as buyers of goods from overseas, with available company, product-category and contact details. Share the products, business roles and locations relevant to your offer so we can check matching coverage and sample options.",
+    intro: [
+      "A business importing industrial components needs a different introduction from one sourcing finished consumer goods. Start with the product category and the service you provide, whether that is overseas supply, freight, warehousing or packaging.",
+      "Specify import-buying businesses in your brief. Ask how trade direction and product categories are identified so an exporter-only business or a general distributor does not get treated as an import prospect without supporting context.",
+      "For a combined trade audience, compare the importers and exporters database. For domestic channel partners, explore the dealers and distributors database and name your product category."
+    ],
+    contentLinks: [
+      {
+        text: "importers and exporters database",
+        href: "/importers-exporters-database-india"
+      },
+      {
+        text: "dealers and distributors database",
+        href: "/dealers-distributors-database-india"
+      },
+      {
+        text: "manufacturer database",
+        href: "/manufacturer-database-india"
+      },
+      {
+        text: "home, garden and pet suppliers database",
+        href: "/home-garden-pets-suppliers-database-india"
+      },
+      {
+        text: "company proprietors database",
+        href: "/company-proprietors-database-india"
+      },
+      {
+        text: "database directory",
+        href: "/database"
+      }
+    ],
+    highlights: [
+      {
+        icon: Globe,
+        title: "Import-Focused Brief",
+        description: "Specify businesses buying from overseas rather than an undifferentiated trade list."
+      },
+      {
+        icon: Filter,
+        title: "Product-Category Fit",
+        description: "Describe the goods and business roles relevant to your offer."
+      },
+      {
+        icon: MapPinned,
+        title: "Relevant Business Locations",
+        description: "Check the company locations your sales or service team can cover."
+      },
+      {
+        icon: FileText,
+        title: "Review the Trade Context",
+        description: "Ask how import activity and categories are recorded in a matching sample."
+      }
+    ],
+    dataFields: [
+      "Company or trading business name",
+      "Recorded trade role and product category",
+      "Contact person and designation, where available",
+      "Business phone number and email, where available",
+      "Business address, city, state and pincode",
+      "Website, where available"
+    ],
+    sections: [
+      {
+        heading: "Choose the import business you want to approach",
+        paragraphs: [
+          "Describe both the goods and the role the business plays. A manufacturer sourcing components and a distributor buying finished products may need different support."
+        ],
+        subsections: [
+          {
+            heading: "Industrial inputs and components",
+            text: "For suppliers and service providers working with businesses sourcing materials, parts or equipment. Ask whether the product and business-role fields support your requirement."
+          },
+          {
+            heading: "Finished products and distribution",
+            text: "For briefs involving imported goods intended for onward sale. Name the product categories and distribution relationship you want to discuss."
+          },
+          {
+            heading: "Import-related business services",
+            text: "For freight, storage, packaging and other relevant trade services. Explain the operational need your offer addresses and the contact role you want to reach."
+          }
+        ]
+      },
+      {
+        heading: "Keep product fit and trade activity separate",
+        paragraphs: [
+          "A product-category match alone does not establish current import activity. Ask what supports the trade classification, when it was recorded and whether the selected records contain enough context for your campaign.",
+          "For production businesses, compare the manufacturer database. For a household, gardening or pet-product brief, explore the home, garden and pet suppliers database and confirm import activity separately from the product range."
+        ]
+      },
+      {
+        heading: "Plan introductions around your service area",
+        paragraphs: [
+          "Share the company locations and business roles you need. A business address does not identify its shipping routes or ports, so ask which location and trade fields are actually available.",
+          "For a broader owner-led prospecting brief, compare the company proprietors database. Use the database directory to find adjacent categories where your offer serves a different trade relationship."
+        ]
+      },
+      {
+        heading: "Review a matching importer sample",
+        paragraphs: [
+          "Send your product categories, import-buyer requirements, target locations, contact roles and approximate quantity. Ask about classification details, field completeness, available records, format, delivery timing and pricing.",
+          "The public CSV uses fictional, masked business examples to show the layout. It is not a shipment-history export. Confirm current buying requirements, product specifications and commercial terms directly with each business."
+        ]
+      }
+    ],
+    useCasesIntro: "Give each introduction a clear connection to the importer’s recorded product category and business role.",
+    useCases: [
+      "Introduce overseas product and component supply",
+      "Discuss freight forwarding and logistics services",
+      "Offer warehousing and business packaging solutions",
+      "Explore import distribution partnerships",
+      "Invite relevant trading businesses to product demonstrations"
+    ],
+    faqs: [
+      {
+        question: "How is this different from the importers and exporters database?",
+        answer: "This page focuses on an import-buyer requirement. The combined category supports a broader trade brief. Specify trade direction and confirm how it is identified in the available records."
+      },
+      {
+        question: "Can I select importers by product category?",
+        answer: "Share the goods and business roles you need. Ask which product labels are recorded and confirm a matching sample before selecting a segment."
+      },
+      {
+        question: "Does a listing prove recent shipments or current buying interest?",
+        answer: "No. Ask about the basis and date of the trade classification. Confirm recent activity, product requirements and buying interest directly with the business."
+      },
+      {
+        question: "Does the file include shipment values or trade documents?",
+        answer: "Do not assume those fields are included. This page concerns business contact enquiries; request a field list and review the actual sample against your brief."
+      },
+      {
+        question: "How do I request a sample and price?",
+        answer: "Send your product categories, trade roles, locations, contact fields and approximate quantity. The public download is a fictional format preview. Ask our team about matching sample options, coverage, delivery timing and a quote."
+      }
+    ],
+    related: [
+      "importers-exporters-database-india",
+      "dealers-distributors-database-india",
+      "manufacturer-database-india",
+      "home-garden-pets-suppliers-database-india",
+      "company-proprietors-database-india"
+    ],
+    showTestimonials: true,
+    cta: {
+      heroTitle: "Find Import Businesses That Fit Your Offer",
+      heroSubtitle: "Share your product categories, business roles and target cities. Ask for a matching sample and quote.",
+      buttonLabel: "Request Importer Sample",
+      text: "Supplying goods or supporting imports? Tell us which products, business roles and locations matter to your brief.",
+      footerTitle: "Build Your Importer Business Shortlist",
+      footerText: "Send your import-buyer criteria, target locations, required fields and approximate quantity. We will confirm available coverage, sample options and pricing."
+    }
+  },
+  {
+    slug: "it-companies-database-india",
+    keyword: "IT Companies Database India",
+    title: "IT Companies Database India",
+    metaDescription: "Explore IT companies database options in India. Discuss software, SaaS, cloud and IT service businesses by location, then request a sample and quote.",
+    eyebrow: "IT Companies Database",
+    h1: "IT Companies Database in India",
+    answer: "An IT companies database helps you shortlist software businesses and IT service providers using available company, service-category, location and contact details. Describe the types of firms you want to approach so we can check suitable business coverage and sample options.",
+    intro: [
+      "A software product business and an IT services firm can look similar in a company directory but buy and partner differently. Start with the business model your offer supports, then add the service categories and locations you need.",
+      "Tell us whether your brief concerns development agencies, software product companies, cloud services or managed IT providers. Ask which categories, company-size bands and contact roles are recorded in the available file.",
+      "For a broader brief including internet and telecom providers, compare the IT and telecom services database. If you need individual technical contacts rather than company records, explore the IT professionals database."
+    ],
+    contentLinks: [
+      {
+        text: "IT and telecom services database",
+        href: "/computer-it-telecom-services-database-india"
+      },
+      {
+        text: "IT professionals database",
+        href: "/it-professionals-database-india"
+      },
+      {
+        text: "executive contacts database",
+        href: "/ceo-cfo-cmo-it-heads-database-india"
+      },
+      {
+        text: "HR and human resources database",
+        href: "/hr-human-resources-database-india"
+      },
+      {
+        text: "corporate database",
+        href: "/corporate-database-india"
+      },
+      {
+        text: "database directory",
+        href: "/database"
+      }
+    ],
+    highlights: [
+      {
+        icon: Building2,
+        title: "Company-Level Focus",
+        description: "Discuss firms and business models relevant to your sales or partnership brief."
+      },
+      {
+        icon: Filter,
+        title: "Service-Category Selection",
+        description: "Specify software, product, cloud or managed IT requirements."
+      },
+      {
+        icon: MapPinned,
+        title: "Your Target Markets",
+        description: "Check available coverage for the cities your team wants to approach."
+      },
+      {
+        icon: FileText,
+        title: "Review Before Ordering",
+        description: "Look at company context, size fields and business contact completeness."
+      }
+    ],
+    dataFields: [
+      "Company name and website",
+      "IT business or service category, where recorded",
+      "Company size or employee band, where available",
+      "Contact person and designation, where available",
+      "Business phone number and email, where available",
+      "Business address, city, state and pincode"
+    ],
+    sections: [
+      {
+        heading: "Start with the type of IT business",
+        paragraphs: [
+          "Describe what a suitable company builds or delivers. This helps separate businesses that could use your product from firms that merely share an IT label."
+        ],
+        subsections: [
+          {
+            heading: "Software development and digital services",
+            text: "For briefs involving project-based development firms and agencies. Specify the service specialisations important to the relationship and ask which labels are available."
+          },
+          {
+            heading: "Software products and SaaS",
+            text: "For product-business partnerships, tooling or related services. Ask whether product companies can be identified separately from firms building software for clients."
+          },
+          {
+            heading: "Cloud and managed IT providers",
+            text: "For relevant infrastructure, support and service partnerships. Confirm the recorded service categories rather than assuming certifications or vendor relationships."
+          }
+        ]
+      },
+      {
+        heading: "Match the business contact to your offer",
+        paragraphs: [
+          "A founder, technical leader, HR manager and procurement contact evaluate different needs. Explain what your offer supports and ask which roles are populated for the selected company segment.",
+          "For leadership-specific enquiries, compare the executive contacts database. For hiring tools, learning programmes or staffing partnerships, explore the HR and human resources database and specify the employer sectors you need."
+        ]
+      },
+      {
+        heading: "Build a company brief around a workable territory",
+        paragraphs: [
+          "Share your preferred cities and any recorded size or service criteria that matter. A local support provider and a nationwide software vendor may need different company coverage.",
+          "For employers across several industries, compare the corporate database. The database directory can help you find other business categories when your offer extends beyond IT companies."
+        ]
+      },
+      {
+        heading: "Check a sample against your business criteria",
+        paragraphs: [
+          "Send your business models, service categories, locations, desired contact roles and approximate quantity. Ask about available records, company-size fields, completeness, format, delivery timing and pricing.",
+          "The public CSV contains fictional, masked company examples. A listing does not establish technology adoption, certifications, current projects or purchasing intent. Check the details important to your partnership directly with the company."
+        ]
+      }
+    ],
+    useCasesIntro: "Choose the business model and contact role most relevant to the product or partnership you want to introduce.",
+    useCases: [
+      "Introduce relevant software and business tools",
+      "Explore development and service-delivery partnerships",
+      "Discuss cloud and managed IT channel relationships",
+      "Offer staffing, learning and business support services",
+      "Invite suitable companies to technology trade events"
+    ],
+    faqs: [
+      {
+        question: "How is this different from the IT and telecom services database?",
+        answer: "This page focuses on software and IT businesses. The broader category also supports internet and telecom service briefs. Specify your exact business models and review the category labels in a sample."
+      },
+      {
+        question: "Can SaaS companies and development agencies be separated?",
+        answer: "State the business models you need. Availability depends on the categories recorded, so confirm the distinction and sample options before ordering."
+      },
+      {
+        question: "Can I select companies by city or employee band?",
+        answer: "Share your preferred cities and size criteria. Ask which location and employee-band fields are available and how complete they are for your chosen segment."
+      },
+      {
+        question: "Does the list confirm technologies or certifications?",
+        answer: "Do not assume it does. Request the field list and verify technology, certification or vendor-partner details directly with the business when they matter to your brief."
+      },
+      {
+        question: "How do I get a sample and quote?",
+        answer: "Send your business models, service categories, cities, contact roles and approximate quantity through the enquiry form. The public download is a fictional format preview; ask our team for matching sample options, coverage and pricing."
+      }
+    ],
+    related: [
+      "computer-it-telecom-services-database-india",
+      "it-professionals-database-india",
+      "ceo-cfo-cmo-it-heads-database-india",
+      "hr-human-resources-database-india",
+      "corporate-database-india"
+    ],
+    showTestimonials: true,
+    cta: {
+      heroTitle: "Find IT Companies That Fit Your Offer",
+      heroSubtitle: "Share the business models, services, cities and contact roles you need. Ask for a matching company sample.",
+      buttonLabel: "Request IT Company Sample",
+      text: "Software products, development firms or managed IT providers? Tell us which businesses you want to reach.",
+      footerTitle: "Build Your IT Company Shortlist",
+      footerText: "Send your company categories, locations, contact roles and approximate quantity. We will confirm available coverage, sample options and pricing."
+    }
+  },
+  {
+    slug: "it-professionals-database-india",
+    keyword: "IT Professionals Database India",
+    title: "IT Professionals Database India",
+    metaDescription: "Explore IT professionals database options in India. Specify technical roles, specialisations, experience and cities, then request a sample and quote.",
+    eyebrow: "IT Professionals Database",
+    h1: "IT Professionals Database in India",
+    answer: "An IT professionals database helps you shortlist people working in software, infrastructure, testing, data and related technology roles. Share the functions, experience levels and locations you need so we can check available professional context, contact fields and sample options.",
+    intro: [
+      "A software engineer, a QA professional and a cloud specialist need different tools and training. Begin with the work your offer supports, then describe the roles and experience levels that would make a useful audience.",
+      "Ask about designation, technical specialisation, employer and location fields before selecting a segment. These details help you explain why a conversation is relevant; a broad technology-professional label is not enough on its own.",
+      "If your brief is for business accounts, compare the IT companies database. For independent specialists, explore the freelancers database and specify the technical work you need."
+    ],
+    contentLinks: [
+      {
+        text: "IT companies database",
+        href: "/it-companies-database-india"
+      },
+      {
+        text: "freelancers database",
+        href: "/freelancers-database-india"
+      },
+      {
+        text: "job seekers database",
+        href: "/job-seekers-database"
+      },
+      {
+        text: "HR and human resources database",
+        href: "/hr-human-resources-database-india"
+      },
+      {
+        text: "executive contacts database",
+        href: "/ceo-cfo-cmo-it-heads-database-india"
+      },
+      {
+        text: "database directory",
+        href: "/database"
+      }
+    ],
+    highlights: [
+      {
+        icon: Briefcase,
+        title: "Technical Role Fit",
+        description: "Specify the job functions and specialisations relevant to your brief."
+      },
+      {
+        icon: Filter,
+        title: "Experience Context",
+        description: "Ask which recorded experience and employer fields are available."
+      },
+      {
+        icon: MapPinned,
+        title: "Your Target Locations",
+        description: "Discuss city and state coverage for your audience requirement."
+      },
+      {
+        icon: FileText,
+        title: "Sample Before Selection",
+        description: "Review role labels, professional context and contact completeness first."
+      }
+    ],
+    dataFields: [
+      "Professional or contact person name",
+      "Designation and technical specialisation, where recorded",
+      "Employer or organisation, where available",
+      "Experience, where recorded",
+      "Available professional contact number and email fields",
+      "City and state"
+    ],
+    sections: [
+      {
+        heading: "Choose the technical function you need",
+        paragraphs: [
+          "Describe the work rather than only a technology-sector label. Ask which functions and specialisations are recorded so you can review the right segment."
+        ],
+        subsections: [
+          {
+            heading: "Software development and testing",
+            text: "For developer tools, quality workflows and relevant professional programmes. Specify development or testing roles and confirm the available specialisation fields."
+          },
+          {
+            heading: "Cloud, infrastructure and security",
+            text: "For offers relevant to systems, platform operations or security work. Describe the responsibility you need; a job label alone does not establish certifications or tool proficiency."
+          },
+          {
+            heading: "Data and technical leadership",
+            text: "For data-related work or team leadership briefs. State whether you need practitioners or senior decision-making roles so the audience requirement stays clear."
+          }
+        ]
+      },
+      {
+        heading: "Separate a professional audience from a hiring pool",
+        paragraphs: [
+          "A person working in IT is not necessarily looking for a job or accepting freelance projects. Explain whether your enquiry concerns tools, learning, an event or a work opportunity.",
+          "For candidate-focused enquiries, compare the job seekers database and confirm what availability information is recorded. For staffing partnerships or employer-side tools, explore the HR and human resources database instead."
+        ]
+      },
+      {
+        heading: "Match the introduction to the role",
+        paragraphs: [
+          "Use the recorded role and specialisation to explain the practical value of your offer. Keep experience and location requirements explicit, and ask about any missing context before choosing the file.",
+          "For CIO, CTO or IT-head requirements, compare the executive contacts database. Use the database directory to explore other professional categories when a different function would be a better fit."
+        ]
+      },
+      {
+        heading: "Review a matching professional sample",
+        paragraphs: [
+          "Send your job functions, technical specialisations, experience criteria, cities, fields and approximate quantity. Ask us to confirm available records, completeness, format, delivery timing and pricing.",
+          "The public CSV uses fictional names and masked contacts to demonstrate the layout. A professional listing does not confirm current employment, demonstrated skill, job-search status or purchasing authority. Assess the details relevant to your conversation directly."
+        ]
+      }
+    ],
+    useCasesIntro: "Give the professional a clear reason to consider the tool, programme, event or opportunity you are introducing.",
+    useCases: [
+      "Introduce relevant developer and technical workflow tools",
+      "Invite suitable professionals to workshops and technology events",
+      "Discuss role-specific learning programmes",
+      "Build an initial professional shortlist for project enquiries",
+      "Explore technical community and professional partnerships"
+    ],
+    faqs: [
+      {
+        question: "Can I request developers, testers or cloud professionals separately?",
+        answer: "Specify the functions, specialisations and locations you need. We will check which role categories are available and confirm matching sample options."
+      },
+      {
+        question: "Are skills and certifications verified?",
+        answer: "Do not assume verification from a role label. Ask which skills or qualifications are recorded and assess any capability or certification essential to your requirement directly."
+      },
+      {
+        question: "Are these professionals actively looking for work?",
+        answer: "A professional listing does not establish job-search status or project availability. For a hiring brief, discuss a separate candidate requirement and confirm what availability information is recorded."
+      },
+      {
+        question: "Can I select by experience or city?",
+        answer: "Share your preferred experience ranges and locations. Ask whether those fields are available and sufficiently complete for the audience you need."
+      },
+      {
+        question: "How do I request a sample and price?",
+        answer: "Send your roles, specialisations, experience criteria, cities, required fields and approximate quantity. The public CSV is a fictional format preview. Ask our team for matching sample options, available coverage, timing and pricing."
+      }
+    ],
+    related: [
+      "it-companies-database-india",
+      "freelancers-database-india",
+      "job-seekers-database",
+      "hr-human-resources-database-india",
+      "ceo-cfo-cmo-it-heads-database-india"
+    ],
+    showTestimonials: true,
+    cta: {
+      heroTitle: "Find IT Professionals Who Fit Your Brief",
+      heroSubtitle: "Share your technical functions, specialisations, experience criteria and cities. Ask for a matching sample and quote.",
+      buttonLabel: "Request IT Professional Sample",
+      text: "Developers, testers, cloud specialists or data professionals? Tell us the work your offer supports.",
+      footerTitle: "Build Your IT Professional Shortlist",
+      footerText: "Send your target roles, specialisations, locations and approximate quantity. We will confirm available coverage, sample options and pricing."
+    }
+  },
+  {
+    slug: "jewellers-database-india",
+    keyword: "Jewellers Database India",
+    title: "Jewellers Database India",
+    metaDescription: "Explore retail jewellers database options in India. Specify jewellery categories, showroom types, contact roles and cities, then request a sample and quote.",
+    eyebrow: "Jewellers Database",
+    h1: "Jewellers Database in India",
+    answer: "A jewellers database helps you shortlist jewellery retailers and showroom businesses, with available category, location and business contact details. Share your product range and the owners, managers or retail businesses you want to approach so we can check matching coverage and sample options.",
+    intro: [
+      "A retail stockist search starts with the collection or service you sell. A supplier introducing silver jewellery needs a different shortlist from a business offering showroom displays, billing software or store equipment.",
+      "Describe the jewellery categories, showroom formats and locations you need. Ask which owner, manager and business contact fields are populated so your team can plan a relevant introduction.",
+      "This page focuses on retail jewellers and showroom contacts. For a wider brief including gemstone traders and production businesses, compare the gems and jewellery shops database. For production partners, explore the manufacturer database and specify the jewellery segment."
+    ],
+    contentLinks: [
+      {
+        text: "gems and jewellery shops database",
+        href: "/gems-jewellery-shops-database-india"
+      },
+      {
+        text: "manufacturer database",
+        href: "/manufacturer-database-india"
+      },
+      {
+        text: "dealers and distributors database",
+        href: "/dealers-distributors-database-india"
+      },
+      {
+        text: "company proprietors database",
+        href: "/company-proprietors-database-india"
+      },
+      {
+        text: "importers database",
+        href: "/importers-database-india"
+      },
+      {
+        text: "database directory",
+        href: "/database"
+      }
+    ],
+    highlights: [
+      {
+        icon: Sparkles,
+        title: "Retail Jewellery Focus",
+        description: "Specify the jewellery ranges and showroom formats relevant to your offer."
+      },
+      {
+        icon: UserCheck,
+        title: "Owner & Store Context",
+        description: "Ask about available proprietor, manager and business contact details."
+      },
+      {
+        icon: MapPinned,
+        title: "Your Target Markets",
+        description: "Check showroom coverage in the cities and markets you want to serve."
+      },
+      {
+        icon: FileText,
+        title: "Review a Matching Sample",
+        description: "Look at retail categories and populated fields before selecting a list."
+      }
+    ],
+    dataFields: [
+      "Jeweller or showroom business name",
+      "Jewellery category and retail format, where recorded",
+      "Owner, manager or contact person, where available",
+      "Contact designation, where identified",
+      "Business phone number and email, where available",
+      "Business address, city, state and pincode",
+      "Website, where available"
+    ],
+    sections: [
+      {
+        heading: "Choose the jewellers who fit your product range",
+        paragraphs: [
+          "Explain what a suitable store would stock or use. Ask which jewellery-category and showroom labels are recorded so the available segment reflects your actual brief."
+        ],
+        subsections: [
+          {
+            heading: "Gold, silver and diamond retail",
+            text: "Name the categories relevant to your collection or service. Confirm the recorded specialisation rather than assuming every jeweller handles the same product range."
+          },
+          {
+            heading: "Independent showrooms and boutiques",
+            text: "For a store-by-store introduction, ask which owner or manager fields are available. State any preferred retail format explicitly."
+          },
+          {
+            heading: "Chain outlets and central contacts",
+            text: "Tell us whether you need local showrooms or a wider purchasing function. Ask how branches and repeated business contacts are represented in the file."
+          }
+        ]
+      },
+      {
+        heading: "Give the store a practical reason to respond",
+        paragraphs: [
+          "A collection launch, inventory demonstration and display proposal each need a different first conversation. Explain the product, service area and next step clearly.",
+          "For channel partners beyond individual showrooms, compare the dealers and distributors database. For owner-led businesses across several sectors, explore the company proprietors database as a broader requirement."
+        ]
+      },
+      {
+        heading: "Keep sourcing and retail outreach separate",
+        paragraphs: [
+          "If you are sourcing products, describe the supplier relationship you need instead of assuming a retail showroom is a production partner. For businesses buying goods from overseas, compare the importers database and confirm the product and trade context.",
+          "Use the database directory to explore adjacent trade categories when your offer serves a different part of the supply chain."
+        ]
+      },
+      {
+        heading: "Review a retail jeweller sample before ordering",
+        paragraphs: [
+          "Send your jewellery categories, showroom types, locations, contact roles and approximate quantity. Ask about available records, field completeness, file format, delivery timing and pricing.",
+          "The public CSV uses fictional, masked examples to show the layout. Confirm current product ranges, buying responsibility and any business credentials important to your relationship directly with the jeweller."
+        ]
+      }
+    ],
+    useCasesIntro: "Match the product or store service to the retail business and contact role you want to approach.",
+    useCases: [
+      "Introduce jewellery collections to potential retail stockists",
+      "Offer showroom packaging and display products",
+      "Demonstrate jewellery billing and inventory software",
+      "Discuss store equipment and service requirements",
+      "Invite suitable retailers to trade previews and product demonstrations"
+    ],
+    faqs: [
+      {
+        question: "How is this different from the gems and jewellery shops database?",
+        answer: "This page focuses on retail jewellers and showroom contacts. The broader category supports a wider trade brief, including gemstone and production businesses. Specify the retail categories you need."
+      },
+      {
+        question: "Can I request only silver or diamond jewellers?",
+        answer: "Share your required jewellery categories and target locations. We will check which distinctions are recorded and confirm available coverage and sample options."
+      },
+      {
+        question: "Can I request owners instead of general store numbers?",
+        answer: "State the contact roles you need. Ask which owner, manager and general business fields are populated in the matching sample; do not assume every record identifies a buyer."
+      },
+      {
+        question: "Does a listing establish brands stocked or buying interest?",
+        answer: "No. Confirm stock, product suitability, purchasing responsibility and current interest directly with the business before planning a trade relationship."
+      },
+      {
+        question: "How do I request a sample and quote?",
+        answer: "Send your product categories, retail formats, cities, required fields and approximate quantity. The public CSV is a fictional format preview. Ask our team for matching sample options, available coverage and pricing."
+      }
+    ],
+    related: [
+      "gems-jewellery-shops-database-india",
+      "manufacturer-database-india",
+      "dealers-distributors-database-india",
+      "company-proprietors-database-india",
+      "importers-database-india"
+    ],
+    showTestimonials: true,
+    cta: {
+      heroTitle: "Find Retail Jewellers Who Fit Your Offer",
+      heroSubtitle: "Share your product range, showroom types, cities and contact requirements. Ask for a matching sample and quote.",
+      buttonLabel: "Request Retail Jeweller Sample",
+      text: "Looking for jewellery stockists or showroom buyers? Tell us which categories and markets fit your offer.",
+      footerTitle: "Build Your Retail Jeweller Shortlist",
+      footerText: "Send your target jewellery categories, showroom types, locations and approximate quantity. We will confirm available coverage, sample options and pricing."
+    }
+  },
+  {
+    slug: "lecturers-professors-database-india",
+    keyword: "Lecturer / Professor Database India",
+    title: "Lecturers & Professors Database India",
+    metaDescription: "Explore lecturer and professor database options in India. Specify subjects, academic roles, institution types and cities, then request a sample and quote.",
+    eyebrow: "Lecturer / Professor Database",
+    h1: "Lecturers & Professors Database in India",
+    answer: "A lecturer and professor database helps you shortlist higher-education professionals by available academic role, subject, institution and location details. Share the departments, seniority and institution types you need so we can check relevant coverage, contact fields and sample options.",
+    intro: [
+      "A laboratory supplier, an academic publisher and a faculty development provider need different introductions. Begin with the subject or department your offer supports, then specify the people and institutions you want to reach.",
+      "Tell us whether you need lecturers, assistant professors, associate professors, professors or department heads. Ask which academic titles, subject labels and institution details are recorded in the available segment.",
+      "For a wider teaching audience, compare the teachers database. For institution-level enquiries rather than individual faculty contacts, explore the schools and colleges database and name the higher-education institutions you need."
+    ],
+    contentLinks: [
+      {
+        text: "teachers database",
+        href: "/teachers-database-india"
+      },
+      {
+        text: "schools and colleges database",
+        href: "/school-colleges-database"
+      },
+      {
+        text: "educational institutes database",
+        href: "/educational-institutes-database-india"
+      },
+      {
+        text: "IT professionals database",
+        href: "/it-professionals-database-india"
+      },
+      {
+        text: "event organisers database",
+        href: "/event-management-organisers-database-india"
+      },
+      {
+        text: "database directory",
+        href: "/database"
+      }
+    ],
+    highlights: [
+      {
+        icon: GraduationCap,
+        title: "Higher-Education Focus",
+        description: "Specify academic roles and institution types relevant to your brief."
+      },
+      {
+        icon: BookOpen,
+        title: "Subject & Department Fit",
+        description: "Ask which recorded disciplines can support a focused faculty audience."
+      },
+      {
+        icon: MapPinned,
+        title: "Your Target Locations",
+        description: "Check institution and faculty coverage for your preferred cities and states."
+      },
+      {
+        icon: FileText,
+        title: "Sample Before Selection",
+        description: "Review academic labels and available professional contact fields first."
+      }
+    ],
+    dataFields: [
+      "Faculty or contact person name",
+      "Academic designation, where recorded",
+      "Subject or department, where available",
+      "College, university or institution name",
+      "Institution type, where identified",
+      "Available professional contact number and email fields",
+      "City and state"
+    ],
+    sections: [
+      {
+        heading: "Start with the academic department",
+        paragraphs: [
+          "Describe the discipline and the practical relevance of your offer. A broad faculty list may miss the subject context that makes a conversation useful."
+        ],
+        subsections: [
+          {
+            heading: "Subject and discipline",
+            text: "Specify areas such as engineering, science, commerce, management or humanities. Confirm which subject distinctions are recorded before selecting a segment."
+          },
+          {
+            heading: "Academic role and seniority",
+            text: "State the designations you need and whether your brief concerns individual faculty or department leadership. A title does not establish authority to buy for an institution."
+          },
+          {
+            heading: "Institution type and location",
+            text: "Name the college or university categories and geographic area relevant to your service. Ask how institution types are identified in the available records."
+          }
+        ]
+      },
+      {
+        heading: "Match the introduction to the academic work",
+        paragraphs: [
+          "Explain how your publication, teaching resource, equipment or professional programme relates to the subject. Keep the purpose and next step specific to the faculty audience.",
+          "For a broader provider or training-institution requirement, compare the educational institutes database. If the relevant audience is industry practitioners rather than academic faculty, the IT professionals database may support a separate technical brief."
+        ]
+      },
+      {
+        heading: "Plan faculty and institution conversations separately",
+        paragraphs: [
+          "A faculty member may evaluate a resource while an administrator or purchasing team manages institutional procurement. State whether you need academic feedback, programme participation or an organisation-level buying conversation.",
+          "For event partnerships, explore the event organisers database as a separate business category. Use the database directory to compare other professional or education segments."
+        ]
+      },
+      {
+        heading: "Review a sample against your faculty brief",
+        paragraphs: [
+          "Send your subjects, academic roles, institution types, cities, required fields and approximate quantity. Ask about available coverage, field completeness, format, delivery timing and pricing.",
+          "The public CSV contains fictional names and masked contact details for format review. A listing does not confirm current affiliation, qualifications, research interests or availability. Verify the details important to your enquiry directly with the professional or institution."
+        ]
+      }
+    ],
+    useCasesIntro: "Give the faculty member a clear subject-specific reason to consider your resource, programme or invitation.",
+    useCases: [
+      "Introduce academic publications and teaching resources",
+      "Discuss relevant laboratory and classroom equipment",
+      "Invite faculty to workshops and professional programmes",
+      "Explore subject-focused academic event participation",
+      "Build an initial shortlist for institutional collaboration enquiries"
+    ],
+    faqs: [
+      {
+        question: "How is this different from the teachers database?",
+        answer: "This page focuses on lecturers, professors and higher-education faculty. The broader teachers category supports other teaching contexts. Specify academic roles, subjects and institution types in your brief."
+      },
+      {
+        question: "Can I select lecturers or professors by subject?",
+        answer: "Share the subjects and departments you need, along with locations and academic roles. We will check which distinctions are recorded and confirm matching sample options."
+      },
+      {
+        question: "Are institution and affiliation details current?",
+        answer: "Ask how affiliation details were recorded and when they were reviewed. Confirm current employment or institutional affiliation directly when it matters to your enquiry."
+      },
+      {
+        question: "Does a professor title mean the person can approve a purchase?",
+        answer: "No. Academic designation does not establish purchasing authority. Confirm the appropriate department or institution process for any business proposal."
+      },
+      {
+        question: "How do I request a sample and quote?",
+        answer: "Send your subjects, roles, institution types, target cities, fields and approximate quantity. The public download is a fictional format preview. Ask our team for matching sample options, coverage, timing and pricing."
+      }
+    ],
+    related: [
+      "teachers-database-india",
+      "school-colleges-database",
+      "educational-institutes-database-india",
+      "it-professionals-database-india",
+      "event-management-organisers-database-india"
+    ],
+    showTestimonials: true,
+    cta: {
+      heroTitle: "Find Faculty Who Fit Your Academic Brief",
+      heroSubtitle: "Share your subjects, academic roles, institution types and cities. Ask for a matching sample and quote.",
+      buttonLabel: "Request Faculty Sample",
+      text: "Which subjects and academic roles fit your offer? Send your institution and location requirements.",
+      footerTitle: "Build Your Lecturer & Professor Shortlist",
+      footerText: "Tell us the subjects, academic roles, institution types, locations and approximate quantity you need. We will confirm available coverage, sample options and pricing."
+    }
+  },
+  {
+    slug: "legal-firms-database-india",
+    keyword: "Legal Firms Database India",
+    title: "Legal Firms Database India",
+    metaDescription: "Explore legal firms database options in India. Specify law-firm practice areas, locations and business contact roles, then request a sample and quote.",
+    eyebrow: "Legal Firms Database",
+    h1: "Legal Firms Database in India",
+    answer: "A legal firms database helps you shortlist law practices as organisations, with available firm, practice-area, location and business contact details. Share the types of firms and contact roles you need so we can check relevant coverage and sample options for your business enquiry.",
+    intro: [
+      "A firm considering document management software needs a different conversation from a practice reviewing training or administrative services. Start with the workflow your offer supports, then describe the kind of legal practice you want to approach.",
+      "Specify your preferred practice areas, cities and contact roles. Ask which firm-level and professional contact details are recorded so a general office listing is not treated as a named purchasing contact.",
+      "For individual practitioners rather than firm-level records, compare the advocates and lawyers database. For advisory businesses across several sectors, explore the consulting firms database and define the service category you need."
+    ],
+    contentLinks: [
+      {
+        text: "advocates and lawyers database",
+        href: "/advocates-lawyers-database-india"
+      },
+      {
+        text: "consulting firms database",
+        href: "/consultants-consulting-services-database-india"
+      },
+      {
+        text: "corporate database",
+        href: "/corporate-database-india"
+      },
+      {
+        text: "HR and human resources database",
+        href: "/hr-human-resources-database-india"
+      },
+      {
+        text: "IT companies database",
+        href: "/it-companies-database-india"
+      },
+      {
+        text: "database directory",
+        href: "/database"
+      }
+    ],
+    highlights: [
+      {
+        icon: Building2,
+        title: "Firm-Level Focus",
+        description: "Describe the legal practices and organisation contacts relevant to your offer."
+      },
+      {
+        icon: Filter,
+        title: "Practice-Area Context",
+        description: "Ask which service and practice categories are recorded in the available segment."
+      },
+      {
+        icon: MapPinned,
+        title: "Relevant Office Locations",
+        description: "Check firm and branch coverage in the cities your team can serve."
+      },
+      {
+        icon: FileText,
+        title: "Review the Sample First",
+        description: "Look at firm details, office records and available business contact fields."
+      }
+    ],
+    dataFields: [
+      "Law firm or legal practice name",
+      "Practice areas, where recorded",
+      "Business contact person and role, where available",
+      "Business phone number and email, where available",
+      "Office address, city, state and pincode",
+      "Website, where available"
+    ],
+    sections: [
+      {
+        heading: "Choose the practice and office context you need",
+        paragraphs: [
+          "Explain the business need your offer addresses. Ask which practice-area and firm-role distinctions are recorded before selecting a segment."
+        ],
+        subsections: [
+          {
+            heading: "Practice-area requirements",
+            text: "Name relevant areas such as corporate advisory, litigation, intellectual property or employment work. Treat recorded labels as a starting point and confirm the practice’s current services directly."
+          },
+          {
+            heading: "Partners and operational contacts",
+            text: "Specify whether you need a partner, practice manager, administrator or general office contact. A professional title does not establish who evaluates suppliers or approves spending."
+          },
+          {
+            heading: "Single-office and multiple-office practices",
+            text: "Say whether you need firms or individual office locations. Ask how branches and repeated contacts are organised so the file supports your territory plan."
+          }
+        ]
+      },
+      {
+        heading: "Connect the offer to a firm workflow",
+        paragraphs: [
+          "Document handling, research tools, training and office services each support different needs. Make your introduction specific to the practice and avoid assuming every firm uses the same systems.",
+          "For employers outside legal practice, compare the corporate database. For employer-side learning or staffing tools, explore the HR and human resources database and specify the sectors you want to serve."
+        ]
+      },
+      {
+        heading: "Keep business partnerships distinct from legal advice",
+        paragraphs: [
+          "This page supports enquiries about firm-level business contacts. A listing does not establish expertise, suitability for a matter or an endorsement of the practice. Assess any professional engagement directly with the firm.",
+          "For technology-service partnerships, compare the IT companies database as a separate business category. The database directory can help you identify other organisation-level audiences."
+        ]
+      },
+      {
+        heading: "Check a matching firm sample before ordering",
+        paragraphs: [
+          "Send your practice-area requirements, locations, contact roles, fields and approximate quantity. Ask about available records, field completeness, format, delivery timing and pricing.",
+          "The public CSV contains fictional, masked firm examples to demonstrate the layout. It does not include client lists or case files. Confirm current practice details and the appropriate business contact directly with the organisation."
+        ]
+      }
+    ],
+    useCasesIntro: "Focus the introduction on a practical firm need and the person responsible for evaluating it.",
+    useCases: [
+      "Introduce legal research and document workflow tools",
+      "Discuss office technology and administrative services",
+      "Invite relevant firms to professional events and training",
+      "Explore business-service and technology partnerships",
+      "Build a firm-level prospect shortlist by practice context and location"
+    ],
+    faqs: [
+      {
+        question: "How is this different from the advocates and lawyers database?",
+        answer: "This page focuses on legal practices as organisations. The advocates and lawyers category supports individual-practitioner enquiries. Specify whether you need firm records, office listings or named professionals."
+      },
+      {
+        question: "Can I request firms by practice area?",
+        answer: "State the practice categories and locations you need. Ask which service labels are recorded and confirm their availability in a matching sample."
+      },
+      {
+        question: "Are partner or practice-manager contacts included?",
+        answer: "Contact-role availability depends on the selected segment. Tell us which roles you need and review the populated fields before ordering."
+      },
+      {
+        question: "Does a listing recommend a firm or confirm expertise?",
+        answer: "No. A business listing is not a professional endorsement. Confirm the firm’s current services, credentials and suitability for any engagement directly."
+      },
+      {
+        question: "How do I request a sample and price?",
+        answer: "Send your practice-area requirements, cities, contact roles, required fields and approximate quantity. The public CSV is a fictional format preview. Ask our team for matching sample options, available coverage and a quote."
+      }
+    ],
+    related: [
+      "advocates-lawyers-database-india",
+      "consultants-consulting-services-database-india",
+      "corporate-database-india",
+      "hr-human-resources-database-india",
+      "it-companies-database-india"
+    ],
+    showTestimonials: true,
+    cta: {
+      heroTitle: "Find Legal Firms That Fit Your Business Brief",
+      heroSubtitle: "Share your practice categories, target cities and contact requirements. Ask for a matching firm sample and quote.",
+      buttonLabel: "Request Legal Firm Sample",
+      text: "Which legal practices and business roles fit your offer? Tell us the services and locations you want to explore.",
+      footerTitle: "Build Your Legal Firm Shortlist",
+      footerText: "Send your preferred practice areas, office locations, contact roles and approximate quantity. We will confirm available coverage, sample options and pricing."
     }
   },
 ];

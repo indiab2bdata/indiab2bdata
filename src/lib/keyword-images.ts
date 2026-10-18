@@ -40,6 +40,15 @@ const KEYWORD_IMAGE_GROUPS = {
 type ImageGroup = keyof typeof KEYWORD_IMAGE_GROUPS;
 
 const SLUG_TO_GROUP: Record<string, ImageGroup> = {
+  "jewellers-database-india": "handshake",
+  "lecturers-professors-database-india": "documents",
+  "legal-firms-database-india": "office-team",
+  "importers-database-india": "handshake",
+  "it-companies-database-india": "data-network",
+  "it-professionals-database-india": "office-team",
+  "hr-human-resources-database-india": "office-team",
+  "hotels-restaurants-bars-database-india": "handshake",
+  "home-garden-pets-suppliers-database-india": "warehouse",
   "hni-high-income-employees-database-india": "office-team",
   "graphic-designers-database-india": "office-team",
   "gymnasiums-database-india": "handshake",

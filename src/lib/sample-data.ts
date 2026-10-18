@@ -65,7 +65,16 @@ export type SampleProfile =
   | "graphicDesigner"
   | "gymnasium"
   | "healthBeautyBusiness"
-  | "highIncomeEmployee";
+  | "highIncomeEmployee"
+  | "homeGardenPetSupplier"
+  | "hospitalityBusiness"
+  | "hrProfessional"
+  | "importerBusiness"
+  | "itCompany"
+  | "itProfessional"
+  | "retailJeweller"
+  | "lecturerProfessor"
+  | "legalFirm";
 
 const NAMES = ["Rahul Sharma", "Priya Mehta", "Amit Verma", "Sneha Iyer", "Vikram Singh", "Neha Gupta", "Arjun Reddy", "Kavita Joshi", "Rohan Das", "Pooja Nair", "Sanjay Patel", "Anjali Rao"];
 const COMPANIES = ["Sample Tech Pvt Ltd", "Demo Industries", "Example Traders", "Test Solutions LLP", "Dummy Enterprises", "Placeholder Exports", "Mock Infra Pvt Ltd", "Specimen Foods", "Trial Textiles", "Prototype Pharma"];
@@ -92,6 +101,88 @@ const industry: Column = ["Industry", (c) => c.industry];
 const designation: Column = ["Designation", (c) => pick(["Owner", "Director", "Purchase Manager", "Sales Head", "Partner", "Proprietor"], c.i)];
 
 const PROFILES: Record<SampleProfile, Column[]> = {
+  retailJeweller: [
+    ["Jeweller / Showroom Name", (c) => "Sample Jewellery Showroom " + (c.i + 1)],
+    ["Jewellery Category", (c) => pick(["Gold Jewellery", "Silver Jewellery", "Diamond Jewellery", "Fashion Jewellery"], c.i)],
+    ["Retail Format", (c) => pick(["Independent Showroom", "Boutique", "Chain Outlet", "Independent Showroom"], c.i)],
+    person, ["Contact Role", (c) => pick(["Owner", "Proprietor", "Showroom Manager", "Store Manager"], c.i)],
+    phone, ["Business Email", (c) => "retailjeweller" + (c.i + 1) + "@example.com"],
+    ["Business Address", (c) => "Sample Jewellery Market, " + c.city], ...loc,
+    ["Website", (c) => "https://example.com/jeweller-" + (c.i + 1)],
+  ],
+  lecturerProfessor: [
+    ["Faculty Name", (c) => c.name],
+    ["Academic Designation", (c) => pick(["Lecturer", "Assistant Professor", "Associate Professor", "Professor", "Department Head", "Assistant Professor"], c.i)],
+    ["Subject / Department", (c) => pick(["Commerce", "Computer Science", "Mechanical Engineering", "Physics", "Management", "English"], c.i)],
+    ["Institution Name", (c) => "Fictional Higher Education Institute " + (c.i + 1)],
+    ["Institution Type", (c) => pick(["College", "University", "Engineering College", "University", "Management Institute", "College"], c.i)],
+    phone, ["Professional Email", (c) => "faculty" + (c.i + 1) + "@example.com"],
+    ["City", (c) => c.city], ["State", (c) => c.state],
+  ],
+  legalFirm: [
+    ["Law Firm / Practice Name", (c) => "Fictional Legal Practice " + (c.i + 1)],
+    ["Recorded Practice Area", (c) => pick(["Corporate Advisory", "Litigation", "Intellectual Property", "Employment", "Commercial Contracts", "General Practice"], c.i)],
+    person, ["Business Contact Role", (c) => pick(["Partner", "Practice Manager", "Office Administrator"], c.i)],
+    phone, ["Business Email", (c) => "legalpractice" + (c.i + 1) + "@example.com"],
+    ["Office Address", (c) => "Sample Office Area, " + c.city], ...loc,
+    ["Website", (c) => "https://example.com/legal-practice-" + (c.i + 1)],
+  ],
+  importerBusiness: [
+    ["Company Name", (c) => "Sample Import Business " + (c.i + 1)],
+    ["Recorded Trade Role", () => "Importer (fictional example)"],
+    ["Product Category", (c) => pick(["Industrial Components", "Consumer Goods", "Homeware", "Textile Inputs", "Electrical Equipment", "Packaging Materials"], c.i)],
+    person, ["Designation", (c) => pick(["Owner", "Trade Manager", "Sourcing Manager"], c.i)],
+    phone, ["Business Email", (c) => "importbusiness" + (c.i + 1) + "@example.com"],
+    ["Business Address", (c) => "Sample Trade Area, " + c.city], ...loc,
+    ["Website", (c) => "https://example.com/import-business-" + (c.i + 1)],
+  ],
+  itCompany: [
+    ["Company Name", (c) => "Sample IT Business " + (c.i + 1)],
+    ["Business Model", (c) => pick(["Development Agency", "Software Product Company", "IT Service Provider", "IT Service Provider"], c.i)],
+    ["Service Category", (c) => pick(["Software Development", "SaaS Products", "Cloud Services", "Managed IT"], c.i)],
+    ["Employee Band", (c) => pick(["11-50", "51-200", "201-500", "51-200"], c.i)],
+    person, ["Designation", (c) => pick(["Founder", "Product Head", "Partnerships Manager", "Operations Head"], c.i)],
+    phone, ["Business Email", (c) => "itcompany" + (c.i + 1) + "@example.com"],
+    ["Business Address", (c) => "Sample Technology Area, " + c.city], ...loc,
+    ["Website", (c) => "https://example.com/it-company-" + (c.i + 1)],
+  ],
+  itProfessional: [
+    ["Professional Name", (c) => c.name],
+    ["Designation", (c) => pick(["Software Engineer", "QA Engineer", "Cloud Engineer", "Data Engineer", "Security Analyst", "Technical Lead"], c.i)],
+    ["Technical Specialisation", (c) => pick(["Software Development", "Software Testing", "Cloud Infrastructure", "Data Engineering", "Information Security", "Technical Leadership"], c.i)],
+    ["Employer", (c) => "Sample Employer " + (c.i + 1)],
+    ["Experience (Yrs)", (c) => String(2 + (c.i % 12))],
+    phone, ["Professional Email", (c) => "itprofessional" + (c.i + 1) + "@example.com"],
+    ["City", (c) => c.city], ["State", (c) => c.state],
+  ],
+  hrProfessional: [
+    ["HR Professional Name", (c) => c.name],
+    ["Designation", (c) => pick(["HR Head", "HR Manager", "Talent Acquisition Manager", "Learning and Development Manager", "Payroll Manager", "HR Business Partner"], c.i)],
+    ["HR Function", (c) => pick(["HR Leadership", "HR Operations", "Talent Acquisition", "Learning and Development", "Payroll", "HR Business Partnering"], c.i)],
+    ["Employer", (c) => c.company], industry,
+    ["Experience (Yrs)", (c) => String(4 + (c.i % 15))],
+    phone, ["Business Email", (c) => "hrprofessional" + (c.i + 1) + "@example.com"],
+    ["City", (c) => c.city], ["State", (c) => c.state],
+  ],
+  hospitalityBusiness: [
+    ["Establishment Name", (c) => pick(["Sample Hotel", "Example Restaurant", "Fictional Bar", "Demo Hotel", "Sample Restaurant", "Example Bar"], c.i) + " " + (c.i + 1)],
+    ["Establishment Type", (c) => pick(["Hotel", "Restaurant", "Bar", "Hotel", "Restaurant", "Bar"], c.i)],
+    ["Operating Format", (c) => pick(["Independent", "Independent", "Independent", "Chain Property", "Chain Outlet", "Chain Outlet"], c.i)],
+    person,
+    ["Contact Role", (c) => pick(["Property Manager", "Owner", "Operations Manager", "Purchasing Contact", "Restaurant Manager", "Venue Manager"], c.i)],
+    phone, ["Business Email", (c) => "hospitality" + (c.i + 1) + "@example.com"],
+    ["Business Address", (c) => "Sample Hospitality Area, " + c.city],
+    ...loc, ["Website", (c) => "https://example.com/hospitality-" + (c.i + 1)],
+  ],
+  homeGardenPetSupplier: [
+    ["Supplier / Business Name", (c) => "Sample Supplier Business " + (c.i + 1)],
+    ["Business Type", (c) => pick(["Wholesaler", "Distributor", "Manufacturer", "Wholesaler", "Distributor", "Manufacturer"], c.i)],
+    ["Product Category", (c) => pick(["Home Supplies", "Home Supplies", "Garden Supplies", "Garden Supplies", "Pet Supplies", "Pet Supplies"], c.i)],
+    ["Product Range", (c) => pick(["Home Decor", "Kitchenware", "Garden Tools", "Planters and Nursery Supplies", "Pet Accessories", "Pet Grooming Supplies"], c.i)],
+    person, phone, ["Email ID", (c) => "supplier" + (c.i + 1) + "@example.com"],
+    ["Business Address", (c) => "Sample Trade Area, " + c.city],
+    ...loc, ["Website", (c) => "https://example.com/supplier-" + (c.i + 1)],
+  ],
   highIncomeEmployee: [
     ["Name", (c) => c.name],
     ["Designation", (c) => pick(["Senior Manager", "Technical Lead", "Department Head", "Principal Consultant"], c.i)],
@@ -231,6 +322,15 @@ const PROFILES: Record<SampleProfile, Column[]> = {
 /** Map a page slug to the column format that product actually ships with. */
 export function sampleProfileFor(slug: string): SampleProfile {
   const rules: [RegExp, SampleProfile][] = [
+    [/^jewellers-database-india$/, "retailJeweller"],
+    [/^lecturers-professors-database-india$/, "lecturerProfessor"],
+    [/^legal-firms-database-india$/, "legalFirm"],
+    [/^importers-database-india$/, "importerBusiness"],
+    [/^it-companies-database-india$/, "itCompany"],
+    [/^it-professionals-database-india$/, "itProfessional"],
+    [/^hr-human-resources-database-india$/, "hrProfessional"],
+    [/^hotels-restaurants-bars-database-india$/, "hospitalityBusiness"],
+    [/^home-garden-pets-suppliers-database-india$/, "homeGardenPetSupplier"],
     [/^hni-high-income-employees-database-india$/, "highIncomeEmployee"],
     [/^graphic-designers-database-india$/, "graphicDesigner"],
     [/^gymnasiums-database-india$/, "gymnasium"],
