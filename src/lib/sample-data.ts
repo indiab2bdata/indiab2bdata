@@ -74,7 +74,14 @@ export type SampleProfile =
   | "itProfessional"
   | "retailJeweller"
   | "lecturerProfessor"
-  | "legalFirm";
+  | "legalFirm"
+  | "licAgentEmail"
+  | "logisticsProvider"
+  | "machineryBusiness"
+  | "maleConsumer"
+  | "manufacturingCompany"
+  | "mediaPlanningCompany"
+  | "medicalRepresentative";
 
 const NAMES = ["Rahul Sharma", "Priya Mehta", "Amit Verma", "Sneha Iyer", "Vikram Singh", "Neha Gupta", "Arjun Reddy", "Kavita Joshi", "Rohan Das", "Pooja Nair", "Sanjay Patel", "Anjali Rao"];
 const COMPANIES = ["Sample Tech Pvt Ltd", "Demo Industries", "Example Traders", "Test Solutions LLP", "Dummy Enterprises", "Placeholder Exports", "Mock Infra Pvt Ltd", "Specimen Foods", "Trial Textiles", "Prototype Pharma"];
@@ -101,6 +108,69 @@ const industry: Column = ["Industry", (c) => c.industry];
 const designation: Column = ["Designation", (c) => pick(["Owner", "Director", "Purchase Manager", "Sales Head", "Partner", "Proprietor"], c.i)];
 
 const PROFILES: Record<SampleProfile, Column[]> = {
+  medicalRepresentative: [
+    ["Professional Name", (c) => c.name],
+    ["Designation", (c) => pick(["Medical Representative", "Senior Medical Representative", "Pharmaceutical Sales Officer"], c.i)],
+    ["Employer", (c) => "Sample Pharma Company " + (c.i + 1)],
+    ["Recorded Pharma Segment", (c) => pick(["General Pharma", "Cardiology", "Dermatology", "Respiratory"], c.i)],
+    phone, ["Professional Email", (c) => "mr" + (c.i + 1) + "@example.com"],
+    ["Base City", (c) => c.city], ["State", (c) => c.state],
+    ["Recorded Territory", (c) => "Sample territory near " + c.city],
+    ["Experience Band", (c) => pick(["0-2 years", "3-5 years", "6-10 years"], c.i)],
+  ],
+  mediaPlanningCompany: [
+    ["Agency / Company Name", (c) => "Sample Media Planning Business " + (c.i + 1)],
+    ["Agency Type", (c) => pick(["Independent Media Agency", "Digital Media Agency", "Integrated Advertising Agency", "Specialist Media Agency"], c.i)],
+    ["Planning Service", (c) => pick(["Media Planning and Buying", "Digital Campaign Planning", "Integrated Media Planning", "Outdoor Media Planning"], c.i)],
+    ["Recorded Media Channels", (c) => pick(["Digital and Print", "Digital", "Print and Outdoor", "Outdoor"], c.i)],
+    person, ["Designation", (c) => pick(["Media Planning Head", "Planning Manager", "Agency Partner", "Business Development Manager"], c.i)],
+    phone, ["Business Email", (c) => "mediaplanning" + (c.i + 1) + "@example.com"],
+    ["Office Address", (c) => "Sample Business Area, " + c.city], ...loc,
+    ["Website", (c) => "https://example.com/media-planning-" + (c.i + 1)],
+  ],
+  manufacturingCompany: [
+    ["Company Name", (c) => "Sample Manufacturing Company " + (c.i + 1)],
+    ["Manufacturing Sector", (c) => pick(["Engineering", "Textiles", "Food Processing", "Packaging", "Electrical Equipment", "Plastics"], c.i)],
+    ["Product Category", (c) => pick(["Machine Components", "Fabric Products", "Packaged Foods", "Printed Packaging", "Electrical Components", "Moulded Parts"], c.i)],
+    ["Employee Band", (c) => pick(["11-50", "51-200", "201-500", "501-1000"], c.i)],
+    person, ["Designation", (c) => pick(["Procurement Manager", "Operations Manager", "Production Manager", "Managing Director"], c.i)],
+    phone, ["Business Email", (c) => "manufacturingcompany" + (c.i + 1) + "@example.com"],
+    ["Company Office Address", (c) => "Sample Manufacturing Area, " + c.city], ...loc,
+    ["Website", (c) => "https://example.com/manufacturing-company-" + (c.i + 1)],
+  ],
+  maleConsumer: [
+    ["Name", (c) => pick(["Rahul Sharma", "Amit Verma", "Vikram Singh", "Arjun Reddy", "Rohan Das", "Sanjay Patel"], c.i)],
+    ["Audience Segment", () => "Adult male consumer (fictional)"],
+    ["Adult Age Band", (c) => pick(["18-24", "25-34", "35-44", "45-54", "55+"], c.i)],
+    phone, ["Email ID", (c) => "consumer" + (c.i + 1) + "@example.com"],
+    ["Illustrative Interest", (c) => pick(["Clothing", "Local Events", "Travel", "Dining", "Accessories"], c.i)],
+    ...loc,
+  ],
+  licAgentEmail: [
+    ["Agent Name", (c) => c.name],
+    ["Professional Segment", () => "LIC agent (fictional format example)"],
+    ["Professional Email", (c) => "agent" + (c.i + 1) + "@example.com"], phone,
+    ["City", (c) => c.city], ["State", (c) => c.state],
+    ["Record Context", () => "Fictional sample; no verified affiliation or email status"],
+  ],
+  logisticsProvider: [
+    ["Company / Provider Name", (c) => "Sample Logistics Provider " + (c.i + 1)],
+    ["Service Category", (c) => pick(["Freight Forwarding", "Road Transport", "Warehousing", "Fulfilment", "Distribution Services", "Logistics Coordination"], c.i)],
+    person, ["Designation", (c) => pick(["Operations Manager", "Business Development Manager", "Owner"], c.i)],
+    phone, ["Business Email", (c) => "logisticsprovider" + (c.i + 1) + "@example.com"],
+    ["Business Address", (c) => "Sample Logistics Area, " + c.city], ...loc,
+    ["Service Area", (c) => "Illustrative service area: " + c.city],
+    ["Website", (c) => "https://example.com/logistics-provider-" + (c.i + 1)],
+  ],
+  machineryBusiness: [
+    ["Supplier / Service Business Name", (c) => "Sample Machinery Business " + (c.i + 1)],
+    ["Machinery Category", (c) => pick(["Machine Tools", "Packaging Machinery", "Industrial Pumps", "Material Handling", "Industrial Automation", "Machine Maintenance"], c.i)],
+    ["Business Role", (c) => pick(["Supplier", "Distributor", "Service Provider", "Equipment Dealer", "System Integrator", "Service Provider"], c.i)],
+    person, ["Designation", (c) => pick(["Owner", "Sales Manager", "Service Manager"], c.i)],
+    phone, ["Business Email", (c) => "machinerybusiness" + (c.i + 1) + "@example.com"],
+    ["Business Address", (c) => "Sample Industrial Area, " + c.city], ...loc,
+    ["Website", (c) => "https://example.com/machinery-business-" + (c.i + 1)],
+  ],
   retailJeweller: [
     ["Jeweller / Showroom Name", (c) => "Sample Jewellery Showroom " + (c.i + 1)],
     ["Jewellery Category", (c) => pick(["Gold Jewellery", "Silver Jewellery", "Diamond Jewellery", "Fashion Jewellery"], c.i)],
@@ -322,6 +392,13 @@ const PROFILES: Record<SampleProfile, Column[]> = {
 /** Map a page slug to the column format that product actually ships with. */
 export function sampleProfileFor(slug: string): SampleProfile {
   const rules: [RegExp, SampleProfile][] = [
+    [/^medical-representatives-database-india$/, "medicalRepresentative"],
+    [/^media-planning-companies-database-india$/, "mediaPlanningCompany"],
+    [/^manufacturing-companies-database-india$/, "manufacturingCompany"],
+    [/^male-gents-database-india$/, "maleConsumer"],
+    [/^lic-agents-emails-database-india$/, "licAgentEmail"],
+    [/^logistics-management-service-providers-database-india$/, "logisticsProvider"],
+    [/^machinery-suppliers-services-database-india$/, "machineryBusiness"],
     [/^jewellers-database-india$/, "retailJeweller"],
     [/^lecturers-professors-database-india$/, "lecturerProfessor"],
     [/^legal-firms-database-india$/, "legalFirm"],

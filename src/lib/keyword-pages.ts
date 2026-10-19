@@ -1117,6 +1117,18 @@ export const keywordPages: KeywordPage[] = [
     intro: [
       "Manufacturing is its own world - raw material and machinery suppliers need to reach factories directly, and buyers sourcing products need to find the right production units. A general business list rarely segments this cleanly.",
       "Our manufacturer database is filtered specifically to manufacturing and production companies, by industry and city, so you can reach the right factories without wading through unrelated business types.",
+      "For equipment sales, distribution or servicing businesses, compare the machinery suppliers and services database. Describe the machinery categories and business roles you need.",
+      "For a company-level prospecting brief rather than a factory-location list, explore the manufacturing companies database. Specify sectors, products and the business contact roles you need."
+    ],
+    contentLinks: [
+      {
+        text: "machinery suppliers and services database",
+        href: "/machinery-suppliers-services-database-india"
+      },
+      {
+        text: "manufacturing companies database",
+        href: "/manufacturing-companies-database-india"
+      }
     ],
     highlights: [
       { icon: Factory, title: "Factories & Production Units", description: "Filtered specifically to manufacturing companies." },
@@ -2901,6 +2913,13 @@ export const keywordPages: KeywordPage[] = [
     intro: [
       "Explore available agents database records to support business research, partnership development, market mapping and relevant professional outreach. Depending on the dataset, records may cover different types of agents and may be organised by location, business category or professional role.",
       "Use a clearly defined target profile to find records that match your requirements. Before choosing a dataset, confirm the actual categories, contact fields, geographical coverage, data source and permitted uses.",
+      "For a professional email enquiry focused on LIC agents, compare the LIC agents email database. Ask about available fields, recorded affiliation and source context for your preferred locations."
+    ],
+    contentLinks: [
+      {
+        text: "LIC agents email database",
+        href: "/lic-agents-emails-database-india"
+      }
     ],
     highlights: [
       { icon: Briefcase, title: "Agent Categories", description: "Sales, commission, real estate, travel and more." },
@@ -4308,9 +4327,11 @@ export const keywordPages: KeywordPage[] = [
     answer:
       "A business development and sales professionals database is a structured collection of professional records for people in sales, business development, key account and channel sales roles. Fields and coverage depend on the source. IndiaB2BData.com helps recruiters, training providers and B2B companies explore these records by role, industry, experience and location.",
     intro: [
-      "Sales and business development teams drive revenue in every industry, from FMCG and pharma to SaaS, banking and real estate. That makes sales professionals one of the most sought-after audiences for recruiters, sales trainers and sales-technology vendors, and one of the hardest to reach in a specific city or industry.",
-      "A business development and sales professionals database organises available professional records so you can focus on the roles, industries and locations relevant to your requirement. Confirm the fields, coverage, source and permitted uses before choosing a dataset.",
-    ],
+  "Sales and business development teams drive revenue in every industry, from FMCG and pharma to SaaS, banking and real estate. That makes sales professionals one of the most sought-after audiences for recruiters, sales trainers and sales-technology vendors, and one of the hardest to reach in a specific city or industry.",
+  "A business development and sales professionals database organises available professional records so you can focus on the roles, industries and locations relevant to your requirement. Confirm the fields, coverage, source and permitted uses before choosing a dataset.",
+  "If your brief focuses on pharmaceutical field-sales roles, explore the medical representatives database for a more specific starting point."
+],
+    contentLinks: [{"text":"medical representatives database","href":"/medical-representatives-database-india"}],
     highlights: [
       { icon: Target, title: "Sales & BD Roles", description: "Field sales, inside sales, BD, key accounts and channel." },
       { icon: Filter, title: "Industry Filters", description: "FMCG, pharma, SaaS, BFSI, real estate and more." },
@@ -4969,9 +4990,11 @@ export const keywordPages: KeywordPage[] = [
     answer:
       "A chemical and pharma companies database lists Indian chemical manufacturers, API and bulk-drug makers, pharma formulators and chemical traders with company name, contact person, product category, GSTIN and location. IndiaB2BData.com covers major clusters such as Ahmedabad-Vapi-Ankleshwar, Hyderabad, Mumbai-Thane and Baddi.",
     intro: [
-      "India is the world's largest supplier of generic medicines and a major global chemicals producer. The industry is highly clustered: Gujarat (Ankleshwar, Vapi, Dahej, Vadodara) for chemicals and dyes, Hyderabad for APIs and bulk drugs, Baddi in Himachal Pradesh for formulations, and Maharashtra for both.",
-      "Our chemical and pharma companies database lets suppliers of raw materials, packaging, lab equipment, machinery and services reach these manufacturers by cluster, product segment and company size.",
-    ],
+  "India is the world's largest supplier of generic medicines and a major global chemicals producer. The industry is highly clustered: Gujarat (Ankleshwar, Vapi, Dahej, Vadodara) for chemicals and dyes, Hyderabad for APIs and bulk drugs, Baddi in Himachal Pradesh for formulations, and Maharashtra for both.",
+  "Our chemical and pharma companies database lets suppliers of raw materials, packaging, lab equipment, machinery and services reach these manufacturers by cluster, product segment and company size.",
+  "For pharmaceutical field-sales professionals rather than company accounts, explore the medical representatives database."
+],
+    contentLinks: [{"text":"medical representatives database","href":"/medical-representatives-database-india"}],
     highlights: [
       { icon: Factory, title: "Manufacturers & Traders", description: "API, formulation, specialty and bulk chemicals." },
       { icon: MapPinned, title: "Cluster Coverage", description: "Gujarat, Hyderabad, Baddi, Maharashtra and more." },
@@ -6843,6 +6866,13 @@ export const keywordPages: KeywordPage[] = [
     intro: [
       "India's media and entertainment industry spans Mumbai's film and TV hub, Hyderabad and Chennai's regional cinema, Delhi NCR's advertising and news industry, and a fast-growing digital, OTT and creator economy across Bengaluru and beyond. These companies buy production equipment, studio space, software, talent, financing and marketing services.",
       "Our entertainment and media database covers production, advertising, publishing, broadcasting and events companies, filterable by segment and city.",
+      "For a focused brief around campaign planning, channel selection or media-buying services, compare the media planning companies database. Specify the agency types and contact roles relevant to your offer."
+    ],
+    contentLinks: [
+      {
+        text: "media planning companies database",
+        href: "/media-planning-companies-database-india"
+      }
     ],
     highlights: [
       { icon: Sparkles, title: "Every Media Segment", description: "Film, TV, OTT, ads, print, radio, events." },
@@ -6999,7 +7029,8 @@ export const keywordPages: KeywordPage[] = [
     intro: [
       "A fabric wholesaler and a boutique owner buy differently. One may need regular stock in volume; the other may be looking for a small seasonal collection. Your prospect list should reflect that difference.",
       "Start with the stores you actually want to supply: cloth merchants, saree shops, garment showrooms, boutiques or wholesale traders. Add your target cities and any exclusions, such as branches you already serve.",
-      "If you need production businesses, explore the manufacturer database. For export-focused companies, use the garment exporters database. Keeping these groups separate makes your first conversation more relevant."
+      "If you need production businesses, explore the manufacturer database. For export-focused companies, use the garment exporters database. Keeping these groups separate makes your first conversation more relevant.",
+      "For a consumer promotion rather than a stockist search, explore the male and gents database and specify your adult audience and service area. Clothing-store business contacts and individual shoppers are different audiences."
     ],
     contentLinks: [
       {
@@ -7025,6 +7056,10 @@ export const keywordPages: KeywordPage[] = [
       {
         text: "women consumers database",
         href: "/females-database-india"
+      },
+      {
+        text: "male and gents database",
+        href: "/male-gents-database-india"
       }
     ],
     highlights: [
@@ -7323,7 +7358,8 @@ export const keywordPages: KeywordPage[] = [
     intro: [
       "Women are not a single customer group. The audience for a professional course may be quite different from the audience for a neighbourhood store launch. Start with the need your product meets, rather than treating gender as the whole brief.",
       "Tell us the cities, adult age bands and relevant recorded interests you want to discuss. Occupation or other audience fields can help when they are available, but your sample should show what is actually populated.",
-      "For a city-specific requirement, explore the female consumer Bangalore database. For a broader social-media audience enquiry, compare the Facebook users database and check its source and available attributes."
+      "For a city-specific requirement, explore the female consumer Bangalore database. For a broader social-media audience enquiry, compare the Facebook users database and check its source and available attributes.",
+      "If your offer also serves adult men, compare the male and gents database. Discuss the audience criteria and locations separately so each campaign has a relevant brief."
     ],
     contentLinks: [
       {
@@ -7349,6 +7385,10 @@ export const keywordPages: KeywordPage[] = [
       {
         text: "WhatsApp number database",
         href: "/whatsapp-number-database-india"
+      },
+      {
+        text: "male and gents database",
+        href: "/male-gents-database-india"
       }
     ],
     highlights: [
@@ -9097,7 +9137,8 @@ export const keywordPages: KeywordPage[] = [
     intro: [
       "A packaging designer, a freelance brand designer and an in-house social media designer may all use different tools and services. Start with the kind of work your offer supports, then describe the people you want to reach.",
       "Ask for specialisation, studio or employer, work type and location alongside available contact fields. Those details help your team build a relevant introduction instead of treating every creative professional as the same prospect.",
-      "If you need several creative disciplines, compare the broader designers database. For independent professionals across different services, explore the freelancers database and specify graphic design as your required skill area."
+      "If you need several creative disciplines, compare the broader designers database. For independent professionals across different services, explore the freelancers database and specify graphic design as your required skill area.",
+      "For planning-agency partnerships rather than individual creative professionals, explore the media planning companies database. Describe the campaign services and business relationship you want to discuss."
     ],
     contentLinks: [
       {
@@ -9123,6 +9164,10 @@ export const keywordPages: KeywordPage[] = [
       {
         text: "database directory",
         href: "/database"
+      },
+      {
+        text: "media planning companies database",
+        href: "/media-planning-companies-database-india"
       }
     ],
     highlights: [
@@ -10223,7 +10268,8 @@ export const keywordPages: KeywordPage[] = [
     intro: [
       "A business importing industrial components needs a different introduction from one sourcing finished consumer goods. Start with the product category and the service you provide, whether that is overseas supply, freight, warehousing or packaging.",
       "Specify import-buying businesses in your brief. Ask how trade direction and product categories are identified so an exporter-only business or a general distributor does not get treated as an import prospect without supporting context.",
-      "For a combined trade audience, compare the importers and exporters database. For domestic channel partners, explore the dealers and distributors database and name your product category."
+      "For a combined trade audience, compare the importers and exporters database. For domestic channel partners, explore the dealers and distributors database and name your product category.",
+      "For provider partnerships rather than import-buying businesses, explore the logistics service providers database. Specify the freight, transport or warehousing services relevant to your brief."
     ],
     contentLinks: [
       {
@@ -10249,6 +10295,10 @@ export const keywordPages: KeywordPage[] = [
       {
         text: "database directory",
         href: "/database"
+      },
+      {
+        text: "logistics service providers database",
+        href: "/logistics-management-service-providers-database-india"
       }
     ],
     highlights: [
@@ -11166,6 +11216,1143 @@ export const keywordPages: KeywordPage[] = [
       text: "Which legal practices and business roles fit your offer? Tell us the services and locations you want to explore.",
       footerTitle: "Build Your Legal Firm Shortlist",
       footerText: "Send your preferred practice areas, office locations, contact roles and approximate quantity. We will confirm available coverage, sample options and pricing."
+    }
+  },
+  {
+    slug: "lic-agents-emails-database-india",
+    keyword: "LIC Agents Emails Database India",
+    title: "LIC Agents Email Database India",
+    metaDescription: "Discuss LIC agents email database options in India. Check location coverage, available professional contact fields and sample options before requesting a quote.",
+    eyebrow: "LIC Agents Emails Database",
+    h1: "LIC Agents Email Database in India",
+    answer: "An LIC agents email database enquiry starts with the agent audience, locations and professional contact fields you need. Tell us what your product or service helps agents do, then ask about available email coverage, source context and matching sample options before ordering.",
+    intro: [
+      "A client-management tool, a professional workshop and a local business service each need a different introduction. Start with the practical value of your offer to an agent rather than asking for every email address in a city.",
+      "Specify LIC agents as your required professional segment, along with target locations and essential fields. Ask how agent affiliation and email details are recorded, how recent the information is and what contact coverage is available.",
+      "IndiaB2BData is an independent provider and is not affiliated with or endorsed by LIC. For official agent services, use LIC agent resources. For a broader intermediary brief, compare the agents database and specify the type of agent you need."
+    ],
+    contentLinks: [
+      {
+        text: "agents database",
+        href: "/agents-database-india"
+      },
+      {
+        text: "email database",
+        href: "/email-database-india"
+      },
+      {
+        text: "channel sales professionals database",
+        href: "/channel-sales-professionals-database-india"
+      },
+      {
+        text: "consulting firms database",
+        href: "/consultants-consulting-services-database-india"
+      },
+      {
+        text: "database directory",
+        href: "/database"
+      },
+      {
+        text: "LIC agent resources",
+        href: "https://www.licindia.in/an-agent"
+      }
+    ],
+    highlights: [
+      {
+        icon: Mail,
+        title: "Email-Focused Requirement",
+        description: "Ask which professional email fields are available and populated."
+      },
+      {
+        icon: UserCheck,
+        title: "Agent Context",
+        description: "Check the recorded segment and the basis for any affiliation label."
+      },
+      {
+        icon: MapPinned,
+        title: "Relevant Locations",
+        description: "Share the cities or states your offer can serve."
+      },
+      {
+        icon: FileText,
+        title: "Review Before Selection",
+        description: "Check a matching sample, source context and field completeness first."
+      }
+    ],
+    dataFields: [
+      "Agent or professional contact name, where available",
+      "Recorded professional segment or affiliation label",
+      "Available professional email address",
+      "Contact number, where available",
+      "City and state",
+      "Source or verification context, where provided"
+    ],
+    sections: [
+      {
+        heading: "Define the agent audience and purpose",
+        paragraphs: [
+          "Describe your product, programme or service and why it is relevant to an agent’s professional work. Then add the locations and contact fields you need."
+        ],
+        subsections: [
+          {
+            heading: "Professional tools and services",
+            text: "For relevant administration, appointment or client-management products. Explain the workflow your offer supports and the type of introduction you want to make."
+          },
+          {
+            heading: "Workshops and professional events",
+            text: "State the programme topic and service area. Ask whether the available professional context is sufficient for a relevant invitation."
+          },
+          {
+            heading: "Location-specific business support",
+            text: "Name the cities or regions you can serve. Ask which location fields are recorded rather than assuming a complete national agent directory."
+          }
+        ]
+      },
+      {
+        heading: "Check email availability and affiliation separately",
+        paragraphs: [
+          "An email field does not establish that the address is current or that a person’s affiliation is unchanged. Ask how those details were recorded, when they were reviewed and what verification information accompanies the selected segment.",
+          "For broader business-email requirements, compare the email database. A label should not be treated as guaranteed delivery, consent for every campaign or current interest in your service; confirm the source context and appropriate use before planning outreach."
+        ]
+      },
+      {
+        heading: "Choose another professional category when the brief changes",
+        paragraphs: [
+          "For distribution or channel-partnership work beyond insurance agents, compare the channel sales professionals database. For external advisory businesses, explore the consulting firms database and describe the service category you require.",
+          "The database directory can help you compare other professional audiences. Keep each enquiry tied to the work and business relationship your offer actually supports."
+        ]
+      },
+      {
+        heading: "Request a matching agent email sample",
+        paragraphs: [
+          "Send your target locations, professional criteria, required email and contact fields, and approximate quantity. Ask about coverage, source context, verification details, file format, delivery timing and pricing.",
+          "The public CSV contains fictional names and example.com email addresses for format review. It is not an LIC directory export and does not include policyholder records, customer lists or agent-account access. Confirm current professional details directly when they matter to your enquiry."
+        ]
+      }
+    ],
+    useCasesIntro: "Give the recipient a clear professional reason to consider the tool, programme or service you are introducing.",
+    useCases: [
+      "Introduce relevant agent workflow and administration tools",
+      "Invite suitable professionals to workshops and events",
+      "Discuss appointment and business productivity services",
+      "Explore professional support partnerships",
+      "Review city-specific email contact coverage for a focused brief"
+    ],
+    faqs: [
+      {
+        question: "Is this an official LIC database?",
+        answer: "No. IndiaB2BData is an independent provider and is not affiliated with or endorsed by LIC. For official agent services, use LIC’s own resources."
+      },
+      {
+        question: "Does every record include an active email address?",
+        answer: "Do not assume that. Ask about email coverage, field completeness, verification methods and review dates for the selected segment. No delivery outcome is implied by a listing."
+      },
+      {
+        question: "Can I request agents in a particular city or state?",
+        answer: "Share the locations you need along with your professional criteria and required fields. We will check available coverage and matching sample options."
+      },
+      {
+        question: "Does the file confirm current LIC affiliation?",
+        answer: "Ask how any affiliation label is recorded and what supports it. A database label alone is not proof of current agency status; confirm important details through appropriate official channels."
+      },
+      {
+        question: "How do I get a sample and quote?",
+        answer: "Send your locations, professional segment, essential contact fields and approximate quantity. The public CSV is a fictional format preview. Ask our team about matching sample options, source context, timing and pricing."
+      }
+    ],
+    related: [
+      "agents-database-india",
+      "email-database-india",
+      "channel-sales-professionals-database-india",
+      "consultants-consulting-services-database-india"
+    ],
+    showTestimonials: true,
+    cta: {
+      heroTitle: "Discuss Your LIC Agent Email Requirement",
+      heroSubtitle: "Share your professional offer, target locations and essential fields. Ask about coverage, email context and a matching sample.",
+      buttonLabel: "Request Agent Email Sample",
+      text: "Which agent locations and contact fields fit your offer? Send a clear brief so we can check suitable coverage.",
+      footerTitle: "Build Your Agent Email Contact Brief",
+      footerText: "Tell us your professional criteria, target cities, required fields and approximate quantity. We will confirm available coverage, sample options and pricing."
+    }
+  },
+  {
+    slug: "logistics-management-service-providers-database-india",
+    keyword: "Logistics Management Service Providers Database India",
+    title: "Logistics Service Providers Database",
+    metaDescription: "Explore logistics management service providers database options in India. Specify services, business roles and locations, then request a sample and quote.",
+    eyebrow: "Logistics Management Service Providers Database",
+    h1: "Logistics Management Service Providers Database in India",
+    answer: "A logistics management service providers database helps you shortlist businesses offering freight, transport, warehousing and related supply-chain services. Share the service categories, locations and business contacts you need so we can check matching provider coverage and sample options.",
+    intro: [
+      "A freight forwarding firm, a warehouse operator and a distribution specialist solve different problems. Start with the relationship you want to build, whether you are sourcing a provider, introducing a business tool or offering an operational service.",
+      "Tell us which logistics services and company locations matter. Ask how service categories and contact roles are recorded so the shortlist reflects your brief rather than a broad transport label.",
+      "If you want to approach import-buying businesses as customers, compare the importers database. For a wider cross-border trade audience, explore the importers and exporters database as a separate business category."
+    ],
+    contentLinks: [
+      {
+        text: "importers database",
+        href: "/importers-database-india"
+      },
+      {
+        text: "importers and exporters database",
+        href: "/importers-exporters-database-india"
+      },
+      {
+        text: "manufacturer database",
+        href: "/manufacturer-database-india"
+      },
+      {
+        text: "dealers and distributors database",
+        href: "/dealers-distributors-database-india"
+      },
+      {
+        text: "IT companies database",
+        href: "/it-companies-database-india"
+      },
+      {
+        text: "database directory",
+        href: "/database"
+      }
+    ],
+    highlights: [
+      {
+        icon: Truck,
+        title: "Service-Category Fit",
+        description: "Specify the freight, transport, storage or distribution providers you need."
+      },
+      {
+        icon: Building2,
+        title: "Provider-Level Context",
+        description: "Ask which company and operational contact fields are available."
+      },
+      {
+        icon: MapPinned,
+        title: "Relevant Locations",
+        description: "Check office and operating-location fields for your target territory."
+      },
+      {
+        icon: FileText,
+        title: "Sample Before Selection",
+        description: "Review service labels and contact completeness before choosing a file."
+      }
+    ],
+    dataFields: [
+      "Logistics company or provider name",
+      "Recorded service category",
+      "Contact person and designation, where available",
+      "Business phone number and email, where available",
+      "Business address, city, state and pincode",
+      "Service area, where recorded",
+      "Website, where available"
+    ],
+    sections: [
+      {
+        heading: "Choose the service provider your brief needs",
+        paragraphs: [
+          "Describe the operational service or business model you want to reach. Ask which distinctions are recorded before deciding how many companies you need."
+        ],
+        subsections: [
+          {
+            heading: "Freight and transport services",
+            text: "Specify freight forwarding, road transport or other relevant service requirements. Confirm the recorded scope rather than assuming every provider covers the same modes or routes."
+          },
+          {
+            heading: "Warehousing and fulfilment",
+            text: "For briefs involving storage, dispatch and order-handling businesses. State the facility or service context important to your offer and ask which fields are available."
+          },
+          {
+            heading: "Distribution and logistics coordination",
+            text: "For providers supporting delivery networks or broader supply-chain operations. Describe the business relationship and contact role you need."
+          }
+        ]
+      },
+      {
+        heading: "Separate provider partnerships from shipper prospecting",
+        paragraphs: [
+          "A logistics provider may be a service partner or a buyer of software and operational supplies. A manufacturer or trader may instead be a potential customer for logistics services. Keep those audiences distinct in your enquiry.",
+          "For production businesses, compare the manufacturer database. For channel businesses handling goods, explore the dealers and distributors database and specify the sectors you want to approach."
+        ]
+      },
+      {
+        heading: "Match coverage to a workable service territory",
+        paragraphs: [
+          "Share the company locations and service areas relevant to your plan. An office address does not prove route coverage, storage capacity or fleet ownership; ask what is actually recorded and confirm operational details directly.",
+          "For technology partnership requirements, compare the IT companies database. The database directory can help you find adjacent provider and customer categories where your offer has a clear fit."
+        ]
+      },
+      {
+        heading: "Check a logistics provider sample before ordering",
+        paragraphs: [
+          "Send your service categories, target locations, preferred contact roles, required fields and approximate quantity. Ask about available coverage, category labels, completeness, format, delivery timing and pricing.",
+          "The public CSV uses fictional, masked provider records to demonstrate the layout. Confirm service availability, operating capability and commercial terms with the business before arranging a shipment or partnership."
+        ]
+      }
+    ],
+    useCasesIntro: "Define whether you are sourcing a logistics partner or introducing a product or service to logistics businesses.",
+    useCases: [
+      "Build an initial shortlist of logistics service partners",
+      "Introduce transport and warehouse workflow software",
+      "Discuss packaging, handling and operational supplies",
+      "Explore freight and distribution business partnerships",
+      "Invite relevant providers to trade events and demonstrations"
+    ],
+    faqs: [
+      {
+        question: "Can freight, warehousing and transport providers be separated?",
+        answer: "Specify the services you need. We will check the category labels available and confirm matching coverage and sample options."
+      },
+      {
+        question: "Does a company address establish its service routes?",
+        answer: "No. Ask which service-area fields are recorded and confirm routes, modes and operational coverage directly with the provider."
+      },
+      {
+        question: "Does the list confirm fleet ownership or warehouse capacity?",
+        answer: "Do not assume that. Review the actual field list and verify any assets, facilities or capabilities essential to your requirement with the company."
+      },
+      {
+        question: "Can I request operations or business-development contacts?",
+        answer: "Share your preferred roles. Availability depends on the selected segment, so review which named and general business contact fields are populated."
+      },
+      {
+        question: "How do I request a sample and price?",
+        answer: "Send your service categories, locations, contact roles, fields and approximate quantity. The public download is a fictional format preview. Ask our team for matching sample options, available records, timing and pricing."
+      }
+    ],
+    related: [
+      "importers-database-india",
+      "importers-exporters-database-india",
+      "manufacturer-database-india",
+      "dealers-distributors-database-india",
+      "it-companies-database-india"
+    ],
+    showTestimonials: true,
+    cta: {
+      heroTitle: "Find Logistics Providers Who Fit Your Brief",
+      heroSubtitle: "Share the services, locations and business roles you need. Ask for a matching provider sample and quote.",
+      buttonLabel: "Request Logistics Sample",
+      text: "Freight, transport, warehousing or distribution? Tell us which service businesses and locations matter to your offer.",
+      footerTitle: "Build Your Logistics Provider Shortlist",
+      footerText: "Send your service categories, target locations, contact requirements and approximate quantity. We will confirm available coverage, sample options and pricing."
+    }
+  },
+  {
+    slug: "machinery-suppliers-services-database-india",
+    keyword: "Machinery Suppliers / Services Database India",
+    title: "Machinery Suppliers & Services Database",
+    metaDescription: "Explore machinery suppliers and services database options in India. Specify equipment types, trade roles and locations, then request a sample and quote.",
+    eyebrow: "Machinery Suppliers / Services Database",
+    h1: "Machinery Suppliers & Services Database in India",
+    answer: "A machinery suppliers and services database helps you shortlist equipment sellers, distributors, integrators and servicing businesses. Share the machinery categories, trade roles and locations you need so we can check relevant business coverage, contact fields and sample options.",
+    intro: [
+      "An equipment dealer, an installation specialist and a maintenance business can all work with machinery while serving different needs. Start with the equipment and the commercial relationship you want to build.",
+      "Tell us whether your brief concerns new equipment supply, distribution, installation, parts or servicing. Ask which equipment categories, business types and contact roles are recorded in the available file.",
+      "For production companies, compare the manufacturer database. For individual technical professionals rather than service businesses, explore the engineers and service engineers database as a separate requirement.",
+      "If your offer is aimed at production businesses buying equipment or services, compare the manufacturing companies database. Share the sectors and company roles relevant to that customer brief."
+    ],
+    contentLinks: [
+      {
+        text: "manufacturer database",
+        href: "/manufacturer-database-india"
+      },
+      {
+        text: "engineers and service engineers database",
+        href: "/engineers-service-engineers-database-india"
+      },
+      {
+        text: "dealers and distributors database",
+        href: "/dealers-distributors-database-india"
+      },
+      {
+        text: "importers database",
+        href: "/importers-database-india"
+      },
+      {
+        text: "logistics service providers database",
+        href: "/logistics-management-service-providers-database-india"
+      },
+      {
+        text: "database directory",
+        href: "/database"
+      },
+      {
+        text: "manufacturing companies database",
+        href: "/manufacturing-companies-database-india"
+      }
+    ],
+    highlights: [
+      {
+        icon: Factory,
+        title: "Equipment-Category Focus",
+        description: "Specify the industrial machinery and related product ranges you need."
+      },
+      {
+        icon: Filter,
+        title: "Supply or Service Roles",
+        description: "Separate equipment sales, distribution, installation and maintenance businesses."
+      },
+      {
+        icon: MapPinned,
+        title: "Your Service Territory",
+        description: "Check the locations your sourcing or sales team can work with."
+      },
+      {
+        icon: FileText,
+        title: "Review a Matching Sample",
+        description: "Look at equipment labels, business roles and available contact details first."
+      }
+    ],
+    dataFields: [
+      "Machinery supplier or service business name",
+      "Equipment or machinery category, where recorded",
+      "Business role: supplier, dealer, integrator or service provider, where identified",
+      "Contact person and designation, where available",
+      "Business phone number and email, where available",
+      "Business address, city, state and pincode",
+      "Website, where available"
+    ],
+    sections: [
+      {
+        heading: "Start with the machinery and the business role",
+        paragraphs: [
+          "Describe the equipment and the need behind your enquiry. A supplier shortlist for production equipment and a maintenance-partner search should not be treated as the same requirement."
+        ],
+        subsections: [
+          {
+            heading: "Equipment suppliers and dealers",
+            text: "For machinery sourcing, product launches and channel relationships. Name the equipment ranges and ask whether supplier or dealer roles can be identified."
+          },
+          {
+            heading: "Installation and integration businesses",
+            text: "For businesses supporting equipment setup, automation or connected systems. Specify the work relevant to your offer and confirm the recorded service scope."
+          },
+          {
+            heading: "Maintenance and servicing providers",
+            text: "For servicing, parts and ongoing operational support. Describe the equipment and the area you need covered rather than assuming every business services every machine type."
+          }
+        ]
+      },
+      {
+        heading: "Separate sourcing from channel prospecting",
+        paragraphs: [
+          "If you are sourcing equipment, state the supplier capabilities you need to discuss. If you represent a brand, describe the dealer or service partner that could support your products.",
+          "For a wider channel brief, compare the dealers and distributors database. For businesses buying machinery from overseas, explore the importers database and confirm the equipment and trade context separately."
+        ]
+      },
+      {
+        heading: "Plan around delivery and support locations",
+        paragraphs: [
+          "Share the cities or regions relevant to installation, visits and ongoing service. A business location is useful context, but it does not establish a support radius, spare-parts stock or response time.",
+          "For delivery and handling partnerships, compare the logistics service providers database and specify the equipment-related requirements. Use the database directory to explore other industrial categories."
+        ]
+      },
+      {
+        heading: "Review equipment fit before choosing a file",
+        paragraphs: [
+          "Send your machinery categories, business roles, locations, contact requirements and approximate quantity. Ask about available records, category labels, field completeness, format, delivery timing and pricing.",
+          "The public CSV contains fictional, masked business examples. Confirm current product ranges, brand authorisation, technical capability and commercial terms directly with the business before selecting a supplier or service partner."
+        ]
+      }
+    ],
+    useCasesIntro: "Match the equipment category and trade role to the relationship you want to build.",
+    useCases: [
+      "Build an initial machinery supplier shortlist",
+      "Introduce equipment, components and industrial supplies",
+      "Explore dealer and distribution partnerships",
+      "Discuss installation and maintenance service relationships",
+      "Invite suitable machinery businesses to demonstrations and trade events"
+    ],
+    faqs: [
+      {
+        question: "Can I request only suppliers or only servicing businesses?",
+        answer: "State the trade roles you need along with the machinery categories and locations. We will check which distinctions are available and confirm sample options."
+      },
+      {
+        question: "Can I select businesses by equipment type?",
+        answer: "Share the machinery and product categories important to your requirement. Ask which labels are recorded and review their fit in a matching sample."
+      },
+      {
+        question: "Does a listing confirm brand authorisation or technical capability?",
+        answer: "No. Confirm any authorisation, capability, product availability and support commitment essential to your relationship directly with the business."
+      },
+      {
+        question: "Are these companies or individual service engineers?",
+        answer: "This page focuses on machinery supply and service businesses. For individual professionals, compare the engineers and service engineers category and define the technical roles you need."
+      },
+      {
+        question: "How do I request a sample and quote?",
+        answer: "Send your equipment categories, business roles, target locations, fields and approximate quantity. The public CSV is a fictional format preview. Ask our team for matching sample options, coverage, timing and pricing."
+      }
+    ],
+    related: [
+      "manufacturer-database-india",
+      "engineers-service-engineers-database-india",
+      "dealers-distributors-database-india",
+      "importers-database-india",
+      "logistics-management-service-providers-database-india"
+    ],
+    showTestimonials: true,
+    cta: {
+      heroTitle: "Find Machinery Businesses That Fit Your Offer",
+      heroSubtitle: "Share your equipment categories, supplier or service roles and locations. Ask for a matching sample and quote.",
+      buttonLabel: "Request Machinery Sample",
+      text: "Equipment supply, distribution or servicing? Tell us which machinery businesses and territories you want to explore.",
+      footerTitle: "Build Your Machinery Business Shortlist",
+      footerText: "Send your equipment categories, business roles, locations and approximate quantity. We will confirm available coverage, sample options and pricing."
+    }
+  },
+  {
+    slug: "male-gents-database-india",
+    keyword: "Male / Gents Database India",
+    title: "Male / Gents Database India",
+    metaDescription: "Discuss male and gents consumer database options in India. Define your adult audience, locations and required fields, then request a sample and quote.",
+    eyebrow: "Male / Gents Database",
+    h1: "Male / Gents Consumer Database in India",
+    answer: "A male or gents database enquiry concerns an adult male consumer audience, with the locations and recorded audience details relevant to your offer. Share your product or service, target areas and selection criteria so we can check available coverage, fields and matching sample options.",
+    intro: [
+      "A menswear launch and a local weekend event need different audience briefs. Start with what you are offering, where it is available and the practical reason someone would consider it.",
+      "Tell us the cities or local areas you serve and any adult age bands or recorded interests important to the campaign. Gender alone does not establish someone’s preferences, income or intent to buy, so ask which additional details are actually available.",
+      "If your campaign also includes women, compare the women consumers database and discuss those audience requirements separately. A broader campaign is easier to plan when each segment has a clear offer and service area."
+    ],
+    contentLinks: [
+      {
+        text: "women consumers database",
+        href: "/females-database-india"
+      },
+      {
+        text: "dining and leisure customers database",
+        href: "/dining-leisure-customers-database-india"
+      },
+      {
+        text: "frequent flyer database",
+        href: "/frequent-flyer-database-india"
+      },
+      {
+        text: "fabric and clothing stores database",
+        href: "/fabric-clothing-stores-database-india"
+      },
+      {
+        text: "gymnasiums database",
+        href: "/gymnasiums-database-india"
+      },
+      {
+        text: "database directory",
+        href: "/database"
+      }
+    ],
+    highlights: [
+      {
+        icon: Users,
+        title: "Adult Audience Brief",
+        description: "Describe the adult consumer segment and why your offer is relevant."
+      },
+      {
+        icon: MapPinned,
+        title: "Your Service Locations",
+        description: "Share the cities and local areas your business can serve."
+      },
+      {
+        icon: Filter,
+        title: "Check Recorded Criteria",
+        description: "Ask which age-band and audience-context fields are available."
+      },
+      {
+        icon: FileText,
+        title: "Sample Before Selection",
+        description: "Review the structure, field completeness and source context before ordering."
+      }
+    ],
+    dataFields: [
+      "Contact name, where available",
+      "Recorded adult audience segment",
+      "Age band, where recorded",
+      "City, state and pincode, where available",
+      "Available contact number and email fields",
+      "Recorded interests or audience context, where available"
+    ],
+    sections: [
+      {
+        heading: "Start with an offer and a workable service area",
+        paragraphs: [
+          "Describe the product, service or event you want to introduce. Then add the locations and adult audience criteria that would make the introduction relevant."
+        ],
+        subsections: [
+          {
+            heading: "Retail and product introductions",
+            text: "For a menswear, accessory or other consumer product offer, explain the range and where people can buy or use it. Ask which recorded audience details support the brief."
+          },
+          {
+            heading: "Local services and events",
+            text: "Name the neighbourhoods or cities your business can realistically serve. A local appointment or event usually needs more focused coverage than a nationwide promotion."
+          },
+          {
+            heading: "Recorded age bands and interests",
+            text: "Specify any adult age bands or interest categories you need. Confirm their availability and source context rather than inferring them from a name, photograph or gender label."
+          }
+        ]
+      },
+      {
+        heading: "Choose a more specific audience when the offer calls for it",
+        paragraphs: [
+          "For a hospitality or leisure offer, compare the dining and leisure customers database. For a travel-related brief, explore the frequent flyer database and check the recorded travel context separately.",
+          "These categories describe different audience requirements. Do not assume that an adult male audience is automatically interested in dining, travel, grooming or any other activity. Match the available context to your actual offer."
+        ]
+      },
+      {
+        heading: "Keep consumer campaigns and business partnerships distinct",
+        paragraphs: [
+          "If you are looking for shops that could stock your products, compare the fabric and clothing stores database. For partnerships with fitness businesses, explore the gymnasiums database. Those pages concern businesses rather than individual shoppers or gym members.",
+          "Use the database directory to compare other categories when the right audience depends on a business role, profession or product specialisation."
+        ]
+      },
+      {
+        heading: "Review a matching sample before choosing a segment",
+        paragraphs: [
+          "Send your offer, target locations, adult audience criteria, intended contact channel, required fields and approximate quantity. Ask about available coverage, field completeness, source context, file format, delivery timing and pricing.",
+          "The public CSV contains fictional names and masked contacts for format review. It does not establish anyone’s real preferences or buying interest. Review the audience definition and appropriate contact context before planning outreach."
+        ]
+      }
+    ],
+    useCasesIntro: "Build the audience brief around a clear consumer offer, its service area and the recorded criteria that support it.",
+    useCases: [
+      "Discuss an audience for a menswear or accessory launch",
+      "Plan relevant local retail and service introductions",
+      "Invite suitable adults to consumer events and demonstrations",
+      "Compare location coverage for a leisure campaign",
+      "Review available audience fields before selecting a consumer segment"
+    ],
+    faqs: [
+      {
+        question: "What does Male / Gents Database mean on this page?",
+        answer: "It refers to an enquiry about an adult male consumer audience. Describe your offer, locations and selection criteria so we can check which recorded segments and fields are available."
+      },
+      {
+        question: "Can I request a particular adult age band or city?",
+        answer: "Share the adult age bands and locations you need. Availability depends on the recorded fields, so confirm the segment definition and matching sample options before ordering."
+      },
+      {
+        question: "Does gender establish a person’s interests or buying intent?",
+        answer: "No. A gender label does not establish preferences, income, purchasing intent or suitability for your offer. Ask what supporting audience context is actually recorded."
+      },
+      {
+        question: "Does this list clothing shops or gym businesses?",
+        answer: "This page concerns adult consumers. For clothing stockists or fitness-business partnerships, compare the dedicated fabric and clothing stores or gymnasiums categories."
+      },
+      {
+        question: "What is in the public sample download?",
+        answer: "The CSV has fictional adult consumer examples, masked phone numbers and example.com email addresses to demonstrate the file structure. Its interest and audience fields are illustrative."
+      },
+      {
+        question: "How do I request a matching sample and price?",
+        answer: "Use the enquiry form to send your offer, target areas, adult criteria, contact channel, required fields and approximate quantity. We will confirm available coverage, source context, sample options and pricing."
+      }
+    ],
+    related: [
+      "females-database-india",
+      "dining-leisure-customers-database-india",
+      "frequent-flyer-database-india",
+      "fabric-clothing-stores-database-india",
+      "gymnasiums-database-india"
+    ],
+    showTestimonials: true,
+    cta: {
+      heroTitle: "Build a Male Consumer Audience Brief",
+      heroSubtitle: "Share your offer, target areas and adult audience criteria. Ask for available fields, a matching sample and a quote.",
+      buttonLabel: "Request Male Audience Sample",
+      text: "Who would benefit from your offer? Share your locations and adult audience criteria so we can check suitable coverage.",
+      footerTitle: "Find an Adult Audience That Fits Your Offer",
+      footerText: "Tell us your product or service, target locations, intended contact channel and approximate quantity. We will confirm available coverage, sample options and pricing."
+    }
+  },
+  {
+    slug: "manufacturing-companies-database-india",
+    keyword: "Manufacturing Companies Database India",
+    title: "Manufacturing Companies Database India",
+    metaDescription: "Explore manufacturing companies database options in India. Specify sectors, product categories, company criteria and cities, then request a sample and quote.",
+    eyebrow: "Manufacturing Companies Database",
+    h1: "Manufacturing Companies Database in India",
+    answer: "A manufacturing companies database helps you shortlist production businesses using available company, sector, product and contact details. Share the industries, company criteria, locations and business roles you need so we can check matching coverage and sample options.",
+    intro: [
+      "A raw-material supplier, an ERP provider and a packaging business need different manufacturing prospects. Start with the companies your offer can help, then describe the sectors, products and contact roles that make a useful fit.",
+      "This page focuses on a company-level brief. Say whether you need one record per business, head-office contacts or a shortlist organised around particular manufacturing sectors. Ask how company and plant records are distinguished in the available file.",
+      "For a factory or production-unit requirement, compare the manufacturer database. For a sector-led search across several business types, explore the industry-wise company database and specify manufacturing as your required activity."
+    ],
+    contentLinks: [
+      {
+        text: "manufacturer database",
+        href: "/manufacturer-database-india"
+      },
+      {
+        text: "industry-wise company database",
+        href: "/industry-wise-company-database-india"
+      },
+      {
+        text: "corporate database",
+        href: "/corporate-database-india"
+      },
+      {
+        text: "machinery suppliers and services database",
+        href: "/machinery-suppliers-services-database-india"
+      },
+      {
+        text: "logistics service providers database",
+        href: "/logistics-management-service-providers-database-india"
+      },
+      {
+        text: "database directory",
+        href: "/database"
+      }
+    ],
+    highlights: [
+      {
+        icon: Building2,
+        title: "Company-Level Selection",
+        description: "Define whether your brief concerns businesses, head offices or production locations."
+      },
+      {
+        icon: Factory,
+        title: "Manufacturing Sector Fit",
+        description: "Specify the product categories and production sectors relevant to your offer."
+      },
+      {
+        icon: UserCheck,
+        title: "Business Contact Context",
+        description: "Ask which procurement, operations and other role fields are available."
+      },
+      {
+        icon: FileText,
+        title: "Sample Before Selection",
+        description: "Review company categories, record structure and populated fields first."
+      }
+    ],
+    dataFields: [
+      "Company or manufacturing business name",
+      "Manufacturing sector and product category, where recorded",
+      "Company size or employee band, where available",
+      "Contact person and designation, where available",
+      "Business phone number and email, where available",
+      "Company office address, city, state and pincode",
+      "Website, where available"
+    ],
+    sections: [
+      {
+        heading: "Start with the companies your product can serve",
+        paragraphs: [
+          "Describe what a suitable business makes and why it would consider your offer. Product context is more useful than asking for every company carrying a manufacturing label."
+        ],
+        subsections: [
+          {
+            heading: "Manufacturing sectors and product ranges",
+            text: "Specify sectors such as engineering, textiles, food processing, packaging or electrical products. Ask which sector and product labels are recorded so you can assess their fit in a sample."
+          },
+          {
+            heading: "Company criteria and scale",
+            text: "If an employee band or another company-size field matters, include it in your brief. Confirm what the field measures, its availability and how complete it is."
+          },
+          {
+            heading: "Office and production locations",
+            text: "Say whether you need a company office or a particular plant location. A single business may have several locations, so clarify the record structure and how repeated contacts are handled."
+          }
+        ]
+      },
+      {
+        heading: "Match the contact role to the conversation",
+        paragraphs: [
+          "Procurement, production, maintenance, operations and leadership teams can evaluate different parts of an offer. Explain the business need and ask which relevant roles are identified in the selected company segment.",
+          "For employers across several industries, compare the corporate database. Keep the manufacturing activity and role requirements explicit rather than treating every company contact as a purchasing decision-maker."
+        ]
+      },
+      {
+        heading: "Keep manufacturers and industrial service partners distinct",
+        paragraphs: [
+          "A company making products is a different prospect from an equipment dealer or maintenance provider. For equipment supply and support businesses, explore the machinery suppliers and services database and name the machinery categories you need.",
+          "For freight, transport or storage partnerships, compare the logistics service providers database. Use the database directory to find other industrial and business categories when the relationship you want changes."
+        ]
+      },
+      {
+        heading: "Review the company sample against your brief",
+        paragraphs: [
+          "Send your sectors, products, company criteria, locations, target roles, required fields and approximate quantity. Ask about available records, field completeness, company-versus-location handling, format, delivery timing and pricing.",
+          "The public CSV contains fictional, masked company examples to demonstrate the layout. A listing does not establish current production capacity, certifications, product availability or buying intent. Confirm the details important to your proposal directly with the business."
+        ]
+      }
+    ],
+    useCasesIntro: "Build an account shortlist around a manufacturing need, then identify the business role relevant to your offer.",
+    useCases: [
+      "Introduce raw materials, components and packaging products",
+      "Discuss manufacturing ERP and business workflow tools",
+      "Offer maintenance, equipment and industrial support services",
+      "Explore company-level sourcing and supply partnerships",
+      "Invite suitable manufacturing businesses to trade events and demonstrations"
+    ],
+    faqs: [
+      {
+        question: "How is this different from the Manufacturer Database page?",
+        answer: "This page supports a company-level shortlist organised around manufacturing sectors, products and business contacts. The Manufacturer Database page focuses on factory and production-unit requirements. Confirm how company and location records are represented in either sample."
+      },
+      {
+        question: "Can I select companies by sector or product category?",
+        answer: "Share the manufacturing sectors and product ranges you need. We will check which labels are recorded and confirm available coverage and matching sample options."
+      },
+      {
+        question: "Can I request company-size or employee-band filters?",
+        answer: "Specify the criteria important to your offer. Ask which size fields are available, what they measure and how complete they are for the chosen segment."
+      },
+      {
+        question: "Are procurement or operations contacts included?",
+        answer: "Tell us which roles you need and review the populated fields in a matching sample. A business contact or job title does not establish final purchasing authority."
+      },
+      {
+        question: "Does a listing verify production capacity or certifications?",
+        answer: "No. Confirm current capabilities, product specifications, certifications and commercial terms directly with the business when they matter to your relationship."
+      },
+      {
+        question: "How do I request a sample and quote?",
+        answer: "Send your sectors, product categories, company criteria, cities, contact roles and approximate quantity. The public download is a fictional format preview. Ask our team for matching sample options, coverage, timing and pricing."
+      }
+    ],
+    related: [
+      "manufacturer-database-india",
+      "industry-wise-company-database-india",
+      "corporate-database-india",
+      "machinery-suppliers-services-database-india",
+      "logistics-management-service-providers-database-india"
+    ],
+    showTestimonials: true,
+    cta: {
+      heroTitle: "Find Manufacturing Companies That Fit Your Offer",
+      heroSubtitle: "Share your sectors, product categories, company criteria and target roles. Ask for a matching company sample and quote.",
+      buttonLabel: "Request Manufacturing Sample",
+      text: "Which manufacturing sectors and company contacts fit your offer? Tell us the products, roles and locations you need.",
+      footerTitle: "Build Your Manufacturing Company Shortlist",
+      footerText: "Send your manufacturing sectors, company criteria, target locations and approximate quantity. We will confirm available coverage, sample options and pricing."
+    }
+  },
+  {
+    slug: "media-planning-companies-database-india",
+    keyword: "Media Planning Companies Database India",
+    title: "Media Planning Companies Database India",
+    metaDescription: "Explore media planning companies database options in India. Specify agency types, channel specialisations, locations and roles, then request a sample and quote.",
+    eyebrow: "Media Planning Companies Database",
+    h1: "Media Planning Companies Database in India",
+    answer: "A media planning companies database helps you shortlist agencies and businesses offering campaign planning, channel selection and media-buying coordination. Share the agency types, services, locations and contact roles relevant to your offer so we can check matching coverage and sample options.",
+    intro: [
+      "A measurement platform, an outdoor media owner and a creative studio need different agency introductions. Start with the service or partnership you offer, then describe the planning teams or agency businesses that would find it useful.",
+      "Specify whether you need independent media agencies, digital planning specialists or integrated advertising businesses. Ask which planning, buying and channel-specialisation labels are recorded so a broad advertising category does not stand in for your actual requirement.",
+      "For a wider industry brief covering production, publishing and other media businesses, compare the entertainment and media database. For visual creative professionals rather than planning agencies, explore the graphic designers database."
+    ],
+    contentLinks: [
+      {
+        text: "entertainment and media database",
+        href: "/entertainment-media-database-india"
+      },
+      {
+        text: "graphic designers database",
+        href: "/graphic-designers-database-india"
+      },
+      {
+        text: "photography studios database",
+        href: "/digital-photography-studios-database-india"
+      },
+      {
+        text: "event organisers database",
+        href: "/event-management-organisers-database-india"
+      },
+      {
+        text: "sales and business development professionals database",
+        href: "/business-development-sales-professionals-database-india"
+      },
+      {
+        text: "database directory",
+        href: "/database"
+      }
+    ],
+    highlights: [
+      {
+        icon: Target,
+        title: "Planning-Service Focus",
+        description: "Specify the campaign planning and media-buying services relevant to your brief."
+      },
+      {
+        icon: Filter,
+        title: "Channel & Agency Context",
+        description: "Ask which agency types and media-channel specialisations are recorded."
+      },
+      {
+        icon: UserCheck,
+        title: "Relevant Business Roles",
+        description: "Discuss agency leadership, planning, buying or partnership contact requirements."
+      },
+      {
+        icon: FileText,
+        title: "Sample Before Selection",
+        description: "Review agency labels, location coverage and populated business contact fields first."
+      }
+    ],
+    dataFields: [
+      "Agency or company name",
+      "Agency type and planning-service category, where recorded",
+      "Media channels or specialisations, where available",
+      "Contact person and designation, where available",
+      "Business phone number and email, where available",
+      "Office address, city, state and pincode",
+      "Website, where available"
+    ],
+    sections: [
+      {
+        heading: "Choose the planning service and agency type",
+        paragraphs: [
+          "Describe how a suitable agency would work with your product, media inventory or service. The scope of the business relationship should guide the shortlist."
+        ],
+        subsections: [
+          {
+            heading: "Independent media planning agencies",
+            text: "For briefs centred on campaign planning, channel selection and buying coordination. Ask which service labels distinguish the agency’s recorded role."
+          },
+          {
+            heading: "Digital media specialists",
+            text: "Name the digital planning or campaign-service specialisations relevant to your offer. Confirm the recorded categories rather than assuming platform credentials or technology use."
+          },
+          {
+            heading: "Integrated and channel-focused businesses",
+            text: "Specify integrated planning, outdoor, print or other channel requirements. Ask how broad advertising firms and specialist media businesses are categorised."
+          }
+        ]
+      },
+      {
+        heading: "Keep planning and creative production requirements clear",
+        paragraphs: [
+          "A media planner may help shape where a campaign runs, while creative and production teams develop the assets. Explain which part of that work your offer supports so your introduction reaches the appropriate business function.",
+          "For image-production partners, compare the photography studios database. For on-ground programmes or event partnerships, explore the event organisers database as a separate service category."
+        ]
+      },
+      {
+        heading: "Match the contact role to the partnership",
+        paragraphs: [
+          "Agency owners, planning leads, buying teams and business-development contacts can have different responsibilities. Tell us whether the conversation concerns a planning tool, inventory relationship, service partnership or another defined need.",
+          "For a role-led brief across several industries, compare the sales and business development professionals database. Use the database directory to find adjacent company or professional audiences when your offer goes beyond media planning."
+        ]
+      },
+      {
+        heading: "Review a matching agency sample before ordering",
+        paragraphs: [
+          "Send your agency types, planning services, media channels, locations, contact roles and approximate quantity. Ask about available coverage, category labels, field completeness, format, delivery timing and pricing.",
+          "The public CSV uses fictional, masked agency examples to demonstrate the structure. A listing does not establish current client accounts, campaign budgets, media inventory or purchasing intent. Confirm the details important to your proposal directly with the agency."
+        ]
+      }
+    ],
+    useCasesIntro: "Give each agency a clear reason to consider your planning tool, media proposition or professional partnership.",
+    useCases: [
+      "Introduce planning, reporting and campaign measurement tools",
+      "Discuss media inventory and channel partnerships",
+      "Offer relevant research and business workflow services",
+      "Explore creative and production service partnerships",
+      "Invite suitable agencies to industry workshops and trade events"
+    ],
+    faqs: [
+      {
+        question: "How is this different from the entertainment and media database?",
+        answer: "This page focuses on companies offering media planning, channel selection and related buying coordination. The broader media category includes other businesses such as production houses and publishers. Specify the planning services you need."
+      },
+      {
+        question: "Can I request digital or outdoor media specialists separately?",
+        answer: "Share the channels and service specialisations relevant to your offer. We will check which categories are recorded and confirm available coverage and matching sample options."
+      },
+      {
+        question: "Can I request planning or media-buying contacts?",
+        answer: "Tell us the roles and seniority you need. Review the populated fields in a matching sample; an agency listing or designation does not establish final purchasing authority."
+      },
+      {
+        question: "Does the file include client lists or campaign spending?",
+        answer: "Do not assume those fields are included. This page concerns agency business-contact enquiries. Request the actual field list and confirm any commercial information essential to your relationship directly with the business."
+      },
+      {
+        question: "Can I select agencies by city?",
+        answer: "Send the cities or states you need along with agency types and planning services. Ask us to confirm coverage for that combination before choosing a segment."
+      },
+      {
+        question: "How do I get a sample and quote?",
+        answer: "Use the enquiry form to share your agency types, services, channels, locations, contact roles and approximate quantity. The public CSV is a fictional format preview. Ask our team for matching sample options, coverage, delivery timing and pricing."
+      }
+    ],
+    related: [
+      "entertainment-media-database-india",
+      "graphic-designers-database-india",
+      "digital-photography-studios-database-india",
+      "event-management-organisers-database-india",
+      "business-development-sales-professionals-database-india"
+    ],
+    showTestimonials: true,
+    cta: {
+      heroTitle: "Find Media Planning Companies That Fit",
+      heroSubtitle: "Share your agency types, planning services, target channels and cities. Ask for a matching company sample and quote.",
+      buttonLabel: "Request Media Planning Sample",
+      text: "Planning tools, media inventory or agency partnerships? Tell us which companies and roles fit your offer.",
+      footerTitle: "Build Your Media Planning Company Shortlist",
+      footerText: "Send your agency categories, channel requirements, locations and approximate quantity. We will confirm available coverage, sample options and pricing."
+    }
+  },
+  {
+    slug: "medical-representatives-database-india",
+    keyword: "Medical Representatives (MR) Database India",
+    title: "Medical Representatives Database India",
+    metaDescription: "Explore Medical Representatives (MR) database options in India. Share roles, pharma segments and locations, then request a matching sample and quote.",
+    eyebrow: "Medical Representatives (MR) Database",
+    h1: "Medical Representatives (MR) Database in India",
+    answer: "A medical representatives database organises professional contact records for people working in pharmaceutical field sales. Tell us the MR roles, employer segments and locations you need so we can check available coverage, relevant fields and matching sample options.",
+    intro: [
+      "A recruiter filling a territory vacancy and a trainer running a field-sales workshop need different shortlists. Start with the purpose of your enquiry, then describe the medical representatives whose work makes your offer relevant.",
+      "Share whether you need medical representatives, senior MRs or pharmaceutical sales officers. Specify employer categories, cities and any experience or therapy-segment requirements, then ask which of those details are actually recorded in the available sample.",
+      "For company accounts rather than individual field-sales professionals, explore the chemical and pharma companies database. For a wider brief across several industries, compare the sales and business development professionals database."
+    ],
+    contentLinks: [
+      {
+        text: "chemical and pharma companies database",
+        href: "/chemical-pharma-companies-database-india"
+      },
+      {
+        text: "sales and business development professionals database",
+        href: "/business-development-sales-professionals-database-india"
+      },
+      {
+        text: "chemists and medical stores database",
+        href: "/chemists-medical-stores-database-india"
+      },
+      {
+        text: "doctors database",
+        href: "/doctors-database"
+      },
+      {
+        text: "HR and human resources database",
+        href: "/hr-human-resources-database-india"
+      },
+      {
+        text: "database directory",
+        href: "/database"
+      }
+    ],
+    highlights: [
+      {
+        icon: Briefcase,
+        title: "MR & Pharma Sales Roles",
+        description: "Define the field-sales designations and seniority relevant to your enquiry."
+      },
+      {
+        icon: MapPinned,
+        title: "Location-Led Selection",
+        description: "Specify base cities and ask whether separate territory information is recorded."
+      },
+      {
+        icon: Filter,
+        title: "Employer & Segment Context",
+        description: "Check available employer, experience and pharma-segment fields in a matching sample."
+      },
+      {
+        icon: FileText,
+        title: "Review the Format First",
+        description: "Compare sample columns and populated fields before choosing your requirement."
+      }
+    ],
+    dataFields: [
+      "Professional name and recorded designation",
+      "Employer or pharmaceutical company, where available",
+      "Pharma or therapy-segment label, where recorded",
+      "Professional phone number and email, where available",
+      "Base city and state",
+      "Assigned territory and experience band, where recorded"
+    ],
+    sections: [
+      {
+        heading: "Build a shortlist around the role you need",
+        paragraphs: [
+          "A job title alone rarely explains the full requirement. Tell us whether you are hiring, offering professional training or introducing a tool for field-sales work. Include the location and employer context that would make the conversation useful."
+        ],
+        subsections: [
+          {
+            heading: "Medical representatives and senior MRs",
+            text: "Specify the field-sales roles you need and explain any seniority requirement. Ask how designations are labelled so similar job titles are interpreted consistently."
+          },
+          {
+            heading: "Pharmaceutical sales officers",
+            text: "Include these roles when they fit your brief, then confirm how they are distinguished from retail, distribution and non-pharma sales contacts."
+          },
+          {
+            heading: "Specialist segment requirements",
+            text: "If your brief needs a recorded pharma or therapy segment, name it explicitly. A segment label describes professional work context; it does not establish clinical qualifications or product expertise."
+          }
+        ]
+      },
+      {
+        heading: "Separate the base city from the sales territory",
+        paragraphs: [
+          "A professional may be based in one city and cover several surrounding areas. State whether your requirement concerns the person’s base location or a recorded work territory, and ask which field is available.",
+          "For recruitment, include the vacancy location, role level and experience range. Check current employment and willingness to consider a role directly during the hiring process; a contact record does not indicate active job-seeking."
+        ]
+      },
+      {
+        heading: "Choose the right part of the pharma network",
+        paragraphs: [
+          "For retail pharmacy accounts, use the chemists and medical stores database. For healthcare practitioners, compare the doctors database. Keeping these audiences separate makes it easier to choose a list that fits the intended business conversation.",
+          "If your service is purchased by recruitment or people teams, explore the HR and human resources database. The database directory can help you compare neighbouring professional and company categories."
+        ]
+      },
+      {
+        heading: "Check a matching sample before placing an order",
+        paragraphs: [
+          "Send your target roles, employer categories, locations, experience requirements and approximate quantity. Ask about category definitions, field completeness, available coverage, source context, delivery format, timing and pricing.",
+          "The public CSV contains fictional, masked examples showing the MR-specific column structure. Confirm current roles and work details where they matter to your decision. A professional record does not establish prescribing influence, purchasing authority or an interest in your offer."
+        ]
+      }
+    ],
+    useCasesIntro: "Make the professional purpose clear and choose the roles and locations relevant to it.",
+    useCases: [
+      "Source candidates for pharmaceutical field-sales vacancies",
+      "Offer role-relevant communication and sales training",
+      "Introduce field-sales reporting and workflow tools",
+      "Invite suitable professionals to career workshops and industry events",
+      "Research recorded role and location coverage before planning a recruitment brief"
+    ],
+    faqs: [
+      {
+        question: "What is a Medical Representatives (MR) Database?",
+        answer: "It is a structured professional-contact dataset focused on pharmaceutical field-sales roles. Depending on the selected segment, available fields may include name, designation, employer, contact details, city and recorded work context. Review a matching sample to confirm the actual columns."
+      },
+      {
+        question: "Can I select MRs by city or sales territory?",
+        answer: "Share the base cities, states or territories you need. We will check available coverage and explain whether location fields describe the professional’s base or a recorded work territory."
+      },
+      {
+        question: "Can I request experience or therapy-segment filters?",
+        answer: "Specify the experience bands and professional segment labels relevant to your brief. Ask which fields are available and how complete they are; do not assume every record includes them."
+      },
+      {
+        question: "Is this the same as a pharma company or doctors database?",
+        answer: "No. This category concerns medical representatives and related pharmaceutical sales roles. Pharma company records concern business accounts, while doctor records concern healthcare practitioners. Choose the audience that matches your purpose."
+      },
+      {
+        question: "Does a record mean the person is looking for a job?",
+        answer: "No. A professional listing does not indicate current availability, interest in changing jobs or acceptance of a particular offer. Confirm role details and interest directly during recruitment."
+      },
+      {
+        question: "How do I request a matching sample and price?",
+        answer: "Use the enquiry form to send your roles, employer categories, locations, optional segment criteria and approximate quantity. The public download is a fictional format preview. Ask our team for matching sample options, confirmed coverage, delivery timing and a quote."
+      }
+    ],
+    related: [
+      "chemical-pharma-companies-database-india",
+      "business-development-sales-professionals-database-india",
+      "chemists-medical-stores-database-india",
+      "doctors-database",
+      "hr-human-resources-database-india"
+    ],
+    showTestimonials: true,
+    cta: {
+      heroTitle: "Find Medical Representatives for Your Brief",
+      heroSubtitle: "Share the MR roles, pharma segments and locations you need. Ask for a matching professional sample and quote.",
+      buttonLabel: "Request MR Database Sample",
+      text: "Hiring MRs, organising training or offering field-sales tools? Tell us which professional roles and locations fit your requirement.",
+      footerTitle: "Build Your Medical Representatives Shortlist",
+      footerText: "Send your role, employer and location criteria with an approximate quantity. We will confirm available coverage, sample options and pricing."
     }
   },
 ];

@@ -1,3 +1,7 @@
+import topicPhotoCredits from "../../public/images/topics/CREDITS.json";
+
+const SOURCED_TOPIC_IMAGES = Object.fromEntries(topicPhotoCredits.map((photo) => [photo.key, photo]));
+
 const KEYWORD_IMAGE_GROUPS = {
   "data-network": {
     src: "/images/keywords/data-network.jpg",
@@ -40,6 +44,9 @@ const KEYWORD_IMAGE_GROUPS = {
 type ImageGroup = keyof typeof KEYWORD_IMAGE_GROUPS;
 
 const SLUG_TO_GROUP: Record<string, ImageGroup> = {
+  "lic-agents-emails-database-india": "office-team",
+  "logistics-management-service-providers-database-india": "warehouse",
+  "machinery-suppliers-services-database-india": "factory",
   "jewellers-database-india": "handshake",
   "lecturers-professors-database-india": "documents",
   "legal-firms-database-india": "office-team",
@@ -198,9 +205,9 @@ const TOPIC_IMAGES: Record<string, { alt: string; width: number; height: number 
 };
 
 export function getKeywordImage(slug: string, keyword: string) {
-  const topic = TOPIC_IMAGES[slug];
+  const topic = SOURCED_TOPIC_IMAGES[slug] ?? TOPIC_IMAGES[slug];
   if (topic) {
-    return { src: `/images/topics/${slug}.jpg`, alt: `${keyword} - ${topic.alt}`, width: topic.width, height: topic.height };
+    return { src: `/images/topics/${slug}.jpg`, alt: topic.alt, width: topic.width, height: topic.height };
   }
   const group = SLUG_TO_GROUP[slug] ?? "data-network";
   const { src } = KEYWORD_IMAGE_GROUPS[group];
