@@ -81,7 +81,8 @@ export type SampleProfile =
   | "maleConsumer"
   | "manufacturingCompany"
   | "mediaPlanningCompany"
-  | "medicalRepresentative";
+  | "medicalRepresentative"
+  | "metalsMineralsBusiness";
 
 const NAMES = ["Rahul Sharma", "Priya Mehta", "Amit Verma", "Sneha Iyer", "Vikram Singh", "Neha Gupta", "Arjun Reddy", "Kavita Joshi", "Rohan Das", "Pooja Nair", "Sanjay Patel", "Anjali Rao"];
 const COMPANIES = ["Sample Tech Pvt Ltd", "Demo Industries", "Example Traders", "Test Solutions LLP", "Dummy Enterprises", "Placeholder Exports", "Mock Infra Pvt Ltd", "Specimen Foods", "Trial Textiles", "Prototype Pharma"];
@@ -108,6 +109,16 @@ const industry: Column = ["Industry", (c) => c.industry];
 const designation: Column = ["Designation", (c) => pick(["Owner", "Director", "Purchase Manager", "Sales Head", "Partner", "Proprietor"], c.i)];
 
 const PROFILES: Record<SampleProfile, Column[]> = {
+  metalsMineralsBusiness: [
+    ["Business Name", (c) => "Sample Metals Minerals Business " + (c.i + 1)],
+    ["Industry Segment", (c) => pick(["Ferrous Metals", "Non-ferrous Metals", "Industrial Minerals", "Mineral Processing"], c.i)],
+    ["Material / Product", (c) => pick(["Steel Coils", "Aluminium Ingots", "Quartz Powder", "Processed Limestone"], c.i)],
+    ["Business Activity", (c) => pick(["Steel Stockist", "Metal Producer", "Mineral Supplier", "Mineral Processor"], c.i)],
+    person, ["Designation", (c) => pick(["Owner", "Procurement Manager", "Sales Manager", "Operations Manager"], c.i)],
+    phone, ["Business Email", (c) => "metalsminerals" + (c.i + 1) + "@example.com"],
+    ["Recorded Business Address", (c) => "Sample Industrial Area, " + c.city], ...loc,
+    ["Website", (c) => "https://example.com/metals-minerals-" + (c.i + 1)],
+  ],
   medicalRepresentative: [
     ["Professional Name", (c) => c.name],
     ["Designation", (c) => pick(["Medical Representative", "Senior Medical Representative", "Pharmaceutical Sales Officer"], c.i)],
@@ -392,6 +403,7 @@ const PROFILES: Record<SampleProfile, Column[]> = {
 /** Map a page slug to the column format that product actually ships with. */
 export function sampleProfileFor(slug: string): SampleProfile {
   const rules: [RegExp, SampleProfile][] = [
+    [/^metals-minerals-industries-database-india$/, "metalsMineralsBusiness"],
     [/^medical-representatives-database-india$/, "medicalRepresentative"],
     [/^media-planning-companies-database-india$/, "mediaPlanningCompany"],
     [/^manufacturing-companies-database-india$/, "manufacturingCompany"],

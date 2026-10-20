@@ -33,6 +33,7 @@ export const PRODUCT_GROUPS: { heading: string; links: { href: string; label: st
     links: [
       { href: "/manufacturer-database-india", label: "Manufacturers" },
       { href: "/manufacturing-companies-database-india", label: "Manufacturing Companies" },
+      { href: "/metals-minerals-industries-database-india", label: "Metals & Minerals Industries" },
       { href: "/machinery-suppliers-services-database-india", label: "Machinery Suppliers / Services" },
       { href: "/apparel-garments-exporters-database-india", label: "Garment Exporters" },
       { href: "/importers-exporters-database-india", label: "Importers & Exporters" },

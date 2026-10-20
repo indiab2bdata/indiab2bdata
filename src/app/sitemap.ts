@@ -23,16 +23,17 @@ const CONTENT_UPDATED = {
 } as const;
 
 const KEYWORD_CONTENT_UPDATED: Record<string, string> = {
+  "metals-minerals-industries-database-india": "2026-10-20",
   "medical-representatives-database-india": "2026-10-19",
   "chemical-pharma-companies-database-india": "2026-10-19",
   "business-development-sales-professionals-database-india": "2026-10-19",
   "media-planning-companies-database-india": "2026-10-19",
   "entertainment-media-database-india": "2026-10-19",
-  "manufacturing-companies-database-india": "2026-10-19",
+  "manufacturing-companies-database-india": "2026-10-20",
   "male-gents-database-india": "2026-10-19",
   "lic-agents-emails-database-india": "2026-10-19",
   "logistics-management-service-providers-database-india": "2026-10-19",
-  "machinery-suppliers-services-database-india": "2026-10-19",
+  "machinery-suppliers-services-database-india": "2026-10-20",
   "agents-database-india": "2026-10-19",
   "manufacturer-database-india": "2026-10-19",
   "jewellers-database-india": "2026-10-18",
