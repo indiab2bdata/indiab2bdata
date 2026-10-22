@@ -1,37 +1,27 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { SampleDownload } from "@/components/sample-download";
-import CityPage from "@/components/city-pages/CityPage.js";
 import { cities } from "@/components/city-pages/city-data.mjs";
-import { metadataFor } from "@/components/city-pages/render-city.mjs";
-
-const cityPages = Object.values(cities);
+import { getCityProfile } from "@/lib/landing";
+import { DatabaseLanding, landingMetadata } from "@/components/landing-v2/database-landing";
 
 export const dynamicParams = false;
 
 type Params = Promise<{ state: string; city: string }>;
 
 export function generateStaticParams() {
-  return cityPages.map(({ stateSlug, slug }) => ({ state: stateSlug, city: slug }));
+  return Object.values(cities).map(({ stateSlug, slug }) => ({ state: stateSlug, city: slug }));
 }
 
 export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
   const { state, city } = await params;
-  const page = cityPages.find((entry) => entry.stateSlug === state && entry.slug === city);
-
-  return page ? metadataFor(page.slug) : {};
+  const profile = getCityProfile(state, city);
+  return profile ? landingMetadata(profile) : {};
 }
 
 export default async function CityDatabasePage({ params }: { params: Params }) {
   const { state, city } = await params;
-  const page = cityPages.find((entry) => entry.stateSlug === state && entry.slug === city);
+  const profile = getCityProfile(state, city);
+  if (!profile) notFound();
 
-  if (!page) notFound();
-
-  return (
-    <>
-      <CityPage cityKey={page.slug} />
-      <SampleDownload slug={`${page.slug}-company-database`} label={`${page.city} Company Database`} city={page.city} state={page.state} />
-    </>
-  );
+  return <DatabaseLanding profile={profile} />;
 }
