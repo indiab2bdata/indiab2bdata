@@ -83,6 +83,7 @@ const LANDMARKS: Record<string, { title: string; color: string; body: React.Reac
       </>
     ),
   },
+  // Mysore Palace - central dome with flanking domes over an arcade
   karnataka: {
     title: "Mysore Palace",
     color: "#A16207",
