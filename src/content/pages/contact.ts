@@ -6,7 +6,7 @@ const DESCRIPTION =
 
 /** /contact copy. Its FAQ section shows the homepage set (DEFAULT_FAQS in content/pages/faqs.ts). */
 export const CONTACT = {
-  meta: { title: TITLE, description: DESCRIPTION, path: "/contact" },
+  meta: { title: TITLE, description: DESCRIPTION, path: "/contact", updated: "2026-09-30" },
   schemaName: `${TITLE} | ${siteConfig.name}`,
   breadcrumb: "Contact Us",
   hero: {

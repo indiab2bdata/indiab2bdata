@@ -198,7 +198,7 @@ const ALL_PRODUCT_GROUPS: ProductGroup[] = [
   },
 ];
 
-/** Groups with any page held from indexing (see lib/indexing.ts) removed. */
+/** Groups with any page held from indexing (see config/indexing.ts) removed. */
 export const PRODUCT_GROUPS: ProductGroup[] = ALL_PRODUCT_GROUPS.map((g) => ({ ...g, links: indexableLinks(g.links) }));
 
 /** The footer group a product page belongs to, plus its sibling links (self excluded). */

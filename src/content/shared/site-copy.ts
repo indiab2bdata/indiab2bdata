@@ -1,6 +1,8 @@
 /** Site chrome copy: header, footer, mobile bar, floating buttons and small shared blocks used on many pages. */
 export const SITE_COPY = {
   logoAlt: "IndiaB2BData.com",
+  /** Default alt text for the photo behind inner-page heroes. */
+  heroImageAlt: "Sales team working with verified B2B business data",
   header: {
     sampleCta: "Get Free Sample",
     menuLabel: "Menu",

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { isHeldFromIndex } from "@/config/indexing";
 import { siteConfig } from "@/config/site";
-import { getKeywordImage } from "@/lib/keyword-images";
+import { getKeywordImage } from "@/content/shared/keyword-images";
 import type { KeywordPage, LandingPage } from "@/types/landing";
 
 export type OgImage = { url: string; width?: number; height?: number; alt?: string };

@@ -17,3 +17,9 @@ export function monthYear(yyyyMm: string) {
   const [y, m] = yyyyMm.split("-").map(Number);
   return `${MONTHS[m - 1]} ${y}`;
 }
+
+/** Keep product names readable when a label already contains data or database wording. */
+export function formatDataProduct(label: string) {
+  const name = label.trim();
+  return /\b(?:database|data|leads|contacts|lists)\b/i.test(name) ? name : `${name} database`;
+}

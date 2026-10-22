@@ -1,7 +1,7 @@
-  import type { Metadata } from "next";
+import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import Script from "next/script";
-import "./globals.css";
+import "@/styles/globals.css";
 import { ModalProvider } from "@/components/layout/ModalContext";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -10,15 +10,10 @@ import { MobileCtaBar } from "@/components/layout/MobileCtaBar";
 import { ContactModal } from "@/components/layout/ContactModal";
 import { Toaster } from "sonner";
 import { JsonLd } from "@/components/layout/JsonLd";
-import { siteConfig } from "@/config/site";
+import { getCityEnquiryPages } from "@/content";
+import { GA_INIT, GA_SRC } from "@/lib/analytics";
 import { organizationJsonLd, localBusinessJsonLd, websiteJsonLd } from "@/lib/seo/jsonld";
-import { cityPath, getAllCities } from "@/content";
-
-const cityEnquiryPages = getAllCities().map((city) => ({
-  href: cityPath(city),
-  city: city.city,
-  state: city.state,
-}));
+import { rootMetadata } from "@/lib/seo/metadata";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -26,29 +21,7 @@ const montserrat = Montserrat({
   weight: ["400", "500", "600", "700", "800"],
 });
 
-const GA_ID = "G-H4WEQ2BRZP";
-
-export const metadata: Metadata = {
-  metadataBase: new URL(siteConfig.url),
-  title: {
-    default: siteConfig.defaultTitle,
-    template: "%s | IndiaB2BData.com",
-  },
-  description: siteConfig.defaultDescription,
-  // No root canonical: every page sets its own via buildMetadata(), and a root default of "/"
-  // would silently canonicalise any page that forgets to override it to the homepage.
-  verification: {
-    google: "l8QOpKqoC429_x9cCAOktejf255UdfNx7oXbHJnHYUk",
-  },
-  robots: {
-    index: true,
-    follow: true,
-  },
-  other: {
-    "geo.region": "IN",
-    "geo.placename": "India",
-  },
-};
+export const metadata: Metadata = rootMetadata;
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
@@ -61,18 +34,15 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           <Footer />
           <FloatingButtons />
           <MobileCtaBar />
-          <ContactModal cityPages={cityEnquiryPages} />
+          <ContactModal cityPages={getCityEnquiryPages()} />
           <Toaster position="top-center" richColors closeButton toastOptions={{ style: { fontFamily: "var(--font-montserrat), sans-serif" } }} />
         </ModalProvider>
       </body>
-      {/* lazyOnload: analytics loads after the page is interactive and never blocks rendering (no preload in <head>). */}
+      {/* lazyOnload: analytics loads after the page is interactive and never blocks rendering (see lib/analytics.ts). */}
       <Script id="ga-init" strategy="lazyOnload">
-        {`window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag("js", new Date());
-gtag("config", "${GA_ID}");`}
+        {GA_INIT}
       </Script>
-      <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="lazyOnload" />
+      <Script src={GA_SRC} strategy="lazyOnload" />
     </html>
   );
 }

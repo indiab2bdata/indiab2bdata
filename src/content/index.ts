@@ -109,3 +109,8 @@ export function getCity(stateSlug: string, slug: string): CityContent | undefine
 export function cityPath(city: Pick<CityContent, "stateSlug" | "slug">) {
   return `/database/${city.stateSlug}/${city.slug}`;
 }
+
+/** Lightweight city list for the sample modal (matches city routes before their parent state). */
+export function getCityEnquiryPages() {
+  return cities.map((city) => ({ href: cityPath(city), city: city.city, state: city.state }));
+}

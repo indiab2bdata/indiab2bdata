@@ -8,7 +8,7 @@ const DESCRIPTION = "Read the Terms and Conditions for using IndiaB2BData.com an
 
 /** /terms-and-conditions. Long-form legal copy is authored as JSX: <LegalSection> blocks, plain links and <ProtectedEmail>. */
 export const TERMS_PAGE: LegalPageContent = {
-  meta: { title: TITLE, description: DESCRIPTION, path: "/terms-and-conditions" },
+  meta: { title: TITLE, description: DESCRIPTION, path: "/terms-and-conditions", updated: "2026-09-24" },
   schemaName: `${TITLE} | ${siteConfig.name}`,
   breadcrumb: TITLE,
   hero: { eyebrow: "Legal", title: "Terms & Conditions", description: "Last updated: 26 August 2026" },

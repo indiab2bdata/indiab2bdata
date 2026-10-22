@@ -11,6 +11,7 @@ export const ABOUT = {
     title: TITLE,
     description: DESCRIPTION,
     path: "/about",
+    updated: "2026-09-30",
     image: { url: `${siteConfig.url}/images/about/team.jpg`, width: 1600, height: 1067, alt: "IndiaB2BData.com team" },
   },
   /** WebPage schema name. */

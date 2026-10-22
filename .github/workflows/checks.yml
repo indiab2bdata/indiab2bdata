@@ -1,0 +1,29 @@
+name: Checks
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run typecheck
+      # Schema, placeholders, claims, duplicate FAQs, related-link limits, link targets.
+      - run: npm run content:check
+      # Fails on invalid content too: the content registry validates every file at build time.
+      - run: npm run build
+      - run: npm run overlap:check
+      - name: SEO check against the production build
+        run: |
+          npm run start -- -p 3000 &
+          npx --yes wait-on http://localhost:3000
+          npm run seo:check -- http://localhost:3000

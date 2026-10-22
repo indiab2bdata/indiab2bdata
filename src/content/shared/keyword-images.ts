@@ -1,4 +1,6 @@
-import topicPhotoCredits from "../../public/images/topics/CREDITS.json";
+import topicPhotoCredits from "../../../public/images/topics/CREDITS.json";
+
+/** Hero / card image (and its alt text) for each category page on the legacy template and the homepage directory. */
 
 const SOURCED_TOPIC_IMAGES = Object.fromEntries(topicPhotoCredits.map((photo) => [photo.key, photo]));
 

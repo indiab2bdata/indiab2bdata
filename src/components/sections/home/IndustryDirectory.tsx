@@ -7,8 +7,9 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { A11y, Keyboard, Navigation, Pagination } from "swiper/modules";
 import { PRODUCT_GROUPS } from "@/config/navigation";
-import { formatDataProduct, siteConfig } from "@/config/site";
-import { getKeywordImage } from "@/lib/keyword-images";
+import { siteConfig } from "@/config/site";
+import { formatDataProduct } from "@/lib/utils";
+import { getKeywordImage } from "@/content/shared/keyword-images";
 import { WhatsAppIcon } from "@/components/ui/icons/WhatsAppIcon";
 import { HOME } from "@/content/pages/home";
 

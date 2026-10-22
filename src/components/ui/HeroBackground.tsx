@@ -1,12 +1,13 @@
 import Image from "next/image";
 import { DataNetwork } from "@/components/ui/DataNetwork";
+import { SITE_COPY } from "@/content/shared/site-copy";
 
 export const DEFAULT_HERO_IMAGE = "/images/home/hero.jpg";
 
 /** Photo + brand-blue overlay behind inner-page heroes. The image is the LCP element, so it's preloaded. */
 export function HeroBackground({
   image = DEFAULT_HERO_IMAGE,
-  alt = "Sales team working with verified B2B business data",
+  alt = SITE_COPY.heroImageAlt,
 }: {
   image?: string;
   alt?: string;

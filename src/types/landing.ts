@@ -7,7 +7,7 @@ import type { SampleProfile } from "@/lib/sample-data";
  *
  * Numbers we don't have yet are written as {{COUNT}} / {{PRICE}} / {{FILL}} placeholders.
  * Never replace a placeholder with a guessed figure - the page renders placeholders as
- * "On request" and `npm run seo:check` lists every one still waiting for a real value.
+ * "On request" and `npm run content:check` lists every one still waiting for a real value.
  */
 
 export type IconCard = { icon: LucideIcon; title: string; description: string };
@@ -191,7 +191,8 @@ export type CityContent = {
 
 /** A long-form legal page in src/content/pages (compliance, privacy, terms). */
 export type LegalPageContent = {
-  meta: { title: string; description: string; path: string };
+  /** `updated` is the sitemap <lastmod> ("YYYY-MM-DD"). */
+  meta: { title: string; description: string; path: string; updated: string };
   /** WebPage schema name. */
   schemaName: string;
   breadcrumb: string;

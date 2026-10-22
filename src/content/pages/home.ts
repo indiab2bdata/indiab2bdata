@@ -12,6 +12,8 @@ export const HOME = {
     titleTag: null,
     description: siteConfig.defaultDescription,
     path: "/",
+    /** Sitemap <lastmod>: bump when this page's main copy changes (not for header/footer/styling changes). */
+    updated: "2026-10-07",
     about: "B2B database India",
     itemListName: "B2B & Company Databases",
   },

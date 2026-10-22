@@ -8,7 +8,7 @@ const DESCRIPTION = "Read the Privacy Policy of IndiaB2BData.com to understand h
 
 /** /privacy-policy. Long-form legal copy is authored as JSX: <LegalSection> blocks, plain links and <ProtectedEmail>. */
 export const PRIVACY_PAGE: LegalPageContent = {
-  meta: { title: TITLE, description: DESCRIPTION, path: "/privacy-policy" },
+  meta: { title: TITLE, description: DESCRIPTION, path: "/privacy-policy", updated: "2026-09-24" },
   schemaName: `${TITLE} | ${siteConfig.name}`,
   breadcrumb: TITLE,
   hero: { eyebrow: "Legal", title: "Privacy Policy", description: "Last updated: 26 August 2026" },

@@ -29,24 +29,24 @@ These live once, at the root, and apply to every page automatically:
 
 - **`src/app/layout.tsx`** - global `<html>` metadata (title template, default description,
   Google Search Console verification, `metadataBase`), plus sitewide `Organization` and `WebSite`
-  JSON-LD (from `src/lib/seo.ts`) rendered once via `<JsonLd data={[organizationJsonLd, websiteJsonLd]} />`.
+  JSON-LD (from `src/lib/seo/jsonld.ts`) rendered once via `<JsonLd data={[organizationJsonLd, websiteJsonLd]} />`.
 - **`src/app/sitemap.ts`** - auto-generates `/sitemap.xml` from `keywordPages` and
   `databaseStates`. **Any new statically-generated route must be added here**, or it will never be
   discovered by crawlers except through internal links.
 - **`src/app/robots.ts`** - allows all crawling, points to the sitemap.
-- **`src/lib/site-config.ts`** - single source of truth for brand name, canonical URL, phone,
+- **`src/config/site.ts`** - single source of truth for brand name, canonical URL, phone,
   WhatsApp, email, default title/description. Never hardcode these values in a page.
-- **`src/lib/seo.ts`** - the helper library every page should use (see §3).
+- **`src/lib/seo/`** (`metadata.ts`, `jsonld.ts`, `sitemap.ts`) - the helper library every page should use (see §3).
 - Global `FloatingButtons` (call + WhatsApp) and footer `Quick Links` give every page baseline
   interlinking and contact affordance regardless of page-specific content.
 
 ---
 
-## 3. `src/lib/seo.ts` - use these helpers, don't write raw JSON-LD
+## 3. `src/lib/seo/` - use these helpers, don't write raw JSON-LD
 
 | Helper | Use for |
 |---|---|
-| `pageMetadata({ title, description, path, keywords?, image? })` | The `export const metadata` (or `generateMetadata`) of **every** page. Produces `<title>`, `description`, canonical `alternates`, and a matching `openGraph` + `twitter` block in one call. |
+| `buildMetadata({ title, description, path, keywords?, image? })` | The `export const metadata` (or `generateMetadata`) of **every** page. Produces `<title>`, `description`, canonical `alternates`, and a matching `openGraph` + `twitter` block in one call. |
 | `breadcrumbJsonLd(items)` | `BreadcrumbList` schema - pass the same items you give the visible `<Breadcrumbs>`/`PageHero breadcrumbs=`. |
 | `webPageJsonLd({ type, name, description, url, about? })` | `WebPage` / `AboutPage` / `ContactPage` / `CollectionPage` schema depending on page purpose. |
 | `faqJsonLd(faqs)` | `FAQPage` schema. **The array passed here must be the exact same array rendered on the page** - Google disallows FAQ schema that doesn't match visible content. |
@@ -59,14 +59,14 @@ Next's metadata resolution is only a **shallow merge** per field (see
 `node_modules/next/dist/docs/01-app/03-api-reference/04-functions/generate-metadata.md#merging`).
 If a page defines its own `openGraph` object, it fully replaces the parent's - it does **not**
 inherit the default OG image. That means every page must define its own complete
-`openGraph`/`twitter` block, or it silently ships with no social preview at all. `pageMetadata()`
+`openGraph`/`twitter` block, or it silently ships with no social preview at all. `buildMetadata()`
 exists specifically so nobody has to remember this.
 
 ### The one exception: the homepage
 
 The homepage must **not** set its own `<title>` - it should keep inheriting
 `metadata.title.default` from the layout, otherwise Next's `title.template` (`"%s | IndiaB2BData.com"`)
-gets applied on top of an already-complete title. Call `pageMetadata()` with `titleTag: null` to
+gets applied on top of an already-complete title. Call `buildMetadata()` with `titleTag: null` to
 skip the `<title>` tag while still setting the Open Graph/Twitter title (see `src/app/page.tsx`).
 
 ---
@@ -76,14 +76,14 @@ skip the `<title>` tag while still setting the Open Graph/Twitter title (see `sr
 Copy this list when building a page. Every item maps to a concrete pattern already in the repo.
 
 - [ ] **Unique `<title>`** - 50–60 characters, includes the primary keyword, human-readable (not
-      keyword-stuffed). Set via `pageMetadata()`.
+      keyword-stuffed). Set via `buildMetadata()`.
 - [ ] **Unique meta description** - 140–160 characters, states the concrete offer (coverage,
       format, speed) not generic fluff. Same string is reused as the `og:description`/
       `twitter:description` by the helper - write it to work in both places.
-- [ ] **Canonical URL** - always absolute, always via `pageMetadata({ path })`. Never leave it out;
+- [ ] **Canonical URL** - always absolute, always via `buildMetadata({ path })`. Never leave it out;
       a missing canonical is the #1 cause of duplicate-content dilution on programmatic sites like
       this one (700+ keyword/state pages).
-- [ ] **Open Graph + Twitter Card** - via `pageMetadata({ image })`. Use the most specific real
+- [ ] **Open Graph + Twitter Card** - via `buildMetadata({ image })`. Use the most specific real
       image available for that page (see `getKeywordImage()` for keyword pages,
       `/images/keywords/city-skyline.jpg` for state pages, `/images/about/team.jpg` for About). Falls
       back to the homepage hero image if you pass nothing.
@@ -222,7 +222,7 @@ citable source:
 1. **Decide the page kind** from the table in §6 and copy the closest existing route as a
    starting point (`src/app/[slug]/page.tsx` for a new landing-page pattern, `src/app/about-us/page.tsx`
    for a static informational page).
-2. Write `title`/`description` as constants, pass them into `pageMetadata()`.
+2. Write `title`/`description` as constants, pass them into `buildMetadata()`.
 3. Build the breadcrumb array once, use it for both the visible `<Breadcrumbs>`/`PageHero` prop
    and `breadcrumbJsonLd()`.
 4. Pick the right `webPageJsonLd` `type` and any extra schema (`faqJsonLd`, `serviceJsonLd`,

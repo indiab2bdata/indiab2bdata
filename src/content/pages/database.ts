@@ -10,6 +10,7 @@ export const DATABASE_HUB = {
     title: TITLE,
     description: DESCRIPTION,
     path: "/database",
+    updated: "2026-10-22",
     image: { url: `${siteConfig.url}/images/keywords/city-skyline.jpg`, width: 1200, height: 800, alt: "City skyline representing pan-India business coverage" },
   },
   schemaName: `${TITLE} | ${siteConfig.name}`,

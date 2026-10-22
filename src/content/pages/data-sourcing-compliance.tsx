@@ -20,7 +20,7 @@ const removalDays = isPlaceholder(c.removalDays) ? null : c.removalDays;
  * when the DND section (CLAIMS.dndScrubbing) is shown.
  */
 export const COMPLIANCE_PAGE: LegalPageContent = {
-  meta: { title: TITLE, description: DESCRIPTION, path: PATH },
+  meta: { title: TITLE, description: DESCRIPTION, path: PATH, updated: "2026-10-22" },
   schemaName: `${TITLE} | ${siteConfig.name}`,
   breadcrumb: TITLE,
   hero: {

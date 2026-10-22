@@ -10,7 +10,8 @@ import { WhatsAppIcon } from "@/components/ui/icons/WhatsAppIcon";
 import { PRODUCT_GROUPS } from "@/config/navigation";
 import { states } from "@/content/states";
 import { buildSampleCsv, sampleProfileFor } from "@/lib/sample-data";
-import { formatDataProduct, siteConfig } from "@/config/site";
+import { siteConfig } from "@/config/site";
+import { formatDataProduct } from "@/lib/utils";
 import { FORM_COPY } from "@/content/shared/forms";
 
 const COPY = FORM_COPY.modal;

@@ -17,7 +17,7 @@ import { indexableLinks } from "@/config/indexing";
 import { PRODUCT_GROUPS } from "@/config/navigation";
 import { getKeywordPagesBySlug } from "@/content";
 import { KEYWORD_COPY } from "@/content/shared/keyword-copy";
-import { getKeywordImage } from "@/lib/keyword-images";
+import { getKeywordImage } from "@/content/shared/keyword-images";
 import { keywordJsonLd } from "@/lib/seo/jsonld";
 import type { KeywordPage } from "@/types/landing";
 

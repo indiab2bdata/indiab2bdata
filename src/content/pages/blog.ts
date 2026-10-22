@@ -6,7 +6,7 @@ const DESCRIPTION =
 
 /** /blog (guides hub) copy. FAQs are GUIDES_FAQS in content/pages/faqs.ts. */
 export const BLOG = {
-  meta: { title: TITLE, description: DESCRIPTION, path: "/blog" },
+  meta: { title: TITLE, description: DESCRIPTION, path: "/blog", updated: "2026-10-07" },
   schemaName: `${TITLE} | ${siteConfig.name}`,
   breadcrumb: "Guides",
   hero: {

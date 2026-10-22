@@ -7,8 +7,13 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "seo:check": "node scripts/seo-check.mjs",
-    "content:placeholders": "node scripts/placeholder-report.mjs"
+    "typecheck": "tsc --noEmit",
+    "content:check": "node --no-warnings --import ./scripts/lib/register.mjs scripts/content-check.ts",
+    "seo:check": "node --no-warnings --import ./scripts/lib/register.mjs scripts/seo-check.ts",
+    "overlap:check": "node --no-warnings scripts/overlap-check.ts",
+    "snapshot": "node --no-warnings scripts/html-snapshot.ts save",
+    "snapshot:diff": "node --no-warnings scripts/html-snapshot.ts diff",
+    "lh": "node --no-warnings scripts/lighthouse.ts"
   },
   "dependencies": {
     "@next/third-parties": "^16.3.4",
@@ -32,5 +37,8 @@
     "eslint-config-next": "16.3.3",
     "tailwindcss": "^4",
     "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=22.18"
   }
 }
