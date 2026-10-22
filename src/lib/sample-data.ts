@@ -6,6 +6,8 @@
 
 export type SampleProfile =
   | "business"
+  | "gst"
+  | "mca"
   | "email"
   | "whatsapp"
   | "registry"
@@ -345,6 +347,27 @@ const PROFILES: Record<SampleProfile, Column[]> = {
     ["Experience (Yrs)", (c) => String(2 + (c.i % 15))],
     phone, mail, ...loc,
   ],
+  gst: [
+    ["Legal Name", (c) => c.company],
+    ["Trade Name", (c) => c.company.split(" ")[0] + " " + pick(["Traders", "Enterprises", "Industries", "Solutions"], c.i)],
+    ["GSTIN", (c) => pick(["27", "24", "29", "07", "33", "09"], c.i) + "AAXCS" + (1000 + c.i) + "X1ZX"],
+    ["Registration Type", (c) => pick(["Regular", "Regular", "Composition", "Regular"], c.i)],
+    ["Constitution", (c) => pick(["Private Limited", "Proprietorship", "Partnership", "LLP"], c.i)],
+    ["Registration Date", (c) => "20" + (18 + (c.i % 8)) + "-0" + (1 + (c.i % 9)) + "-1X"],
+    ["GST Status", () => "Active"],
+    person, phone, mail, industry, ...loc,
+  ],
+  mca: [
+    company,
+    ["CIN", (c) => "U" + pick(["72200", "51909", "29100", "70100"], c.i) + c.state.slice(0, 2).toUpperCase() + (2010 + (c.i % 15)) + "PTCXXX" + (100 + c.i)],
+    ["Company Type", (c) => pick(["Private Limited", "Private Limited", "Public Limited", "OPC", "LLP"], c.i)],
+    ["Incorporation Date", (c) => (2010 + (c.i % 15)) + "-0" + (1 + (c.i % 9)) + "-1X"],
+    ["ROC", (c) => "ROC-" + c.city],
+    ["Authorised Capital Band", (c) => pick(["Up to ₹10 L", "₹10 L-1 Cr", "₹1-10 Cr", "₹10 Cr+"], c.i)],
+    ["Company Status", () => "Active"],
+    ["Director Name", (c) => c.name],
+    phone, mail, industry, ...loc,
+  ],
   business: [company, person, designation, phone, mail, industry, ["Address", (c) => `Plot XX, Sample Area, ${c.city}`], ...loc],
   email: [person, designation, company, mail, ["Website", (c) => `www.example${c.i + 1}.com`], industry, ...loc],
   whatsapp: [person, company, ["WhatsApp Number", (c) => `+91 ${mobile(c)}`], industry, ...loc],
@@ -486,11 +509,10 @@ export function sampleProfileFor(slug: string): SampleProfile {
   return rules.find(([re]) => re.test(slug))?.[1] ?? "business";
 }
 
-/** Build a CSV (opens directly in Excel) of fictional sample rows. */
-export function buildSampleCsv(profile: SampleProfile, rows = 20, place?: { city?: string; state?: string }) {
+/** Fictional, masked sample rows as a header + rows table (used for the on-page preview and the CSV). */
+export function buildSampleTable(profile: SampleProfile, rows = 20, place?: { city?: string; state?: string }) {
   const columns = PROFILES[profile];
-  const escape = (v: string) => (/[",\n]/.test(v) ? `"${v.replace(/"/g, '""')}"` : v);
-  const lines = [columns.map(([h]) => h).join(",")];
+  const body: string[][] = [];
   for (let i = 0; i < rows; i++) {
     const [city, state, pin] = pick(PLACES, i, 5);
     const ctx: Ctx = {
@@ -502,8 +524,16 @@ export function buildSampleCsv(profile: SampleProfile, rows = 20, place?: { city
       state: place?.state ?? state,
       pin: place?.state || place?.city ? "XXXXXX" : pin,
     };
-    lines.push(columns.map(([, value]) => escape(value(ctx))).join(","));
+    body.push(columns.map(([, value]) => value(ctx)));
   }
+  return { headers: columns.map(([h]) => h), rows: body };
+}
+
+/** Build a CSV (opens directly in Excel) of fictional sample rows. */
+export function buildSampleCsv(profile: SampleProfile, rows = 20, place?: { city?: string; state?: string }) {
+  const { headers, rows: body } = buildSampleTable(profile, rows, place);
+  const escape = (v: string) => (/[",\n]/.test(v) ? `"${v.replace(/"/g, '""')}"` : v);
+  const lines = [headers.join(","), ...body.map((row) => row.map(escape).join(","))];
   lines.push("", "\"SAMPLE ONLY - all records are fictional and masked. Contact IndiaB2BData.com for real verified data.\"");
   return "﻿" + lines.join("\r\n");
 }

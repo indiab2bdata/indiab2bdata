@@ -1,11 +1,9 @@
-"use client";
-
-import { motion, useReducedMotion } from "framer-motion";
-import type { ReactNode } from "react";
+import type { CSSProperties, ReactNode } from "react";
 
 /**
- * Scroll-in animation. Content is fully visible in the server HTML (opacity stays 1) - only a
- * small slide is animated, so text never depends on JavaScript or IntersectionObserver to be seen.
+ * Scroll-in fade/slide with zero JavaScript: a CSS scroll-driven animation (see .reveal in globals.css).
+ * Browsers without animation-timeline support, and users with prefers-reduced-motion, simply see the
+ * content - it is always fully present in the server HTML.
  */
 export function Reveal({
   children,
@@ -13,20 +11,14 @@ export function Reveal({
   className = "",
 }: {
   children: ReactNode;
+  /** Staggers sibling cards slightly by shifting where in the scroll range they finish. */
   delay?: number;
   className?: string;
 }) {
-  const reduceMotion = useReducedMotion();
-
+  const style = delay ? ({ "--reveal-offset": `${Math.round(delay * 100)}%` } as CSSProperties) : undefined;
   return (
-    <motion.div
-      initial={reduceMotion ? false : { y: 16 }}
-      whileInView={{ y: 0 }}
-      viewport={{ once: true, margin: "-80px" }}
-      transition={{ duration: 0.5, delay, ease: "easeOut" }}
-      className={className}
-    >
+    <div className={`reveal ${className}`} style={style}>
       {children}
-    </motion.div>
+    </div>
   );
 }
