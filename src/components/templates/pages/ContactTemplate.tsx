@@ -12,7 +12,7 @@ import { siteConfig } from "@/config/site";
 import { getKeywordPagesBySlug } from "@/content";
 import { CONTACT } from "@/content/pages/contact";
 import { DEFAULT_FAQS } from "@/content/pages/faqs";
-import { breadcrumbJsonLd, faqJsonLd, webPageJsonLd } from "@/lib/seo";
+import { breadcrumbJsonLd, faqJsonLd, webPageJsonLd } from "@/lib/seo/jsonld";
 
 const ICONS = { phone: Phone, whatsapp: WhatsAppIcon, email: Mail, office: MapPin };
 

@@ -18,7 +18,7 @@ import { siteConfig } from "@/config/site";
 import { getAllStates, getKeywordPagesBySlug, liveKeywordPages } from "@/content";
 import { DATABASE_HUB } from "@/content/pages/database";
 import { DATABASE_HUB_FAQS } from "@/content/pages/faqs";
-import { breadcrumbJsonLd, faqJsonLd, itemListJsonLd, webPageJsonLd } from "@/lib/seo";
+import { breadcrumbJsonLd, faqJsonLd, itemListJsonLd, webPageJsonLd } from "@/lib/seo/jsonld";
 
 /** Navigation groups limited to live, indexable pages - any live page missing from a group is collected under "More Databases". */
 function directoryGroups() {

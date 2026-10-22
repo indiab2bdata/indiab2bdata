@@ -1,7 +1,7 @@
 import { JsonLd } from "@/components/layout/JsonLd";
 import { PageHero } from "@/components/sections/PageHero";
 import { siteConfig } from "@/config/site";
-import { breadcrumbJsonLd, webPageJsonLd } from "@/lib/seo";
+import { breadcrumbJsonLd, webPageJsonLd } from "@/lib/seo/jsonld";
 import type { LegalPageContent } from "@/types/landing";
 
 /**

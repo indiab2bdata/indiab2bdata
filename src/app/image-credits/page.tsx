@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { ImageCreditsTemplate } from "@/components/templates/pages/ImageCreditsTemplate";
 import { IMAGE_CREDITS } from "@/content/pages/image-credits";
-import { pageMetadata } from "@/lib/seo";
+import { buildMetadata } from "@/lib/seo/metadata";
 
 export const metadata: Metadata = {
-  ...pageMetadata(IMAGE_CREDITS.meta),
+  ...buildMetadata(IMAGE_CREDITS.meta),
   robots: { index: false, follow: true },
 };
 

@@ -15,7 +15,7 @@ import { siteConfig } from "@/config/site";
 import { liveKeywordPages } from "@/content";
 import { DEFAULT_FAQS } from "@/content/pages/faqs";
 import { HOME } from "@/content/pages/home";
-import { faqJsonLd, itemListJsonLd, webPageJsonLd } from "@/lib/seo";
+import { faqJsonLd, itemListJsonLd, webPageJsonLd } from "@/lib/seo/jsonld";
 
 /** Homepage. Keep the section order stable: React's useId (FAQ ids) depends on each child's position. */
 export function HomeTemplate() {

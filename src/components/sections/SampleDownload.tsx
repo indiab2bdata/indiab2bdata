@@ -3,6 +3,9 @@
 import { Download, FileSpreadsheet } from "lucide-react";
 import { Reveal } from "@/components/ui/Reveal";
 import { buildSampleCsv, sampleProfileFor } from "@/lib/sample-data";
+import { SITE_COPY } from "@/content/shared/site-copy";
+
+const COPY = SITE_COPY.sampleDownload;
 
 /** "Download Sample Data" block: generates a dummy CSV in the format of the page's product. */
 export function SampleDownload({
@@ -39,13 +42,13 @@ export function SampleDownload({
             <FileSpreadsheet className="w-7 h-7" strokeWidth={1.8} />
           </div>
           <div className="flex-1">
-            <span className="text-teal-dark text-xs font-semibold uppercase tracking-[0.16em]">Free Sample Format</span>
+            <span className="text-teal-dark text-xs font-semibold uppercase tracking-[0.16em]">{COPY.eyebrow}</span>
             <h2 className="font-display font-extrabold text-xl md:text-2xl text-navy mt-2 tracking-tight">
-              Download Sample Data - {label}
+              {COPY.titlePrefix}
+              {label}
             </h2>
             <p className="mt-2 text-sm text-muted leading-relaxed">
-              See exactly how your file will look. The sample has 20 dummy records (masked, for format preview only)
-              with these columns:
+              {COPY.text}
             </p>
             <div className="mt-3 flex flex-wrap gap-2">
               {headers.map((h) => (
@@ -61,7 +64,7 @@ export function SampleDownload({
             className="shrink-0 inline-flex items-center justify-center gap-2 bg-teal hover:bg-navy text-white text-sm font-semibold px-6 py-3 rounded-full transition-colors cursor-pointer"
           >
             <Download className="w-4 h-4" />
-            Download Sample (CSV)
+            {COPY.button}
           </button>
         </div>
       </Reveal>

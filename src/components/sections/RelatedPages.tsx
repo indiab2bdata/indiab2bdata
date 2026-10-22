@@ -1,12 +1,13 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { Reveal } from "@/components/ui/Reveal";
+import { SITE_COPY } from "@/content/shared/site-copy";
 import type { KeywordPage } from "@/types/landing";
 
 export function RelatedPages({
   pages,
-  heading = "Related Searches",
-  eyebrow = "Explore More",
+  heading = SITE_COPY.relatedPages.heading,
+  eyebrow = SITE_COPY.relatedPages.eyebrow,
 }: {
   pages: KeywordPage[];
   heading?: string;

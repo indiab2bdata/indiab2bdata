@@ -11,7 +11,7 @@ import { ContactModal } from "@/components/layout/ContactModal";
 import { Toaster } from "sonner";
 import { JsonLd } from "@/components/layout/JsonLd";
 import { siteConfig } from "@/config/site";
-import { organizationJsonLd, localBusinessJsonLd, websiteJsonLd } from "@/lib/seo";
+import { organizationJsonLd, localBusinessJsonLd, websiteJsonLd } from "@/lib/seo/jsonld";
 import { cityPath, getAllCities } from "@/content";
 
 const cityEnquiryPages = getAllCities().map((city) => ({
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     template: "%s | IndiaB2BData.com",
   },
   description: siteConfig.defaultDescription,
-  // No root canonical: every page sets its own via pageMetadata(), and a root default of "/"
+  // No root canonical: every page sets its own via buildMetadata(), and a root default of "/"
   // would silently canonicalise any page that forgets to override it to the homepage.
   verification: {
     google: "l8QOpKqoC429_x9cCAOktejf255UdfNx7oXbHJnHYUk",

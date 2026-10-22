@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { JsonLd } from "@/components/layout/JsonLd";
 import { BrowseByCategory } from "@/components/sections/BrowseByCategory";
 import { ContactSplit } from "@/components/sections/ContactSplit";
@@ -14,44 +13,21 @@ import { StatStrip } from "@/components/sections/keyword/StatStrip";
 import { RelatedPages } from "@/components/sections/RelatedPages";
 import { SampleDownload } from "@/components/sections/SampleDownload";
 import { LinkedText } from "@/components/ui/LinkedText";
-import { indexableLinks, isHeldFromIndex } from "@/config/indexing";
+import { indexableLinks } from "@/config/indexing";
 import { PRODUCT_GROUPS } from "@/config/navigation";
-import { siteConfig } from "@/config/site";
 import { getKeywordPagesBySlug } from "@/content";
 import { KEYWORD_COPY } from "@/content/shared/keyword-copy";
 import { getKeywordImage } from "@/lib/keyword-images";
-import { breadcrumbJsonLd, faqJsonLd, pageMetadata, serviceJsonLd, webPageJsonLd } from "@/lib/seo";
+import { keywordJsonLd } from "@/lib/seo/jsonld";
 import type { KeywordPage } from "@/types/landing";
-
-export function keywordMetadata(page: KeywordPage): Metadata {
-  const visual = getKeywordImage(page.slug, page.keyword);
-  const meta = pageMetadata({
-    title: page.title,
-    description: page.metaDescription,
-    path: `/${page.slug}`,
-    keywords: [page.keyword],
-    image: { url: `${siteConfig.url}${visual.src}`, width: visual.width, height: visual.height, alt: visual.alt },
-  });
-  return isHeldFromIndex(page.slug) ? { ...meta, robots: { index: false, follow: true } } : meta;
-}
 
 /** Legacy layout for category pages not yet migrated to the landing template. */
 export function KeywordTemplate({ page }: { page: KeywordPage }) {
-  const url = `${siteConfig.url}/${page.slug}`;
   const visual = getKeywordImage(page.slug, page.keyword);
   const relatedPages = getKeywordPagesBySlug(page.related ?? []);
   const contentLinks = page.contentLinks ? indexableLinks(page.contentLinks) : undefined;
   const productName = page.eyebrow.replace(/ India$/, "");
-
-  const schema = [
-    breadcrumbJsonLd([
-      { name: "Home", url: siteConfig.url },
-      { name: page.keyword, url },
-    ]),
-    webPageJsonLd({ name: page.title, description: page.metaDescription, url, about: page.keyword }),
-    faqJsonLd(page.faqs),
-    serviceJsonLd({ name: page.keyword, description: page.metaDescription }),
-  ];
+  const schema = keywordJsonLd(page);
 
   return (
     <>

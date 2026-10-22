@@ -13,7 +13,7 @@ import { siteConfig } from "@/config/site";
 import { getKeywordPagesBySlug } from "@/content";
 import { ABOUT } from "@/content/pages/about";
 import { ABOUT_FAQS } from "@/content/pages/faqs";
-import { breadcrumbJsonLd, faqJsonLd, webPageJsonLd } from "@/lib/seo";
+import { breadcrumbJsonLd, faqJsonLd, webPageJsonLd } from "@/lib/seo/jsonld";
 
 export function AboutTemplate() {
   const url = `${siteConfig.url}${ABOUT.meta.path}`;

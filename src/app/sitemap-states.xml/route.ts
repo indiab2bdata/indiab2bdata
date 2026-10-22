@@ -1,4 +1,4 @@
-import { sitemapResponse } from "@/lib/sitemaps";
+import { sitemapResponse } from "@/lib/seo/sitemap";
 
 export const dynamic = "force-static";
 

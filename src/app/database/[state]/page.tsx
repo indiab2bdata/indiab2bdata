@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { landingMetadata } from "@/components/templates/LandingTemplate";
+import { landingMetadata } from "@/lib/seo/metadata";
 import { StateTemplate } from "@/components/templates/StateTemplate";
 import { getAllStates, getState } from "@/content";
 

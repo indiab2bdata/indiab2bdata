@@ -1,11 +1,12 @@
 import Link from "next/link";
 import { MapPin } from "lucide-react";
 import { Reveal } from "@/components/ui/Reveal";
+import { SITE_COPY } from "@/content/shared/site-copy";
 import { cityPath, getAllCities } from "@/content";
 
 export function PopularCities({
-  heading = "Popular Cities",
-  eyebrow = "City Databases",
+  heading = SITE_COPY.popularCities.heading,
+  eyebrow = SITE_COPY.popularCities.eyebrow,
 }: {
   heading?: string;
   eyebrow?: string;

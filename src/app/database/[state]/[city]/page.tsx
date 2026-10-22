@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { CityTemplate } from "@/components/templates/CityTemplate";
-import { landingMetadata } from "@/components/templates/LandingTemplate";
+import { landingMetadata } from "@/lib/seo/metadata";
 import { getAllCities, getCity } from "@/content";
 
 export const dynamicParams = false;

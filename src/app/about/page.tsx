@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { AboutTemplate } from "@/components/templates/pages/AboutTemplate";
 import { ABOUT } from "@/content/pages/about";
-import { pageMetadata } from "@/lib/seo";
+import { buildMetadata } from "@/lib/seo/metadata";
 
-export const metadata: Metadata = pageMetadata(ABOUT.meta);
+export const metadata: Metadata = buildMetadata(ABOUT.meta);
 
 export default function AboutPage() {
   return <AboutTemplate />;

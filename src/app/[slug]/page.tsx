@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { CategoryTemplate } from "@/components/templates/CategoryTemplate";
-import { keywordMetadata } from "@/components/templates/KeywordTemplate";
-import { landingMetadata } from "@/components/templates/LandingTemplate";
 import { getCategory, liveCategories } from "@/content";
+import { keywordMetadata, landingMetadata } from "@/lib/seo/metadata";
 
 export const dynamicParams = false;
 

@@ -7,6 +7,7 @@ import { Menu, Phone, X } from "lucide-react";
 import { siteConfig } from "@/config/site";
 import { useModal } from "@/components/layout/ModalContext";
 import { HEADER_LINKS } from "@/config/navigation";
+import { SITE_COPY } from "@/content/shared/site-copy";
 
 export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -30,7 +31,7 @@ export function Header() {
         <Link href="/" className="flex items-center">
           <Image
             src="/images/logo.png"
-            alt="IndiaB2BData.com"
+            alt={SITE_COPY.logoAlt}
             width={400}
             height={200}
             priority
@@ -63,14 +64,14 @@ export function Header() {
             onClick={() => openModal("nav")}
             className="bg-teal hover:bg-teal-dark active:scale-[0.98] text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-all duration-200 shadow-md shadow-teal/20 hover:shadow-lg hover:shadow-teal/30 hover:scale-[1.02] cursor-pointer"
           >
-            Get Free Sample
+            {SITE_COPY.header.sampleCta}
           </button>
         </div>
 
         <button
           onClick={() => setMenuOpen((v) => !v)}
           className="lg:hidden p-2 text-navy cursor-pointer"
-          aria-label="Menu"
+          aria-label={SITE_COPY.header.menuLabel}
         >
           {menuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
@@ -95,7 +96,7 @@ export function Header() {
             }}
             className="w-full bg-teal text-white font-semibold py-2.5 rounded-full mt-2 cursor-pointer"
           >
-            Get Free Sample
+            {SITE_COPY.header.sampleCta}
           </button>
         </div>
       )}

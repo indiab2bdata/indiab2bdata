@@ -10,7 +10,7 @@ import { siteConfig } from "@/config/site";
 import { getKeywordPagesBySlug } from "@/content";
 import { BLOG } from "@/content/pages/blog";
 import { GUIDES_FAQS } from "@/content/pages/faqs";
-import { breadcrumbJsonLd, faqJsonLd, itemListJsonLd, webPageJsonLd } from "@/lib/seo";
+import { breadcrumbJsonLd, faqJsonLd, itemListJsonLd, webPageJsonLd } from "@/lib/seo/jsonld";
 
 export function BlogTemplate() {
   const url = `${siteConfig.url}${BLOG.meta.path}`;

@@ -30,9 +30,14 @@ export const siteConfig = {
   mapsHref:
     "https://www.google.com/maps/search/?api=1&query=T-10%2C+Sai+Mandir+St%2C+Mamledarwadi%2C+Malad+West%2C+Mumbai%2C+Maharashtra",
   defaultWhatsappMessage: "Hi, I want to know more about IndiaB2BData",
+  /** <title> template for every page except the homepage. */
+  titleTemplate: "%s | IndiaB2BData.com",
+  googleSiteVerification: "l8QOpKqoC429_x9cCAOktejf255UdfNx7oXbHJnHYUk",
+  /** Web app manifest. */
+  manifest: { shortName: "IndiaB2BData", backgroundColor: "#ffffff", themeColor: "#0b78d0" },
   /**
    * Shown on /data-sourcing-compliance. Replace each {{PLACEHOLDER}} with the real value.
-   * Until then the page falls back to neutral wording (see shown() in lib/landing/display.ts).
+   * Until then the page falls back to neutral wording (see shown() in lib/utils.ts).
    */
   compliance: {
     grievanceOfficerName: "{{GRIEVANCE_OFFICER_NAME}}",

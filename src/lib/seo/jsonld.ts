@@ -1,72 +1,12 @@
-import type { Metadata } from "next";
 import { siteConfig } from "@/config/site";
-
-type OgImage = { url: string; width?: number; height?: number; alt?: string };
-
-const DEFAULT_OG_IMAGE: OgImage = {
-  url: `${siteConfig.url}/images/home/hero.jpg`,
-  width: 1200,
-  height: 900,
-  alt: `${siteConfig.name} - Verified B2B business data across India`,
-};
-
-/** Resolves a site-relative path to an absolute https://... URL. */
-export function absoluteUrl(path: string) {
-  if (path.startsWith("http")) return path;
-  return `${siteConfig.url}${path.startsWith("/") ? path : `/${path}`}`;
-}
+import { DEFAULT_OG_IMAGE } from "@/lib/seo/metadata";
+import { isPlaceholder } from "@/lib/utils";
+import type { KeywordPage, LandingPage } from "@/types/landing";
 
 /**
- * Builds the full title/description/canonical/OG/Twitter block for a page.
- * Every route should call this so canonical + social previews are never
- * silently missing (Next.js metadata is only shallow-merged from the root
- * layout, so a page that skips `openGraph` entirely loses it - see
- * node_modules/next/dist/docs/.../generate-metadata.md#merging).
+ * JSON-LD builders. Page-level schema is always built from the same content object the page renders,
+ * so FAQ, breadcrumb and service text can never drift from what visitors see.
  */
-export function pageMetadata({
-  title,
-  titleTag = title,
-  description,
-  path,
-  keywords,
-  image,
-}: {
-  title: string;
-  /** Overrides the <title> tag independently of the OG/Twitter title - pass
-   * `null` to skip the <title> tag entirely and let it inherit the layout's
-   * default (used on the homepage, which shouldn't get the title template
-   * applied twice). */
-  titleTag?: string | null;
-  description: string;
-  path: string;
-  keywords?: string[];
-  image?: OgImage;
-}): Metadata {
-  const url = absoluteUrl(path);
-  const ogImage = image ?? DEFAULT_OG_IMAGE;
-
-  return {
-    ...(titleTag ? { title: titleTag } : {}),
-    description,
-    ...(keywords ? { keywords } : {}),
-    alternates: { canonical: url },
-    openGraph: {
-      title,
-      description,
-      url,
-      siteName: siteConfig.name,
-      locale: "en_IN",
-      type: "website",
-      images: [ogImage],
-    },
-    twitter: {
-      card: "summary_large_image",
-      title,
-      description,
-      images: [ogImage.url],
-    },
-  };
-}
 
 export function breadcrumbJsonLd(items: { name: string; url: string }[]) {
   return {
@@ -245,3 +185,35 @@ export const websiteJsonLd = {
   publisher: { "@id": `${siteConfig.url}/#organization` },
   inLanguage: "en-IN",
 };
+
+/** Schema for a page on the landing template: breadcrumbs, WebPage, Service and FAQPage. */
+export function landingJsonLd(page: LandingPage) {
+  const url = `${siteConfig.url}${page.path}`;
+  const price = Number(page.pricingHint.from.replace(/[^\d.]/g, ""));
+  return [
+    breadcrumbJsonLd([{ name: "Home", url: siteConfig.url }, ...page.breadcrumbs.map((b) => ({ name: b.label, url: `${siteConfig.url}${b.href}` }))]),
+    { ...webPageJsonLd({ name: page.title, description: page.metaDescription, url, about: page.name }), dateModified: `${page.lastUpdated}-01` },
+    databaseServiceJsonLd({
+      name: page.name,
+      description: page.metaDescription,
+      url,
+      areaServed: page.areaServed,
+      priceFrom: !isPlaceholder(page.pricingHint.from) && price > 0 ? price : undefined,
+    }),
+    faqJsonLd(page.buyerFaqs),
+  ];
+}
+
+/** Schema for a page on the legacy keyword template. */
+export function keywordJsonLd(page: KeywordPage) {
+  const url = `${siteConfig.url}/${page.slug}`;
+  return [
+    breadcrumbJsonLd([
+      { name: "Home", url: siteConfig.url },
+      { name: page.keyword, url },
+    ]),
+    webPageJsonLd({ name: page.title, description: page.metaDescription, url, about: page.keyword }),
+    faqJsonLd(page.faqs),
+    serviceJsonLd({ name: page.keyword, description: page.metaDescription }),
+  ];
+}

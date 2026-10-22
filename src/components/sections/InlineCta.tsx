@@ -5,10 +5,11 @@ import { Reveal } from "@/components/ui/Reveal";
 import { useModal } from "@/components/layout/ModalContext";
 import { siteConfig } from "@/config/site";
 import { WhatsAppIcon } from "@/components/ui/icons/WhatsAppIcon";
+import { SITE_COPY } from "@/content/shared/site-copy";
 
 export function InlineCta({
   text,
-  buttonLabel = "Get Free Sample",
+  buttonLabel = SITE_COPY.inlineCta.button,
   id,
   whatsappMessage,
 }: {
@@ -43,7 +44,7 @@ export function InlineCta({
                 className="inline-flex items-center justify-center gap-2 rounded-full border border-teal/30 bg-white px-5 py-2.5 text-sm font-semibold text-teal transition-colors hover:bg-teal/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal"
               >
                 <WhatsAppIcon className="h-4 w-4 shrink-0" />
-                Discuss on WhatsApp
+                {SITE_COPY.inlineCta.whatsapp}
               </a>
             )}
           </div>

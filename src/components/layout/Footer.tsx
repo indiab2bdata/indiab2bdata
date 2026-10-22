@@ -5,6 +5,9 @@ import { siteConfig } from "@/config/site";
 import { getAllStates } from "@/content";
 import { ProtectedEmail } from "@/components/ui/ProtectedEmail";
 import { FOOTER_CORE_DATABASES, FOOTER_QUICK_LINKS } from "@/config/navigation";
+import { SITE_COPY } from "@/content/shared/site-copy";
+
+const COPY = SITE_COPY.footer;
 
 export function Footer() {
   return (
@@ -14,7 +17,7 @@ export function Footer() {
           <div className="flex items-center gap-2">
             <Image
               src="/images/favicon.png"
-              alt="IndiaB2BData.com"
+              alt={SITE_COPY.logoAlt}
               width={32}
               height={32}
               className="w-8 h-8 rounded-md"
@@ -25,13 +28,12 @@ export function Footer() {
             </span>
           </div>
           <p className="mt-4 text-sm leading-relaxed text-slate-400">
-            Verified B2B business data across India - mobile numbers, emails and company
-            records for smarter sales &amp; marketing.
+            {COPY.tagline}
           </p>
         </div>
 
         <div>
-          <p className="font-display font-bold text-white text-sm mb-4">Quick Links</p>
+          <p className="font-display font-bold text-white text-sm mb-4">{COPY.quickLinks}</p>
           <ul className="space-y-2 text-sm">
             {FOOTER_QUICK_LINKS.map((link) => (
               <li key={link.href}>
@@ -45,7 +47,7 @@ export function Footer() {
 
         <div>
           <p className="font-display font-bold text-white text-sm mb-4">
-            <Link href="/database" className="hover:text-teal-light transition-colors">Database by State</Link>
+            <Link href="/database" className="hover:text-teal-light transition-colors">{COPY.states}</Link>
           </p>
           <ul className="space-y-2 text-sm">
             {getAllStates().map((state) => (
@@ -59,7 +61,7 @@ export function Footer() {
         </div>
 
         <div>
-          <p className="font-display font-bold text-white text-sm mb-4">Core Databases</p>
+          <p className="font-display font-bold text-white text-sm mb-4">{COPY.coreDatabases}</p>
           <ul className="space-y-2 text-sm">
             {FOOTER_CORE_DATABASES.map((link) => (
               <li key={link.href}>
@@ -72,7 +74,7 @@ export function Footer() {
         </div>
 
         <div>
-          <p className="font-display font-bold text-white text-sm mb-4">Get in Touch</p>
+          <p className="font-display font-bold text-white text-sm mb-4">{COPY.contact}</p>
           <ul className="space-y-3 text-sm">
             <li className="flex items-center gap-2">
               <Phone className="w-4 h-4 text-teal-light shrink-0" strokeWidth={1.8} />
@@ -91,19 +93,19 @@ export function Footer() {
       </div>
 
       <div className="max-w-7xl mx-auto px-5 md:px-8 mt-12 pt-6 border-t border-white/10 flex flex-col sm:flex-row justify-between gap-3 text-xs text-slate-400">
-        <p>© 2026 IndiaB2BData.com - All rights reserved.</p>
+        <p>{COPY.copyright}</p>
         <p>
-          Data provided for legitimate marketing use only.{" "}
+          {COPY.legalNote}{" "}
           <Link href="/privacy-policy" className="hover:text-teal-light transition">
-            Privacy Policy
+            {COPY.privacy}
           </Link>{" "}
           ·{" "}
           <Link href="/terms-and-conditions" className="hover:text-teal-light transition">
-            Terms &amp; Conditions
+            {COPY.terms}
           </Link>{" "}
           ·{" "}
           <Link href="/image-credits" className="hover:text-teal-light transition">
-            Image Credits
+            {COPY.credits}
           </Link>
         </p>
       </div>

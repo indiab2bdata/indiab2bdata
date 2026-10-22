@@ -3,6 +3,9 @@
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import { ArrowUpRight, Search } from "lucide-react";
+import { SITE_COPY } from "@/content/shared/site-copy";
+
+const COPY = SITE_COPY.directory;
 
 type Group = { id: string; heading: string; description: string; links: { href: string; label: string }[] };
 
@@ -31,19 +34,19 @@ export function DirectoryBrowser({ groups }: { groups: Group[] }) {
     <div>
       <div className="sticky top-16 z-10 -mx-5 space-y-3 bg-bgsoft/95 px-5 py-4 backdrop-blur md:top-20 md:mx-0 md:rounded-2xl md:px-0">
         <label className="relative block">
-          <span className="sr-only">Search databases</span>
+          <span className="sr-only">{COPY.searchLabel}</span>
           <Search className="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-muted" />
           <input
             type="search"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search a database, e.g. doctors, GST, exporters"
+            placeholder={COPY.searchPlaceholder}
             className="w-full rounded-full border border-[#DCEAF3] bg-white py-3 pl-11 pr-4 text-sm text-navy placeholder:text-slate-400 focus:border-teal focus:outline-none focus:ring-2 focus:ring-teal/30"
           />
         </label>
-        <div className="flex gap-2 overflow-x-auto pb-1" role="group" aria-label="Filter by category">
+        <div className="flex gap-2 overflow-x-auto pb-1" role="group" aria-label={COPY.filterLabel}>
           <button type="button" onClick={() => setActive("all")} className={pill(active === "all")} aria-pressed={active === "all"}>
-            All
+            {COPY.all}
           </button>
           {groups.map((g) => (
             <button key={g.id} type="button" onClick={() => setActive(g.id)} className={pill(active === g.id)} aria-pressed={active === g.id}>
@@ -54,7 +57,7 @@ export function DirectoryBrowser({ groups }: { groups: Group[] }) {
       </div>
 
       <p className="mt-4 text-sm text-muted" aria-live="polite">
-        {total} {total === 1 ? "database" : "databases"}
+        {total} {COPY.unit(total)}
       </p>
 
       <div className="mt-6 space-y-12">
@@ -79,7 +82,7 @@ export function DirectoryBrowser({ groups }: { groups: Group[] }) {
         ))}
         {total === 0 && (
           <p className="rounded-xl bg-white p-6 text-center text-muted ring-1 ring-[#DCEAF3]">
-            No match. Tell us your audience and we&apos;ll check coverage, using the form below.
+            {COPY.noMatch}
           </p>
         )}
       </div>

@@ -4,6 +4,9 @@ import { FileSpreadsheet, Phone } from "lucide-react";
 import { useModal } from "@/components/layout/ModalContext";
 import { WhatsAppIcon } from "@/components/ui/icons/WhatsAppIcon";
 import { siteConfig } from "@/config/site";
+import { SITE_COPY } from "@/content/shared/site-copy";
+
+const COPY = SITE_COPY.mobileBar;
 
 /** Sticky bottom bar on phones (Call / WhatsApp / Get Sample). Desktop keeps the floating buttons. */
 export function MobileCtaBar() {
@@ -12,12 +15,12 @@ export function MobileCtaBar() {
 
   return (
     <nav
-      aria-label="Quick contact"
+      aria-label={COPY.label}
       className="site-mobile-cta fixed inset-x-0 bottom-0 z-40 flex border-t border-[#DCEAF3] bg-white/95 pb-[env(safe-area-inset-bottom)] shadow-[0_-8px_24px_-12px_rgba(16,42,67,0.25)] backdrop-blur md:hidden"
     >
       <a href={siteConfig.phoneHref} className={`${item} text-navy`}>
         <Phone className="h-5 w-5" strokeWidth={1.8} />
-        Call
+        {COPY.call}
       </a>
       <a
         href={siteConfig.whatsappHref(siteConfig.defaultWhatsappMessage)}
@@ -26,11 +29,11 @@ export function MobileCtaBar() {
         className={`${item} text-[#0b6b39]`}
       >
         <WhatsAppIcon className="h-5 w-5" />
-        WhatsApp
+        {COPY.whatsapp}
       </a>
       <button type="button" onClick={() => openModal("mobile-cta-bar")} className={`${item} m-1.5 cursor-pointer rounded-xl bg-teal text-white`}>
         <FileSpreadsheet className="h-5 w-5" strokeWidth={1.8} />
-        Get Sample
+        {COPY.sample}
       </button>
     </nav>
   );
