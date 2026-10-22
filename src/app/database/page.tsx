@@ -8,7 +8,10 @@ import { InlineCta } from "@/components/inline-cta";
 import { SplitHero, ContactSplit } from "@/components/landing/sections";
 import { JsonLd } from "@/components/json-ld";
 import { databaseStates } from "@/lib/database-pages";
-import { getKeywordPagesBySlug } from "@/lib/keyword-pages";
+import { getKeywordPagesBySlug, liveKeywordPages } from "@/lib/keyword-pages";
+import { PRODUCT_GROUPS } from "@/lib/product-groups";
+import { DirectoryBrowser } from "@/components/directory-browser";
+import { isHeldFromIndex } from "@/lib/indexing";
 import { PopularCities } from "@/components/popular-cities";
 import { siteConfig } from "@/lib/site-config";
 import { pageMetadata, breadcrumbJsonLd, webPageJsonLd, itemListJsonLd, faqJsonLd } from "@/lib/seo";
@@ -16,9 +19,22 @@ import { DATABASE_HUB_FAQS } from "@/lib/faq-data";
 import { Faq } from "@/components/sections/faq";
 import { SampleDownload } from "@/components/sample-download";
 
-const TITLE = "Business Database by State | India-Wide Coverage";
+const TITLE = "B2B Database Directory India | All Categories & States";
 const DESCRIPTION =
-  "Browse verified B2B business databases state by state - Maharashtra, Gujarat, Tamil Nadu, Delhi, Uttar Pradesh, Karnataka, Haryana and Telangana. Mobile numbers, emails and company records.";
+  "Every IndiaB2BData database in one place: professionals, companies, registry, trade, consumer and education data, plus state databases for Maharashtra, Gujarat, Delhi, Karnataka and more.";
+
+/** Footer groups, limited to live pages - with any live page missing from a group collected under "More Databases". */
+const liveHrefs = new Set(liveKeywordPages.filter((p) => !isHeldFromIndex(p.slug)).map((p) => `/${p.slug}`));
+const groupedHrefs = new Set(PRODUCT_GROUPS.flatMap((g) => g.links.map((l) => l.href)));
+const directoryGroups = [
+  ...PRODUCT_GROUPS.map((g) => ({ ...g, links: g.links.filter((l) => liveHrefs.has(l.href)) })),
+  {
+    id: "more",
+    heading: "More Databases",
+    description: "Specialist lists that don't fit a single category.",
+    links: liveKeywordPages.filter((p) => !groupedHrefs.has(`/${p.slug}`) && !isHeldFromIndex(p.slug)).map((p) => ({ href: `/${p.slug}`, label: p.keyword.replace(/ India$/, "") })),
+  },
+].filter((g) => g.links.length > 0);
 
 export const metadata: Metadata = pageMetadata({
   title: TITLE,
@@ -29,12 +45,12 @@ export const metadata: Metadata = pageMetadata({
 
 const breadcrumbItems = [
   { label: "Home", href: "/" },
-  { label: "Database by State" },
+  { label: "Database Directory" },
 ];
 
 const breadcrumbSchema = breadcrumbJsonLd([
   { name: "Home", url: siteConfig.url },
-  { name: "Database by State", url: `${siteConfig.url}/database` },
+  { name: "Database Directory", url: `${siteConfig.url}/database` },
 ]);
 
 const webPageSchema = webPageJsonLd({
@@ -45,8 +61,11 @@ const webPageSchema = webPageJsonLd({
 });
 
 const stateListSchema = itemListJsonLd(
-  databaseStates.map((state) => ({ name: `${state.name} B2B Database`, url: `${siteConfig.url}/database/${state.slug}` })),
-  "B2B Database by State"
+  [
+    ...databaseStates.map((state) => ({ name: `${state.name} Business Database`, url: `${siteConfig.url}/database/${state.slug}` })),
+    ...directoryGroups.flatMap((g) => g.links.map((l) => ({ name: l.label, url: `${siteConfig.url}${l.href}` }))),
+  ],
+  "IndiaB2BData Database Directory"
 );
 
 export default function DatabaseHubPage() {
@@ -67,25 +86,32 @@ export default function DatabaseHubPage() {
       <JsonLd data={[breadcrumbSchema, webPageSchema, stateListSchema, faqJsonLd(DATABASE_HUB_FAQS)]} />
 
       <SplitHero
-        eyebrow="Database by State"
-        title="Verified B2B Business Database, State by State"
-        description="Pick a state to see coverage, major cities and industries - or tell us your exact requirement and we'll build a custom list."
+        eyebrow="Database Directory"
+        title="Every B2B Database We Offer, in One Place"
+        description={`Browse ${directoryGroups.reduce((n, g) => n + g.links.length, 0)} category databases and ${databaseStates.length} state databases. Search by audience, or tell us your requirement and we'll build a custom list.`}
         breadcrumbs={breadcrumbItems}
-        chips={["8 State Hubs","700+ Cities","Industry Filters","DND-Scrubbed"]}
+        chips={[]}
         source="database-hub-hero-form"
         requirement="State-Wise Business Database"
         formTitle="Get Your State-Wise Data"
       />
 
       <section className="py-16 md:py-20 max-w-7xl mx-auto px-5 md:px-8">
+        <Reveal className="max-w-2xl mb-6">
+          <span className="text-teal-dark text-xs font-semibold uppercase tracking-[0.16em]">Browse by Category</span>
+          <h2 className="font-display font-extrabold text-2xl md:text-3xl text-navy mt-3 tracking-tight">Find Your Audience</h2>
+        </Reveal>
+        <DirectoryBrowser groups={directoryGroups} />
+      </section>
+
+      <section id="locations" className="scroll-mt-24 py-16 md:py-20 max-w-7xl mx-auto px-5 md:px-8">
         <Reveal className="max-w-2xl mb-10">
-          <span className="text-teal text-xs font-semibold uppercase tracking-[0.16em]">Browse States</span>
+          <span className="text-teal-dark text-xs font-semibold uppercase tracking-[0.16em]">Browse by Location</span>
           <h2 className="font-display font-extrabold text-2xl md:text-3xl text-navy mt-3 tracking-tight">
-            Choose Your State
+            State Databases
           </h2>
           <p className="mt-4 text-muted leading-relaxed">
-            Every state database is verified, deduplicated and DND-scrubbed - filterable further by city,
-            industry or company size once you get in touch.
+            Each state page breaks down coverage by city and lists the industries that state is strongest in.
           </p>
         </Reveal>
 
@@ -124,9 +150,9 @@ export default function DatabaseHubPage() {
         </div>
       </section>
 
-      <SampleDownload slug="state-wise-business-database" label="State-Wise Business Database" />
+      <PopularCities eyebrow="Browse by Location" heading="City Databases" />
 
-      <PopularCities heading="Popular City Databases" />
+      <SampleDownload slug="state-wise-business-database" label="State-Wise Business Database" />
 
       <InlineCta id="database-hub-cta" text="Don't see your state listed? We cover all of India - tell us what you need." buttonLabel="Talk to Our Team" />
 
