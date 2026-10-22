@@ -6,6 +6,7 @@
 
 export type SampleProfile =
   | "business"
+  | "chiefManager"
   | "gst"
   | "mca"
   | "email"
@@ -316,6 +317,15 @@ const PROFILES: Record<SampleProfile, Column[]> = {
     ["Work Email", (c) => "employee" + (c.i + 1) + "@example.com"],
     ["Office Location", (c) => "Sample Office Area, " + c.city],
     ...loc,
+  ],
+  chiefManager: [
+    person,
+    ["Designation", (c) => pick(["Chief Manager", "Chief Manager - Credit", "Chief Manager - Operations", "Chief Manager - HR", "Chief Manager - Finance", "Chief Manager - Projects"], c.i)],
+    ["Organisation", (c) => pick(["Sample Public Sector Bank", "Demo Energy PSU", "Example Industries Ltd", "Specimen Finance Ltd"], c.i)],
+    ["Organisation Type", (c) => pick(["Public Sector Bank", "PSU", "Private Company", "NBFC"], c.i)],
+    ["Grade / Scale", (c) => pick(["Scale IV", "E-6", "M-5", "Scale IV"], c.i)],
+    ["Branch / Office", (c) => "Sample Regional Office, " + c.city],
+    phone, mail, ...loc,
   ],
   seniorManager: [
     person,

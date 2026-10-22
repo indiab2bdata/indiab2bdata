@@ -44,7 +44,7 @@ import type { SampleProfile } from "@/lib/sample-data";
  *   newly-reg    - recent incorporations as a recurring feed
  *   manufacturer - by product category and plant location
  */
-type CoreInput = {
+export type CoreInput = {
   slug: string;
   name: string;
   title: string;
@@ -68,7 +68,7 @@ type CoreInput = {
   footerTitle: string;
 };
 
-function coreProfile(c: CoreInput): LandingProfile {
+export function coreProfile(c: CoreInput): LandingProfile {
   const path = `/${c.slug}`;
   const rows: CoverageRow[] = c.coverage.rows.map(([segment, detail]) => ({ segment, detail, records: "{{COUNT}}", fillRate: "{{FILL}}" }));
   return {
