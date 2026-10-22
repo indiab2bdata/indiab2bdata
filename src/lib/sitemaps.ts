@@ -1,4 +1,4 @@
-import type { MetadataRoute } from "next";
+import { isHeldFromIndex } from "@/lib/indexing";
 import { siteConfig } from "@/lib/site-config";
 import { liveKeywordPages } from "@/lib/keyword-pages";
 import { databaseStates } from "@/lib/database-pages";
@@ -14,15 +14,25 @@ const CONTENT_UPDATED = {
   "/about": "2026-09-30",
   "/privacy-policy": "2026-09-24",
   "/terms-and-conditions": "2026-09-24",
-  "/database": "2026-10-07",
+  "/database": "2026-10-22",
   "/blog": "2026-10-07",
   "/contact": "2026-09-30",
+  "/data-sourcing-compliance": "2026-10-22",
   keywordPages: "2026-10-16",
-  statePages: "2026-10-07",
-  cityPages: "2026-10-07",
+  statePages: "2026-10-22",
+  cityPages: "2026-10-22",
 } as const;
 
 const KEYWORD_CONTENT_UPDATED: Record<string, string> = {
+  "b2b-database-india": "2026-10-22",
+  "company-database-india": "2026-10-22",
+  "corporate-database-india": "2026-10-22",
+  "mca-company-database-india": "2026-10-22",
+  "gst-database-india": "2026-10-22",
+  "b2b-leads-database-india": "2026-10-22",
+  "industry-wise-company-database-india": "2026-10-22",
+  "newly-registered-companies-india": "2026-10-22",
+  "manufacturer-database-india": "2026-10-22",
   "metals-minerals-industries-database-india": "2026-10-20",
   "medical-representatives-database-india": "2026-10-19",
   "chemical-pharma-companies-database-india": "2026-10-19",
@@ -35,7 +45,6 @@ const KEYWORD_CONTENT_UPDATED: Record<string, string> = {
   "logistics-management-service-providers-database-india": "2026-10-19",
   "machinery-suppliers-services-database-india": "2026-10-20",
   "agents-database-india": "2026-10-19",
-  "manufacturer-database-india": "2026-10-19",
   "jewellers-database-india": "2026-10-18",
   "lecturers-professors-database-india": "2026-10-18",
   "legal-firms-database-india": "2026-10-18",
@@ -58,7 +67,7 @@ const KEYWORD_CONTENT_UPDATED: Record<string, string> = {
   "health-beauty-shops-business-database-india": "2026-10-17",
   "designers-database-india": "2026-10-17",
   "beauty-parlours-salons-spa-database-india": "2026-10-17",
-  "government-employees-database-india": "2026-10-17",
+  "government-employees-database-india": "2026-10-22",
   "chief-managers-database-india": "2026-10-17",
   "general-senior-managers-database-india": "2026-10-18",
   "facebook-users-database-india": "2026-10-17",
@@ -74,28 +83,55 @@ const KEYWORD_CONTENT_UPDATED: Record<string, string> = {
   "gems-jewellery-shops-database-india": "2026-10-18",
 };
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const staticRoutes = (
-    ["", "/about", "/privacy-policy", "/terms-and-conditions", "/database", "/blog", "/contact"] as const
-  ).map((route) => ({
-    url: `${siteConfig.url}${route}`,
-    lastModified: CONTENT_UPDATED[route],
-  }));
+type Entry = { url: string; lastModified: string };
 
-  const keywordRoutes = liveKeywordPages.map((page) => ({
-    url: `${siteConfig.url}/${page.slug}`,
-    lastModified: KEYWORD_CONTENT_UPDATED[page.slug] ?? CONTENT_UPDATED.keywordPages,
-  }));
+const entry = (path: string, lastModified: string): Entry => ({ url: `${siteConfig.url}${path}`, lastModified });
 
-  const databaseRoutes = databaseStates.map((state) => ({
-    url: `${siteConfig.url}/database/${state.slug}`,
-    lastModified: CONTENT_UPDATED.statePages,
-  }));
+/**
+ * Sitemap groups, each served as its own file (see app/sitemap-*.xml/route.ts) and listed in the
+ * /sitemap.xml index. Pages held from indexing (lib/indexing.ts) are left out.
+ */
+export const SITEMAPS = {
+  /** Homepage, the /database hub and every category page. */
+  core: (): Entry[] => [
+    entry("", CONTENT_UPDATED[""]),
+    entry("/database", CONTENT_UPDATED["/database"]),
+    ...liveKeywordPages
+      .filter((page) => !isHeldFromIndex(page.slug))
+      .map((page) => entry(`/${page.slug}`, KEYWORD_CONTENT_UPDATED[page.slug] ?? CONTENT_UPDATED.keywordPages)),
+  ],
+  /** State and city databases. */
+  states: (): Entry[] => [
+    ...databaseStates.map((state) => entry(`/database/${state.slug}`, CONTENT_UPDATED.statePages)),
+    ...Object.values(cities).map((city) => entry(cityPath(city), CONTENT_UPDATED.cityPages)),
+  ],
+  /** Blog, company, trust and legal pages. */
+  guides: (): Entry[] =>
+    (["/blog", "/about", "/contact", "/data-sourcing-compliance", "/privacy-policy", "/terms-and-conditions"] as const).map((route) =>
+      entry(route, CONTENT_UPDATED[route])
+    ),
+};
 
-  const cityRoutes = Object.values(cities).map((city) => ({
-    url: `${siteConfig.url}${cityPath(city)}`,
-    lastModified: CONTENT_UPDATED.cityPages,
-  }));
+export type SitemapName = keyof typeof SITEMAPS;
 
-  return [...staticRoutes, ...keywordRoutes, ...databaseRoutes, ...cityRoutes];
+const xml = (body: string) =>
+  new Response(`<?xml version="1.0" encoding="UTF-8"?>\n${body}\n`, { headers: { "Content-Type": "application/xml; charset=utf-8" } });
+
+export function sitemapResponse(name: SitemapName) {
+  const urls = SITEMAPS[name]()
+    .map((e) => `  <url>\n    <loc>${e.url}</loc>\n    <lastmod>${e.lastModified}</lastmod>\n  </url>`)
+    .join("\n");
+  return xml(`<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>`);
 }
+
+/** The index's lastmod for each file is the newest lastmod inside it. */
+export function sitemapIndexResponse() {
+  const items = (Object.keys(SITEMAPS) as SitemapName[])
+    .map((name) => {
+      const newest = SITEMAPS[name]().reduce((max, e) => (e.lastModified > max ? e.lastModified : max), "");
+      return `  <sitemap>\n    <loc>${siteConfig.url}/sitemap-${name}.xml</loc>\n    <lastmod>${newest}</lastmod>\n  </sitemap>`;
+    })
+    .join("\n");
+  return xml(`<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${items}\n</sitemapindex>`);
+}
+
