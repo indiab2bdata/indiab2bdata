@@ -1,7 +1,13 @@
 /** Live data products, grouped for footer navigation. Labels are descriptive, not exact-match keywords. */
-export const PRODUCT_GROUPS: { heading: string; links: { href: string; label: string }[] }[] = [
+import { indexableLinks } from "@/lib/indexing";
+
+type ProductGroup = { id: string; heading: string; description: string; links: { href: string; label: string }[] };
+
+const ALL_PRODUCT_GROUPS: ProductGroup[] = [
   {
+    id: "general",
     heading: "General",
+    description: "Broad B2B and company lists for pan-India prospecting.",
     links: [
       { href: "/b2b-database-india", label: "B2B Database" },
       { href: "/company-database-india", label: "Company Database" },
@@ -9,7 +15,9 @@ export const PRODUCT_GROUPS: { heading: string; links: { href: string; label: st
     ],
   },
   {
+    id: "company-records",
     heading: "Company Records",
+    description: "Company-level records filtered by industry, size and ownership.",
     links: [
       { href: "/corporate-database-india", label: "Corporate Data" },
       { href: "/industry-wise-company-database-india", label: "Industry-Wise Lists" },
@@ -21,7 +29,9 @@ export const PRODUCT_GROUPS: { heading: string; links: { href: string; label: st
     ],
   },
   {
+    id: "registry",
     heading: "Registry",
+    description: "GST and MCA/ROC registration data for compliance-first selection.",
     links: [
       { href: "/gst-database-india", label: "GST Data" },
       { href: "/mca-company-database-india", label: "MCA / ROC Records" },
@@ -29,7 +39,9 @@ export const PRODUCT_GROUPS: { heading: string; links: { href: string; label: st
     ],
   },
   {
+    id: "trade-industry",
     heading: "Trade & Industry",
+    description: "Manufacturers, traders, dealers, retailers and service businesses.",
     links: [
       { href: "/manufacturer-database-india", label: "Manufacturers" },
       { href: "/manufacturing-companies-database-india", label: "Manufacturing Companies" },
@@ -65,7 +77,9 @@ export const PRODUCT_GROUPS: { heading: string; links: { href: string; label: st
     ],
   },
   {
+    id: "professionals",
     heading: "Professionals",
+    description: "Decision-makers, specialists and employees by role and department.",
     links: [
       { href: "/ceo-cfo-cmo-it-heads-database-india", label: "CEO / CFO / CMO / IT Heads" },
       { href: "/company-md-chairman-secretary-database-india", label: "MDs, Chairmen & Company Secretaries" },
@@ -98,7 +112,9 @@ export const PRODUCT_GROUPS: { heading: string; links: { href: string; label: st
     ],
   },
   {
+    id: "channel",
     heading: "Channel",
+    description: "Ready-to-use contact channels: mobile, email, WhatsApp and SMS.",
     links: [
       { href: "/mobile-number-database-india", label: "Mobile Numbers" },
       { href: "/email-database-india", label: "Email Lists" },
@@ -107,7 +123,9 @@ export const PRODUCT_GROUPS: { heading: string; links: { href: string; label: st
     ],
   },
   {
+    id: "consumer",
     heading: "Consumer",
+    description: "Consumer audiences segmented by profile, interest and spend.",
     links: [
       { href: "/b2b-b2c-companies-database", label: "B2B & B2C Data" },
       { href: "/car-owners-database", label: "Car Owners" },
@@ -128,7 +146,9 @@ export const PRODUCT_GROUPS: { heading: string; links: { href: string; label: st
     ],
   },
   {
+    id: "education-web",
     heading: "Education & Web",
+    description: "Schools, institutes, educators and online business data.",
     links: [
       { href: "/students-database", label: "Students" },
       { href: "/school-colleges-database", label: "Schools & Colleges" },
@@ -140,6 +160,9 @@ export const PRODUCT_GROUPS: { heading: string; links: { href: string; label: st
     ],
   },
 ];
+
+/** Groups with any page held from indexing (see lib/indexing.ts) removed. */
+export const PRODUCT_GROUPS: ProductGroup[] = ALL_PRODUCT_GROUPS.map((g) => ({ ...g, links: indexableLinks(g.links) }));
 
 /** The footer group a product page belongs to, plus its sibling links (self excluded). */
 export function getProductGroup(slug: string) {

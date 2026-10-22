@@ -1,3 +1,4 @@
+import { isHeldFromIndex } from "@/lib/indexing";
 import type { LucideIcon } from "lucide-react";
 import {
   BadgeCheck,
@@ -12543,5 +12544,5 @@ export function getKeywordPage(slug: string): KeywordPage | undefined {
 export function getKeywordPagesBySlug(slugs: string[]): KeywordPage[] {
   return slugs
     .map((slug) => getKeywordPage(slug))
-    .filter((page): page is KeywordPage => Boolean(page));
+    .filter((page): page is KeywordPage => Boolean(page) && !isHeldFromIndex(page!.slug));
 }
