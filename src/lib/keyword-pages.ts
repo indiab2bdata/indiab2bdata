@@ -97,13 +97,13 @@ export const keywordPages: KeywordPage[] = [
       "A B2B database is a structured collection of verified business contact records - company names, decision-maker mobile numbers, emails and GST/company details - used by sales and marketing teams to find and reach other businesses. IndiaB2BData.com maintains a B2B database of 50L+ verified records spanning 700+ Indian cities and 500+ industries.",
     intro: [
       "Whether you're a sales team cold-calling new prospects, a marketing agency running WhatsApp campaigns, or a startup entering a new city, a reliable B2B database is the foundation of every outbound effort. Bad data wastes hours on disconnected numbers and bounced emails; a verified B2B database puts your team in front of real decision-makers instead.",
-      "Our B2B database India covers mobile numbers, corporate emails, GSTIN-linked company records and industry-wise segments - deduplicated, DND-scrubbed and refreshed every 30 days so you're always calling active contacts.",
+      "Our B2B database India covers mobile numbers, corporate emails, GSTIN-linked company records and industry-wise segments - verified and deduplicated before delivery, with a free sample first.",
     ],
     highlights: [
       { icon: ShieldCheck, title: "Verified & Fresh", description: "Every record checked and refreshed monthly." },
       { icon: MapPinned, title: "700+ Cities", description: "Pan-India coverage across every state and pincode cluster." },
       { icon: Network, title: "500+ Industries", description: "Segmented lists for real estate, EdTech, finance, healthcare and more." },
-      { icon: Zap, title: "Fast Delivery", description: "Most orders delivered within 2–6 working hours." },
+      { icon: Zap, title: "Fast Delivery", description: "Delivery timeline confirmed in your quote." },
     ],
     useCases: [
       "Cold calling and telesales campaigns",
@@ -120,7 +120,7 @@ export const keywordPages: KeywordPage[] = [
       {
         question: "How is IndiaB2BData.com's B2B database sourced?",
         answer:
-          "Records are compiled from publicly available and permission-based channels, then verified, deduplicated and DND-scrubbed before delivery.",
+          "Records are compiled from publicly available and permission-based channels, then verified and deduplicated before delivery.",
       },
       {
         question: "Which industries does the database cover?",
@@ -154,11 +154,11 @@ export const keywordPages: KeywordPage[] = [
       "A B2B data provider is a company that compiles, verifies and licenses business contact data for sales and marketing use. When choosing a B2B data provider in India, prioritise verified accuracy, DND/TRAI compliance, industry breadth and delivery speed - IndiaB2BData.com covers all four across 700+ cities.",
     intro: [
       "Not every B2B data provider is built the same. Some resell stale, unverified lists; others lock you into large minimum orders before you've even seen a sample. The difference shows up fast once your team starts dialling - either you reach real decision-makers, or you burn hours on dead numbers.",
-      "As a B2B data provider in India, we verify and deduplicate every record before delivery, scrub against DND/NDNC lists, and let you request a free sample before you commit to a package - so you can judge quality before you pay.",
+      "As a B2B data provider in India, we verify and deduplicate every record before delivery and let you request a free sample before you commit to a package - so you can judge quality before you pay.",
     ],
     highlights: [
       { icon: BadgeCheck, title: "Verified Accuracy", description: "Every record checked and deduplicated before delivery." },
-      { icon: ShieldCheck, title: "Compliance-Conscious", description: "DND/NDNC scrubbed to keep your outreach compliant." },
+      { icon: ShieldCheck, title: "Compliance-Conscious", description: "Supplied for lawful B2B use, with DND/TRAI guidance for buyers." },
       { icon: Sparkles, title: "Sample Before You Buy", description: "15–20 free sample records on every enquiry." },
       { icon: Users, title: "Dedicated Support", description: "A real team to help you scope the right filters." },
     ],
@@ -208,7 +208,7 @@ export const keywordPages: KeywordPage[] = [
       { icon: Target, title: "Precisely Filtered", description: "Narrow by city, industry, turnover or designation." },
       { icon: MapPinned, title: "Pan-India Reach", description: "Every state, city and pincode cluster covered." },
       { icon: RefreshCcw, title: "Regularly Refreshed", description: "De-duplicated and refreshed on a monthly cycle." },
-      { icon: Zap, title: "Quick Turnaround", description: "Most lists delivered within 2–6 working hours." },
+      { icon: Zap, title: "Quick Turnaround", description: "Delivery timeline confirmed in your quote." },
     ],
     useCases: [
       "Sales prospecting and pipeline building",
@@ -232,7 +232,7 @@ export const keywordPages: KeywordPage[] = [
       {
         question: "How do I place an order?",
         answer:
-          "Share your requirement, review the free sample, choose a package and confirm payment - most orders are delivered within 2–6 working hours.",
+          "Share your requirement, review the free sample, choose a package and confirm payment. Delivery timelines are confirmed in the quote for each order.",
       },
     ],
   },
@@ -339,14 +339,14 @@ export const keywordPages: KeywordPage[] = [
     keyword: "business data provider India",
     title: "Business Data Provider India | Verified Data Pipeline",
     metaDescription:
-      "A business data provider in India with a transparent verification pipeline - collection, verification, deduplication and DND scrubbing before delivery.",
+      "A business data provider in India with a transparent verification pipeline - collection, verification and deduplication before delivery.",
     eyebrow: "Business Data Provider India",
     h1: "Business Data Provider India - How Our Data Pipeline Works",
     answer:
-      "A business data provider supplies verified contact and company data for sales and marketing use, typically on a one-time or recurring basis. IndiaB2BData.com operates a four-stage pipeline - collection, verification, deduplication and DND scrubbing - before any business data reaches a client.",
+      "A business data provider supplies verified contact and company data for sales and marketing use, typically on a one-time or recurring basis. IndiaB2BData.com operates a three-stage pipeline - collection, verification and deduplication - before any business data reaches a client.",
     intro: [
       "Agencies, call centres and internal sales teams all need a steady, reliable feed of business data - not just a single list. As a business data provider, our focus is on the pipeline behind the data, not just the export file you receive.",
-      "Every batch goes through the same four steps: records are collected from public and permission-based sources, cross-checked for accuracy, deduplicated against our existing database, and scrubbed against DND/NDNC lists before delivery.",
+      "Every batch goes through the same three steps: records are collected from public and permission-based sources, cross-checked for accuracy, and deduplicated against our existing database before delivery.",
     ],
     highlights: [
       { icon: Search, title: "Multi-Source Collection", description: "Records gathered from public and permission-based channels." },
@@ -358,7 +358,7 @@ export const keywordPages: KeywordPage[] = [
       "Agencies needing a white-label data supply for clients",
       "Sales teams needing a steady, recurring data feed",
       "Marketing agencies managing multiple campaigns at once",
-      "Call centres needing dialer-ready, DND-scrubbed lists",
+      "Call centres needing dialer-ready, deduplicated lists",
     ],
     faqs: [
       {
@@ -370,12 +370,12 @@ export const keywordPages: KeywordPage[] = [
         answer: "Yes, agencies regularly use our data to service their own clients under their own branding.",
       },
       {
-        question: "How do you keep the data DND-compliant?",
-        answer: "Every batch is scrubbed against DND/NDNC lists as the final step before delivery.",
+        question: "Who is responsible for DND compliance?",
+        answer: "The sender. Before calling or sending promotional messages, check numbers against the DND (NCPR) registry and follow TRAI's commercial-communication rules.",
       },
       {
         question: "What's the typical turnaround for a bulk order?",
-        answer: "Most orders are delivered within 2–6 working hours, depending on volume and filter complexity.",
+        answer: "Delivery timelines are confirmed in the quote for each order. Timing depends on volume and filter complexity.",
       },
     ],
   },
@@ -437,37 +437,37 @@ export const keywordPages: KeywordPage[] = [
     keyword: "verified business database India",
     title: "Verified Business Database India | Accuracy You Can Trust",
     metaDescription:
-      "A verified business database for India - manually and automatically checked, deduplicated and DND-scrubbed. Free sample before you buy.",
+      "A verified business database for India - manually and automatically checked and deduplicated. Free sample before you buy.",
     eyebrow: "Verified Business Database India",
     h1: "Verified Business Database India - Accuracy Before Anything Else",
     answer:
-      "A verified business database is one where every record has been checked for accuracy, deduplicated and scrubbed against Do-Not-Disturb (DND) lists before it's delivered. IndiaB2BData.com verifies every record in its database this way, and offers a free sample so you can confirm accuracy before you buy.",
+      "A verified business database is one where every record has been checked for accuracy and deduplicated before it's delivered. IndiaB2BData.com verifies every record in its database this way, and offers a free sample so you can confirm accuracy before you buy.",
     intro: [
-      "\"Verified\" is a word a lot of data sellers use loosely. For us it means a specific process: every record is checked, deduplicated against our existing database, and scrubbed against DND/NDNC lists - every single time, not just on request.",
+      "\"Verified\" is a word a lot of data sellers use loosely. For us it means a specific process: every record is checked and deduplicated against our existing database - every single time, not just on request.",
       "That process is what keeps connect rates high and protects your sender reputation on WhatsApp and email - nobody wants to burn a campaign on numbers that were never real to begin with.",
     ],
     highlights: [
       { icon: UserCheck, title: "Manual + Automated Checks", description: "Records verified before they ever reach a client." },
-      { icon: ShieldCheck, title: "DND/NDNC Scrubbed", description: "Reduces compliance risk on every campaign." },
+      { icon: ShieldCheck, title: "Deduplicated Records", description: "Duplicates and invalid numbers removed before delivery." },
       { icon: ListChecks, title: "Deduplicated", description: "No repeat records inflating your list count." },
       { icon: Sparkles, title: "Free Sample First", description: "See real records before you commit to a package." },
     ],
     useCases: [
       "Reducing wasted calls on a telesales floor",
       "Improving WhatsApp/SMS connect and open rates",
-      "Keeping outreach DND/NDNC-compliant",
+      "Planning DND/TRAI-compliant outreach",
       "Protecting sender reputation on bulk campaigns",
     ],
     faqs: [
       {
         question: "How exactly do you verify the data?",
         answer:
-          "Records go through source verification, deduplication against our existing database, and DND/NDNC scrubbing before delivery.",
+          "Records go through source verification and deduplication against our existing database before delivery.",
       },
       {
-        question: "What does 'DND-scrubbed' mean?",
+        question: "What is the DND registry?",
         answer:
-          "It means numbers registered on India's Do-Not-Disturb/NDNC list have been removed to reduce compliance risk in your outreach.",
+          "The National Customer Preference Register (NCPR), often called DND, lists numbers that have opted out of promotional calls and messages. Buyers must check numbers against it and follow TRAI rules before promotional outreach.",
       },
       {
         question: "Can I verify the quality myself before paying?",
@@ -971,7 +971,7 @@ export const keywordPages: KeywordPage[] = [
     eyebrow: "Business Leads India",
     h1: "Business Leads India - Sales-Ready Contacts for Your Pipeline",
     answer:
-      "Business leads are contact records matched to a specific target profile - industry, city, company size - and intended to go straight into a sales pipeline rather than serve as a generic reference list. IndiaB2BData.com builds business leads to your ideal customer profile, verified and DND-scrubbed before delivery.",
+      "Business leads are contact records matched to a specific target profile - industry, city, company size - and intended to go straight into a sales pipeline rather than serve as a generic reference list. IndiaB2BData.com builds business leads to your ideal customer profile, verified and deduplicated before delivery.",
     intro: [
       "A lead is different from a generic contact - it's meant to be dialled or messaged today, not stored as reference data. That means accuracy and relevance matter more than raw volume.",
       "We build business leads against your specific ideal customer profile - industry, city, company size, designation - so what lands in your CRM is ready for outreach, not a list that still needs heavy filtering.",
@@ -979,8 +979,8 @@ export const keywordPages: KeywordPage[] = [
     highlights: [
       { icon: Target, title: "Matched to Your ICP", description: "Built around your ideal customer profile." },
       { icon: TrendingUp, title: "Sales-Ready", description: "Meant for immediate outreach, not just reference." },
-      { icon: ShieldCheck, title: "Verified & DND-Scrubbed", description: "Reduces wasted calls and compliance risk." },
-      { icon: Zap, title: "Fast Turnaround", description: "Most lead lists delivered within 2–6 working hours." },
+      { icon: ShieldCheck, title: "Verified & Deduplicated", description: "Reduces wasted calls on duplicate or invalid numbers." },
+      { icon: Zap, title: "Fast Turnaround", description: "Delivery timeline confirmed in your quote." },
     ],
     useCases: [
       "Filling a telesales pipeline with fresh leads",
@@ -999,7 +999,7 @@ export const keywordPages: KeywordPage[] = [
       },
       {
         question: "Are the leads verified before delivery?",
-        answer: "Yes, every lead list is verified, deduplicated and DND-scrubbed before it reaches you.",
+        answer: "Yes, every lead list is verified and deduplicated before it reaches you. Check numbers against the DND registry before promotional calls or messages.",
       },
       {
         question: "Can I get a sample of leads before ordering in bulk?",
@@ -1220,25 +1220,25 @@ export const keywordPages: KeywordPage[] = [
     keyword: "mobile number database India",
     title: "Mobile Number Database India | Free Sample",
     metaDescription:
-      "Buy a verified mobile number database for India - business owner & decision-maker numbers by city, pincode and industry. DND-scrubbed Excel/CSV, from ₹2,999.",
+      "Buy a verified mobile number database for India - business owner & decision-maker numbers by city, pincode and industry. Deduplicated Excel/CSV, from ₹2,999.",
     eyebrow: "Mobile Number Database India",
     h1: "Mobile Number Database India - Verified Business Owner & Decision-Maker Numbers",
     answer:
-      "A mobile number database is a list of verified mobile numbers for business owners and decision-makers, tagged with company name, industry and city, that sales teams use for calling, WhatsApp and SMS outreach. IndiaB2BData.com's mobile number database covers 700+ Indian cities and 500+ industries. Every list is DND-scrubbed, deduplicated and delivered as an Excel/CSV file, with packages starting at ₹2,999.",
+      "A mobile number database is a list of verified mobile numbers for business owners and decision-makers, tagged with company name, industry and city, that sales teams use for calling, WhatsApp and SMS outreach. IndiaB2BData.com's mobile number database covers 700+ Indian cities and 500+ industries. Every list is deduplicated and delivered as an Excel/CSV file, with packages starting at ₹2,999.",
     intro: [
       "For most Indian sales teams, the phone is still the fastest way to close a deal. Business owners answer calls and read WhatsApp far more reliably than they open cold emails. A good calling list can turn one telecaller into a steady source of meetings, but only if the numbers on it are real.",
       "That's where most purchased lists fail. Numbers are switched off, belong to the wrong person, are repeated three times, or sit on the DND registry. Your team burns half the day dialling dead numbers, and your cost per lead quietly doubles.",
-      "Our mobile number database is built from business-linked records, not random consumer dumps. Every number is tied to a company, an industry and a city, then deduplicated, checked for activity and scrubbed against DND/NDNC before it reaches you. You get a list your callers can actually work through, and you can check 15–20 free sample records before paying anything.",
+      "Our mobile number database is built from business-linked records, not random consumer dumps. Every number is tied to a company, an industry and a city, then deduplicated and checked for activity before it reaches you. You get a list your callers can actually work through, and you can check 15–20 free sample records before paying anything.",
     ],
     highlights: [
       { icon: Smartphone, title: "Business-Linked Numbers", description: "Every number mapped to a company, industry and city." },
-      { icon: ShieldCheck, title: "DND-Scrubbed", description: "Checked against DND/NDNC registries before delivery." },
+      { icon: ShieldCheck, title: "Deduplicated Records", description: "Duplicates and invalid numbers removed before delivery." },
       { icon: Filter, title: "City, Pincode & Industry Filters", description: "Build a list for exactly the market you sell to." },
       { icon: RefreshCcw, title: "Refreshed Monthly", description: "Inactive and switched-off numbers removed on a regular cycle." },
     ],
     dataFields: [
       "Contact person / business owner name",
-      "Mobile number (10-digit, DND-scrubbed)",
+      "Mobile number (10-digit)",
       "Company or business name",
       "Industry and business category",
       "City, state and pincode",
@@ -1250,7 +1250,7 @@ export const keywordPages: KeywordPage[] = [
         paragraphs: [
           "Before you buy any mobile number list, ask for a sample and call 20 numbers yourself. If more than a few are switched off, wrong or unrelated to the business named, the full list will be worse. A trustworthy provider will always give you a sample first.",
           "Next, check how the data is segmented. A list labelled \"all India business numbers\" is almost useless for a focused campaign. You want to filter by city or pincode, by industry, and ideally by business size, so every call goes to someone who could actually buy from you.",
-          "Finally, ask about freshness and compliance. Numbers change hands, businesses close and owners switch SIMs. A database that is refreshed monthly and scrubbed against DND/NDNC will give you far better connect rates and keep your brand on the right side of TRAI's rules.",
+          "Finally, ask about freshness and compliance. Numbers change hands, businesses close and owners switch SIMs. Ask when the records were last updated, and check numbers against the DND registry before calling, to protect connect rates and keep your brand on the right side of TRAI's rules.",
         ],
       },
       {
@@ -1282,8 +1282,8 @@ export const keywordPages: KeywordPage[] = [
           "Our Starter package is ₹2,999 for up to 5,000 records in one city or district. The Business package is ₹8,999 for up to 25,000 records across 5 cities or states. Pan-India lists are custom-quoted.",
       },
       {
-        question: "Are the mobile numbers DND-scrubbed?",
-        answer: "Yes. Every list is checked against DND/NDNC registries before delivery to help keep your outreach compliant.",
+        question: "Do I need to check the numbers against DND?",
+        answer: "Yes. Before calling or sending promotional messages, check numbers against the DND (NCPR) registry and follow TRAI's commercial-communication rules.",
       },
       {
         question: "Can I get mobile numbers for one city, pincode or industry only?",
@@ -1293,11 +1293,11 @@ export const keywordPages: KeywordPage[] = [
       {
         question: "Is buying a business mobile number database legal in India?",
         answer:
-          "Using business contact data for B2B outreach is common practice. Stay compliant by using DND-scrubbed lists, calling during reasonable hours, honouring opt-out requests and registering on DLT before sending commercial SMS.",
+          "Using business contact data for B2B outreach is common practice. Stay compliant by checking numbers against the DND registry, calling during reasonable hours, honouring opt-out requests and registering on DLT before sending commercial SMS.",
       },
       {
         question: "How is the mobile number data delivered?",
-        answer: "As an Excel (.xlsx) or CSV file sent over email or WhatsApp, usually within 2–6 working hours, ready to import into your dialer or CRM.",
+        answer: "As an Excel (.xlsx) or CSV file sent over email or WhatsApp on the timeline confirmed in your quote, ready to import into your dialer or CRM.",
       },
       {
         question: "Can I see sample numbers before I buy?",
@@ -1504,26 +1504,26 @@ export const keywordPages: KeywordPage[] = [
   {
     slug: "bulk-sms-database-india",
     keyword: "bulk SMS database India",
-    title: "Bulk SMS Database India | DND-Free Numbers",
+    title: "Bulk SMS Database India | Business Mobile Numbers for DLT Campaigns",
     metaDescription:
-      "Verified bulk SMS database for India - DND-scrubbed business mobile numbers by city, pincode and industry, ready for DLT-compliant SMS campaigns. From ₹2,999.",
+      "Verified bulk SMS database for India - business mobile numbers by city, pincode and industry, ready for DLT-compliant SMS campaigns. From ₹2,999.",
     eyebrow: "Bulk SMS Database India",
-    h1: "Bulk SMS Database India - DND-Scrubbed Numbers for SMS Campaigns",
+    h1: "Bulk SMS Database India - Business Numbers for SMS Campaigns",
     answer:
-      "A bulk SMS database is a large, verified list of mobile numbers used to send promotional or transactional SMS campaigns. In India the list should be DND-scrubbed and the messages sent through a DLT-registered sender ID with approved templates. IndiaB2BData.com supplies DND-scrubbed business numbers by city, pincode and industry, ready to upload into any bulk SMS panel.",
+      "A bulk SMS database is a large, verified list of mobile numbers used to send promotional or transactional SMS campaigns. In India promotional messages must skip DND-registered numbers and go through a DLT-registered sender ID with approved templates. IndiaB2BData.com supplies business numbers by city, pincode and industry, ready to upload into any bulk SMS panel.",
     intro: [
       "Bulk SMS still gets some of the highest open rates of any channel in India. Almost every SMS is read, usually within minutes, and it reaches every phone, including basic handsets without internet or WhatsApp.",
       "The catch is that TRAI's rules are strict. Promotional SMS to DND numbers gets blocked, every message must use a DLT-registered header and template, and sending to a bad list simply wastes credits on numbers that will never receive your message.",
-      "Our bulk SMS database is DND-scrubbed before delivery and segmented by city, pincode and industry. You pay only for numbers that can actually receive your message, and your campaign reaches a relevant local audience instead of a random one.",
+      "Our bulk SMS database is deduplicated and segmented by city, pincode and industry, so your campaign reaches a relevant local audience instead of a random one.",
     ],
     highlights: [
-      { icon: ShieldCheck, title: "DND/NDNC Scrubbed", description: "Numbers checked against DND registries before delivery." },
+      { icon: ShieldCheck, title: "DLT-Ready Format", description: "Clean CSV ready to upload to your DLT-registered SMS panel." },
       { icon: Smartphone, title: "Active Mobile Numbers", description: "Inactive and invalid numbers removed." },
       { icon: MapPinned, title: "Local Targeting", description: "Filter by city, state or pincode." },
       { icon: TrendingUp, title: "Better Credit Usage", description: "Fewer failed deliveries means less wasted SMS credit." },
     ],
     dataFields: [
-      "10-digit mobile number (DND-scrubbed)",
+      "10-digit mobile number",
       "Contact person / business owner name",
       "Company or business name",
       "Industry and business category",
@@ -1535,7 +1535,7 @@ export const keywordPages: KeywordPage[] = [
         paragraphs: [
           "Since TRAI's TCCCPR regulations, every business that sends commercial SMS must register on a DLT (Distributed Ledger Technology) platform run by telecom operators such as Jio, Airtel or Vi. Registration covers your business entity, your sender IDs (headers) and your message templates.",
           "Promotional messages can only go to non-DND numbers and only between 10 AM and 9 PM. Transactional and service messages have different rules. Your bulk SMS provider usually helps you register and map approved templates to your account.",
-          "Once you're registered, upload our CSV to your SMS panel, pick an approved template and send. Because the list is already DND-scrubbed, far fewer messages get rejected at the operator level.",
+          "Once you're registered, upload our CSV to your SMS panel, pick an approved template and send. Check the list against DND first so fewer messages get rejected at the operator level.",
         ],
       },
       {
@@ -1556,8 +1556,8 @@ export const keywordPages: KeywordPage[] = [
     ],
     faqs: [
       {
-        question: "Is the bulk SMS data DND-free?",
-        answer: "Yes. Numbers are scrubbed against DND/NDNC registries before delivery. Rescrub if you store the data for a long time before sending.",
+        question: "Can I send promotional SMS to every number on the list?",
+        answer: "No. Promotional SMS can only go to numbers not registered on DND, through a DLT-registered header and approved template. Check the list against DND before each campaign.",
       },
       {
         question: "How much does a bulk SMS database cost?",
@@ -1878,26 +1878,26 @@ export const keywordPages: KeywordPage[] = [
     keyword: "B2B and B2C database India",
     title: "B2B & B2C Companies Database India",
     metaDescription:
-      "One provider for B2B company contacts and B2C consumer data in India. Filter by city, industry, income band or interest. DND-scrubbed, verified. Free sample.",
+      "One provider for B2B company contacts and B2C consumer data in India. Filter by city, industry, income band or interest. Verified. Free sample.",
     eyebrow: "B2B & B2C Companies Database",
     h1: "B2B & B2C Database India - Company Contacts and Consumer Data in One Place",
     answer:
-      "A B2B database lists businesses and their decision-makers; a B2C database lists individual consumers. Many Indian brands sell to both: a company that supplies dealers also runs consumer campaigns. IndiaB2BData.com supplies both types of data, verified and DND-scrubbed, filtered by city, industry, income band or interest.",
+      "A B2B database lists businesses and their decision-makers; a B2C database lists individual consumers. Many Indian brands sell to both: a company that supplies dealers also runs consumer campaigns. IndiaB2BData.com supplies both types of data, verified and deduplicated, filtered by city, industry, income band or interest.",
     intro: [
       "Most growing businesses in India don't sell to just one kind of customer. A solar installer pitches housing societies and factories. An insurance agency targets salaried individuals and small business owners. A software company sells to firms but also runs a consumer app. Using two separate data vendors for this means two sets of quality standards, two invoices and two ways of formatting files.",
-      "Our B2B and B2C database brings both into one order. Company records come with business name, category, GST details and decision-maker contacts. Consumer records come with city, pincode and, where available, profile filters such as age band, income band or interest. Both are deduplicated and DND-scrubbed before delivery.",
+      "Our B2B and B2C database brings both into one order. Company records come with business name, category, GST details and decision-maker contacts. Consumer records come with city, pincode and, where available, profile filters such as age band, income band or interest. Both are deduplicated before delivery.",
     ],
     highlights: [
       { icon: Building2, title: "B2B Company Records", description: "Companies, owners and decision-makers by industry." },
       { icon: Users, title: "B2C Consumer Data", description: "Individuals by city, pincode, income band and interest." },
       { icon: Filter, title: "One Set of Filters", description: "Same city, state and pincode targeting for both." },
-      { icon: ShieldCheck, title: "DND-Scrubbed", description: "Checked against DND/NDNC lists before delivery." },
+      { icon: ShieldCheck, title: "Deduplicated Records", description: "Duplicates removed before delivery." },
     ],
     dataFields: [
       "B2B: company name, industry and business type",
       "B2B: owner or decision-maker name and designation",
       "B2C: consumer name, city, state and pincode",
-      "Mobile number (DND-scrubbed)",
+      "Mobile number",
       "Email address, where available",
       "Profile filters such as income band or interest, where available",
     ],
@@ -1919,7 +1919,7 @@ export const keywordPages: KeywordPage[] = [
       {
         heading: "Using Consumer Data Responsibly",
         paragraphs: [
-          "Consumer outreach in India is governed by TRAI's commercial communication rules and the Digital Personal Data Protection Act, 2023. Every number we deliver is scrubbed against the DND registry, and we recommend clear opt-out options in every message.",
+          "Consumer outreach in India is governed by TRAI's commercial communication rules and the Digital Personal Data Protection Act, 2023. Check numbers against the DND registry before promotional outreach, and include a clear opt-out in every message.",
           "Keep campaigns relevant to the audience you've filtered for, avoid excessive frequency and stop contacting anyone who asks you to. Good practice protects your sender reputation as much as it protects the people you're reaching.",
         ],
       },
@@ -1953,8 +1953,8 @@ export const keywordPages: KeywordPage[] = [
           "Packages start at ₹2,999 for up to 5,000 records in one city, and ₹8,999 for up to 25,000 records across 5 cities or states. Larger or multi-segment lists are custom-quoted.",
       },
       {
-        question: "Is consumer data DND-scrubbed?",
-        answer: "Yes. Every mobile number is checked against the DND/NDNC registry before delivery.",
+        question: "Do I need to check consumer numbers against DND?",
+        answer: "Yes. Before calling or sending promotional messages, check numbers against the DND (NCPR) registry and follow TRAI's commercial-communication rules.",
       },
       {
         question: "Can I get a free sample?",
@@ -1988,12 +1988,12 @@ export const keywordPages: KeywordPage[] = [
       { icon: GraduationCap, title: "School to Post-Graduate", description: "Class 9–12, undergraduate, PG and exam aspirants." },
       { icon: Filter, title: "Stream & Course Filters", description: "Science, commerce, arts, engineering, medical and more." },
       { icon: MapPinned, title: "City-Wise Targeting", description: "Filter by city, district, state or pincode." },
-      { icon: ShieldCheck, title: "Verified & DND-Scrubbed", description: "Deduplicated and DND-checked before delivery." },
+      { icon: ShieldCheck, title: "Verified & Deduplicated", description: "Checked and deduplicated before delivery." },
     ],
     dataFields: [
       "Student name",
       "Parent or guardian contact, where available",
-      "Mobile number (DND-scrubbed)",
+      "Mobile number",
       "Email address, where available",
       "Class, year or course and stream",
       "City, state and pincode",
@@ -2017,7 +2017,7 @@ export const keywordPages: KeywordPage[] = [
         heading: "Reaching Students Responsibly",
         paragraphs: [
           "Many school students are minors, so outreach for those segments should be addressed to parents or guardians. Keep messages informative, avoid aggressive follow-ups and honour every opt-out request.",
-          "All numbers are scrubbed against the DND registry before delivery. Use the data only for genuine education-related communication, in line with TRAI rules and the Digital Personal Data Protection Act, 2023.",
+          "Check numbers against the DND registry before promotional outreach, and use the data only for genuine education-related communication, in line with TRAI rules and the Digital Personal Data Protection Act, 2023.",
         ],
       },
     ],
@@ -2088,7 +2088,7 @@ export const keywordPages: KeywordPage[] = [
     ],
     dataFields: [
       "Candidate name",
-      "Mobile number (DND-scrubbed)",
+      "Mobile number",
       "Email address, where available",
       "Qualification and skill set",
       "Experience band and functional area",
@@ -2113,7 +2113,7 @@ export const keywordPages: KeywordPage[] = [
         heading: "Responsible Candidate Outreach",
         paragraphs: [
           "Only contact candidates about genuine job opportunities or relevant training. Never charge candidates for placement, and honour any request to stop contacting them.",
-          "Numbers are scrubbed against the DND registry before delivery, and the data should be used in line with TRAI rules and the Digital Personal Data Protection Act, 2023.",
+          "Check numbers against the DND registry before promotional outreach, and use the data in line with TRAI rules and the Digital Personal Data Protection Act, 2023.",
         ],
       },
     ],
@@ -2180,11 +2180,11 @@ export const keywordPages: KeywordPage[] = [
       { icon: Car, title: "Segment & Brand Filters", description: "Hatchback, sedan, SUV and luxury, by brand." },
       { icon: MapPinned, title: "City-Wise Coverage", description: "Metros and tier-2 cities across India." },
       { icon: CalendarClock, title: "Ownership Age", description: "Target new owners or ageing vehicles." },
-      { icon: ShieldCheck, title: "DND-Scrubbed", description: "Checked against DND/NDNC lists before delivery." },
+      { icon: ShieldCheck, title: "Deduplicated Records", description: "Duplicates removed before delivery." },
     ],
     dataFields: [
       "Owner name",
-      "Mobile number (DND-scrubbed)",
+      "Mobile number",
       "Email address, where available",
       "Car brand, model or segment, where available",
       "Ownership or registration year band, where available",
@@ -2209,7 +2209,7 @@ export const keywordPages: KeywordPage[] = [
         heading: "Responsible Use",
         paragraphs: [
           "Keep campaigns relevant: a clear offer, a local contact and an easy way to opt out. Avoid repeated messaging to the same owners in a short window.",
-          "All numbers are DND-scrubbed before delivery. Use the data for lawful marketing in line with TRAI rules and the Digital Personal Data Protection Act, 2023.",
+          "Check numbers against the DND registry before promotional outreach, and use the data for lawful marketing in line with TRAI rules and the Digital Personal Data Protection Act, 2023.",
         ],
       },
     ],
@@ -2241,8 +2241,8 @@ export const keywordPages: KeywordPage[] = [
           "Packages start at ₹2,999 for up to 5,000 records in one city, and ₹8,999 for up to 25,000 records across 5 cities or states. Pan-India or brand-specific lists are custom-quoted.",
       },
       {
-        question: "Is the data DND-scrubbed?",
-        answer: "Yes. Every mobile number is checked against the DND/NDNC registry before delivery.",
+        question: "Do I need to check the numbers against DND?",
+        answer: "Yes. Before calling or sending promotional messages, check numbers against the DND (NCPR) registry and follow TRAI's commercial-communication rules.",
       },
       {
         question: "Can I get a free sample?",
@@ -4494,11 +4494,11 @@ export const keywordPages: KeywordPage[] = [
       { icon: Car, title: "Urban Commuters", description: "Regular app-cab and taxi users." },
       { icon: MapPinned, title: "City-Wise Records", description: "Metros and major tier-2 cities." },
       { icon: Filter, title: "Profile Filters", description: "Age band or locality, where available." },
-      { icon: ShieldCheck, title: "DND-Scrubbed", description: "Numbers checked against the DND registry." },
+      { icon: ShieldCheck, title: "Deduplicated Records", description: "Duplicates removed before delivery." },
     ],
     dataFields: [
       "Consumer name",
-      "Mobile number (DND-scrubbed), where available",
+      "Mobile number, where available",
       "Email address, where available",
       "City, locality and pincode",
       "Age band or profile filters, where available",
@@ -4543,7 +4543,7 @@ export const keywordPages: KeywordPage[] = [
     faqs: [
       { question: "What is a cab users database?", answer: "It is a structured collection of consumer records for regular app-cab and taxi users, organised by city and, where available, profile filters." },
       { question: "Which cities are covered?", answer: "Coverage varies by dataset. Share your target cities and ask us to confirm the number of matching records." },
-      { question: "Is the data DND-scrubbed?", answer: "Yes. Mobile numbers are checked against the DND/NDNC registry before delivery." },
+      { question: "Do I need to check the numbers against DND?", answer: "Yes. Before calling or sending promotional messages, check numbers against the DND (NCPR) registry and follow TRAI's commercial-communication rules." },
       { question: "Is it available in Excel format?", answer: "Excel or CSV delivery may be available. Confirm the format and columns before purchase." },
       { question: "Can I use it for SMS or WhatsApp campaigns?", answer: "That depends on the source, permissions and applicable TRAI and data protection rules. A purchase alone does not allow unsolicited messages." },
       { question: "Can I see a sample first?", answer: "Yes. Request sample records to check cities and fields before ordering." },
@@ -4923,7 +4923,7 @@ export const keywordPages: KeywordPage[] = [
       { icon: Landmark, title: "CAs & CA Firms", description: "Individual practitioners and partnership firms." },
       { icon: Filter, title: "Practice Filters", description: "Audit, direct tax, GST, advisory and more." },
       { icon: MapPinned, title: "City-Wise Coverage", description: "Metro, tier-2 and tier-3 cities across India." },
-      { icon: ShieldCheck, title: "Verified Contacts", description: "Checked, deduplicated and DND-scrubbed." },
+      { icon: ShieldCheck, title: "Verified Contacts", description: "Checked and deduplicated." },
     ],
     dataFields: [
       "CA / partner name",
@@ -5073,7 +5073,7 @@ export const keywordPages: KeywordPage[] = [
       { icon: Stethoscope, title: "Retail & Wholesale", description: "Medical stores, pharmacy chains, distributors." },
       { icon: MapPinned, title: "Pincode-Level", description: "Plan beats and territories precisely." },
       { icon: Smartphone, title: "Owner Mobile Numbers", description: "Direct to the store owner or pharmacist." },
-      { icon: ShieldCheck, title: "Verified & DND-Scrubbed", description: "Checked before every delivery." },
+      { icon: ShieldCheck, title: "Verified & Deduplicated", description: "Checked before every delivery." },
     ],
     dataFields: [
       "Medical store / pharmacy name",
@@ -5227,7 +5227,7 @@ export const keywordPages: KeywordPage[] = [
       { icon: Building2, title: "Engineers & Contractors", description: "Site, project, structural and contractors." },
       { icon: Users, title: "Experience Bands", description: "Freshers to senior project managers." },
       { icon: MapPinned, title: "City-Wise", description: "Metro and growing infrastructure cities." },
-      { icon: ShieldCheck, title: "Verified Contacts", description: "Checked and DND-scrubbed." },
+      { icon: ShieldCheck, title: "Verified Contacts", description: "Checked and deduplicated." },
     ],
     dataFields: [
       "Engineer / contractor name",
@@ -5298,11 +5298,11 @@ export const keywordPages: KeywordPage[] = [
       { icon: Sparkles, title: "Affluent Audience", description: "High-income, travel-oriented families." },
       { icon: MapPinned, title: "City-Wise", description: "Metros and tier-2 cities across India." },
       { icon: Target, title: "Premium Targeting", description: "Ideal for luxury and lifestyle offers." },
-      { icon: ShieldCheck, title: "Compliant Sourcing", description: "DND-scrubbed, permission-conscious data." },
+      { icon: ShieldCheck, title: "Compliant Sourcing", description: "Permission-conscious data for lawful use." },
     ],
     dataFields: [
       "Name",
-      "Mobile number (DND-scrubbed)",
+      "Mobile number",
       "Email ID, where available",
       "Membership type / tenure band, where available",
       "City, state and pincode",
@@ -5366,7 +5366,7 @@ export const keywordPages: KeywordPage[] = [
       { icon: Building2, title: "Residential & Commercial", description: "Flats, villas, offices, shops and warehouses." },
       { icon: MapPinned, title: "Locality-Level", description: "Filter by city, locality and pincode." },
       { icon: Users, title: "Owners, Builders & Brokers", description: "Pick the audience that fits your offer." },
-      { icon: ShieldCheck, title: "DND-Scrubbed", description: "Checked before every delivery." },
+      { icon: ShieldCheck, title: "Deduplicated Records", description: "Checked before every delivery." },
     ],
     dataFields: [
       "Name of owner, builder or broker",
@@ -5818,7 +5818,7 @@ export const keywordPages: KeywordPage[] = [
       { icon: Building2, title: "All Major Trades", description: "Civil, electrical, plumbing, HVAC, interiors, roads." },
       { icon: Landmark, title: "Govt-Registered Firms", description: "PWD, CPWD and municipal contractors where available." },
       { icon: MapPinned, title: "City & District-Wise", description: "Metros, tier-2 cities and district towns." },
-      { icon: ShieldCheck, title: "Verified Contacts", description: "Checked and DND-scrubbed before delivery." },
+      { icon: ShieldCheck, title: "Verified Contacts", description: "Checked and deduplicated before delivery." },
     ],
     dataFields: [
       "Contractor / firm name",
@@ -5888,7 +5888,7 @@ export const keywordPages: KeywordPage[] = [
       "A credit card holders database is consumer audience data for people in India who hold credit cards - typically salaried, credit-active and higher-spending households - with name, mobile number, city and card tier band where available. IndiaB2BData.com provides this as marketing audience data only: it never contains card numbers, CVVs, expiry dates, bank account or transaction details.",
     intro: [
       "India has crores of credit cards in issue, concentrated among salaried professionals and business owners in metro and tier-2 cities. Card holders are credit-active and comfortable spending online, which makes them a strong audience for premium, lifestyle and financial products.",
-      "Our credit card holders audience data lets you reach this segment by city and card tier band, compiled from lawful, permission-based sources and DND-scrubbed before delivery.",
+      "Our credit card holders audience data lets you reach this segment by city and card tier band, compiled from lawful, permission-based sources.",
     ],
     highlights: [
       { icon: Sparkles, title: "Credit-Active Audience", description: "Salaried and affluent card holders." },
@@ -5898,7 +5898,7 @@ export const keywordPages: KeywordPage[] = [
     ],
     dataFields: [
       "Name",
-      "Mobile number (DND-scrubbed)",
+      "Mobile number",
       "Email ID, where available",
       "Card tier band (entry, premium, super-premium), where available",
       "Occupation type (salaried or self-employed), where available",
@@ -6034,7 +6034,7 @@ export const keywordPages: KeywordPage[] = [
       "A debit card holders database is consumer audience data for banked people in India who use debit cards - with name, mobile number, city and income or occupation band where available. IndiaB2BData.com provides it as marketing audience data only: it never contains card numbers, PINs, CVVs, OTPs, bank account numbers, balances or transactions.",
     intro: [
       "India has crores of debit cards in issue, making debit card holders one of the broadest consumer audiences in the country - far wider than credit card holders and spread across metros, towns and rural areas. Most are also UPI and digital-payment users.",
-      "Our debit card holders audience data helps mass-market brands, insurers, fintech apps and retailers reach banked consumers by city, state and income band, compiled from lawful sources and DND-scrubbed before delivery.",
+      "Our debit card holders audience data helps mass-market brands, insurers, fintech apps and retailers reach banked consumers by city, state and income band, compiled from lawful sources.",
     ],
     highlights: [
       { icon: Users, title: "Mass Banked Audience", description: "Salaried, self-employed and students." },
@@ -6044,7 +6044,7 @@ export const keywordPages: KeywordPage[] = [
     ],
     dataFields: [
       "Name",
-      "Mobile number (DND-scrubbed)",
+      "Mobile number",
       "Email ID, where available",
       "Income or occupation band, where available",
       "Age band, where available",
@@ -6255,17 +6255,17 @@ export const keywordPages: KeywordPage[] = [
       "A dining and leisure customers database is consumer audience data for people in India who regularly spend on restaurants, cafes, travel, movies, events and entertainment, with name, mobile number, city and spending band where available. IndiaB2BData.com supplies this lifestyle audience data for restaurant, hospitality and leisure marketing.",
     intro: [
       "Urban India eats out, orders in and goes out more every year. Dining and leisure customers - young professionals, families and frequent travellers in metros and tier-2 cities - are the core audience for restaurants, cafes, hotels, resorts, cinemas, gyms and event organisers.",
-      "Our dining and leisure audience data lets you reach this segment by city and spending band, compiled from lawful, permission-based sources and DND-scrubbed before delivery.",
+      "Our dining and leisure audience data lets you reach this segment by city and spending band, compiled from lawful, permission-based sources.",
     ],
     highlights: [
       { icon: Sparkles, title: "Lifestyle Audience", description: "Diners, travellers and entertainment spenders." },
       { icon: MapPinned, title: "City-Wise", description: "Metros and growing tier-2 cities." },
       { icon: Target, title: "Spending Bands", description: "Mid-market to premium, where available." },
-      { icon: ShieldCheck, title: "DND-Scrubbed", description: "Checked before every delivery." },
+      { icon: ShieldCheck, title: "Deduplicated Records", description: "Checked before every delivery." },
     ],
     dataFields: [
       "Name",
-      "Mobile number (DND-scrubbed)",
+      "Mobile number",
       "Email ID, where available",
       "Interest: dining, travel, movies, events or fitness, where available",
       "Spending band, where available",
@@ -6301,7 +6301,7 @@ export const keywordPages: KeywordPage[] = [
       { question: "Can I target diners in one city?", answer: "Yes. Audience data can be filtered by city, locality and pincode." },
       { question: "Can I filter by interest?", answer: "Where recorded, you can filter by interest such as dining, travel, movies, events or fitness." },
       { question: "Who uses dining and leisure audience data?", answer: "Restaurants, hotels, resorts, event organisers, gyms and lifestyle brands." },
-      { question: "Is the data DND-scrubbed?", answer: "Yes. Numbers are scrubbed against the TRAI DND registry before delivery." },
+      { question: "Do I need to check the numbers against DND?", answer: "Yes. Before calling or sending promotional messages, check numbers against the DND (NCPR) registry and follow TRAI's commercial-communication rules." },
       { question: "Can I see a sample?", answer: "Yes. Download the sample format on this page or request sample records." },
     ],
     related: [
@@ -6325,7 +6325,7 @@ export const keywordPages: KeywordPage[] = [
       "A demat account holders database is investor audience data for people in India who hold demat (D-Mat) accounts and invest or trade in shares and mutual funds, with name, mobile number, city and investor band where available. IndiaB2BData.com provides it as marketing audience data only: it never contains demat or DP IDs, PAN, holdings, portfolio values or trading details.",
     intro: [
       "Demat accounts in India now run into crores, and new investors from tier-2 and tier-3 cities make up a fast-growing share of them. Retail investors are an active audience for financial education, advisory, insurance, mutual fund and wealth products.",
-      "Our demat account holders audience data helps financial brands reach investors by city and investor band, compiled from lawful, permission-based sources and DND-scrubbed before delivery.",
+      "Our demat account holders audience data helps financial brands reach investors by city and investor band, compiled from lawful, permission-based sources.",
     ],
     highlights: [
       { icon: TrendingUp, title: "Investor Audience", description: "Retail investors and active traders." },
@@ -6335,7 +6335,7 @@ export const keywordPages: KeywordPage[] = [
     ],
     dataFields: [
       "Name",
-      "Mobile number (DND-scrubbed)",
+      "Mobile number",
       "Email ID, where available",
       "Investor type band (new investor, long-term, active trader), where available",
       "Age band, where available",

@@ -106,9 +106,7 @@ export default function TermsAndConditionsPage() {
 
           <LegalSection title="5. Delivery">
             <p>
-              We aim to deliver most orders within 2–6 working hours of confirmed payment,
-              though delivery times may vary based on the size and complexity of your
-              requirement. Delivery timelines mentioned on the website or by our team are
+              Delivery timelines are confirmed in the quote for each order. Delivery timelines mentioned on the website or by our team are
               estimates and not guaranteed deadlines.
             </p>
           </LegalSection>

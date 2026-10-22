@@ -164,7 +164,7 @@ export default function ContactPage() {
             <div className="mt-6 rounded-xl border border-[#DCEAF3] bg-white p-4">
               <p className="text-xs font-semibold uppercase tracking-[0.16em] text-teal">Response Time</p>
               <p className="mt-2 text-sm text-muted leading-relaxed">
-                Most enquiries get a reply within 15–30 minutes on WhatsApp or email, and free sample data is usually shared within 2–6 working hours.
+                Most enquiries get a reply within 15–30 minutes on WhatsApp or email, and free sample data is shared once your requirement is confirmed.
               </p>
             </div>
           </div>
