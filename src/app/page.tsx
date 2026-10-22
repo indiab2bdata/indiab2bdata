@@ -1,61 +1,10 @@
 import type { Metadata } from "next";
-import { Hero } from "@/components/sections/hero";
-import { TrustStrip } from "@/components/sections/trust-strip";
-import { Products } from "@/components/sections/products";
-import { DataFolders } from "@/components/sections/data-folders";
-import { WhyUs } from "@/components/sections/why-us";
-import { Process } from "@/components/sections/process";
-import { Testimonials } from "@/components/sections/testimonials";
-import { Faq } from "@/components/sections/faq";
-import { ContactCta } from "@/components/sections/contact-cta";
-import { InlineCta } from "@/components/inline-cta";
-import { JsonLd } from "@/components/json-ld";
-import { liveKeywordPages } from "@/lib/keyword-pages";
-import { isHeldFromIndex } from "@/lib/indexing";
-import { siteConfig } from "@/lib/site-config";
-import { DEFAULT_FAQS } from "@/lib/faq-data";
-import { pageMetadata, webPageJsonLd, faqJsonLd, itemListJsonLd } from "@/lib/seo";
-import { SampleDownload } from "@/components/sample-download";
+import { HomeTemplate } from "@/components/templates/pages/HomeTemplate";
+import { HOME } from "@/content/pages/home";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = pageMetadata({
-  title: siteConfig.defaultTitle,
-  titleTag: null,
-  description: siteConfig.defaultDescription,
-  path: "/",
-});
-
-const webPageSchema = webPageJsonLd({
-  name: siteConfig.defaultTitle,
-  description: siteConfig.defaultDescription,
-  url: siteConfig.url,
-  about: "B2B database India",
-});
-
-const faqSchema = faqJsonLd(DEFAULT_FAQS);
-
-const productListSchema = itemListJsonLd(
-  liveKeywordPages.filter((page) => !isHeldFromIndex(page.slug)).map((page) => ({ name: page.keyword, url: `${siteConfig.url}/${page.slug}` })),
-  "B2B & Company Databases"
-);
+export const metadata: Metadata = pageMetadata(HOME.meta);
 
 export default function Home() {
-  return (
-    <>
-      <JsonLd data={[webPageSchema, faqSchema, productListSchema]} />
-      <Hero />
-      <TrustStrip />
-      <Products />
-      <DataFolders />
-      <InlineCta id="home-products-cta" text="Not sure which data product fits? Tell us what you need." buttonLabel="Talk to Our Team" />
-      <SampleDownload slug="b2b-database-india" label="B2B Business Database" />
-      <WhyUs />
-      <Process />
-      <InlineCta id="home-process-cta" text="Ready to start? Get your free sample within a few hours." />
-      <Testimonials />
-      <InlineCta id="home-testimonials-cta" text="Join hundreds of teams already reaching real decision-makers." />
-      <Faq />
-      <InlineCta id="home-faq-cta" text="Still have questions? Get a free sample and see the data for yourself." />
-      <ContactCta />
-    </>
-  );
+  return <HomeTemplate />;
 }

@@ -1,8 +1,7 @@
-import { siteConfig } from "@/lib/site-config";
-import { liveKeywordPages } from "@/lib/keyword-pages";
-import { databaseStates } from "@/lib/database-pages";
-import { PRODUCT_GROUPS } from "@/lib/product-groups";
-import { cities, cityPath } from "@/components/city-pages/city-data.mjs";
+import { siteConfig } from "@/config/site";
+import { cityPath, getAllCities, getAllStates, liveKeywordPages } from "@/content";
+import { PRODUCT_GROUPS } from "@/config/navigation";
+
 
 /**
  * /llms.txt - built from the same sources as lib/sitemaps.ts, so it can never list a retired
@@ -42,11 +41,11 @@ export function GET() {
     "## Database by State",
     "",
     link("All states", "/database", "Browse B2B database coverage by state."),
-    ...databaseStates.map((state) => link(state.name, `/database/${state.slug}`)),
+    ...getAllStates().map((state) => link(state.name, `/database/${state.slug}`)),
     "",
     "## Database by City",
     "",
-    ...Object.values(cities).map((city) => link(`${city.city}, ${city.state}`, cityPath(city))),
+    ...getAllCities().map((city) => link(`${city.city}, ${city.state}`, cityPath(city))),
     "",
     "## Guides",
     "",

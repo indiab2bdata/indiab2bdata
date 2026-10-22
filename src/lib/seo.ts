@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { siteConfig } from "@/lib/site-config";
+import { siteConfig } from "@/config/site";
 
 type OgImage = { url: string; width?: number; height?: number; alt?: string };
 

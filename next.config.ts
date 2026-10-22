@@ -1,5 +1,5 @@
 import type { NextConfig } from "next";
-import { permanentRedirects } from "./src/lib/redirects";
+import { permanentRedirects } from "./src/config/redirects";
 
 const nextConfig: NextConfig = {
   images: {

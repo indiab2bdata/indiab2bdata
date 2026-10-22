@@ -2,19 +2,19 @@
 import { Montserrat } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
-import { ModalProvider } from "@/components/modal-context";
-import { Header } from "@/components/header";
-import { Footer } from "@/components/footer";
-import { FloatingButtons } from "@/components/floating-buttons";
-import { MobileCtaBar } from "@/components/mobile-cta-bar";
-import { ContactModal } from "@/components/contact-modal";
+import { ModalProvider } from "@/components/layout/ModalContext";
+import { Header } from "@/components/layout/Header";
+import { Footer } from "@/components/layout/Footer";
+import { FloatingButtons } from "@/components/layout/FloatingButtons";
+import { MobileCtaBar } from "@/components/layout/MobileCtaBar";
+import { ContactModal } from "@/components/layout/ContactModal";
 import { Toaster } from "sonner";
-import { JsonLd } from "@/components/json-ld";
-import { siteConfig } from "@/lib/site-config";
+import { JsonLd } from "@/components/layout/JsonLd";
+import { siteConfig } from "@/config/site";
 import { organizationJsonLd, localBusinessJsonLd, websiteJsonLd } from "@/lib/seo";
-import { cities, cityPath } from "@/components/city-pages/city-data.mjs";
+import { cityPath, getAllCities } from "@/content";
 
-const cityEnquiryPages = Object.values(cities).map((city) => ({
+const cityEnquiryPages = getAllCities().map((city) => ({
   href: cityPath(city),
   city: city.city,
   state: city.state,

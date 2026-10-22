@@ -1,27 +1,24 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { databaseStates } from "@/lib/database-pages";
-import { getStateProfile } from "@/lib/landing";
-import { DatabaseLanding, landingMetadata } from "@/components/landing-v2/database-landing";
+import { landingMetadata } from "@/components/templates/LandingTemplate";
+import { StateTemplate } from "@/components/templates/StateTemplate";
+import { getAllStates, getState } from "@/content";
 
 export const dynamicParams = false;
 
 type Params = Promise<{ state: string }>;
 
 export function generateStaticParams() {
-  return databaseStates.map((s) => ({ state: s.slug }));
+  return getAllStates().map((s) => ({ state: s.slug }));
 }
 
 export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
-  const { state } = await params;
-  const profile = getStateProfile(state);
-  return profile ? landingMetadata(profile) : {};
+  const state = getState((await params).state);
+  return state ? landingMetadata(state.landing) : {};
 }
 
-export default async function DatabaseStatePage({ params }: { params: Params }) {
-  const { state } = await params;
-  const profile = getStateProfile(state);
-  if (!profile) notFound();
-
-  return <DatabaseLanding profile={profile} />;
+export default async function StatePage({ params }: { params: Params }) {
+  const state = getState((await params).state);
+  if (!state) notFound();
+  return <StateTemplate state={state} />;
 }
