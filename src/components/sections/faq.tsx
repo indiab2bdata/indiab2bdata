@@ -28,7 +28,7 @@ export function Faq({
     <section id={id} className={`${sectionBg} py-20 md:py-28`}>
       <div className="max-w-6xl mx-auto px-5 md:px-8">
         <Reveal className="text-center mb-12">
-          <span className="text-teal text-xs font-semibold uppercase tracking-[0.16em]">{eyebrow}</span>
+          <span className="text-teal-dark text-xs font-semibold uppercase tracking-[0.16em]">{eyebrow}</span>
           <h2 className="font-display font-extrabold text-3xl md:text-4xl text-navy mt-3 tracking-tight">
             {heading}
           </h2>

@@ -8,7 +8,7 @@ import { ProtectedEmail } from "@/components/protected-email";
 
 function Eyebrow({ children, light = false }: { children: React.ReactNode; light?: boolean }) {
   return (
-    <span className={`text-xs font-semibold uppercase tracking-[0.16em] ${light ? "text-teal-light" : "text-teal"}`}>{children}</span>
+    <span className={`text-xs font-semibold uppercase tracking-[0.16em] ${light ? "text-teal-light" : "text-teal-dark"}`}>{children}</span>
   );
 }
 
@@ -62,14 +62,14 @@ export function SplitHero({
           </span>
           <h1 className="mt-5 font-display text-3xl font-extrabold leading-[1.12] tracking-tight text-white md:text-5xl">{title}</h1>
           <p className="mt-5 max-w-xl leading-relaxed text-white/80">{description}</p>
-          <ul className="mt-7 flex flex-wrap gap-2.5">
+          {chips.length > 0 && (<ul className="mt-7 flex flex-wrap gap-2.5">
             {chips.map((chip) => (
               <li key={chip} className="inline-flex items-center gap-1.5 rounded-full border border-white/15 bg-white/10 px-3.5 py-1.5 text-xs font-medium text-white backdrop-blur-sm">
                 <CheckCircle2 className="h-3.5 w-3.5 text-teal-light" />
                 {chip}
               </li>
             ))}
-          </ul>
+          </ul>)}
         </div>
         <div className="lg:justify-self-end lg:w-full lg:max-w-[460px]">
           <LeadForm source={source} requirement={requirement} title={formTitle} subtitle={formSubtitle} buttonLabel={formButtonLabel} />
@@ -139,7 +139,7 @@ export function RecordAnatomy({
           <div className="mt-6 grid grid-cols-3 gap-3 border-t border-white/10 pt-6 text-center">
             {[
               ["Excel / CSV", "CRM-ready"],
-              ["2-6 hrs", "Typical delivery"],
+              ["Custom", "Filters & fields"],
               ["Free", "Sample first"],
             ].map(([a, b]) => (
               <div key={a}>
@@ -178,7 +178,7 @@ export function NumberedCards({ eyebrow, title, text, items }: { eyebrow: string
 const STEPS = [
   { icon: Send, title: "Share Your Target", text: "Tell us the audience, city or state, filters and quantity you need." },
   { icon: Filter, title: "Filter & Segment", text: "We build your list with the exact industry, location and role filters." },
-  { icon: ShieldCheck, title: "Verify & Clean", text: "Records are deduplicated, checked and DND-scrubbed before delivery." },
+  { icon: ShieldCheck, title: "Verify & Clean", text: "Records are deduplicated and checked for invalid numbers before delivery." },
   { icon: ClipboardList, title: "Receive Your File", text: "Get a CRM-ready Excel / CSV by email or WhatsApp - sample first." },
 ];
 

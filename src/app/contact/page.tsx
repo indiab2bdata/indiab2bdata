@@ -131,7 +131,7 @@ export default function ContactPage() {
       <section className="bg-white py-4 md:py-8">
         <div className="max-w-7xl mx-auto px-5 md:px-8 grid lg:grid-cols-[0.85fr_1.15fr] gap-8 items-start">
           <div className="rounded-2xl border border-[#DCEAF3] bg-bgsoft p-6 shadow-sm">
-            <span className="text-teal text-xs font-semibold uppercase tracking-[0.16em]">
+            <span className="text-teal-dark text-xs font-semibold uppercase tracking-[0.16em]">
               NAP Details
             </span>
             <h3 className="font-display font-extrabold text-2xl text-navy mt-3">

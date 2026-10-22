@@ -4,7 +4,7 @@ export const DEFAULT_FAQS: FaqItem[] = [
   {
     question: "Is the data legally compliant to use?",
     answer:
-      "Yes, all data is sourced from publicly available and permission-based channels, and DND numbers are scrubbed before delivery.",
+      "Yes, all data is sourced from publicly available and permission-based channels, and supplied for lawful B2B use only. See our Data Sourcing & Compliance page for details.",
   },
   {
     question: "Can I get a free sample before buying?",
@@ -32,7 +32,7 @@ export const ABOUT_FAQS: FaqItem[] = [
   {
     question: "Where does IndiaB2BData.com get its data?",
     answer:
-      "Records are compiled from publicly available and permission-based sources such as business registries (GST, MCA/ROC), trade directories and business websites, then verified, deduplicated and DND-scrubbed before delivery.",
+      "Records are compiled from publicly available and permission-based sources such as business registries (GST, MCA/ROC), trade directories and business websites, then verified and deduplicated before delivery.",
   },
   {
     question: "Which cities and states in India do you cover?",
@@ -47,7 +47,7 @@ export const ABOUT_FAQS: FaqItem[] = [
   {
     question: "Is buying business data legal in India?",
     answer:
-      "Using business contact data for legitimate B2B marketing is permitted when sourced lawfully and used responsibly. We scrub numbers against the TRAI DND registry and expect buyers to follow TRAI telemarketing rules and the Digital Personal Data Protection Act, 2023.",
+      "Using business contact data for legitimate B2B marketing is permitted when sourced lawfully and used responsibly. We expect buyers to check numbers against the DND registry and follow TRAI telemarketing rules and the Digital Personal Data Protection Act, 2023.",
   },
 ];
 
@@ -98,6 +98,6 @@ export const DATABASE_HUB_FAQS: FaqItem[] = [
   {
     question: "How fast is a state-wise database delivered?",
     answer:
-      "Most state and city databases are delivered in Excel or CSV within 2-6 working hours of confirming your filters, after a free sample.",
+      "State and city databases are delivered in Excel or CSV on a timeline agreed with your quote, after a free sample.",
   },
 ];

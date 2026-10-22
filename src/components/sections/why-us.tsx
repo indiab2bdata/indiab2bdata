@@ -9,7 +9,7 @@ const POINTS = [
   {
     icon: Sparkles,
     title: "Verified & Fresh",
-    description: "Refreshed monthly, de-duplicated and DND scrubbed.",
+    description: "De-duplicated and checked for invalid numbers before delivery.",
   },
   {
     icon: IndianRupee,
@@ -19,7 +19,7 @@ const POINTS = [
   {
     icon: Zap,
     title: "Fast Delivery",
-    description: "Most orders delivered within 2–6 working hours.",
+    description: "Free sample first, then delivery on an agreed timeline.",
   },
   {
     icon: MapPinned,
@@ -47,7 +47,7 @@ export function WhyUs() {
         </Reveal>
 
         <div className="order-1 lg:order-2">
-          <span className="text-teal text-xs font-semibold uppercase tracking-[0.16em]">
+          <span className="text-teal-dark text-xs font-semibold uppercase tracking-[0.16em]">
             Why Choose Us
           </span>
           <h2 className="font-display font-extrabold text-3xl md:text-4xl text-navy mt-3 tracking-tight">

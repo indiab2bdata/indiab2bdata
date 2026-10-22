@@ -62,7 +62,7 @@ const PRODUCTS = [
     href: "/bulk-sms-database-india",
     icon: MessageSquareText,
     title: "Bulk WhatsApp/SMS Data",
-    description: "DND-scrubbed number sets, formatted and ready for your bulk WhatsApp or SMS campaigns.",
+    description: "Number sets filtered by city and segment, formatted for your bulk WhatsApp or SMS campaigns.",
   },
   {
     href: "/contact",
@@ -77,7 +77,7 @@ export function Products() {
   return (
     <section id="offer" className="py-20 md:py-28 max-w-7xl mx-auto px-5 md:px-8">
       <Reveal className="max-w-2xl mb-14">
-        <span className="text-teal text-xs font-semibold uppercase tracking-[0.16em]">
+        <span className="text-teal-dark text-xs font-semibold uppercase tracking-[0.16em]">
           What We Offer
         </span>
         <h2 className="font-display font-extrabold text-3xl md:text-4xl text-navy mt-3 tracking-tight">

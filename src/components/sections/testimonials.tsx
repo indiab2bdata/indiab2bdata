@@ -32,7 +32,7 @@ export function Testimonials() {
   return (
     <section className="bg-bgsoft py-20 md:py-28">
       <Reveal className="mx-auto mb-12 max-w-2xl px-5 text-center md:px-8">
-        <span className="text-teal text-xs font-semibold uppercase tracking-[0.16em]">Client Feedback</span>
+        <span className="text-teal-dark text-xs font-semibold uppercase tracking-[0.16em]">Client Feedback</span>
         <h2 className="font-display font-extrabold text-3xl md:text-4xl text-navy mt-3 tracking-tight">
           What Our Clients Say
         </h2>

@@ -162,6 +162,7 @@ export const organizationJsonLd = {
   logo: `${siteConfig.url}/images/favicon.png`,
   image: [`${siteConfig.url}/images/favicon.png`, DEFAULT_OG_IMAGE.url],
   telephone: siteConfig.phoneDisplay,
+  email: siteConfig.email,
   address: {
     "@type": "PostalAddress",
     streetAddress: siteConfig.address.street,
@@ -181,6 +182,59 @@ export const organizationJsonLd = {
     availableLanguage: ["en", "hi"],
   },
 };
+
+/** Sitewide LocalBusiness entity (same real address/phone as the Organization) - included once via the root layout. */
+export const localBusinessJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": `${siteConfig.url}/#localbusiness`,
+  name: siteConfig.name,
+  url: siteConfig.url,
+  image: DEFAULT_OG_IMAGE.url,
+  telephone: siteConfig.phoneDisplay,
+  email: siteConfig.email,
+  address: organizationJsonLd.address,
+  areaServed: { "@type": "Country", name: "India" },
+  parentOrganization: { "@id": `${siteConfig.url}/#organization` },
+};
+
+/** Per-page Service schema for a database product. Adds an Offer only once a real price exists. */
+export function databaseServiceJsonLd({
+  name,
+  description,
+  url,
+  areaServed,
+  priceFrom,
+}: {
+  name: string;
+  description: string;
+  url: string;
+  areaServed?: { type: "State" | "City"; name: string };
+  /** Numeric INR price per record, or undefined while it's still a placeholder. */
+  priceFrom?: number;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${url}#service`,
+    serviceType: "B2B contact database",
+    name,
+    description,
+    url,
+    areaServed: areaServed ? { "@type": areaServed.type, name: areaServed.name } : { "@type": "Country", name: "India" },
+    provider: { "@id": `${siteConfig.url}/#organization` },
+    ...(priceFrom
+      ? {
+          offers: {
+            "@type": "Offer",
+            priceCurrency: "INR",
+            priceSpecification: { "@type": "UnitPriceSpecification", price: priceFrom, priceCurrency: "INR", unitText: "record" },
+            availability: "https://schema.org/InStock",
+          },
+        }
+      : {}),
+  };
+}
 
 export const websiteJsonLd = {
   "@context": "https://schema.org",

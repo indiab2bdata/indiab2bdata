@@ -22,7 +22,7 @@ export function CoverageLinks({
       <div className="max-w-7xl mx-auto px-5 md:px-8 space-y-10">
         {categoryLinks.length > 0 && (
           <Reveal>
-            <span className="text-teal text-xs font-semibold uppercase tracking-[0.16em]">{categoryHeading}</span>
+            <span className="text-teal-dark text-xs font-semibold uppercase tracking-[0.16em]">{categoryHeading}</span>
             <h2 className="font-display font-extrabold text-2xl md:text-3xl text-navy mt-3 tracking-tight">
               More {categoryHeading} Databases
             </h2>
@@ -38,7 +38,7 @@ export function CoverageLinks({
         )}
 
         <Reveal>
-          <span className="text-teal text-xs font-semibold uppercase tracking-[0.16em]">Pan-India Coverage</span>
+          <span className="text-teal-dark text-xs font-semibold uppercase tracking-[0.16em]">Pan-India Coverage</span>
           <h2 className="font-display font-extrabold text-2xl md:text-3xl text-navy mt-3 tracking-tight">
             {topic} by State &amp; City
           </h2>

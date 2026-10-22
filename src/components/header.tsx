@@ -35,7 +35,7 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-5 md:px-8 h-16 md:h-[72px] flex items-center justify-between">
         <Link href="/" className="flex items-center">
           <Image
-            src="/images/logo.svg"
+            src="/images/logo.png"
             alt="IndiaB2BData.com"
             width={400}
             height={200}

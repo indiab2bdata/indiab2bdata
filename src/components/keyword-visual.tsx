@@ -35,7 +35,7 @@ export function KeywordVisual({
         </Reveal>
 
         <div>
-          <span className="text-teal text-xs font-semibold uppercase tracking-[0.16em]">
+          <span className="text-teal-dark text-xs font-semibold uppercase tracking-[0.16em]">
             See It In Action
           </span>
           <h2 className="font-display font-extrabold text-2xl md:text-3xl text-navy mt-3 tracking-tight">

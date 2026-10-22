@@ -13,7 +13,7 @@ export function PopularCities({
   return (
     <section className="py-16 md:py-20 max-w-7xl mx-auto px-5 md:px-8">
       <Reveal className="max-w-2xl mb-10">
-        <span className="text-teal text-xs font-semibold uppercase tracking-[0.16em]">{eyebrow}</span>
+        <span className="text-teal-dark text-xs font-semibold uppercase tracking-[0.16em]">{eyebrow}</span>
         <h2 className="font-display font-extrabold text-2xl md:text-3xl text-navy mt-3 tracking-tight">{heading}</h2>
       </Reveal>
 

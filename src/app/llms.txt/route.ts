@@ -5,7 +5,7 @@ import { PRODUCT_GROUPS } from "@/lib/product-groups";
 import { cities, cityPath } from "@/components/city-pages/city-data.mjs";
 
 /**
- * /llms.txt - built from the same sources as sitemap.ts, so it can never list a retired
+ * /llms.txt - built from the same sources as lib/sitemaps.ts, so it can never list a retired
  * or renamed slug. Prerendered at build time.
  */
 export const dynamic = "force-static";
@@ -55,6 +55,7 @@ export function GET() {
     "## Policies",
     "",
     link("Privacy policy", "/privacy-policy"),
+    link("Data sourcing & compliance", "/data-sourcing-compliance"),
     link("Terms and conditions", "/terms-and-conditions"),
     "",
   ];

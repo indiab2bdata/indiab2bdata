@@ -61,7 +61,7 @@ const VALUES = [
   {
     icon: Zap,
     title: "Speed",
-    description: "Most requests are delivered within 2–6 working hours.",
+    description: "Free sample first, then delivery on a timeline agreed with your quote.",
   },
   {
     icon: MapPinned,
@@ -72,7 +72,7 @@ const VALUES = [
     icon: Handshake,
     title: "Fair Practice",
     description:
-      "DND-scrubbed, permission-conscious data, sold for legitimate marketing use only.",
+      "Permission-conscious data, sold for legitimate B2B marketing use only, with removal on request.",
   },
 ];
 
@@ -101,7 +101,7 @@ export default function AboutPage() {
 
       <section className="py-20 md:py-28 max-w-7xl mx-auto px-5 md:px-8 grid lg:grid-cols-2 gap-14 items-center">
         <Reveal>
-          <span className="text-teal text-xs font-semibold uppercase tracking-[0.16em]">
+          <span className="text-teal-dark text-xs font-semibold uppercase tracking-[0.16em]">
             Our Story
           </span>
           <h2 className="font-display font-extrabold text-3xl md:text-4xl text-navy mt-3 tracking-tight">
@@ -137,7 +137,7 @@ export default function AboutPage() {
       <section className="bg-white py-20 md:py-28">
         <div className="max-w-7xl mx-auto px-5 md:px-8">
           <Reveal className="max-w-2xl mb-14 mx-auto text-center">
-            <span className="text-teal text-xs font-semibold uppercase tracking-[0.16em]">
+            <span className="text-teal-dark text-xs font-semibold uppercase tracking-[0.16em]">
               What We Stand For
             </span>
             <h2 className="font-display font-extrabold text-3xl md:text-4xl text-navy mt-3 tracking-tight">

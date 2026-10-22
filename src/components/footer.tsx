@@ -13,6 +13,7 @@ const QUICK_LINKS = [
   { href: "/about", label: "About Us" },
   { href: "/contact", label: "Contact" },
   { href: "/privacy-policy", label: "Privacy Policy" },
+  { href: "/data-sourcing-compliance", label: "Data Sourcing & Compliance" },
   { href: "/terms-and-conditions", label: "Terms & Conditions" },
 ];
 
@@ -111,7 +112,7 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-5 md:px-8 mt-12 pt-6 border-t border-white/10 flex flex-col sm:flex-row justify-between gap-3 text-xs text-slate-500">
+      <div className="max-w-7xl mx-auto px-5 md:px-8 mt-12 pt-6 border-t border-white/10 flex flex-col sm:flex-row justify-between gap-3 text-xs text-slate-400">
         <p>© 2026 IndiaB2BData.com - All rights reserved.</p>
         <p>
           Data provided for legitimate marketing use only.{" "}

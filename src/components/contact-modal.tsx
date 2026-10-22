@@ -14,7 +14,7 @@ import { formatDataProduct, siteConfig } from "@/lib/site-config";
 
 const GENERAL = "Not sure yet - help me choose";
 const CUSTOM = "Custom / Pan-India Data";
-const BENEFITS = ["15-20 sample records", "Shared in a few hours", "DND-scrubbed", "No payment needed"];
+const BENEFITS = ["15-20 sample records", "Shared in a few hours", "Custom filters", "No payment needed"];
 
 type CityEnquiryPage = { href: string; city: string; state: string };
 type SampleContext = { requirement: string; slug: string; state?: string; city?: string };
@@ -93,6 +93,7 @@ export function ContactModal({ cityPages }: { cityPages: CityEnquiryPage[] }) {
       aria-modal="true"
       aria-labelledby="sample-modal-title"
       aria-hidden={!isOpen}
+      inert={!isOpen}
     >
       <div className="absolute inset-0 bg-navy-dark/60 backdrop-blur-[6px]" onClick={closeModal} aria-hidden="true" />
 

@@ -39,7 +39,7 @@ export function SampleDownload({
             <FileSpreadsheet className="w-7 h-7" strokeWidth={1.8} />
           </div>
           <div className="flex-1">
-            <span className="text-teal text-xs font-semibold uppercase tracking-[0.16em]">Free Sample Format</span>
+            <span className="text-teal-dark text-xs font-semibold uppercase tracking-[0.16em]">Free Sample Format</span>
             <h2 className="font-display font-extrabold text-xl md:text-2xl text-navy mt-2 tracking-tight">
               Download Sample Data - {label}
             </h2>

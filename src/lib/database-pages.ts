@@ -18,10 +18,10 @@ export type DatabaseState = {
 
 function buildHighlights(stateName: string, cityCount: number, industryFocus: string): KeywordHighlight[] {
   return [
-    { icon: ShieldCheck, title: "Verified & Fresh", description: `Every ${stateName} record checked and refreshed monthly.` },
+    { icon: ShieldCheck, title: "Verified & Fresh", description: `Every ${stateName} record checked before delivery.` },
     { icon: MapPinned, title: `${cityCount}+ Cities`, description: `Coverage across every major city and district in ${stateName}.` },
     { icon: Network, title: "Industry-Wise Filters", description: `Segmented by ${industryFocus} and 500+ other categories.` },
-    { icon: Zap, title: "Fast Delivery", description: "Most orders delivered within 2–6 working hours." },
+    { icon: Zap, title: "Sample First", description: "Review free sample records before you order." },
   ];
 }
 

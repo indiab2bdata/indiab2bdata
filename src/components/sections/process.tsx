@@ -27,7 +27,7 @@ export function Process() {
   return (
     <section id="process" className="py-20 md:py-28 max-w-7xl mx-auto px-5 md:px-8">
       <Reveal className="max-w-2xl mb-14 mx-auto text-center">
-        <span className="text-teal text-xs font-semibold uppercase tracking-[0.16em]">
+        <span className="text-teal-dark text-xs font-semibold uppercase tracking-[0.16em]">
           How It Works
         </span>
         <h2 className="font-display font-extrabold text-3xl md:text-4xl text-navy mt-3 tracking-tight">

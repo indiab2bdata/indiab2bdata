@@ -48,7 +48,7 @@ const FOLDERS: { label: string; meta: string; tone: "light" | "dark"; art: ArtRe
     art: "glacier",
     seed: 7,
     files: [
-      { name: "Mobile Numbers", meta: "DND-scrubbed", href: "/mobile-number-database-india", art: BRAND_ART },
+      { name: "Mobile Numbers", meta: "By city & role", href: "/mobile-number-database-india", art: BRAND_ART },
       { name: "Email Lists", meta: "Verified", href: "/email-database-india" },
       { name: "WhatsApp Numbers", meta: "Active", href: "/whatsapp-number-database-india" },
       { name: "Bulk SMS Data", meta: "DLT-ready", href: "/bulk-sms-database-india", art: "glacier" },

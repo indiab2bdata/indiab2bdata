@@ -6,11 +6,12 @@ import { ModalProvider } from "@/components/modal-context";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { FloatingButtons } from "@/components/floating-buttons";
+import { MobileCtaBar } from "@/components/mobile-cta-bar";
 import { ContactModal } from "@/components/contact-modal";
 import { Toaster } from "sonner";
 import { JsonLd } from "@/components/json-ld";
 import { siteConfig } from "@/lib/site-config";
-import { organizationJsonLd, websiteJsonLd } from "@/lib/seo";
+import { organizationJsonLd, localBusinessJsonLd, websiteJsonLd } from "@/lib/seo";
 import { cities, cityPath } from "@/components/city-pages/city-data.mjs";
 
 const cityEnquiryPages = Object.values(cities).map((city) => ({
@@ -52,13 +53,14 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${montserrat.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col bg-bgsoft text-ink" suppressHydrationWarning>
-        <JsonLd data={[organizationJsonLd, websiteJsonLd]} />
+      <body className="min-h-full flex flex-col bg-bgsoft pb-16 text-ink md:pb-0" suppressHydrationWarning>
+        <JsonLd data={[organizationJsonLd, localBusinessJsonLd, websiteJsonLd]} />
         <ModalProvider>
           <Header />
           <main className="flex-1">{children}</main>
           <Footer />
           <FloatingButtons />
+          <MobileCtaBar />
           <ContactModal cityPages={cityEnquiryPages} />
           <Toaster position="top-center" richColors closeButton toastOptions={{ style: { fontFamily: "var(--font-montserrat), sans-serif" } }} />
         </ModalProvider>
