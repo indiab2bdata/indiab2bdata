@@ -11,6 +11,7 @@ import { ContactCta } from "@/components/sections/contact-cta";
 import { InlineCta } from "@/components/inline-cta";
 import { JsonLd } from "@/components/json-ld";
 import { liveKeywordPages } from "@/lib/keyword-pages";
+import { isHeldFromIndex } from "@/lib/indexing";
 import { siteConfig } from "@/lib/site-config";
 import { DEFAULT_FAQS } from "@/lib/faq-data";
 import { pageMetadata, webPageJsonLd, faqJsonLd, itemListJsonLd } from "@/lib/seo";
@@ -33,7 +34,7 @@ const webPageSchema = webPageJsonLd({
 const faqSchema = faqJsonLd(DEFAULT_FAQS);
 
 const productListSchema = itemListJsonLd(
-  liveKeywordPages.map((page) => ({ name: page.keyword, url: `${siteConfig.url}/${page.slug}` })),
+  liveKeywordPages.filter((page) => !isHeldFromIndex(page.slug)).map((page) => ({ name: page.keyword, url: `${siteConfig.url}/${page.slug}` })),
   "B2B & Company Databases"
 );
 

@@ -3,6 +3,7 @@ import { Building2, Globe2, Layers, Mail, MessageSquareText, Smartphone } from "
 import { Reveal } from "@/components/reveal";
 import { IndustryDirectory } from "@/components/industry-directory";
 import { liveKeywordPages } from "@/lib/keyword-pages";
+import { isHeldFromIndex } from "@/lib/indexing";
 
 /** Hand-written blurbs where the meta description does not make a good one-liner. */
 const BLURB_OVERRIDES: Record<string, string> = {
@@ -22,7 +23,7 @@ const BLURB_OVERRIDES: Record<string, string> = {
 
 /** One-line card blurb: the part of each meta description after the dash, up to the first sentence. */
 const CARD_DESCRIPTIONS = Object.fromEntries(
-  liveKeywordPages.map((page) => {
+  liveKeywordPages.filter((page) => !isHeldFromIndex(page.slug)).map((page) => {
     const afterDash = page.metaDescription.split(/ [-—] /)[1] ?? page.metaDescription;
     const sentence = afterDash.split(/\.\s/)[0].replace(/\.$/, "");
     return [`/${page.slug}`, BLURB_OVERRIDES[`/${page.slug}`] ?? sentence.charAt(0).toUpperCase() + sentence.slice(1)];
