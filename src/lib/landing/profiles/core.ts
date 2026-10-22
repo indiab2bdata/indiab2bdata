@@ -29,7 +29,7 @@ import {
   Wrench,
 } from "lucide-react";
 import { CLAIMS, deliveryPhrase, removalSentence } from "@/lib/claims";
-import type { CoverageRow, IconCard, LandingFaq, LandingProfile, LinkItem, SegmentTab } from "@/lib/landing/types";
+import type { CoverageRow, IconCard, LandingFaq, LandingGuide, LandingProfile, LinkItem, SegmentTab } from "@/lib/landing/types";
 import type { SampleProfile } from "@/lib/sample-data";
 
 /**
@@ -59,6 +59,7 @@ export type CoreInput = {
   dataFields: string[];
   sample: SampleProfile;
   useCases: IconCard[];
+  guide?: LandingGuide;
   faqs: LandingFaq[];
   pricingNote: string;
   related: LinkItem[];
@@ -90,6 +91,7 @@ export function coreProfile(c: CoreInput): LandingProfile {
     dataFields: c.dataFields,
     sample: { profile: c.sample, csvSlug: c.slug },
     useCases: c.useCases,
+    guide: c.guide,
     buyerFaqs: [
       ...c.faqs,
       {

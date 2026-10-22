@@ -38,6 +38,13 @@ export type LandingFaq = { question: string; answer: string };
 
 export type LandingTestimonial = { quote: string; name: string; role: string };
 
+/** Long-form, page-specific buying guide (rendered as H2 + H3 sections). Real substance only - no filler. */
+export type LandingGuide = {
+  heading: string;
+  intro?: string;
+  sections: { heading: string; paragraphs?: string[]; bullets?: string[] }[];
+};
+
 export type LandingProfile = {
   /** Canonical path, e.g. "/government-employees-database-india". */
   path: string;
@@ -75,6 +82,7 @@ export type LandingProfile = {
   totalRecords: string;
   /** One short, page-specific disclaimer. */
   disclaimer: string;
+  guide?: LandingGuide;
   /** Only real, attributable reviews for this category. Empty or omitted hides the section. */
   testimonials?: LandingTestimonial[];
   /** For Service schema areaServed. */

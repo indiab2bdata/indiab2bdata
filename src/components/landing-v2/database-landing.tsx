@@ -8,6 +8,7 @@ import {
   CtaBand,
   Disclaimer,
   ExploreSection,
+  GuideSection,
   LandingHero,
   SamplePreview,
   SegmentSection,
@@ -65,6 +66,7 @@ export function DatabaseLanding({ profile }: { profile: LandingProfile }) {
       <CoverageSection profile={profile} />
       <UseCaseSection profile={profile} />
       {band(1)}
+      {profile.guide && <GuideSection guide={profile.guide} />}
       <Stepper />
       <ComplianceBlock />
       {band(2)}
