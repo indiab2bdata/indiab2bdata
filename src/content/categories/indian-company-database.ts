@@ -9,14 +9,14 @@ export default {
     keyword: "Indian company database",
     title: "Indian Company Database | Pan-India Coverage",
     metaDescription:
-      "A pan-India company database covering every major state and city. Verified, permission-based sourcing with city, state and pincode-level filters.",
+      "A pan-India company database covering every major state and city. Permission-based sourcing with city, state and pincode-level filters.",
     eyebrow: "Indian Company Database",
     h1: "Indian Company Database - Every State, Every City",
     answer:
       "An Indian company database is a nationwide collection of registered company and contact records covering businesses across India's states, cities and pincode clusters. IndiaB2BData.com's Indian company database spans 700+ cities, sourced from publicly available and permission-based channels and filterable down to the pincode level.",
     intro: [
       "Expanding across India means dealing with huge regional variation - what works in Mumbai doesn't automatically translate to Lucknow or Coimbatore. An Indian company database that only covers a handful of metros isn't enough for a genuinely pan-India rollout.",
-      "Our database is built for exactly this: filter by state, city or pincode cluster to plan a phased rollout, or pull the full pan-India set for a nationwide campaign - all from the same verified source.",
+      "Our database is built for exactly this: filter by state, city or pincode cluster to plan a phased rollout, or pull the full pan-India set for a nationwide campaign - all from the same source.",
     ],
     highlights: [
       { icon: MapPinned, title: "700+ Cities", description: "Coverage across every major state and city cluster." },
@@ -41,7 +41,7 @@ export default {
       },
       {
         question: "Where does the data come from?",
-        answer: "It's compiled from publicly available and permission-based channels, then verified and deduplicated.",
+        answer: "It's compiled from publicly available and permission-based channels, then checked and deduplicated.",
       },
       {
         question: "What if I need the whole country at once?",

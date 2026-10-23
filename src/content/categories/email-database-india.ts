@@ -7,13 +7,13 @@ export default {
   keyword: {
     slug: "email-database-india",
     keyword: "email database India",
-    title: "Email Database India | Verified B2B Emails",
+    title: "Email Database India | B2B Emails",
     metaDescription:
-      "Verified business email database for India - company & decision-maker emails by industry and city. Deliverability-checked lists for B2B email marketing, from ₹2,999.",
+      "Business email database for India - company & decision-maker emails by industry and city. Deliverability-checked lists for B2B email marketing, from ₹2,999.",
     eyebrow: "Email Database India",
-    h1: "Email Database India - Verified Business Email Lists for B2B Marketing",
+    h1: "Email Database India - Business Email Lists for B2B Marketing",
     answer:
-      "An email database is a list of verified business email addresses, such as company, founder and decision-maker emails, used for B2B email marketing and cold outreach. IndiaB2BData.com's email database for India is segmented by industry and city, checked for deliverability before delivery, and supplied as an Excel/CSV file ready for any email tool.",
+      "An email database is a list of business email addresses, such as company, founder and decision-maker emails, used for B2B email marketing and cold outreach. IndiaB2BData.com's email database for India is segmented by industry and city, checked for deliverability before delivery, and supplied as an Excel/CSV file ready for any email tool.",
     intro: [
       "Email is still the cheapest way to reach thousands of businesses at once. One well-written campaign can go to 10,000 prospects for less than the cost of a single day of field sales. That's why almost every B2B company in India, from SaaS startups to industrial suppliers, runs email outreach.",
       "The problem is list quality. A list full of dead addresses and spam traps drives up your bounce rate, and once your sender reputation drops, even your good emails start landing in spam. Many cheap email lists sold online are scraped free-mail dumps that do exactly this.",
@@ -71,7 +71,7 @@ export default {
       {
         question: "Will the emails bounce?",
         answer:
-          "Lists are checked for deliverability before delivery to remove invalid addresses. No list is 100% bounce-free, but a verified list keeps bounce rates low.",
+          "Lists are checked for deliverability before delivery to remove invalid addresses. No list is 100% bounce-free, but a checked list keeps bounce rates low.",
       },
       {
         question: "Can I use this for cold email campaigns?",

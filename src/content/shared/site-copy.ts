@@ -2,13 +2,13 @@
 export const SITE_COPY = {
   logoAlt: "IndiaB2BData.com",
   /** Default alt text for the photo behind inner-page heroes. */
-  heroImageAlt: "Sales team working with verified B2B business data",
+  heroImageAlt: "Sales team working with B2B business data",
   header: {
     sampleCta: "Get Free Sample",
     menuLabel: "Menu",
   },
   footer: {
-    tagline: "Verified B2B business data across India - mobile numbers, emails and company records for smarter sales & marketing.",
+    tagline: "B2B business data across India - mobile numbers, emails and company records for smarter sales & marketing.",
     quickLinks: "Quick Links",
     states: "Database by State",
     coreDatabases: "Core Databases",

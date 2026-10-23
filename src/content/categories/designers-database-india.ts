@@ -13,7 +13,7 @@ export default {
     eyebrow: "Designers Database",
     h1: "Designers Database in India",
     answer:
-      "A designers database lists creative professionals and design studios in India - graphic, UI/UX, web, fashion, textile, product, jewellery and motion designers - with name, design specialisation, studio or employer, city and contact details. IndiaB2BData.com supplies verified designer data for software, hiring, printing and supplies marketing.",
+      "A designers database lists creative professionals and design studios in India - graphic, UI/UX, web, fashion, textile, product, jewellery and motion designers - with name, design specialisation, studio or employer, city and contact details. IndiaB2BData.com supplies designer data for software, hiring, printing and supplies marketing.",
     intro: [
       "India's design economy spans freelance graphic designers, UI/UX teams in tech companies, fashion and textile designers in Delhi, Mumbai, Jaipur and Tiruppur, and jewellery designers in Surat and Mumbai. Designers choose the software, fonts, stock content, printers and materials their clients pay for.",
       "Our designers database covers freelancers, in-house designers and design studios, filterable by specialisation and city. For architects and interior designers, see our dedicated architect and interior designers database.",

@@ -6,20 +6,20 @@ export default {
   updated: "2026-10-16",
   keyword: {
     slug: "verified-business-database-india",
-    keyword: "verified business database India",
-    title: "Verified Business Database India | Accuracy You Can Trust",
+    keyword: "business database India",
+    title: "Business Database India | Accuracy You Can Trust",
     metaDescription:
-      "A verified business database for India - manually and automatically checked and deduplicated. Free sample before you buy.",
-    eyebrow: "Verified Business Database India",
-    h1: "Verified Business Database India - Accuracy Before Anything Else",
+      "A business database for India - manually and automatically checked and deduplicated. Free sample before you buy.",
+    eyebrow: "Business Database India",
+    h1: "Business Database India - Accuracy Before Anything Else",
     answer:
-      "A verified business database is one where every record has been checked for accuracy and deduplicated before it's delivered. IndiaB2BData.com verifies every record in its database this way, and offers a free sample so you can confirm accuracy before you buy.",
+      "A business database is one where every record has been checked for accuracy and deduplicated before it's delivered. IndiaB2BData.com verifies every record in its database this way, and offers a free sample so you can confirm accuracy before you buy.",
     intro: [
       "\"Verified\" is a word a lot of data sellers use loosely. For us it means a specific process: every record is checked and deduplicated against our existing database - every single time, not just on request.",
       "That process is what keeps connect rates high and protects your sender reputation on WhatsApp and email - nobody wants to burn a campaign on numbers that were never real to begin with.",
     ],
     highlights: [
-      { icon: UserCheck, title: "Manual + Automated Checks", description: "Records verified before they ever reach a client." },
+      { icon: UserCheck, title: "Manual + Automated Checks", description: "Records checked before they ever reach a client." },
       { icon: ShieldCheck, title: "Deduplicated Records", description: "Duplicates and invalid numbers removed before delivery." },
       { icon: ListChecks, title: "Deduplicated", description: "No repeat records inflating your list count." },
       { icon: Sparkles, title: "Free Sample First", description: "See real records before you commit to a package." },

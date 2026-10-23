@@ -22,7 +22,7 @@ export default {
       { icon: Building2, title: "All Major Trades", description: "Civil, electrical, plumbing, HVAC, interiors, roads." },
       { icon: Landmark, title: "Govt-Registered Firms", description: "PWD, CPWD and municipal contractors where available." },
       { icon: MapPinned, title: "City & District-Wise", description: "Metros, tier-2 cities and district towns." },
-      { icon: ShieldCheck, title: "Verified Contacts", description: "Checked and deduplicated before delivery." },
+      { icon: ShieldCheck, title: "Business Contacts", description: "Checked and deduplicated before delivery." },
     ],
     dataFields: [
       "Contractor / firm name",

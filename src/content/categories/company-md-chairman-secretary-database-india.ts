@@ -62,7 +62,7 @@ export default {
     ],
     faqs: [
       { question: "What is a company MD and chairman database?", answer: "It is a list of managing directors, chairmen, directors and company secretaries of Indian companies with company details and contact information." },
-      { question: "Where does director data come from?", answer: "Director names and company details are compiled from MCA company records and other lawful public and permission-based sources, then verified." },
+      { question: "Where does director data come from?", answer: "Director names and company details are compiled from MCA company records and other lawful public and permission-based sources, then checked." },
       { question: "Can I get only company secretaries?", answer: "Yes. You can order company secretaries separately, filtered by industry, company type and location." },
       { question: "Does it include listed companies?", answer: "Yes. Records cover private, public and listed companies where data is available." },
       { question: "How is this different from the CEO/CFO database?", answer: "This database focuses on board-level officers - MDs, chairmen, directors and company secretaries. The CEO, CFO, CMO and IT heads database covers functional CXOs." },

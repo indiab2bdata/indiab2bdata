@@ -9,11 +9,11 @@ export default {
     keyword: "bulk SMS database India",
     title: "Bulk SMS Database India | Business Mobile Numbers for DLT Campaigns",
     metaDescription:
-      "Verified bulk SMS database for India - business mobile numbers by city, pincode and industry, ready for DLT-compliant SMS campaigns. From ₹2,999.",
+      "Bulk SMS database for India - business mobile numbers by city, pincode and industry, ready for DLT-compliant SMS campaigns. From ₹2,999.",
     eyebrow: "Bulk SMS Database India",
     h1: "Bulk SMS Database India - Business Numbers for SMS Campaigns",
     answer:
-      "A bulk SMS database is a large, verified list of mobile numbers used to send promotional or transactional SMS campaigns. In India promotional messages must skip DND-registered numbers and go through a DLT-registered sender ID with approved templates. IndiaB2BData.com supplies business numbers by city, pincode and industry, ready to upload into any bulk SMS panel.",
+      "A bulk SMS database is a large, list of mobile numbers used to send promotional or transactional SMS campaigns. In India promotional messages must skip DND-registered numbers and go through a DLT-registered sender ID with approved templates. IndiaB2BData.com supplies business numbers by city, pincode and industry, ready to upload into any bulk SMS panel.",
     intro: [
       "Bulk SMS still gets some of the highest open rates of any channel in India. Almost every SMS is read, usually within minutes, and it reaches every phone, including basic handsets without internet or WhatsApp.",
       "The catch is that TRAI's rules are strict. Promotional SMS to DND numbers gets blocked, every message must use a DLT-registered header and template, and sending to a bad list simply wastes credits on numbers that will never receive your message.",

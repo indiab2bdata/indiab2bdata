@@ -1,7 +1,7 @@
 /** Copy for /llms.txt. Product, state and city lists are generated from the content registry. */
 export const LLMS = {
   summary:
-    "IndiaB2BData.com provides verified B2B and B2C contact databases across India, including company records, mobile numbers, business emails and segment lists for sales and marketing.",
+    "IndiaB2BData.com provides B2B and B2C contact databases across India, including company records, mobile numbers, business emails and segment lists for sales and marketing.",
   about: {
     heading: "About and Contact",
     links: [
@@ -19,6 +19,7 @@ export const LLMS = {
     links: [
       { label: "Privacy policy", path: "/privacy-policy" },
       { label: "Data sourcing & compliance", path: "/data-sourcing-compliance" },
+      { label: "Data sourcing methodology", path: "/data-sourcing-methodology" },
       { label: "Terms and conditions", path: "/terms-and-conditions" },
     ],
   },

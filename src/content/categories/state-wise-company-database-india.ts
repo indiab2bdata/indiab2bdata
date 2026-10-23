@@ -9,7 +9,7 @@ export default {
     keyword: "state wise company database India",
     title: "State Wise Company Database India | Every Major State",
     metaDescription:
-      "A company database segmented by state across India. Plan region-by-region rollouts with verified company records for every major state.",
+      "A company database segmented by state across India. Plan region-by-region rollouts with company records for every major state.",
     eyebrow: "State Wise Company Database India",
     h1: "State Wise Company Database India - Plan Region by Region",
     answer:

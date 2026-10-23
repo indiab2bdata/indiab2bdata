@@ -13,7 +13,7 @@ export default {
     eyebrow: "Civil Engineers Database",
     h1: "Civil Engineers Database in India",
     answer:
-      "A civil engineers database lists civil engineers, site and project engineers, structural consultants and civil contractors in India with name, role, company, experience, city and contact details. IndiaB2BData.com supplies verified civil engineering contacts for building material, equipment, software and recruitment outreach.",
+      "A civil engineers database lists civil engineers, site and project engineers, structural consultants and civil contractors in India with name, role, company, experience, city and contact details. IndiaB2BData.com supplies civil engineering contacts for building material, equipment, software and recruitment outreach.",
     intro: [
       "India's construction sector - housing, roads, metros, industrial parks and smart-city projects - runs on civil engineers. They specify cement, steel, tiles, waterproofing and equipment on site, so they are a key influencer audience for building material brands and construction-tech companies.",
       "Our civil engineers database covers site engineers, project managers, structural and design consultants, and civil contractors, filterable by city, experience and employer type.",
@@ -22,7 +22,7 @@ export default {
       { icon: Building2, title: "Engineers & Contractors", description: "Site, project, structural and contractors." },
       { icon: Users, title: "Experience Bands", description: "Freshers to senior project managers." },
       { icon: MapPinned, title: "City-Wise", description: "Metro and growing infrastructure cities." },
-      { icon: ShieldCheck, title: "Verified Contacts", description: "Checked and deduplicated." },
+      { icon: ShieldCheck, title: "Business Contacts", description: "Checked and deduplicated." },
     ],
     dataFields: [
       "Engineer / contractor name",

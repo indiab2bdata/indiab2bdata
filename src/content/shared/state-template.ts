@@ -40,7 +40,7 @@ export function stateLanding(s: StateInput): LandingPage {
     title: s.title,
     metaDescription: s.metaDescription,
     eyebrow: `${s.name} B2B Data`,
-    h1: `${s.name} Business Database: Verified B2B Contacts by City & Industry`,
+    h1: `${s.name} Business Database: B2B Contacts by City & Industry`,
     lead: s.lead,
     breadcrumbs: [
       { label: "Databases", href: "/database" },

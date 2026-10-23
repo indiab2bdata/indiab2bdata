@@ -9,7 +9,7 @@ export default {
     keyword: "WhatsApp number database India",
     title: "WhatsApp Number Database India | B2B Data",
     metaDescription:
-      "Verified WhatsApp number database for Indian businesses - WhatsApp-active owner & decision-maker numbers by city and industry. Ready for WhatsApp API campaigns.",
+      "WhatsApp number database for Indian businesses - WhatsApp-active owner & decision-maker numbers by city and industry. Ready for WhatsApp API campaigns.",
     eyebrow: "WhatsApp Number Database India",
     h1: "WhatsApp Number Database India - Reach Businesses Where They Actually Reply",
     answer:

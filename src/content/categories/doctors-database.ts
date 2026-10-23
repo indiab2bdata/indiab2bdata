@@ -9,7 +9,7 @@ export default {
     keyword: "doctors database India",
     title: "Doctors Database India | Clinics & Hospitals",
     metaDescription:
-      "Verified doctors database for India - specialists, clinics and hospitals by speciality and city. For pharma, medical device & healthcare marketing. Free sample.",
+      "Doctors database for India - specialists, clinics and hospitals by speciality and city. For pharma, medical device & healthcare marketing. Free sample.",
     eyebrow: "Doctors Database India",
     h1: "Doctors Database India - Specialists, Clinics & Hospitals by City",
     answer:
@@ -23,7 +23,7 @@ export default {
       { icon: Stethoscope, title: "Speciality-Wise Lists", description: "General physicians, specialists, dentists and more." },
       { icon: Building2, title: "Clinics & Hospitals", description: "Practice and institution-level contacts." },
       { icon: MapPinned, title: "City-Level Coverage", description: "Filter doctors by city, state or region." },
-      { icon: ShieldCheck, title: "Verified Records", description: "Checked and deduplicated before delivery." },
+      { icon: ShieldCheck, title: "Business Records", description: "Checked and deduplicated before delivery." },
     ],
     dataFields: [
       "Doctor name and qualification, where available",

@@ -9,7 +9,7 @@ export default {
     keyword: "job seekers database India",
     title: "Job Seekers Database India | Candidates",
     metaDescription:
-      "Verified job seekers database for India - freshers and experienced candidates by skill, qualification and city. For recruiters & HR teams. Free sample.",
+      "Job seekers database for India - freshers and experienced candidates by skill, qualification and city. For recruiters & HR teams. Free sample.",
     eyebrow: "Job Seekers Database India",
     h1: "Job Seekers Database India - Candidates by Skill, Experience and City",
     answer:

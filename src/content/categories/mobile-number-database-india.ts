@@ -9,11 +9,11 @@ export default {
     keyword: "mobile number database India",
     title: "Mobile Number Database India | Free Sample",
     metaDescription:
-      "Buy a verified mobile number database for India - business owner & decision-maker numbers by city, pincode and industry. Deduplicated Excel/CSV, from ₹2,999.",
+      "Buy a mobile number database for India - business owner & decision-maker numbers by city, pincode and industry. Deduplicated Excel/CSV, from ₹2,999.",
     eyebrow: "Mobile Number Database India",
-    h1: "Mobile Number Database India - Verified Business Owner & Decision-Maker Numbers",
+    h1: "Mobile Number Database India - Business Owner & Decision-Maker Numbers",
     answer:
-      "A mobile number database is a list of verified mobile numbers for business owners and decision-makers, tagged with company name, industry and city, that sales teams use for calling, WhatsApp and SMS outreach. IndiaB2BData.com's mobile number database covers 700+ Indian cities and 500+ industries. Every list is deduplicated and delivered as an Excel/CSV file, with packages starting at ₹2,999.",
+      "A mobile number database is a list of mobile numbers for business owners and decision-makers, tagged with company name, industry and city, that sales teams use for calling, WhatsApp and SMS outreach. IndiaB2BData.com's mobile number database covers 700+ Indian cities and 500+ industries. Every list is deduplicated and delivered as an Excel/CSV file, with packages starting at ₹2,999.",
     intro: [
       "For most Indian sales teams, the phone is still the fastest way to close a deal. Business owners answer calls and read WhatsApp far more reliably than they open cold emails. A good calling list can turn one telecaller into a steady source of meetings, but only if the numbers on it are real.",
       "That's where most purchased lists fail. Numbers are switched off, belong to the wrong person, are repeated three times, or sit on the DND registry. Your team burns half the day dialling dead numbers, and your cost per lead quietly doubles.",
@@ -63,7 +63,7 @@ export default {
       {
         question: "What is a mobile number database?",
         answer:
-          "It is a verified list of mobile numbers for business owners and decision-makers, usually with company name, industry and city, that sales teams use for calling, WhatsApp and SMS campaigns.",
+          "It is a list of mobile numbers for business owners and decision-makers, usually with company name, industry and city, that sales teams use for calling, WhatsApp and SMS campaigns.",
       },
       {
         question: "How much does a mobile number database cost in India?",

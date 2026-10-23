@@ -13,7 +13,7 @@ export default {
     eyebrow: "Chartered Accountants Database",
     h1: "Chartered Accountants Database in India",
     answer:
-      "A chartered accountants database is a structured list of practising CAs and CA firms in India, with name, firm, specialisation (audit, tax, GST, advisory), city and contact details. IndiaB2BData.com supplies verified CA records filterable by city, state and practice area for B2B marketing and partnerships.",
+      "A chartered accountants database is a structured list of practising CAs and CA firms in India, with name, firm, specialisation (audit, tax, GST, advisory), city and contact details. IndiaB2BData.com supplies CA records filterable by city, state and practice area for B2B marketing and partnerships.",
     intro: [
       "India has lakhs of ICAI-qualified chartered accountants, and practising CAs advise lakhs of MSMEs on GST, income tax, audit and company compliance. That makes them one of the most influential referral channels in Indian B2B: a CA's recommendation often decides which accounting software, bank, loan product or compliance service a business uses.",
       "Our chartered accountants database helps fintech, SaaS, banking, insurance and training companies reach CAs and CA firms directly - by city, firm size and practice area - instead of relying on generic business lists.",
@@ -22,7 +22,7 @@ export default {
       { icon: Landmark, title: "CAs & CA Firms", description: "Individual practitioners and partnership firms." },
       { icon: Filter, title: "Practice Filters", description: "Audit, direct tax, GST, advisory and more." },
       { icon: MapPinned, title: "City-Wise Coverage", description: "Metro, tier-2 and tier-3 cities across India." },
-      { icon: ShieldCheck, title: "Verified Contacts", description: "Checked and deduplicated." },
+      { icon: ShieldCheck, title: "Business Contacts", description: "Checked and deduplicated." },
     ],
     dataFields: [
       "CA / partner name",

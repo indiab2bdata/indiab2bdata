@@ -6,6 +6,7 @@ import { InlineCta } from "@/components/sections/InlineCta";
 import { HowItWorks } from "@/components/sections/keyword/HowItWorks";
 import { Highlights } from "@/components/sections/keyword/Highlights";
 import { LongForm } from "@/components/sections/keyword/LongForm";
+import { MethodologyNote } from "@/components/sections/keyword/MethodologyNote";
 import { NumberedCards } from "@/components/sections/keyword/NumberedCards";
 import { RecordAnatomy } from "@/components/sections/keyword/RecordAnatomy";
 import { SplitHero } from "@/components/sections/keyword/SplitHero";
@@ -71,6 +72,8 @@ export function KeywordTemplate({ page }: { page: KeywordPage }) {
       />
 
       <HowItWorks title={KEYWORD_COPY.process.title(productName)} />
+
+      <MethodologyNote />
 
       <InlineCta
         id={`${page.slug}-process-cta`}

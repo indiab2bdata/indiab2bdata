@@ -13,7 +13,7 @@ export default {
     eyebrow: "Consultants Database",
     h1: "Consultants & Consulting Services Database in India",
     answer:
-      "A consultants and consulting services database lists independent consultants and consulting firms in India - management, HR and recruitment, tax and finance, engineering, IT, legal, marketing and immigration consultants - with name, firm, specialisation, city and contact details. IndiaB2BData.com supplies verified consultant data for partnerships, referrals and B2B marketing.",
+      "A consultants and consulting services database lists independent consultants and consulting firms in India - management, HR and recruitment, tax and finance, engineering, IT, legal, marketing and immigration consultants - with name, firm, specialisation, city and contact details. IndiaB2BData.com supplies consultant data for partnerships, referrals and B2B marketing.",
     intro: [
       "Consultants sit at the centre of Indian B2B buying. A management or HR consultant often recommends software, vendors and service providers to dozens of clients, which makes consultants valuable both as customers and as referral partners.",
       "Our consultants database covers independent professionals and consulting firms across specialisations, filterable by consulting type, city and firm size.",

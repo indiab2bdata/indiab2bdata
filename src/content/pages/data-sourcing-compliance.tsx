@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { LegalSection } from "@/components/sections/LegalSection";
 import { ProtectedEmail } from "@/components/ui/ProtectedEmail";
 import { CLAIMS } from "@/config/claims";
@@ -49,7 +50,13 @@ export const COMPLIANCE_PAGE: LegalPageContent = {
             ))}
           </ul>
         ) : (
-          <p className="mt-3 max-w-[70ch]">Contact us for a description of the sources behind any dataset before you buy it.</p>
+          <p className="mt-3 max-w-[70ch]">
+            Contact us for a description of the sources behind any dataset before you buy it. Our{" "}
+            <Link href="/data-sourcing-methodology" className="font-semibold text-teal hover:underline">
+              data sourcing methodology
+            </Link>{" "}
+            explains how records are collected, checked and where their limits are.
+          </p>
         )}
       </LegalSection>
 

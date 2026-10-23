@@ -10,7 +10,7 @@ export const DEFAULT_OG_IMAGE: OgImage = {
   url: `${siteConfig.url}/images/home/hero.jpg`,
   width: 1200,
   height: 900,
-  alt: `${siteConfig.name} - Verified B2B business data across India`,
+  alt: `${siteConfig.name} - B2B business data across India`,
 };
 
 /** Resolves a site-relative path to an absolute https://... URL. */

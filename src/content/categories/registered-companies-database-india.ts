@@ -7,9 +7,9 @@ export default {
   keyword: {
     slug: "registered-companies-database-india",
     keyword: "registered companies database India",
-    title: "Registered Companies Database India | Verified Registration Status",
+    title: "Registered Companies Database India | Registration Status",
     metaDescription:
-      "A database of formally registered companies across India, with verified registration status for compliance-first vendor and partner selection.",
+      "A database of formally registered companies across India, with registration status for compliance-first vendor and partner selection.",
     eyebrow: "Registered Companies Database India",
     h1: "Registered Companies Database India - Compliance-First Company Records",
     answer:
@@ -19,7 +19,7 @@ export default {
       "We combine registration signals - GST status and Companies Act incorporation - so you can build a shortlist you're confident is compliance-ready before you make first contact.",
     ],
     highlights: [
-      { icon: ShieldCheck, title: "Verified Registration", description: "Only formally registered businesses included." },
+      { icon: ShieldCheck, title: "Registration Status", description: "Only formally registered businesses included." },
       { icon: BadgeCheck, title: "Compliance-First Lists", description: "Built for procurement and vendor onboarding." },
       { icon: FileText, title: "Multiple Registration Signals", description: "GST and Companies Act status combined." },
       { icon: Landmark, title: "Pan-India Coverage", description: "Registered companies across every state." },

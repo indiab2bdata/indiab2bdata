@@ -113,7 +113,7 @@ export const organizationJsonLd = {
   },
   areaServed: { "@type": "Country", name: "India" },
   description:
-    "Verified B2B mobile number, email and company databases across 700+ Indian cities and 500+ industries.",
+    "B2B mobile number, email and company databases across 700+ Indian cities and 500+ industries.",
   contactPoint: {
     "@type": "ContactPoint",
     telephone: siteConfig.phoneDisplay,

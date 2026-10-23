@@ -3,9 +3,9 @@ const PHONE_DIGITS = "918929695846";
 export const siteConfig = {
   name: "IndiaB2BData.com",
   url: "https://www.indiab2bdata.com",
-  defaultTitle: "IndiaB2BData.com | Verified B2B Business Data Across India",
+  defaultTitle: "IndiaB2BData.com | B2B Business Data Across India",
   defaultDescription:
-    "IndiaB2BData.com provides verified, fresh B2B mobile number, email and company databases across 700+ Indian cities. Boost your sales & marketing with genuine data.",
+    "IndiaB2BData.com provides checked B2B mobile number, email and company databases across 700+ Indian cities. Boost your sales & marketing with genuine data.",
   /** Used in JSON-LD only - visible links use <ProtectedEmail> so the address stays out of the HTML body. */
   email: "info@indiab2bdata.com",
   phoneDisplay: "+91 89296 95846",

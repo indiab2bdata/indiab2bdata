@@ -10,7 +10,7 @@ export const LANDING_PROCESS = {
     { icon: Filter, title: "Get Sample & Quote", text: "Matching sample rows, record count and price.", label: "Same working day" },
     {
       icon: ShieldCheck,
-      title: CLAIMS.dndScrubbing ? "Verify & Scrub" : "Verify & Clean",
+      title: CLAIMS.dndScrubbing ? "Check & Scrub" : "Check & Clean",
       text: CLAIMS.dndScrubbing ? "Deduplicated, invalid numbers removed, DND-checked." : "Deduplicated and invalid numbers removed.",
       label: "Before every delivery",
     },
@@ -25,7 +25,7 @@ export const KEYWORD_PROCESS = {
   steps: [
     { icon: Send, title: "Share Your Target", text: "Tell us the audience, city or state, filters and quantity you need." },
     { icon: Filter, title: "Filter & Segment", text: "We build your list with the exact industry, location and role filters." },
-    { icon: ShieldCheck, title: "Verify & Clean", text: "Records are deduplicated and checked for invalid numbers before delivery." },
+    { icon: ShieldCheck, title: "Check & Clean", text: "Records are deduplicated and checked for invalid numbers before delivery." },
     { icon: ClipboardList, title: "Receive Your File", text: "Get a CRM-ready Excel / CSV by email or WhatsApp - sample first." },
   ],
 };

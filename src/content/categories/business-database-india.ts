@@ -7,13 +7,13 @@ export default {
   keyword: {
     slug: "business-database-india",
     keyword: "business database India",
-    title: "Business Database India | 50L+ Verified Contacts",
+    title: "Business Database India | 50L+ Business Contacts",
     metaDescription:
-      "Access a verified business database across India - 50L+ contacts, 700+ cities, every major industry. Built for sales prospecting and marketing outreach.",
+      "Access a business database across India - 50L+ contacts, 700+ cities, every major industry. Built for sales prospecting and marketing outreach.",
     eyebrow: "Business Database India",
     h1: "Business Database India - Reach Every Industry, Every City",
     answer:
-      "A business database is a verified collection of company and contact records - names, phone numbers, emails and industry classification - used to identify and reach potential customers or partners. IndiaB2BData.com's business database spans 50L+ records across real estate, EdTech, finance, manufacturing, healthcare, e-commerce and 500+ other industries.",
+      "A business database is a structured collection of company and contact records - names, phone numbers, emails and industry classification - used to identify and reach potential customers or partners. IndiaB2BData.com's business database spans 50L+ records across real estate, EdTech, finance, manufacturing, healthcare, e-commerce and 500+ other industries.",
     intro: [
       "Growing a business in India means reaching prospects across a huge range of cities, languages and industries. A generic contact list rarely fits - you need a business database that can be filtered down to exactly who you're trying to reach.",
       "Our business database covers 700+ cities and lets you filter by city, pincode, industry, turnover band or job role, so every list you receive is built for your specific outreach - not a one-size-fits-all export.",

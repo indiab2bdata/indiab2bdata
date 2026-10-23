@@ -24,7 +24,7 @@ export default {
     highlights: [
       { icon: Users, title: "Decision-Maker Contacts", description: "Filtered toward relevant roles and designations." },
       { icon: Target, title: "Industry & Size Filters", description: "Built around your specific target segment." },
-      { icon: BadgeCheck, title: "Verified for Outreach", description: "Checked and deduplicated before delivery." },
+      { icon: BadgeCheck, title: "Checked for Outreach", description: "Checked and deduplicated before delivery." },
       { icon: TrendingUp, title: "Built for B2B Sales Motions", description: "Cold calling, email and account-based selling." },
     ],
     useCases: [

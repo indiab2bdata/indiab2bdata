@@ -9,7 +9,7 @@ export default {
     keyword: "car owners database India",
     title: "Car Owners Database India | Vehicle Owners",
     metaDescription:
-      "Verified car owners database for India - vehicle owners by city, car segment and brand. For insurance, auto service, dealerships & finance teams. Free sample.",
+      "Car owners database for India - vehicle owners by city, car segment and brand. For insurance, auto service, dealerships & finance teams. Free sample.",
     eyebrow: "Car Owners Database India",
     h1: "Car Owners Database India - Vehicle Owners by City, Segment and Brand",
     answer:

@@ -11,11 +11,11 @@ export default {
     keyword: "B2B and B2C database India",
     title: "B2B & B2C Companies Database India",
     metaDescription:
-      "One provider for B2B company contacts and B2C consumer data in India. Filter by city, industry, income band or interest. Verified. Free sample.",
+      "One provider for B2B company contacts and B2C consumer data in India. Filter by city, industry, income band or interest. Free sample.",
     eyebrow: "B2B & B2C Companies Database",
     h1: "B2B & B2C Database India - Company Contacts and Consumer Data in One Place",
     answer:
-      "A B2B database lists businesses and their decision-makers; a B2C database lists individual consumers. Many Indian brands sell to both: a company that supplies dealers also runs consumer campaigns. IndiaB2BData.com supplies both types of data, verified and deduplicated, filtered by city, industry, income band or interest.",
+      "A B2B database lists businesses and their decision-makers; a B2C database lists individual consumers. Many Indian brands sell to both: a company that supplies dealers also runs consumer campaigns. IndiaB2BData.com supplies both types of data, checked and deduplicated, filtered by city, industry, income band or interest.",
     intro: [
       "Most growing businesses in India don't sell to just one kind of customer. A solar installer pitches housing societies and factories. An insurance agency targets salaried individuals and small business owners. A software company sells to firms but also runs a consumer app. Using two separate data vendors for this means two sets of quality standards, two invoices and two ways of formatting files.",
       "Our B2B and B2C database brings both into one order. Company records come with business name, category, GST details and decision-maker contacts. Consumer records come with city, pincode and, where available, profile filters such as age band, income band or interest. Both are deduplicated before delivery.",

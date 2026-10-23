@@ -7,13 +7,13 @@ export default {
   keyword: {
     slug: "company-directory-india",
     keyword: "company directory India",
-    title: "Company Directory India | Look Up Verified Company Profiles",
+    title: "Company Directory India | Look Up Company Profiles",
     metaDescription:
-      "Search a verified company directory for India - company name, category, city and contact details. Built for due-diligence and quick company look-ups.",
+      "Search a company directory for India - company name, category, city and contact details. Built for due-diligence and quick company look-ups.",
     eyebrow: "Company Directory India",
     h1: "Company Directory India - Look Up Any Company, Fast",
     answer:
-      "A company directory is a searchable listing of companies organised by name, category and city, used to quickly look up a specific company's profile rather than pull a bulk list. IndiaB2BData.com's company directory covers 700+ cities and 500+ categories, with verified contact details on request.",
+      "A company directory is a searchable listing of companies organised by name, category and city, used to quickly look up a specific company's profile rather than pull a bulk list. IndiaB2BData.com's company directory covers 700+ cities and 500+ categories, with contact details on request.",
     intro: [
       "Sometimes you don't need a bulk export - you need to check one company. Before a meeting, a vendor onboarding, or a partnership call, it helps to quickly confirm who you're dealing with: their category, city and how to reach them.",
       "Our company directory is built for that lookup use case as much as bulk list-building - search by company name or narrow by category and city to find the exact profile you need.",

@@ -12,7 +12,7 @@ export default {
     keyword: "manufacturer database India",
     title: "Manufacturer Database India | Factories & Units",
     metaDescription:
-      "A verified manufacturer database across India - factories and production units by industry and city. Built for suppliers, buyers and B2B vendors.",
+      "A manufacturer database across India - factories and production units by industry and city. Built for suppliers, buyers and B2B vendors.",
     eyebrow: "Manufacturer Database India",
     h1: "Manufacturer Database India - Factories & Production Units",
     answer:
@@ -37,7 +37,7 @@ export default {
       { icon: Factory, title: "Factories & Production Units", description: "Filtered specifically to manufacturing companies." },
       { icon: Network, title: "By Manufacturing Sector", description: "Segmented across manufacturing sub-industries." },
       { icon: MapPinned, title: "Manufacturing Hub Coverage", description: "Cities and clusters known for production activity." },
-      { icon: ShieldCheck, title: "Verified Records", description: "Checked and deduplicated before delivery." },
+      { icon: ShieldCheck, title: "Business Records", description: "Checked and deduplicated before delivery." },
     ],
     useCases: [
       "Raw material and machinery suppliers reaching factories",

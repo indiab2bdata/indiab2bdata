@@ -6,6 +6,9 @@ export type NavLink = { href: string; label: string };
 /** The data sourcing & compliance policy page, linked from every landing page. */
 export const COMPLIANCE_PATH = "/data-sourcing-compliance";
 
+/** How we source and check data (sources, manual checks, limitations). */
+export const METHODOLOGY_PATH = "/data-sourcing-methodology";
+
 export const HEADER_LINKS: NavLink[] = [
   { href: "/#offer", label: "Data Products" },
   { href: "/database", label: "Database by State" },
@@ -22,6 +25,7 @@ export const FOOTER_QUICK_LINKS: NavLink[] = [
   { href: "/contact", label: "Contact" },
   { href: "/privacy-policy", label: "Privacy Policy" },
   { href: "/data-sourcing-compliance", label: "Data Sourcing & Compliance" },
+  { href: "/data-sourcing-methodology", label: "Data Sourcing Methodology" },
   { href: "/terms-and-conditions", label: "Terms & Conditions" },
 ];
 
@@ -33,7 +37,7 @@ export const FOOTER_CORE_DATABASES: NavLink[] = [
   { href: "/gst-database-india", label: "GST Data" },
   { href: "/mca-company-database-india", label: "MCA / ROC Records" },
   { href: "/manufacturer-database-india", label: "Manufacturers" },
-  { href: "/#offer", label: "All Data Products" },
+  { href: "/database", label: "All Data Products" },
 ];
 
 /** Live data products, grouped for footer navigation. Labels are descriptive, not exact-match keywords. */

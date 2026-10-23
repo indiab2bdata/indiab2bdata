@@ -9,7 +9,7 @@ export default {
     keyword: "schools and colleges database India",
     title: "School & Colleges Database India",
     metaDescription:
-      "Verified schools and colleges database for India - CBSE, ICSE, state board schools, colleges and universities with principal and admin contacts. Free sample.",
+      "Schools and colleges database for India - CBSE, ICSE, state board schools, colleges and universities with principal and admin contacts. Free sample.",
     eyebrow: "Schools & Colleges Database",
     h1: "Schools & Colleges Database India - Institutions, Principals and Administrators",
     answer:

@@ -7,7 +7,7 @@ const SOURCED_TOPIC_IMAGES = Object.fromEntries(topicPhotoCredits.map((photo) =>
 const KEYWORD_IMAGE_GROUPS = {
   "data-network": {
     src: "/images/keywords/data-network.jpg",
-    alt: "Data analytics dashboard visualising verified business records",
+    alt: "Data analytics dashboard visualising business records",
   },
   "office-team": {
     src: "/images/keywords/office-team.jpg",

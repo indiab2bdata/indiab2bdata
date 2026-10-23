@@ -5,6 +5,7 @@ import { ABOUT } from "@/content/pages/about";
 import { BLOG } from "@/content/pages/blog";
 import { CONTACT } from "@/content/pages/contact";
 import { COMPLIANCE_PAGE } from "@/content/pages/data-sourcing-compliance";
+import { METHODOLOGY_PAGE } from "@/content/pages/data-sourcing-methodology";
 import { DATABASE_HUB } from "@/content/pages/database";
 import { HOME } from "@/content/pages/home";
 import { PRIVACY_PAGE } from "@/content/pages/privacy-policy";
@@ -36,7 +37,7 @@ export const SITEMAPS = {
     ...getAllCities().map((city) => entry(cityPath(city), city.updated)),
   ],
   /** Blog, company, trust and legal pages. */
-  guides: (): Entry[] => [BLOG, ABOUT, CONTACT, COMPLIANCE_PAGE, PRIVACY_PAGE, TERMS_PAGE].map((p) => page(p.meta)),
+  guides: (): Entry[] => [BLOG, ABOUT, CONTACT, COMPLIANCE_PAGE, METHODOLOGY_PAGE, PRIVACY_PAGE, TERMS_PAGE].map((p) => page(p.meta)),
 };
 
 export type SitemapName = keyof typeof SITEMAPS;

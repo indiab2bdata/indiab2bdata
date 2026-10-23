@@ -9,7 +9,7 @@ export default {
     keyword: "dealers and distributors database India",
     title: "Dealers & Distributors Database India",
     metaDescription:
-      "Verified dealers and distributors database for India - wholesalers, stockists and traders by product category, city and district. Expand your channel network faster.",
+      "Dealers and distributors database for India - wholesalers, stockists and traders by product category, city and district. Expand your channel network faster.",
     eyebrow: "Dealers & Distributors Database",
     h1: "Dealers & Distributors Database India - Build Your Channel Network Faster",
     answer:

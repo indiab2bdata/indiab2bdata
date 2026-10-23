@@ -31,12 +31,12 @@ export const ABOUT_FAQS: Faq[] = [
   {
     question: "What is IndiaB2BData.com?",
     answer:
-      "IndiaB2BData.com is an Indian B2B data provider that supplies verified business mobile numbers, email IDs and company records across 700+ cities and 500+ industry categories, for sales, telecalling and marketing teams.",
+      "IndiaB2BData.com is an Indian B2B data provider that supplies business mobile numbers, email IDs and company records across 700+ cities and 500+ industry categories, for sales, telecalling and marketing teams.",
   },
   {
     question: "Where does IndiaB2BData.com get its data?",
     answer:
-      "Records are compiled from publicly available and permission-based sources such as business registries (GST, MCA/ROC), trade directories and business websites, then verified and deduplicated before delivery.",
+      "Records are compiled from publicly available and permission-based sources such as business registries (GST, MCA/ROC), trade directories and business websites, then checked and deduplicated before delivery.",
   },
   {
     question: "Which cities and states in India do you cover?",

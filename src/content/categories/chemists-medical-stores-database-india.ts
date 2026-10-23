@@ -22,7 +22,7 @@ export default {
       { icon: Stethoscope, title: "Retail & Wholesale", description: "Medical stores, pharmacy chains, distributors." },
       { icon: MapPinned, title: "Pincode-Level", description: "Plan beats and territories precisely." },
       { icon: Smartphone, title: "Owner Mobile Numbers", description: "Direct to the store owner or pharmacist." },
-      { icon: ShieldCheck, title: "Verified & Deduplicated", description: "Checked before every delivery." },
+      { icon: ShieldCheck, title: "Checked & Deduplicated", description: "Checked before every delivery." },
     ],
     dataFields: [
       "Medical store / pharmacy name",

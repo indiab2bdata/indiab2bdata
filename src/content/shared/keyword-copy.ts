@@ -5,7 +5,7 @@
 export const KEYWORD_COPY = {
   /** Site-wide figures already stated on the homepage and About page. */
   stats: [
-    { value: "50L+", label: "Verified Records" },
+    { value: "50L+", label: "Business Records" },
     { value: "700+", label: "Cities Covered" },
     { value: "Free", label: "Sample Before You Buy" },
   ],

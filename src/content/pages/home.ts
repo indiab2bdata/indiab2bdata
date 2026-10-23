@@ -18,17 +18,17 @@ export const HOME = {
     itemListName: "B2B & Company Databases",
   },
   hero: {
-    imageAlt: "Sales team working with verified B2B business data",
+    imageAlt: "Sales team working with B2B business data",
     badge: "India's Trusted B2B Data Partner",
     /** "{lead} {accent} {and}{accent2}" */
     h1: { lead: "B2B Data That Actually", accent: "Reaches", and: "& ", accent2: "Converts" },
     subhead:
-      "Verified mobile numbers, emails and company records for every industry, city and state in India - built for sales teams who can't afford to waste a single call.",
+      "Mobile numbers, emails and company records for every industry, city and state in India - built for sales teams who can't afford to waste a single call.",
     sampleCta: "Request Free Sample Data",
     whatsappCta: "Chat on WhatsApp",
     trustDivider: "Trusted by sales teams",
     stats: [
-      { value: 50, suffix: "L+", label: "Verified Records" },
+      { value: 50, suffix: "L+", label: "Business Records" },
       { value: 700, suffix: "+", label: "Cities Covered" },
       { value: 500, suffix: "+", label: "Industry Categories" },
       { value: 10, suffix: "K+", label: "Businesses Served" },
@@ -100,7 +100,7 @@ export const HOME = {
     eyebrow: "Browse by Industry",
     title: "Every Database, Organised by Sector",
     /** "{total}{countMid}{sectors}{countEnd}" */
-    countMid: " verified data products across ",
+    countMid: " data products across ",
     countEnd: " sectors.",
     tabsLabel: "Industry sectors",
     viewDatabase: "View database",
@@ -153,7 +153,7 @@ export const HOME = {
   folders: {
     eyebrow: "Open a Folder",
     title: "Your Data, Neatly Filed",
-    text: "Every database is organised, verified and ready to use. Click a folder to see what's inside, then pick a file to explore that dataset.",
+    text: "Every database is organised, checked and ready to use. Click a folder to see what's inside, then pick a file to explore that dataset.",
     hint: "Hover to peek · Click to open · Choose a file",
     /** `art` names a look defined in the DataFolders component ("brand") or a GlassFolder preset. */
     items: [
@@ -191,7 +191,7 @@ export const HOME = {
         seed: 7,
         files: [
           { name: "Mobile Numbers", meta: "By city & role", href: "/mobile-number-database-india", art: "brand" },
-          { name: "Email Lists", meta: "Verified", href: "/email-database-india" },
+          { name: "Email Lists", meta: "Business", href: "/email-database-india" },
           { name: "WhatsApp Numbers", meta: "Active", href: "/whatsapp-number-database-india" },
           { name: "Bulk SMS Data", meta: "DLT-ready", href: "/bulk-sms-database-india", art: "glacier" },
         ],
@@ -209,10 +209,10 @@ export const HOME = {
     imageAlt: "Data analytics dashboard on laptop",
     eyebrow: "Why Choose Us",
     title: "Built on Accuracy, Not Guesswork",
-    text: "Every list is verified, deduplicated and formatted before it reaches you - so your team spends time selling, not cleaning spreadsheets.",
+    text: "Every list is checked, deduplicated and formatted before it reaches you - so your team spends time selling, not cleaning spreadsheets.",
     cta: "Talk to Our Team",
     points: [
-      { icon: Sparkles, title: "Verified & Fresh", description: "De-duplicated and checked for invalid numbers before delivery." },
+      { icon: Sparkles, title: "Checked Before Delivery", description: "De-duplicated and checked for invalid numbers before delivery." },
       { icon: IndianRupee, title: "Affordable Pricing", description: "Pay only for the records and filters you actually need." },
       { icon: Zap, title: "Fast Delivery", description: "Free sample first, then delivery on an agreed timeline." },
       { icon: MapPinned, title: "Pan-India Coverage", description: "Data across every state, city and pincode cluster." },
@@ -253,7 +253,8 @@ export const HOME = {
         role: "Founder, Finance Agency",
         color: "bg-amber",
       },
-    ],
+      /** Real clients only. Add `company: "..."` to each item once you have permission to name it. */
+    ] as { quote: string; initials: string; name: string; role: string; color: string; company?: string }[],
   },
   /** Inline CTA bands between homepage sections, in page order. */
   ctas: {

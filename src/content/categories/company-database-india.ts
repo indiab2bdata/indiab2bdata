@@ -12,7 +12,7 @@ export default {
     keyword: "company database India",
     title: "Company Database India | GSTIN & Company Records",
     metaDescription:
-      "Verified company database for India with GSTIN, turnover band, industry classification and contact details. Built for B2B targeting and credit screening.",
+      "Company database for India with GSTIN, turnover band, industry classification and contact details. Built for B2B targeting and credit screening.",
     eyebrow: "Company Database India",
     h1: "Company Database India - Registered Company Records with GSTIN",
     answer:

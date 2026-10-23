@@ -25,7 +25,7 @@ export default {
       { icon: FileText, title: "Incorporation Details", description: "Company type and registration information." },
       { icon: Landmark, title: "Companies Act Registered", description: "Pvt Ltd, LLP and Public Ltd entities." },
       { icon: Building2, title: "Registered Office Data", description: "Formal company address on record." },
-      { icon: ShieldCheck, title: "Verified Entity Status", description: "Target formally incorporated businesses." },
+      { icon: ShieldCheck, title: "Entity Status", description: "Target formally incorporated businesses." },
     ],
     useCases: [
       "Targeting only formally incorporated companies (Pvt Ltd/LLP)",

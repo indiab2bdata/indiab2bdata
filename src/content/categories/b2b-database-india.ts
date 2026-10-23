@@ -10,19 +10,19 @@ export default {
   keyword: {
     slug: "b2b-database-india",
     keyword: "B2B database India",
-    title: "B2B Database India | Verified Business Contacts",
+    title: "B2B Database India | Business Contacts",
     metaDescription:
-      "Get a verified B2B database in India - 50L+ business contacts, 700+ cities, 500+ industries. Mobile numbers, emails and company records, refreshed monthly.",
+      "Get a B2B database in India - 50L+ business contacts, 700+ cities, 500+ industries. Mobile numbers, emails and company records, refreshed monthly.",
     eyebrow: "B2B Database India",
-    h1: "B2B Database India - Verified Business Contacts for Every Industry",
+    h1: "B2B Database India - Business Contacts for Every Industry",
     answer:
-      "A B2B database is a structured collection of verified business contact records - company names, decision-maker mobile numbers, emails and GST/company details - used by sales and marketing teams to find and reach other businesses. IndiaB2BData.com maintains a B2B database of 50L+ verified records spanning 700+ Indian cities and 500+ industries.",
+      "A B2B database is a structured collection of business contact records - company names, decision-maker mobile numbers, emails and GST/company details - used by sales and marketing teams to find and reach other businesses. IndiaB2BData.com maintains a B2B database of 50L+ records spanning 700+ Indian cities and 500+ industries.",
     intro: [
-      "Whether you're a sales team cold-calling new prospects, a marketing agency running WhatsApp campaigns, or a startup entering a new city, a reliable B2B database is the foundation of every outbound effort. Bad data wastes hours on disconnected numbers and bounced emails; a verified B2B database puts your team in front of real decision-makers instead.",
-      "Our B2B database India covers mobile numbers, corporate emails, GSTIN-linked company records and industry-wise segments - verified and deduplicated before delivery, with a free sample first.",
+      "Whether you're a sales team cold-calling new prospects, a marketing agency running WhatsApp campaigns, or a startup entering a new city, a reliable B2B database is the foundation of every outbound effort. Bad data wastes hours on disconnected numbers and bounced emails; a B2B database puts your team in front of real decision-makers instead.",
+      "Our B2B database India covers mobile numbers, corporate emails, GSTIN-linked company records and industry-wise segments - checked and deduplicated before delivery, with a free sample first.",
     ],
     highlights: [
-      { icon: ShieldCheck, title: "Verified & Fresh", description: "Every record checked and refreshed monthly." },
+      { icon: ShieldCheck, title: "Checked Before Delivery", description: "Every record checked and refreshed monthly." },
       { icon: MapPinned, title: "700+ Cities", description: "Pan-India coverage across every state and pincode cluster." },
       { icon: Network, title: "500+ Industries", description: "Segmented lists for real estate, EdTech, finance, healthcare and more." },
       { icon: Zap, title: "Fast Delivery", description: "Delivery timeline confirmed in your quote." },
@@ -37,12 +37,12 @@ export default {
       {
         question: "What is a B2B database?",
         answer:
-          "A B2B database is a compiled, verified set of business contact records - typically mobile numbers, emails, company names and GST details - that sales and marketing teams use to reach other businesses directly instead of cold-searching.",
+          "A B2B database is a compiled set of business contact records - typically mobile numbers, emails, company names and GST details - that sales and marketing teams use to reach other businesses directly instead of cold-searching.",
       },
       {
         question: "How is IndiaB2BData.com's B2B database sourced?",
         answer:
-          "Records are compiled from publicly available and permission-based channels, then verified and deduplicated before delivery.",
+          "Records are compiled from publicly available and permission-based channels, then checked and deduplicated before delivery.",
       },
       {
         question: "Which industries does the database cover?",

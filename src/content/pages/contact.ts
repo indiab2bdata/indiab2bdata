@@ -2,7 +2,7 @@ import { siteConfig } from "@/config/site";
 
 const TITLE = "Contact Us";
 const DESCRIPTION =
-  "Get in touch with IndiaB2BData.com - call, WhatsApp or email us for a free sample of verified B2B mobile number, email and company data across India.";
+  "Get in touch with IndiaB2BData.com - call, WhatsApp or email us for a free sample of B2B mobile number, email and company data across India.";
 
 /** /contact copy. Its FAQ section shows the homepage set (DEFAULT_FAQS in content/pages/faqs.ts). */
 export const CONTACT = {

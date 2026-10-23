@@ -22,7 +22,7 @@ export default {
       { icon: Network, title: "B2B-Focused Segment", description: "Companies that sell to businesses, not consumers." },
       { icon: Building2, title: "Manufacturers & Distributors", description: "Covers the full B2B supply chain." },
       { icon: Users, title: "Vendor & Partner Discovery", description: "Find companies to buy from or sell to." },
-      { icon: ShieldCheck, title: "Verified Records", description: "Checked and deduplicated before delivery." },
+      { icon: ShieldCheck, title: "Business Records", description: "Checked and deduplicated before delivery." },
     ],
     useCases: [
       "Finding B2B vendors or suppliers in a specific category",

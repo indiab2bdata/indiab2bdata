@@ -9,7 +9,7 @@ export default {
     keyword: "students database India",
     title: "Students Database India | School & College",
     metaDescription:
-      "Verified students database for India - school, college and competitive exam aspirants by city, class and stream. For EdTech, coaching & admissions. Free sample.",
+      "Students database for India - school, college and competitive exam aspirants by city, class and stream. For EdTech, coaching & admissions. Free sample.",
     eyebrow: "Students Database India",
     h1: "Students Database India - Reach Students and Parents by City, Class and Stream",
     answer:
@@ -22,7 +22,7 @@ export default {
       { icon: GraduationCap, title: "School to Post-Graduate", description: "Class 9–12, undergraduate, PG and exam aspirants." },
       { icon: Filter, title: "Stream & Course Filters", description: "Science, commerce, arts, engineering, medical and more." },
       { icon: MapPinned, title: "City-Wise Targeting", description: "Filter by city, district, state or pincode." },
-      { icon: ShieldCheck, title: "Verified & Deduplicated", description: "Checked and deduplicated before delivery." },
+      { icon: ShieldCheck, title: "Checked & Deduplicated", description: "Checked and deduplicated before delivery." },
     ],
     dataFields: [
       "Student name",

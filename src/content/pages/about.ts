@@ -3,7 +3,7 @@ import { siteConfig } from "@/config/site";
 
 const TITLE = "About Us";
 const DESCRIPTION =
-  "Learn about IndiaB2BData.com - India's trusted partner for verified B2B mobile number, email and company databases across 700+ cities.";
+  "Learn about IndiaB2BData.com - India's trusted partner for B2B mobile number, email and company databases across 700+ cities.";
 
 /** /about copy. FAQs are ABOUT_FAQS in content/pages/faqs.ts. */
 export const ABOUT = {
@@ -20,8 +20,8 @@ export const ABOUT = {
   hero: {
     eyebrow: "About IndiaB2BData.com",
     title: "Helping Indian Businesses Reach the Right Customers",
-    description: "We build verified B2B databases so sales and marketing teams across India can spend their time selling - not chasing dead numbers.",
-    chips: ["50L+ Verified Records", "700+ Cities", "500+ Industries"],
+    description: "We build B2B databases so sales and marketing teams across India can spend their time selling - not chasing dead numbers.",
+    chips: ["50L+ Business Records", "700+ Cities", "500+ Industries"],
     source: "about-hero-form",
     requirement: "B2B Business Database",
     formTitle: "Get Your Free Sample",
@@ -30,7 +30,7 @@ export const ABOUT = {
     eyebrow: "Our Story",
     title: "Built by People Who Understand Sales Teams",
     paragraphs: [
-      "IndiaB2BData.com started with a simple observation: sales and marketing teams across India were losing hours every week dialling outdated numbers and chasing inactive leads. We set out to fix that - by building clean, verified, and regularly refreshed B2B databases covering every industry, city and state in the country.",
+      "IndiaB2BData.com started with a simple observation: sales and marketing teams across India were losing hours every week dialling outdated numbers and chasing inactive leads. We set out to fix that - by building clean, checked B2B databases covering every industry, city and state in the country.",
       "Today, we work with real estate firms, EdTech companies, finance and insurance agencies, manufacturers, healthcare providers and e-commerce brands - helping them connect with genuine decision-makers instead of wasting budget on guesswork.",
     ],
     imageAlt: "Team working on B2B sales data",
@@ -39,7 +39,7 @@ export const ABOUT = {
     eyebrow: "What We Stand For",
     title: "Our Mission & Values",
     items: [
-      { icon: ShieldCheck, title: "Accuracy First", description: "Every record is verified and deduplicated before it reaches you." },
+      { icon: ShieldCheck, title: "Accuracy First", description: "Every record is checked and deduplicated before it reaches you." },
       { icon: Zap, title: "Speed", description: "Free sample first, then delivery on a timeline agreed with your quote." },
       { icon: MapPinned, title: "Pan-India Reach", description: "Coverage across 700+ cities, every state and pincode cluster." },
       {
@@ -50,7 +50,7 @@ export const ABOUT = {
     ],
   },
   stats: [
-    { value: 50, suffix: "L+", label: "Verified Records" },
+    { value: 50, suffix: "L+", label: "Business Records" },
     { value: 700, suffix: "+", label: "Cities Covered" },
     { value: 500, suffix: "+", label: "Industry Categories" },
     { value: 10, suffix: "K+", label: "Businesses Served" },

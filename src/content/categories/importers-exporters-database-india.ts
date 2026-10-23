@@ -11,11 +11,11 @@ export default {
     keyword: "importers and exporters database India",
     title: "Importers & Exporters Database India | IEC",
     metaDescription:
-      "Verified importers and exporters database for India - IEC-holding companies by product, port and city. For freight forwarders, CHA agents and trade services.",
+      "Importers and exporters database for India - IEC-holding companies by product, port and city. For freight forwarders, CHA agents and trade services.",
     eyebrow: "Importers & Exporters Database",
     h1: "Importers & Exporters Database India - Reach Active Trading Companies",
     answer:
-      "An importers and exporters database is a list of Indian companies engaged in international trade, typically holding an Import Export Code (IEC) from DGFT, filtered by product category, trade direction and city. It is used by freight forwarders, customs brokers, logistics firms, packaging suppliers and trade-finance providers. IndiaB2BData.com supplies verified importer and exporter contacts across India's major trade hubs.",
+      "An importers and exporters database is a list of Indian companies engaged in international trade, typically holding an Import Export Code (IEC) from DGFT, filtered by product category, trade direction and city. It is used by freight forwarders, customs brokers, logistics firms, packaging suppliers and trade-finance providers. IndiaB2BData.com supplies importer and exporter contacts across India's major trade hubs.",
     intro: [
       "Every company that moves goods across borders needs freight, customs clearance, packaging, warehousing, insurance and trade finance. That makes importers and exporters one of the most valuable B2B segments in India, with repeat, high-value business for anyone who serves them.",
       "They're also hard to find with a general business list. A \"manufacturing company\" may never have shipped abroad, while a small trading firm in Surat might export every week. Without trade-specific data, sales teams waste time on businesses that will never need their service.",

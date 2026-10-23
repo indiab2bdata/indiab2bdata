@@ -4,7 +4,7 @@ import { siteConfig } from "@/config/site";
 import type { LegalPageContent } from "@/types/landing";
 
 const TITLE = "Terms & Conditions";
-const DESCRIPTION = "Read the Terms and Conditions for using IndiaB2BData.com and purchasing our verified B2B data products.";
+const DESCRIPTION = "Read the Terms and Conditions for using IndiaB2BData.com and purchasing our B2B data products.";
 
 /** /terms-and-conditions. Long-form legal copy is authored as JSX: <LegalSection> blocks, plain links and <ProtectedEmail>. */
 export const TERMS_PAGE: LegalPageContent = {
@@ -23,7 +23,7 @@ export const TERMS_PAGE: LegalPageContent = {
 
       <LegalSection title="1. Our Services">
         <p>
-          IndiaB2BData.com provides verified B2B contact databases - including mobile
+          IndiaB2BData.com provides B2B contact databases - including mobile
           numbers, email addresses, GST/company records and industry-wise leads - compiled
           from publicly available and permission-based sources across India. Sample records
           and full data lists are delivered digitally, typically as Excel/CSV files, over

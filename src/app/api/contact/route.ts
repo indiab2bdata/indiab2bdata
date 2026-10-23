@@ -96,57 +96,14 @@ export async function POST(request: Request) {
     receivedAt: new Date().toISOString(),
   };
 
-  const smtpHost = process.env.SMTP_HOST;
-  const smtpPort = Number(process.env.SMTP_PORT || 465);
-  const smtpUser = process.env.SMTP_USER;
-  const smtpPass = process.env.SMTP_PASS;
-  const smtpFrom = process.env.SMTP_FROM || smtpUser || "noreply@localhost";
-  const smtpTo = process.env.SMTP_TO || smtpFrom;
+  // Email and WhatsApp go out in parallel; the visitor sees success if at least one channel delivered.
+  const channels = [sendLeadEmail(lead), sendLeadWhatsApp(lead)];
+  const results = await Promise.allSettled(channels);
+  const delivered = results.filter((r) => r.status === "fulfilled" && r.value === "sent").length;
+  for (const r of results) if (r.status === "rejected") console.error("Lead notification failed:", r.reason);
 
-  if (!smtpHost || !smtpUser || !smtpPass) {
-    console.log("New sample request (mail not configured):", lead);
-    return NextResponse.json(
-      {
-        success: false,
-        message: "Email service is not configured yet. Please contact us directly.",
-      },
-      { status: 500 }
-    );
-  }
-
-  try {
-    const transporter = nodemailer.createTransport({
-      host: smtpHost,
-      port: smtpPort,
-      secure: smtpPort === 465,
-      // fail fast instead of hanging the visitor's request for over a minute
-      connectionTimeout: 10_000,
-      greetingTimeout: 10_000,
-      socketTimeout: 15_000,
-      auth: {
-        user: smtpUser,
-        pass: smtpPass,
-      },
-      tls: {
-        rejectUnauthorized: false,
-      },
-    });
-
-    const { text, html } = formatLeadEmail(lead);
-
-    await transporter.sendMail({
-      from: smtpFrom,
-      to: smtpTo,
-      replyTo: lead.email || undefined,
-      subject: `New sample request from ${lead.name.replace(/[\r\n]+/g, " ").slice(0, 80)}`,
-      text,
-      html,
-    });
-
-    return NextResponse.json({ success: true });
-  } catch (error) {
-    console.error("Failed to send contact form email:", error);
-
+  if (delivered === 0) {
+    console.log("New sample request (no channel delivered):", lead);
     return NextResponse.json(
       {
         success: false,
@@ -155,4 +112,102 @@ export async function POST(request: Request) {
       { status: 500 }
     );
   }
+
+  return NextResponse.json({ success: true });
+}
+
+/** Lead email via SMTP. Resolves "skipped" when SMTP is not configured. */
+async function sendLeadEmail(lead: LeadPayload): Promise<"sent" | "skipped"> {
+  const smtpHost = process.env.SMTP_HOST;
+  const smtpPort = Number(process.env.SMTP_PORT || 465);
+  const smtpUser = process.env.SMTP_USER;
+  const smtpPass = process.env.SMTP_PASS;
+  const smtpFrom = process.env.SMTP_FROM || smtpUser || "noreply@localhost";
+  const smtpTo = process.env.SMTP_TO || smtpFrom;
+
+  if (!smtpHost || !smtpUser || !smtpPass) return "skipped";
+
+  const transporter = nodemailer.createTransport({
+    host: smtpHost,
+    port: smtpPort,
+    secure: smtpPort === 465,
+    // fail fast instead of hanging the visitor's request for over a minute
+    connectionTimeout: 10_000,
+    greetingTimeout: 10_000,
+    socketTimeout: 15_000,
+    auth: {
+      user: smtpUser,
+      pass: smtpPass,
+    },
+    tls: {
+      rejectUnauthorized: false,
+    },
+  });
+
+  const { text, html } = formatLeadEmail(lead);
+
+  await transporter.sendMail({
+    from: smtpFrom,
+    to: smtpTo,
+    replyTo: lead.email || undefined,
+    subject: `New sample request from ${lead.name.replace(/[\r\n]+/g, " ").slice(0, 80)}`,
+    text,
+    html,
+  });
+
+  return "sent";
+}
+
+/**
+ * WhatsApp template values may not be empty or contain newlines, tabs or more than 4 spaces in a row,
+ * and each is kept short so the message stays well under WhatsApp's length limit.
+ */
+function waParam(value: string | null, max = 300) {
+  const clean = (value ?? "").replace(/[\r\n\t]+/g, " ").replace(/ {2,}/g, " ").trim().slice(0, max);
+  return clean || "-";
+}
+
+/**
+ * Lead alert on WhatsApp through the AOC Portal API, using the approved "new_enquiry" template.
+ * Template variables 1-7: name, phone, email, company, requirement, message, form source.
+ * Resolves "skipped" when WhatsApp is not configured; throws if the API rejects the message.
+ */
+async function sendLeadWhatsApp(lead: LeadPayload): Promise<"sent" | "skipped"> {
+  const apiKey = process.env.AOC_API_KEY;
+  const from = process.env.WHATSAPP_FROM;
+  const recipients = (process.env.WHATSAPP_TO || "").split(",").map((n) => n.trim()).filter(Boolean);
+  const templateName = process.env.WHATSAPP_TEMPLATE || "new_enquiry";
+  const campaignName = process.env.WHATSAPP_CAMPAIGN || "website-leads";
+
+  if (!apiKey || !from || recipients.length === 0) return "skipped";
+
+  const params = [
+    waParam(lead.name, 100),
+    waParam(lead.phone, 40),
+    waParam(lead.email, 120),
+    waParam(lead.company, 120),
+    waParam(lead.requirement, 150),
+    waParam(lead.message, 500),
+    waParam(lead.source, 80),
+  ];
+
+  await Promise.all(
+    recipients.map(async (to) => {
+      const res = await fetch("https://api.aoc-portal.com/v1/whatsapp", {
+        method: "POST",
+        headers: { apikey: apiKey, "Content-Type": "application/json" },
+        body: JSON.stringify({
+          from,
+          campaignName,
+          to,
+          templateName,
+          components: { body: { params } },
+          type: "template",
+        }),
+        signal: AbortSignal.timeout(10_000),
+      });
+      if (!res.ok) throw new Error(`WhatsApp (AOC) API ${res.status} for ${to}: ${await res.text()}`);
+    })
+  );
+  return "sent";
 }
