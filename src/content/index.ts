@@ -3,7 +3,7 @@ import { isHeldFromIndex } from "@/config/indexing";
 import { categories } from "@/content/categories";
 import { states } from "@/content/states";
 import { cities } from "@/content/cities";
-import { date, keywordPageSchema, landingPageSchema, validate } from "@/schemas/landing.schema";
+import { customPageSchema, date, keywordPageSchema, landingPageSchema, validate } from "@/schemas/landing.schema";
 import type { CategoryContent, CityContent, KeywordPage, LandingPage, StateContent } from "@/types/landing";
 
 /**
@@ -38,6 +38,11 @@ for (const c of categories) {
   if (c.landing) {
     validate(landingPageSchema, c.landing, label);
     if (c.landing.path !== `/${c.keyword.slug}`) throw new Error(`${label}: landing.path must be /${c.keyword.slug}`);
+  }
+  if ((c.template === "custom") !== Boolean(c.custom)) throw new Error(`${label}: template "${c.template}" does not match whether \`custom\` is set`);
+  if (c.custom) {
+    validate(customPageSchema, c.custom, label);
+    if (c.custom.path !== `/${c.keyword.slug}`) throw new Error(`${label}: custom.path must be /${c.keyword.slug}`);
   }
 }
 for (const s of states) {

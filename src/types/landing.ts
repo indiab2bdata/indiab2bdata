@@ -155,14 +155,70 @@ export type KeywordPage = {
 
 /** One file in src/content/categories. */
 export type CategoryContent = {
-  /** Which template renders the page: "landing" (new template, needs `landing`) or "keyword" (legacy template). */
-  template: "landing" | "keyword";
+  /**
+   * Which template renders the page: "landing" (needs `landing`), "custom" (needs `custom`, a page built
+   * from its own ordered blocks) or "keyword" (legacy template).
+   */
+  template: "landing" | "custom" | "keyword";
   /** Sitemap <lastmod> ("YYYY-MM-DD"). Bump when this page's main copy changes. */
   updated: string;
   /** Legacy keyword-template data. Every page keeps it: it also feeds listings (homepage, llms.txt, related links). */
   keyword: KeywordPage;
   /** New-template page. Present only when template is "landing". */
   landing?: LandingPage;
+  /** Hand-built page. Present only when template is "custom". */
+  custom?: CustomPage;
+};
+
+/* ---------- Custom pages: each page lists its own sections, in its own order ---------- */
+
+/** A paragraph-level link: the first matching `text` in a block's copy becomes a link to `href`. */
+export type InlineLink = { text: string; href: string };
+
+/** Photo shown beside a section, as a card. Name files after the section topic (e.g. lic-agents-email-database-india.jpg). */
+export type SectionImage = { src: string; alt: string; width: number; height: number };
+
+export type CustomBlock =
+  /** Plain H2 section: paragraphs, optional bullet list, optional closing paragraphs. */
+  | { type: "prose"; id?: string; heading: string; paragraphs: string[]; bullets?: string[]; closing?: string[]; image?: SectionImage }
+  /** Data table (fields, segments, cities...). The first column is the row header. */
+  | { type: "table"; id?: string; heading: string; intro?: string; columns: string[]; rows: string[][]; note?: string }
+  /** Numbered workflow or process. */
+  | { type: "steps"; id?: string; heading: string; intro?: string; steps: { title: string; text: string }[] }
+  /** Titled points: mistakes, checks, segments. `tone: "warning"` styles them as pitfalls. */
+  | { type: "points"; id?: string; heading: string; intro?: string; tone?: "neutral" | "warning"; items: { title: string; text: string }[] }
+  /** A worked buyer example, shown as a highlighted card. */
+  | { type: "scenario"; id?: string; heading: string; label: string; paragraphs: string[]; image?: SectionImage }
+  /** Masked, fictional sample rows from lib/sample-data (same generator as the CSV download). */
+  | { type: "sample"; id?: string; heading: string; intro: string }
+  /** How the data is sourced and checked; always links to the methodology and compliance pages. */
+  | { type: "sourcing"; id?: string; heading: string; paragraphs: string[]; image?: SectionImage }
+  /** Inline call to action. */
+  | { type: "cta"; text: string; buttonLabel?: string };
+
+export type CustomPage = {
+  /** Canonical path, e.g. "/lic-agents-emails-database-india". */
+  path: string;
+  /** Short product name for breadcrumbs, forms and schema. */
+  name: string;
+  /** <title> without the " | IndiaB2BData.com" suffix the layout adds. */
+  title: string;
+  metaDescription: string;
+  eyebrow: string;
+  h1: string;
+  /** Hero paragraph: who the data is for and what is included. */
+  lead: string;
+  image: { src: string; alt: string; width: number; height: number };
+  /** Which fictional sample generator builds the sample block and CSV. */
+  sampleProfile: SampleProfile;
+  /** Links used inside block copy (5-8 contextual internal links). */
+  links: InlineLink[];
+  blocks: CustomBlock[];
+  faqs: Faq[];
+  related: LinkItem[];
+  cta: { formTitle: string; formSubtitle: string; buttonLabel: string; whatsappMessage: string; footerTitle: string; footerText: string };
+  /** One short, page-specific disclaimer. */
+  disclaimer: string;
 };
 
 /** One file in src/content/states. */

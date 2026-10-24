@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { isHeldFromIndex } from "@/config/indexing";
 import { siteConfig } from "@/config/site";
 import { getKeywordImage } from "@/content/shared/keyword-images";
-import type { KeywordPage, LandingPage } from "@/types/landing";
+import type { CustomPage, KeywordPage, LandingPage } from "@/types/landing";
 
 export type OgImage = { url: string; width?: number; height?: number; alt?: string };
 
@@ -116,4 +116,14 @@ export function keywordMetadata(page: KeywordPage): Metadata {
     image: { url: `${siteConfig.url}${visual.src}`, width: visual.width, height: visual.height, alt: visual.alt },
   });
   return isHeldFromIndex(page.slug) ? { ...meta, robots: { index: false, follow: true } } : meta;
+}
+
+/** Metadata for a custom (block-based) category page. */
+export function customMetadata(page: CustomPage): Metadata {
+  return buildMetadata({
+    title: page.title,
+    description: page.metaDescription,
+    path: page.path,
+    image: { url: `${siteConfig.url}${page.image.src}`, width: page.image.width, height: page.image.height, alt: page.image.alt },
+  });
 }

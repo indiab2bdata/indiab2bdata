@@ -95,7 +95,7 @@ export default {
     ],
     related: [
       "whatsapp-number-database-india",
-      "cab-users-database-india",
+      "lic-agents-emails-database-india",
       "bulk-sms-database-india",
       "b2b-b2c-companies-database",
       "car-owners-database",

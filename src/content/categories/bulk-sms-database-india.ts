@@ -88,7 +88,7 @@ export default {
     related: [
       "mobile-number-database-india",
       "whatsapp-number-database-india",
-      "car-owners-database",
+      "lic-agents-emails-database-india",
       "students-database",
       "b2b-b2c-companies-database",
       "b2b-database-india",

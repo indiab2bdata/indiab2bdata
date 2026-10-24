@@ -88,6 +88,41 @@ export const landingPageSchema = z.object({
   }),
 });
 
+const sectionImage = z.object({ src: text.regex(/^\/images\//), alt: text, width: z.number().int().positive(), height: z.number().int().positive() });
+
+const block = z.discriminatedUnion("type", [
+  z.object({ type: z.literal("prose"), id: text.optional(), heading: text, paragraphs: z.array(text).min(1), bullets: z.array(text).optional(), closing: z.array(text).optional(), image: sectionImage.optional() }),
+  z.object({ type: z.literal("table"), id: text.optional(), heading: text, intro: text.optional(), columns: z.array(text).min(2), rows: z.array(z.array(text)).min(1), note: text.optional() }),
+  z.object({ type: z.literal("steps"), id: text.optional(), heading: text, intro: text.optional(), steps: z.array(z.object({ title: text, text })).min(2) }),
+  z.object({ type: z.literal("points"), id: text.optional(), heading: text, intro: text.optional(), tone: z.enum(["neutral", "warning"]).optional(), items: z.array(z.object({ title: text, text })).min(2) }),
+  z.object({ type: z.literal("scenario"), id: text.optional(), heading: text, label: text, paragraphs: z.array(text).min(1), image: sectionImage.optional() }),
+  z.object({ type: z.literal("sample"), id: text.optional(), heading: text, intro: text }),
+  z.object({ type: z.literal("sourcing"), id: text.optional(), heading: text, paragraphs: z.array(text).min(1), image: sectionImage.optional() }),
+  z.object({ type: z.literal("cta"), text, buttonLabel: text.optional() }),
+]);
+
+export const customPageSchema = z
+  .object({
+    path,
+    name: text,
+    title: text,
+    metaDescription: text,
+    eyebrow: text,
+    h1: text,
+    lead: text,
+    image: z.object({ src: text.regex(/^\/images\//), alt: text, width: z.number().int().positive(), height: z.number().int().positive() }),
+    sampleProfile: text,
+    links: z.array(z.object({ text, href })),
+    blocks: z.array(block).min(4),
+    faqs: z.array(faq).min(1),
+    related: z.array(link).max(6),
+    cta: z.object({ formTitle: text, formSubtitle: text, buttonLabel: text, whatsappMessage: text, footerTitle: text, footerText: text }),
+    disclaimer: text,
+  })
+  .refine((p) => p.blocks.some((b) => b.type === "sourcing"), "needs a `sourcing` block (how the data is sourced and checked)")
+  .refine((p) => p.blocks.filter((b) => b.type === "table").length >= 2, "needs at least two tables (data fields and segments)")
+  .refine((p) => p.blocks.some((b) => b.type === "sample"), "needs a `sample` block");
+
 export const keywordPageSchema = z.object({
   slug: text.regex(/^[a-z0-9-]+$/),
   keyword: text,

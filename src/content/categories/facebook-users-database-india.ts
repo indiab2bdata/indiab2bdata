@@ -152,8 +152,7 @@ export default {
       "whatsapp-number-database-india",
       "females-database-india",
       "female-consumer-bangalore-database",
-      "frequent-flyer-database-india",
-      "dining-leisure-customers-database-india"
+      "frequent-flyer-database-india"
     ],
     useCasesIntro: "Match the audience to the offer first, then decide which contact fields and channels are appropriate.",
     cta: {

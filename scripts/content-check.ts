@@ -43,7 +43,16 @@ type Rendered = { path: string; file: string; data: unknown; faqs: Faq[]; relate
 const rendered: Rendered[] = [];
 for (const c of liveCategories) {
   const file = `content/categories/${c.keyword.slug}.ts`;
-  if (c.landing) rendered.push(fromLanding(c.landing, file));
+  if (c.custom)
+    rendered.push({
+      path: c.custom.path,
+      file,
+      data: c.custom,
+      faqs: c.custom.faqs,
+      related: c.custom.related,
+      links: [...c.custom.links, ...c.custom.faqs.flatMap((f) => (f.link ? [f.link] : []))],
+    });
+  else if (c.landing) rendered.push(fromLanding(c.landing, file));
   else
     rendered.push({
       path: `/${c.keyword.slug}`,

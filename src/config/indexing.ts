@@ -8,7 +8,7 @@
  *     in-copy links, llms.txt). The page itself stays reachable at its URL, so "follow" still passes equity out.
  * These slugs are also excluded from the category rewrite rollout.
  */
-export const CONSUMER_NOINDEX = true;
+export const CONSUMER_NOINDEX = false;
 
 export const CONSUMER_PAGE_SLUGS = [
   "credit-card-holders-database-india",

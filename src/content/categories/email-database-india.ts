@@ -97,7 +97,7 @@ export default {
       "b2b-leads-database-india",
       "corporate-database-india",
       "domain-whois-database",
-      "job-seekers-database",
+      "lic-agents-emails-database-india",
     ],
   },
 } satisfies CategoryContent;

@@ -83,7 +83,6 @@ export default {
       "ceo-cfo-cmo-it-heads-database-india",
       "chartered-accountants-database-india",
       "consultants-consulting-services-database-india",
-      "demat-account-holders-database-india",
     ],
   },
 } satisfies CategoryContent;

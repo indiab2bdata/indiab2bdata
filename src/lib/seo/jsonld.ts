@@ -1,7 +1,7 @@
 import { siteConfig } from "@/config/site";
 import { DEFAULT_OG_IMAGE } from "@/lib/seo/metadata";
 import { isPlaceholder } from "@/lib/utils";
-import type { KeywordPage, LandingPage } from "@/types/landing";
+import type { CustomPage, KeywordPage, LandingPage } from "@/types/landing";
 
 /**
  * JSON-LD builders. Page-level schema is always built from the same content object the page renders,
@@ -215,5 +215,20 @@ export function keywordJsonLd(page: KeywordPage) {
     webPageJsonLd({ name: page.title, description: page.metaDescription, url, about: page.keyword }),
     faqJsonLd(page.faqs),
     serviceJsonLd({ name: page.keyword, description: page.metaDescription }),
+  ];
+}
+
+/** Schema for a custom (block-based) category page: breadcrumbs, WebPage, Service (no Offer: priced by quote) and FAQPage. */
+export function customJsonLd(page: CustomPage, updated: string) {
+  const url = `${siteConfig.url}${page.path}`;
+  return [
+    breadcrumbJsonLd([
+      { name: "Home", url: siteConfig.url },
+      { name: "Data Products", url: `${siteConfig.url}/database` },
+      { name: page.name, url },
+    ]),
+    { ...webPageJsonLd({ name: page.title, description: page.metaDescription, url, about: page.name }), dateModified: updated },
+    databaseServiceJsonLd({ name: page.name, description: page.metaDescription, url }),
+    faqJsonLd(page.faqs),
   ];
 }
