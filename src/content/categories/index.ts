@@ -70,6 +70,8 @@ import designersDatabaseIndia from "@/content/categories/designers-database-indi
 import digitalPhotographyStudiosDatabaseIndia from "@/content/categories/digital-photography-studios-database-india";
 import diningLeisureCustomersDatabaseIndia from "@/content/categories/dining-leisure-customers-database-india";
 import dematAccountHoldersDatabaseIndia from "@/content/categories/demat-account-holders-database-india";
+import mutualFundInvestorsDatabaseIndia from "@/content/categories/mutual-fund-investors-database-india";
+import mlmLeadersEmailDatabaseIndia from "@/content/categories/mlm-leaders-email-database-india";
 import dtpOperatorsDatabaseIndia from "@/content/categories/dtp-operators-database-india";
 import economicAnalystsDatabaseIndia from "@/content/categories/economic-analysts-database-india";
 import educationalInstitutesDatabaseIndia from "@/content/categories/educational-institutes-database-india";
@@ -186,6 +188,8 @@ export const categories: CategoryContent[] = [
   digitalPhotographyStudiosDatabaseIndia,
   diningLeisureCustomersDatabaseIndia,
   dematAccountHoldersDatabaseIndia,
+  mutualFundInvestorsDatabaseIndia,
+  mlmLeadersEmailDatabaseIndia,
   dtpOperatorsDatabaseIndia,
   economicAnalystsDatabaseIndia,
   educationalInstitutesDatabaseIndia,

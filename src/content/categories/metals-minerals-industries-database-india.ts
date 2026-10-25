@@ -2,13 +2,13 @@ import { Factory, FileText, Filter, MapPinned } from "lucide-react";
 import type { CategoryContent } from "@/types/landing";
 
 export default {
-  template: "keyword",
-  updated: "2026-10-20",
+  template: "custom",
+  updated: "2026-10-26",
   keyword: {
     slug: "metals-minerals-industries-database-india",
     keyword: "Metals / Minerals Industries Database India",
-    title: "Metals & Minerals Database India",
-    metaDescription: "Find metals and minerals industry database options in India. Specify materials, business activities, locations and contact roles. Request a sample and quote.",
+    title: "Metals and Minerals Database India",
+    metaDescription: "Metals and minerals database India: steel, aluminium, copper, scrap and mining businesses by product, activity and cluster, with contacts. Free sample.",
     eyebrow: "Metals / Minerals Industries Database",
     h1: "Metals & Minerals Industries Database in India",
     answer: "A metals and minerals industries database helps you shortlist businesses involved in metal production, processing, mineral supply and related trading. Define the materials, business activities, locations and contact roles relevant to your offer, then review available coverage and a matching sample.",
@@ -169,5 +169,184 @@ export default {
       footerTitle: "Build Your Metals & Minerals Business Shortlist",
       footerText: "Send your material categories, product forms, business activities and locations with an approximate quantity. We will confirm available coverage, sample options and pricing."
     }
+  },
+  custom: {
+    path: "/metals-minerals-industries-database-india",
+    name: "Metals & Minerals Database",
+    title: "Metals and Minerals Database India",
+    metaDescription:
+      "Metals and minerals database India: steel, aluminium, copper, scrap and mining businesses by product, activity and cluster, with contacts. Free sample.",
+    eyebrow: "Ferrous, Non-Ferrous & Mining",
+    h1: "Metals and Minerals Database India by Material and Cluster",
+    lead:
+      "For refractory and consumables suppliers, equipment and spares sellers, freight and insurance providers, trading platforms and lenders. Our metals and minerals database India covers steel and iron producers, non-ferrous processors, metal traders, scrap recyclers and mining businesses, each tagged with material, business activity, contact person, mobile, email and city.",
+    image: {
+      src: "/images/metals/metals-minerals-industries-database-india.jpg",
+      alt: "Steel plant workers in safety helmets beside a glowing furnace",
+      width: 1600,
+      height: 1000,
+    },
+    sampleProfile: "metalsMineralsBusiness",
+    links: [
+      { text: "machinery suppliers database", href: "/machinery-suppliers-services-database-india" },
+      { text: "manufacturing companies database", href: "/manufacturing-companies-database-india" },
+      { text: "logistics companies database", href: "/logistics-management-service-providers-database-india" },
+      { text: "importers and exporters database", href: "/importers-exporters-database-india" },
+      { text: "GST database", href: "/gst-database-india" },
+      { text: "Gujarat business database", href: "/database/gujarat" },
+      { text: "B2B data guides", href: "/blog" },
+    ],
+    blocks: [
+      {
+        type: "table",
+        heading: "Material Segments in the Database",
+        intro: "Every record names the material a business works with, so a copper-wire maker never lands in a steel-rerolling campaign.",
+        columns: ["Segment", "Typical businesses", "Common products"],
+        rows: [
+          ["Iron and steel", "Integrated plants, mini mills, re-rollers, pipe and tube makers", "Billets, TMT bars, sheets, structurals"],
+          ["Non-ferrous metals", "Aluminium, copper, zinc and brass processors", "Extrusions, wire, rods, castings"],
+          ["Metal trading and stockists", "Steel and metal stockyards, distributors", "Plates, coils, sections, non-ferrous stock"],
+          ["Scrap and recycling", "Scrap dealers, shredding and recycling units", "Ferrous and non-ferrous scrap, ingots"],
+          ["Mining and minerals", "Iron ore, bauxite, limestone and industrial-mineral miners", "Ore, lumps, fines, processed minerals"],
+        ],
+      },
+      {
+        type: "points",
+        heading: "Producer, Processor or Trader?",
+        intro: "The business activity field matters as much as the material. The same steel coil passes through four very different buyers.",
+        items: [
+          { title: "Producers", text: "Make primary metal from ore or scrap. They buy refractories, electrodes, ferro-alloys, heavy equipment and plant maintenance." },
+          { title: "Processors", text: "Roll, draw, extrude or cast metal into products. They buy dies, lubricants, spares and quality-testing equipment." },
+          { title: "Traders and stockists", text: "Buy and hold inventory. They care about credit lines, freight rates, warehousing and price information." },
+          { title: "Recyclers", text: "Collect and process scrap. They buy balers, shredders, weighbridges and transport." },
+        ],
+      },
+      {
+        type: "table",
+        heading: "Metal and Mining Clusters Worth Starting With",
+        intro: "Metal businesses cluster around ore, ports and power. For field sales, these are the places to begin; Saurashtra brass and Kutch processors can be ordered together through a Gujarat business database brief.",
+        columns: ["Cluster", "Known for", "Good first target for"],
+        rows: [
+          ["Raipur and Bhilai", "Sponge iron, steel rolling, ferro-alloys", "Refractories, electrodes, plant spares"],
+          ["Jamshedpur and Rourkela", "Large steel plants and their ancillaries", "Maintenance contractors, safety gear"],
+          ["Mandi Gobindgarh and Ludhiana", "Re-rolling mills, steel scrap, fasteners", "Rolling-mill spares, scrap trading"],
+          ["Jamnagar", "Brass parts and non-ferrous processing", "Machining tools, brass scrap"],
+          ["Bellary and Hospet", "Iron-ore mining and pellet plants", "Mining equipment, tyres, transport"],
+          ["Visakhapatnam and Odisha coast", "Steel, alumina and port-linked trade", "Freight, port services, insurance"],
+          ["Salem and Coimbatore", "Steel and alloy casting, magnesite", "Foundry supplies, metallurgical testing"],
+        ],
+      },
+      { type: "cta", text: "Selling to rolling mills or scrap traders in one cluster? Ask for a sample of those businesses first.", buttonLabel: "Get Metals Sample" },
+      {
+        type: "prose",
+        heading: "Who Buys Metal Industry Contact Data",
+        paragraphs: [
+          "Metal businesses run hot, heavy and continuous operations, so they buy consumables and spares constantly and switch suppliers when price or delivery slips. That makes them a steady market for suppliers who can reach the plant owner or purchase head directly rather than through a trader.",
+          "If your product is a machine rather than a consumable, our machinery suppliers database reaches the dealers who sell into these plants, and the manufacturing companies database covers the engineering firms that buy finished metal.",
+        ],
+        bullets: [
+          "Refractory, electrode and ferro-alloy suppliers",
+          "Rolling-mill and foundry spares and tooling sellers",
+          "Freight, port and cargo-insurance providers",
+          "Metal trading platforms and price-information services",
+          "Lenders offering working capital to traders and stockists",
+        ],
+        image: {
+          src: "/images/metals/metals-minerals-industries-database-india.jpg",
+          alt: "Steel plant workers in safety helmets beside a glowing furnace",
+          width: 1600,
+          height: 1000,
+        },
+      },
+      {
+        type: "scenario",
+        label: "Buyer scenario",
+        heading: "A Refractory Supplier Winning Rolling Mills in Chhattisgarh",
+        paragraphs: [
+          "A refractory maker wants to replace incumbent suppliers at mid-size re-rolling mills and sponge-iron plants around Raipur, Bilaspur and Raigarh. It orders producers and processors in the iron and steel segment in those cities, with the plant owner and purchase head, and leaves traders out.",
+          "The sales engineer calls with a specific offer: a trial lining for one furnace with performance tracked over a campaign. Plants that agree get a site visit; others get a short technical note by email. After the first wins, the supplier adds Durg and Korba using the same file layout.",
+        ],
+      },
+      {
+        type: "table",
+        heading: "Columns in a Metals and Minerals File",
+        intro: "Website and designation appear only when a source publishes them; empty cells are not filled in by guesswork.",
+        columns: ["Field", "Contents", "Use"],
+        rows: [
+          ["Business name", "Trading or company name", "Account matching"],
+          ["Industry segment", "Iron and steel, non-ferrous, trading, scrap or mining", "Segment campaigns"],
+          ["Material or product", "Main metal, mineral or product line", "Match your offer to the material"],
+          ["Business activity", "Producer, processor, trader or recycler", "Separate plants from stockists"],
+          ["Contact person and designation", "Owner, plant head or purchase manager", "Reach the buyer"],
+          ["Mobile and business email", "Work contact details", "Calls and email outreach"],
+          ["Address, city, state, pincode", "Plant, yard or office location", "Plan visits by cluster"],
+          ["Website", "Where available", "Check capacity and products"],
+        ],
+      },
+      {
+        type: "points",
+        tone: "warning",
+        heading: "Common Errors in Metal-Industry Campaigns",
+        items: [
+          { title: "Mixing traders with plants", text: "A stockist does not buy refractories and a re-rolling mill does not need price newsletters. Filter on business activity first." },
+          { title: "Ignoring the GSTIN on credit deals", text: "Metal trade runs on credit and margins are thin. Check key accounts in our GST database before extending terms." },
+          { title: "Pitching during a price crash", text: "When steel prices fall sharply, plants cut spending. Time capital-equipment pitches for steadier months." },
+          { title: "Forgetting the export side", text: "Many processors export. If you sell trade services, add the importers and exporters database to reach that side." },
+        ],
+      },
+      { type: "sample", heading: "Sample Metals and Minerals Rows", intro: "Fictional businesses with masked details, in the delivered column order. Request live rows for your segment and cluster before you order." },
+      {
+        type: "sourcing",
+        heading: "How Metal-Industry Records Are Compiled",
+        paragraphs: [
+          "Records combine our own research with third-party business data; duplicates and invalid numbers are removed before delivery. Segment and activity reflect how each business describes itself, so integrated groups may appear under more than one activity; ask us to confirm in your sample.",
+          "Owners' and managers' mobiles are personal data under the DPDP Act 2023 even in a trade context. Use them for business offers only, look numbers up on the NCPR registry before calling, use DLT-registered templates for SMS and respect opt-outs. For moving material, the logistics companies database lists transporters on metal corridors.",
+        ],
+      },
+      { type: "cta", text: "Tell us the materials, activities and clusters you need; we'll reply with sample rows and a quote.", buttonLabel: "Request a Free Sample" },
+    ],
+    faqs: [
+      {
+        question: "Can I order only scrap dealers and recyclers?",
+        answer: "Yes. Business activity is recorded for every record, so you can order recyclers and scrap dealers alone, or combine them with traders. Material is also recorded, so ferrous and non-ferrous scrap can be separated.",
+      },
+      {
+        question: "Does the list show production capacity?",
+        answer: "No. Capacity figures are rarely published reliably for smaller plants, so we do not supply them. Use the website field where available and ask capacity questions on your first call to qualify each account.",
+      },
+      {
+        question: "Are mining companies included?",
+        answer: "Yes, under the mining and minerals segment: iron-ore, bauxite, limestone and industrial-mineral businesses where our sources record them. Large mines are often run by group companies, so confirm the right office before pitching.",
+      },
+      {
+        question: "Can I target one metal, such as aluminium?",
+        answer: "Yes. Material is recorded for each business, so you can order aluminium processors, copper-wire makers or brass part makers separately, combined with city or state filters. Mixed-metal processors are tagged with their main material, so ask us to include secondary materials if that matters.",
+      },
+      {
+        question: "How is a metals and minerals list priced?",
+        answer: "Price depends on segments, activities, clusters and fields. A single material in one cluster costs less per record than an all-India pull. Every quote includes a record count and a free sample of matching rows.",
+      },
+      {
+        question: "Can traders use this to find new suppliers?",
+        answer: "Yes. Stockists and trading platforms use the producer and processor segments to find plants that sell directly. Filter by material and state, and ask for the purchase or sales contact depending on which side you trade.",
+      },
+    ],
+    related: [
+      { label: "Machinery Suppliers Database", href: "/machinery-suppliers-services-database-india" },
+      { label: "Manufacturing Companies Database", href: "/manufacturing-companies-database-india" },
+      { label: "Logistics Companies Database", href: "/logistics-management-service-providers-database-india" },
+      { label: "Importers & Exporters Database", href: "/importers-exporters-database-india" },
+      { label: "Building Material Database", href: "/building-material-database-india" },
+      { label: "GST Database", href: "/gst-database-india" },
+    ],
+    cta: {
+      formTitle: "Get a Free Metals & Minerals Sample",
+      formSubtitle: "Tell us the materials, business activity (producer, processor, trader, recycler) and clusters you need.",
+      buttonLabel: "Get Metals Sample",
+      whatsappMessage: "Hi, I need a metals and minerals database sample. Materials and cities:",
+      footerTitle: "Reach Metal Plants, Traders and Recyclers",
+      footerText: "Send the materials, activities, clusters and fields you need. You'll get matching sample records and a quote.",
+    },
+    disclaimer: "Business contact data for lawful B2B outreach to metal and mining businesses. Any business or person can request removal at any time.",
   },
 } satisfies CategoryContent;

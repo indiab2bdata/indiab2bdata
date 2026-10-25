@@ -2,13 +2,13 @@ import { Building2, FileText, MapPinned, Truck } from "lucide-react";
 import type { CategoryContent } from "@/types/landing";
 
 export default {
-  template: "keyword",
-  updated: "2026-10-19",
+  template: "custom",
+  updated: "2026-10-25",
   keyword: {
     slug: "logistics-management-service-providers-database-india",
     keyword: "Logistics Management Service Providers Database India",
-    title: "Logistics Service Providers Database",
-    metaDescription: "Explore logistics management service providers database options in India. Specify services, business roles and locations, then request a sample and quote.",
+    title: "Logistics Companies Database India",
+    metaDescription: "Logistics companies database India: transporters, freight forwarders, couriers, 3PL and warehouses by city and corridor, with owner contacts. Free sample.",
     eyebrow: "Logistics Management Service Providers Database",
     h1: "Logistics Management Service Providers Database in India",
     answer: "A logistics management service providers database helps you shortlist businesses offering freight, transport, warehousing and related supply-chain services. Share the service categories, locations and business contacts you need so we can check matching provider coverage and sample options.",
@@ -163,5 +163,181 @@ export default {
       footerTitle: "Build Your Logistics Provider Shortlist",
       footerText: "Send your service categories, target locations, contact requirements and approximate quantity. We will confirm available coverage, sample options and pricing."
     }
+  },
+  custom: {
+    path: "/logistics-management-service-providers-database-india",
+    name: "Logistics Companies Database",
+    title: "Logistics Companies Database India",
+    metaDescription:
+      "Logistics companies database India: transporters, freight forwarders, couriers, 3PL and warehouses by city and corridor, with owner contacts. Free sample.",
+    eyebrow: "Transport, Freight & Warehousing",
+    h1: "Logistics Companies Database India: Transporters, Forwarders & 3PLs",
+    lead:
+      "For fleet-tracking and fuel-card companies, insurers, transport software vendors and packaging suppliers. Our logistics companies database India covers road transporters, freight forwarders, courier operators, warehousing and 3PL firms and cold-chain providers, with the owner or operations head, phone, email and city, so you can sell by segment and by freight corridor.",
+    image: {
+      src: "/images/logistics/logistics-companies-database-india.jpg",
+      alt: "Warehouse staff and a forklift moving goods between storage racks",
+      width: 1600,
+      height: 1000,
+    },
+    sampleProfile: "logisticsProvider",
+    links: [
+      { text: "mobile number database", href: "/mobile-number-database-india" },
+      { text: "GST database", href: "/gst-database-india" },
+      { text: "importers and exporters database", href: "/importers-exporters-database-india" },
+      { text: "Gujarat business database", href: "/database/gujarat" },
+      { text: "Tamil Nadu business database", href: "/database/tamil-nadu" },
+      { text: "WhatsApp number database", href: "/whatsapp-number-database-india" },
+      { text: "company database", href: "/company-database-india" },
+      { text: "B2B data guides", href: "/blog" },
+    ],
+    blocks: [
+      {
+        type: "prose",
+        heading: "Logistics Is Five Markets, Not One",
+        paragraphs: [
+          "A ten-truck transporter in Namakkal, a customs-licensed freight forwarder in Navi Mumbai and a cold-storage operator near Pune all sit under 'logistics', yet they buy almost nothing in common. The transporter worries about diesel, tyres, tolls and drivers; the forwarder about shipping lines, documentation and credit; the warehouse about racking, labour and its WMS.",
+          "So the first decision is the segment, not the city. Once you know which kind of logistics business needs your product, the city list follows from where that segment clusters. Buyers who skip this step end up emailing courier franchisees about container freight and wondering why nobody replies. If your buyers are the shippers rather than the carriers, start from our importers and exporters database or the wider company database instead.",
+        ],
+        bullets: [
+          "GPS, fleet-tracking and dashcam vendors",
+          "Fuel-card, FASTag and toll-payment providers",
+          "Goods-in-transit, fleet and cargo insurers",
+          "Transport and warehouse management software companies",
+          "Packaging, pallet and stretch-film suppliers",
+          "Truck finance and used-commercial-vehicle dealers",
+        ],
+        image: {
+          src: "/images/logistics/logistics-companies-database-india.jpg",
+          alt: "Warehouse staff and a forklift moving goods between storage racks",
+          width: 1600,
+          height: 1000,
+        },
+      },
+      {
+        type: "table",
+        heading: "Which Logistics Segment Fits Your Offer",
+        intro: "The logistics companies database India is split into the five segments below. Order one or several; each record carries a service category, so mixed orders stay easy to split by campaign.",
+        columns: ["Segment", "What these businesses do", "Typical sellers into this segment"],
+        rows: [
+          ["Road transporters and fleet owners", "Full and part truckload, contract trucking, owner-operators", "GPS trackers, fuel cards, tyres, truck finance, fleet insurance"],
+          ["Freight forwarders and customs brokers", "Sea and air freight, import-export documentation, clearance", "Freight software, trade finance, cargo insurance, shipping lines"],
+          ["Courier and parcel companies", "Express, e-commerce last mile, franchise networks", "Packaging, delivery apps, route optimisation, two-wheeler fleets"],
+          ["Warehousing and 3PL providers", "Storage, fulfilment, distribution for brands", "WMS software, racking, forklifts, staffing, security services"],
+          ["Cold-chain operators", "Reefer transport and temperature-controlled storage", "Refrigeration equipment, monitoring sensors, power backup"],
+        ],
+      },
+      {
+        type: "table",
+        heading: "Corridors and Hubs to Target First",
+        intro: "Logistics businesses gather where freight moves. If your offer needs a sales visit or a local installer, start with the hubs below and widen later; for the Chennai and Namakkal belt, the Tamil Nadu business database brief adds local manufacturers who ship with these fleets.",
+        columns: ["Hub or corridor", "What concentrates there", "Good first target for"],
+        rows: [
+          ["Navi Mumbai and Bhiwandi", "JNPT port forwarders, CFS operators, large warehouse parks", "Forwarding software, warehouse equipment"],
+          ["Mundra, Kandla and Ahmedabad", "Port-linked transporters and forwarders in western Gujarat", "Fleet tracking, fuel cards, cargo insurance"],
+          ["Delhi NCR (Gurgaon, Kundli, Manesar)", "North India distribution hubs, courier sort centres", "Courier tech, 3PL services, packaging"],
+          ["Chennai and Sriperumbudur", "Port, auto-industry logistics and component transport", "Contract logistics, fleet services"],
+          ["Namakkal and Sankagiri", "Large concentrations of truck owners and transport offices", "Tyres, truck finance, GPS"],
+          ["Nagpur", "Central India transit and warehousing", "Warehouse leasing and staffing"],
+          ["Kolkata and Guwahati", "Gateway to the north-east and the Haldia port", "Transport insurance, regional distribution"],
+        ],
+      },
+      { type: "cta", text: "Selling to transporters on one corridor? Ask for a sample of that corridor's fleet owners first.", buttonLabel: "Get a Corridor Sample" },
+      {
+        type: "scenario",
+        label: "Buyer scenario",
+        heading: "A Fleet-Tracking Vendor Entering the Gujarat Port Corridor",
+        paragraphs: [
+          "A GPS company in Ahmedabad already sells to transporters in its home city and wants to grow along the Mundra–Kandla route. It orders road transporters only, in Ahmedabad, Gandhidham, Mundra and Morbi, with the owner's mobile and email, and drops courier and warehouse firms entirely.",
+          "The sales team calls owners in Hindi and Gujarati after checking DND, offers a one-month free trial for five trucks and follows up with installation photos to owners on the WhatsApp number database list who agreed to hear more. Because each record carries a city, the field installer's route for the week is planned straight from the list. The same buyer later adds Kutch-based forwarders from the Gujarat business database for a cargo-insurance partner.",
+        ],
+      },
+      {
+        type: "table",
+        heading: "Fields You Receive for Each Logistics Business",
+        intro: "Optional columns such as service area and website stay empty for a business when no source lists them; we never fill a cell by assumption.",
+        columns: ["Field", "Contents", "Why it helps"],
+        rows: [
+          ["Company name", "Trading or registered name", "Deduplicate against your CRM"],
+          ["Service category", "Transport, forwarding, courier, warehousing or cold chain", "Split campaigns by segment"],
+          ["Contact person and designation", "Owner, partner, operations or business-development head", "Reach the person who buys"],
+          ["Mobile number", "Business mobile; extra numbers can come from our mobile number database", "Calls and WhatsApp; check the DND registry first"],
+          ["Business email", "Office or owner email", "Email-first outreach"],
+          ["Address, city, state, pincode", "Office or depot location", "Route field visits and installers"],
+          ["Service area", "Main cities or routes served, where recorded", "Match corridor-based offers"],
+          ["Website", "Company website, where available", "Pre-call research"],
+        ],
+      },
+      {
+        type: "points",
+        tone: "warning",
+        heading: "Mistakes Buyers Make With Logistics Lists",
+        items: [
+          { title: "Treating brokers as fleet owners", text: "Many transport offices book loads without owning trucks. If you sell per-vehicle products, ask the fleet question on the first call." },
+          { title: "Calling depots instead of head offices", text: "A branch depot rarely approves software or insurance. Ask for the owner or head-office contact when your sale needs a decision-maker." },
+          { title: "Ignoring the GSTIN", text: "Forwarders and 3PLs change names and partners often. Cross-check key accounts against our GST database before a credit sale." },
+          { title: "Pitching during peak season", text: "October to December is festive freight; transporters have little time. Product demos land better in the quieter months." },
+          { title: "One script for every segment", text: "A courier franchisee and a customs broker need different openers. Write one first line per segment, not one per list." },
+        ],
+      },
+      { type: "sample", heading: "What a Logistics Record Looks Like", intro: "Placeholder rows with masked details, laid out exactly like a delivered file. Before paying, request live sample rows for the segment and corridor you picked." },
+      {
+        type: "sourcing",
+        heading: "How the Logistics Data Is Put Together",
+        paragraphs: [
+          "We assemble logistics records partly through in-house research and partly from data vendors, then strip out duplicates and numbers that fail validation before a file goes out. Service categories and service areas come from how a business describes itself, so a company that does both transport and warehousing may appear in either segment; tell us if you need it confirmed.",
+          "A transport owner's mobile is still an individual's data, which the DPDP Act 2023 protects even in a business setting. Keep outreach to genuine B2B offers, screen mobiles against the NCPR registry before dialling, send SMS only through DLT-approved templates and drop anyone who says no. Our B2B data guides go deeper on each rule.",
+        ],
+      },
+      { type: "cta", text: "Name the segment and the corridor; we'll send matching sample records with a quote.", buttonLabel: "Request a Free Sample" },
+    ],
+    faqs: [
+      {
+        question: "Can I order only transporters, without courier or warehouse firms?",
+        answer: "Yes. Every record carries a service category, so you can order road transporters, freight forwarders, couriers, warehousing and 3PL firms or cold-chain operators separately, or any mix of them with the category kept on each row.",
+      },
+      {
+        question: "Do you record fleet size for transporters?",
+        answer: "Not as a standard field. Fleet size changes often and is rarely published reliably. If your product is priced per vehicle, ask the fleet question on your first call; we can note it in the sample discussion if a source records it.",
+      },
+      {
+        question: "Can I target a freight corridor rather than a city?",
+        answer: "Corridors are built from the cities on them. Tell us the route, for example Mumbai to Ahmedabad, and the towns that matter to you, and we will quote for the transport and forwarding businesses located in those towns.",
+      },
+      {
+        question: "Are customs brokers included with freight forwarders?",
+        answer: "Customs brokers and freight forwarders are grouped together because many firms do both. If you need customs-licensed brokers only, say so in your brief and we will check how many records carry that description before quoting.",
+      },
+      {
+        question: "How is a logistics list priced?",
+        answer: "Price depends on the segments, the number of cities or corridors, the fields you need and the volume. A single segment in two or three hubs costs less per record than a mixed all-India pull. We quote with a record count for your brief.",
+      },
+      {
+        question: "Can I use the numbers for WhatsApp campaigns?",
+        answer: "WhatsApp needs an approved business account and the recipient's willingness to hear from you, so most buyers use it for follow-ups after a first call or email. Check numbers against DND before any call or SMS and stop at the first opt-out.",
+      },
+      {
+        question: "What if a company in my file has shut down?",
+        answer: "Small transport businesses do close or change names. Report records that bounce or are no longer trading soon after delivery, with the company name, and we will review them against our sources and remove those that are no longer valid.",
+      },
+    ],
+    related: [
+      { label: "Importers & Exporters Database", href: "/importers-exporters-database-india" },
+      { label: "Manufacturing Companies Database", href: "/manufacturing-companies-database-india" },
+      { label: "Dealers & Distributors Database", href: "/dealers-distributors-database-india" },
+      { label: "Mobile Number Database", href: "/mobile-number-database-india" },
+      { label: "GST Database", href: "/gst-database-india" },
+      { label: "Company Database", href: "/company-database-india" },
+    ],
+    cta: {
+      formTitle: "Get a Free Logistics Sample",
+      formSubtitle: "Tell us the segment (transport, forwarding, courier, warehousing, cold chain) and the cities or corridor you sell into.",
+      buttonLabel: "Get Logistics Sample",
+      whatsappMessage: "Hi, I need a logistics companies database sample. Segment and cities:",
+      footerTitle: "Reach Logistics Businesses on Your Routes",
+      footerText: "Send the segments, cities or corridors and the fields you need. You'll get matching sample records and a quote.",
+    },
+    disclaimer:
+      "Business contact data for lawful B2B outreach to logistics businesses. Any business or person can request removal at any time.",
   },
 } satisfies CategoryContent;

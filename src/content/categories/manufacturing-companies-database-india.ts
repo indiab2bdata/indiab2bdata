@@ -1,16 +1,14 @@
-import { Banknote, Building2, Cpu, Factory, FileText, Layers, ShieldCheck, UserCheck, Users } from "lucide-react";
-import { categoryLanding } from "@/content/shared/category-template";
-import { L, T, legal } from "@/content/shared/helpers";
+import { Building2, Factory, FileText, UserCheck } from "lucide-react";
 import type { CategoryContent } from "@/types/landing";
 
 export default {
-  template: "landing",
-  updated: "2026-10-23",
+  template: "custom",
+  updated: "2026-10-25",
   keyword: {
     slug: "manufacturing-companies-database-india",
     keyword: "Manufacturing Companies Database India",
     title: "Manufacturing Companies Database India",
-    metaDescription: "Explore manufacturing companies database options in India. Specify sectors, product categories, company criteria and cities, then request a sample and quote.",
+    metaDescription: "Manufacturing companies database India at company level: sector, employee band, GSTIN and head-office decision-makers by state and industry. Free sample.",
     eyebrow: "Manufacturing Companies Database",
     h1: "Manufacturing Companies Database in India",
     answer: "A manufacturing companies database helps you shortlist production businesses using available company, sector, product and contact details. Share the industries, company criteria, locations and business roles you need so we can check matching coverage and sample options.",
@@ -175,52 +173,185 @@ export default {
       footerText: "Send your manufacturing sectors, company criteria, target locations and approximate quantity. We will confirm available coverage, sample options and pricing."
     }
   },
-  landing: categoryLanding(
-    {
-      slug: "manufacturing-companies-database-india",
-      name: "Manufacturing Companies Database",
-      title: "Manufacturing Companies Database India | Company-Level Decision-Makers",
-      metaDescription: "Manufacturing companies database for India at company level: size band, sector, ownership, HQ and CXO, finance, HR and IT heads. Built for selling to manufacturers as accounts. Sample rows on the page.",
-      eyebrow: "Manufacturers as Accounts",
-      h1: "Manufacturing Companies Database: Reach Decision-Makers at HQ",
-      lead: "Company-level records of Indian manufacturers, with size band, sector, ownership and the corporate decision-makers who buy software, finance, HR and services for the whole company.",
-      segmentSummary: "Selling ERP, banking, insurance or consulting to a manufacturer is a head-office decision, not a plant decision. This database treats each manufacturer as one account, with its sector, employee band and ownership, plus the MD, CFO, HR and IT heads at headquarters. For plant addresses and product-level sourcing, use the Manufacturer database instead.",
-      segmentCards: [
-        { icon: Building2, title: "One Record per Manufacturer", description: "Company-level records with HQ address, rolled up from plants and branches." },
-        { icon: Users, title: "Corporate Decision-Makers", description: "MD, CFO, HR, IT and operations heads, the people who sign company-wide contracts." },
-        { icon: Layers, title: "Sector & Size Filters", description: "Filter by manufacturing sector, employee band, turnover band and ownership type." },
-      ],
-      segmentTabs: { heading: "Pick the manufacturer tier you sell to", tabs: [
-        T("msme", "MSME Manufacturers", "Owner-led units with up to about 100 employees, where the owner or a family director decides most purchases.", ["Owner / MD", "Partner", "Accounts Head", "Works Manager"], "Business loans, accounting software, insurance, compliance services."),
-        T("mid", "Mid-Size Manufacturers", "Companies with 100-1,000 employees and functional heads, often with several plants.", ["MD / CEO", "CFO", "HR Head", "IT Manager"], "ERP and MES vendors, HR and payroll, treasury and banking."),
-        T("large", "Large Manufacturers", "Groups and listed companies with formal procurement and corporate functions.", ["CXOs", "Head of Procurement", "CHRO", "CIO"], "Enterprise software, consulting, group insurance, ESG services."),
-      ] },
-      coverage: { heading: "Coverage by manufacturing sector", label: "Sector", rows: [
-        ["Automotive & engineering", "OEMs and component companies"], ["Chemicals & pharma", "Specialty chemicals, APIs, formulations"], ["Textiles & apparel", "Mills, processors, garment makers"],
-        ["Food & FMCG", "Processed food, beverages, personal care"], ["Electrical & electronics", "Equipment, cables, components"], ["Building materials", "Cement, steel, ceramics, pipes"],
-      ] },
-      dataFields: ["Company name", "Manufacturing sector and sub-sector", "Employee size band", "Ownership / constitution", "Head-office address, city, state", "Decision-maker name and designation", "Business phone and email", "Website, where available"],
-      sample: "manufacturingCompany",
-      useCases: [
-        { icon: Cpu, title: "ERP & Manufacturing Software", description: "Reach CIOs and MDs at mid-size manufacturers evaluating ERP, MES or quality systems." },
-        { icon: Banknote, title: "Corporate Banking & Credit", description: "Approach CFOs with working capital, trade finance and treasury products." },
-        { icon: Users, title: "HR, Payroll & Benefits", description: "Target HR heads at manufacturers with large shop-floor workforces." },
-        { icon: ShieldCheck, title: "Insurance & Risk", description: "Offer plant, liability and group cover to finance and admin heads at HQ." },
-      ],
-      faqs: [
-        { question: "Can I target manufacturers by turnover?", answer: "Yes, where a turnover band is recorded. Combine it with sector and state to build tiered account lists." },
-        { question: "How is this different from the Manufacturer database?", answer: "This page lists manufacturers as companies, with head-office decision-makers for company-wide sales. The Manufacturer database lists plants by product, for sourcing and selling into operations." },
-        { question: "Can I filter by company size?", answer: "Yes. Filter by employee band and, where recorded, turnover band, combined with sector and state." },
-        { question: "Do you include several contacts per company?", answer: "Yes. Choose the functions you need, such as finance, HR, IT or operations, and each company comes with one contact per function where available." },
-        { question: "Are listed manufacturers included?", answer: "Yes. Listed and unlisted public companies, private limited companies and large partnerships are all covered." },
-      ],
-      pricingNote: "Priced per company record. Additional functional contacts per company are quoted by volume.",
-      related: [L("Manufacturer Database", "manufacturer-database-india"), L("Corporate Database", "corporate-database-india"), L("CEO, CFO, CMO & IT Heads Database", "ceo-cfo-cmo-it-heads-database-india"), L("Industry-Wise Company Database", "industry-wise-company-database-india"), L("Chemical & Pharma Companies Database", "chemical-pharma-companies-database-india"), L("Metals & Minerals Industries Database", "metals-minerals-industries-database-india")],
-      disclaimer: legal,
-      formTitle: "Get a Free Manufacturing Companies Sample",
-      bands: ["Selling a company-wide product to manufacturers? Ask for HQ decision-makers by sector.", "Need CFOs at mid-size manufacturers only? We filter by size band and function.", "Get manufacturer account samples for your target sectors."],
-      footerTitle: "Sell to Manufacturers at the Head Office",
+  custom: {
+    path: "/manufacturing-companies-database-india",
+    name: "Manufacturing Companies Database",
+    title: "Manufacturing Companies Database India",
+    metaDescription:
+      "Manufacturing companies database India at company level: sector, employee band, GSTIN and head-office decision-makers by state and industry. Free sample.",
+    eyebrow: "Manufacturers as Company Accounts",
+    h1: "Manufacturing Companies Database India: One Record per Company",
+    lead:
+      "For raw-material suppliers, industrial software vendors, B2B marketplaces, machinery sellers and lenders who sell to a manufacturer as a whole business. Our manufacturing companies database India keeps one record per company, with sector, product category, employee band, GSTIN where available and the head-office decision-makers who approve company-wide purchases.",
+    image: {
+      src: "/images/manufacturing/manufacturing-companies-database-india.jpg",
+      alt: "Robotic arms working on an automated factory production line",
+      width: 1600,
+      height: 1000,
     },
-    { subjects: "manufacturing company", kind: "business" }
-  ),
+    sampleProfile: "manufacturingCompany",
+    links: [
+      { text: "Manufacturer database", href: "/manufacturer-database-india" },
+      { text: "GST database", href: "/gst-database-india" },
+      { text: "MCA company database", href: "/mca-company-database-india" },
+      { text: "machinery suppliers database", href: "/machinery-suppliers-services-database-india" },
+      { text: "Tamil Nadu business database", href: "/database/tamil-nadu" },
+      { text: "logistics companies database", href: "/logistics-management-service-providers-database-india" },
+      { text: "CEO, CFO and IT heads database", href: "/ceo-cfo-cmo-it-heads-database-india" },
+    ],
+    blocks: [
+      {
+        type: "table",
+        heading: "Company Accounts, Not Factory Sites",
+        intro:
+          "Two of our databases cover manufacturers, and they answer different questions. This one is for selling to the company; the Manufacturer database is for sourcing products or reaching individual plants.",
+        columns: ["Question", "This database", "Manufacturer database"],
+        rows: [
+          ["What is one row?", "One manufacturing company", "One plant, unit or product line"],
+          ["Who is the contact?", "Head-office decision-makers: MD, CFO, HR, IT, purchase head", "Plant, production and sales contacts"],
+          ["Main filters", "Sector, employee band, state, ownership", "Product category and plant location"],
+          ["Typical buyer", "ERP vendors, banks, insurers, raw-material suppliers", "Sourcing teams, traders, export buyers"],
+        ],
+      },
+      {
+        type: "prose",
+        heading: "Who Sells to Manufacturers at Company Level",
+        paragraphs: [
+          "Some purchases are made once for the whole company: an ERP licence, a working-capital line, group insurance, a long-term raw-material contract. The person who signs is at the head office, not on the shop floor, and a plant address list sends your pitch to the wrong desk.",
+          "That is why each record here rolls plants and branches up to the company and names the people who approve company-wide spending. If you need the C-suite across all industries rather than manufacturing alone, our CEO, CFO and IT heads database is the better fit.",
+        ],
+        bullets: [
+          "Steel, polymer, chemical and packaging suppliers seeking annual contracts",
+          "ERP, MES, quality and HR software vendors",
+          "Banks, NBFCs and invoice-discounting platforms",
+          "B2B marketplaces onboarding new sellers",
+          "Machinery and automation sellers targeting capex budgets",
+        ],
+        image: {
+          src: "/images/manufacturing/manufacturing-companies-database-india.jpg",
+          alt: "Robotic arms working on an automated factory production line",
+          width: 1600,
+          height: 1000,
+        },
+      },
+      {
+        type: "table",
+        heading: "Manufacturing Sectors in the Database",
+        columns: ["Sector", "Examples of companies", "Strong clusters"],
+        rows: [
+          ["Auto parts and engineering", "Forgings, castings, sheet-metal and precision components", "Pune, Chennai, Gurgaon-Manesar, Rajkot"],
+          ["Textiles and apparel", "Spinning, weaving, processing and garment makers", "Tiruppur, Surat, Ludhiana, Bhiwandi"],
+          ["Chemicals and pharma", "Specialty chemicals, dyes, APIs and formulations", "Vapi, Ankleshwar, Hyderabad, Baddi"],
+          ["Food processing", "Dairy, snacks, edible oils, spices, beverages", "Indore, Nagpur, Punjab, Kerala"],
+          ["Electrical and electronics", "Cables, switchgear, motors, electronic assembly", "Noida, Bengaluru, Vadodara"],
+          ["Building materials", "Ceramics, pipes, cement products, steel structures", "Morbi, Jaipur, Raipur"],
+        ],
+      },
+      {
+        type: "table",
+        heading: "Size Bands and What Each Buys",
+        intro: "Employee band is recorded for most companies in the manufacturing companies database India. Turnover band is added where a source records it; ask for it in your brief.",
+        columns: ["Band", "How buying works", "What sells well"],
+        rows: [
+          ["MSME (up to about 100 staff)", "The owner or a family director decides most purchases", "Business loans, accounting software, compliance services"],
+          ["Mid-size (about 100 to 1,000)", "Functional heads with owner sign-off", "ERP, payroll, treasury, plant automation"],
+          ["Large groups", "Formal procurement and corporate functions", "Enterprise software, consulting, group insurance"],
+        ],
+      },
+      { type: "cta", text: "Selling to mid-size manufacturers in one sector? Ask for a sample of those companies' decision-makers.", buttonLabel: "Get Company Sample" },
+      {
+        type: "scenario",
+        label: "Buyer scenario",
+        heading: "An ERP Vendor Targeting Mid-Size Auto-Parts Companies",
+        paragraphs: [
+          "An ERP company with a module for job-work tracking wants auto-component makers with 100 to 1,000 employees in Chennai, Hosur and Coimbatore. It orders the auto parts and engineering sector, the mid-size band, Tamil Nadu only, with the MD and the IT or finance head for each company.",
+          "The first email goes to the finance head with a two-line case on inventory write-offs; the MD gets a short call a week later. Because each row is one company, the sales team assigns accounts without two reps calling the same firm about different plants. Expanding to Pune later is a matter of adding a state to the Tamil Nadu business database brief and re-running the same sequence.",
+        ],
+      },
+      {
+        type: "table",
+        heading: "Fields Delivered per Company",
+        intro: "GSTIN, turnover band and website are added where available; nothing is estimated to fill a gap.",
+        columns: ["Field", "Contents", "Why buyers ask for it"],
+        rows: [
+          ["Company name", "Registered or trading name", "Account matching in your CRM"],
+          ["Sector and product category", "Industry and main products", "Segment campaigns by sector"],
+          ["Employee band", "Size band of the company", "Price and pitch by size"],
+          ["GSTIN", "Where available", "Check registration status before credit"],
+          ["Decision-maker and designation", "MD, CFO, HR, IT or purchase head", "Reach the person who signs"],
+          ["Mobile and business email", "Work contact details", "Email-first, then calls"],
+          ["Head-office address, city, state, pincode", "Corporate office location", "Territory and state filters"],
+          ["Website", "Where available", "Research before outreach"],
+        ],
+      },
+      {
+        type: "points",
+        tone: "warning",
+        heading: "Mistakes When Selling to Manufacturers",
+        items: [
+          { title: "Calling the plant for a head-office decision", text: "A works manager cannot approve an ERP or a credit line. Use the head-office contact for company-wide purchases." },
+          { title: "Ignoring registration status", text: "Before credit sales or onboarding, check the company in our GST database or MCA company database." },
+          { title: "One deck for every sector", text: "A textile mill and a pharma formulator have different compliance and cost worries. Lead with a sector-specific example." },
+          { title: "Overlooking their supply chain", text: "If you serve the manufacturer's vendors, transporters or machine dealers instead, our logistics companies database and machinery suppliers database cover them." },
+        ],
+      },
+      { type: "sample", heading: "Sample Company Rows", intro: "Masked, fictional company rows in the delivered column order. Your free sample is real companies matching your sector and size band." },
+      {
+        type: "sourcing",
+        heading: "How Company Records Are Built",
+        paragraphs: [
+          "We combine our own research with third-party business data, roll multiple sites up to one company, remove duplicate companies and drop invalid numbers before delivery. Sector and size band follow the company's own description and public filings where we have them; designations change, so confirm the right person on your first contact.",
+          "Decision-makers' work contacts are still personal data under the DPDP Act 2023. Keep outreach to business offers, look mobiles up on the NCPR registry before calling and act on every opt-out. Company registration details can be cross-checked in public registries before you extend credit.",
+        ],
+      },
+      { type: "cta", text: "Send the sectors, size bands and states you sell to; we'll send matching sample companies and a quote.", buttonLabel: "Request a Free Sample" },
+    ],
+    faqs: [
+      {
+        question: "How is this different from your Manufacturer database?",
+        answer: "This database has one record per manufacturing company with head-office decision-makers, for company-wide sales. The Manufacturer database lists plants and product lines, for sourcing and selling into operations. Many buyers use both: this one for the deal, the other for site visits.",
+      },
+      {
+        question: "Can I filter manufacturers by employee size?",
+        answer: "Yes. Every company carries an employee band, so you can order MSMEs, mid-size companies or large groups, combined with sector and state. Turnover band is added where a source records it.",
+      },
+      {
+        question: "Do you include the CIN or GSTIN?",
+        answer: "GSTIN is included where available. For Companies Act details such as CIN, registration date and directors, our MCA company database is built for that. Both can be matched to the same companies for a fuller account profile.",
+      },
+      {
+        question: "Can I get several contacts per company?",
+        answer: "Yes. Choose the functions you need, for example finance, HR, IT and purchase, and each company comes with one contact per function where available. Additional contacts are priced per record.",
+      },
+      {
+        question: "Can I target one manufacturing sector in one state?",
+        answer: "Yes, that is the most common order. Name the sector, such as auto parts or food processing, and the states or cities, and we quote with a record count for that exact slice.",
+      },
+      {
+        question: "What does a manufacturing company list cost?",
+        answer: "Pricing is per company record and depends on sector, size band, states and the number of contacts per company. A narrow sector and state costs less per record than an all-India pull. Your quote comes with a free sample.",
+      },
+      {
+        question: "What if a decision-maker has left the company?",
+        answer: "Senior staff do move. Tell us soon after delivery which contacts have changed, with the company name, and we will review them. Confirming the right person on the first call avoids wasted follow-ups.",
+      },
+    ],
+    related: [
+      { label: "Manufacturer Database", href: "/manufacturer-database-india" },
+      { label: "MCA Company Database", href: "/mca-company-database-india" },
+      { label: "CEO, CFO, CMO & IT Heads Database", href: "/ceo-cfo-cmo-it-heads-database-india" },
+      { label: "Machinery Suppliers Database", href: "/machinery-suppliers-services-database-india" },
+      { label: "Chemical & Pharma Companies Database", href: "/chemical-pharma-companies-database-india" },
+      { label: "Metals & Minerals Industries Database", href: "/metals-minerals-industries-database-india" },
+    ],
+    cta: {
+      formTitle: "Get a Free Manufacturing Companies Sample",
+      formSubtitle: "Tell us the sectors, employee bands, states and functions (MD, CFO, HR, IT, purchase) you need.",
+      buttonLabel: "Get Company Sample",
+      whatsappMessage: "Hi, I need a manufacturing companies database sample. Sector, size and states:",
+      footerTitle: "Sell to Manufacturers at the Head Office",
+      footerText: "Send the sectors, size bands, states and contacts per company you need. You'll get matching sample companies and a quote.",
+    },
+    disclaimer: "Business contact data for lawful B2B outreach to manufacturing companies. Any business or person can request removal at any time.",
+  },
 } satisfies CategoryContent;

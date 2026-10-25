@@ -76,7 +76,7 @@ export default {
       "debit-card-holders-database-india",
       "ceo-cfo-cmo-it-heads-database-india",
       "chartered-accountants-database-india",
-      "commercial-residential-properties-database-india",
+      "mutual-fund-investors-database-india",
       "mobile-number-database-india",
     ],
   },

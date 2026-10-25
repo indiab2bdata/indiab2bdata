@@ -150,6 +150,7 @@ const ALL_PRODUCT_GROUPS: ProductGroup[] = [
       { href: "/bank-employees-database-delhi-ncr", label: "Bank Employees (Delhi NCR)" },
       { href: "/engineers-service-engineers-database-india", label: "Engineers & Service Engineers" },
       { href: "/freelancers-database-india", label: "Freelancers" },
+      { href: "/mlm-leaders-email-database-india", label: "MLM Leaders" },
     ],
   },
   {
@@ -178,6 +179,7 @@ const ALL_PRODUCT_GROUPS: ProductGroup[] = [
       { href: "/credit-card-holders-database-india", label: "Credit Card Holders" },
       { href: "/debit-card-holders-database-india", label: "Debit Card Holders" },
       { href: "/demat-account-holders-database-india", label: "Demat Account Holders" },
+      { href: "/mutual-fund-investors-database-india", label: "Mutual Fund Investors" },
       { href: "/dining-leisure-customers-database-india", label: "Dining & Leisure Customers" },
       { href: "/facebook-users-database-india", label: "Social Media Users" },
       { href: "/females-database-india", label: "Women Consumers" },

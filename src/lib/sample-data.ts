@@ -85,7 +85,9 @@ export type SampleProfile =
   | "manufacturingCompany"
   | "mediaPlanningCompany"
   | "medicalRepresentative"
-  | "metalsMineralsBusiness";
+  | "metalsMineralsBusiness"
+  | "mlmLeader"
+  | "mfInvestor";
 
 const NAMES = ["Rahul Sharma", "Priya Mehta", "Amit Verma", "Sneha Iyer", "Vikram Singh", "Neha Gupta", "Arjun Reddy", "Kavita Joshi", "Rohan Das", "Pooja Nair", "Sanjay Patel", "Anjali Rao"];
 const COMPANIES = ["Sample Tech Pvt Ltd", "Demo Industries", "Example Traders", "Test Solutions LLP", "Dummy Enterprises", "Placeholder Exports", "Mock Infra Pvt Ltd", "Specimen Foods", "Trial Textiles", "Prototype Pharma"];
@@ -430,6 +432,9 @@ const PROFILES: Record<SampleProfile, Column[]> = {
   furnitureStore: [["Business Name", (c) => `Sample Furniture ${c.i + 1}`], ["Owner Name", (c) => c.name], ["Business Type", (c) => pick(["Furniture Showroom", "Modular Furniture", "Office Furniture", "Furnishing & Decor", "Manufacturer / Workshop"], c.i)], phone, mail, ["GSTIN", (c) => `27XXXXX${1000 + c.i}X1ZX`], ...loc],
   petroleum: [["Company / Outlet", (c) => `Sample Fuels ${c.i + 1}`], ["Decision Maker", (c) => c.name], ["Designation", (c) => pick(["Owner", "Dealer", "Plant Head", "Operations Manager", "Purchase Manager"], c.i)], ["Segment", (c) => pick(["Petrol Pump", "LPG Distributor", "CNG Station", "Lubricants", "Oil & Gas Company", "Petrochemicals"], c.i)], phone, mail, ...loc],
   jeweller: [["Shop / Business Name", (c) => `Sample Jewellers ${c.i + 1}`], ["Owner Name", (c) => c.name], ["Business Type", (c) => pick(["Gold Jeweller", "Diamond Jeweller", "Silver Jewellery", "Gemstone Dealer", "Bullion Trader", "Manufacturer"], c.i)], phone, mail, ["GSTIN", (c) => `27XXXXX${1000 + c.i}X1ZX`], ...loc],
+  mlmLeader: [["Name", (c) => c.name], ["Network / Company", (c) => pick(["Sample Wellness Network", "Sample Home-Care Network", "Sample Nutrition Network"], c.i)], ["Recorded Team Level", (c) => pick(["Distributor", "Team Leader", "Senior Leader"], c.i)], phone, mail, ["City", (c) => c.city], ["State", (c) => c.state]],
+  /** Name, mobile and location only - no investment, folio or portfolio details are ever supplied. */
+  mfInvestor: [["Name", (c) => c.name], phone, ["City", (c) => c.city], ["State", (c) => c.state], ["Pincode", (c) => c.pin]],
   domain: [["Domain Name", (c) => `example${c.i + 1}.in`], ["Registrant Name", (c) => c.name], ["Registrant Org", (c) => c.company], ["Created Date", (c) => `2026-0${1 + (c.i % 9)}-0${1 + (c.i % 9)}`], ["Registrar", () => "Sample Registrar"], phone, mail, ...loc],
 };
 
@@ -437,6 +442,8 @@ const PROFILES: Record<SampleProfile, Column[]> = {
 export function sampleProfileFor(slug: string): SampleProfile {
   const rules: [RegExp, SampleProfile][] = [
     [/^metals-minerals-industries-database-india$/, "metalsMineralsBusiness"],
+    [/^mlm-leaders-email-database-india$/, "mlmLeader"],
+    [/^mutual-fund-investors-database-india$/, "mfInvestor"],
     [/^medical-representatives-database-india$/, "medicalRepresentative"],
     [/^media-planning-companies-database-india$/, "mediaPlanningCompany"],
     [/^manufacturing-companies-database-india$/, "manufacturingCompany"],

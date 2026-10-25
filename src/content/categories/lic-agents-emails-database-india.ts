@@ -332,6 +332,7 @@ export default {
       { label: "Mobile Number Database", href: "/mobile-number-database-india" },
       { label: "Bulk SMS Database", href: "/bulk-sms-database-india" },
       { label: "WhatsApp Number Database", href: "/whatsapp-number-database-india" },
+      { label: "MLM Leaders Email Database", href: "/mlm-leaders-email-database-india" },
     ],
     cta: {
       formTitle: "Get a Free LIC Agent Sample",

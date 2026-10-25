@@ -2,13 +2,13 @@ import { Briefcase, FileText, Filter, MapPinned } from "lucide-react";
 import type { CategoryContent } from "@/types/landing";
 
 export default {
-  template: "keyword",
-  updated: "2026-10-19",
+  template: "custom",
+  updated: "2026-10-25",
   keyword: {
     slug: "medical-representatives-database-india",
     keyword: "Medical Representatives (MR) Database India",
     title: "Medical Representatives Database India",
-    metaDescription: "Explore Medical Representatives (MR) database options in India. Share roles, pharma segments and locations, then request a matching sample and quote.",
+    metaDescription: "Medical representatives database India: MRs, area and regional managers by therapy segment, headquarter city and territory. Get a free sample to review.",
     eyebrow: "Medical Representatives (MR) Database",
     h1: "Medical Representatives (MR) Database in India",
     answer: "A medical representatives database organises professional contact records for people working in pharmaceutical field sales. Tell us the MR roles, employer segments and locations you need so we can check available coverage, relevant fields and matching sample options.",
@@ -166,5 +166,178 @@ export default {
       footerTitle: "Build Your Medical Representatives Shortlist",
       footerText: "Send your role, employer and location criteria with an approximate quantity. We will confirm available coverage, sample options and pricing."
     }
+  },
+  custom: {
+    path: "/medical-representatives-database-india",
+    name: "Medical Representatives Database",
+    title: "Medical Representatives Database India",
+    metaDescription:
+      "Medical representatives database India: MRs, area and regional managers by therapy segment, headquarter city and territory. Get a free sample to review.",
+    eyebrow: "Pharma Field Force",
+    h1: "Medical Representatives Database India by Therapy and HQ City",
+    lead:
+      "For pharma recruitment firms, sales-force automation and CRM vendors, training academies, two-wheeler and personal-loan providers and pharma-distribution partners. Our medical representatives database India lists MRs and their managers with designation, employer, recorded therapy segment, headquarter city, territory and experience band, plus work mobile and email.",
+    image: {
+      src: "/images/medical-representatives/medical-representatives-database-india.jpg",
+      alt: "Medical representative presenting product details to a doctor at a clinic desk",
+      width: 1600,
+      height: 1000,
+    },
+    sampleProfile: "medicalRepresentative",
+    links: [
+      { text: "doctors database", href: "/doctors-database" },
+      { text: "chemists and medical stores database", href: "/chemists-medical-stores-database-india" },
+      { text: "chemical and pharma companies database", href: "/chemical-pharma-companies-database-india" },
+      { text: "business development and sales professionals database", href: "/business-development-sales-professionals-database-india" },
+      { text: "Telangana business database", href: "/database/telangana" },
+      { text: "mobile number database", href: "/mobile-number-database-india" },
+      { text: "B2B data guides", href: "/blog" },
+    ],
+    blocks: [
+      {
+        type: "table",
+        heading: "The Pharma Field-Force Ladder",
+        intro:
+          "Pharma sales teams follow a clear hierarchy, and the right level depends on what you sell. The medical representatives database India records designation, so you can pick the rung that buys.",
+        columns: ["Designation", "Role", "When to target"],
+        rows: [
+          ["Medical Representative (MR)", "Calls on doctors and chemists in a headquarter territory", "Jobs, training, loans, two-wheelers, personal products"],
+          ["Area or District Business Manager (ABM / DBM)", "Leads a small team of MRs across a few territories", "Team training, field tools, recruitment of MRs"],
+          ["Regional Business Manager (RBM)", "Runs several areas within a region", "Regional distribution tie-ups, SFA pilots"],
+          ["Zonal Manager (ZBM / ZSM)", "Heads a zone of several states", "Senior hiring, enterprise SFA and analytics"],
+        ],
+      },
+      {
+        type: "table",
+        heading: "Therapy Segments You Can Order",
+        intro: "Segment is recorded from the MR's division or main products where available. Ask us to confirm coverage for narrow specialities.",
+        columns: ["Segment", "Typical doctors called on", "Useful for"],
+        rows: [
+          ["General and acute care", "General physicians, paediatricians", "Broad recruitment drives, mass-market training"],
+          ["Cardio-diabetic", "Cardiologists, diabetologists, physicians", "Speciality hiring, chronic-care platforms"],
+          ["Dermatology and cosmetology", "Dermatologists, skin clinics", "Derma brands, aesthetic-device makers"],
+          ["Gynaecology", "Gynaecologists, IVF clinics", "Women's health brands, fertility platforms"],
+          ["Orthopaedics and pain", "Orthopaedic surgeons, physiotherapy clinics", "Surgical and rehab product partners"],
+          ["Surgical and critical care", "Surgeons, hospitals, ICUs", "Hospital-focused hiring and devices"],
+        ],
+      },
+      {
+        type: "prose",
+        heading: "Who Buys Access to Medical Representatives",
+        paragraphs: [
+          "MRs are one of India's largest field-sales workforces, and they change jobs, upgrade vehicles and take loans like any salaried professional. The businesses that reach them are usually hiring them, equipping them or offering them something personal and practical.",
+          "If your real target is the doctor or the chemist the MR visits, buy that list directly: our doctors database and chemists and medical stores database cover them. For sales people outside pharma, the business development and sales professionals database is the closer match.",
+        ],
+        closing: [
+          "Most MRs work from a headquarter city and cover a fixed territory of nearby towns, which is why HQ city is the single most useful filter in this list. A recruiter filling a Lucknow vacancy, a loan provider with a Patna branch or a two-wheeler dealer in Nashik all need MRs based within reach, not everyone in the state. Ordering by HQ city also keeps the list small enough to call personally, which matters for an audience that spends most of the day in clinics and is quick to ignore generic messages.",
+        ],
+        bullets: [
+          "Pharma recruitment firms and job portals hiring experienced MRs",
+          "SFA, CRM and detailing-app vendors selling to field teams",
+          "Training academies running product and soft-skills courses",
+          "Two-wheeler dealers and personal-loan providers",
+          "Pharma distributors and third-party manufacturers seeking partners",
+        ],
+        image: {
+          src: "/images/medical-representatives/medical-representatives-database-india.jpg",
+          alt: "Medical representative presenting product details to a doctor at a clinic desk",
+          width: 1600,
+          height: 1000,
+        },
+      },
+      { type: "cta", text: "Hiring MRs for one therapy area and a few HQ cities? Ask for matching sample records first.", buttonLabel: "Get MR Sample" },
+      {
+        type: "scenario",
+        label: "Buyer scenario",
+        heading: "A Pharma Recruiter Filling a Cardio-Diabetic Launch in Hyderabad",
+        paragraphs: [
+          "A recruitment firm needs 25 MRs with two to five years in cardio-diabetic therapy for a client launching in Telangana and Andhra Pradesh. It orders MRs in that segment, with that experience band, headquartered in Hyderabad, Warangal, Vijayawada and Visakhapatnam, using a Telangana business database brief for the Hyderabad side.",
+          "The first message is a short job alert with the salary range and HQ list, sent by email and followed by a call to those who open it, after a DND-registry lookup. Candidates who are not looking are thanked and removed. The recruiter fills most roles from the first two cities before widening the search.",
+        ],
+      },
+      {
+        type: "points",
+        tone: "warning",
+        heading: "Pitfalls When Contacting MRs",
+        items: [
+          { title: "Implying the employer approved it", text: "Never suggest an MR's company endorses your offer, and keep competitor-poaching pitches professional and lawful." },
+          { title: "Calling during doctor rounds", text: "Mornings and evenings are spent in clinics. Late afternoon or email works better for first contact." },
+          { title: "Ignoring the headquarter city", text: "An MR's HQ decides where they can work. Recruitment and dealer offers must match it, not just the state." },
+          { title: "Treating experience bands as exact", text: "Experience is recorded as a band and can lag behind reality. Confirm it on the first call before shortlisting." },
+        ],
+      },
+      {
+        type: "table",
+        heading: "Fields in an MR Record",
+        intro: "Territory and experience band are filled where a source records them; blank cells are never filled by assumption.",
+        columns: ["Field", "Contents", "Use"],
+        rows: [
+          ["Name", "Full name", "Personalised outreach"],
+          ["Designation", "MR, ABM, RBM or zonal manager", "Pick the right rung"],
+          ["Employer", "Current pharma company, where recorded", "Context for recruitment and partner offers"],
+          ["Therapy segment", "Division or main therapy area, where recorded", "Speciality targeting"],
+          ["Mobile and professional email", "Work contact details", "Email first; look mobiles up on the DND registry before calling"],
+          ["HQ city, state, territory", "Headquarter and territory, where recorded", "Match jobs and offers to location"],
+          ["Experience band", "Range of years in pharma sales, where recorded", "Shortlist by seniority"],
+        ],
+      },
+      { type: "sample", heading: "MR Record Format", intro: "Fictional MRs with masked contact details, in the delivered column order. Request real sample rows for your segment and HQ cities." },
+      {
+        type: "sourcing",
+        heading: "How MR Data Is Sourced",
+        paragraphs: [
+          "MR records come from our research and third-party sources, deduplicated and cleaned of invalid numbers before delivery. Designations, employers and segments reflect what our sources record and change as people move, which is common in pharma sales.",
+          "MRs are individuals, so their details are personal data under the DPDP Act 2023. Contact them for genuine professional or personal offers, include an opt-out in every message, check numbers on the NCPR registry before calls or SMS and act on refusals immediately. Our B2B data guides and the mobile number database page cover SMS and calling rules.",
+        ],
+      },
+      { type: "cta", text: "Tell us the designations, therapy segments and HQ cities you need; we'll send sample records and a quote.", buttonLabel: "Request a Free Sample" },
+    ],
+    faqs: [
+      {
+        question: "Is this list provided by pharma companies?",
+        answer: "No. IndiaB2BData.com is independent and has no tie-up with any pharma company. Records are compiled from our research and third-party sources, so never present your outreach as approved by an MR's employer.",
+      },
+      {
+        question: "Can I filter MRs by therapy area?",
+        answer: "Yes, where the segment is recorded: general care, cardio-diabetic, derma, gynaecology, orthopaedics, surgical and others. Narrow specialities have fewer records, so ask us to confirm counts for your cities before you plan a campaign.",
+      },
+      {
+        question: "Do you include area and regional managers?",
+        answer: "Yes. Designation is recorded, so you can order MRs only, or include area, district, regional and zonal managers. Managers are fewer and better suited to team-level offers such as training or field-force software.",
+      },
+      {
+        question: "Can recruiters filter by experience?",
+        answer: "Experience is recorded as a band where a source has it, for example 0-2, 2-5 or 5-10 years. Use it to shortlist, then confirm actual experience on the first call, because bands are not revised each time someone changes jobs.",
+      },
+      {
+        question: "How is an MR list priced?",
+        answer: "Price depends on designations, therapy segments, HQ cities, the fields you need and volume. Recruiters ordering one segment in a few cities pay less per record than an all-India pull. Every quote comes with a free sample.",
+      },
+      {
+        question: "Can I message MRs on WhatsApp for job openings?",
+        answer: "Use WhatsApp for candidates who reply to your first email or call, through an approved business account. Cold broadcasts to people who never agreed to hear from you break WhatsApp's rules and can get your number blocked.",
+      },
+      {
+        question: "What happens when an MR changes company?",
+        answer: "Pharma sales staff move often, so some employer fields will be out of date. Tell us about changed records soon after delivery and we will review them; confirming the current employer on your first contact avoids awkward pitches.",
+      },
+    ],
+    related: [
+      { label: "Doctors Database", href: "/doctors-database" },
+      { label: "Chemists & Medical Stores Database", href: "/chemists-medical-stores-database-india" },
+      { label: "Chemical & Pharma Companies Database", href: "/chemical-pharma-companies-database-india" },
+      { label: "Sales & BD Professionals Database", href: "/business-development-sales-professionals-database-india" },
+      { label: "Mobile Number Database", href: "/mobile-number-database-india" },
+    ],
+    cta: {
+      formTitle: "Get a Free MR Sample",
+      formSubtitle: "Tell us the designations, therapy segments, HQ cities and experience band you need.",
+      buttonLabel: "Get MR Sample",
+      whatsappMessage: "Hi, I need a medical representatives database sample. Segment and HQ cities:",
+      footerTitle: "Reach Pharma Field Teams by HQ City",
+      footerText: "Send the designations, therapy segments, HQ cities and fields you need. You'll get matching sample records and a quote.",
+    },
+    disclaimer:
+      "Independent B2B data provider; not affiliated with any pharmaceutical company. For lawful professional outreach only. Any person can request removal at any time.",
   },
 } satisfies CategoryContent;

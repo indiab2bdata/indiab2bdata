@@ -14,6 +14,7 @@ export const CONSUMER_PAGE_SLUGS = [
   "credit-card-holders-database-india",
   "debit-card-holders-database-india",
   "demat-account-holders-database-india",
+  "mutual-fund-investors-database-india",
   "hni-high-income-employees-database-india",
   "facebook-users-database-india",
   "club-mahindra-members-database",
