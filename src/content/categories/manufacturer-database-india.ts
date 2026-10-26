@@ -1,157 +1,351 @@
-import { Factory, FileSearch, MapPinned, Network, Package, ShieldCheck, Truck, Users, Wrench } from "lucide-react";
-import { categoryLanding } from "@/content/shared/category-template";
-import { L, dnd } from "@/content/shared/helpers";
-import type { CategoryContent } from "@/types/landing";
+import { Building2 } from "lucide-react";
+import type { CategoryContent, CustomPage } from "@/types/landing";
 
-/** Intent: by product category and plant location. */
-export default {
-  template: "landing",
-  updated: "2026-10-22",
-  keyword: {
-    slug: "manufacturer-database-india",
-    keyword: "manufacturer database India",
-    title: "Manufacturer Database India | Factories & Units",
-    metaDescription:
-      "A manufacturer database across India - factories and production units by industry and city. Built for suppliers, buyers and B2B vendors.",
-    eyebrow: "Manufacturer Database India",
-    h1: "Manufacturer Database India - Factories & Production Units",
-    answer:
-      "A manufacturer database lists factories and production units across India, filtered by industry and city, used by suppliers looking to sell raw materials or machinery, and by buyers sourcing manufactured goods. IndiaB2BData.com's manufacturer database covers manufacturing hubs across 700+ cities.",
-    intro: [
-      "Manufacturing is its own world - raw material and machinery suppliers need to reach factories directly, and buyers sourcing products need to find the right production units. A general business list rarely segments this cleanly.",
-      "Our manufacturer database is filtered specifically to manufacturing and production companies, by industry and city, so you can reach the right factories without wading through unrelated business types.",
-      "For equipment sales, distribution or servicing businesses, compare the machinery suppliers and services database. Describe the machinery categories and business roles you need.",
-      "For a company-level prospecting brief rather than a factory-location list, explore the manufacturing companies database. Specify sectors, products and the business contact roles you need."
-    ],
-    contentLinks: [
-      {
-        text: "machinery suppliers and services database",
-        href: "/machinery-suppliers-services-database-india"
-      },
-      {
-        text: "manufacturing companies database",
-        href: "/manufacturing-companies-database-india"
-      }
-    ],
-    highlights: [
-      { icon: Factory, title: "Factories & Production Units", description: "Filtered specifically to manufacturing companies." },
-      { icon: Network, title: "By Manufacturing Sector", description: "Segmented across manufacturing sub-industries." },
-      { icon: MapPinned, title: "Manufacturing Hub Coverage", description: "Cities and clusters known for production activity." },
-      { icon: ShieldCheck, title: "Business Records", description: "Checked and deduplicated before delivery." },
-    ],
-    useCases: [
-      "Raw material and machinery suppliers reaching factories",
-      "Buyers sourcing manufactured goods or components",
-      "Mapping manufacturing clusters within an industry",
-      "B2B vendors selling industrial equipment or services",
-    ],
-    faqs: [
-      {
-        question: "What manufacturing sectors are covered?",
-        answer: "Multiple manufacturing sub-industries are covered; tell us your specific sector and we'll filter accordingly.",
-      },
-      {
-        question: "Can I target factories in a specific manufacturing hub?",
-        answer: "Yes - city and cluster filters can be applied to target known manufacturing hubs.",
-      },
-      {
-        question: "Is this useful for selling raw materials or machinery?",
-        answer: "Yes, suppliers of raw materials, components and machinery are among the most common users of this dataset.",
-      },
-      {
-        question: "Can I get a free sample first?",
-        answer: "Yes, every enquiry includes 15–20 free sample records before you commit to a package.",
-      },
-    ],
-    related: [
-      "dealers-distributors-database-india",
-      "building-material-database-india",
-      "apparel-garments-exporters-database-india",
-      "agents-database-india",
-      "importers-exporters-database-india",
-      "industry-wise-company-database-india",
-    ],
+/** Dedicated buying guide: Manufacturers Database India. */
+const custom = {
+  "path": "/manufacturer-database-india",
+  "name": "Manufacturers Database India",
+  "title": "Manufacturer Database India by Cluster",
+  "metaDescription": "Explore Indian manufacturers by product, industrial cluster and state. Define the plant location and contact function for a relevant business sample.",
+  "eyebrow": "Manufacturers Database India",
+  "h1": "Manufacturer Database India: Factories by Product and Industrial Cluster",
+  "lead": "Select factories and production businesses by what they make, where the unit operates and the function your offer supports. Use the state-wise cluster table to turn a broad manufacturer search into a practical supplier or sales brief.",
+  "image": {
+    "src": "/images/keywords/city-skyline.jpg",
+    "alt": "Illustrative business district",
+    "width": 1600,
+    "height": 900
   },
-  landing: categoryLanding(
+  "sampleProfile": "factoryUnit",
+  "links": [
     {
-      slug: "manufacturer-database-india",
-      name: "Manufacturer Database",
-      title: "Manufacturer Database India | Manufacturers by Product & Plant Location",
-      metaDescription:
-        "Manufacturer database for India organised by product category and plant location: auto parts, chemicals, textiles, food, electrical, plastics and more, with owners, plant heads and purchase managers. Sample rows on the page.",
-      eyebrow: "Manufacturers by Product",
-      h1: "Manufacturer Database India: Find Makers by Product & Plant",
-      lead:
-        "Find manufacturers by what they make and where their plants are. Reach owners, plant heads and purchase managers for supply, sourcing, machinery and services.",
-      segmentSummary:
-        "Buyers of manufacturer data usually fall into two groups. Sourcing teams look for who makes a product. Sellers to factories want plants that consume their product, such as raw materials, machinery, packaging or maintenance. Both need the product category and the plant location rather than just a head-office address. This database tags each manufacturer by product line and operating unit, and keeps manufacturers separate from traders who only resell.",
-      segmentCards: [
-        { icon: Package, title: "By Product Category", description: "Tagged by what the plant actually makes, from auto parts and castings to snacks and plastics." },
-        { icon: Factory, title: "Plant Locations", description: "Operating units in MIDC, GIDC, SIPCOT and other industrial areas, not just HQ addresses." },
-        { icon: Users, title: "Plant & Purchase Contacts", description: "Owners, plant heads and purchase managers: the people who buy for the factory." },
-      ],
-      segmentTabs: {
-        heading: "Two ways buyers use manufacturer data",
-        tabs: [
-          { id: "sell", label: "Selling to Factories", summary: "Find plants that consume your product or service, filtered by the product they make and the industrial area they operate in.", examples: ["Plant Head","Purchase Manager","Maintenance Manager","Owner"], bestFor: "Raw materials, machinery, packaging, MRO and safety." },
-          { id: "source", label: "Sourcing from Factories", summary: "Find manufacturers of a product to request quotes, qualify new suppliers or build a vendor shortlist.", examples: ["Owner","Sales Head","Export Manager","Marketing Manager"], bestFor: "Procurement teams, importers, private-label brands." },
-          { id: "cluster", label: "Cluster Targeting", summary: "Indian manufacturing is clustered. Go deep into one hub instead of going wide across India.", examples: ["Ludhiana (hosiery, cycles)","Rajkot (engineering)","Coimbatore (pumps)","Morbi (ceramics)"], bestFor: "Field sales teams and regional distributors." },
-        ],
-      },
-      coverage: {
-        heading: "Coverage by product category",
-        label: "Product category",
-        rows: [
-          ["Auto & engineering components", "Castings, forgings, machined parts"],
-          ["Chemicals & pharma", "Specialty chemicals, dyes, APIs"],
-          ["Textiles & apparel", "Yarn, fabric, processing, garments"],
-          ["Food & beverage", "Processing, packaged foods, beverages"],
-          ["Electrical & electronics", "Cables, switchgear, components"],
-          ["Plastics, rubber & packaging", "Moulded parts, films, corrugation"],
-        ],
-      },
-      dataFields: [
-        "Manufacturer name",
-        "Product category and main products",
-        "Plant / operating-unit address",
-        "Industrial area, city, state",
-        "Contact person and designation",
-        "Business mobile number",
-        "Business email ID",
-        "Website, where available",
-      ],
-      sample: "trade",
-      useCases: [
-        { icon: Truck, title: "Raw Material Supply", description: "Find plants that consume your material, such as steel, polymers, chemicals or yarn, by product category." },
-        { icon: Wrench, title: "Machinery & Maintenance", description: "Reach plant heads with machinery, spares, automation and AMC services." },
-        { icon: Package, title: "Packaging Suppliers", description: "Target manufacturers whose products ship in your kind of packaging." },
-        { icon: FileSearch, title: "Sourcing & Vendor Discovery", description: "Find manufacturers of a product to request quotes or develop new suppliers." },
-      ],
-      faqs: [
-        { question: "Can I find manufacturers that export?", answer: "Yes. Manufacturers with recorded export activity are flagged. Combine that flag with product category and cluster to build an export-focused supplier or prospect list." },
-        { question: "Do you separate manufacturers from traders?", answer: "Yes. Records are tagged by business activity, so you get companies that make products, not resellers. Ask for traders separately if you need them." },
-        { question: "Do you give plant addresses or head offices?", answer: "Plant and operating-unit addresses wherever they are recorded. That is the key difference for field sales and service visits." },
-        { question: "Can I filter by industrial area?", answer: "Yes. Filter by MIDC, GIDC, SIPCOT or other industrial estates and pincodes, combined with product category." },
-        { question: "How is this different from the Manufacturing Companies database?", answer: "This page is organised around products and plants for sourcing and supply. The Manufacturing Companies database is company-level, for corporate and account-based selling to manufacturers." },
-      ],
-      pricingNote: "Priced by product category, location and fields. Plant-level contacts in niche categories cost more per record.",
-      related: [
-        L("Manufacturing Companies Database", "manufacturing-companies-database-india"),
-        L("Machinery Suppliers Database", "machinery-suppliers-services-database-india"),
-        L("Metals & Minerals Industries Database", "metals-minerals-industries-database-india"),
-        L("Chemical & Pharma Companies Database", "chemical-pharma-companies-database-india"),
-        L("Importers & Exporters Database", "importers-exporters-database-india"),
-        L("Industry-Wise Company Database", "industry-wise-company-database-india"),
-      ],
-      disclaimer: `Business contact data for lawful B2B outreach to manufacturers.${dnd} Any business can request removal at any time.`,
-      formTitle: "Get a Free Manufacturer Sample",
-      bands: [
-        "Looking for makers of one product, or plants that use your material? Tell us which.",
-        "Need plant-level contacts in specific industrial areas? We filter by estate.",
-        "Get a sample of manufacturers in your category.",
-      ],
-      footerTitle: "Find the Manufacturers You Need",
+      "text": "B2B database India",
+      "href": "/b2b-database-india"
     },
-    { subjects: "manufacturer", kind: "business" }
-  ),
+    {
+      "text": "company database",
+      "href": "/company-database-india"
+    },
+    {
+      "text": "Maharashtra business database",
+      "href": "/database/maharashtra"
+    },
+    {
+      "text": "Gujarat company database",
+      "href": "/database/gujarat"
+    },
+    {
+      "text": "Tamil Nadu business database",
+      "href": "/database/tamil-nadu"
+    },
+    {
+      "text": "UP company database",
+      "href": "/database/uttar-pradesh"
+    },
+    {
+      "text": "Karnataka business database",
+      "href": "/database/karnataka"
+    },
+    {
+      "text": "Delhi business database",
+      "href": "/database/delhi"
+    },
+    {
+      "text": "Data Sourcing & Compliance",
+      "href": "/data-sourcing-compliance"
+    },
+    {
+      "text": "dealers and distributors database",
+      "href": "/dealers-distributors-database-india"
+    },
+    {
+      "text": "importers and exporters database",
+      "href": "/importers-exporters-database-india"
+    },
+    {
+      "text": "Request Punjab coverage",
+      "href": "/contact"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "table",
+      "heading": "Major manufacturing clusters by product and state",
+      "columns": [
+        "Cluster",
+        "State",
+        "Known for",
+        "Explore"
+      ],
+      "rows": [
+        [
+          "Surat",
+          "Gujarat",
+          "Textile production and processing",
+          "Gujarat company database"
+        ],
+        [
+          "Rajkot",
+          "Gujarat",
+          "Engineering and components",
+          "Gujarat company database"
+        ],
+        [
+          "Ludhiana",
+          "Punjab",
+          "Bicycles / cycle parts and hosiery",
+          "Request Punjab coverage"
+        ],
+        [
+          "Tiruppur",
+          "Tamil Nadu",
+          "Knitwear and garment production",
+          "Tamil Nadu business database"
+        ],
+        [
+          "Peenya, Bengaluru",
+          "Karnataka",
+          "Engineering and industrial units",
+          "Karnataka business database"
+        ],
+        [
+          "Pune–Chakan",
+          "Maharashtra",
+          "Automotive and component production",
+          "Maharashtra business database"
+        ],
+        [
+          "Noida / Greater Noida",
+          "Uttar Pradesh",
+          "Electronics and related industrial businesses",
+          "UP company database"
+        ],
+        [
+          "Coimbatore",
+          "Tamil Nadu",
+          "Pumps, motors and engineering",
+          "Tamil Nadu business database"
+        ]
+      ],
+      "intro": "These cluster examples describe production geography, not the number or capability of businesses available in a provider file. Punjab does not have a state hub in these regional guides; use the coverage enquiry for Ludhiana."
+    },
+    {
+      "type": "prose",
+      "heading": "Select manufacturing activity before company size",
+      "paragraphs": [
+        "A casting workshop, textile processor and finished-product assembler need different raw materials and services. Name the manufacturing process, product family and industrial area instead of requesting all manufacturers in a state. Include whether traders, job-work units and contract manufacturers are inside the brief.",
+        "For plant visits, the operating-unit address matters more than a registered-office match. A supplier search may also require machine capability, material grades or certifications, but those details should be requested and checked directly where they are not supported in the database."
+      ]
+    },
+    {
+      "type": "table",
+      "heading": "Manufacturing fields to request",
+      "columns": [
+        "Field",
+        "Example requirement",
+        "What to verify"
+      ],
+      "rows": [
+        [
+          "Product / process",
+          "Pumps, castings, garments or assembly",
+          "Actual recorded activity; no assumed capability"
+        ],
+        [
+          "Unit location",
+          "Estate, locality, city, pincode",
+          "Factory versus administrative office"
+        ],
+        [
+          "Business type",
+          "Producer, job-work unit or trader",
+          "Keep trading-only firms separate"
+        ],
+        [
+          "Relevant role",
+          "Purchase, maintenance, production or owner",
+          "Role availability for this segment"
+        ],
+        [
+          "Business identity",
+          "Company name and supported registration",
+          "Multiple sites under one legal entity"
+        ],
+        [
+          "Capacity / certifications",
+          "Only if specifically evidenced",
+          "Never inferred from a sector tag"
+        ]
+      ]
+    },
+    {
+      "type": "prose",
+      "heading": "Use the state guide to narrow industrial estates",
+      "paragraphs": [
+        "The Maharashtra business database separates Mumbai accounts from Pune manufacturing and Nashik MIDC areas. The Gujarat company database distinguishes Surat textiles from Rajkot engineering and Ahmedabad pharma. The Tamil Nadu business database follows Chennai auto, Tiruppur garments and Coimbatore pumps.",
+        "For electronics, leather and metal craft, start with the UP company database. For Peenya and regional engineering, use the Karnataka business database. The Delhi business database helps distinguish industrial estates from wholesale and corporate accounts."
+      ]
+    },
+    {
+      "type": "scenario",
+      "heading": "Example: selling maintenance supplies to production units",
+      "label": "A process-led brief",
+      "paragraphs": [
+        "A maintenance supplier choosing Pune and Coimbatore should state the types of units it can serve, the industrial areas within delivery range and the purchase or maintenance role it needs. A manufacturer tag alone does not identify a suitable machine fleet or consumable requirement.",
+        "Request a sample with process labels and operating addresses, plus the number of distinct businesses and sites. If a group has factories in both cities, keep the site rows linked to the same company rather than treating it as two unrelated accounts."
+      ]
+    },
+    {
+      "type": "points",
+      "heading": "Avoid common manufacturer-list mismatches",
+      "items": [
+        {
+          "title": "A trader listed as a producer",
+          "text": "Ask how production businesses are distinguished from dealers that sell the same product."
+        },
+        {
+          "title": "An office address used as a factory",
+          "text": "Review the address type before planning visits or technical service coverage."
+        },
+        {
+          "title": "Several plants counted as several companies",
+          "text": "Request both entity and site totals and preserve supported parent relationships."
+        },
+        {
+          "title": "Capabilities assumed from the name",
+          "text": "Confirm specifications, approvals, capacity and current commercial terms with the unit."
+        }
+      ]
+    },
+    {
+      "type": "sourcing",
+      "heading": "Validate the production context in the sample",
+      "paragraphs": [
+        "For a manufacturer selection, ask what supports the activity label and operating location, and when those fields were reviewed. Registry information can establish identity without demonstrating the production process at a particular address.",
+        "Use the company database for legal-entity and account criteria, and B2B database India for a combined sector-and-role requirement. Request evidence for any capability, certification or capacity field before relying on it in sourcing decisions."
+      ]
+    },
+    {
+      "type": "prose",
+      "heading": "Turn a product category into a production-unit requirement",
+      "paragraphs": [
+        "A product label can describe a manufacturer, a trader, a distributor or a service firm. A factory-focused brief should specify the production activity: making a finished article, casting a component, machining a part, processing a material or assembling a product. These distinctions help determine which businesses can use your raw materials, equipment or maintenance service.",
+        "For textile work, distinguish fabric or yarn activity from garment production and job work. For engineering, name the part family, process or application. For food, pharma or other specialist sectors, request the relevant business activity without treating a general directory label as proof of approvals, certification or production standards.",
+        "MSME-scale producers may be relevant to a brief, but company size and formal MSME status are different attributes. Ask what evidence supports either field if you need it. A workshop address, an employee estimate or a legal form should not be converted into a statutory classification."
+      ]
+    },
+    {
+      "type": "prose",
+      "heading": "Qualify the manufacturer before planning an industrial sale",
+      "paragraphs": [
+        "Raw-material suppliers may prioritise the process and input material. Machinery sellers need the operating site and the function evaluating equipment. Logistics and packaging providers may need the product, handling context and business role. The same manufacturer record therefore supports different questions for different buyers.",
+        "Use the industrial-cluster table to narrow geography, then review a sample that shows the production activity and address type. Ask whether the relevant purchase, maintenance or production role is populated and whether several units belong to the same company. Confirm specifications, stock, capacity, service access and current terms directly before a technical or supply commitment.",
+        "A dealers and distributors database supports channel discovery; this manufacturers page concerns production-business or unit requirements. The importers and exporters database adds a separate trade-entity perspective when the sourcing brief needs export or import context."
+      ]
+    },
+    {
+      "type": "sample",
+      "heading": "Review the Manufacturers Database India file structure",
+      "intro": "These fictional, masked rows show the Manufacturers Database India column format. They are not live business records or evidence of inventory size; request a matching sample to assess your chosen selection."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Can I choose manufacturers by industrial cluster?",
+      "answer": "Name the state, industrial belt or estate and the production activity you need. Ask for matching sample rows and a count for that combination rather than assuming every unit in an estate fits your product."
+    },
+    {
+      "question": "Are factory and company totals the same?",
+      "answer": "A company can operate several factories, so a plant-level count can exceed the distinct-company total. Request both figures and the method used to link sites."
+    },
+    {
+      "question": "Does the manufacturer list include trading companies?",
+      "answer": "Specify whether traders, job-work units and contract manufacturers should be included. Review the business-type labels so a seller of a product is not automatically treated as its producer."
+    },
+    {
+      "question": "Can I get purchase or maintenance contacts?",
+      "answer": "Identify the function relevant to the equipment or consumable you sell. Ask which roles are available for the chosen cluster and inspect the populated sample fields."
+    },
+    {
+      "question": "Are production capacities and certifications verified?",
+      "answer": "Do not assume these are standard fields in a manufacturer record. Request supporting evidence or confirm the details directly with shortlisted units."
+    }
+  ],
+  "related": [
+    {
+      "label": "B2B Database India",
+      "href": "/b2b-database-india"
+    },
+    {
+      "label": "Manufacturing Companies",
+      "href": "/manufacturing-companies-database-india"
+    },
+    {
+      "label": "Machinery Suppliers",
+      "href": "/machinery-suppliers-services-database-india"
+    },
+    {
+      "label": "Company Database",
+      "href": "/company-database-india"
+    }
+  ],
+  "cta": {
+    "formTitle": "Request a Manufacturers Database India Sample",
+    "formSubtitle": "Describe the Manufacturers Database India selection, locations and fields you need.",
+    "buttonLabel": "Request Free Sample",
+    "whatsappMessage": "Hi, I need a Manufacturers Database India sample. My filters are:",
+    "footerTitle": "Plan Your Manufacturers Database India Selection",
+    "footerText": "Send your Manufacturers Database India criteria and quantity. Ask for a matching sample, dated coverage count, field availability and quote."
+  },
+  "disclaimer": "Industrial clusters are selection examples. Business records do not certify production capacity, product quality or technical capability; confirm those details with each manufacturer."
+} satisfies CustomPage;
+
+export default {
+  template: "custom",
+  updated: "2026-10-26",
+  keyword: {
+  "slug": "manufacturer-database-india",
+  "keyword": "Manufacturer Database India by Cluster",
+  "title": "Manufacturers Database India",
+  "metaDescription": "Explore Indian manufacturers by product, industrial cluster and state. Define the plant location and contact function for a relevant business sample.",
+  "eyebrow": "Manufacturers Database India",
+  "h1": "Manufacturer Database India: Factories by Product and Industrial Cluster",
+  "answer": "Select factories and production businesses by what they make, where the unit operates and the function your offer supports. Use the state-wise cluster table to turn a broad manufacturer search into a practical supplier or sales brief.",
+  "intro": [
+    "Select factories and production businesses by what they make, where the unit operates and the function your offer supports. Use the state-wise cluster table to turn a broad manufacturer search into a practical supplier or sales brief."
+  ],
+  "highlights": [{ icon: Building2, title: "Manufacturers Database India Selection", description: "Find manufacturing clusters by state, activity and plant location. Compare industrial belts and request a manufacturer sample for your supply brief." }],
+  "useCases": [
+    "Example: selling maintenance supplies to production units"
+  ],
+  "faqs": [
+  {
+    "question": "Can I choose manufacturers by industrial cluster?",
+    "answer": "Name the state, industrial belt or estate and the production activity you need. Ask for matching sample rows and a count for that combination rather than assuming every unit in an estate fits your product."
+  },
+  {
+    "question": "Are factory and company totals the same?",
+    "answer": "A company can operate several factories, so a plant-level count can exceed the distinct-company total. Request both figures and the method used to link sites."
+  },
+  {
+    "question": "Does the manufacturer list include trading companies?",
+    "answer": "Specify whether traders, job-work units and contract manufacturers should be included. Review the business-type labels so a seller of a product is not automatically treated as its producer."
+  },
+  {
+    "question": "Can I get purchase or maintenance contacts?",
+    "answer": "Identify the function relevant to the equipment or consumable you sell. Ask which roles are available for the chosen cluster and inspect the populated sample fields."
+  },
+  {
+    "question": "Are production capacities and certifications verified?",
+    "answer": "Do not assume these are standard fields in a manufacturer record. Request supporting evidence or confirm the details directly with shortlisted units."
+  }
+],
+  "related": [
+    "b2b-database-india",
+    "manufacturing-companies-database-india",
+    "machinery-suppliers-services-database-india",
+    "company-database-india"
+  ]
+},
+  custom,
 } satisfies CategoryContent;

@@ -68,12 +68,12 @@ export function Hero({ page, source }: { page: LandingPage; source: string }) {
           </div>
 
           <ul className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm text-navy">
-            <li className="inline-flex items-center gap-2 rounded-full bg-[#e8f7ee] px-3 py-1.5 font-semibold text-[#17784a] ring-1 ring-[#bfe6cf]">
+            {!page.path.startsWith("/database/") && <li className="inline-flex items-center gap-2 rounded-full bg-[#e8f7ee] px-3 py-1.5 font-semibold text-[#17784a] ring-1 ring-[#bfe6cf]">
               <ShieldCheck className="h-4 w-4" />
               <Link href={COMPLIANCE_PATH} className="hover:underline">
                 {COPY.complianceBadge}
               </Link>
-            </li>
+            </li>}
             <li className="inline-flex items-center gap-2">
               <FileCheck2 className="h-4 w-4 text-teal" />
               {COPY.sampleBadge}

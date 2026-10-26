@@ -1,3 +1,4 @@
+import { LinkedText } from "@/components/ui/LinkedText";
 import { CheckCircle2 } from "lucide-react";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionHead } from "@/components/ui/SectionHead";
@@ -16,7 +17,7 @@ export function Guide({ guide }: { guide: LandingGuide }) {
               <h3 className="font-display text-xl font-bold text-navy md:text-2xl">{sec.heading}</h3>
               {sec.paragraphs?.map((p, i) => (
                 <p key={i} className="mt-3 max-w-[70ch] leading-relaxed text-muted">
-                  {p}
+                  <LinkedText text={p} links={guide.links} />
                 </p>
               ))}
               {sec.bullets && (

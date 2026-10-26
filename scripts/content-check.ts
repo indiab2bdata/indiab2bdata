@@ -22,7 +22,7 @@ import { indexableLinks } from "@/config/indexing";
 import { FOOTER_CORE_DATABASES, FOOTER_QUICK_LINKS, HEADER_LINKS, PRODUCT_GROUPS } from "@/config/navigation";
 import { siteConfig } from "@/config/site";
 import { cityPath, getAllCategories, getAllCities, getAllStates, liveCategories } from "@/content";
-import { ABOUT_FAQS, DATABASE_HUB_FAQS, DEFAULT_FAQS, GUIDES_FAQS } from "@/content/pages/faqs";
+import { ABOUT_FAQS, DATABASE_HUB_FAQS, DEFAULT_FAQS, HOME_FAQS, GUIDES_FAQS } from "@/content/pages/faqs";
 import { faq as faqSchema } from "@/schemas/landing.schema";
 import type { Faq, LandingPage } from "@/types/landing";
 
@@ -66,7 +66,7 @@ for (const c of liveCategories) {
 for (const s of getAllStates()) rendered.push(fromLanding(s.landing, `content/states/${s.slug}.ts`));
 for (const c of getAllCities()) rendered.push(fromLanding(c.landing, `content/cities/${c.stateSlug}-${c.slug}.ts`));
 const pageFaqs: [string, string, Faq[]][] = [
-  ["/", "content/pages/faqs.ts (DEFAULT_FAQS)", DEFAULT_FAQS],
+  ["/", "content/pages/faqs.ts (HOME_FAQS)", HOME_FAQS],
   ["/contact", "content/pages/faqs.ts (DEFAULT_FAQS)", DEFAULT_FAQS],
   ["/about", "content/pages/faqs.ts (ABOUT_FAQS)", ABOUT_FAQS],
   ["/blog", "content/pages/faqs.ts (GUIDES_FAQS)", GUIDES_FAQS],

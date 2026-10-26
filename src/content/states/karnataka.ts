@@ -6,43 +6,103 @@ export default stateContent(
   { updated: "2026-10-26", hubCities: ["Bengaluru", "Mysore", "Mangalore", "Hubli", "Belgaum", "Davanagere", "Tumkur", "Shimoga", "Gulbarga", "Udupi"], moreCities: 5 },
   {
     slug: "karnataka",
+    authoredFaqsOnly: true,
+    showCoverageFigures: false,
     name: "Karnataka",
     h1: "Karnataka Business Database: Bengaluru, Peenya, Mysuru & Hubli",
     coverageHeading: "Karnataka coverage by city and business cluster",
     coverageLabel: "City / cluster",
     guide: {
-      "heading": "Plan Karnataka outreach beyond a single Bengaluru list",
-      "intro": "Karnataka business buyers need a clear split between software firms, industrial units and regional trade. Bengaluru IT, Peenya, Mysuru and Hubli-Dharwad each call for a different sample and sales brief.",
-      "sections": [
-            {
-                  "heading": "Bengaluru IT: distinguish service firms, products and GCCs",
-                  "paragraphs": [
-                        "Start with the type of technology business: IT services, a software product company or a global capability centre. Add your preferred area, such as Whitefield, Electronic City or the Outer Ring Road, when travel or on-site support affects your offer.",
-                        "A software buyer brief may focus on technology or finance leadership; a recruitment or workspace brief may need HR or administration. Ask which role, company-size and location fields are actually populated rather than assuming every technology company has the same purchasing structure."
-                  ]
-            },
-            {
-                  "heading": "Peenya industrial area: select the unit and the process",
-                  "paragraphs": [
-                        "Peenya is an industrial-area requirement within Bengaluru. Describe the engineering activity, product category and whether the address must identify an operating unit. For machinery, tools, safety products or maintenance services, specify the purchase, production or maintenance responsibility relevant to your offer.",
-                        "Keep Peenya separate from an IT-only city segment. If your brief also includes Bommasandra, Jigani or Bidadi, name those locations individually and check their address labels rather than treating all industrial businesses as Peenya records."
-                  ]
-            },
-            {
-                  "heading": "Mysuru and Hubli-Dharwad support different regional plans",
-                  "paragraphs": [
-                        "For Mysuru, decide whether your brief concerns manufacturing, IT services, silk-related businesses or local trade. Where relevant, specify industrial locations such as Hebbal or Hootagalli and ask for a sample that shows the operating address as well as the business category.",
-                        "For Hubli-Dharwad, also written Hubballi-Dharwad, distinguish engineering companies from stockists, distributors and food-processing businesses. Use the city, product line and business role to plan North Karnataka visits or distributor appointments instead of extending a Bengaluru-only file."
-                  ]
-            },
-            {
-                  "heading": "Check city names and count boundaries before combining files",
-                  "paragraphs": [
-                        "Confirm how Bengaluru/Bangalore, Mysuru/Mysore and Hubli/Hubballi spellings are normalised in the delivery. A consistent city and pincode field helps your CRM avoid duplicate accounts under different spellings.",
-                        "Peenya counts are a subset of the wider Bengaluru geography, so do not add them to a Bengaluru total without checking overlap. Request dated counts, distinct-business totals and additional-contact counts for each selected city and sector before choosing your order size."
-                  ]
-            }
-      ]
+    "heading": "Plan Karnataka outreach beyond a single Bengaluru list",
+    "intro": "Karnataka business buyers need a clear split between software firms, industrial units and regional trade. Bengaluru IT, Peenya, Mysuru and Hubli-Dharwad each call for a different sample and sales brief.",
+    "sections": [
+        {
+            "heading": "Bengaluru IT: distinguish service firms, products and GCCs",
+            "paragraphs": [
+                "Start with the type of technology business: IT services, a software product company or a global capability centre. Add your preferred area, such as Whitefield, Electronic City or the Outer Ring Road, when travel or on-site support affects your offer.",
+                "A software buyer brief may focus on technology or finance leadership; a recruitment or workspace brief may need HR or administration. Ask which role, company-size and location fields are actually populated rather than assuming every technology company has the same purchasing structure."
+            ]
+        },
+        {
+            "heading": "Peenya industrial area: select the unit and the process",
+            "paragraphs": [
+                "Peenya is an industrial-area requirement within Bengaluru. Describe the engineering activity, product category and whether the address must identify an operating unit. For machinery, tools, safety products or maintenance services, specify the purchase, production or maintenance responsibility relevant to your offer.",
+                "Keep Peenya separate from an IT-only city segment. If your brief also includes Bommasandra, Jigani or Bidadi, name those locations individually and check their address labels rather than treating all industrial businesses as Peenya records."
+            ]
+        },
+        {
+            "heading": "Mysuru and Hubli-Dharwad support different regional plans",
+            "paragraphs": [
+                "For Mysuru, decide whether your brief concerns manufacturing, IT services, silk-related businesses or local trade. Where relevant, specify industrial locations such as Hebbal or Hootagalli and ask for a sample that shows the operating address as well as the business category.",
+                "For Hubli-Dharwad, also written Hubballi-Dharwad, distinguish engineering companies from stockists, distributors and food-processing businesses. Use the city, product line and business role to plan North Karnataka visits or distributor appointments instead of extending a Bengaluru-only file."
+            ]
+        },
+        {
+            "heading": "Check city names and count boundaries before combining files",
+            "paragraphs": [
+                "Confirm how Bengaluru/Bangalore, Mysuru/Mysore and Hubli/Hubballi spellings are normalised in the delivery. A consistent city and pincode field helps your CRM avoid duplicate accounts under different spellings.",
+                "Peenya counts are a subset of the wider Bengaluru geography, so do not add them to a Bengaluru total without checking overlap. Request dated counts, distinct-business totals and additional-contact counts for each selected city and sector before choosing your order size."
+            ]
+        },
+        {
+            "heading": "Popular business lists for Karnataka",
+            "paragraphs": [
+                "For a Karnataka selection, use GST database India for tax-registration context, MCA company database for incorporated-company or LLP identity, and Company database India for an account-level brief. Specify this state and the cities or clusters you need rather than assuming a national product page is already a filtered local file.",
+                "Manufacturers database India helps define production and plant-address criteria. Dealers and distributors list India focuses on channel role and product sector. Importers exporters database India adds the trade-entity perspective where your local selection needs supported import or export context.",
+                "For another regional selection, compare the Tamil Nadu business database and the Maharashtra business database. Keep the same activity, address type and counting unit when comparing territories, and check available fields for each selection."
+            ]
+        }
+    ],
+    "links": [
+        {
+            "text": "GST database India",
+            "href": "/gst-database-india"
+        },
+        {
+            "text": "MCA company database",
+            "href": "/mca-company-database-india"
+        },
+        {
+            "text": "Company database India",
+            "href": "/company-database-india"
+        },
+        {
+            "text": "Manufacturers database India",
+            "href": "/manufacturer-database-india"
+        },
+        {
+            "text": "Dealers and distributors list India",
+            "href": "/dealers-distributors-database-india"
+        },
+        {
+            "text": "Importers exporters database India",
+            "href": "/importers-exporters-database-india"
+        },
+        {
+            "text": "Delhi business database",
+            "href": "/database/delhi"
+        },
+        {
+            "text": "Gujarat company database",
+            "href": "/database/gujarat"
+        },
+        {
+            "text": "Karnataka business database",
+            "href": "/database/karnataka"
+        },
+        {
+            "text": "Maharashtra business database",
+            "href": "/database/maharashtra"
+        },
+        {
+            "text": "UP company database",
+            "href": "/database/uttar-pradesh"
+        },
+        {
+            "text": "Tamil Nadu business database",
+            "href": "/database/tamil-nadu"
+        }
+    ]
 },
     title: "Karnataka Business Database by City",
     metaDescription:
@@ -90,23 +150,34 @@ export default stateContent(
       { icon: Truck, title: "Distribution in North Karnataka", description: "Find stockists and dealers in Hubli-Dharwad for regional consumer and B2B products." },
     ],
     faqs: [
-      {"question":"Can I compare Mysuru businesses with Hubli-Dharwad segments?","answer":"Request Mysuru and Hubli-Dharwad as separate city selections with their own industry filters. Mysuru manufacturing or IT requirements and Hubli-Dharwad engineering or distribution requirements should each have a matching sample and a separately confirmed record count."},
-      {"question":"Are Peenya records additional to the Bengaluru total?","answer":"Peenya is within Bengaluru, so its business records can overlap a wider Bengaluru selection. Ask for a deduplicated city total and a Peenya subtotal using the same location and company-counting rules before combining files."},
-      { question: "Do you cover Karnataka's aerospace and defence suppliers?", answer: "Yes. Aerospace, defence and precision-engineering suppliers around Bengaluru's HAL and Devanahalli aerospace belt, Peenya and Belagavi are tagged, and you can buy them as their own segment." },
-      { question: "Can I filter Bengaluru by area?", answer: "Yes. Filter by pincode or area, such as Whitefield, Outer Ring Road, Electronic City, Koramangala, Peenya or Hebbal, to match your sales territory." },
-      { question: "Are Hubli-Dharwad and Belagavi sold separately?", answer: "Yes. North Karnataka cities are tagged individually, so you can buy Hubli-Dharwad, Belagavi or both without paying for Bengaluru records." },
-      { question: "Can I get only Bengaluru IT companies?", answer: "Yes. Filter Bengaluru by industry (IT services, product companies, GCCs) and by area, such as Whitefield, ORR or Electronic City." },
-      { question: "Do you have startup founder contacts?", answer: "Yes, for Bengaluru companies where founder or director details are recorded. Specify company age or funding stage in your brief and we'll check coverage." },
-      { question: "Is Peenya industrial area covered?", answer: "Yes. Peenya, Bommasandra, Jigani and Bidadi manufacturers are covered and tagged by industry." },
-      { question: "Do you cover Mangaluru and coastal Karnataka?", answer: "Yes. Mangaluru, Udupi and Karwar businesses are covered, including port services, cashew processors and the trading community." },
-    ],
+  {
+    "question": "Can Bengaluru software firms and GCCs be selected separately?",
+    "answer": "Define software services, product companies or global capability centres as separate activities. Add Whitefield, Electronic City or another area when the business location affects your offer."
+  },
+  {
+    "question": "Is Peenya an additional city or part of Bengaluru?",
+    "answer": "Peenya is an industrial-area selection within Bengaluru. Its subtotal can overlap the broader Bengaluru file, so do not add both without checking the location and entity rules."
+  },
+  {
+    "question": "How should I describe Mysuru manufacturing or IT requirements?",
+    "answer": "Specify the business activity and, where useful, an industrial locality such as Hebbal or Hootagalli. Ask for operating addresses for production visits and office addresses for a services brief."
+  },
+  {
+    "question": "Can Hubli-Dharwad distributors be separated from engineering firms?",
+    "answer": "Use product/channel activity for the distribution requirement and production activity for engineering businesses. A city-only filter would mix the two audiences."
+  },
+  {
+    "question": "Are Bangalore, Mysore and Hubli aliases handled consistently?",
+    "answer": "Ask for a consistent normalisation of Bengaluru/Bangalore, Mysuru/Mysore and Hubballi/Hubli in the export. Preserve the city, locality and pincode fields so aliases do not create duplicate CRM accounts."
+  }
+],
     related: [
       L("IT Companies Database", "it-companies-database-india"),
       L("IT Professionals Database", "it-professionals-database-india"),
       L("CEO, CFO, CMO & IT Heads Database", "ceo-cfo-cmo-it-heads-database-india"),
       L("HR Professionals Database", "hr-human-resources-database-india"),
       L("Business Analysts Database", "business-analysts-database-india"),
-      L("Manufacturing Companies Database", "manufacturing-companies-database-india"),
+      L("B2B Database India", "b2b-database-india"),
     ],
     bands: [
       "Selling to Bengaluru tech companies? Ask for a sample filtered by area and company size.",

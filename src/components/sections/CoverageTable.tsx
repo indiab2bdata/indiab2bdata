@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { CheckCircle2, ClipboardList } from "lucide-react";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionHead } from "@/components/ui/SectionHead";
@@ -11,6 +12,7 @@ const COPY = LANDING_COPY.coverage;
 /** Coverage table + fields included + pricing hint. Primary content: never collapsed. */
 export function CoverageTable({ page }: { page: LandingPage }) {
   const { coverageTable: t, pricingHint } = page;
+  const showFigures = t.showFigures !== false;
   return (
     <section className="bg-white py-16 md:py-24">
       <div className={shell}>
@@ -23,17 +25,17 @@ export function CoverageTable({ page }: { page: LandingPage }) {
                   <tr>
                     <th scope="col" className="px-5 py-3.5 font-semibold">{t.segmentLabel}</th>
                     <th scope="col" className="px-5 py-3.5 font-semibold">{COPY.includes}</th>
-                    <th scope="col" className="px-5 py-3.5 text-right font-semibold">{COPY.records}</th>
-                    <th scope="col" className="px-5 py-3.5 text-right font-semibold">{COPY.fill}</th>
+                    {showFigures && <th scope="col" className="px-5 py-3.5 text-right font-semibold">{COPY.records}</th>}
+                    {showFigures && <th scope="col" className="px-5 py-3.5 text-right font-semibold">{COPY.fill}</th>}
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-[#EEF4F8]">
                   {t.rows.map((row: CoverageRow) => (
                     <tr key={row.segment}>
-                      <th scope="row" className="px-5 py-3.5 font-semibold text-navy">{row.segment}</th>
+                      <th scope="row" className="px-5 py-3.5 font-semibold text-navy">{row.href ? <Link href={row.href} className="text-teal-dark underline underline-offset-4">{row.segment}</Link> : row.segment}</th>
                       <td className="px-5 py-3.5 text-muted">{row.detail}</td>
-                      <td className="px-5 py-3.5 text-right font-medium text-navy">{shown(row.records)}</td>
-                      <td className="px-5 py-3.5 text-right text-muted">{shown(row.fillRate)}</td>
+                      {showFigures && <td className="px-5 py-3.5 text-right font-medium text-navy">{shown(row.records)}</td>}
+                      {showFigures && <td className="px-5 py-3.5 text-right text-muted">{shown(row.fillRate)}</td>}
                     </tr>
                   ))}
                 </tbody>

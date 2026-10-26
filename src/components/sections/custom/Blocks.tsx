@@ -138,11 +138,11 @@ function Table({
                         scope="row"
                         className="px-5 py-3.5 font-semibold text-navy"
                       >
-                        {cell}
+                        <Copy text={cell} links={links} />
                       </th>
                     ) : (
                       <td key={i} className="px-5 py-3.5 text-muted">
-                        {cell}
+                        <Copy text={cell} links={links} />
                       </td>
                     ),
                   )}

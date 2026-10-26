@@ -1,145 +1,379 @@
-import { Banknote, Building2, Calculator, ClipboardCheck, FileSearch, FileText, Filter, Landmark, Scale, ShieldCheck, Users } from "lucide-react";
-import { categoryLanding } from "@/content/shared/category-template";
-import { L, dnd } from "@/content/shared/helpers";
-import type { CategoryContent } from "@/types/landing";
+import { Building2 } from "lucide-react";
+import type { CategoryContent, CustomPage } from "@/types/landing";
 
-/** Intent: Companies Act registry fields (CIN, ROC, capital, directors). */
-export default {
-  template: "landing",
-  updated: "2026-10-22",
-  keyword: {
-    slug: "mca-company-database-india",
-    keyword: "MCA company database India",
-    title: "MCA Company Database India | Companies & LLPs",
-    metaDescription:
-      "A database of companies and LLPs registered with the Ministry of Corporate Affairs - incorporation details, company type and registered office.",
-    eyebrow: "MCA Company Database India",
-    h1: "MCA Company Database India - Registered Companies & LLPs",
-    answer:
-      "An MCA company database lists companies and LLPs incorporated under India's Companies Act and registered with the Ministry of Corporate Affairs, including company type, incorporation details and registered office. IndiaB2BData.com's MCA-linked records help you target formally incorporated businesses rather than unregistered entities.",
-    intro: [
-      "Not every business contact is a formally incorporated company - some are proprietorships or unregistered setups. When your outreach specifically needs Private Limited companies, LLPs or Public Limited entities, MCA-linked records narrow the field to exactly that.",
-      "These records reflect a company's formal incorporation status - useful when a deal, partnership or compliance requirement depends on dealing with a properly registered legal entity.",
-    ],
-    highlights: [
-      { icon: FileText, title: "Incorporation Details", description: "Company type and registration information." },
-      { icon: Landmark, title: "Companies Act Registered", description: "Pvt Ltd, LLP and Public Ltd entities." },
-      { icon: Building2, title: "Registered Office Data", description: "Formal company address on record." },
-      { icon: ShieldCheck, title: "Entity Status", description: "Target formally incorporated businesses." },
-    ],
-    useCases: [
-      "Targeting only formally incorporated companies (Pvt Ltd/LLP)",
-      "B2B partnerships that require a registered legal entity",
-      "Investor or funding-related company research",
-      "Filtering out unregistered or proprietorship-only contacts",
-    ],
-    faqs: [
-      {
-        question: "What company types are included?",
-        answer: "Private Limited companies, LLPs and Public Limited companies registered under the Companies Act.",
-      },
-      {
-        question: "Can I filter by company type?",
-        answer: "Yes - tell us which entity types you need (e.g. only LLPs, or only Private Limited) and we'll build a matching list.",
-      },
-      {
-        question: "Does this include the registered office address?",
-        answer: "Yes, registered office details are included where available.",
-      },
-      {
-        question: "Is this different from the GST database?",
-        answer: "Yes - this reflects Companies Act incorporation status, while the GST database reflects GST registration; a company can appear in one, both, or neither.",
-      },
-    ],
-    related: [
-      "gst-database-india",
-      "newly-registered-companies-india",
-      "corporate-database-india",
-      "company-database-india",
-      "domain-whois-database",
-      "b2b-database-india",
-    ],
+/** Dedicated buying guide: MCA Company Data. */
+const custom = {
+  "path": "/mca-company-database-india",
+  "name": "MCA Company Data",
+  "title": "MCA Company Database: CIN, ROC & Status",
+  "metaDescription": "Explore Indian company and LLP records by CIN or LLPIN, incorporation year, class, status and registered state. Review fields before ordering.",
+  "eyebrow": "MCA Company Data",
+  "h1": "MCA Company Database: Indian Companies by CIN, ROC and Status",
+  "lead": "Use incorporation records to identify companies by CIN, incorporation year, class, status, registered office and Registrar of Companies. Treat LLPs as a separate entity class with LLPIN identifiers, and distinguish registry capital from annual turnover.",
+  "image": {
+    "src": "/images/keywords/city-skyline.jpg",
+    "alt": "Illustrative business district",
+    "width": 1600,
+    "height": 900
   },
-  landing: categoryLanding(
+  "sampleProfile": "mcaCompany",
+  "links": [
     {
-      slug: "mca-company-database-india",
-      name: "MCA Company Database",
-      title: "MCA Company Database India | CIN, ROC, Capital & Director Data",
-      metaDescription:
-        "MCA/ROC company database for India: CIN, company type, incorporation date, ROC, authorised and paid-up capital band, status and directors. Filter by state, ROC, age and capital. Sample rows on the page.",
-      eyebrow: "Companies Act Registry Data",
-      h1: "MCA Company Database: CIN, ROC, Capital & Directors",
-      lead:
-        "Companies Act registry data for private, public, one-person companies and LLPs. Filter by ROC, incorporation year, capital band and status, with director names and business contacts added.",
-      segmentSummary:
-        "The MCA registry tells you what kind of company you are dealing with: its legal form, its age, its capital and who runs it. Compliance-led sellers such as CA and CS firms, auditors, lenders and B2B fintechs filter on exactly these fields. This database turns the registry fields into a filterable, contactable list, so you can target, for example, five-year-old private limited companies in Maharashtra with more than ₹1 crore authorised capital.",
-      segmentCards: [
-        { icon: FileSearch, title: "Registry Fields", description: "CIN, company type, incorporation date, ROC, capital band and active status for every record." },
-        { icon: Users, title: "Directors Included", description: "Director names on each company, so you can address the person who signs the filings." },
-        { icon: Filter, title: "Compliance Filters", description: "Filter by ROC, incorporation year, capital band, company type and NIC industry code in the CIN." },
-      ],
-      segmentTabs: {
-        heading: "Filter by what the registry tells you",
-        tabs: [
-          { id: "age", label: "Company Age", summary: "Incorporation year shows the stage: first-year companies are setting up, 3-7-year-old companies are scaling, and older ones have established vendors.", examples: ["Under 1 year","1-3 years","3-7 years","7+ years"], bestFor: "Compliance firms (young), lenders (established), software (scaling)." },
-          { id: "capital", label: "Capital Band", summary: "Authorised and paid-up capital roughly indicate size and intent, so they work as a proxy when employee counts are missing.", examples: ["Up to ₹10 L","₹10 L-1 Cr","₹1-10 Cr","₹10 Cr+"], bestFor: "Credit products, audit firms, premium services." },
-          { id: "type", label: "Company Type & ROC", summary: "Legal form and registrar decide which compliance applies and which regional office handles the company's filings.", examples: ["Private Limited","Public Limited","OPC","LLP"], bestFor: "CS firms, legal services, regional compliance providers." },
-        ],
-      },
-      coverage: {
-        heading: "Coverage by company type",
-        label: "Company type",
-        rows: [
-          ["Private limited", "Most common incorporated form"],
-          ["Public limited (listed & unlisted)", "Larger, widely held companies"],
-          ["One-person companies (OPC)", "Single-member companies"],
-          ["LLPs", "Limited liability partnerships (LLPIN)"],
-          ["Section 8 companies", "Not-for-profit companies"],
-        ],
-      },
-      dataFields: [
-        "Company name",
-        "CIN / LLPIN",
-        "Company type and category",
-        "Date of incorporation",
-        "Registrar of Companies (ROC)",
-        "Authorised / paid-up capital band",
-        "Company status",
-        "Director names",
-        "Registered office address",
-        "Business phone and email, where available",
-      ],
-      sample: "mca",
-      useCases: [
-        { icon: Calculator, title: "CA & CS Compliance Services", description: "Offer ROC filings, audits and secretarial compliance to companies by age, type and ROC." },
-        { icon: Banknote, title: "Business Lending", description: "Shortlist established private limited companies by capital band and age for credit products." },
-        { icon: ClipboardCheck, title: "Vendor Due-Diligence", description: "Check a supplier's legal form, incorporation date and status before onboarding." },
-        { icon: Scale, title: "Legal & Trademark Services", description: "Reach directors of young companies with IP, contract and legal services." },
-      ],
-      faqs: [
-        { question: "What does the CIN tell me?", answer: "The 21-character CIN encodes whether the company is listed, its NIC industry code, the state, the year of incorporation, its ownership type (for example PTC or PLC) and its registration number. We let you filter on those parts." },
-        { question: "Are LLPs included?", answer: "Yes. LLPs are listed with their LLPIN and can be bought alongside or separately from companies." },
-        { question: "Can I filter by ROC or state?", answer: "Yes. Filter by Registrar of Companies, such as ROC-Mumbai, ROC-Delhi or ROC-Bangalore, or by registered-office state." },
-        { question: "Is this the same as the GST database?", answer: "No. MCA data covers Companies Act entities. GST data covers every GST-registered business, including proprietorships and partnerships. A business can appear in one, both or neither." },
-      ],
-      pricingNote: "Priced by record and fields. Director names and contact fields add to the base registry record.",
-      related: [
-        L("GST Database", "gst-database-india"),
-        L("Newly Registered Companies", "newly-registered-companies-india"),
-        L("Company Database", "company-database-india"),
-        L("Company MD, Chairman & Secretary Database", "company-md-chairman-secretary-database-india"),
-        L("Chartered Accountants Database", "chartered-accountants-database-india"),
-        L("Corporate Database", "corporate-database-india"),
-      ],
-      disclaimer: `Registry information is compiled from public MCA filings and enriched with business contacts. IndiaB2BData.com is not affiliated with the Ministry of Corporate Affairs.${dnd}`,
-      formTitle: "Get a Free MCA Data Sample",
-      bands: [
-        "Targeting companies of a certain age or capital band? Ask for a filtered MCA sample.",
-        "Need only LLPs, or only one ROC? We split by type and registrar.",
-        "Get registry data with director names and contacts.",
-      ],
-      footerTitle: "Filter Companies by Registry Data",
+      "text": "B2B database India",
+      "href": "/b2b-database-india"
     },
-    { subjects: "MCA-registered company", kind: "business", notIncluded: "Proprietorships and partnerships are not Companies Act entities, so they are not in it; see the GST database for those." }
-  ),
+    {
+      "text": "company database",
+      "href": "/company-database-india"
+    },
+    {
+      "text": "GST database",
+      "href": "/gst-database-india"
+    },
+    {
+      "text": "official company master-data catalogue",
+      "href": "https://data.gov.in/catalog/company-master-data"
+    },
+    {
+      "text": "MCA portal",
+      "href": "https://www.mca.gov.in/"
+    },
+    {
+      "text": "Data Sourcing & Compliance",
+      "href": "/data-sourcing-compliance"
+    },
+    {
+      "text": "dealers and distributors database",
+      "href": "/dealers-distributors-database-india"
+    },
+    {
+      "text": "importers and exporters database",
+      "href": "/importers-exporters-database-india"
+    },
+    {
+      "text": "Delhi business database",
+      "href": "/database/delhi"
+    },
+    {
+      "text": "Gujarat company database",
+      "href": "/database/gujarat"
+    },
+    {
+      "text": "Karnataka business database",
+      "href": "/database/karnataka"
+    },
+    {
+      "text": "Maharashtra business database",
+      "href": "/database/maharashtra"
+    },
+    {
+      "text": "UP company database",
+      "href": "/database/uttar-pradesh"
+    },
+    {
+      "text": "Tamil Nadu business database",
+      "href": "/database/tamil-nadu"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "table",
+      "heading": "How the 21-character CIN is organised",
+      "columns": [
+        "Position",
+        "Component",
+        "Interpretation"
+      ],
+      "rows": [
+        [
+          "1",
+          "Listing indicator",
+          "L for listed or U for unlisted"
+        ],
+        [
+          "2–6",
+          "Industry code",
+          "Five-digit industry classification embedded in the identifier"
+        ],
+        [
+          "7–8",
+          "State code",
+          "Two-letter registered-state code"
+        ],
+        [
+          "9–12",
+          "Incorporation year",
+          "Four-digit year"
+        ],
+        [
+          "13–15",
+          "Company-type code",
+          "For example PTC for a private company or PLC for a public company"
+        ],
+        [
+          "16–21",
+          "Registration sequence",
+          "Six-digit registration number"
+        ]
+      ],
+      "intro": "A CIN is an alphanumeric identifier. Its format helps interpret a company record but does not replace checking the current master data.",
+      "note": "Listing status in the CIN and current company status are different fields. LLPs use LLPIN rather than this company CIN structure."
+    },
+    {
+      "type": "table",
+      "heading": "Choose the company-status population",
+      "columns": [
+        "Recorded status",
+        "Research use",
+        "Handling rule"
+      ],
+      "rows": [
+        [
+          "Active",
+          "Current incorporated-company shortlist",
+          "Use the recorded status date; do not infer trading volume"
+        ],
+        [
+          "Struck off",
+          "Historical reconciliation or exclusions",
+          "Keep separate from active prospecting records"
+        ],
+        [
+          "Under liquidation",
+          "Specific legal-status or historical brief",
+          "Preserve the exact source label and date"
+        ],
+        [
+          "Dormant",
+          "A separately defined status selection",
+          "Do not merge with active prospecting records"
+        ],
+        [
+          "Unknown or not recently checked",
+          "Records needing review",
+          "Show missing verification instead of assuming active"
+        ]
+      ],
+      "intro": "Active and struck-off records should not be silently mixed in one sales file. State the statuses you want before requesting counts."
+    },
+    {
+      "type": "table",
+      "heading": "ROC-wise breakup to request",
+      "columns": [
+        "ROC selection",
+        "Useful territory context"
+      ],
+      "rows": [
+        [
+          "ROC Mumbai",
+          "Maharashtra registration jurisdiction, as recorded"
+        ],
+        [
+          "ROC Pune",
+          "Pune jurisdiction, as recorded"
+        ],
+        [
+          "ROC Delhi",
+          "Delhi jurisdiction, as recorded"
+        ],
+        [
+          "ROC Ahmedabad",
+          "Gujarat jurisdiction, as recorded"
+        ],
+        [
+          "ROC Bangalore",
+          "Karnataka jurisdiction, as recorded"
+        ],
+        [
+          "ROC Chennai / ROC Coimbatore",
+          "Separate Tamil Nadu jurisdictions"
+        ]
+      ],
+      "intro": "The authoritative field is the ROC value on the record. Use exact source labels and a snapshot date; do not derive the ROC solely from the city name.",
+      "note": "These are example selection groups, not published inventory totals. A verified ROC-by-status export is still required for numerical figures."
+    },
+    {
+      "type": "prose",
+      "heading": "Registered office, ROC and operating location answer different questions",
+      "paragraphs": [
+        "A registered office is the incorporation address. It does not necessarily identify the factory, sales office or headquarters where your service is delivered. A ROC-based legal-entity selection can therefore differ from a city-based operational shortlist.",
+        "If you need manufacturing sites or local distributors, use the wider B2B database India route and request operating-address fields. The company database supports account-level criteria across business forms, while the GST database describes tax registrations. Preserve the identifier when matching these sources rather than relying on similar names alone."
+      ]
+    },
+    {
+      "type": "table",
+      "heading": "MCA fields and common misinterpretations",
+      "columns": [
+        "Field",
+        "Meaning for your brief",
+        "Do not substitute"
+      ],
+      "rows": [
+        [
+          "CIN / LLPIN",
+          "Entity identifier for the appropriate legal form",
+          "A GSTIN or trade name"
+        ],
+        [
+          "Company class and category",
+          "Recorded incorporation classification",
+          "An assumed company-size tier"
+        ],
+        [
+          "Authorised / paid-up capital",
+          "Registry capital values where supplied",
+          "Annual revenue or turnover"
+        ],
+        [
+          "Registration date",
+          "Incorporation timing",
+          "Date a contact joined the business"
+        ],
+        [
+          "Company status / ROC",
+          "Jurisdiction and recorded status",
+          "Guaranteed operating or credit quality"
+        ]
+      ]
+    },
+    {
+      "type": "scenario",
+      "heading": "Example: active private companies incorporated in a period",
+      "label": "An incorporation-led brief",
+      "paragraphs": [
+        "An accounting provider may request private companies incorporated in a specified year range under selected ROCs, with active status at the date checked. The resulting count should use distinct CINs and state whether foreign companies or LLPs are outside scope.",
+        "If decision-maker email or phone is added, inspect those fields separately. Incorporation does not automatically supply a current director contact, an open procurement requirement or a turnover figure."
+      ]
+    },
+    {
+      "type": "sourcing",
+      "heading": "Record the master-data snapshot and enrichment separately",
+      "paragraphs": [
+        "The official company master-data catalogue describes fields such as CIN, status, class, capital and ROC. Ask which of these fields your selected export includes and when the source was observed.",
+        "A status can change after extraction. For important counterparties, consult the MCA portal and relevant filings. Request separate provenance for contacts, websites, turnover estimates or operating addresses added outside the master-data record."
+      ]
+    },
+    {
+      "type": "prose",
+      "heading": "A CIN example does not replace a current company-status check",
+      "paragraphs": [
+        "The masked pattern U | XXXXX | MH | 20XX | PTC | XXXXXX demonstrates the six CIN components: listing indicator, industry, registered-state code, incorporation year, company-type code and registration sequence. Its X characters are intentional; it is not the identifier of a company in the supplied inventory.",
+        "The listing indicator and the company-status field should be reviewed independently. An unlisted company can have a status requiring exclusion from a current prospecting brief. Preserve the exact source label, including active, struck off, dormant or under liquidation where recorded, instead of converting every non-empty company record to active.",
+        "For a year-based selection, agree whether you mean legal incorporation or an operating/founding date researched elsewhere. A group may have several incorporated entities with different dates. Keep the CIN with the entity that owns it when reconciling names, domains and addresses."
+      ]
+    },
+    {
+      "type": "prose",
+      "heading": "Define a recent-incorporation requirement without assuming a feed",
+      "paragraphs": [
+        "A buyer seeking newly incorporated companies should state the incorporation period, company classes, registration territories and acceptable statuses. Ask when the underlying records were extracted and whether the sample reflects that specific period. Do not interpret an editorial update on this page as proof that a monthly feed was delivered.",
+        "If director or professional-contact information is requested, confirm which company-role fields are present and how they were sourced. An incorporation record does not establish the person’s current work channel or authority for the proposal. Request the relevant role rather than unrelated personal attributes.",
+        "The six featured geographies are Delhi, Gujarat, Karnataka, Maharashtra, Uttar Pradesh and Tamil Nadu. For each, ask for the recorded ROC value and the same status/year filters before comparing coverage. A count grouped by registered state and a count grouped by ROC are different summaries; maintain their definitions in the export."
+      ]
+    },
+    {
+      "type": "sample",
+      "heading": "Review the MCA Company Data file structure",
+      "intro": "These fictional, masked rows show the MCA Company Data column format. They are not live business records or evidence of inventory size; request a matching sample to assess your chosen selection."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Is CIN a 21-digit number?",
+      "answer": "A company CIN has 21 alphanumeric characters, including letters and numbers. Its parts describe listing indicator, industry, state, incorporation year, company type and registration sequence."
+    },
+    {
+      "question": "Are LLPs identified by CIN?",
+      "answer": "LLPs use LLPIN identifiers rather than company CINs. Ask for a separate LLP selection and count so the export does not mix different identifier systems."
+    },
+    {
+      "question": "Can I request only active MCA companies?",
+      "answer": "Specify active status and the date it must have been checked. Review how recently changed or unverified statuses are handled before accepting the shortlist."
+    },
+    {
+      "question": "Can I see ROC-wise company totals?",
+      "answer": "Request a dated company count for each recorded ROC, split by the statuses and company classes you choose. No numerical ROC inventory is published here without that export."
+    },
+    {
+      "question": "Is paid-up capital the same as turnover?",
+      "answer": "Paid-up capital is a capital figure, whereas turnover describes revenue over a period. A turnover filter needs a separate source and reporting year."
+    }
+  ],
+  "related": [
+    {
+      "label": "B2B Database India",
+      "href": "/b2b-database-india"
+    },
+    {
+      "label": "Company Database",
+      "href": "/company-database-india"
+    },
+    {
+      "label": "GST Database",
+      "href": "/gst-database-india"
+    },
+    {
+      "label": "New Company Registrations",
+      "href": "/newly-registered-companies-india"
+    }
+  ],
+  "cta": {
+    "formTitle": "Request a MCA Company Data Sample",
+    "formSubtitle": "Describe the MCA Company Data selection, locations and fields you need.",
+    "buttonLabel": "Request Free Sample",
+    "whatsappMessage": "Hi, I need a MCA Company Data sample. My filters are:",
+    "footerTitle": "Plan Your MCA Company Data Selection",
+    "footerText": "Send your MCA Company Data criteria and quantity. Ask for a matching sample, dated coverage count, field availability and quote."
+  },
+  "disclaimer": "Independent incorporation-data service, not affiliated with MCA. Confirm current company status and filing details through official records when needed."
+} satisfies CustomPage;
+
+export default {
+  template: "custom",
+  updated: "2026-10-26",
+  keyword: {
+  "slug": "mca-company-database-india",
+  "keyword": "MCA Company Data",
+  "title": "MCA Company Database: CIN, ROC & Status",
+  "metaDescription": "Explore Indian company and LLP records by CIN or LLPIN, incorporation year, class, status and registered state. Review fields before ordering.",
+  "eyebrow": "MCA Company Data",
+  "h1": "MCA Company Database: Indian Companies by CIN, ROC and Status",
+  "answer": "Use incorporation records to identify companies by CIN, incorporation year, class, status, registered office and Registrar of Companies. Treat LLPs as a separate entity class with LLPIN identifiers, and distinguish registry capital from annual turnover.",
+  "intro": [
+    "Use incorporation records to identify companies by CIN, incorporation year, class, status, registered office and Registrar of Companies. Treat LLPs as a separate entity class with LLPIN identifiers, and distinguish registry capital from annual turnover."
+  ],
+  "highlights": [{ icon: Building2, title: "MCA Company Data Selection", description: "Explore MCA company data with CIN format, active and struck-off status, ROC-wise selection and capital fields. Request a dated company or LLP sample." }],
+  "useCases": [
+    "Example: active private companies incorporated in a period"
+  ],
+  "faqs": [
+  {
+    "question": "Is CIN a 21-digit number?",
+    "answer": "A company CIN has 21 alphanumeric characters, including letters and numbers. Its parts describe listing indicator, industry, state, incorporation year, company type and registration sequence."
+  },
+  {
+    "question": "Are LLPs identified by CIN?",
+    "answer": "LLPs use LLPIN identifiers rather than company CINs. Ask for a separate LLP selection and count so the export does not mix different identifier systems."
+  },
+  {
+    "question": "Can I request only active MCA companies?",
+    "answer": "Specify active status and the date it must have been checked. Review how recently changed or unverified statuses are handled before accepting the shortlist."
+  },
+  {
+    "question": "Can I see ROC-wise company totals?",
+    "answer": "Request a dated company count for each recorded ROC, split by the statuses and company classes you choose. No numerical ROC inventory is published here without that export."
+  },
+  {
+    "question": "Is paid-up capital the same as turnover?",
+    "answer": "Paid-up capital is a capital figure, whereas turnover describes revenue over a period. A turnover filter needs a separate source and reporting year."
+  }
+],
+  "related": [
+    "b2b-database-india",
+    "company-database-india",
+    "gst-database-india",
+    "newly-registered-companies-india"
+  ]
+},
+  custom,
 } satisfies CategoryContent;

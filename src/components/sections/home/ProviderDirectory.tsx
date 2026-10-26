@@ -6,7 +6,7 @@ import { siteConfig } from "@/config/site";
 export function ProviderDirectory() {
   const copy = HOME.directory;
   return (
-    <section className="bg-white py-16 md:py-24" aria-labelledby="provider-directory-heading">
+    <section id="offer" className="bg-white py-16 md:py-24" aria-labelledby="provider-directory-heading">
       <div className="mx-auto max-w-7xl px-5 md:px-8">
         <p className="text-sm font-semibold uppercase tracking-widest text-teal-dark">{copy.eyebrow}</p>
         <h2 id="provider-directory-heading" className="mt-3 font-display text-3xl font-extrabold text-navy md:text-4xl">{copy.heading}</h2>
@@ -27,8 +27,8 @@ export function ProviderDirectory() {
           <div className="grid gap-8 sm:grid-cols-2">
             {copy.groups.map((group) => <nav key={group.heading} aria-label={group.heading}>
               <h3 className="text-lg font-bold text-navy">{group.heading}</h3>
-              <ul className="mt-4 space-y-2">{group.links.map((link) => <li key={link.href}>
-                <Link href={link.href} prefetch={false} className="block rounded-lg border border-slate-200 px-4 py-3 text-sm font-semibold text-navy transition-colors hover:border-teal hover:text-teal-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal">{link.label}</Link>
+              <ul className="mt-4 grid gap-3">{group.links.map((link) => <li key={link.href}>
+                <Link href={link.href} prefetch={false} className="block rounded-xl border border-slate-200 bg-white px-5 py-4 text-sm font-semibold text-navy shadow-sm transition-colors hover:border-teal hover:text-teal-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal">{link.label}</Link>
               </li>)}</ul>
             </nav>)}
           </div>

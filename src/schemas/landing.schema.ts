@@ -55,7 +55,8 @@ export const landingPageSchema = z.object({
   coverageTable: z.object({
     heading: text,
     segmentLabel: text,
-    rows: z.array(z.object({ segment: text, detail: text, records: figure, fillRate: figure })).min(1),
+    showFigures: z.boolean().optional(),
+    rows: z.array(z.object({ segment: text, href: href.optional(), detail: text, records: figure, fillRate: figure })).min(1),
   }),
   dataFields: z.array(text).min(1),
   sample: z.object({ profile: text, csvSlug: text, city: text.optional(), state: text.optional() }),
@@ -71,6 +72,7 @@ export const landingPageSchema = z.object({
     .object({
       heading: text,
       intro: text.optional(),
+      links: z.array(z.object({ text, href })).optional(),
       sections: z.array(z.object({ heading: text, paragraphs: z.array(text).optional(), bullets: z.array(text).optional() })).min(1),
     })
     .optional(),

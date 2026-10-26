@@ -12,16 +12,19 @@ export type StateInput = {
   segmentSummary: string;
   segmentCards: [IconCard, IconCard, IconCard];
   /** Top cities / clusters with their dominant industries. */
-  cities: { city: string; detail: string }[];
+  cities: { city: string; detail: string; href?: string }[];
   useCases: IconCard[];
   faqs: Faq[];
   related: LinkItem[];
   cityPages?: LinkItem[];
+  cityPagesHeading?: string;
   bands: [string, string, string];
   h1?: string;
   coverageHeading?: string;
   coverageLabel?: string;
   guide?: LandingPage["guide"];
+  authoredFaqsOnly?: boolean;
+  showCoverageFigures?: boolean;
 };
 
 const STATE_FIELDS = [
@@ -37,7 +40,7 @@ const STATE_FIELDS = [
 
 /** Builds the full landing page for a state from its inputs plus the shared state-page copy. */
 export function stateLanding(s: StateInput): LandingPage {
-  const rows: CoverageRow[] = s.cities.map((c) => ({ segment: c.city, detail: c.detail, records: "{{COUNT}}", fillRate: "{{FILL}}" }));
+  const rows: CoverageRow[] = s.cities.map((c) => ({ segment: c.city, href: c.href, detail: c.detail, records: "{{COUNT}}", fillRate: "{{FILL}}" }));
   return {
     path: `/database/${s.slug}`,
     name: `${s.name} Business Database`,
@@ -52,12 +55,12 @@ export function stateLanding(s: StateInput): LandingPage {
     ],
     segmentSummary: s.segmentSummary,
     segmentCards: s.segmentCards,
-    coverageTable: { heading: s.coverageHeading ?? `${s.name} coverage by city`, segmentLabel: s.coverageLabel ?? "City", rows },
+    coverageTable: { heading: s.coverageHeading ?? `${s.name} coverage by city`, segmentLabel: s.coverageLabel ?? "City", rows, showFigures: s.showCoverageFigures },
     guide: s.guide,
     dataFields: STATE_FIELDS,
     sample: { profile: "business", csvSlug: `${s.slug}-business-database`, state: s.name },
     useCases: s.useCases,
-    buyerFaqs: [
+    buyerFaqs: s.authoredFaqsOnly ? s.faqs : [
       ...s.faqs,
       ...trustFaqs({
         name: `${s.name} Business Database`,
@@ -76,7 +79,7 @@ export function stateLanding(s: StateInput): LandingPage {
       note: `Priced by city, industry and fields. A single-city ${s.name} list costs less per record than a mixed state-wide pull.`,
     },
     relatedLinks: s.related,
-    locationLinks: s.cityPages?.length ? { heading: `City Databases in ${s.name}`, links: s.cityPages } : undefined,
+    locationLinks: s.cityPages?.length ? { heading: s.cityPagesHeading ?? `City Databases in ${s.name}`, links: s.cityPages } : undefined,
     lastUpdated: "2026-10",
     totalRecords: "{{COUNT}}",
     disclaimer: `Business contact data for lawful B2B outreach in ${s.name}. ${CLAIMS.dndScrubbing ? "Records are DND-checked before delivery, and any" : "Any"} business can request removal at any time.`,

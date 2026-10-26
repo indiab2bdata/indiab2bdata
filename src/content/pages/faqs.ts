@@ -4,6 +4,33 @@ import type { Faq } from "@/types/landing";
 export const FAQ_DEFAULTS = { eyebrow: "FAQs", heading: "Common Questions" };
 
 /** Homepage FAQs (also shown on /contact). */
+export const HOME_FAQS: Faq[] = [
+  {
+    "question": "Does this page cover business or consumer lists?",
+    "answer": "These database guides focus on business records and professional work-contact requirements. Explore the company, registry, manufacturing, channel and trade pages to define a business audience."
+  },
+  {
+    "question": "Which states have dedicated business database guides?",
+    "answer": "The six guides cover Delhi, Gujarat, Karnataka, Maharashtra, Uttar Pradesh and Tamil Nadu. Each explains its own cities, industries and business clusters rather than repeating a national selection."
+  },
+  {
+    "question": "How does a prepared business file differ from browsing a free directory?",
+    "answer": "The published preparation process includes organising records, deduplicating them and removing invalid numbers before delivery. Ask for the supported activity, city and role filters and review their completeness in a matching sample."
+  },
+  {
+    "question": "How do I request a masked business-data sample?",
+    "answer": "Use the sample form or WhatsApp to describe your business activity, locations and required fields, and ask for a small masked selection for review. Public CSV previews contain fictional examples and demonstrate the file format only."
+  },
+  {
+    "question": "Where do I raise a business-record correction or removal request?",
+    "answer": "Use the general email or phone published in our business contact details and follow the Data Sourcing & Compliance process. A named grievance-officer appointment should be confirmed separately rather than inferred from a general sales contact.",
+    "link": {
+      "text": "Data Sourcing & Compliance",
+      "href": "/data-sourcing-compliance"
+    }
+  }
+];
+
 export const DEFAULT_FAQS: Faq[] = [
   {
     question: "Is the data legally compliant to use?",
@@ -29,30 +56,25 @@ export const DEFAULT_FAQS: Faq[] = [
 
 export const ABOUT_FAQS: Faq[] = [
   {
-    question: "What is IndiaB2BData.com?",
-    answer:
-      "IndiaB2BData.com is an Indian B2B data provider that supplies business mobile numbers, email IDs and company records across 700+ cities and 500+ industry categories, for sales, telecalling and marketing teams.",
+    "question": "How can I contact IndiaB2BData.com?",
+    "answer": "Use the Mumbai business address, phone and general email published on this page and in the website footer. The contact form is also available for a sample requirement, quotation question or data concern."
   },
   {
-    question: "Where does IndiaB2BData.com get its data?",
-    answer:
-      "Records are compiled from publicly available and permission-based sources such as business registries (GST, MCA/ROC), trade directories and business websites, then checked and deduplicated before delivery.",
+    "question": "What should I send with a sample enquiry?",
+    "answer": "Describe your target industries, locations, business activities and contact roles. Add the fields you need and ask for a sample that matches those filters rather than a generic file."
   },
   {
-    question: "Which cities and states in India do you cover?",
-    answer:
-      "We cover all Indian states, with dedicated databases for Maharashtra, Gujarat, Tamil Nadu, Delhi, Uttar Pradesh, Karnataka, Haryana and Telangana, and city-level data for hubs like Mumbai, Pune, Noida, Greater Noida and Gurgaon.",
+    "question": "What business details should I confirm before an order?",
+    "answer": "Request the legal seller and applicable invoice details together with the final quotation. The written selection should also specify filters, counting unit, contact fields, price, format and delivery timing."
   },
   {
-    question: "Who uses IndiaB2BData.com databases?",
-    answer:
-      "Real estate firms, EdTech companies, finance and insurance agencies, manufacturers, SaaS companies, healthcare providers and e-commerce brands use our data for cold calling, email campaigns, WhatsApp outreach and market research.",
+    "question": "How can I raise a concern about a business record?",
+    "answer": "Send the relevant business record and the field or issue through the published general contact channel. Consult the Data Sourcing & Compliance page and ask for the applicable correction or removal process."
   },
   {
-    question: "Is buying business data legal in India?",
-    answer:
-      "Using business contact data for legitimate B2B marketing is permitted when sourced lawfully and used responsibly. We expect buyers to check numbers against the DND registry and follow TRAI telemarketing rules and the Digital Personal Data Protection Act, 2023.",
-  },
+    "question": "How do I choose the right IndiaB2BData product?",
+    "answer": "Start with the B2B pillar guide, then choose registry, company, manufacturing, channel or trade data according to the question you need to answer. Describe your target business, location and role so the sample can match that selection."
+  }
 ];
 
 export const GUIDES_FAQS: Faq[] = [

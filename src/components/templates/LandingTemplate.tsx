@@ -1,3 +1,4 @@
+import { PriorityEvidence } from "@/components/sections/PriorityEvidence";
 import { JsonLd } from "@/components/layout/JsonLd";
 import { ComplianceBlock } from "@/components/sections/ComplianceBlock";
 import { ContactSplit } from "@/components/sections/ContactSplit";
@@ -37,6 +38,7 @@ export function LandingTemplate({ page }: { page: LandingPage }) {
       <Hero page={page} source={source} />
       <StatsBar page={page} />
       <SegmentCards page={page} />
+      <PriorityEvidence path={page.path} />
       <SampleTable page={page} headers={preview.headers} rows={preview.rows} csv={csv} />
       {band(0)}
       <CoverageTable page={page} />
@@ -48,7 +50,7 @@ export function LandingTemplate({ page }: { page: LandingPage }) {
       {band(2)}
       <Testimonials items={page.testimonials} />
       <Faq items={page.buyerFaqs} id={`${source}-faq`} eyebrow={LANDING_COPY.faq.eyebrow} heading={LANDING_COPY.faq.heading(page.name)} background="white" />
-      <Explore related={page.relatedLinks} locations={page.locationLinks} />
+      <Explore related={page.relatedLinks} locations={page.locationLinks} showBrowse={!page.path.startsWith("/database/") || !["delhi", "gujarat", "karnataka", "maharashtra", "uttar-pradesh", "tamil-nadu"].includes(page.path.split("/").pop()!)} />
       <ContactSplit
         title={page.cta.footerTitle}
         text={page.cta.footerText}

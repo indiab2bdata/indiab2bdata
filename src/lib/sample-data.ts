@@ -6,6 +6,12 @@
 
 export type SampleProfile =
   | "business"
+  | "channelPartner"
+  | "factoryUnit"
+  | "companyAccount"
+  | "gstRegistration"
+  | "mcaCompany"
+  | "tradeEntity"
   | "chiefManager"
   | "gst"
   | "mca"
@@ -359,6 +365,62 @@ const PROFILES: Record<SampleProfile, Column[]> = {
     ["Experience (Yrs)", (c) => String(2 + (c.i % 15))],
     phone, mail, ...loc,
   ],
+
+  channelPartner: [
+    ["Partner Business", (c) => "Fictional Channel Firm " + (c.i + 1)],
+    ["Sector", (c) => pick(["FMCG", "Pharma", "Electrical"], c.i)],
+    ["Channel Role", (c) => pick(["Distributor", "Stockist", "Industrial Dealer"], c.i)],
+    ["Product Line", (c) => pick(["Packaged Foods", "Healthcare Distribution", "Switchgear"], c.i)],
+    ["Contact Function", (c) => pick(["Owner", "Partner", "Business Manager"], c.i)],
+    phone, mail, ...loc,
+    ["Territory Evidence", () => "Demonstration only; confirm real coverage"],
+  ],
+  factoryUnit: [
+    ["Manufacturing Business", (c) => "Fictional Production Firm " + (c.i + 1)],
+    ["Production Activity", (c) => pick(["Component Machining", "Garment Making", "Pump Assembly"], c.i)],
+    ["Address Type", () => "Operating Unit (demo)"],
+    ["Unit Address", (c) => "Plot XX, Demonstration Industrial Area, " + c.city],
+    ["Contact Function", (c) => pick(["Purchase", "Production", "Maintenance"], c.i)],
+    phone, mail, ...loc,
+  ],
+  companyAccount: [
+    ["Business Account", (c) => "Fictional Account " + (c.i + 1)],
+    ["Legal Form", (c) => pick(["Private Limited", "LLP", "Proprietorship"], c.i)],
+    ["Identifier Type", (c) => pick(["CIN (masked)", "LLPIN (masked)", "Business registration (masked)"], c.i)],
+    ["Turnover Band", () => "Not supplied in format preview"],
+    ["Turnover Period / Source", () => "Confirm for selected real accounts"],
+    ["Address Type", () => "Business address (demo)"],
+    phone, mail, ...loc,
+  ],
+  gstRegistration: [
+    ["Legal Business Name", (c) => "Fictional Registered Business " + (c.i + 1)],
+    ["GSTIN (masked)", () => "27XXXXX0000X1ZX"],
+    ["GST Registered State", () => "Maharashtra (demo)"],
+    ["Taxpayer Type", (c) => pick(["Regular", "Composition"], c.i)],
+    ["Constitution", (c) => pick(["Private Limited", "Proprietorship"], c.i)],
+    ["Registration Status", (c) => pick(["Active", "Cancelled"], c.i)],
+    ["Observation Date", () => "Demonstration only"],
+    ["Contact Enrichment", () => "Separately sourced when supplied"],
+  ],
+  mcaCompany: [
+    ["Company Name", (c) => "Fictional Incorporated Company " + (c.i + 1)],
+    ["CIN (masked)", () => "UXXXXXMH20XXPTCXXXXXX"],
+    ["Company Class", () => "Private Company (demo)"],
+    ["ROC", () => "ROC Mumbai (demo)"],
+    ["Company Status", (c) => pick(["Active", "Struck off"], c.i)],
+    ["Capital", () => "Not supplied in preview"],
+    ["Snapshot Date", () => "Demonstration only"],
+  ],
+  tradeEntity: [
+    ["Trade Business", (c) => "Fictional Trade Entity " + (c.i + 1)],
+    ["IEC (masked)", () => "XXXXX0000X"],
+    ["Trade Direction", (c) => pick(["Exporter", "Importer", "Both"], c.i)],
+    ["Product Group", (c) => pick(["Engineering", "Electronics", "Textiles"], c.i)],
+    ["Observed Port / Period", () => "Not established by this preview"],
+    ["Business Role", (c) => pick(["Manufacturer Exporter", "Trading Business", "Merchant Exporter"], c.i)],
+    phone, mail, ...loc,
+  ],
+
   gst: [
     ["Legal Name", (c) => c.company],
     ["Trade Name", (c) => c.company.split(" ")[0] + " " + pick(["Traders", "Enterprises", "Industries", "Solutions"], c.i)],
@@ -441,6 +503,12 @@ const PROFILES: Record<SampleProfile, Column[]> = {
 /** Map a page slug to the column format that product actually ships with. */
 export function sampleProfileFor(slug: string): SampleProfile {
   const rules: [RegExp, SampleProfile][] = [
+    [/^dealers-distributors-database-india$/, "channelPartner"],
+    [/^manufacturer-database-india$/, "factoryUnit"],
+    [/^company-database-india$/, "companyAccount"],
+    [/^gst-database-india$/, "gstRegistration"],
+    [/^mca-company-database-india$/, "mcaCompany"],
+    [/^importers-exporters-database-india$/, "tradeEntity"],
     [/^metals-minerals-industries-database-india$/, "metalsMineralsBusiness"],
     [/^mlm-leaders-email-database-india$/, "mlmLeader"],
     [/^mutual-fund-investors-database-india$/, "mfInvestor"],

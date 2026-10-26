@@ -17,6 +17,8 @@ export type LinkItem = { label: string; href: string };
 export type CoverageRow = {
   /** Sub-segment, department, role group, city or industry. */
   segment: string;
+  /** Optional existing city guide for this coverage row. */
+  href?: string;
   /** What this row contains, in a few words. */
   detail: string;
   /** Approximate record count - "{{COUNT}}" until a real figure is supplied. */
@@ -43,6 +45,7 @@ export type LandingTestimonial = { quote: string; name: string; role: string };
 /** Long-form, page-specific buying guide (rendered as H2 + H3 sections). Real substance only - no filler. */
 export type LandingGuide = {
   heading: string;
+  links?: InlineLink[];
   intro?: string;
   sections: { heading: string; paragraphs?: string[]; bullets?: string[] }[];
 };
@@ -66,7 +69,7 @@ export type LandingPage = {
   segmentCards: [IconCard, IconCard, IconCard];
   /** Optional tabbed breakdown (e.g. Central / State / PSU / Local bodies). */
   segmentTabs?: { heading: string; tabs: SegmentTab[] };
-  coverageTable: { heading: string; segmentLabel: string; rows: CoverageRow[] };
+  coverageTable: { heading: string; segmentLabel: string; rows: CoverageRow[]; showFigures?: boolean };
   /** Fields delivered in each record. */
   dataFields: string[];
   /** Which fictional sample generator builds the preview table and CSV. */

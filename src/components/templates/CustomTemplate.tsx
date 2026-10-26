@@ -1,3 +1,4 @@
+import { PriorityEvidence } from "@/components/sections/PriorityEvidence";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { JsonLd } from "@/components/layout/JsonLd";
@@ -42,6 +43,7 @@ export function CustomTemplate({ page, updated }: { page: CustomPage; updated: s
         </div>
       </section>
 
+      <PriorityEvidence path={page.path} />
       <Blocks page={page} />
 
       <Faq items={page.faqs} id={`${source}-faq`} eyebrow={CUSTOM_COPY.faqEyebrow} heading={CUSTOM_COPY.faqHeading(page.name)} background="white" />

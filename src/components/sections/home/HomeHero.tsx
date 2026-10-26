@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
-import { CountUp } from "@/components/ui/CountUp";
 import { Reveal } from "@/components/ui/Reveal";
 import { useModal } from "@/components/layout/ModalContext";
 import { WhatsAppIcon } from "@/components/ui/icons/WhatsAppIcon";
@@ -137,32 +136,6 @@ export function Hero() {
         </div>
 
         {/* Trust divider */}
-        <div className="mt-12 flex items-center gap-3 w-full max-w-md">
-          <span className="h-px flex-1 bg-gradient-to-r from-transparent to-white/15" />
-          <span className="text-[10px] uppercase tracking-[0.28em] text-slate-400/70 font-medium">
-            {COPY.trustDivider}
-          </span>
-          <span className="h-px flex-1 bg-gradient-to-l from-transparent to-white/15" />
-        </div>
-
-        {/* Stats grid - refined glass cards */}
-        <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-2xl w-full">
-          {COPY.stats.map((stat) => (
-            <div
-              key={stat.label}
-              className="group relative rounded-2xl bg-white/[0.04] hover:bg-white/[0.07] border border-white/[0.08] hover:border-teal-light/30 px-4 py-4 backdrop-blur-md transition-all duration-300 hover:-translate-y-0.5"
-            >
-              {/* top accent line */}
-              <span className="absolute top-0 left-1/2 -translate-x-1/2 h-px w-8 bg-gradient-to-r from-transparent via-teal-light/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              <p className="font-display text-2xl md:text-[1.65rem] font-extrabold text-white tracking-tight leading-none">
-                <CountUp value={stat.value} suffix={stat.suffix} />
-              </p>
-              <p className="text-slate-300/75 text-[11px] mt-2 tracking-wide font-medium">
-                {stat.label}
-              </p>
-            </div>
-          ))}
-        </div>
       </Reveal>
     </section>
   );

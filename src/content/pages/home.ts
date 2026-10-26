@@ -2,14 +2,14 @@ import { Building2, Globe2, IndianRupee, Layers, Mail, MapPinned, MessageSquareT
 
 /**
  * Homepage copy. Rich headings are split into the pieces the markup puts around them, so output is unchanged.
- * Homepage FAQs live in content/pages/faqs.ts (DEFAULT_FAQS); the product directory comes from the content registry.
+ * Homepage FAQs live in content/pages/faqs.ts (HOME_FAQS); the business directory is authored below.
  */
 export const HOME = {
   meta: {
     /** The home route uses this complete title as an absolute metadata title. */
-    title: "B2B Data Provider India | IndiaB2BData.com",
+    title: "B2B Business Data Provider in India | IndiaB2BData",
     titleTag: null,
-    description: "B2B data provider India for company, GST, MCA and industry databases. Browse state coverage, review samples and request a quote for your target market.",
+    description: "Company, GST, MCA, manufacturer and dealer data across Indian states. Review business-record samples before you buy.",
     path: "/",
     /** Sitemap <lastmod>: bump when this page's main copy changes (not for header/footer/styling changes). */
     updated: "2026-10-26",
@@ -18,25 +18,20 @@ export const HOME = {
   },
   hero: {
     imageAlt: "Sales team working with B2B business data",
-    badge: "India's Trusted B2B Data Partner",
+    badge: "Business Data for Indian Sales Teams",
     /** "{lead} {accent} {and}{accent2}" */
-    h1: { lead: "B2B Data Provider India:", accent: "Company Data", and: "& ", accent2: "Business Contacts" },
+    h1: { lead: "B2B Business Data", accent: "for Sales Teams", and: "Across ", accent2: "India" },
     subhead:
       "IndiaB2BData.com helps sales teams select company records and business contacts by industry, state, city and role. Start with a sample, confirm the available fields and record count, then request a quote for your market.",
     sampleCta: "Request Free Sample Data",
     whatsappCta: "Chat on WhatsApp",
     trustDivider: "Trusted by sales teams",
-    stats: [
-      { value: 50, suffix: "L+", label: "Business Records" },
-      { value: 700, suffix: "+", label: "Cities Covered" },
-      { value: 500, suffix: "+", label: "Industry Categories" },
-      { value: 10, suffix: "K+", label: "Businesses Served" },
-    ],
+    stats: [],
   },
   directory: {
     "eyebrow": "Your B2B Data Partner",
     "heading": "Choose a database for your market",
-    "intro": "Start with the type of company information you need, then narrow your geography. These 15 pages explain our main database options and state-specific business segments.",
+    "intro": "Start with the type of company information you need, then narrow your geography. Explore specialist business databases, local market guides and our published business details.",
     "providerHeading": "About IndiaB2BData.com",
     "providerText": "IndiaB2BData.com is the business data brand behind this website. Discuss your target industries, locations and contact roles with our team, and review a matching sample and written quote before ordering.",
     "addressLabel": "Business contact address",
@@ -44,77 +39,100 @@ export const HOME = {
     "aboutLabel": "Read about our business",
     "contactLabel": "Contact and enquiries",
     "groups": [
-        {
-            "heading": "Company and industry databases",
-            "links": [
-                {
-                    "label": "B2B Business Database",
-                    "href": "/b2b-database-india"
-                },
-                {
-                    "label": "Company Database India",
-                    "href": "/company-database-india"
-                },
-                {
-                    "label": "GST Database India",
-                    "href": "/gst-database-india"
-                },
-                {
-                    "label": "MCA Company Database",
-                    "href": "/mca-company-database-india"
-                },
-                {
-                    "label": "Industry-wise Company Database",
-                    "href": "/industry-wise-company-database-india"
-                },
-                {
-                    "label": "B2B Leads Database",
-                    "href": "/b2b-leads-database-india"
-                },
-                {
-                    "label": "Manufacturer Database",
-                    "href": "/manufacturer-database-india"
-                }
-            ]
-        },
-        {
-            "heading": "Business databases by state",
-            "links": [
-                {
-                    "label": "Delhi Business Database",
-                    "href": "/database/delhi"
-                },
-                {
-                    "label": "Gujarat Company Database",
-                    "href": "/database/gujarat"
-                },
-                {
-                    "label": "Karnataka Business Database",
-                    "href": "/database/karnataka"
-                },
-                {
-                    "label": "Maharashtra Business Database",
-                    "href": "/database/maharashtra"
-                },
-                {
-                    "label": "Uttar Pradesh Business Database",
-                    "href": "/database/uttar-pradesh"
-                },
-                {
-                    "label": "Haryana Business Database",
-                    "href": "/database/haryana"
-                },
-                {
-                    "label": "Tamil Nadu Business Database",
-                    "href": "/database/tamil-nadu"
-                },
-                {
-                    "label": "Telangana Business Database",
-                    "href": "/database/telangana"
-                }
-            ]
-        }
+  {
+    "heading": "Company and industry databases",
+    "links": [
+      {
+        "label": "B2B Database India",
+        "href": "/b2b-database-india"
+      },
+      {
+        "label": "GST Database India",
+        "href": "/gst-database-india"
+      },
+      {
+        "label": "MCA Company Data",
+        "href": "/mca-company-database-india"
+      },
+      {
+        "label": "Company Database India",
+        "href": "/company-database-india"
+      },
+      {
+        "label": "Manufacturers Database",
+        "href": "/manufacturer-database-india"
+      },
+      {
+        "label": "Dealers & Distributors",
+        "href": "/dealers-distributors-database-india"
+      },
+      {
+        "label": "Importers & Exporters",
+        "href": "/importers-exporters-database-india"
+      }
     ]
+  },
+  {
+    "heading": "Business databases by state",
+    "links": [
+      {
+        "label": "Delhi Business Database",
+        "href": "/database/delhi"
+      },
+      {
+        "label": "Gujarat Company Database",
+        "href": "/database/gujarat"
+      },
+      {
+        "label": "Karnataka Business Database",
+        "href": "/database/karnataka"
+      },
+      {
+        "label": "Maharashtra Business Database",
+        "href": "/database/maharashtra"
+      },
+      {
+        "label": "UP Company Database",
+        "href": "/database/uttar-pradesh"
+      },
+      {
+        "label": "Tamil Nadu Business Database",
+        "href": "/database/tamil-nadu"
+      }
+    ]
+  },
+  {
+    "heading": "Business and coverage",
+    "links": [
+      {
+        "label": "About IndiaB2BData",
+        "href": "/about"
+      },
+      {
+        "label": "All database coverage",
+        "href": "/database"
+      }
+    ]
+  }
+]
+},
+  selection: {
+  "heading": "Build a list around the sale you want to make",
+  "intro": "The starting point is the commercial conversation. A software subscription, a machine installation and a distribution appointment need different businesses and different people. Use these three questions to choose a useful starting selection before sending a detailed enquiry.",
+  "items": [
+    {
+      "heading": "Who buys the product?",
+      "text": "Write down the organisation that would sign the order and the function that would evaluate it. For a business software offer, that may be a finance or operations team within a particular kind of company. For a machine, the relevant conversation may start at the unit using the process. A general business name and a phone field will not resolve that distinction. Include the product, typical customer activity and intended professional role in your enquiry so the sample can be assessed against a practical buying situation."
+    },
+    {
+      "heading": "Where can your team deliver?",
+      "text": "Turn your service boundary into a geographic brief. An installer with a local field team may need establishments within specified industrial areas, while a remote service provider may select businesses across several states. Explain any travel, delivery or support constraints that affect account eligibility. If a company has offices in several places, identify the location that matters to the offer. This makes the city field useful for assigning sales responsibility and avoids treating the registered address as the destination for every type of sale."
+    },
+    {
+      "heading": "What will make a row useful?",
+      "text": "Choose the fields that let a salesperson decide the next step: business activity, relevant location, role and a supported work channel. Test the sample by asking whether the team can understand why each organisation belongs in the selection. Mark any unclear classifications or missing details and resolve them before approving the file specification. Keep the agreed exclusions as well as the inclusions; removing an irrelevant company type can matter more than adding extra rows. Review the written selection alongside the sample when deciding whether the proposed delivery fits your campaign."
+    }
+  ]
 },
   trustStrip: {
     lead: "Trusted by teams across:",
@@ -246,7 +264,7 @@ export const HOME = {
         art: "brand",
         seed: 3,
         files: [
-          { name: "B2B Database", meta: "50L+ records", href: "/b2b-database-india", art: "glacier" },
+          { name: "B2B Database", meta: "Business records", href: "/b2b-database-india", art: "glacier" },
           { name: "GST Data", meta: "GSTIN", href: "/gst-database-india" },
           { name: "MCA / ROC Records", meta: "CIN", href: "/mca-company-database-india" },
           { name: "New Registrations", meta: "Monthly", href: "/newly-registered-companies-india", art: "brand" },
@@ -275,7 +293,7 @@ export const HOME = {
           { name: "Mobile Numbers", meta: "By city & role", href: "/mobile-number-database-india", art: "brand" },
           { name: "Email Lists", meta: "Business", href: "/email-database-india" },
           { name: "WhatsApp Numbers", meta: "Active", href: "/whatsapp-number-database-india" },
-          { name: "Bulk SMS Data", meta: "DLT-ready", href: "/bulk-sms-database-india", art: "glacier" },
+          { name: "Bulk SMS Data", meta: "Business format", href: "/bulk-sms-database-india", art: "glacier" },
         ],
       },
     ] as {
@@ -290,14 +308,14 @@ export const HOME = {
   why: {
     imageAlt: "Data analytics dashboard on laptop",
     eyebrow: "Why Choose Us",
-    title: "Built on Accuracy, Not Guesswork",
-    text: "Every list is checked, deduplicated and formatted before it reaches you - so your team spends time selling, not cleaning spreadsheets.",
+    title: "Review the Selection Before Ordering",
+    text: "Our published methodology describes deduplication and invalid-number removal before delivery. Review the available fields, source context and date for your selected segment.",
     cta: "Talk to Our Team",
     points: [
       { icon: Sparkles, title: "Checked Before Delivery", description: "De-duplicated and checked for invalid numbers before delivery." },
       { icon: IndianRupee, title: "Affordable Pricing", description: "Pay only for the records and filters you actually need." },
-      { icon: Zap, title: "Fast Delivery", description: "Free sample first, then delivery on an agreed timeline." },
-      { icon: MapPinned, title: "Pan-India Coverage", description: "Data across every state, city and pincode cluster." },
+      { icon: Zap, title: "Fast Delivery", description: "Review a sample and agree the delivery timeline." },
+      { icon: MapPinned, title: "Plan Your Territory", description: "Define the states, cities and industrial areas your sales team serves." },
     ],
   },
   process: {
@@ -313,35 +331,12 @@ export const HOME = {
   testimonials: {
     eyebrow: "Client Feedback",
     title: "What Our Clients Say",
-    items: [
-      {
-        quote: "Connect rate on our tele-calling improved a lot after we switched - numbers were genuinely active.",
-        initials: "RS",
-        name: "Rohit Sharma",
-        role: "Sales Head, Real Estate",
-        color: "bg-navy",
-      },
-      {
-        quote: "Delivery was quick and the sample matched exactly what we ordered. Great support on WhatsApp too.",
-        initials: "PK",
-        name: "Priya Kulkarni",
-        role: "Marketing Manager, EdTech",
-        color: "bg-teal",
-      },
-      {
-        quote: "We use their GST database every quarter for lead generation - consistent quality every single time.",
-        initials: "AV",
-        name: "Amit Verma",
-        role: "Founder, Finance Agency",
-        color: "bg-amber",
-      },
-      /** Real clients only. Add `company: "..."` to each item once you have permission to name it. */
-    ] as { quote: string; initials: string; name: string; role: string; color: string; company?: string }[],
+    items: [] as { quote: string; initials: string; name: string; role: string; color: string; company?: string }[],
   },
   /** Inline CTA bands between homepage sections, in page order. */
   ctas: {
     products: { id: "home-products-cta", text: "Not sure which data product fits? Tell us what you need.", buttonLabel: "Talk to Our Team" },
-    process: { id: "home-process-cta", text: "Ready to start? Get your free sample within a few hours." },
+    process: { id: "home-process-cta", text: "Ready to start? Describe your business audience and request a sample." },
     testimonials: { id: "home-testimonials-cta", text: "Join hundreds of teams already reaching real decision-makers." },
     faq: { id: "home-faq-cta", text: "Still have questions? Get a free sample and see the data for yourself." },
   },

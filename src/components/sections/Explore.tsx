@@ -7,7 +7,7 @@ import { LANDING_COPY } from "@/content/shared/landing-copy";
 import type { LinkItem } from "@/types/landing";
 
 /** Related pages + (optional) location links + compact category browser, closing every landing page. */
-export function Explore({ related, locations }: { related: LinkItem[]; locations?: { heading: string; links: LinkItem[] } }) {
+export function Explore({ related, locations, showBrowse = true }: { related: LinkItem[]; locations?: { heading: string; links: LinkItem[] }; showBrowse?: boolean }) {
   const topGroups = LANDING_COPY.browse.groups
     .map((id) => PRODUCT_GROUPS.find((g) => g.id === id))
     .filter((g): g is (typeof PRODUCT_GROUPS)[number] => Boolean(g));
@@ -17,7 +17,7 @@ export function Explore({ related, locations }: { related: LinkItem[]; locations
       <div className={`space-y-14 ${shell}`}>
         <RelatedLinks links={related} />
         {locations && locations.links.length > 0 && <LocationLinks heading={locations.heading} links={locations.links} />}
-        <BrowseByCategory groups={topGroups} />
+        {showBrowse && <BrowseByCategory groups={topGroups} />}
       </div>
     </section>
   );

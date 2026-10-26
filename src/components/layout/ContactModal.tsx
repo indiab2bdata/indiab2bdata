@@ -87,6 +87,8 @@ export function ContactModal({ cityPages }: { cityPages: CityEnquiryPage[] }) {
   const product = ctx.requirement === GENERAL ? "B2B Data" : ctx.requirement;
   const whatsappText = `Hi, I'd like a free sample of ${ctx.requirement === GENERAL ? "your B2B data" : `the ${formatDataProduct(ctx.requirement)}`}.`;
 
+  if (!isOpen) return null;
+
   return (
     <div
       className={`fixed inset-0 z-50 flex items-end justify-center sm:items-center sm:p-5 transition-opacity duration-200 ${
