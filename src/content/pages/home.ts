@@ -1,5 +1,4 @@
 import { Building2, Globe2, IndianRupee, Layers, Mail, MapPinned, MessageSquareText, Smartphone, Sparkles, Zap } from "lucide-react";
-import { siteConfig } from "@/config/site";
 
 /**
  * Homepage copy. Rich headings are split into the pieces the markup puts around them, so output is unchanged.
@@ -7,23 +6,23 @@ import { siteConfig } from "@/config/site";
  */
 export const HOME = {
   meta: {
-    /** The homepage uses the site's default title as-is (titleTag: null skips the "%s | IndiaB2BData.com" template). */
-    title: siteConfig.defaultTitle,
+    /** The home route uses this complete title as an absolute metadata title. */
+    title: "B2B Data Provider India | IndiaB2BData.com",
     titleTag: null,
-    description: siteConfig.defaultDescription,
+    description: "B2B data provider India for company, GST, MCA and industry databases. Browse state coverage, review samples and request a quote for your target market.",
     path: "/",
     /** Sitemap <lastmod>: bump when this page's main copy changes (not for header/footer/styling changes). */
-    updated: "2026-10-07",
-    about: "B2B database India",
+    updated: "2026-10-26",
+    about: "B2B data provider India",
     itemListName: "B2B & Company Databases",
   },
   hero: {
     imageAlt: "Sales team working with B2B business data",
     badge: "India's Trusted B2B Data Partner",
     /** "{lead} {accent} {and}{accent2}" */
-    h1: { lead: "B2B Data That Actually", accent: "Reaches", and: "& ", accent2: "Converts" },
+    h1: { lead: "B2B Data Provider India:", accent: "Company Data", and: "& ", accent2: "Business Contacts" },
     subhead:
-      "Mobile numbers, emails and company records for every industry, city and state in India - built for sales teams who can't afford to waste a single call.",
+      "IndiaB2BData.com helps sales teams select company records and business contacts by industry, state, city and role. Start with a sample, confirm the available fields and record count, then request a quote for your market.",
     sampleCta: "Request Free Sample Data",
     whatsappCta: "Chat on WhatsApp",
     trustDivider: "Trusted by sales teams",
@@ -34,6 +33,89 @@ export const HOME = {
       { value: 10, suffix: "K+", label: "Businesses Served" },
     ],
   },
+  directory: {
+    "eyebrow": "Your B2B Data Partner",
+    "heading": "Choose a database for your market",
+    "intro": "Start with the type of company information you need, then narrow your geography. These 15 pages explain our main database options and state-specific business segments.",
+    "providerHeading": "About IndiaB2BData.com",
+    "providerText": "IndiaB2BData.com is the business data brand behind this website. Discuss your target industries, locations and contact roles with our team, and review a matching sample and written quote before ordering.",
+    "addressLabel": "Business contact address",
+    "phoneLabel": "Speak to our team",
+    "aboutLabel": "Read about our business",
+    "contactLabel": "Contact and enquiries",
+    "groups": [
+        {
+            "heading": "Company and industry databases",
+            "links": [
+                {
+                    "label": "B2B Business Database",
+                    "href": "/b2b-database-india"
+                },
+                {
+                    "label": "Company Database India",
+                    "href": "/company-database-india"
+                },
+                {
+                    "label": "GST Database India",
+                    "href": "/gst-database-india"
+                },
+                {
+                    "label": "MCA Company Database",
+                    "href": "/mca-company-database-india"
+                },
+                {
+                    "label": "Industry-wise Company Database",
+                    "href": "/industry-wise-company-database-india"
+                },
+                {
+                    "label": "B2B Leads Database",
+                    "href": "/b2b-leads-database-india"
+                },
+                {
+                    "label": "Manufacturer Database",
+                    "href": "/manufacturer-database-india"
+                }
+            ]
+        },
+        {
+            "heading": "Business databases by state",
+            "links": [
+                {
+                    "label": "Delhi Business Database",
+                    "href": "/database/delhi"
+                },
+                {
+                    "label": "Gujarat Company Database",
+                    "href": "/database/gujarat"
+                },
+                {
+                    "label": "Karnataka Business Database",
+                    "href": "/database/karnataka"
+                },
+                {
+                    "label": "Maharashtra Business Database",
+                    "href": "/database/maharashtra"
+                },
+                {
+                    "label": "Uttar Pradesh Business Database",
+                    "href": "/database/uttar-pradesh"
+                },
+                {
+                    "label": "Haryana Business Database",
+                    "href": "/database/haryana"
+                },
+                {
+                    "label": "Tamil Nadu Business Database",
+                    "href": "/database/tamil-nadu"
+                },
+                {
+                    "label": "Telangana Business Database",
+                    "href": "/database/telangana"
+                }
+            ]
+        }
+    ]
+},
   trustStrip: {
     lead: "Trusted by teams across:",
     industries: ["Real Estate", "EdTech", "Finance & Insurance", "Manufacturing", "Healthcare", "E-commerce"],

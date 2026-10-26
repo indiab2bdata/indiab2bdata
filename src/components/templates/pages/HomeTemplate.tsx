@@ -7,6 +7,7 @@ import { Process } from "@/components/sections/home/Process";
 import { Products } from "@/components/sections/home/Products";
 import { Testimonials } from "@/components/sections/home/Testimonials";
 import { TrustStrip } from "@/components/sections/home/TrustStrip";
+import { ProviderDirectory } from "@/components/sections/home/ProviderDirectory";
 import { WhyUs } from "@/components/sections/home/WhyUs";
 import { InlineCta } from "@/components/sections/InlineCta";
 import { SampleDownload } from "@/components/sections/SampleDownload";
@@ -33,6 +34,7 @@ export function HomeTemplate() {
       <JsonLd data={schema} />
       <Hero />
       <TrustStrip />
+      <ProviderDirectory />
       <Products />
       <DataFolders />
       <InlineCta {...HOME.ctas.products} />

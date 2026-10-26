@@ -18,6 +18,10 @@ export type StateInput = {
   related: LinkItem[];
   cityPages?: LinkItem[];
   bands: [string, string, string];
+  h1?: string;
+  coverageHeading?: string;
+  coverageLabel?: string;
+  guide?: LandingPage["guide"];
 };
 
 const STATE_FIELDS = [
@@ -40,7 +44,7 @@ export function stateLanding(s: StateInput): LandingPage {
     title: s.title,
     metaDescription: s.metaDescription,
     eyebrow: `${s.name} B2B Data`,
-    h1: `${s.name} Business Database: B2B Contacts by City & Industry`,
+    h1: s.h1 ?? `${s.name} Business Database: B2B Contacts by City & Industry`,
     lead: s.lead,
     breadcrumbs: [
       { label: "Databases", href: "/database" },
@@ -48,7 +52,8 @@ export function stateLanding(s: StateInput): LandingPage {
     ],
     segmentSummary: s.segmentSummary,
     segmentCards: s.segmentCards,
-    coverageTable: { heading: `${s.name} coverage by city`, segmentLabel: "City", rows },
+    coverageTable: { heading: s.coverageHeading ?? `${s.name} coverage by city`, segmentLabel: s.coverageLabel ?? "City", rows },
+    guide: s.guide,
     dataFields: STATE_FIELDS,
     sample: { profile: "business", csvSlug: `${s.slug}-business-database`, state: s.name },
     useCases: s.useCases,
