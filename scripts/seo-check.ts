@@ -24,7 +24,7 @@ const outFile = outIdx > -1 ? args[outIdx + 1] : null;
 const TITLE_MAX = 60;
 const DESCRIPTION_MAX = 155;
 /** Utility routes that must stay out of the index and the sitemap. */
-const NOINDEX_ROUTES = ["/thank-you", "/image-credits"];
+const NOINDEX_ROUTES = ["/thank-you"];
 
 const decode = (s: string) =>
   s.replace(/&amp;/g, "&").replace(/&quot;/g, '"').replace(/&#x27;|&#39;/g, "'").replace(/&lt;/g, "<").replace(/&gt;/g, ">");

@@ -17,7 +17,6 @@ export const SITE_COPY = {
     legalNote: "Data provided for legitimate marketing use only.",
     privacy: "Privacy Policy",
     terms: "Terms & Conditions",
-    credits: "Image Credits",
   },
   mobileBar: { label: "Quick contact", call: "Call", whatsapp: "WhatsApp", sample: "Get Sample" },
   floating: { call: "Call us", whatsapp: "Chat on WhatsApp" },

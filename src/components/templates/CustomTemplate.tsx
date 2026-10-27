@@ -59,7 +59,6 @@ export function CustomTemplate({ page, updated }: { page: CustomPage; updated: s
         text={page.cta.footerText}
         source={`${source}-footer-form`}
         requirement={page.name}
-        formTitle={page.cta.formTitle}
         formButtonLabel={page.cta.buttonLabel}
       />
 

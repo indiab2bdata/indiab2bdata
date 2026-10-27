@@ -56,7 +56,6 @@ export function LandingTemplate({ page }: { page: LandingPage }) {
         text={page.cta.footerText}
         source={`${source}-footer-form`}
         requirement={page.name}
-        formTitle={page.cta.formTitle}
         formButtonLabel={page.cta.buttonLabel}
       />
       <Disclaimer text={page.disclaimer} lastUpdated={page.lastUpdated} />

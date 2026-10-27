@@ -21,6 +21,7 @@ export function CoverageTable({ page }: { page: LandingPage }) {
           <Reveal>
             <div className="overflow-x-auto rounded-2xl border border-[#DCEAF3]">
               <table className="min-w-full text-left text-sm">
+                <caption className="sr-only">{t.heading}</caption>
                 <thead className="bg-bgsoft text-navy">
                   <tr>
                     <th scope="col" className="px-5 py-3.5 font-semibold">{t.segmentLabel}</th>

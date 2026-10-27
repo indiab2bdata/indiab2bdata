@@ -6,6 +6,9 @@ import type { CustomPage, KeywordPage, LandingPage } from "@/types/landing";
 
 export type OgImage = { url: string; width?: number; height?: number; alt?: string };
 
+/** Official X/Twitter account (https://x.com/indiab2bdata); TWITTER_SITE env var overrides it. */
+const TWITTER_SITE = process.env.TWITTER_SITE?.trim() || "@indiab2bdata";
+
 export const DEFAULT_OG_IMAGE: OgImage = {
   url: `${siteConfig.url}/images/home/hero.jpg`,
   width: 1200,
@@ -88,9 +91,11 @@ export function buildMetadata({
     },
     twitter: {
       card: "summary_large_image",
+      site: TWITTER_SITE,
+      creator: TWITTER_SITE,
       title,
       description,
-      images: [ogImage.url],
+      images: [{ url: ogImage.url, alt: ogImage.alt }],
     },
   };
 }

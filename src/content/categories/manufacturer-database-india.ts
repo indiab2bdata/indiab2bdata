@@ -8,7 +8,7 @@ const custom = {
   "title": "Manufacturer Database India by Cluster",
   "metaDescription": "Explore Indian manufacturers by product, industrial cluster and state. Define the plant location and contact function for a relevant business sample.",
   "eyebrow": "Manufacturers Database India",
-  "h1": "Manufacturer Database India: Factories by Product and Industrial Cluster",
+  "h1": "Manufacturer Database India by Product and Cluster",
   "lead": "Select factories and production businesses by what they make, where the unit operates and the function your offer supports. Use the state-wise cluster table to turn a broad manufacturer search into a practical supplier or sales brief.",
   "image": {
     "src": "/images/keywords/city-skyline.jpg",
@@ -62,6 +62,13 @@ const custom = {
       "text": "importers and exporters database",
       "href": "/importers-exporters-database-india"
     },
+    { "text": "Surat textile manufacturers", "href": "/database/gujarat" },
+    { "text": "Rajkot engineering units", "href": "/database/gujarat" },
+    { "text": "Tiruppur garment manufacturers", "href": "/database/tamil-nadu" },
+    { "text": "Coimbatore pump manufacturers", "href": "/database/tamil-nadu" },
+    { "text": "Peenya engineering units", "href": "/database/karnataka" },
+    { "text": "Pune auto component makers", "href": "/database/maharashtra" },
+    { "text": "Noida electronics manufacturers", "href": "/database/uttar-pradesh" },
     {
       "text": "Request Punjab coverage",
       "href": "/contact"
@@ -82,13 +89,13 @@ const custom = {
           "Surat",
           "Gujarat",
           "Textile production and processing",
-          "Gujarat company database"
+          "Surat textile manufacturers"
         ],
         [
           "Rajkot",
           "Gujarat",
           "Engineering and components",
-          "Gujarat company database"
+          "Rajkot engineering units"
         ],
         [
           "Ludhiana",
@@ -100,31 +107,31 @@ const custom = {
           "Tiruppur",
           "Tamil Nadu",
           "Knitwear and garment production",
-          "Tamil Nadu business database"
+          "Tiruppur garment manufacturers"
         ],
         [
           "Peenya, Bengaluru",
           "Karnataka",
           "Engineering and industrial units",
-          "Karnataka business database"
+          "Peenya engineering units"
         ],
         [
           "Pune–Chakan",
           "Maharashtra",
           "Automotive and component production",
-          "Maharashtra business database"
+          "Pune auto component makers"
         ],
         [
           "Noida / Greater Noida",
           "Uttar Pradesh",
           "Electronics and related industrial businesses",
-          "UP company database"
+          "Noida electronics manufacturers"
         ],
         [
           "Coimbatore",
           "Tamil Nadu",
           "Pumps, motors and engineering",
-          "Tamil Nadu business database"
+          "Coimbatore pump manufacturers"
         ]
       ],
       "intro": "These cluster examples describe production geography, not the number or capability of businesses available in a provider file. Punjab does not have a state hub in these regional guides; use the coverage enquiry for Ludhiana."

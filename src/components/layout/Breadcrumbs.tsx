@@ -14,7 +14,7 @@ export function Breadcrumbs({ items, tone = "dark" }: { items: BreadcrumbItem[];
             {i > 0 && <ChevronRight className="w-3.5 h-3.5 text-slate-400" strokeWidth={2} />}
             {item.href && !isLast ? (
               <Link href={item.href} className={`transition ${light ? "hover:text-teal" : "hover:text-white"}`}>
-                {item.label}
+                {item.href === "/" ? "India B2B Data Home" : item.label}
               </Link>
             ) : (
               <span aria-current={isLast ? "page" : undefined} className={isLast ? (light ? "font-medium text-navy" : "text-white") : ""}>

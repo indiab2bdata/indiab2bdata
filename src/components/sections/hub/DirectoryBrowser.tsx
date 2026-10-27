@@ -2,18 +2,19 @@
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
-import { ArrowUpRight, Search } from "lucide-react";
+import { Search } from "lucide-react";
 import { SITE_COPY } from "@/content/shared/site-copy";
+import styles from "./DirectoryBrowser.module.css";
 
 const COPY = SITE_COPY.directory;
 
-type Group = { id: string; heading: string; description: string; links: { href: string; label: string }[] };
+type Group = { id: string; heading: string; description: string; href?: string; links: { href: string; label: string }[] };
 
 /**
- * Grouped, searchable list of every indexable database page. All links are rendered on the
- * server; search only hides non-matching ones, so crawlers always see the full directory.
+ * Searchable directory. The hub shows short previews with crawlable category links;
+ * category pages render their full lists so every database remains discoverable.
  */
-export function DirectoryBrowser({ groups }: { groups: Group[] }) {
+export function DirectoryBrowser({ groups, previewLimit }: { groups: Group[]; previewLimit?: number }) {
   const [query, setQuery] = useState("");
   const [active, setActive] = useState<string>("all");
   const q = query.trim().toLowerCase();
@@ -27,6 +28,7 @@ export function DirectoryBrowser({ groups }: { groups: Group[] }) {
     [groups, active, q]
   );
   const total = visible.reduce((n, g) => n + g.links.length, 0);
+  const shown = visible.reduce((n, g) => n + Math.min(g.links.length, previewLimit ?? g.links.length), 0);
   const pill = (on: boolean) =>
     `shrink-0 cursor-pointer rounded-full px-4 py-2 text-sm font-semibold transition-colors ${on ? "bg-navy text-white" : "bg-white text-muted ring-1 ring-[#DCEAF3] hover:text-navy"}`;
 
@@ -57,7 +59,7 @@ export function DirectoryBrowser({ groups }: { groups: Group[] }) {
       </div>
 
       <p className="mt-4 text-sm text-muted" aria-live="polite">
-        {total} {COPY.unit(total)}
+        {shown < total ? `Showing ${shown} of ${total}` : total} {COPY.unit(total)}
       </p>
 
       <div className="mt-6 space-y-12">
@@ -66,18 +68,24 @@ export function DirectoryBrowser({ groups }: { groups: Group[] }) {
             <h2 className="font-display text-2xl font-extrabold tracking-tight text-navy">{g.heading}</h2>
             <p className="mt-1.5 max-w-[70ch] text-muted">{g.description}</p>
             <ul className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-              {g.links.map((l) => (
+              {g.links.slice(0, previewLimit).map((l) => (
                 <li key={l.href}>
                   <Link
                     href={l.href}
-                    className="group flex h-full items-center justify-between gap-3 rounded-xl border border-[#DCEAF3] bg-white px-4 py-3.5 text-sm font-semibold text-navy transition-all hover:-translate-y-0.5 hover:border-teal/40 hover:shadow-md"
+                    className={styles.link}
                   >
                     {/database|data\b|leads|records|lists?\b/i.test(l.label) ? l.label : `${l.label} Database`}
-                    <ArrowUpRight className="h-4 w-4 shrink-0 text-muted group-hover:text-teal" />
+                    <span className={styles.arrow} aria-hidden="true">↗</span>
                   </Link>
                 </li>
               ))}
             </ul>
+            {previewLimit && g.href && (
+              <Link href={g.href} className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-teal-dark hover:underline underline-offset-4">
+                View all {g.heading.toLowerCase()} databases ({g.links.length})
+                <span className={styles.arrow} aria-hidden="true">↗</span>
+              </Link>
+            )}
           </section>
         ))}
         {total === 0 && (

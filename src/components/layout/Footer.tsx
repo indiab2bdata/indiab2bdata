@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { ContentImage } from "@/components/ui/ContentImage";
 import Link from "next/link";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { siteConfig } from "@/config/site";
@@ -15,11 +15,12 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-5 md:px-8 grid sm:grid-cols-2 lg:grid-cols-5 gap-x-8 gap-y-10">
         <div>
           <div className="flex items-center gap-2">
-            <Image
+            <ContentImage
               src="/images/favicon.png"
-              alt={SITE_COPY.logoAlt}
+              alt={`${SITE_COPY.logoAlt} brand emblem`}
               width={32}
               height={32}
+              loading="lazy"
               className="w-8 h-8 rounded-md"
             />
             <span className="font-display font-extrabold text-xl text-white">
@@ -47,7 +48,7 @@ export function Footer() {
 
         <div>
           <p className="font-display font-bold text-white text-sm mb-4">
-            <Link href="/database" className="hover:text-teal-light transition-colors">{COPY.states}</Link>
+            {COPY.states}
           </p>
           <ul className="space-y-2 text-sm">
             {getAllStates().map((state) => (
@@ -102,10 +103,6 @@ export function Footer() {
           ·{" "}
           <Link href="/terms-and-conditions" className="hover:text-teal-light transition">
             {COPY.terms}
-          </Link>{" "}
-          ·{" "}
-          <Link href="/image-credits" className="hover:text-teal-light transition">
-            {COPY.credits}
           </Link>
         </p>
       </div>

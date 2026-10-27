@@ -97,7 +97,6 @@ export function KeywordTemplate({ page }: { page: KeywordPage }) {
         text={page.cta?.footerText ?? KEYWORD_COPY.cta.footerText}
         source={`${page.slug}-footer-form`}
         requirement={productName}
-        formTitle={page.cta?.heroTitle}
         formSubtitle={page.cta?.heroSubtitle}
         formButtonLabel={page.cta?.buttonLabel}
       />

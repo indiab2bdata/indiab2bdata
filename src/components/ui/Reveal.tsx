@@ -1,4 +1,4 @@
-import type { CSSProperties, ReactNode } from "react";
+import type { ReactNode } from "react";
 
 /**
  * Scroll-in fade/slide with zero JavaScript: a CSS scroll-driven animation (see .reveal in globals.css).
@@ -15,9 +15,9 @@ export function Reveal({
   delay?: number;
   className?: string;
 }) {
-  const style = delay ? ({ "--reveal-offset": `${Math.round(delay * 100)}%` } as CSSProperties) : undefined;
+  const step = delay ? Math.min(5, Math.max(1, Math.round(delay * 20))) : undefined;
   return (
-    <div className={`reveal ${className}`} style={style}>
+    <div className={`reveal ${className}`} data-reveal-step={step}>
       {children}
     </div>
   );

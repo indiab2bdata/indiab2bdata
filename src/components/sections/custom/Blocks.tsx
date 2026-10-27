@@ -119,6 +119,7 @@ function Table({
         )}
         <div className="mt-6 overflow-x-auto rounded-2xl border border-[#DCEAF3] bg-white">
           <table className="min-w-full text-left text-sm">
+            <caption className="sr-only">{block.heading}</caption>
             <thead className="bg-bgsoft text-navy">
               <tr>
                 {block.columns.map((c) => (
@@ -228,7 +229,7 @@ function Points({
                 <Icon
                   className={`h-4 w-4 shrink-0 ${warning ? "text-amber" : "text-teal"}`}
                 />
-                {item.title}
+                <strong className="font-bold">{item.title}</strong>
               </p>
               <p className="mt-2 text-sm leading-relaxed text-muted">
                 <Copy text={item.text} links={links} />

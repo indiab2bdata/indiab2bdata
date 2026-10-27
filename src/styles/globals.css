@@ -38,6 +38,9 @@ body {
   font-family: var(--font-body);
 }
 
+.site-toast { font-family: var(--font-body); }
+.gtm-fallback { display: none; visibility: hidden; border: 0; }
+
 ::selection {
   background: #0b78d0;
   color: #fff;
@@ -165,6 +168,11 @@ details[open] .chev {
 .swiper-notification { position: absolute; left: 0; top: 0; z-index: -1000; opacity: 0; pointer-events: none; }
 
 /* Scroll-in reveal (components/reveal.tsx) - CSS only, no JS. */
+.reveal[data-reveal-step="1"] { --reveal-offset: 5%; }
+.reveal[data-reveal-step="2"] { --reveal-offset: 10%; }
+.reveal[data-reveal-step="3"] { --reveal-offset: 15%; }
+.reveal[data-reveal-step="4"] { --reveal-offset: 20%; }
+.reveal[data-reveal-step="5"] { --reveal-offset: 25%; }
 @keyframes reveal-in {
   from { transform: translateY(18px); }
   to { transform: none; }

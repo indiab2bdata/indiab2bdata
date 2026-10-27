@@ -11,6 +11,7 @@ export function PriorityEvidence({path}:{path:string}) {
       <p className="mt-4 max-w-[75ch] leading-relaxed text-muted">{data.intro}</p>
       <div className="mt-6 overflow-x-auto rounded-2xl border border-slate-200">
         <table className="min-w-full text-left text-sm">
+          <caption className="sr-only">{data.heading}</caption>
           <thead className="bg-bgsoft text-navy"><tr><th scope="col" className="px-5 py-4">{COPY.source}</th><th scope="col" className="px-5 py-4">{COPY.kind}</th><th scope="col" className="px-5 py-4">{COPY.detail}</th></tr></thead>
           <tbody className="divide-y divide-slate-100">{data.sources.map(s=><tr key={s.name}><th scope="row" className="px-5 py-4 font-semibold"><Link href={s.href} className="text-teal-dark underline underline-offset-4">{s.name}</Link></th><td className="px-5 py-4 text-muted">{s.kind}</td><td className="px-5 py-4 leading-relaxed text-muted">{s.detail}</td></tr>)}</tbody>
         </table>

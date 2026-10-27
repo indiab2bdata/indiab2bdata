@@ -9,6 +9,7 @@ import { FloatingButtons } from "@/components/layout/FloatingButtons";
 import { MobileCtaBar } from "@/components/layout/MobileCtaBar";
 import { ContactModal } from "@/components/layout/ContactModal";
 import { Toaster } from "sonner";
+import { GoogleTagManager } from "@next/third-parties/google";
 import { JsonLd } from "@/components/layout/JsonLd";
 import { getCityEnquiryPages } from "@/content";
 import { GA_INIT, GA_SRC } from "@/lib/analytics";
@@ -23,10 +24,20 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = rootMetadata;
 
+const gtmId = process.env.GOOGLE_TAG_MANAGER_ID?.trim();
+if (gtmId && !/^GTM-[A-Z0-9]+$/.test(gtmId)) {
+  throw new Error("GOOGLE_TAG_MANAGER_ID must be a real GTM container ID beginning with GTM-.");
+}
+
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${montserrat.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col bg-bgsoft pb-16 text-ink md:pb-0" suppressHydrationWarning>
+        {gtmId && (
+          <noscript>
+            <iframe src={`https://www.googletagmanager.com/ns.html?id=${gtmId}`} height="0" width="0" className="gtm-fallback" title="Google Tag Manager" />
+          </noscript>
+        )}
         <JsonLd data={[organizationJsonLd, localBusinessJsonLd, websiteJsonLd]} />
         <ModalProvider>
           <Header />
@@ -35,9 +46,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           <FloatingButtons />
           <MobileCtaBar />
           <ContactModal cityPages={getCityEnquiryPages()} />
-          <Toaster position="top-center" richColors closeButton toastOptions={{ style: { fontFamily: "var(--font-montserrat), sans-serif" } }} />
+          <Toaster position="top-center" richColors closeButton toastOptions={{ className: "site-toast" }} />
         </ModalProvider>
       </body>
+      {gtmId && <GoogleTagManager gtmId={gtmId} />}
       {/* lazyOnload: analytics loads after the page is interactive and never blocks rendering (see lib/analytics.ts). */}
       <Script id="ga-init" strategy="lazyOnload">
         {GA_INIT}

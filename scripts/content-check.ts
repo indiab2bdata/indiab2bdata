@@ -140,7 +140,7 @@ for (const r of rendered) {
 
 /* 6. link targets */
 const routes = new Set<string>([
-  "/", "/about", "/contact", "/blog", "/database", "/data-sourcing-compliance", "/data-sourcing-methodology", "/privacy-policy", "/terms-and-conditions", "/image-credits",
+  "/", "/about", "/contact", "/blog", "/database", "/data-sourcing-compliance", "/data-sourcing-methodology", "/privacy-policy", "/terms-and-conditions",
   ...liveCategories.map((c) => `/${c.keyword.slug}`),
   ...getAllStates().map((s) => `/database/${s.slug}`),
   ...getAllCities().map(cityPath),

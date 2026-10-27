@@ -10,6 +10,7 @@ import { DATABASE_HUB } from "@/content/pages/database";
 import { HOME } from "@/content/pages/home";
 import { PRIVACY_PAGE } from "@/content/pages/privacy-policy";
 import { TERMS_PAGE } from "@/content/pages/terms-and-conditions";
+import { getDatabaseDirectoryGroups } from "@/lib/database-directory";
 
 type Entry = { url: string; lastModified: string };
 
@@ -27,6 +28,7 @@ export const SITEMAPS = {
   core: (): Entry[] => [
     page(HOME.meta),
     page(DATABASE_HUB.meta),
+    ...getDatabaseDirectoryGroups().map((group) => entry(group.href, DATABASE_HUB.meta.updated)),
     ...liveCategories
       .filter((c) => !isHeldFromIndex(c.keyword.slug))
       .map((c) => entry(`/${c.keyword.slug}`, c.updated)),
