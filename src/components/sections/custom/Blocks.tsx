@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { ContentImage } from "@/components/ui/ContentImage";
 import type { ReactNode } from "react";
 import Link from "next/link";
 import {
@@ -40,7 +40,7 @@ function ImageCard({
   return (
     <div className="grid overflow-hidden rounded-2xl border border-[#DCEAF3] bg-white shadow-sm md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
       <div className={`relative min-h-[220px] ${flip ? "md:order-2" : ""}`}>
-        <Image
+        <ContentImage
           src={image.src}
           alt={image.alt}
           width={image.width}
@@ -272,7 +272,7 @@ function Scenario({
           </div>
           {block.image && (
             <div className="relative min-h-[220px]">
-              <Image
+              <ContentImage
                 src={block.image.src}
                 alt={block.image.alt}
                 width={block.image.width}

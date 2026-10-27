@@ -12,7 +12,7 @@ import { Toaster } from "sonner";
 import { GoogleTagManager } from "@next/third-parties/google";
 import { JsonLd } from "@/components/layout/JsonLd";
 import { getCityEnquiryPages } from "@/content";
-import { GA_INIT, GA_SRC } from "@/lib/analytics";
+import { GA_INIT } from "@/lib/analytics";
 import { organizationJsonLd, localBusinessJsonLd, websiteJsonLd } from "@/lib/seo/jsonld";
 import { rootMetadata } from "@/lib/seo/metadata";
 
@@ -50,11 +50,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         </ModalProvider>
       </body>
       {gtmId && <GoogleTagManager gtmId={gtmId} />}
-      {/* lazyOnload: analytics loads after the page is interactive and never blocks rendering (see lib/analytics.ts). */}
+      {/* gtag.js is fetched on first interaction or 5s after load, never during rendering (see lib/analytics.ts). */}
       <Script id="ga-init" strategy="lazyOnload">
         {GA_INIT}
       </Script>
-      <Script src={GA_SRC} strategy="lazyOnload" />
     </html>
   );
 }

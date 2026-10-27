@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
+import { ContentImage } from "@/components/ui/ContentImage";
 import { ArrowRight } from "lucide-react";
 import { useModal } from "@/components/layout/ModalContext";
 import { WhatsAppIcon } from "@/components/ui/icons/WhatsAppIcon";
@@ -64,13 +64,12 @@ export function Hero() {
       className="relative min-h-screen flex items-center pt-28 pb-20 md:pt-32 md:pb-24 overflow-hidden bg-navy"
     >
       {/* Poster paints immediately (LCP); the video is layered on top only after the page has loaded. */}
-      <Image
+      <ContentImage
         src="/images/home/hero.jpg"
         alt={COPY.imageAlt}
         width={1600}
         height={1067}
         preload
-        fetchPriority="high"
         sizes="100vw"
         className="absolute inset-0 h-full w-full object-cover"
       />
@@ -98,15 +97,9 @@ export function Hero() {
           {COPY.badge}
         </span>
 
-        {/* Headline - tightened tracking, brighter accent */}
-        <h1 className="font-display font-extrabold text-white text-[2.15rem] sm:text-5xl xl:text-[3.75rem] leading-[1.08] tracking-[-0.02em] max-w-3xl">
-          {COPY.h1.lead}{" "}
-          <span className="relative inline-block text-teal-light">
-            {COPY.h1.accent}
-            <span className="absolute -bottom-1 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-teal-light/70 to-transparent" />
-          </span>{" "}
-          {COPY.h1.and}
-          <span className="text-teal-light">{COPY.h1.accent2}</span>
+        {/* Headline - plain text only (no nested tags); the teal accent comes from a gradient text fill. */}
+        <h1 className="font-display font-extrabold text-[2.15rem] sm:text-5xl xl:text-[3.75rem] leading-[1.08] tracking-[-0.02em] max-w-3xl bg-gradient-to-br from-white from-40% to-teal-light bg-clip-text text-transparent">
+          {`${COPY.h1.lead} ${COPY.h1.accent} ${COPY.h1.and}${COPY.h1.accent2}`}
         </h1>
 
         {/* Subheadline - better contrast & rhythm */}

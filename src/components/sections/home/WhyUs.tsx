@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import { ContentImage } from "@/components/ui/ContentImage";
 import { Reveal } from "@/components/ui/Reveal";
 import { useModal } from "@/components/layout/ModalContext";
 import { HOME } from "@/content/pages/home";
@@ -14,14 +14,13 @@ export function WhyUs() {
     <section id="why" className="bg-white py-20 md:py-28">
       <div className="max-w-7xl mx-auto px-5 md:px-8 grid lg:grid-cols-2 gap-14 items-center">
         <Reveal className="rounded-2xl overflow-hidden shadow-xl ring-1 ring-slate-200 order-2 lg:order-1">
-          <Image
+          <ContentImage
             src="/images/home/why-us.jpg"
             alt={COPY.imageAlt}
             width={1600}
             height={1140}
             sizes="(min-width: 1024px) 50vw, 100vw"
             className="w-full h-[420px] object-cover"
-            style={{ objectFit: "cover" }}
           />
         </Reveal>
 
