@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
-import { Reveal } from "@/components/ui/Reveal";
 import { useModal } from "@/components/layout/ModalContext";
 import { WhatsAppIcon } from "@/components/ui/icons/WhatsAppIcon";
 import { siteConfig } from "@/config/site";
@@ -14,7 +13,7 @@ const COPY = HOME.hero;
 type NetworkInfo = { saveData?: boolean; effectiveType?: string };
 
 /**
- * Mounts a single background video (desktop or mobile, never both) once the window has loaded,
+ * Mounts the desktop background video once the window has loaded,
  * so it never competes with first paint. Skipped for reduced motion, data saver and slow connections.
  */
 function HeroVideo() {
@@ -23,10 +22,11 @@ function HeroVideo() {
   useEffect(() => {
     const conn = (navigator as Navigator & { connection?: NetworkInfo }).connection;
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    // Phones keep the still poster: decoding a looping video under the overlays costs too much main-thread time.
+    if (!window.matchMedia("(min-width: 768px)").matches) return;
     if (conn?.saveData || (conn?.effectiveType && /(^|-)2g$|^3g$/.test(conn.effectiveType))) return;
 
-    const pick = () =>
-      setSrc(window.matchMedia("(min-width: 768px)").matches ? "/images/hero/hero-desktop.mp4" : "/images/hero/hero-mob.mp4");
+    const pick = () => setSrc("/images/hero/hero-desktop.mp4");
     const start = () => {
       const idle = (window as Window & { requestIdleCallback?: (cb: () => void) => number }).requestIdleCallback;
       if (idle) idle(pick);
@@ -43,6 +43,8 @@ function HeroVideo() {
       key={src}
       className="absolute inset-0 h-full w-full object-cover"
       src={src}
+      width={3840}
+      height={2160}
       autoPlay
       muted
       loop
@@ -65,12 +67,12 @@ export function Hero() {
       <Image
         src="/images/home/hero.jpg"
         alt={COPY.imageAlt}
-        fill
+        width={1600}
+        height={1067}
         preload
         fetchPriority="high"
         sizes="100vw"
-        className="object-cover"
-        style={{ objectFit: "cover" }}
+        className="absolute inset-0 h-full w-full object-cover"
       />
       <HeroVideo />
 
@@ -89,7 +91,7 @@ export function Hero() {
         aria-hidden="true"
       />
 
-      <Reveal className="relative max-w-4xl mx-auto px-5 md:px-8 flex flex-col items-center text-center">
+      <div className="relative max-w-4xl mx-auto px-5 md:px-8 flex flex-col items-center text-center">
         {/* Badge - glassmorphism with soft glow */}
         <span className="inline-flex items-center gap-2 text-teal-light text-[11px] font-semibold uppercase tracking-[0.22em] mb-7 rounded-full px-4 py-1.5 border border-teal-light/30 bg-teal-light/[0.06] backdrop-blur-md shadow-[0_0_24px_-8px_rgba(22,184,232,0.45)]">
           <span className="w-1.5 h-1.5 rounded-full bg-teal-light shadow-[0_0_8px_2px_rgba(22,184,232,0.7)] animate-pulse" />
@@ -136,7 +138,7 @@ export function Hero() {
         </div>
 
         {/* Trust divider */}
-      </Reveal>
+      </div>
     </section>
   );
 }

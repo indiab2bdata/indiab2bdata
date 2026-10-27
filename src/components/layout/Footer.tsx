@@ -5,6 +5,7 @@ import { siteConfig } from "@/config/site";
 import { getAllStates } from "@/content";
 import { ProtectedEmail } from "@/components/ui/ProtectedEmail";
 import { FOOTER_CORE_DATABASES, FOOTER_QUICK_LINKS } from "@/config/navigation";
+import { getDatabaseDirectoryGroups } from "@/lib/database-directory";
 import { SITE_COPY } from "@/content/shared/site-copy";
 
 const COPY = SITE_COPY.footer;
@@ -12,7 +13,7 @@ const COPY = SITE_COPY.footer;
 export function Footer() {
   return (
     <footer className="bg-navy-dark text-slate-300 pt-16 pb-8">
-      <div className="max-w-7xl mx-auto px-5 md:px-8 grid sm:grid-cols-2 lg:grid-cols-5 gap-x-8 gap-y-10">
+      <div className="max-w-7xl mx-auto px-5 md:px-8 grid sm:grid-cols-2 lg:grid-cols-6 gap-x-8 gap-y-10">
         <div>
           <div className="flex items-center gap-2">
             <ContentImage
@@ -29,8 +30,17 @@ export function Footer() {
             </span>
           </div>
           <p className="mt-4 text-sm leading-relaxed text-slate-400">
+            <strong className="font-semibold text-slate-200">{COPY.taglineLead}</strong>
             {COPY.tagline}
           </p>
+          <a
+            href={siteConfig.social.x}
+            target="_blank"
+            rel="noopener noreferrer me"
+            className="mt-4 inline-block text-sm font-semibold text-white hover:text-teal-light hover:underline underline-offset-4 transition-colors"
+          >
+            {COPY.followX}
+          </a>
         </div>
 
         <div>
@@ -68,6 +78,19 @@ export function Footer() {
               <li key={link.href}>
                 <Link href={link.href} className="hover:text-teal-light hover:underline underline-offset-4 transition-colors">
                   {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <p className="font-display font-bold text-white text-sm mb-4">{COPY.categories}</p>
+          <ul className="space-y-2 text-sm">
+            {getDatabaseDirectoryGroups().map((group) => (
+              <li key={group.id}>
+                <Link href={group.href} className="hover:text-teal-light hover:underline underline-offset-4 transition-colors">
+                  {group.heading} Databases
                 </Link>
               </li>
             ))}

@@ -18,7 +18,7 @@ export default cityContent(
     segmentCards: [
       { icon: Building2, title: "MNC & Corporate HQs", description: "Corporate offices and regional HQs in DLF Cyber City, Cyber Hub and Golf Course Road." },
       { icon: Laptop, title: "IT, Consulting & Startups", description: "IT services, consulting firms and funded startups across Udyog Vihar, Sohna Road and Golf Course Extension." },
-      { icon: Car, title: "Manesar Industry", description: "Auto-component and engineering units in IMT Manesar, available as a separate segment." },
+      { icon: Car, title: "IMT Manesar Industrial Units", description: "Auto-component and engineering units in IMT Manesar, available as a separate segment." },
     ],
     segmentTabs: {
       heading: "Gurgaon segments by buyer",

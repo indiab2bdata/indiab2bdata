@@ -205,12 +205,12 @@ export default {
       },
       {
         icon: Building2,
-        title: "PSUs & Public Banks",
+        title: "PSU & Public Bank Employees",
         description: "Officers and staff at central and state public-sector undertakings, kept separate from ministry employees.",
       },
       {
         icon: Users,
-        title: "Local Bodies",
+        title: "Local Body Employees",
         description: "Municipal corporations, councils and district-level offices for city-specific outreach.",
       },
     ],

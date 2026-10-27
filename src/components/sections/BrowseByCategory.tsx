@@ -4,7 +4,7 @@ import { LANDING_COPY } from "@/content/shared/landing-copy";
 
 const COPY = LANDING_COPY.browse;
 
-/** Compact card linking to product groups on the /database hub. */
+/** Compact card linking to each product group's /database/categories page. */
 export function BrowseByCategory({ groups }: { groups: { id: string; heading: string; description: string; links: unknown[] }[] }) {
   return (
     <div className="rounded-2xl border border-[#DCEAF3] bg-white p-6 md:p-8">
@@ -23,7 +23,7 @@ export function BrowseByCategory({ groups }: { groups: { id: string; heading: st
       </div>
       <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
         {groups.map((g) => (
-          <Link key={g.id} href={`/database#${g.id}`} className="group rounded-xl border border-[#EEF4F8] p-4 transition-colors hover:border-teal/40 hover:bg-bgsoft">
+          <Link key={g.id} href={`/database/categories/${g.id}`} className="group rounded-xl border border-[#EEF4F8] p-4 transition-colors hover:border-teal/40 hover:bg-bgsoft">
             <span className="flex items-center justify-between font-semibold text-navy">
               {g.heading}
               <span className="text-xs font-medium text-muted">

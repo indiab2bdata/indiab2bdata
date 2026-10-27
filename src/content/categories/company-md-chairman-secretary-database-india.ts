@@ -89,7 +89,7 @@ export default {
       segmentSummary: "Board roles buy differently from operational executives. Company secretaries handle statutory filings, board meetings and compliance calendars. Listed and larger companies must appoint a whole-time CS. Managing directors and chairpersons approve strategic partnerships and capital decisions. Governance-software vendors, CS and legal firms, board-education providers and wealth managers sell to exactly these people.",
       segmentCards: [
         { icon: Landmark, title: "Managing Directors & Chairpersons", description: "Top statutory roles at private and public companies." },
-        { icon: Scale, title: "Company Secretaries", description: "Compliance and governance officers." },
+        { icon: Scale, title: "Company Secretary Contacts", description: "Compliance and governance officers." },
         { icon: Users, title: "Whole-Time & Independent Directors", description: "Board members by company type." },
       ],
       segmentTabs: { heading: "Pick the board role", tabs: [

@@ -187,7 +187,7 @@ export default {
       lead: "GMs and senior managers who run departments, plants and business units at private companies. They are the operational decision-makers below the C-suite who choose vendors day to day.",
       segmentSummary: "Most vendor decisions are made below the C-suite. The plant GM picks the maintenance contractor, the senior procurement manager shortlists suppliers, and the GM - Sales chooses the CRM. This database covers those operational heads at private companies, by department and industry. Use the C-suite database for executive buy-in and the Chief Managers database for bank and PSU grades.",
       segmentCards: [
-        { icon: Factory, title: "Plant & Operations", description: "Plant GMs, works managers and operations heads." },
+        { icon: Factory, title: "Plant & Operations Managers", description: "Plant GMs, works managers and operations heads." },
         { icon: Package, title: "Procurement & Supply Chain", description: "Senior purchase and supply-chain managers." },
         { icon: Users, title: "Sales, HR & Admin", description: "Department heads in sales, HR and administration." },
       ],

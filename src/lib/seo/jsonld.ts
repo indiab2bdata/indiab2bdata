@@ -100,6 +100,7 @@ export const organizationJsonLd = {
   name: siteConfig.name,
   url: siteConfig.url,
   logo: `${siteConfig.url}/images/favicon.png`,
+  sameAs: Object.values(siteConfig.social),
   image: [`${siteConfig.url}/images/favicon.png`, DEFAULT_OG_IMAGE.url],
   telephone: siteConfig.phoneDisplay,
   email: siteConfig.email,

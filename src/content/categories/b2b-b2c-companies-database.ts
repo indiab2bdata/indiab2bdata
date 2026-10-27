@@ -116,7 +116,7 @@ export default {
       segmentCards: [
         { icon: Building2, title: "B2B Companies", description: "Companies that sell mainly to other businesses." },
         { icon: ShoppingBag, title: "B2C & D2C Companies", description: "Brands and businesses selling to consumers." },
-        { icon: Layers, title: "Hybrid", description: "Companies selling to both, such as manufacturers with retail brands." },
+        { icon: Layers, title: "Hybrid B2B + B2C Companies", description: "Companies selling to both, such as manufacturers with retail brands." },
       ],
       segmentTabs: { heading: "Pick the customer model", tabs: [
         T("b2b", "B2B Sellers", "Manufacturers, distributors, IT services and industrial firms.", ["Sales Head", "Marketing Head", "MD", "Business Development"], "CRM, lead generation, trade finance, sales hiring."),

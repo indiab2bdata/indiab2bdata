@@ -158,7 +158,8 @@ export default {
       "machinery-suppliers-services-database-india",
       "building-material-database-india",
       "importers-exporters-database-india",
-      "logistics-management-service-providers-database-india"
+      "logistics-management-service-providers-database-india",
+      "gas-petroleum-companies-database-india"
     ],
     showTestimonials: true,
     cta: {

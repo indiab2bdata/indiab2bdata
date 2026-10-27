@@ -23,6 +23,8 @@ export const siteConfig = {
   },
   mapsHref:
     "https://www.google.com/maps/search/?api=1&query=T-10%2C+Sai+Mandir+St%2C+Mamledarwadi%2C+Malad+West%2C+Mumbai%2C+Maharashtra",
+  /** Official social profiles - linked in the footer and listed as Organization sameAs. */
+  social: { x: "https://x.com/indiab2bdata" },
   defaultWhatsappMessage: "Hi, I want to know more about IndiaB2BData",
   /** <title> template for every page except the homepage. */
   titleTemplate: "%s | IndiaB2BData.com",

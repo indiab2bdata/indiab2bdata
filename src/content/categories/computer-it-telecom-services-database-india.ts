@@ -102,9 +102,9 @@ export default {
       lead: "The IT channel: system integrators, hardware and software resellers, networking and CCTV installers, AMC providers, ISPs and cloud resellers. Recruit partners or sell distribution.",
       segmentSummary: "Most IT hardware, networking and telecom in India reaches businesses through a local channel of thousands of resellers, integrators and service providers in every city. OEMs and distributors recruit them as partners, and vendors sell them tools, finance and stock. This database covers that channel. It is not software companies (see IT Companies) or individual engineers.",
       segmentCards: [
-        { icon: Network, title: "System Integrators", description: "SI firms delivering networking, data-centre and security projects." },
+        { icon: Network, title: "System Integrator Firms", description: "SI firms delivering networking, data-centre and security projects." },
         { icon: Router, title: "Networking & Telecom", description: "ISPs, telecom resellers, CCTV and structured-cabling installers." },
-        { icon: Store, title: "Resellers & AMC", description: "Hardware and software resellers and maintenance providers." },
+        { icon: Store, title: "IT Resellers & AMC Providers", description: "Hardware and software resellers and maintenance providers." },
       ],
       segmentTabs: { heading: "Pick the channel type", tabs: [
         T("si", "System Integrators", "Project-based firms for networking, security and data-centre builds.", ["Owner / MD", "Sales Head", "Technical Head", "Pre-Sales"], "OEM partner programmes, distribution, project finance."),

@@ -96,7 +96,7 @@ export default {
       lead: "Professionals holding the Chief Manager title in public sector banks, PSUs, NBFCs and large companies, filtered by organisation type, function and city.",
       segmentSummary: "\"Chief Manager\" is a specific grade, not a generic job title. In public sector banks it is Scale IV, usually heading a large branch or a regional department. In PSUs and large companies it is a senior middle-management band in credit, operations, HR, finance or projects. Chief Managers are stable, well-paid and often decide locally, so they are a distinct audience for personal-finance products and for B2B offers that need a branch-level decision.",
       segmentCards: [
-        { icon: Landmark, title: "Public Sector Banks", description: "Scale IV Chief Managers heading branches and regional departments." },
+        { icon: Landmark, title: "Chief Managers in PSU Banks", description: "Scale IV Chief Managers heading branches and regional departments." },
         { icon: Building2, title: "PSUs & Large Companies", description: "Chief Manager grade in energy, heavy industry and large corporates." },
         { icon: Briefcase, title: "By Function", description: "Credit, operations, HR, finance and projects." },
       ],

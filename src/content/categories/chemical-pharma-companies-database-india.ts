@@ -77,6 +77,7 @@ export default {
       "importers-exporters-database-india",
       "doctors-database",
       "gst-database-india",
+      "gas-petroleum-companies-database-india",
     ],
   },
 } satisfies CategoryContent;
