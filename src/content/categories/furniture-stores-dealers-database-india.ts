@@ -7,7 +7,7 @@ export default {
   keyword: {
     slug: "furniture-stores-dealers-database-india",
     keyword: "furniture stores dealers database India",
-    title: "Furniture Stores & Dealers Database India | Trade Contacts",
+    title: "Furniture Dealers Database India",
     metaDescription: "Find furniture showrooms, dealers and furnishing businesses by location and category. Share your product range and request a relevant trade sample.",
     eyebrow: "Furniture & Furnishing Database",
     showTestimonials: true,

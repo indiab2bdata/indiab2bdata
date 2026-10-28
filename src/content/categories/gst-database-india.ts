@@ -36,7 +36,7 @@ const custom = {
     },
     {
       "text": "GST registration guide",
-      "href": "https://tutorial.gst.gov.in/userguide/registration/Apply_for_Registration_Normal_Taxpayer.htm"
+      "href": "https://www.gst.gov.in/help/registration"
     },
     {
       "text": "Data Sourcing & Compliance",

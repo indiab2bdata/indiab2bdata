@@ -95,7 +95,7 @@ export default {
     {
       slug: "computer-it-telecom-services-database-india",
       name: "IT & Telecom Services Database",
-      title: "IT & Telecom Services Database India | System Integrators, Resellers & ISPs",
+      title: "IT & Telecom Services Database India",
       metaDescription: "IT and telecom services database for India: system integrators, hardware resellers, networking and CCTV installers, ISPs, AMC and cloud resellers by city, with owner contacts. Sample rows on the page.",
       eyebrow: "IT Infrastructure & Channel",
       h1: "IT & Telecom Services Database: Integrators, Resellers & ISPs",

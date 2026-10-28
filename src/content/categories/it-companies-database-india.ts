@@ -169,7 +169,7 @@ export default {
     {
       slug: "it-companies-database-india",
       name: "IT Companies Database",
-      title: "IT Companies Database India | Software, SaaS & IT Services Firms",
+      title: "IT Companies Database India: SaaS & IT",
       metaDescription: "IT companies database for India: software product, SaaS, IT services and GCC companies by size, specialisation and city, with CXO, HR and delivery contacts. Sample rows on the page.",
       eyebrow: "Software & IT Services Firms",
       h1: "IT Companies Database India: Software, SaaS & IT Services",

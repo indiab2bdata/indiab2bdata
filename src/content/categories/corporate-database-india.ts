@@ -64,7 +64,7 @@ export default {
     {
       slug: "corporate-database-india",
       name: "Corporate Database",
-      title: "Corporate Database India | Mid & Large Company Decision-Makers",
+      title: "Corporate Database India by Company Size",
       metaDescription:
         "Discuss a larger-company and department-oriented selection for India. Confirm employee-size criteria, department fields, location coverage and the classification basis against a dated sample.",
       eyebrow: "Mid & Large Corporates",

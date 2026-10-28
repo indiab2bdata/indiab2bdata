@@ -101,7 +101,7 @@ export default {
     {
       slug: "ceo-cfo-cmo-it-heads-database-india",
       name: "CEO, CFO, CMO & IT Heads Database",
-      title: "CEO, CFO, CMO & IT Heads Database India | C-Suite by Function",
+      title: "CEO, CFO & CXO Database India",
       metaDescription: "C-suite database for India: CEOs, CFOs, CMOs, CIOs and CTOs by function, company size and industry, with direct business contacts. Sample rows on the page.",
       eyebrow: "C-Suite by Function",
       h1: "CEO, CFO, CMO & IT Heads Database: India's C-Suite by Function",

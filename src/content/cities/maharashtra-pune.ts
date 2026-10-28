@@ -8,7 +8,7 @@ export default cityContent(
     city: "Pune",
     state: "Maharashtra",
     stateSlug: "maharashtra",
-    title: "Pune Company Database | Hinjewadi IT, Chakan Auto & PCMC Industry Contacts",
+    title: "Pune Company Database: IT & Auto",
     metaDescription:
       "Pune company database: IT and GCC offices in Hinjewadi, Kharadi and Magarpatta, auto and engineering units in Chakan, Bhosari and Pimpri-Chinchwad. Filter by area and preview sample rows on the page.",
     lead:

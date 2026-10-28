@@ -1,4 +1,5 @@
 const PHONE_DIGITS = "918929695846";
+export const WHATSAPP_NUMBER = PHONE_DIGITS;
 
 export const siteConfig = {
   name: "IndiaB2BData.com",
@@ -10,8 +11,8 @@ export const siteConfig = {
   email: "info@indiab2bdata.com",
   phoneDisplay: "+91 89296 95846",
   phoneHref: `tel:+${PHONE_DIGITS}`,
-  whatsappHref: (message: string) =>
-    `https://wa.me/${PHONE_DIGITS}?text=${encodeURIComponent(message)}`,
+  /** Goes through /go/whatsapp (disallowed in robots.ts) so crawlers don't hit wa.me; see app/go/whatsapp/route.ts. */
+  whatsappHref: (message: string) => `/go/whatsapp?text=${encodeURIComponent(message)}`,
   address: {
     street: "T-10, Sai Mandir St, Malad, Navy Colony, Mamledarwadi, Malad West",
     city: "Mumbai",

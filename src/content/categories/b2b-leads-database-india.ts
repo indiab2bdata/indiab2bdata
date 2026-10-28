@@ -64,7 +64,7 @@ export default {
     {
       slug: "b2b-leads-database-india",
       name: "B2B Leads Database",
-      title: "B2B Leads Database India | Contact-Level Outbound Selections",
+      title: "B2B Leads Database India by Role",
       metaDescription:
         "Contact-level B2B selection for outbound teams by industry, role and location. Confirm which contact fields, coverage and file format are available for your brief; public sample rows are fictional.",
       eyebrow: "Campaign-Ready Leads",

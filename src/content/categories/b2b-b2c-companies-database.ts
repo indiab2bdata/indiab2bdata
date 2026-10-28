@@ -9,7 +9,7 @@ export default {
   keyword: {
     slug: "b2b-b2c-companies-database",
     keyword: "Companies by customer model India",
-    title: "B2B / B2C Companies by Customer Model | India",
+    title: "B2B & B2C Companies Database India",
     metaDescription: "Discuss company-level B2B, B2C/D2C and hybrid customer-model selections in India. Confirm the classification method, fields and coverage for your brief.",
     eyebrow: "Companies by Customer Model",
     h1: "B2B / B2C Companies Database: Company Customer Models",

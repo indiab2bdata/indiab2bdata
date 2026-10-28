@@ -81,7 +81,7 @@ export default {
     {
       slug: "company-md-chairman-secretary-database-india",
       name: "MD, Chairman & Company Secretary Database",
-      title: "MD, Chairman & Company Secretary Database India | Board & Statutory Roles",
+      title: "MD & Company Secretary Database India",
       metaDescription: "Database of managing directors, chairpersons, directors and company secretaries of Indian companies, by company type and size. For governance, compliance and board-level services. Sample rows on the page.",
       eyebrow: "Board & Statutory Roles",
       h1: "MD, Chairman & Company Secretary Database India",

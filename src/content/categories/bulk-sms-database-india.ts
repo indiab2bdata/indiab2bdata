@@ -7,7 +7,7 @@ export default {
   keyword: {
     slug: "bulk-sms-database-india",
     keyword: "bulk SMS database India",
-    title: "Bulk SMS Database India | Business Mobile Numbers for DLT Campaigns",
+    title: "Bulk SMS Database India for DLT",
     metaDescription:
       "Discuss business mobile-number selections by location and industry. Confirm available fields, source, current coverage and intended-use requirements before requesting a written quote.",
     eyebrow: "Bulk SMS Database India",

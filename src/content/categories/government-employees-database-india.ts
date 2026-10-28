@@ -184,7 +184,7 @@ export default {
   landing: {
     path: "/government-employees-database-india",
     name: "Government Employees Database",
-    title: "Government Employees Database India | Central, State & PSU Staff",
+    title: "Government Employees Database India",
     metaDescription:
       "Discuss a public-sector employee selection by employer type, department, role or location. Ask which fields and groups are available; the on-page rows are fictional.",
     eyebrow: "Public Sector Audience Data",

@@ -7,7 +7,7 @@ export default {
   keyword: {
     slug: "facebook-users-database-india",
     keyword: "Facebook users database India",
-    title: "Facebook Users Database India | Consumer Audience Enquiries",
+    title: "Facebook Users Database India",
     metaDescription: "Plan a focused consumer campaign with audience requirements by city, age band and interests. Ask about sources, available contact fields and sample options.",
     eyebrow: "Social Media Users Database",
     showTestimonials: true,

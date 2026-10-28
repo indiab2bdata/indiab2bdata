@@ -64,7 +64,7 @@ export default {
     {
       slug: "industry-wise-company-database-india",
       name: "Industry-Wise Company Database",
-      title: "Industry-Wise Company Database India | Company Lists by Sector",
+      title: "Industry-Wise Company Database India",
       metaDescription:
         "Discuss company records by sector and sub-industry. Ask which categories, fields and locations are currently available; the on-page rows are fictional format examples.",
       eyebrow: "Sector-Wise Company Lists",

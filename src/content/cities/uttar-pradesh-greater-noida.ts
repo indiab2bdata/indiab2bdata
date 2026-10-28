@@ -8,7 +8,7 @@ export default cityContent(
     city: "Greater Noida",
     state: "Uttar Pradesh",
     stateSlug: "uttar-pradesh",
-    title: "Greater Noida Company Database | Industrial Areas, Ecotech & Knowledge Park",
+    title: "Greater Noida Company Database",
     metaDescription:
       "Greater Noida company database: manufacturers in Ecotech, Surajpur, Kasna and Site B/C, plus institutions in Knowledge Park and logistics along the Yamuna Expressway. Sample rows on the page.",
     lead:

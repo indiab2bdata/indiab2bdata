@@ -7,7 +7,7 @@ export default {
   keyword: {
     slug: "freelancers-database-india",
     keyword: "freelancers database India",
-    title: "Freelancers Database India | Skill-Based Contact Enquiries",
+    title: "Freelancers Database India by Skill",
     metaDescription: "Find independent professionals for a clear project or business brief. Choose skills, experience and locations, then request a freelancer sample.",
     eyebrow: "Freelancers Database",
     showTestimonials: true,

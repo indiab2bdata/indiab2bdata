@@ -179,7 +179,7 @@ export default {
     {
       slug: "gems-jewellery-shops-database-india",
       name: "Gems & Jewellery Trade Database",
-      title: "Gems & Jewellery Shops Database India | Wholesalers, Gem & Bullion Dealers",
+      title: "Gems & Jewellery Database India",
       metaDescription: "Gems and jewellery trade database for India: jewellery manufacturers, wholesalers, diamond and coloured-gemstone dealers and bullion traders in Surat, Jaipur, Mumbai and Kolkata. Sample rows on the page.",
       eyebrow: "Jewellery Trade & Gems",
       h1: "Gems & Jewellery Trade Database: Wholesalers, Makers & Gem Dealers",

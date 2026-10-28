@@ -169,7 +169,7 @@ export default {
     {
       slug: "it-professionals-database-india",
       name: "IT Professionals Database",
-      title: "IT Professionals Database India | Developers, DevOps, Data & QA by Skill",
+      title: "IT Professionals Database India by Skill",
       metaDescription: "IT professionals database for India: developers, DevOps, data, cloud, QA and IT managers filtered by skill, experience band and city. For hiring, training and dev-tool marketing. Sample rows on the page.",
       eyebrow: "Tech Talent by Skill",
       h1: "IT Professionals Database India: Tech Talent by Skill & City",

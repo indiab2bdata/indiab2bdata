@@ -7,7 +7,7 @@ export default stateContent(
   {
     slug: "haryana",
     name: "Haryana",
-    title: "Haryana Business Database | Gurgaon, Faridabad, Manesar B2B Contacts",
+    title: "Haryana Business Database by City",
     metaDescription:
       "Haryana B2B database: Gurgaon corporate offices and MNCs, Manesar auto suppliers, Faridabad engineering, Panipat textiles and Karnal agri businesses by city and industry.",
     lead:

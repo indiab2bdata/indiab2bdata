@@ -7,7 +7,7 @@ export default stateContent(
   {
     slug: "telangana",
     name: "Telangana",
-    title: "Telangana Business Database | Hyderabad IT, Pharma & B2B Contacts",
+    title: "Telangana Business Database by City",
     metaDescription:
       "Telangana B2B database: Hyderabad IT and GCCs in HITEC City, pharma and bulk-drug makers in Genome Valley and Jeedimetla, and Warangal businesses by city and industry.",
     lead:

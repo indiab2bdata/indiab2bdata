@@ -174,7 +174,7 @@ export default {
     {
       slug: "importers-database-india",
       name: "Importers Database",
-      title: "Importers Database India | Buyers of Imported Goods by Product",
+      title: "Importers Database India by Product",
       metaDescription: "Importers database for India: businesses that import goods, filtered by product category, HS chapter and port city, with owner and purchase contacts. For overseas suppliers, freight and customs services. Sample rows on the page.",
       eyebrow: "Import-Side Buyers",
       h1: "Importers Database India: Who Buys What from Abroad",

@@ -8,7 +8,7 @@ export default cityContent(
     city: "Mumbai",
     state: "Maharashtra",
     stateSlug: "maharashtra",
-    title: "Mumbai Company Database | BKC, Nariman Point, Andheri & Suburban Contacts",
+    title: "Mumbai Company Database by Area",
     metaDescription:
       "Mumbai company database by locality: BFSI in BKC and Nariman Point, media and offices in Andheri and Lower Parel, and wholesale traders in Masjid Bunder. Preview masked sample rows on the page.",
     lead:

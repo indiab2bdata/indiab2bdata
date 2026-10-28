@@ -170,7 +170,7 @@ export default {
     {
       slug: "jewellers-database-india",
       name: "Jewellers Database",
-      title: "Jewellers Database India | Retail Jewellery Showrooms by City",
+      title: "Jewellers Database India by City",
       metaDescription: "Jewellers database for India: retail jewellery showrooms and stores by city, from single-store family jewellers to regional chains, with owner and store-manager contacts. Sample rows on the page.",
       eyebrow: "Retail Jewellery Showrooms",
       h1: "Jewellers Database India: Retail Showrooms by City",

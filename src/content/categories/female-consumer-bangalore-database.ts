@@ -7,7 +7,7 @@ export default {
   keyword: {
     slug: "female-consumer-bangalore-database",
     keyword: "Female Consumer Bangalore Database",
-    title: "Female Consumer Bangalore Database | Local Audience Enquiries",
+    title: "Female Consumer Database Bangalore",
     metaDescription: "Plan a Bangalore women consumer campaign by locality and service area. Share your offer, check available audience fields and request a relevant sample.",
     eyebrow: "Female Consumer Bangalore Database",
     showTestimonials: true,

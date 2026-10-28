@@ -7,7 +7,7 @@ export default {
   keyword: {
     slug: "frequent-flyer-database-india",
     keyword: "frequent flyer database India",
-    title: "Frequent Flyer Database India | Traveller Audience Enquiries",
+    title: "Frequent Flyer Database India",
     metaDescription: "Scope a traveller audience for a relevant travel or hospitality offer. Discuss locations, recorded travel attributes and sample options before ordering.",
     eyebrow: "Frequent Flyer Database",
     showTestimonials: true,

@@ -89,7 +89,7 @@ export default {
     {
       slug: "chief-managers-database-india",
       name: "Chief Managers Database",
-      title: "Chief Managers Database India | Bank, PSU & Corporate Chief Managers",
+      title: "Chief Managers Database India",
       metaDescription: "Chief managers database for India: Chief Managers in public sector banks (Scale IV), PSUs, NBFCs and large companies, by function and city. Sample rows on the page.",
       eyebrow: "Chief Manager Grade",
       h1: "Chief Managers Database India: Banks, PSUs & Large Companies",

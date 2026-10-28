@@ -278,7 +278,7 @@ export default {
     {
       slug: "apparel-garments-exporters-database-india",
       name: "Apparel & Garments Exporters Database",
-      title: "Apparel & Garments Exporters Database India | Tiruppur, Noida, Bengaluru",
+      title: "Garment Exporters Database India",
       metaDescription: "Apparel and garments exporters database for India: knitwear, woven and fashion exporters in Tiruppur, Noida, Gurgaon, Bengaluru, Ludhiana and Jaipur, with owner and merchandising contacts. Sample rows on the page.",
       eyebrow: "Garment Export Houses",
       h1: "Apparel & Garments Exporters Database India",

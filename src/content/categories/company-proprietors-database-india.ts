@@ -82,7 +82,7 @@ export default {
     {
       slug: "company-proprietors-database-india",
       name: "Company Proprietors Database",
-      title: "Company Proprietors Database India | Sole Proprietors & Business Owners",
+      title: "Business Owners Database India",
       metaDescription: "Discuss a sole-proprietor company-record selection by trade and location. Ask which owner, registration and contact fields are available; public sample rows are fictional.",
       eyebrow: "Sole Proprietors",
       h1: "Company Proprietors Database: India's Business Owners",

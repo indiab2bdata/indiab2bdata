@@ -8,7 +8,7 @@ export default cityContent(
     city: "Noida",
     state: "Uttar Pradesh",
     stateSlug: "uttar-pradesh",
-    title: "Noida Company Database | IT, Electronics & Corporate Contacts by Sector",
+    title: "Noida Company Database by Sector",
     metaDescription:
       "Noida company database by sector: IT parks in Sectors 62-63 and 125-136, electronics plants in Phase 2 and Sector 80s, and corporate offices along the Expressway. 5 sample rows on the page.",
     lead:

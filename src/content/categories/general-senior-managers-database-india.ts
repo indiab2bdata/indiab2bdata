@@ -180,7 +180,7 @@ export default {
     {
       slug: "general-senior-managers-database-india",
       name: "General & Senior Managers Database",
-      title: "General & Senior Managers Database India | Operational Heads by Department",
+      title: "Senior Managers Database India",
       metaDescription: "General managers and senior managers database for India: plant, operations, procurement, sales and HR heads at private companies, by department, industry and city. Sample rows on the page.",
       eyebrow: "Operational Heads",
       h1: "General & Senior Managers Database: Operational Heads by Department",

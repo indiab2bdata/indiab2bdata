@@ -7,7 +7,7 @@ export default {
   keyword: {
     slug: "food-beverage-stores-database-india",
     keyword: "food beverage stores database India",
-    title: "Food & Beverage Stores Database India | Retail Store Leads",
+    title: "Food & Beverage Stores Database India",
     metaDescription: "Build a food-retail prospect list by city and store type. Discuss kirana shops, supermarkets, bakeries or beverage outlets and request a relevant sample.",
     eyebrow: "Food & Beverage Stores Database",
     showTestimonials: true,
