@@ -5,7 +5,7 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "landing",
-  updated: "2026-10-23",
+  updated: "2026-10-28",
   keyword: {
     slug: "it-professionals-database-india",
     keyword: "IT Professionals Database India",
@@ -145,7 +145,7 @@ export default {
       },
       {
         question: "How do I request a sample and price?",
-        answer: "Send your roles, specialisations, experience criteria, cities, required fields and approximate quantity. The public CSV is a fictional format preview. Ask our team for matching sample options, available coverage, timing and pricing."
+        answer: "Request a written quote for the agreed selection, locations, fields and volume. Confirm the counting unit, total price and delivery terms before purchase."
       }
     ],
     related: [

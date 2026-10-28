@@ -3,12 +3,12 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "custom",
-  updated: "2026-10-25",
+  updated: "2026-10-28",
   keyword: {
     slug: "medical-representatives-database-india",
     keyword: "Medical Representatives (MR) Database India",
     title: "Medical Representatives Database India",
-    metaDescription: "Medical representatives database India: MRs, area and regional managers by therapy segment, headquarter city and territory. Get a free sample to review.",
+    metaDescription: "Medical representatives database India: MRs, area and regional managers by therapy segment, headquarter city and territory. Ask whether a matching real sample is available. to review.",
     eyebrow: "Medical Representatives (MR) Database",
     h1: "Medical Representatives (MR) Database in India",
     answer: "A medical representatives database organises professional contact records for people working in pharmaceutical field sales. Tell us the MR roles, employer segments and locations you need so we can check available coverage, relevant fields and matching sample options.",
@@ -147,7 +147,7 @@ export default {
       },
       {
         question: "How do I request a matching sample and price?",
-        answer: "Use the enquiry form to send your roles, employer categories, locations, optional segment criteria and approximate quantity. The public download is a fictional format preview. Ask our team for matching sample options, confirmed coverage, delivery timing and a quote."
+        answer: "For medical-representative selections, state the designations, therapy segments, headquarters cities and fields you need. Confirm available filters, the count basis, total price and delivery terms."
       }
     ],
     related: [
@@ -172,7 +172,7 @@ export default {
     name: "Medical Representatives Database",
     title: "Medical Representatives Database India",
     metaDescription:
-      "Medical representatives database India: MRs, area and regional managers by therapy segment, headquarter city and territory. Get a free sample to review.",
+      "Medical representatives database India: MRs, area and regional managers by therapy segment, headquarter city and territory. Ask whether a matching real sample is available. to review.",
     eyebrow: "Pharma Field Force",
     h1: "Medical Representatives Database India by Therapy and HQ City",
     lead:
@@ -245,7 +245,7 @@ export default {
           height: 1000,
         },
       },
-      { type: "cta", text: "Hiring MRs for one therapy area and a few HQ cities? Ask for matching sample records first.", buttonLabel: "Get MR Sample" },
+      { type: "cta", text: "Hiring MRs for one therapy area and a few HQ cities? Ask for matching sample records first.", buttonLabel: "Ask About a Sample" },
       {
         type: "scenario",
         label: "Buyer scenario",
@@ -281,7 +281,7 @@ export default {
           ["Experience band", "Range of years in pharma sales, where recorded", "Shortlist by seniority"],
         ],
       },
-      { type: "sample", heading: "MR Record Format", intro: "Fictional MRs with masked contact details, in the delivered column order. Request real sample rows for your segment and HQ cities." },
+      { type: "sample", heading: "MR Record Format", intro: "Fictional, masked rows illustrate a possible format only. They do not confirm inventory or field availability. Ask whether a matching sample is available for your selection." },
       {
         type: "sourcing",
         heading: "How MR Data Is Sourced",
@@ -290,7 +290,7 @@ export default {
           "MRs are individuals, so their details are personal data under the DPDP Act 2023. Contact them for genuine professional or personal offers, include an opt-out in every message, check numbers on the NCPR registry before calls or SMS and act on refusals immediately. Our B2B data guides and the mobile number database page cover SMS and calling rules.",
         ],
       },
-      { type: "cta", text: "Tell us the designations, therapy segments and HQ cities you need; we'll send sample records and a quote.", buttonLabel: "Request a Free Sample" },
+      { type: "cta", text: "Tell us the designations, therapy segments and HQ cities you need; ask whether a matching sample is available and request a written quote.", buttonLabel: "Ask About a Sample" },
     ],
     faqs: [
       {
@@ -311,7 +311,7 @@ export default {
       },
       {
         question: "How is an MR list priced?",
-        answer: "Price depends on designations, therapy segments, HQ cities, the fields you need and volume. Recruiters ordering one segment in a few cities pay less per record than an all-India pull. Every quote comes with a free sample.",
+        answer: "For medical-representative selections, state the designations, therapy segments, headquarters cities and fields you need. Confirm available filters, the count basis, total price and delivery terms.",
       },
       {
         question: "Can I message MRs on WhatsApp for job openings?",
@@ -332,10 +332,10 @@ export default {
     cta: {
       formTitle: "Get a Free MR Sample",
       formSubtitle: "Tell us the designations, therapy segments, HQ cities and experience band you need.",
-      buttonLabel: "Get MR Sample",
+      buttonLabel: "Ask About a Sample",
       whatsappMessage: "Hi, I need a medical representatives database sample. Segment and HQ cities:",
       footerTitle: "Reach Pharma Field Teams by HQ City",
-      footerText: "Send the designations, therapy segments, HQ cities and fields you need. You'll get matching sample records and a quote.",
+      footerText: "Send the designations, therapy segments, HQ cities and fields you need. Ask whether a matching sample is available and request a written quote.",
     },
     disclaimer:
       "Independent B2B data provider; not affiliated with any pharmaceutical company. For lawful professional outreach only. Any person can request removal at any time.",

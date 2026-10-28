@@ -55,7 +55,7 @@ export function cityLanding(c: CityInput): LandingPage {
     segmentTabs: c.segmentTabs,
     coverageTable: { heading: `${c.city} coverage by area`, segmentLabel: "Area", rows: c.areas.map((a) => ({ segment: a.area, detail: a.detail, records: "{{COUNT}}", fillRate: "{{FILL}}" })) },
     dataFields: CITY_FIELDS,
-    sample: { profile: "business", csvSlug: `${c.slug}-company-database`, city: c.city, state: c.state },
+    sample: { profile: "cityIllustration", csvSlug: `${c.slug}-company-database`, city: c.city, state: c.state },
     useCases: c.useCases,
     buyerFaqs: [
       ...c.faqs,
@@ -66,14 +66,14 @@ export function cityLanding(c: CityInput): LandingPage {
         fields: CITY_FIELDS,
         segments: c.areas.map((a) => a.area),
         segmentLabel: "Area",
-        pricingNote: `A focused ${c.city} locality list costs less per record than a broad metro pull.`,
+        pricingNote: `Ask for a written quote for the requested ${c.city} areas, business types and fields. Confirm availability, counting unit and total before purchase.`,
         notIncluded: `It covers business establishments in ${c.city}, not households or consumers.`,
       }),
     ],
     pricingHint: {
       from: "{{PRICE}}",
       unit: "per record",
-      note: `Priced by area, industry and fields. A focused ${c.city} locality list costs less per record than a broad metro pull.`,
+      note: `Ask for a written quote for the requested ${c.city} areas, business types and fields. Confirm availability, counting unit and total before purchase.`,
     },
     relatedLinks: c.related,
     locationLinks: {
@@ -82,17 +82,17 @@ export function cityLanding(c: CityInput): LandingPage {
     },
     lastUpdated: "2026-10",
     totalRecords: "{{COUNT}}",
-    disclaimer: `Business contact data for lawful B2B outreach in ${c.city}. ${CLAIMS.dndScrubbing ? "Mobile numbers are DND-checked before delivery, and any" : "Any"} business can request removal at any time.`,
+    disclaimer: `The listed city areas describe a selection brief; they do not confirm current inventory. Ask which location, sector and site-type fields are available in a dated sample. ${CLAIMS.dndScrubbing ? "Mobile numbers are DND-checked before delivery, and any" : "Any"} business can request removal at any time.`,
     areaServed: { type: "City", name: c.city },
     image: { src: "/images/keywords/city-skyline.jpg", alt: `Business district in ${c.city}` },
     cta: {
-      formTitle: `Get a Free ${c.city} Data Sample`,
-      formSubtitle: `Name the ${c.city} areas, industries and roles you need. We'll reply with sample rows and a quote.`,
-      buttonLabel: "Get Free Sample",
+      formTitle: `Ask About a ${c.city} Data Sample`,
+      formSubtitle: `Name the ${c.city} areas, industries and roles you need. Ask which fields, sample options and coverage can be confirmed.`,
+      buttonLabel: "Ask About a Sample",
       whatsappMessage: `Hi, I need a ${c.city} company database sample. Areas / industries:`,
       bands: c.bands,
       footerTitle: `Build Your ${c.city} Prospect List`,
-      footerText: `Send the ${c.city} areas, industries, company size and quantity. You'll get matching sample rows, a record count and a quote.`,
+      footerText: `Send the ${c.city} areas, industries, company size and quantity. Ask for available fields, a matching count and written quote.`,
     },
   };
 }

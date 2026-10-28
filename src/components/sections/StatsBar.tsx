@@ -9,7 +9,7 @@ const COPY = LANDING_COPY.stats;
 /** Per-page stats. Placeholder figures are skipped, never shown as fake numbers. */
 export function StatsBar({ page }: { page: LandingPage }) {
   const items = [
-    !isPlaceholder(page.totalRecords) && { value: page.totalRecords, label: COPY.records(page.name) },
+    !isPlaceholder(page.totalRecords) && { value: page.totalRecords, label: COPY.records },
     { value: String(page.coverageTable.rows.length), label: COPY.covered(page.coverageTable.segmentLabel) },
     { value: String(page.dataFields.length), label: COPY.fields },
     CLAIMS.showRefreshDates && { value: monthYear(page.lastUpdated), label: COPY.refreshed },

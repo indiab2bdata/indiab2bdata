@@ -3,13 +3,13 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "keyword",
-  updated: "2026-10-16",
+  updated: "2026-10-28",
   keyword: {
     slug: "car-owners-database",
     keyword: "car owners database India",
     title: "Car Owners Database India | Vehicle Owners",
     metaDescription:
-      "Car owners database for India - vehicle owners by city, car segment and brand. For insurance, auto service, dealerships & finance teams. Free sample.",
+      "Car owners database for India - vehicle owners by city, car segment and brand. For insurance, auto service, dealerships & finance teams. Ask whether a matching real sample is available.",
     eyebrow: "Car Owners Database India",
     h1: "Car Owners Database India - Vehicle Owners by City, Segment and Brand",
     answer:
@@ -22,7 +22,7 @@ export default {
       { icon: Car, title: "Segment & Brand Filters", description: "Hatchback, sedan, SUV and luxury, by brand." },
       { icon: MapPinned, title: "City-Wise Coverage", description: "Metros and tier-2 cities across India." },
       { icon: CalendarClock, title: "Ownership Age", description: "Target new owners or ageing vehicles." },
-      { icon: ShieldCheck, title: "Deduplicated Records", description: "Duplicates removed before delivery." },
+      { icon: ShieldCheck, title: "Deduplicated Records", description: "Confirm the duplicate-handling method for the selected records." },
     ],
     dataFields: [
       "Owner name",
@@ -80,7 +80,7 @@ export default {
       {
         question: "How much does a car owners database cost?",
         answer:
-          "Packages start at ₹2,999 for up to 5,000 records in one city, and ₹8,999 for up to 25,000 records across 5 cities or states. Pan-India or brand-specific lists are custom-quoted.",
+          "Describe any vehicle category or brand and the locations you need. Ask which requested filters are represented and confirm the count basis, total price and delivery terms for that selection.",
       },
       {
         question: "Do I need to check the numbers against DND?",
@@ -88,7 +88,7 @@ export default {
       },
       {
         question: "Can I get a free sample?",
-        answer: "Yes. Every enquiry includes 15–20 free sample records before you place an order.",
+        answer: "Ask whether a real sample for the vehicle-owner segment selection is available. The public CSV is fictional and demonstrates possible layout only; check any supplied rows for required fields and selected coverage.",
       },
     ],
     related: [

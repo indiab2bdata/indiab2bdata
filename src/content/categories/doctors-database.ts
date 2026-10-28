@@ -3,13 +3,13 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "keyword",
-  updated: "2026-10-16",
+  updated: "2026-10-28",
   keyword: {
     slug: "doctors-database",
     keyword: "doctors database India",
     title: "Doctors Database India | Clinics & Hospitals",
     metaDescription:
-      "Doctors database for India - specialists, clinics and hospitals by speciality and city. For pharma, medical device & healthcare marketing. Free sample.",
+      "Doctors database for India - specialists, clinics and hospitals by speciality and city. For pharma, medical device & healthcare marketing. Ask whether a matching real sample is available.",
     eyebrow: "Doctors Database India",
     h1: "Doctors Database India - Specialists, Clinics & Hospitals by City",
     answer:
@@ -23,7 +23,7 @@ export default {
       { icon: Stethoscope, title: "Speciality-Wise Lists", description: "General physicians, specialists, dentists and more." },
       { icon: Building2, title: "Clinics & Hospitals", description: "Practice and institution-level contacts." },
       { icon: MapPinned, title: "City-Level Coverage", description: "Filter doctors by city, state or region." },
-      { icon: ShieldCheck, title: "Business Records", description: "Checked and deduplicated before delivery." },
+      { icon: ShieldCheck, title: "Business Records", description: "The published methodology describes deduplication before delivery; ask which other checks apply to the selected records." },
     ],
     dataFields: [
       "Doctor name and qualification, where available",
@@ -69,7 +69,7 @@ export default {
       {
         question: "How much does a doctors database cost?",
         answer:
-          "Packages start at ₹2,999 for up to 5,000 records in one city, and ₹8,999 for up to 25,000 records across 5 cities or states. Pan-India or multi-speciality lists are custom-quoted.",
+          "Name the medical specialties, institution context and locations relevant to your brief. Ask whether these can be used as filters and have the quote state the count basis, available fields, total price and delivery terms.",
       },
       {
         question: "Does the database include hospitals as well as individual doctors?",
@@ -81,7 +81,7 @@ export default {
       },
       {
         question: "Can I see sample records first?",
-        answer: "Yes. Every enquiry includes 15–20 free sample records before you commit to a package.",
+        answer: "Ask whether a real sample for the doctor-specialty and location selection is available. The public CSV is fictional and demonstrates possible layout only; check any supplied rows for required fields and selected coverage.",
       },
     ],
     related: [

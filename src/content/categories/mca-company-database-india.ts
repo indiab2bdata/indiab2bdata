@@ -320,7 +320,7 @@ const custom = {
   "cta": {
     "formTitle": "Request a MCA Company Data Sample",
     "formSubtitle": "Describe the MCA Company Data selection, locations and fields you need.",
-    "buttonLabel": "Request Free Sample",
+    "buttonLabel": "Ask About a Sample",
     "whatsappMessage": "Hi, I need a MCA Company Data sample. My filters are:",
     "footerTitle": "Plan Your MCA Company Data Selection",
     "footerText": "Send your MCA Company Data criteria and quantity. Ask for a matching sample, dated coverage count, field availability and quote."
@@ -330,7 +330,7 @@ const custom = {
 
 export default {
   template: "custom",
-  updated: "2026-10-26",
+  updated: "2026-10-28",
   keyword: {
   "slug": "mca-company-database-india",
   "keyword": "MCA Company Data",

@@ -3,7 +3,7 @@ import { L } from "@/content/shared/helpers";
 import { stateContent } from "@/content/shared/state-template";
 
 export default stateContent(
-  { updated: "2026-10-22", hubCities: ["Hyderabad", "Secunderabad", "Warangal", "Karimnagar", "Khammam", "Rangareddy", "Medak"], moreCities: 0 },
+  { updated: "2026-10-28", hubCities: ["Hyderabad", "Secunderabad", "Warangal", "Karimnagar", "Khammam", "Rangareddy", "Medak"], moreCities: 0 },
   {
     slug: "telangana",
     name: "Telangana",

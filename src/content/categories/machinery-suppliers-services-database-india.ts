@@ -3,12 +3,12 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "custom",
-  updated: "2026-10-25",
+  updated: "2026-10-28",
   keyword: {
     slug: "machinery-suppliers-services-database-india",
     keyword: "Machinery Suppliers / Services Database India",
     title: "Machinery Suppliers Database India",
-    metaDescription: "Machinery suppliers database India: dealers, machine-tool sellers, spare-part traders and repair firms by machine type and cluster. Get a free sample.",
+    metaDescription: "Machinery suppliers database India: dealers, machine-tool sellers, spare-part traders and repair firms by machine type and cluster. Ask whether a matching real sample is available.",
     eyebrow: "Machinery Suppliers / Services Database",
     h1: "Machinery Suppliers & Services Database in India",
     answer: "A machinery suppliers and services database helps you shortlist equipment sellers, distributors, integrators and servicing businesses. Share the machinery categories, trade roles and locations you need so we can check relevant business coverage, contact fields and sample options.",
@@ -179,7 +179,7 @@ export default {
     name: "Machinery Suppliers Database",
     title: "Machinery Suppliers Database India",
     metaDescription:
-      "Machinery suppliers database India: dealers, machine-tool sellers, spare-part traders and repair firms by machine type and cluster. Get a free sample.",
+      "Machinery suppliers database India: dealers, machine-tool sellers, spare-part traders and repair firms by machine type and cluster. Ask whether a matching real sample is available.",
     eyebrow: "Dealers, Spares & Service Firms",
     h1: "Machinery Suppliers Database India, by Machine Type and Cluster",
     lead:
@@ -295,7 +295,7 @@ export default {
           { title: "Forgetting importers", text: "Many machine-tool sellers import from Taiwan, Japan or Germany. If you sell import services, our importers database covers that angle." },
         ],
       },
-      { type: "sample", heading: "Preview: Machinery Supplier Rows", intro: "Masked placeholder rows in the delivered column order. Request live sample rows for your category and cluster before ordering." },
+      { type: "sample", heading: "Preview: Machinery Supplier Rows", intro: "Fictional, masked rows illustrate a possible format only. They do not confirm inventory or field availability. Ask whether a matching sample is available for your selection." },
       {
         type: "sourcing",
         heading: "Where These Supplier Records Come From",
@@ -304,12 +304,12 @@ export default {
           "Owners' mobiles are personal data under the DPDP Act 2023 even when used for trade. Contact them only about genuine B2B offers, look numbers up on the NCPR (DND) registry before calling, use DLT-registered templates for SMS and stop as soon as someone opts out. Our B2B data guides explain each step.",
         ],
       },
-      { type: "cta", text: "Tell us the machine categories, roles and clusters you need; we'll send matching sample rows and a quote.", buttonLabel: "Request a Free Sample" },
+      { type: "cta", text: "Tell us the machine categories, roles and clusters you need; ask whether a matching sample is available and request a written quote.", buttonLabel: "Ask About a Sample" },
     ],
     faqs: [
       {
         question: "Can I separate machinery dealers from repair and service firms?",
-        answer: "Yes. Every record carries a business role: supplier or dealer, spare-part trader, or service and repair firm. Order one role, or several with the role kept on each row so your team can run different scripts for each group.",
+        answer: "Yes. Ask whether the selected records identify supplier, dealer, spare-part, service or repair roles, and whether those groups can be separated. Confirm the classification method and sample fields before purchase.",
       },
       {
         question: "Does this list include machinery manufacturers?",
@@ -325,7 +325,7 @@ export default {
       },
       {
         question: "How is the price of a machinery supplier list worked out?",
-        answer: "It depends on the categories, roles, cities and fields you choose, and on the volume. A single category in one cluster costs less per record than an all-India mix. Your quote arrives with a record count and a free sample.",
+        answer: "Name the equipment categories, supplier or service roles, clusters and fields you need. Ask which can be represented in the selection and confirm its count basis, total price and terms.",
       },
       {
         question: "Can I use this list for export-agent outreach?",
@@ -346,7 +346,7 @@ export default {
       buttonLabel: "Get Machinery Sample",
       whatsappMessage: "Hi, I need a machinery suppliers database sample. Categories and cities:",
       footerTitle: "Reach Machinery Dealers and Service Firms",
-      footerText: "Send the machine categories, roles, clusters and the fields you need. You'll get matching sample records and a quote.",
+      footerText: "Send the machine categories, roles, clusters and the fields you need. Ask whether a matching sample is available and request a written quote.",
     },
     disclaimer: "Business contact data for lawful B2B outreach to machinery traders and service firms. Any business or person can request removal at any time.",
   },

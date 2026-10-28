@@ -3,13 +3,13 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "keyword",
-  updated: "2026-10-16",
+  updated: "2026-10-28",
   keyword: {
     slug: "digital-photography-studios-database-india",
     keyword: "digital photography studios database India",
     title: "Photography Studios Database India",
     metaDescription:
-      "Digital photography studios database in India - photo studios, wedding photographers, videographers and photo labs with owner contacts, city-wise. Free sample.",
+      "Digital photography studios database in India - photo studios, wedding photographers, videographers and photo labs with owner contacts, city-wise. Ask whether a matching real sample is available.",
     eyebrow: "Photography Studios Database",
     h1: "Digital Photography Studios Database in India",
     answer:
@@ -58,7 +58,7 @@ export default {
       { question: "Can I filter by service?", answer: "Yes, where recorded - for example wedding photography, product photography, video or photo printing." },
       { question: "Can I target studios in small towns?", answer: "Yes. Coverage includes district towns as well as metros, filterable by city and pincode." },
       { question: "Who buys photography studio data?", answer: "Camera brands and dealers, album and printing companies, software vendors and event companies." },
-      { question: "Can I see a sample?", answer: "Yes. Download the sample format on this page or request real sample records." },
+      { question: "Can I see a sample?", answer: "Ask whether a real sample for the photography-studio type and city selection is available. The public CSV is fictional and demonstrates possible layout only; check any supplied rows for required fields and selected coverage." },
     ],
     related: [
       "designers-database-india",

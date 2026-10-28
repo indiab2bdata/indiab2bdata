@@ -5,13 +5,13 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "landing",
-  updated: "2026-10-23",
+  updated: "2026-10-28",
   keyword: {
     slug: "company-md-chairman-secretary-database-india",
     keyword: "company MD, chairman and secretary database India",
     title: "MD, Chairman & Company Secretary Database India",
     metaDescription:
-      "Database of managing directors, chairmen, directors and company secretaries of Indian companies - with company, designation and contact details. Free sample.",
+      "Database of managing directors, chairmen, directors and company secretaries of Indian companies - with company, designation and contact details. Ask whether a matching real sample is available.",
     eyebrow: "Board & Directors Database",
     h1: "Company MD, Chairman & Company Secretary Database in India",
     answer:
@@ -101,7 +101,7 @@ export default {
         ["Managing directors", "Private and public companies"], ["Chairpersons", "Mainly public and listed companies"], ["Company secretaries", "Listed and larger companies"], ["Whole-time directors", "Executive board members"], ["Independent directors", "Listed company boards"],
       ] },
       dataFields: ["Name", "Board / statutory role", "Company name and type", "Company size band, where recorded", "Business phone, where available", "Business email ID", "City, state", "Listed / unlisted flag"],
-      sample: "director",
+      sample: "boardCompanyContacts",
       useCases: [
         { icon: Laptop, title: "Governance & Compliance Software", description: "Sell board portals and compliance tools to company secretaries." },
         { icon: Banknote, title: "Wealth & Private Banking", description: "Reach promoters and MDs with wealth products." },

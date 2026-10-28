@@ -6,20 +6,20 @@ import type { CategoryContent } from "@/types/landing";
 /** Intent: browse and buy by industry taxonomy. */
 export default {
   template: "landing",
-  updated: "2026-10-22",
+  updated: "2026-10-28",
   keyword: {
     slug: "industry-wise-company-database-india",
     keyword: "industry wise company database India",
-    title: "Industry Wise Company Database India | 500+ Sectors",
+    title: "Industry-Wise Company Database India | Selection by Sector",
     metaDescription:
-      "A company database segmented by industry - 500+ sectors across India. Filter by real estate, EdTech, finance, manufacturing, healthcare and more.",
+      "Discuss a company-record selection by sector or sub-industry. Ask which categories and locations are available and request a dated matching count.",
     eyebrow: "Industry Wise Company Database India",
-    h1: "Industry Wise Company Database India - 500+ Sectors Covered",
+    h1: "Industry-Wise Company Database India - Select by Sector",
     answer:
-      "An industry-wise company database segments companies by sector or business category, letting you target one specific industry instead of a generic mixed list. IndiaB2BData.com covers 500+ industry segments, from real estate and EdTech to finance, manufacturing and healthcare.",
+      "An industry-wise company selection groups records by sector or business category. Ask for the current category list, classification basis, available locations and dated count for your brief.",
     intro: [
       "A campaign built for the finance sector rarely works if half the list is manufacturing companies. Industry-wise segmentation means your list is built around one specific sector from the start, not filtered down after the fact.",
-      "We classify companies into 500+ industry categories, so you can pick exactly the sector - or combination of sectors - most relevant to your product or service before a single record is delivered.",
+      "Specify the sector or sub-industry relevant to your product or service. Confirm which categories can be selected, whether multiple labels are available and how the records are classified.",
     ],
     highlights: [
       { icon: Filter, title: "500+ Industry Segments", description: "Fine-grained categories, not broad buckets." },
@@ -66,17 +66,17 @@ export default {
       name: "Industry-Wise Company Database",
       title: "Industry-Wise Company Database India | Company Lists by Sector",
       metaDescription:
-        "Industry-wise company database for India: buy company lists by sector and sub-industry, such as manufacturing, IT, healthcare, real estate, logistics, education and retail. Compare sectors and preview sample rows on the page.",
+        "Discuss company records by sector and sub-industry. Ask which categories, fields and locations are currently available; the on-page rows are fictional format examples.",
       eyebrow: "Sector-Wise Company Lists",
       h1: "Industry-Wise Company Database: Pick Your Sectors",
       lead:
-        "Choose sectors and sub-industries, from auto components to private hospitals to logistics, and get only the companies in them. Mix several industries into one file, each clearly tagged.",
+        "Name the sectors, sub-industries and locations you need. Ask which filters can be applied, whether multiple categories can appear in one file, and how any category labels are defined.",
       segmentSummary:
-        "Many sellers serve a handful of verticals and want nothing outside them. This database is organised around an industry taxonomy, with broad sectors broken into sub-industries, so a packaging supplier can buy food processing and pharma, and an ERP vendor can buy auto components and textiles, each tagged so results can be compared by vertical. If you sell to one specific category, our specialist pages go deeper.",
+        "Industry can be a useful selection dimension when a buyer has a defined market. State the classification names you use, ask how the source maps them, and confirm whether a record can have multiple labels. Specialist pages on this site describe narrower audiences; confirm each page’s fields and coverage separately.",
       segmentCards: [
-        { icon: Layers, title: "Sector + Sub-Industry", description: "Broad sectors broken into specific sub-industries, so you buy textiles processing rather than \"manufacturing\"." },
-        { icon: Filter, title: "Mix Verticals in One File", description: "Combine several industries and keep each one tagged for campaign reporting." },
-        { icon: MapPinned, title: "Sector Clusters by Region", description: "Pair an industry with its hub cities, such as auto in Pune and Chennai or textiles in Surat and Tiruppur." },
+        { icon: Layers, title: "Sector + Sub-Industry", description: "Describe the level of classification you need and ask which categories are available." },
+        { icon: Filter, title: "Multiple Categories", description: "Ask whether categories can be combined and how labels appear in the agreed file." },
+        { icon: MapPinned, title: "Locations by Sector", description: "Name target cities and ask for category-specific coverage and counts." },
       ],
       segmentTabs: {
         heading: "Popular sector combinations",
@@ -109,21 +109,21 @@ export default {
         "Company size band, where recorded",
         "Website, where available",
       ],
-      sample: "business",
+      sample: "industryCompany",
       useCases: [
-        { icon: Layers, title: "Vertical SaaS Go-to-Market", description: "Launch into one or two verticals with a list of every company in them, tagged by sub-industry." },
+        { icon: Layers, title: "Vertical SaaS Go-to-Market", description: "Compare selected verticals using sector and sub-industry fields that can be confirmed in a matching sample." },
         { icon: Package, title: "Industrial Suppliers", description: "Packaging, chemicals and component suppliers can buy only the industries that use their products." },
         { icon: FileSearch, title: "Vertical Comparison", description: "Run the same campaign on three sectors and double down where conversion is best." },
-        { icon: Megaphone, title: "Trade Shows & Associations", description: "Invite every company in a sector to an expo, webinar or association drive." },
+        { icon: Megaphone, title: "Trade Shows & Associations", description: "Build a shortlist for an expo, webinar or association drive using a defined sector brief." },
       ],
       faqs: [
-        { question: "Can you exclude industries I don't serve?", answer: "Yes. Exclusions work like inclusions: name the sectors or sub-industries to leave out, such as trading firms within a manufacturing pull, and they are removed before the count is quoted." },
-        { question: "How many industries can I combine?", answer: "As many as you need. Each record carries its sector and sub-industry tag, so a mixed file can still be split for reporting." },
-        { question: "How do you classify industries?", answer: "Each company is tagged with a broad sector and a specific sub-industry based on its primary business activity. Tell us your own vertical names and we'll map ours to them." },
-        { question: "When should I use a specialist page instead?", answer: "If you sell to a single category, such as manufacturers, IT companies or doctors, the specialist database is deeper and has category-specific fields. Use this page for multi-vertical lists." },
-        { question: "Can I pair industries with cities?", answer: "Yes. Industry and location filters combine, for example auto components in Pune and Chennai, or textiles in Surat, Tiruppur and Ludhiana." },
+        { question: "Can you exclude industries I don't serve?", answer: "Describe the sectors and exclusions in your brief. Ask whether those filters can be applied and request a dated count and sample showing how each company is classified." },
+        { question: "How many industries can I combine?", answer: "List the sectors you want to combine. Confirm the available categories, how the source classifies them, and whether a record can have more than one label." },
+        { question: "How do you classify industries?", answer: "Ask for the classification basis and examples for your selected sectors. If your team uses its own vertical names, confirm any mapping before purchase." },
+        { question: "When should I use a specialist page instead?", answer: "If you need one category, compare the related page’s stated purpose and confirm its fields and coverage. Use this page to describe a multi-category brief, subject to availability." },
+        { question: "Can I pair industries with cities?", answer: "Ask whether the requested industry and locations can be combined, and request a matching count before purchase." },
       ],
-      pricingNote: "Priced by sector, fields and volume. Niche sub-industries can cost more per record than broad sectors.",
+      pricingNote: "Request a written quote for the agreed categories, fields and volume. Confirm the counting unit, total price and delivery terms.",
       related: [
         L("Manufacturer Database", "manufacturer-database-india"),
         L("IT Companies Database", "it-companies-database-india"),
@@ -133,11 +133,11 @@ export default {
         L("Company Database", "company-database-india"),
       ],
       disclaimer: `Company and business-contact data for lawful B2B outreach.${dnd} Any business can request removal at any time.`,
-      formTitle: "Get a Free Industry-Wise Sample",
+      formTitle: "Ask About an Industry-Wise Sample",
       bands: [
-        "Comparing two or three verticals? Ask for a split sample tagged by sector.",
-        "Need a sector in specific hub cities only? We combine industry and location.",
-        "Get a sample for the industries you sell to.",
+        "Comparing several verticals? Ask whether a matching sample is available and how categories would be identified.",
+        "Need a sector in specific cities? Ask whether those filters can be combined and request a dated count.",
+        "Ask whether a sample is available for the industries in your brief.",
       ],
       footerTitle: "Tell Us Which Industries You Sell To",
     },

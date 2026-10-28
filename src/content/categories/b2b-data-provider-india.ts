@@ -3,26 +3,26 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "keyword",
-  updated: "2026-10-16",
+  updated: "2026-10-28",
   keyword: {
     slug: "b2b-data-provider-india",
     keyword: "B2B data provider India",
-    title: "B2B Data Provider India | Compliant Data",
+    title: "B2B Data Provider India | Buyer Checklist",
     metaDescription:
       "Looking for a trusted B2B data provider in India? Compare what to check for - accuracy, compliance, delivery speed - and see why teams choose IndiaB2BData.com.",
     eyebrow: "B2B Data Provider India",
     h1: "B2B Data Provider India - What to Look For, and Why Teams Choose Us",
     answer:
-      "A B2B data provider is a company that compiles, verifies and licenses business contact data for sales and marketing use. When choosing a B2B data provider in India, prioritise accuracy checks, DND/TRAI compliance, industry breadth and delivery speed - IndiaB2BData.com covers all four across 700+ cities.",
+      "A B2B data provider supplies company or contact selections for business use. Compare the source, record date, fields, duplicate handling, sample options and written use terms for the specific selection; this page does not certify a provider or dataset.",
     intro: [
-      "Not every B2B data provider is built the same. Some resell stale, unverified lists; others lock you into large minimum orders before you've even seen a sample. The difference shows up fast once your team starts dialling - either you reach real decision-makers, or you burn hours on dead numbers.",
-      "As a B2B data provider in India, we check and deduplicate records before delivery and let you request a free sample before you commit to a package - so you can judge quality before you pay.",
+      "Before selecting a B2B data provider, ask what the records describe, which fields are available, what checks were applied and when, how duplicates are handled, and how the price and delivery unit are defined. A sample can help assess format and a limited set of rows, but it does not prove the quality of an entire dataset.",
+      "For any proposed B2B selection, request the source information, field list, dated count, duplicate-handling description and written delivery terms before deciding.",
     ],
     highlights: [
-      { icon: BadgeCheck, title: "Accuracy Checks", description: "Every record checked and deduplicated before delivery." },
-      { icon: ShieldCheck, title: "Compliance-Conscious", description: "Supplied for lawful B2B use, with DND/TRAI guidance for buyers." },
-      { icon: Sparkles, title: "Sample Before You Buy", description: "15–20 free sample records on every enquiry." },
-      { icon: Users, title: "Dedicated Support", description: "A real team to help you scope the right filters." },
+      { icon: BadgeCheck, title: "Checks to Ask About", description: "Confirm which checks were applied, to which fields and on what date." },
+      { icon: ShieldCheck, title: "Use Terms", description: "Review the stated source, permitted purpose and channel-specific requirements." },
+      { icon: Sparkles, title: "Sample Options", description: "Ask whether a matching sample is available; the public CSV is fictional." },
+      { icon: Users, title: "Define Your Brief", description: "Describe the audience, locations, fields and file format you need." },
     ],
     useCases: [
       "Evaluating providers before switching from an existing data source",
@@ -34,21 +34,21 @@ export default {
       {
         question: "What should I check before picking a B2B data provider?",
         answer:
-          "Ask for a free sample, confirm how recently the data was verified, check DND/compliance practices, and clarify delivery format and turnaround time before paying.",
+          "Ask whether a matching sample is available. Confirm its scope, the source and date of the selected data, relevant use terms, file format and delivery terms before purchase.",
       },
       {
         question: "Is IndiaB2BData.com's data compliant to use?",
         answer:
-          "Yes - data is sourced from publicly available and permission-based channels, and DND numbers are scrubbed before delivery.",
+          "This page does not make a dataset-specific sourcing or DND-screening claim. Request the source information and ask which communication checks, if any, apply to the selected records.",
       },
       {
         question: "In what format is the data delivered?",
-        answer: "As a clean Excel (.xlsx) or CSV file, sent over email or WhatsApp, ready for your CRM or dialer.",
+        answer: "Ask which file format and delivery method are available for your selection, and confirm field order before purchase.",
       },
       {
         question: "Can I request a custom filter combination?",
         answer:
-          "Yes - tell us the city, industry, turnover band or designation you need and we'll build a custom list for you.",
+          "State the cities, industries, turnover bands or roles you need. Ask which filters can be supported and confirm the matching count in writing.",
       },
     ],
   },

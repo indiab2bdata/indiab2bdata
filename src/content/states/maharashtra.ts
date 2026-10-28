@@ -3,7 +3,7 @@ import { L } from "@/content/shared/helpers";
 import { stateContent } from "@/content/shared/state-template";
 
 export default stateContent(
-  { updated: "2026-10-26", hubCities: ["Mumbai", "Pune", "Nagpur", "Nashik", "Thane", "Navi Mumbai", "Aurangabad", "Kolhapur", "Solapur", "Amravati"], moreCities: 15 },
+  { updated: "2026-10-28", hubCities: ["Mumbai", "Pune", "Nagpur", "Nashik", "Thane", "Navi Mumbai", "Aurangabad", "Kolhapur", "Solapur", "Amravati"], moreCities: 15 },
   {
     slug: "maharashtra",
     authoredFaqsOnly: true,

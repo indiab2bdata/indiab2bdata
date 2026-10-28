@@ -3,12 +3,12 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "custom",
-  updated: "2026-10-25",
+  updated: "2026-10-28",
   keyword: {
     slug: "media-planning-companies-database-india",
     keyword: "Media Planning Companies Database India",
     title: "Media Planning Companies Database India",
-    metaDescription: "Media planning companies database India: media, digital, OOH and regional ad agencies with planners and buying heads by city. Ask for a free sample.",
+    metaDescription: "Media planning companies database India: media, digital, OOH and regional ad agencies with planners and buying heads by city. Ask whether a matching real sample is available.",
     eyebrow: "Media Planning Companies Database",
     h1: "Media Planning Companies Database in India",
     answer: "A media planning companies database helps you shortlist agencies and businesses offering campaign planning, channel selection and media-buying coordination. Share the agency types, services, locations and contact roles relevant to your offer so we can check matching coverage and sample options.",
@@ -173,7 +173,7 @@ export default {
     name: "Media Planning Companies Database",
     title: "Media Planning Companies Database India",
     metaDescription:
-      "Media planning companies database India: media, digital, OOH and regional ad agencies with planners and buying heads by city. Ask for a free sample.",
+      "Media planning companies database India: media, digital, OOH and regional ad agencies with planners and buying heads by city. Ask whether a matching real sample is available.",
     eyebrow: "Agencies That Plan and Buy Media",
     h1: "Media Planning Companies Database India for Publishers and Ad Sellers",
     lead:
@@ -291,7 +291,7 @@ export default {
           { title: "Ignoring creative partners", text: "Many campaigns also hire designers and event firms. Our graphic designers database and event management companies database reach them." },
         ],
       },
-      { type: "sample", heading: "Agency Record Preview", intro: "Masked placeholder agencies in the delivered column order. Your free sample shows real agencies for the cities and types you pick." },
+      { type: "sample", heading: "Agency Record Preview", intro: "Fictional, masked rows illustrate a possible format only. They do not confirm inventory or field availability. Ask whether a matching sample is available for your selection." },
       {
         type: "sourcing",
         heading: "How Agency Data Is Compiled",
@@ -300,7 +300,7 @@ export default {
           "Planners' work emails and mobiles are personal data under the DPDP Act 2023. Use them for relevant business offers only, include an unsubscribe line in each email, check mobiles on the NCPR registry before calling and honour opt-outs at once. For wider campaigns our email database and the entertainment and media database cover adjacent audiences.",
         ],
       },
-      { type: "cta", text: "Send the agency types and cities you sell to; we'll reply with matching sample agencies and a quote.", buttonLabel: "Request a Free Sample" },
+      { type: "cta", text: "Send the agency types and cities you sell to; ask whether a matching sample is available and request a written quote.", buttonLabel: "Ask About a Sample" },
     ],
     faqs: [
       {
@@ -321,7 +321,7 @@ export default {
       },
       {
         question: "How do you price an agency list?",
-        answer: "Price depends on agency types, cities, the number of contacts per agency and the fields you need. A single city and type costs less per record than a national mix. You get a record count and a free sample with the quote.",
+        answer: "Describe the agency types, cities and contact roles you need. Ask which fields and agency-level counts can be supplied and confirm the total price and delivery terms in writing.",
       },
       {
         question: "Can I use this list for an industry event invitation?",
@@ -341,7 +341,7 @@ export default {
       buttonLabel: "Get Agency Sample",
       whatsappMessage: "Hi, I need a media planning companies database sample. Agency types and cities:",
       footerTitle: "Get Your Inventory Into Media Plans",
-      footerText: "Send the agency types, cities and contacts you need. You'll get matching sample agencies and a quote.",
+      footerText: "Send the agency types, cities and contacts you need. Ask whether a matching sample is available and request a written quote.",
     },
     disclaimer: "Business contact data for lawful B2B outreach to media and advertising agencies. Any business or person can request removal at any time.",
   },

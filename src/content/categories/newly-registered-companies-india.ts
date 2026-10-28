@@ -6,26 +6,26 @@ import type { CategoryContent } from "@/types/landing";
 /** Intent: recent incorporations as a recurring feed. */
 export default {
   template: "landing",
-  updated: "2026-10-22",
+  updated: "2026-10-28",
   keyword: {
     slug: "newly-registered-companies-india",
     keyword: "newly registered companies India",
-    title: "Newly Registered Companies India | New Company Leads",
+    title: "Newly Registered Company Records India",
     metaDescription:
-      "A feed of newly registered and recently incorporated companies across India - ideal for reaching new businesses before your competitors do.",
+      "Company-record selection by incorporation date, company type and requested location. Ask for the source, extract date, matching count and contact fields for your brief.",
     eyebrow: "Newly Registered Companies India",
-    h1: "Newly Registered Companies India - Reach New Businesses First",
+    h1: "Newly Registered Company Records in India",
     answer:
-      "Newly registered companies are businesses that have recently completed GST or Companies Act incorporation and are actively setting up operations - often needing banking, insurance, office setup, compliance and other B2B services. IndiaB2BData.com tracks recently registered companies across India so you can reach them early.",
+      "A newly registered company selection groups company records by an incorporation-date window. A registration date does not establish that a company is actively buying or that contact fields are available; confirm source, date range and fields for the requested selection.",
     intro: [
-      "The first few months after a company registers are when it's actively buying - setting up banking, insurance, office infrastructure, software and compliance services. Reaching a business at this stage, before competitors do, is a real edge for B2B vendors selling into that window.",
-      "Rather than a static, full-market list, this feed is built around freshness - recently incorporated companies, updated regularly, so you're consistently reaching businesses early in their setup phase.",
+      "Incorporation date can be one way to define a company-record selection for providers of accounting, banking, software, workspace or compliance services. It does not show purchase intent or establish that a company is actively setting up with a particular vendor.",
+      "State the date window, company types and locations you need. Before purchase, confirm the source, extract date, matching count, contact fields and whether any recurring delivery is actually available.",
     ],
     highlights: [
-      { icon: CalendarClock, title: "Recently Incorporated", description: "Companies registered within a recent window." },
-      { icon: Sparkles, title: "Early-Stage Reach", description: "Contact businesses before competitors do." },
-      { icon: TrendingUp, title: "High Buying Intent", description: "New companies actively setting up operations." },
-      { icon: Zap, title: "Regularly Updated Feed", description: "A rolling feed, not a one-time static list." },
+      { icon: CalendarClock, title: "Date Window", description: "Ask which incorporation periods can be supported." },
+      { icon: Sparkles, title: "Company Types", description: "Specify the legal forms relevant to your brief." },
+      { icon: TrendingUp, title: "Source & Snapshot", description: "Confirm the source and extract date before purchase." },
+      { icon: Zap, title: "Recurring Options", description: "Ask whether ongoing snapshots are available and on what terms." },
     ],
     useCases: [
       "Selling banking, insurance or compliance services to new businesses",
@@ -44,7 +44,7 @@ export default {
       },
       {
         question: "Can I filter new companies by city or industry?",
-        answer: "Yes, city, state and industry filters can all be applied to the new-registrations feed.",
+        answer: "Ask which location and industry filters are available for the selected date range, and confirm the matching count before purchase.",
       },
       {
         question: "Why do businesses target newly registered companies specifically?",
@@ -64,22 +64,22 @@ export default {
     {
       slug: "newly-registered-companies-india",
       name: "Newly Registered Companies Database",
-      title: "Newly Registered Companies India | Weekly & Monthly New Company Lists",
+      title: "Newly Registered Company Records by Date | India",
       metaDescription:
-        "Newly registered companies in India, delivered as a weekly or monthly feed: CIN, incorporation date, company type, ROC, directors and contacts. Reach new companies in their first weeks. Sample rows on the page.",
+        "Discuss a company-record selection by incorporation date, legal form and location. Ask for the source, snapshot date, matching count and available fields; the on-page rows are fictional.",
       eyebrow: "New Incorporations",
-      h1: "Newly Registered Companies in India: Reach Them in Week One",
+      h1: "Newly Registered Company Records: Define a Date Range",
       lead:
-        "Get companies incorporated in the last few weeks, with CIN, incorporation date, ROC, directors and contacts. Buy it once, or subscribe to a weekly or monthly feed of new registrations.",
+        "Describe the incorporation-date range, company types and locations you need. Confirm the source, extract date, matching count and available contact fields. Ask separately whether a recurring feed is available and what terms apply.",
       segmentSummary:
-        "A new company needs almost everything in its first 90 days: a bank account, an accountant, an auditor, office space, a website, insurance, software and a trademark. The founders are making those decisions now and haven't picked vendors yet. This database tracks fresh incorporations and delivers them while that window is open, so you are early instead of competing with every other vendor a year later.",
+        "A recent incorporation date may be useful when a buyer has a defined business reason to contact newly formed companies. It does not establish purchasing activity, decision-maker access or a supplier relationship. Confirm the date basis, legal forms, contact fields and source for the specific selection.",
       segmentCards: [
-        { icon: CalendarPlus, title: "Fresh Incorporations", description: "Companies and LLPs incorporated in the last weeks, filtered by incorporation date." },
-        { icon: Users, title: "Founders & Directors", description: "Director names with contact details, so you reach the people setting up the business." },
-        { icon: Truck, title: "Recurring Feed", description: "Weekly or monthly delivery of the latest registrations for your states and company types." },
+        { icon: CalendarPlus, title: "Date Selection", description: "Ask which incorporation-date windows and company types can be supported." },
+        { icon: Users, title: "Contact Fields", description: "Confirm whether director or company contact fields are available for the chosen records." },
+        { icon: Truck, title: "Recurring Delivery", description: "Ask whether ongoing snapshots are available, with frequency and terms confirmed in writing." },
       ],
       segmentTabs: {
-        heading: "What new companies buy, and when",
+        heading: "Date windows to define in your brief",
         tabs: [
           { id: "w1", label: "First 30 Days", summary: "Bank account, GST registration, the commencement-of-business filing and the first auditor appointment.", examples: ["Current account","GST registration","Auditor appointment","Registered office"], bestFor: "Banks, CA and CS firms, co-working spaces." },
           { id: "w2", label: "Days 30-90", summary: "Setting up operations: website and domain, accounting software, payroll for the first hires and business insurance.", examples: ["Website & domain","Accounting software","Payroll setup","Insurance"], bestFor: "Web agencies, SaaS, insurers, HR services." },
@@ -115,12 +115,12 @@ export default {
         { icon: ShieldCheck, title: "Business Insurance", description: "Introduce group health, liability and key-person cover as the first employees join." },
       ],
       faqs: [
-        { question: "How recent are the companies?", answer: "Choose your window: the last 7, 30 or 90 days, or the first year. Subscribers get each week's or month's new registrations as they are published." },
-        { question: "Can I subscribe to a recurring feed?", answer: "Yes. Pick your states, company types and frequency, and you receive only the new incorporations since your last delivery, with no repeats." },
-        { question: "Do new companies have phone numbers and emails?", answer: "Contact fields are taken from filings and enriched where possible. Coverage is lower in the first days after incorporation and improves over the following weeks. The quote shows the fill rate." },
-        { question: "Are LLPs and OPCs included?", answer: "Yes. Private limited companies, OPCs and LLPs are covered, and you can include or exclude each type." },
+        { question: "What incorporation date range can I request?", answer: "State the date window in your brief. Confirm the snapshot date, source and matching count for that range before purchase." },
+        { question: "Can I request recurring updates?", answer: "Ask whether a recurring feed is available for your chosen states and company types. Confirm frequency, snapshot basis, duplicate handling and price in writing." },
+        { question: "Are phone numbers and emails available for new companies?", answer: "Ask which contact fields are available for the selected date range and request a sample and dated field counts. Do not assume that incorporation records contain contact details." },
+        { question: "Are LLPs and OPCs included?", answer: "Specify whether you need private limited companies, OPCs or LLPs. Confirm which types are present in the selected extract before purchase." },
       ],
-      pricingNote: "One-off lists are priced per record. Weekly or monthly feeds are priced as a subscription by state and volume.",
+      pricingNote: "Request a written quote for the date range, states, company types and fields. Confirm any recurring-feed terms, counting unit and total price.",
       related: [
         L("MCA Company Database", "mca-company-database-india"),
         L("GST Database", "gst-database-india"),
@@ -129,14 +129,14 @@ export default {
         L("Company Proprietors Database", "company-proprietors-database-india"),
         L("Commercial & Residential Properties Database", "commercial-residential-properties-database-india"),
       ],
-      disclaimer: `Incorporation details come from public MCA filings and are enriched with business contacts. Not affiliated with the Ministry of Corporate Affairs.${dnd}`,
-      formTitle: "Get This Week's New Companies",
+      disclaimer: `Request the source and extract date for the selected records; this page does not establish availability of any particular contact field. IndiaB2BData.com is not affiliated with the Ministry of Corporate Affairs.${dnd}`,
+      formTitle: "Discuss New Company Records",
       bands: [
-        "Want new incorporations every week for your states? Ask about a recurring feed.",
+        "Need a particular incorporation window or state? Ask about availability and request a dated count.",
         "Only private limited companies, or LLPs too? Pick your types and window.",
-        "Get a sample of the latest registrations.",
+        "Ask whether a matching sample is available; the public preview is fictional.",
       ],
-      footerTitle: "Reach New Companies Before Your Competitors",
+      footerTitle: "Discuss a Date-Based Company Selection",
     },
     { subjects: "newly registered company", kind: "business" }
   ),

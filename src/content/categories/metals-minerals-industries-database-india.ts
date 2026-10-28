@@ -3,12 +3,12 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "custom",
-  updated: "2026-10-26",
+  updated: "2026-10-28",
   keyword: {
     slug: "metals-minerals-industries-database-india",
     keyword: "Metals / Minerals Industries Database India",
     title: "Metals and Minerals Database India",
-    metaDescription: "Metals and minerals database India: steel, aluminium, copper, scrap and mining businesses by product, activity and cluster, with contacts. Free sample.",
+    metaDescription: "Metals and minerals database India: steel, aluminium, copper, scrap and mining businesses by product, activity and cluster, with contacts. Ask whether a matching real sample is available.",
     eyebrow: "Metals / Minerals Industries Database",
     h1: "Metals & Minerals Industries Database in India",
     answer: "A metals and minerals industries database helps you shortlist businesses involved in metal production, processing, mineral supply and related trading. Define the materials, business activities, locations and contact roles relevant to your offer, then review available coverage and a matching sample.",
@@ -176,7 +176,7 @@ export default {
     name: "Metals & Minerals Database",
     title: "Metals and Minerals Database India",
     metaDescription:
-      "Metals and minerals database India: steel, aluminium, copper, scrap and mining businesses by product, activity and cluster, with contacts. Free sample.",
+      "Metals and minerals database India: steel, aluminium, copper, scrap and mining businesses by product, activity and cluster, with contacts. Ask whether a matching real sample is available.",
     eyebrow: "Ferrous, Non-Ferrous & Mining",
     h1: "Metals and Minerals Database India by Material and Cluster",
     lead:
@@ -201,7 +201,7 @@ export default {
       {
         type: "table",
         heading: "Material Segments in the Database",
-        intro: "Every record names the material a business works with, so a copper-wire maker never lands in a steel-rerolling campaign.",
+        intro: "Ask whether material or business-activity fields are available and how the source classifies companies. Do not assume a category label prevents mismatches.",
         columns: ["Segment", "Typical businesses", "Common products"],
         rows: [
           ["Iron and steel", "Integrated plants, mini mills, re-rollers, pipe and tube makers", "Billets, TMT bars, sheets, structurals"],
@@ -304,12 +304,12 @@ export default {
           "Owners' and managers' mobiles are personal data under the DPDP Act 2023 even in a trade context. Use them for business offers only, look numbers up on the NCPR registry before calling, use DLT-registered templates for SMS and respect opt-outs. For moving material, the logistics companies database lists transporters on metal corridors.",
         ],
       },
-      { type: "cta", text: "Tell us the materials, activities and clusters you need; we'll reply with sample rows and a quote.", buttonLabel: "Request a Free Sample" },
+      { type: "cta", text: "Tell us the materials, activities and clusters you need; ask whether a matching sample is available and request a written quote.", buttonLabel: "Ask About a Sample" },
     ],
     faqs: [
       {
         question: "Can I order only scrap dealers and recyclers?",
-        answer: "Yes. Business activity is recorded for every record, so you can order recyclers and scrap dealers alone, or combine them with traders. Material is also recorded, so ferrous and non-ferrous scrap can be separated.",
+        answer: "Ask whether business activity and material fields are recorded for the selected records, how they are classified, and whether those groups can be filtered or separated. Request a matching sample and dated count.",
       },
       {
         question: "Does the list show production capacity?",
@@ -325,7 +325,7 @@ export default {
       },
       {
         question: "How is a metals and minerals list priced?",
-        answer: "Price depends on segments, activities, clusters and fields. A single material in one cluster costs less per record than an all-India pull. Every quote includes a record count and a free sample of matching rows.",
+        answer: "Specify the materials, business activities and clusters relevant to your request. Ask which fields and locations can be supported, then confirm the count basis, total price and delivery terms.",
       },
       {
         question: "Can traders use this to find new suppliers?",
@@ -346,7 +346,7 @@ export default {
       buttonLabel: "Get Metals Sample",
       whatsappMessage: "Hi, I need a metals and minerals database sample. Materials and cities:",
       footerTitle: "Reach Metal Plants, Traders and Recyclers",
-      footerText: "Send the materials, activities, clusters and fields you need. You'll get matching sample records and a quote.",
+      footerText: "Send the materials, activities, clusters and fields you need. Ask whether a matching sample is available and request a written quote.",
     },
     disclaimer: "Business contact data for lawful B2B outreach to metal and mining businesses. Any business or person can request removal at any time.",
   },

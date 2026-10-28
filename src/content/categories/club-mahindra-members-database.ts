@@ -3,7 +3,7 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "keyword",
-  updated: "2026-10-16",
+  updated: "2026-10-28",
   keyword: {
     slug: "club-mahindra-members-database",
     keyword: "Club Mahindra members database",
@@ -61,7 +61,7 @@ export default {
       { question: "Where does this data come from?", answer: "From publicly available and permission-based sources. We do not hold or sell any company's internal customer records." },
       { question: "Can I target a specific city?", answer: "Yes. Holiday membership audience data can be filtered by city and state." },
       { question: "Who uses holiday membership audience data?", answer: "Travel, luxury, premium real estate, insurance and wealth management brands." },
-      { question: "Can I see a sample?", answer: "Yes. Download the sample format on this page or request sample records." },
+      { question: "Can I see a sample?", answer: "Ask whether a real sample for the Club Mahindra member audience selection is available. The public CSV is fictional and demonstrates possible layout only; check any supplied rows for required fields and selected coverage." },
     ],
     related: [
       "car-owners-database",

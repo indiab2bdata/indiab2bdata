@@ -3,7 +3,7 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "keyword",
-  updated: "2026-10-16",
+  updated: "2026-10-28",
   keyword: {
     slug: "energy-power-sector-database-delhi-ncr",
     keyword: "energy and power sector database Delhi NCR",
@@ -68,7 +68,7 @@ export default {
       { question: "Does it include solar companies?", answer: "Yes. Solar EPC firms, rooftop installers, developers and solar equipment dealers are a dedicated segment." },
       { question: "Can I get procurement contacts?", answer: "Where available, records include directors, project heads, procurement managers and engineers." },
       { question: "Can I filter by segment?", answer: "Yes. You can choose generation, transmission, distribution, renewables, EPC, equipment or consultants." },
-      { question: "Can I see a sample?", answer: "Yes. Download the sample format on this page or request real sample records." },
+      { question: "Can I see a sample?", answer: "Ask whether a real sample for the energy or power-sector audience in Delhi NCR selection is available. The public CSV is fictional and demonstrates possible layout only; check any supplied rows for required fields and selected coverage." },
     ],
     related: [
       "engineers-service-engineers-database-india",

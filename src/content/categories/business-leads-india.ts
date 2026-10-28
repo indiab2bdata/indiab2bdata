@@ -3,25 +3,25 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "keyword",
-  updated: "2026-10-16",
+  updated: "2026-10-28",
   keyword: {
     slug: "business-leads-india",
     keyword: "business leads India",
-    title: "Business Leads India | Sales-Ready Contacts",
+    title: "Business Leads India | Contact-Level Selections",
     metaDescription:
-      "Get sales-ready business leads across India, matched to your target industry, city and company profile. Business contacts, delivered fast.",
+      "Discuss business-contact selections by industry, location and company profile. Confirm available fields, coverage, sample options and delivery terms for your brief.",
     eyebrow: "Business Leads India",
-    h1: "Business Leads India - Sales-Ready Contacts for Your Pipeline",
+    h1: "Business Leads India - Contact-Level Records for Outreach",
     answer:
-      "Business leads are contact records matched to a specific target profile - industry, city, company size - and intended to go straight into a sales pipeline rather than serve as a generic reference list. IndiaB2BData.com builds business leads to your ideal customer profile, checked and deduplicated before delivery.",
+      "Business leads are contact records requested around a target profile, such as industry, location or company size. A contact record does not establish buying intent. Ask which filters and contact fields are available, and which checks and duplicate-handling steps apply to the selected data.",
     intro: [
-      "A lead is different from a generic contact - it's meant to be dialled or messaged today, not stored as reference data. That means accuracy and relevance matter more than raw volume.",
-      "We build business leads against your specific ideal customer profile - industry, city, company size, designation - so what lands in your CRM is ready for outreach, not a list that still needs heavy filtering.",
+      "A business-lead selection is intended for outbound planning. It describes contact data, not an enquiry or a signal that the person is currently buying. Confirm the source, field availability and record date before using it.",
+      "Describe your ideal customer profile, including industry, location, company size or role. Ask which filters can be supported and confirm the available fields and format in writing.",
     ],
     highlights: [
-      { icon: Target, title: "Matched to Your ICP", description: "Built around your ideal customer profile." },
-      { icon: TrendingUp, title: "Sales-Ready", description: "Meant for immediate outreach, not just reference." },
-      { icon: ShieldCheck, title: "Checked & Deduplicated", description: "Reduces wasted calls on duplicate or invalid numbers." },
+      { icon: Target, title: "Brief Your ICP", description: "Specify the audience and confirm available filters." },
+      { icon: TrendingUp, title: "Contact-Level", description: "A contact record is not evidence of interest or intent." },
+      { icon: ShieldCheck, title: "Checks to Confirm", description: "The published methodology says checks vary by dataset; ask which apply here." },
       { icon: Zap, title: "Fast Turnaround", description: "Delivery timeline confirmed in your quote." },
     ],
     useCases: [
@@ -37,15 +37,15 @@ export default {
       },
       {
         question: "Can I define my ideal customer profile for the leads?",
-        answer: "Yes - tell us industry, city, company size or designation and we'll build leads matching that profile.",
+        answer: "State the industry, location, company size or role you need. Ask which filters are available and request a dated count.",
       },
       {
         question: "Are the leads verified before delivery?",
-        answer: "Yes, every lead list is checked and deduplicated before it reaches you. Check numbers against the DND registry before promotional calls or messages.",
+        answer: "The published methodology describes deduplication and removal of invalid number formats before delivery; other checks vary by dataset and do not establish that every field is current. Ask which checks and dates apply to your selection.",
       },
       {
         question: "Can I get a sample of leads before ordering in bulk?",
-        answer: "Yes, every enquiry includes 15–20 free sample records to check quality first.",
+        answer: "The CSV download is a fictional format preview. Ask whether a matching real sample is available for your selection, and confirm its fields and coverage.",
       },
     ],
   },

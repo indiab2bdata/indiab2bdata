@@ -3,13 +3,13 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "keyword",
-  updated: "2026-10-16",
+  updated: "2026-10-28",
   keyword: {
     slug: "engineers-service-engineers-database-india",
     keyword: "engineers and service engineers database India",
     title: "Engineers & Service Engineers Database",
     metaDescription:
-      "Engineers and service engineers database in India - mechanical, electrical, electronics, HVAC and field service engineers by skill, experience and city. Free sample.",
+      "Engineers and service engineers database in India - mechanical, electrical, electronics, HVAC and field service engineers by skill, experience and city. Ask whether a matching real sample is available.",
     eyebrow: "Engineers Database",
     h1: "Engineers & Service Engineers Database in India",
     answer:
@@ -77,7 +77,7 @@ export default {
       { question: "Can I filter by discipline?", answer: "Yes. Records can be filtered by discipline, such as mechanical, electrical, electronics, HVAC or IT hardware." },
       { question: "Can I target experienced engineers only?", answer: "Yes, where experience is recorded - for example 5+ or 10+ years." },
       { question: "Who buys engineer data?", answer: "Recruiters, tool and equipment suppliers, training institutes, field-service software companies and OEMs." },
-      { question: "Can I see a sample?", answer: "Yes. Download the sample format on this page or request real sample records." },
+      { question: "Can I see a sample?", answer: "Ask whether a real sample for the engineering or service-engineer role selection is available. The public CSV is fictional and demonstrates possible layout only; check any supplied rows for required fields and selected coverage." },
     ],
     related: [
       "civil-engineers-database-india",

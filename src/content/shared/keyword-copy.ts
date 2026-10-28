@@ -3,22 +3,18 @@
  * Page-specific copy lives in each content/categories file's `keyword` object.
  */
 export const KEYWORD_COPY = {
-  /** Site-wide figures already stated on the homepage and About page. */
-  stats: [
-    { value: "50L+", label: "Business Records" },
-    { value: "700+", label: "Cities Covered" },
-    { value: "Free", label: "Sample Before You Buy" },
-  ],
+  /** Site-wide inventory figures are omitted unless supported by current evidence. */
+  stats: [],
   overview: {
     eyebrow: "Overview",
     title: (product: string) => `What You Get with Our ${product}`,
   },
   record: {
-    cardTitle: "What's inside every record",
+    cardTitle: "Fields to discuss for this selection",
     tiles: [
-      ["Excel / CSV", "CRM-ready"],
-      ["Custom", "Filters & fields"],
-      ["Free", "Sample first"],
+      ["Format", "Confirm in quote"],
+      ["Fields", "Confirm availability"],
+      ["Preview", "Fictional rows"],
     ],
   },
   why: {
@@ -39,7 +35,7 @@ export const KEYWORD_COPY = {
     whatsapp: (keyword: string) => `Hi, I would like to discuss the ${keyword}. Please help me check coverage and sample options.`,
     heroTitle: (product: string) => `Get Your ${product}`,
     footerTitle: (product: string) => `Ready to Get Your ${product}?`,
-    footerText: "Share your target audience, location and quantity - we'll send free sample records and a custom quote.",
+    footerText: "Share your target audience, location and quantity. Ask which sample options and fields can be confirmed, and request a written quote.",
   },
   faq: {
     eyebrow: "FAQs",

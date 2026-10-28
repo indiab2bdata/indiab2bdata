@@ -3,7 +3,7 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "keyword",
-  updated: "2026-10-18",
+  updated: "2026-10-28",
   keyword: {
     slug: "legal-firms-database-india",
     keyword: "Legal Firms Database India",
@@ -143,7 +143,7 @@ export default {
       },
       {
         question: "How do I request a sample and price?",
-        answer: "Send your practice-area requirements, cities, contact roles, required fields and approximate quantity. The public CSV is a fictional format preview. Ask our team for matching sample options, available coverage and a quote."
+        answer: "Name the practice areas, locations and contact roles you need. Ask which filters and fields are available, whether a matching sample can be shared, and what count basis, total price and terms the quote covers."
       }
     ],
     related: [

@@ -3,13 +3,13 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "keyword",
-  updated: "2026-10-16",
+  updated: "2026-10-28",
   keyword: {
     slug: "computer-laptop-dealers-database-india",
     keyword: "computer and laptop dealers database India",
     title: "Computer & Laptop Dealers Database India",
     metaDescription:
-      "Computer and laptop dealers database in India - IT hardware dealers, resellers, system integrators and repair shops with owner contacts, city-wise. Free sample.",
+      "Computer and laptop dealers database in India - IT hardware dealers, resellers, system integrators and repair shops with owner contacts, city-wise. Ask whether a matching real sample is available.",
     eyebrow: "Computer & Laptop Dealers Database",
     h1: "Computer & Laptop Dealers Database in India",
     answer:
@@ -59,7 +59,7 @@ export default {
       { question: "Can I get dealers in a specific IT market?", answer: "Yes. Records can be filtered by city, locality and pincode, for example Nehru Place in Delhi or Lamington Road in Mumbai." },
       { question: "Can I filter dealers by brand?", answer: "Where brands handled are recorded, yes. Share your requirement when you request a sample." },
       { question: "Who buys computer dealer data?", answer: "Hardware brands, IT distributors, software publishers and peripheral or networking companies building a channel." },
-      { question: "Can I see a sample?", answer: "Yes. Download the sample format on this page or request real sample records." },
+      { question: "Can I see a sample?", answer: "Ask whether a real sample for the computer or laptop dealer category selection is available. The public CSV is fictional and demonstrates possible layout only; check any supplied rows for required fields and selected coverage." },
     ],
     related: [
       "computer-it-telecom-services-database-india",

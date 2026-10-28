@@ -121,10 +121,28 @@ export function ContactTemplate() {
           </div>
 
           <div className="overflow-hidden rounded-2xl border border-[#DCEAF3] bg-white shadow-sm">
+            <div className="flex flex-wrap items-center justify-between gap-3 p-5">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-teal">
+                  {CONTACT.map.eyebrow}
+                </p>
+                <h3 className="mt-1 font-display text-xl font-bold text-navy">
+                  {CONTACT.map.heading}
+                </h3>
+              </div>
+              <a
+                href={siteConfig.mapsHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-semibold text-teal transition-colors hover:text-teal-dark"
+              >
+                {CONTACT.map.directionsLabel} <span aria-hidden="true">→</span>
+              </a>
+            </div>
             <iframe
               title={CONTACT.map.title}
               src={CONTACT.map.src}
-              className="h-[420px] w-full border-0"
+              className="h-[360px] w-full border-0 md:h-[420px]"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             />

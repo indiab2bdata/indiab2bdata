@@ -3,13 +3,13 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "keyword",
-  updated: "2026-10-16",
+  updated: "2026-10-28",
   keyword: {
     slug: "bulk-sms-database-india",
     keyword: "bulk SMS database India",
     title: "Bulk SMS Database India | Business Mobile Numbers for DLT Campaigns",
     metaDescription:
-      "Bulk SMS database for India - business mobile numbers by city, pincode and industry, ready for DLT-compliant SMS campaigns. From ₹2,999.",
+      "Discuss business mobile-number selections by location and industry. Confirm available fields, source, current coverage and intended-use requirements before requesting a written quote.",
     eyebrow: "Bulk SMS Database India",
     h1: "Bulk SMS Database India - Business Numbers for SMS Campaigns",
     answer:
@@ -17,13 +17,13 @@ export default {
     intro: [
       "Bulk SMS still gets some of the highest open rates of any channel in India. Almost every SMS is read, usually within minutes, and it reaches every phone, including basic handsets without internet or WhatsApp.",
       "The catch is that TRAI's rules are strict. Promotional SMS to DND numbers gets blocked, every message must use a DLT-registered header and template, and sending to a bad list simply wastes credits on numbers that will never receive your message.",
-      "Our bulk SMS database is deduplicated and segmented by city, pincode and industry, so your campaign reaches a relevant local audience instead of a random one.",
+      "If you plan to use contact records for SMS, ask which location and industry fields can be supplied and confirm the source, duplicate handling and applicable communication requirements.",
     ],
     highlights: [
       { icon: ShieldCheck, title: "DLT-Ready Format", description: "Clean CSV ready to upload to your DLT-registered SMS panel." },
-      { icon: Smartphone, title: "Active Mobile Numbers", description: "Inactive and invalid numbers removed." },
+      { icon: Smartphone, title: "Mobile-Number Fields", description: "Ask which number fields and checks apply to the selected records." },
       { icon: MapPinned, title: "Local Targeting", description: "Filter by city, state or pincode." },
-      { icon: TrendingUp, title: "Better Credit Usage", description: "Fewer failed deliveries means less wasted SMS credit." },
+      { icon: TrendingUp, title: "Campaign Planning", description: "Review sample fields and communication requirements before sending." },
     ],
     dataFields: [
       "10-digit mobile number",
@@ -65,7 +65,7 @@ export default {
       {
         question: "How much does a bulk SMS database cost?",
         answer:
-          "Packages start at ₹2,999 for up to 5,000 numbers in one city or district, and ₹8,999 for up to 25,000 numbers across 5 cities or states. Pan-India lists are custom-quoted.",
+          "For a business-number selection, identify the audience and geography, then ask the quote to state the available fields, count basis, total price and delivery terms. Confirm your intended messaging requirements separately.",
       },
       {
         question: "Do I need DLT registration to send bulk SMS?",

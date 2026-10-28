@@ -6,7 +6,7 @@ import type { CategoryContent } from "@/types/landing";
 /** Intent: mid/large corporates and their department heads. */
 export default {
   template: "landing",
-  updated: "2026-10-22",
+  updated: "2026-10-28",
   keyword: {
     slug: "corporate-database-india",
     keyword: "corporate database India",
@@ -66,17 +66,17 @@ export default {
       name: "Corporate Database",
       title: "Corporate Database India | Mid & Large Company Decision-Makers",
       metaDescription:
-        "Corporate database of India's mid-size and large companies (200+ employees) with department heads in HR, IT, finance, procurement and admin. Filter by function and city. Sample rows on the page.",
+        "Discuss a larger-company and department-oriented selection for India. Confirm employee-size criteria, department fields, location coverage and the classification basis against a dated sample.",
       eyebrow: "Mid & Large Corporates",
-      h1: "Corporate Database India: Department Heads at Mid & Large Companies",
+      h1: "Corporate Database India: A Department-Oriented Company Selection",
       lead:
-        "Reach HR, IT, finance, procurement and admin heads at India's mid-size and large corporates. Several contacts per company, organised by function, for enterprise selling.",
+        "Discuss a company-size and department-focused selection for enterprise sales. Ask which employee-size bands, functions, seniority fields and locations are available, and confirm the classification basis against a dated sample.",
       segmentSummary:
-        "Selling to corporates means selling to departments. A ₹50-lakh software deal at a 2,000-person company is decided by the CIO and procurement, while an employee-benefits programme goes through HR and finance. This database covers companies with roughly 200 or more employees and maps several department heads at each one, so enterprise teams can multi-thread their accounts from day one.",
+        "Enterprise account research may involve several departments and levels of seniority. This product is intended for larger-company and department-oriented selections, but the employee threshold, source, contact coverage and number of contacts per company need to be confirmed for the requested segment before purchase.",
       segmentCards: [
-        { icon: Building, title: "Mid & Large Companies", description: "Corporates with roughly 200+ employees: Indian groups, MNC subsidiaries and listed companies." },
-        { icon: Users, title: "Several Contacts per Account", description: "HR, IT, finance, procurement, admin and business heads at the same company." },
-        { icon: Briefcase, title: "Function & Seniority", description: "Filter by department and level (CXO, VP/GM, manager) to reach the actual buying committee." },
+        { icon: Building, title: "Company Size", description: "Discuss the employee-size threshold and ask for its definition, source and dated count for the requested selection." },
+        { icon: Users, title: "Department Fields", description: "Ask which departments and contact roles can be identified for the companies in your brief." },
+        { icon: Briefcase, title: "Function & Seniority", description: "Request department and level fields such as CXO, VP/GM or manager; confirm availability and definitions in a matching sample." },
       ],
       segmentTabs: {
         heading: "Pick the department you sell to",
@@ -108,7 +108,7 @@ export default {
         "Business email ID",
         "Office city and state",
       ],
-      sample: "executive",
+      sample: "corporate",
       useCases: [
         { icon: Network, title: "Multi-Threaded Enterprise Deals", description: "Reach IT, finance and procurement at the same account so a deal doesn't stall on one champion." },
         { icon: Users, title: "HR Tech & Benefits Sales", description: "Target CHROs and HR heads at large employers with HRMS, insurance and wellness programmes." },
@@ -116,13 +116,13 @@ export default {
         { icon: ShoppingCart, title: "Corporate Procurement", description: "Get on approved-vendor lists by reaching purchase and admin heads directly." },
       ],
       faqs: [
-        { question: "Can I get contacts only at companies in my target account list?", answer: "Yes. Send your named accounts and the departments you need, and we return the matching decision-makers at those companies, with a match rate in the quote." },
-        { question: "What counts as a corporate in this database?", answer: "Companies with roughly 200 or more employees, including Indian business groups, MNC subsidiaries and listed companies. For smaller firms, use the Company or B2B database." },
-        { question: "Can I get several contacts at the same company?", answer: "Yes. That is the main difference from the company database. Choose the departments you need and each account comes with one contact per function, where available." },
-        { question: "Can I filter by seniority?", answer: "Yes. Filter by CXO, VP/GM or manager level within each department." },
-        { question: "Do you cover MNC subsidiaries in India?", answer: "Yes. Indian offices of multinational companies are included and can be filtered by industry and city." },
+        { question: "Can I request contacts at companies in my target account list?", answer: "Share the named accounts and departments you need. Ask which matches are available and request a dated count and sample before agreeing the selection." },
+        { question: "What counts as a corporate in this selection?", answer: "The page is intended for larger-company research, but no employee threshold or inventory count is confirmed here. Ask how the size band is defined and sourced, and request a dated count. For company-level account research across sizes, compare the Company or B2B database." },
+        { question: "Can I request several contacts at the same company?", answer: "This page is department-oriented. Ask which functions and number of contacts per account can be supplied, and confirm the returned counting unit and sample before purchase." },
+        { question: "Can I filter by seniority?", answer: "Ask whether CXO, VP/GM or manager levels are available for your selected departments, and confirm how those levels are defined." },
+        { question: "Can I request MNC subsidiaries in India?", answer: "Include the parent/subsidiary criteria, industry and city in your brief. Ask how entities are identified and request a matching sample and dated count." },
       ],
-      pricingNote: "Priced per contact. Senior CXO contacts and multi-department packs per account are quoted by volume.",
+      pricingNote: "Request a written quote for the agreed employee threshold, departments, contact count, fields and locations. Confirm the counting unit and total price.",
       related: [
         L("CEO, CFO, CMO & IT Heads Database", "ceo-cfo-cmo-it-heads-database-india"),
         L("HR Professionals Database", "hr-human-resources-database-india"),
@@ -132,13 +132,13 @@ export default {
         L("IT Companies Database", "it-companies-database-india"),
       ],
       disclaimer: `Work-context contact data for lawful B2B outreach to professionals in their business role.${dnd} Any person can request removal at any time.`,
-      formTitle: "Get a Free Corporate Data Sample",
+      formTitle: "Ask About a Corporate Data Sample",
       bands: [
-        "Selling to one department? Ask for a sample of HR, IT, finance or procurement heads.",
-        "Need the whole buying committee at each account? We map several functions per company.",
-        "Get corporate decision-maker samples for your target industries.",
+        "Ask which HR, IT, finance or procurement fields are available for your target segment.",
+        "Confirm the number of departments and contacts counted for each account.",
+        "Request a dated sample and count for the agreed employee threshold.",
       ],
-      footerTitle: "Reach the Buying Committee at Large Companies",
+      footerTitle: "Discuss a Department-Oriented Company Selection",
     },
     { subjects: "corporate decision-maker", kind: "people" }
   ),

@@ -2,7 +2,7 @@ import { Briefcase, Car, GraduationCap, Laptop, Wrench } from "lucide-react";
 import { cityContent } from "@/content/shared/city-template";
 
 export default cityContent(
-  { updated: "2026-10-22" },
+  { updated: "2026-10-28" },
   {
     slug: "pune",
     city: "Pune",
@@ -12,9 +12,9 @@ export default cityContent(
     metaDescription:
       "Pune company database: IT and GCC offices in Hinjewadi, Kharadi and Magarpatta, auto and engineering units in Chakan, Bhosari and Pimpri-Chinchwad. Filter by area and preview sample rows on the page.",
     lead:
-      "Reach IT and GCC offices in Hinjewadi, Kharadi and Magarpatta, and auto and engineering plants in Chakan, Bhosari and Pimpri-Chinchwad. Offices and factories come as separate segments.",
+      "Describe the Pune office areas or industrial estates you need. Ask which business and site-type fields can be confirmed for that selection.",
     segmentSummary:
-      "Pune has two economies a few kilometres apart. The IT side, Hinjewadi, Kharadi, Magarpatta and Baner, is full of IT services firms, product companies and global capability centres. The industrial side, Pimpri-Chinchwad, Bhosari, Chakan, Talegaon and Ranjangaon, is one of India's largest auto and engineering belts. A software vendor and an industrial supplier need different lists, so every record is tagged as office-belt or industrial-belt.",
+      "Pune briefs can distinguish office areas such as Hinjewadi, Kharadi and Magarpatta from industrial locations such as Pimpri-Chinchwad, Bhosari and Chakan. These are useful selection terms, not confirmation of current inventory or site-type tags. Ask which locations and office, factory or operating-unit fields are available, then review a matching sample.",
     segmentCards: [
       { icon: Laptop, title: "IT Parks & GCCs", description: "IT services firms, product companies and GCCs in Hinjewadi Phases 1-3, Kharadi EON, Magarpatta and Baner." },
       { icon: Car, title: "Auto & Engineering Belt", description: "OEM suppliers and engineering units in Chakan, Bhosari, Pimpri-Chinchwad, Talegaon and Ranjangaon MIDC." },
@@ -42,10 +42,10 @@ export default cityContent(
       { icon: GraduationCap, title: "Ed-Tech & Institute Partnerships", description: "Approach colleges and training institutes with labs, placement and course partnerships." },
     ],
     faqs: [
-      { question: "Can I get only Hinjewadi IT companies?", answer: "Yes. Filter by area to get only Hinjewadi Phases 1-3, or combine it with Kharadi and Magarpatta for a full IT-corridor list." },
-      { question: "Are Pimpri-Chinchwad and Chakan included in a Pune list?", answer: "Yes, but as separate industrial segments. You can buy the IT belt, the industrial belt, or both, and each is clearly labelled." },
-      { question: "Can I separate offices from factories?", answer: "Yes. Records are tagged as office or operating unit where known, so a software vendor gets offices and an industrial supplier gets plants." },
-      { question: "Do you have plant-head or purchase contacts at auto suppliers?", answer: "Yes, where the role is recorded. Ask for plant, maintenance or purchase roles in Chakan and Bhosari and the quote shows the matching count." },
+      { question: "Can I get only Hinjewadi IT companies?", answer: "Request Hinjewadi Phases 1-3, Kharadi or Magarpatta as named areas. Ask whether each filter can be applied and confirm available locations in the sample." },
+      { question: "Are Pimpri-Chinchwad and Chakan included in a Pune list?", answer: "Ask how the requested Pune boundary treats Pimpri-Chinchwad and Chakan. Request separate area counts and confirm whether those locations can be supplied as distinct segments." },
+      { question: "Can I separate offices from factories?", answer: "Ask whether office, factory or operating-unit fields are available for the selected areas, and confirm their definitions and completeness in a matching sample." },
+      { question: "Do you have plant-head or purchase contacts at auto suppliers?", answer: "Ask which plant, maintenance or purchase roles are available in Chakan and Bhosari. Request a dated count and a sample showing how roles and locations are recorded." },
     ],
     related: [
       { label: "IT Companies Database", href: "/it-companies-database-india" },

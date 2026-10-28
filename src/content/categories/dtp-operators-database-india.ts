@@ -3,13 +3,13 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "keyword",
-  updated: "2026-10-16",
+  updated: "2026-10-28",
   keyword: {
     slug: "dtp-operators-database-india",
     keyword: "DTP operators database India",
     title: "DTP Operators Database India",
     metaDescription:
-      "DTP operators database in India - desktop publishing operators, typesetters, layout artists and DTP centres with contact details, city-wise. Free sample format.",
+      "DTP operators database in India - desktop publishing operators, typesetters, layout artists and DTP centres with contact details, city-wise. Fictional sample format preview; ask whether a matching real sample is available.",
     eyebrow: "DTP Operators Database",
     h1: "DTP Operators Database in India",
     answer:
@@ -59,7 +59,7 @@ export default {
       { question: "Can I filter by software skills?", answer: "Where recorded, yes - for example CorelDRAW, Adobe InDesign, Photoshop or PageMaker." },
       { question: "Are regional language DTP operators included?", answer: "Yes. Operators with Hindi, Marathi, Tamil, Telugu, Bengali and other language typing skills are included where recorded." },
       { question: "Who buys DTP operator data?", answer: "Printing presses, publishers, software resellers, consumables suppliers and training institutes." },
-      { question: "Can I see a sample?", answer: "Yes. Download the sample format on this page or request real sample records." },
+      { question: "Can I see a sample?", answer: "Ask whether a real sample for the DTP-operator role selection is available. The public CSV is fictional and demonstrates possible layout only; check any supplied rows for required fields and selected coverage." },
     ],
     related: [
       "designers-database-india",

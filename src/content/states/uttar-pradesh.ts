@@ -3,7 +3,7 @@ import { L } from "@/content/shared/helpers";
 import { stateContent } from "@/content/shared/state-template";
 
 export default stateContent(
-  { updated: "2026-10-26", hubCities: ["Noida", "Ghaziabad", "Lucknow", "Kanpur", "Agra", "Meerut", "Varanasi", "Greater Noida", "Aligarh", "Moradabad"], moreCities: 15 },
+  { updated: "2026-10-28", hubCities: ["Noida", "Ghaziabad", "Lucknow", "Kanpur", "Agra", "Meerut", "Varanasi", "Greater Noida", "Aligarh", "Moradabad"], moreCities: 15 },
   {
     slug: "uttar-pradesh",
     authoredFaqsOnly: true,

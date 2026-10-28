@@ -5,7 +5,7 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "landing",
-  updated: "2026-10-23",
+  updated: "2026-10-28",
   keyword: {
     slug: "gems-jewellery-shops-database-india",
     keyword: "gems jewellery shops database India",
@@ -154,7 +154,7 @@ export default {
       },
       {
         question: "How do I get a relevant sample and price?",
-        answer: "Send your trade category, target locations, required fields and approximate quantity. Ask for coverage, sample options, format and delivery timing with the quote."
+        answer: "Request a written quote for the agreed selection, locations, fields and volume. Confirm the counting unit, total price and delivery terms before purchase."
       }
     ],
     related: [
@@ -199,7 +199,7 @@ export default {
         ["Diamond traders & polishers", "Surat, Mumbai"], ["Coloured gemstone dealers", "Jaipur, Mumbai"], ["Jewellery manufacturers", "Gold, diamond, silver makers"], ["Wholesalers", "Supplying retail jewellers"], ["Bullion traders", "Gold and silver bullion"],
       ] },
       dataFields: ["Business name", "Trade type", "Products (diamonds, gems, gold, silver)", "Contact person and designation", "Business mobile number", "Business email ID", "Market / area, city, state", "Website, where available"],
-      sample: "jeweller",
+      sample: "retailJeweller",
       useCases: [
         { icon: FileSearch, title: "Grading & Certification", description: "Offer diamond and gem grading to traders and manufacturers." },
         { icon: Wrench, title: "Machinery & Tools", description: "Sell CAD, casting, laser and polishing equipment to makers." },

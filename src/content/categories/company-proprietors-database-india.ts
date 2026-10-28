@@ -5,13 +5,13 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "landing",
-  updated: "2026-10-23",
+  updated: "2026-10-28",
   keyword: {
     slug: "company-proprietors-database-india",
     keyword: "company proprietors database India",
     title: "Company Proprietors Database India | Business Owners",
     metaDescription:
-      "Company proprietors database in India - owners of proprietorship firms, shops and MSMEs with mobile number, business name, industry and city. Free sample.",
+      "Company proprietors database in India - owners of proprietorship firms, shops and MSMEs with mobile number, business name, industry and city. Ask whether a matching real sample is available.",
     eyebrow: "Business Owners Database",
     h1: "Company Proprietors Database in India",
     answer:
@@ -83,15 +83,15 @@ export default {
       slug: "company-proprietors-database-india",
       name: "Company Proprietors Database",
       title: "Company Proprietors Database India | Sole Proprietors & Business Owners",
-      metaDescription: "Sole proprietors and business owners database for India: owner-run proprietorships by trade, city and registration (GST, Udyam), with owner mobile and email. Sample rows on the page.",
+      metaDescription: "Discuss a sole-proprietor company-record selection by trade and location. Ask which owner, registration and contact fields are available; public sample rows are fictional.",
       eyebrow: "Sole Proprietors",
       h1: "Company Proprietors Database: India's Business Owners",
-      lead: "Owners of sole proprietorships, who make up most of India's businesses, filtered by trade, city and registration type. The owner is the business, so you always reach the decision-maker.",
-      segmentSummary: "A sole proprietorship has no separate legal entity: the owner is the business. Most Indian shops, traders, workshops and service businesses are run this way, registered under GST, Udyam or the local shops act rather than with the MCA. For lenders, insurers, accounting tools, telecom and B2B suppliers, every record here is the person who decides and pays.",
+      lead: "This page describes a selection intended for sole-proprietor businesses. Specify the trade and locations you need, then confirm whether proprietor identity, registration fields and contact details are available for those records.",
+      segmentSummary: "A sole-proprietor selection is distinct from a company-director list. State whether you need owner-run shops, traders, workshops or service firms, and ask how the source identifies the business type and owner role. Those labels do not by themselves establish who makes a purchase decision.",
       segmentCards: [
-        { icon: Users, title: "Owner = Decision-Maker", description: "Every record is the proprietor, not an employee." },
-        { icon: Store, title: "By Trade", description: "Retail, wholesale, workshops, contractors and local services." },
-        { icon: BadgeCheck, title: "By Registration", description: "GST-registered and Udyam-registered proprietors, where recorded." },
+        { icon: Users, title: "Proprietor Role", description: "Ask how the owner role is identified and which contact fields are available." },
+        { icon: Store, title: "Trade Scope", description: "Name the business types relevant to your brief and confirm coverage." },
+        { icon: BadgeCheck, title: "Registration Fields", description: "Ask whether GST or Udyam fields are available for the selected records." },
       ],
       segmentTabs: { heading: "Pick the proprietor segment", tabs: [
         T("trade", "Traders & Shops", "Retailers and wholesalers run by their owners.", ["Proprietor", "Owner", "Family Partner", "Manager"], "Lenders, POS, telecom, insurance."),
@@ -110,20 +110,20 @@ export default {
         { icon: Truck, title: "Supplies & Distribution", description: "Recruit retailers and stockists for your products." },
       ],
       faqs: [
-        { question: "Can I target proprietors in Tier-2 and Tier-3 towns?", answer: "Yes. Proprietorships are spread across every district, and you can filter down to town and pincode." },
+        { question: "Can I target proprietors in smaller towns?", answer: "Name the towns or pincodes in your brief and ask which are represented in the current data. Request a dated count before purchase." },
         { question: "Do proprietors share personal and business numbers?", answer: "Often the owner's mobile is also the business number. Records are business-context contacts for lawful B2B outreach only." },
         { question: "What is a sole proprietorship?", answer: "A business owned and run by one person, with no separate legal entity. It is registered through GST, Udyam or local licences rather than with the MCA." },
         { question: "How is this different from the Company database?", answer: "The Company database covers firms of all types at account level. This page covers sole proprietors only, with the owner as the contact." },
-        { question: "Can I filter by GST registration?", answer: "Yes, where recorded. Filter GST-registered or Udyam-registered proprietors." },
-        { question: "Are partnerships included?", answer: "No. This page is sole proprietors only. Partnerships are in the B2B and Company databases." },
+        { question: "Can I filter by GST or Udyam registration?", answer: "Ask whether those fields are recorded for the selected segment and how the status date is determined." },
+        { question: "Are partnerships included?", answer: "This page is intended for sole proprietors. If you need partnerships too, specify that scope and confirm whether the records can be separated." },
       ],
-      pricingNote: "Priced by trade, city and fields.",
+      pricingNote: "Request a written quote for the agreed trade, locations, fields and volume. Confirm the counting unit and total price.",
       related: [L("Company Database", "company-database-india"), L("GST Database", "gst-database-india"), L("B2B Database", "b2b-database-india"), L("Dealers & Distributors Database", "dealers-distributors-database-india"), L("Contractors Database", "contractors-database-india"), L("B2B & B2C Companies Database", "b2b-b2c-companies-database")],
       disclaimer: legal,
-      formTitle: "Get a Free Proprietors Sample",
-      bands: ["Lending to small owners? Ask for proprietors by trade and city.", "Need GST-registered proprietors only? We filter by registration.", "Get proprietor samples for your offer."],
+      formTitle: "Ask About a Proprietors Sample",
+      bands: ["Lending to small owners? Ask which proprietor fields and trades are available.", "Need GST or Udyam details? Confirm whether the status fields are recorded.", "Ask whether a sample is available for the selection you need."],
       footerTitle: "Reach Business Owners Directly",
     },
-    { subjects: "sole proprietor", kind: "people", notIncluded: "Partnerships are not included; they are in the B2B and Company databases." }
+    { subjects: "sole proprietor", kind: "people", notIncluded: "Partnerships require separate scope confirmation; do not assume they can be separated from sole-proprietor records." }
   ),
 } satisfies CategoryContent;

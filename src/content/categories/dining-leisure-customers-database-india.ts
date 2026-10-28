@@ -3,7 +3,7 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "keyword",
-  updated: "2026-10-16",
+  updated: "2026-10-28",
   keyword: {
     slug: "dining-leisure-customers-database-india",
     keyword: "dining and leisure customers database India",
@@ -22,7 +22,7 @@ export default {
       { icon: Sparkles, title: "Lifestyle Audience", description: "Diners, travellers and entertainment spenders." },
       { icon: MapPinned, title: "City-Wise", description: "Metros and growing tier-2 cities." },
       { icon: Target, title: "Spending Bands", description: "Mid-market to premium, where available." },
-      { icon: ShieldCheck, title: "Deduplicated Records", description: "Checked before every delivery." },
+      { icon: ShieldCheck, title: "Deduplicated Records", description: "Ask which checks apply to the selected records and when they were performed." },
     ],
     dataFields: [
       "Name",
@@ -63,7 +63,7 @@ export default {
       { question: "Can I filter by interest?", answer: "Where recorded, you can filter by interest such as dining, travel, movies, events or fitness." },
       { question: "Who uses dining and leisure audience data?", answer: "Restaurants, hotels, resorts, event organisers, gyms and lifestyle brands." },
       { question: "Do I need to check the numbers against DND?", answer: "Yes. Before calling or sending promotional messages, check numbers against the DND (NCPR) registry and follow TRAI's commercial-communication rules." },
-      { question: "Can I see a sample?", answer: "Yes. Download the sample format on this page or request sample records." },
+      { question: "Can I see a sample?", answer: "Ask whether a real sample for the dining or leisure audience selection is available. The public CSV is fictional and demonstrates possible layout only; check any supplied rows for required fields and selected coverage." },
     ],
     related: [
       "club-mahindra-members-database",

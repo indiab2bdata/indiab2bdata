@@ -3,12 +3,12 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "custom",
-  updated: "2026-10-25",
+  updated: "2026-10-28",
   keyword: {
     slug: "manufacturing-companies-database-india",
     keyword: "Manufacturing Companies Database India",
     title: "Manufacturing Companies Database India",
-    metaDescription: "Manufacturing companies database India at company level: sector, employee band, GSTIN and head-office decision-makers by state and industry. Free sample.",
+    metaDescription: "Manufacturing companies database India at company level: sector, employee band, GSTIN and head-office decision-makers by state and industry. Ask whether a matching real sample is available.",
     eyebrow: "Manufacturing Companies Database",
     h1: "Manufacturing Companies Database in India",
     answer: "A manufacturing companies database helps you shortlist production businesses using available company, sector, product and contact details. Share the industries, company criteria, locations and business roles you need so we can check matching coverage and sample options.",
@@ -178,7 +178,7 @@ export default {
     name: "Manufacturing Companies Database",
     title: "Manufacturing Companies Database India",
     metaDescription:
-      "Manufacturing companies database India at company level: sector, employee band, GSTIN and head-office decision-makers by state and industry. Free sample.",
+      "Manufacturing companies database India at company level: sector, employee band, GSTIN and head-office decision-makers by state and industry. Ask whether a matching real sample is available.",
     eyebrow: "Manufacturers as Company Accounts",
     h1: "Manufacturing Companies Database India: One Record per Company",
     lead:
@@ -295,7 +295,7 @@ export default {
           { title: "Overlooking their supply chain", text: "If you serve the manufacturer's vendors, transporters or machine dealers instead, our logistics companies database and machinery suppliers database cover them." },
         ],
       },
-      { type: "sample", heading: "Sample Company Rows", intro: "Masked, fictional company rows in the delivered column order. Your free sample is real companies matching your sector and size band." },
+      { type: "sample", heading: "Sample Company Rows", intro: "Fictional, masked rows illustrate a possible format only. They do not confirm inventory or field availability. Ask whether a matching sample is available for your selection." },
       {
         type: "sourcing",
         heading: "How Company Records Are Built",
@@ -304,7 +304,7 @@ export default {
           "Decision-makers' work contacts are still personal data under the DPDP Act 2023. Keep outreach to business offers, look mobiles up on the NCPR registry before calling and act on every opt-out. Company registration details can be cross-checked in public registries before you extend credit.",
         ],
       },
-      { type: "cta", text: "Send the sectors, size bands and states you sell to; we'll send matching sample companies and a quote.", buttonLabel: "Request a Free Sample" },
+      { type: "cta", text: "Send the sectors, size bands and states you sell to; ask whether a matching sample is available and request a written quote.", buttonLabel: "Ask About a Sample" },
     ],
     faqs: [
       {
@@ -329,7 +329,7 @@ export default {
       },
       {
         question: "What does a manufacturing company list cost?",
-        answer: "Pricing is per company record and depends on sector, size band, states and the number of contacts per company. A narrow sector and state costs less per record than an all-India pull. Your quote comes with a free sample.",
+        answer: "Specify manufacturing sectors, any size bands, states and whether you need company or contact counts. Ask which filters are available and confirm the counting unit, total price and delivery terms.",
       },
       {
         question: "What if a decision-maker has left the company?",
@@ -350,7 +350,7 @@ export default {
       buttonLabel: "Get Company Sample",
       whatsappMessage: "Hi, I need a manufacturing companies database sample. Sector, size and states:",
       footerTitle: "Sell to Manufacturers at the Head Office",
-      footerText: "Send the sectors, size bands, states and contacts per company you need. You'll get matching sample companies and a quote.",
+      footerText: "Send the sectors, size bands, states and contacts per company you need. Ask whether a matching sample is available and request a written quote.",
     },
     disclaimer: "Business contact data for lawful B2B outreach to manufacturing companies. Any business or person can request removal at any time.",
   },

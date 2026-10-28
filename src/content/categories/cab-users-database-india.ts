@@ -3,7 +3,7 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "keyword",
-  updated: "2026-10-16",
+  updated: "2026-10-28",
   keyword: {
     slug: "cab-users-database-india",
     keyword: "cab users database India",
@@ -22,7 +22,7 @@ export default {
       { icon: Car, title: "Urban Commuters", description: "Regular app-cab and taxi users." },
       { icon: MapPinned, title: "City-Wise Records", description: "Metros and major tier-2 cities." },
       { icon: Filter, title: "Profile Filters", description: "Age band or locality, where available." },
-      { icon: ShieldCheck, title: "Deduplicated Records", description: "Duplicates removed before delivery." },
+      { icon: ShieldCheck, title: "Deduplicated Records", description: "Confirm the duplicate-handling method for the selected records." },
     ],
     dataFields: [
       "Consumer name",
@@ -74,7 +74,7 @@ export default {
       { question: "Do I need to check the numbers against DND?", answer: "Yes. Before calling or sending promotional messages, check numbers against the DND (NCPR) registry and follow TRAI's commercial-communication rules." },
       { question: "Is it available in Excel format?", answer: "Excel or CSV delivery may be available. Confirm the format and columns before purchase." },
       { question: "Can I use it for SMS or WhatsApp campaigns?", answer: "That depends on the source, permissions and applicable TRAI and data protection rules. A purchase alone does not allow unsolicited messages." },
-      { question: "Can I see a sample first?", answer: "Yes. Request sample records to check cities and fields before ordering." },
+      { question: "Can I see a sample first?", answer: "Ask whether a real sample for the cab-user audience and city selection is available. The public CSV is fictional and demonstrates possible layout only; check any supplied rows for required fields and selected coverage." },
     ],
     related: [
       "car-owners-database",

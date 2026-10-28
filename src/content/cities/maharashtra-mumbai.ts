@@ -2,7 +2,7 @@ import { Briefcase, Building2, Landmark, Store } from "lucide-react";
 import { cityContent } from "@/content/shared/city-template";
 
 export default cityContent(
-  { updated: "2026-10-22" },
+  { updated: "2026-10-28" },
   {
     slug: "mumbai",
     city: "Mumbai",
@@ -42,11 +42,11 @@ export default cityContent(
       { icon: Building2, title: "Office Leasing & Facilities", description: "Reach admin heads at expanding offices with leasing, fit-out and facility services." },
     ],
     faqs: [
-      { question: "Can I target Mumbai's shipping and logistics firms?", answer: "Yes. Shipping lines, freight forwarders and customs brokers around Ballard Estate, the JNPA side and Andheri-Marol are tagged by activity and can be bought as their own segment." },
-      { question: "Can I target specific Mumbai localities?", answer: "Yes. Every record carries its locality and pincode, so you can choose BKC only, the island city only, the western suburbs, or your own list of areas." },
-      { question: "Are Thane and Navi Mumbai part of a Mumbai list?", answer: "No. They are separate markets. Add them to your brief and the file labels each city separately." },
-      { question: "Can I get BFSI firms only?", answer: "Yes. Filter by industry for banks, NBFCs, brokers, insurers and wealth managers. Most of them are in BKC, Fort and Nariman Point." },
-      { question: "Do you include branches or only head offices?", answer: "Both are available. Ask for head offices only for account-based selling, or all branches for field sales." },
+      { question: "Can I target Mumbai's shipping and logistics firms?", answer: "If you need shipping or port-related businesses around Ballard Estate, JNPA or Andheri-Marol, list each area in your brief and ask which locations and activity fields are available. Confirm the boundary and sample before purchase." },
+      { question: "Can I target specific Mumbai localities?", answer: "List the localities and pincodes you need. Ask which location fields are populated for that segment and confirm their completeness in a dated sample." },
+      { question: "Are Thane and Navi Mumbai part of a Mumbai list?", answer: "State whether Thane and Navi Mumbai should be included. Ask how the Mumbai boundary is defined and request separate counts and sample rows for each requested area." },
+      { question: "Can I get BFSI firms only?", answer: "Name the BFSI categories and localities you need. Ask whether those filters are available and check the resulting labels and count in a matching sample." },
+      { question: "Do you include branches or only head offices?", answer: "Ask whether head-office and branch records are available for your selection, how they are distinguished, and whether multiple sites are counted separately." },
     ],
     related: [
       { label: "Chartered Accountants Database", href: "/chartered-accountants-database-india" },

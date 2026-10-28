@@ -3,7 +3,7 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "keyword",
-  updated: "2026-10-16",
+  updated: "2026-10-28",
   keyword: {
     slug: "demat-account-holders-database-india",
     keyword: "demat account holders database India",
@@ -69,7 +69,7 @@ export default {
       { question: "How many demat accounts are there in India?", answer: "Demat accounts in India now run into crores, with strong growth from tier-2 and tier-3 cities." },
       { question: "Can I target investors in a specific city?", answer: "Yes. Audience data can be filtered by state, city and pincode." },
       { question: "Who uses investor audience data?", answer: "SEBI-registered advisers, mutual fund distributors, wealth managers, insurers and stock market education providers." },
-      { question: "Can I see a sample?", answer: "Yes. Download the sample format on this page or request sample records." },
+      { question: "Can I see a sample?", answer: "Ask whether a real sample for the demat-account audience selection is available. The public CSV is fictional and demonstrates possible layout only; check any supplied rows for required fields and selected coverage." },
     ],
     related: [
       "credit-card-holders-database-india",

@@ -3,7 +3,7 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "keyword",
-  updated: "2026-10-16",
+  updated: "2026-10-28",
   keyword: {
     slug: "service-providers-database-india",
     keyword: "service providers database India",
@@ -45,7 +45,7 @@ export default {
       },
       {
         question: "Is a free sample available before I order?",
-        answer: "Yes, every enquiry includes 15–20 free sample records to check quality first.",
+        answer: "The CSV download is a fictional format preview. Ask whether a matching real sample is available for your selection, and confirm its fields and coverage.",
       },
     ],
   },

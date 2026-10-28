@@ -5,7 +5,7 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "landing",
-  updated: "2026-10-23",
+  updated: "2026-10-28",
   keyword: {
     slug: "general-senior-managers-database-india",
     keyword: "General Managers / Senior Managers Database India",
@@ -155,7 +155,7 @@ export default {
       },
       {
         question: "How do I get a sample and price?",
-        answer: "Use the enquiry form to share the roles, departments, industries, cities and approximate quantity you need. We will confirm available coverage, sample options, format, timing and pricing."
+        answer: "Request a written quote for the agreed selection, locations, fields and volume. Confirm the counting unit, total price and delivery terms before purchase."
       }
     ],
     related: [

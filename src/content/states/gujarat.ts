@@ -3,7 +3,7 @@ import { L } from "@/content/shared/helpers";
 import { stateContent } from "@/content/shared/state-template";
 
 export default stateContent(
-  { updated: "2026-10-26", hubCities: ["Ahmedabad", "Surat", "Vadodara", "Rajkot", "Jamnagar", "Gandhinagar", "Bhavnagar", "Anand", "Morbi", "Bharuch"], moreCities: 15 },
+  { updated: "2026-10-28", hubCities: ["Ahmedabad", "Surat", "Vadodara", "Rajkot", "Jamnagar", "Gandhinagar", "Bhavnagar", "Anand", "Morbi", "Bharuch"], moreCities: 15 },
   {
     slug: "gujarat",
     authoredFaqsOnly: true,

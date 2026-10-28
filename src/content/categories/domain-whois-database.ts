@@ -3,13 +3,13 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "keyword",
-  updated: "2026-10-16",
+  updated: "2026-10-28",
   keyword: {
     slug: "domain-whois-database",
     keyword: "domain WHOIS database India",
     title: "Domain WHOIS Database India | New Domains",
     metaDescription:
-      "Domain WHOIS database for India - new and existing .in and .com domains with registrant details. For web, hosting & digital marketing sales. Free sample.",
+      "Domain WHOIS database for India - new and existing .in and .com domains with registrant details. For web, hosting & digital marketing sales. Ask whether a matching real sample is available.",
     eyebrow: "Domain WHOIS Database",
     h1: "Domain WHOIS Database India - Leads from Newly Registered Websites",
     answer:
@@ -84,11 +84,11 @@ export default {
       {
         question: "How much does a domain WHOIS database cost?",
         answer:
-          "One-time lists start at ₹2,999. Daily and monthly recurring feeds are priced by volume and extension. Contact us for a quote.",
+          "State the domain extensions, date range or other scope you need. Ask which fields and source dates are available, and have the quote specify the count basis, total price and delivery terms.",
       },
       {
         question: "Can I get a free sample?",
-        answer: "Yes. Every enquiry includes 15–20 free sample records before you place an order.",
+        answer: "Ask whether a real sample for the domain-extension and date-range selection is available. The public CSV is fictional and demonstrates possible layout only; check any supplied rows for required fields and selected coverage.",
       },
     ],
     related: [

@@ -4,7 +4,7 @@ import type { CategoryContent } from "@/types/landing";
 const faqs = [
   {
     question: "Does the file show how much each person has invested?",
-    answer: "No. The mutual fund investors file contains only name, mobile, city, state and pincode. Investment amounts, schemes, SIPs and portfolio values are never included or available as add-ons, because financial details are sensitive and easily misused.",
+    answer: "This page does not establish that individual investment amounts, scheme holdings or portfolio values are available fields. Confirm the audience criteria and included fields in writing; do not infer personal financial details from a segment label.",
   },
   {
     question: "Can I get folio numbers or PAN with the records?",
@@ -24,19 +24,19 @@ const faqs = [
   },
   {
     question: "How is an investor audience list priced?",
-    answer: "Pricing is per record and depends mainly on cities, states or pincodes and the size of the order. A few pincodes cost less than a statewide pull. Every quote is custom and comes with a free sample first.",
+    answer: "For an investor-audience request, describe the selection criteria and geography. Ask which fields are actually available and have the written quote specify the count basis, total price and terms; do not infer individual holdings from an audience label.",
   },
 ];
 
 export default {
   template: "custom",
-  updated: "2026-10-26",
+  updated: "2026-10-28",
   keyword: {
     slug: "mutual-fund-investors-database-india",
     keyword: "mutual fund investors database India",
     title: "Mutual Fund Investors Database India",
     metaDescription:
-      "Mutual fund investors database India: name, mobile, city and pincode of retail investors for financial marketing. No folio, holdings or PAN. Free sample.",
+      "Mutual fund investors database India: name, mobile, city and pincode of retail investors for financial marketing. No folio, holdings or PAN. Ask whether a matching real sample is available.",
     eyebrow: "Mutual Fund Investers Database",
     h1: "Mutual Fund Investors Database India for Financial Marketing",
     answer:
@@ -63,7 +63,7 @@ export default {
     name: "Mutual Fund Investors Database",
     title: "Mutual Fund Investors Database India",
     metaDescription:
-      "Mutual fund investors database India: name, mobile, city and pincode of retail investors for financial marketing. No folio, holdings or PAN. Free sample.",
+      "Mutual fund investors database India: name, mobile, city and pincode of retail investors for financial marketing. No folio, holdings or PAN. Ask whether a matching real sample is available.",
     eyebrow: "Investor Audience Data",
     h1: "Mutual Fund Investors Database India for Financial Marketing",
     lead:
@@ -179,7 +179,7 @@ export default {
           { title: "Offer a clear next step", text: "One date, one link or one number to call. Vague promises to share opportunities sound like the scams investors are warned about." },
         ],
       },
-      { type: "sample", heading: "Sample Investor Rows", intro: "Fictional people with masked details, in the delivered column order. Your free sample is real records for your cities or pincodes." },
+      { type: "sample", heading: "Sample Investor Rows", intro: "Fictional, masked rows illustrate a possible format only. They do not confirm inventory or field availability. Ask whether a matching sample is available for your selection." },
       {
         type: "sourcing",
         heading: "How Investor Records Are Compiled and Used",
@@ -188,7 +188,7 @@ export default {
           "These are individual consumers, so the DPDP Act 2023 applies in full. Use the data only for relevant financial services, check every number on the NCPR registry before calling, use DLT-registered templates for SMS and honour opt-outs at once. For audiences of finance professionals rather than investors, see the financial analysts and managers database; card-based audiences are in the credit card holders database.",
         ],
       },
-      { type: "cta", text: "Send the cities or pincodes you serve; we'll reply with sample records and a quote.", buttonLabel: "Request a Free Sample" },
+      { type: "cta", text: "Send the cities or pincodes you serve; ask whether a matching sample is available and request a written quote.", buttonLabel: "Ask About a Sample" },
     ],
     faqs,
     related: [
@@ -205,7 +205,7 @@ export default {
       buttonLabel: "Get Investor Sample",
       whatsappMessage: "Hi, I need a mutual fund investors database sample. Cities or pincodes:",
       footerTitle: "Reach Investors Near Your Office",
-      footerText: "Send the locations you serve. You'll get matching sample records with name, mobile, city and pincode, and a quote.",
+      footerText: "Send the locations you serve. Ask whether a matching sample is available and request a written quote.",
     },
     disclaimer: "Consumer audience data for lawful marketing of registered financial services. Contains no folio, PAN, holdings or account details. Any person can request removal at any time.",
   },

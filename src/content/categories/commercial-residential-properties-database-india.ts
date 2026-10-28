@@ -3,13 +3,13 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "keyword",
-  updated: "2026-10-16",
+  updated: "2026-10-28",
   keyword: {
     slug: "commercial-residential-properties-database-india",
     keyword: "commercial and residential properties database India",
     title: "Commercial & Residential Properties Database India",
     metaDescription:
-      "Commercial and residential properties database in India - property owners, buyers, builders and brokers with contact details, city-wise. Free sample format.",
+      "Commercial and residential properties database in India - property owners, buyers, builders and brokers with contact details, city-wise. Fictional sample format preview; ask whether a matching real sample is available.",
     eyebrow: "Property Database",
     h1: "Commercial & Residential Properties Database in India",
     answer:
@@ -22,7 +22,7 @@ export default {
       { icon: Building2, title: "Residential & Commercial", description: "Flats, villas, offices, shops and warehouses." },
       { icon: MapPinned, title: "Locality-Level", description: "Filter by city, locality and pincode." },
       { icon: Users, title: "Owners, Builders & Brokers", description: "Pick the audience that fits your offer." },
-      { icon: ShieldCheck, title: "Deduplicated Records", description: "Checked before every delivery." },
+      { icon: ShieldCheck, title: "Deduplicated Records", description: "Ask which checks apply to the selected records and when they were performed." },
     ],
     dataFields: [
       "Name of owner, builder or broker",
@@ -67,7 +67,7 @@ export default {
       { question: "Does it include commercial property owners?", answer: "Yes. You can choose residential, commercial or both, including office, shop and warehouse owners." },
       { question: "Are real estate brokers included?", answer: "Yes. Builders, developers and broker or channel partner contacts are available as a separate segment." },
       { question: "Who buys property owner data?", answer: "Developers, home loan and insurance companies, interior designers, home services brands and commercial leasing firms." },
-      { question: "Can I see a sample?", answer: "Yes. Download the sample format on this page or request real sample records." },
+      { question: "Can I see a sample?", answer: "Ask whether a real sample for the commercial or residential property segment selection is available. The public CSV is fictional and demonstrates possible layout only; check any supplied rows for required fields and selected coverage." },
     ],
     related: [
       "agents-database-india",

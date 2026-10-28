@@ -3,7 +3,7 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "keyword",
-  updated: "2026-10-19",
+  updated: "2026-10-28",
   keyword: {
     slug: "chemical-pharma-companies-database-india",
     keyword: "chemical and pharma companies database India",
@@ -68,14 +68,14 @@ export default {
       { question: "Can I get only API manufacturers?", answer: "Yes. Records can be filtered by segment such as API/bulk drugs, formulations, specialty chemicals or agrochemicals, where recorded." },
       { question: "Does it include purchase manager contacts?", answer: "Where available, records include decision-makers such as owners, directors, plant heads and purchase managers." },
       { question: "Is the data available for a single industrial area like Vapi or Ankleshwar?", answer: "Yes. You can order by city, district or pincode cluster." },
-      { question: "Can I see a sample?", answer: "Yes. Download the sample format on this page or request real sample records." },
+      { question: "Can I see a sample?", answer: "Ask whether a real sample for the chemical or pharmaceutical company activity selection is available. The public CSV is fictional and demonstrates possible layout only; check any supplied rows for required fields and selected coverage." },
     ],
     related: [
       "manufacturer-database-india",
       "chemists-medical-stores-database-india",
       "industry-wise-company-database-india",
       "importers-exporters-database-india",
-      "doctors-database",
+
       "gst-database-india",
       "gas-petroleum-companies-database-india",
     ],

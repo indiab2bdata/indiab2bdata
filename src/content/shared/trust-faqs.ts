@@ -1,6 +1,5 @@
 import { CLAIMS } from "@/config/claims";
-import { deliveryPhrase, removalSentence } from "@/content/shared/claims-copy";
-import { isPlaceholder } from "@/lib/utils";
+import { removalSentence } from "@/content/shared/claims-copy";
 import type { Faq } from "@/types/landing";
 
 const COMPLIANCE = { text: "Data Sourcing & Compliance page", href: "/data-sourcing-compliance" };
@@ -46,19 +45,19 @@ export function trustFaqs(t: TrustInput): Faq[] {
     },
     {
       question: `How are ${t.subjects} records checked before delivery?`,
-      answer: `Invalid numbers are removed from every order before the file is sent.${CLAIMS.dndScrubbing ? " Mobile numbers are also checked against the National Do Not Call registry, and registered numbers are flagged or removed." : ""} The check runs on the exact ${seg} mix in your brief, so a file covering ${segs} is cleaned as one delivery. Mobile and email fill rates differ by ${seg}, and are available on request with your record count. Use the sample rows to check designations and addresses yourself before you order.`,
+      answer: `Ask which source, field and contact checks apply to the ${t.name} selection, how they are documented and when they were performed. Public examples are fictional and do not establish completeness or current contactability. Confirm any quality measure and its scope in writing before purchase.`,
     },
     {
       question: `Which fields does each ${t.name} record include?`,
-      answer: `Each record can include ${list(t.fields.map((f) => lower(bare(f))))}. ${partial.length ? `The ${list(partial)} ${partial.length > 1 ? "fields are" : "field is"} filled only when the source records ${partial.length > 1 ? "them" : "it"}, so not every row has ${partial.length > 1 ? "them" : "it"}. ` : ""}Every field can be combined with a filter by ${seg}, such as ${segs}. We deliver only the fields your brief needs, and dropping a field you don't use can lower the price. The preview table on this page shows the same columns in the same order.`,
+      answer: `Possible fields to discuss for the ${t.name} include ${list(t.fields.map((f) => lower(bare(f))))}. Availability, completeness and combinations depend on the selected segment and must be confirmed against a matching sample and written field list. The public preview is fictional; it illustrates a format and does not establish inventory.`,
     },
     CLAIMS.showRefreshDates && {
       question: `How often is the ${t.name} updated?`,
-      answer: `It is refreshed on a rolling basis, and the month of the latest refresh is shown on this page. Invalid numbers are removed again before each delivery, so a file is cleaned on the day it is sent, not only when the database was last refreshed. If your segment changes fast, ask when its ${seg} records were last updated.`,
+      answer: `Ask for the applicable review or update date for the ${t.name} selection, what information was checked and how recently it was checked. Do not treat the page-edit date or fictional sample as evidence of dataset freshness.`,
     },
     {
       question: `Can I legally call or email the ${t.subjects} contacts in this list?`,
-      answer: `Yes, for lawful B2B outreach, provided you follow India's telemarketing and data-protection rules yourself. Under the DPDP Act 2023 you act as a data fiduciary for the records you buy: use ${t.name} records only for the purpose you stated and only in connection with ${role}, whether you target ${segs} or one segment. ${CLAIMS.dndScrubbing ? "We DND-check mobile numbers before delivery, but" : "Before calling or sending SMS, scrub the mobile numbers against the NCPR (DND) registry, and"} follow TRAI's TCCCPR 2018 rules on calling hours, sender IDs and consent. Honour every opt-out you receive at once and pass it back to us.`,
+      answer: `Buying the ${t.name} does not by itself establish permission to contact these ${t.subjects}. Review the source context and the rules for your purpose, audience and communication channel before outreach.`,
     },
     {
       question: `How is a record removed from the ${t.name}?`,
@@ -67,15 +66,15 @@ export function trustFaqs(t: TrustInput): Faq[] {
     },
     {
       question: `How is the ${t.name} priced?`,
-      answer: `It is priced per record${t.priceFrom && !isPlaceholder(t.priceFrom) ? `, from ${t.priceFrom}` : ""}, based on the segments, fields and volume you choose. ${t.pricingNote} Your quote arrives with the sample rows and a record count for your exact ${seg} mix, so you see the total before you pay. The sample itself is free.`,
+      answer: `For the ${t.name}, request a written quote for your chosen ${seg} filters, fields and volume. Confirm the counting unit, available fields, record count, delivery terms and total price before purchase.`,
     },
     {
       question: `Can I see ${t.subjects} sample data before buying?`,
-      answer: `Yes. The preview table on this page shows 5 fictional rows in the same column layout as a real ${t.name} file, and the CSV download has 20. The rows are fictional so no real person's details are published here. For real records, send the ${seg} choices, locations and roles you need, and we reply with matching sample rows, a record count and a quote.`,
+      answer: `The on-page table and CSV contain fictional, masked rows that illustrate possible columns only. They do not verify available inventory or confirm that the fields can be supplied. Ask whether a real sample matching the ${t.name} filters is available; request its field list, dated count and written quote before purchase.`,
     },
     {
       question: `What format is the ${t.name} delivered in?`,
-      answer: `You receive an Excel or CSV file by email or WhatsApp, ${deliveryPhrase()} after you approve the sample and quote. Each row is one ${t.subjects} record, with columns such as ${list(t.fields.slice(0, 3).map((f) => lower(bare(f))))} in the order shown in the preview table. The file is ready to import into a CRM, dialler or email tool.`,
+      answer: `Confirm the agreed file format, delivery method, field order, counting unit and timing in the written quote for the ${t.name}. The fictional public CSV demonstrates one possible format and does not define paid-delivery terms.`,
     },
     {
       question: `What does the ${t.name} not include?`,

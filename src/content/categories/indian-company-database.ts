@@ -3,7 +3,7 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "keyword",
-  updated: "2026-10-16",
+  updated: "2026-10-28",
   keyword: {
     slug: "indian-company-database",
     keyword: "Indian company database",
@@ -13,16 +13,16 @@ export default {
     eyebrow: "Indian Company Database",
     h1: "Indian Company Database - Every State, Every City",
     answer:
-      "An Indian company database is a nationwide collection of registered company and contact records covering businesses across India's states, cities and pincode clusters. IndiaB2BData.com's Indian company database spans 700+ cities, sourced from publicly available and permission-based channels and filterable down to the pincode level.",
+      "An Indian company database is a selection of company and contact records for defined markets. State, city or pincode can be included in a brief; ask for the locations currently represented, the source and a dated matching count.",
     intro: [
       "Expanding across India means dealing with huge regional variation - what works in Mumbai doesn't automatically translate to Lucknow or Coimbatore. An Indian company database that only covers a handful of metros isn't enough for a genuinely pan-India rollout.",
       "Our database is built for exactly this: filter by state, city or pincode cluster to plan a phased rollout, or pull the full pan-India set for a nationwide campaign - all from the same source.",
     ],
     highlights: [
-      { icon: MapPinned, title: "700+ Cities", description: "Coverage across every major state and city cluster." },
-      { icon: ShieldCheck, title: "Public & Permission-Based Sourcing", description: "Compiled from lawful, permission-based channels." },
+      { icon: MapPinned, title: "Location Scope", description: "Specify states, cities or pincodes and confirm coverage." },
+      { icon: ShieldCheck, title: "Source Details", description: "Request the source information for the specific selection." },
       { icon: Filter, title: "State/City/Pincode Filters", description: "Plan rollouts region by region." },
-      { icon: RefreshCcw, title: "Monthly Refresh", description: "Inactive contacts replaced on a regular cycle." },
+      { icon: RefreshCcw, title: "Record Dates", description: "Ask for the extract date and any checks applied." },
     ],
     useCases: [
       "Pan-India market expansion planning",
@@ -33,19 +33,19 @@ export default {
     faqs: [
       {
         question: "Does the database cover smaller cities, not just metros?",
-        answer: "Yes - coverage spans 700+ cities including tier-2 and tier-3 towns, not just the major metros.",
+        answer: "Ask which cities are represented in the current data, including any smaller locations, and request a dated count.",
       },
       {
         question: "Can I get data for specific states only?",
-        answer: "Yes, you can filter by state, city or pincode cluster to match your rollout plan.",
+        answer: "Share the locations you need and ask which can be supported in the current selection.",
       },
       {
         question: "Where does the data come from?",
-        answer: "It's compiled from publicly available and permission-based channels, then checked and deduplicated.",
+        answer: "Ask for the source and collection context of the selected records, and confirm which checks or duplicate-handling steps were applied.",
       },
       {
         question: "What if I need the whole country at once?",
-        answer: "Our Enterprise package covers unlimited records with full pan-India coverage.",
+        answer: "Request a written quote for the agreed locations, fields and volume. Confirm the counting unit and total price.",
       },
     ],
   },

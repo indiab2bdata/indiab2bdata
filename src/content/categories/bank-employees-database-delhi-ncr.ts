@@ -3,13 +3,13 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "keyword",
-  updated: "2026-10-16",
+  updated: "2026-10-28",
   keyword: {
     slug: "bank-employees-database-delhi-ncr",
     keyword: "bank employees database Delhi NCR",
     title: "Bank Employees Database Delhi NCR",
     metaDescription:
-      "Bank employees database for Delhi NCR - banking professionals in public, private and cooperative banks across Delhi, Noida, Gurgaon, Ghaziabad and Faridabad. Free sample.",
+      "Bank employees database for Delhi NCR - banking professionals in public, private and cooperative banks across Delhi, Noida, Gurgaon, Ghaziabad and Faridabad. Ask whether a matching real sample is available.",
     eyebrow: "Delhi NCR Bank Employees Database",
     h1: "Bank Employees Database - Delhi NCR",
     answer:
@@ -75,7 +75,7 @@ export default {
       { question: "Can I filter by bank type?", answer: "Yes. You can choose public sector, private, foreign, small finance or cooperative bank employees." },
       { question: "Can I target branch managers only?", answer: "Yes. Records can be filtered by designation, such as officers, relationship managers, branch managers or chief managers." },
       { question: "Does it include any bank customer or account data?", answer: "No. It contains professional contact details of employees only, never customer, account or internal bank information." },
-      { question: "Can I see a sample?", answer: "Yes. Download the sample format on this page or request real sample records." },
+      { question: "Can I see a sample?", answer: "Ask whether a real sample for the bank-employee role in Delhi NCR selection is available. The public CSV is fictional and demonstrates possible layout only; check any supplied rows for required fields and selected coverage." },
     ],
     related: [
       "chief-managers-database-india",

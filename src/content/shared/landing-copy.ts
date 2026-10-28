@@ -4,14 +4,14 @@
  */
 export const LANDING_COPY = {
   hero: {
-    complianceBadge: "DPDP Act 2023 aligned",
-    sampleBadge: "Free sample before you pay",
+    complianceBadge: "Review sourcing details",
+    sampleBadge: "Fictional format preview",
     refreshedPrefix: "Refreshed ",
   },
   stats: {
-    records: (name: string) => `${name.replace(/ Database$/, "")} Records`,
-    covered: (segmentLabel: string) => `${segmentLabel}s Covered`,
-    fields: "Data Fields per Record",
+    records: "Count for your filters",
+    covered: (segmentLabel: string) => `${segmentLabel} segments listed`,
+    fields: "Potential fields to confirm",
     refreshed: "Data Last Refreshed",
   },
   segments: {
@@ -22,25 +22,24 @@ export const LANDING_COPY = {
   },
   sample: {
     eyebrow: "Sample data preview",
-    title: "See the Exact Columns You'll Receive",
-    text: "These 5 rows are fictional and masked. They show the format only. Your paid file has the same columns, filled with real records that match your filters.",
+    title: "Illustrative Sample Format",
+    text: "These five rows are fictional and masked. They illustrate possible columns only; they do not represent available inventory or confirm that a field can be supplied. Confirm the fields and coverage for your selection before purchase.",
     /** Screen-reader caption: prefix + page name + suffix. */
     captionPrefix: "Sample ",
     captionSuffix: " records (fictional, masked)",
-    complianceLead: "How we source, scrub and remove records:",
+    complianceLead: "Review sourcing, limitations and the removal process:",
     complianceLink: "Data Sourcing & Compliance",
     csvFilename: (csvSlug: string) => `${csvSlug}-sample-data.csv`,
   },
   coverage: {
     eyebrow: "Coverage & fields",
-    text: (segmentLabel: string) =>
-      `Each record is tagged by ${segmentLabel.toLowerCase()}, so you pay only for the slices you need. Record counts for your exact filters come with your quote.`,
-    includes: "Includes",
+    text: (segmentLabel: string) => `The ${segmentLabel.toLowerCase()} examples on this page describe possible selection dimensions; they do not confirm current inventory or field availability. Ask for a dated count and a sample matching your filters.`,
+    includes: "Market context",
     records: "Approx. records",
-    fill: "Mobile / email fill",
-    fieldsHeading: "Fields in every record",
-    pricingLabel: "Indicative pricing",
-    customQuote: "Custom quote",
+    fill: "Field availability",
+    fieldsHeading: "Potential fields to confirm",
+    pricingLabel: "Written quote",
+    customQuote: "Ask for quote",
     from: (price: string) => `From ${price}`,
   },
   useCases: {

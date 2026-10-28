@@ -3,7 +3,7 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "keyword",
-  updated: "2026-10-16",
+  updated: "2026-10-28",
   keyword: {
     slug: "cbse-schools-email-database-india",
     keyword: "CBSE schools email database India",
@@ -75,7 +75,7 @@ export default {
       { question: "Can I filter by state or city?", answer: "Yes, where location fields are available. Share your target regions and ask us to confirm coverage." },
       { question: "Can I get only senior secondary schools?", answer: "Where the school level is recorded, records can be filtered by primary, secondary or senior secondary." },
       { question: "Do you have schools from other boards?", answer: "Yes. Our schools and colleges database covers ICSE, IB, Cambridge and state board schools, plus colleges and universities." },
-      { question: "Can I see a sample first?", answer: "Yes. Request sample records to check fields and coverage before ordering." },
+      { question: "Can I see a sample first?", answer: "Ask whether a real sample for the CBSE-school email and contact fields selection is available. The public CSV is fictional and demonstrates possible layout only; check any supplied rows for required fields and selected coverage." },
     ],
     related: [
       "school-colleges-database",

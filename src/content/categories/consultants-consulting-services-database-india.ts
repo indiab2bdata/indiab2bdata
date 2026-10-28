@@ -3,7 +3,7 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "keyword",
-  updated: "2026-10-18",
+  updated: "2026-10-28",
   keyword: {
     slug: "consultants-consulting-services-database-india",
     keyword: "consultants and consulting services database India",
@@ -77,7 +77,7 @@ export default {
       { question: "Can I get only HR or placement consultants?", answer: "Yes. Records can be filtered by consulting specialisation and city." },
       { question: "Why market to consultants?", answer: "Consultants advise many clients, so one consultant partnership can lead to multiple referrals and sales." },
       { question: "Is the data available in Excel?", answer: "Yes. Data is delivered in Excel or CSV, ready for your CRM or dialer." },
-      { question: "Can I see a sample?", answer: "Yes. Download the sample format on this page or request real sample records." },
+      { question: "Can I see a sample?", answer: "Ask whether a real sample for the consultant or consulting-firm category selection is available. The public CSV is fictional and demonstrates possible layout only; check any supplied rows for required fields and selected coverage." },
     ],
     related: [
       "chartered-accountants-database-india",

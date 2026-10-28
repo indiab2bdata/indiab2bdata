@@ -3,37 +3,37 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "keyword",
-  updated: "2026-10-16",
+  updated: "2026-10-28",
   keyword: {
     slug: "company-directory-india",
     keyword: "company directory India",
-    title: "Company Directory India | Look Up Company Profiles",
+    title: "Company Directory Database India | Company Records for Lookups",
     metaDescription:
-      "Search a company directory for India - company name, category, city and contact details. Built for due-diligence and quick company look-ups.",
+      "Discuss company records for named-company research, category and location needs. Ask which records, profile fields and formats are available for your brief.",
     eyebrow: "Company Directory India",
-    h1: "Company Directory India - Look Up Any Company, Fast",
+    h1: "Company Directory Database India - Company Records for Lookups",
     answer:
-      "A company directory is a searchable listing of companies organised by name, category and city, used to quickly look up a specific company's profile rather than pull a bulk list. IndiaB2BData.com's company directory covers 700+ cities and 500+ categories, with contact details on request.",
+      "A company directory organizes company records by name, category or location for individual lookups and shortlists. Ask whether a named-company lookup is available and confirm the fields and locations represented in the current dataset.",
     intro: [
-      "Sometimes you don't need a bulk export - you need to check one company. Before a meeting, a vendor onboarding, or a partnership call, it helps to quickly confirm who you're dealing with: their category, city and how to reach them.",
-      "Our company directory is built for that lookup use case as much as bulk list-building - search by company name or narrow by category and city to find the exact profile you need.",
+      "Some buyers need to research a named company or build a shortlist rather than request a large market segment. Ask whether a named-company selection is available and what profile fields can be confirmed.",
+      "This page describes company-name lookups and shortlists. It does not provide an interactive search tool; confirm the available company, category and location fields before ordering.",
     ],
     highlights: [
-      { icon: BookOpen, title: "Searchable Listings", description: "Look up companies by name, category or city." },
-      { icon: Search, title: "Quick Company Lookup", description: "Confirm a company's details before you engage." },
-      { icon: MapPinned, title: "700+ Cities", description: "Directory coverage across every major city cluster." },
-      { icon: Building2, title: "500+ Categories", description: "Companies classified by industry and business type." },
+      { icon: BookOpen, title: "Company Records", description: "Ask which company-name and profile fields are available." },
+      { icon: Search, title: "Company-Name Selection", description: "Ask whether a named company can be checked in the available records." },
+      { icon: MapPinned, title: "Location Fields", description: "Confirm which locations are represented in the selected data." },
+      { icon: Building2, title: "Company Categories", description: "Ask how company types are classified in the selected records." },
     ],
     useCases: [
-      "Verifying a company's details before a meeting or deal",
-      "Vendor and partner due-diligence checks",
+      "Researching a named company before a meeting or vendor discussion",
+      "Preparing a company shortlist for internal review",
       "Building a shortlist within one category or city",
       "Cross-checking a company before onboarding",
     ],
     faqs: [
       {
         question: "Can I look up a single specific company?",
-        answer: "Yes - search by company name, or narrow by category and city to find the profile you need.",
+        answer: "Ask whether the requested company name is represented and which profile fields are available; this page does not provide a live lookup tool.",
       },
       {
         question: "What details does a directory listing include?",
@@ -41,11 +41,11 @@ export default {
       },
       {
         question: "Is this different from the business directory product?",
-        answer: "It's the same underlying data, oriented toward looking up individual companies rather than exporting bulk campaign lists.",
+        answer: "This page focuses on company-name lookups and shortlists. The Business Directory page focuses on category and location discovery; confirm the output format for either request.",
       },
       {
         question: "Can I still export a full list from the directory?",
-        answer: "Yes - you can filter by category and city and export the matching set in Excel/CSV.",
+        answer: "Ask whether a category-and-location export is available for your selection and confirm the format in the written quote.",
       },
     ],
   },

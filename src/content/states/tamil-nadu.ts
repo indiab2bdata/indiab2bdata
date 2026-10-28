@@ -3,7 +3,7 @@ import { L } from "@/content/shared/helpers";
 import { stateContent } from "@/content/shared/state-template";
 
 export default stateContent(
-  { updated: "2026-10-26", hubCities: ["Chennai", "Coimbatore", "Madurai", "Tiruppur", "Salem", "Erode", "Vellore", "Tiruchirappalli", "Thanjavur", "Hosur"], moreCities: 15 },
+  { updated: "2026-10-28", hubCities: ["Chennai", "Coimbatore", "Madurai", "Tiruppur", "Salem", "Erode", "Vellore", "Tiruchirappalli", "Thanjavur", "Hosur"], moreCities: 15 },
   {
     slug: "tamil-nadu",
     authoredFaqsOnly: true,

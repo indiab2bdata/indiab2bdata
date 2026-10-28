@@ -3,7 +3,7 @@ import { L } from "@/content/shared/helpers";
 import { stateContent } from "@/content/shared/state-template";
 
 export default stateContent(
-  { updated: "2026-10-26", hubCities: ["New Delhi", "Delhi"], moreCities: 0 },
+  { updated: "2026-10-28", hubCities: ["New Delhi", "Delhi"], moreCities: 0 },
   {
     slug: "delhi",
     cityPagesHeading: "Nearby Delhi NCR city databases",

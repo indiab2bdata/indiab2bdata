@@ -3,7 +3,7 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "keyword",
-  updated: "2026-10-19",
+  updated: "2026-10-28",
   keyword: {
     slug: "business-development-sales-professionals-database-india",
     keyword: "business development and sales professionals database India",
@@ -151,7 +151,7 @@ export default {
       },
       {
         question: "Can I see a sample first?",
-        answer: "Yes. Request sample records to check roles, locations and fields before ordering.",
+        answer: "Ask whether a real sample for the business-development or sales role selection is available. The public CSV is fictional and demonstrates possible layout only; check any supplied rows for required fields and selected coverage.",
       },
     ],
     related: [

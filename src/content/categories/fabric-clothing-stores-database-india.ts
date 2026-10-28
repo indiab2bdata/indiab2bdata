@@ -3,7 +3,7 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "keyword",
-  updated: "2026-10-19",
+  updated: "2026-10-28",
   keyword: {
     slug: "fabric-clothing-stores-database-india",
     keyword: "fabric clothing stores database India",
@@ -151,7 +151,7 @@ export default {
       },
       {
         question: "How do I get a price?",
-        answer: "Send the target cities, store categories and approximate quantity. Request confirmation of the record count, populated fields, format and delivery timing with your quote."
+        answer: "For fabric and clothing stores, name the store types and target cities. Ask which contact fields and locations can be supported, then confirm the count basis, total price, file format and timing in the quote."
       }
     ],
     related: [

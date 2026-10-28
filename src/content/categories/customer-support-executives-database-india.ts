@@ -3,13 +3,13 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "keyword",
-  updated: "2026-10-16",
+  updated: "2026-10-28",
   keyword: {
     slug: "customer-support-executives-database-india",
     keyword: "customer support executives database India",
     title: "Customer Support Executives Database India",
     metaDescription:
-      "Customer support executives database in India - customer service, helpdesk, CX and support team professionals by industry, experience and city. Free sample.",
+      "Customer support executives database in India - customer service, helpdesk, CX and support team professionals by industry, experience and city. Ask whether a matching real sample is available.",
     eyebrow: "Customer Support Executives Database",
     h1: "Customer Support Executives Database in India",
     answer:
@@ -63,7 +63,7 @@ export default {
       { question: "Can I filter by process type?", answer: "Where recorded, you can filter by voice, chat, email or technical support." },
       { question: "Can I target support managers only?", answer: "Yes. You can filter by designation, for example team leaders and CX managers." },
       { question: "Which cities are covered?", answer: "All major support hubs, including Noida, Gurgaon, Bengaluru, Hyderabad, Pune, Mumbai, Chennai and Kolkata." },
-      { question: "Can I see a sample?", answer: "Yes. Download the sample format on this page or request real sample records." },
+      { question: "Can I see a sample?", answer: "Ask whether a real sample for the customer-support role selection is available. The public CSV is fictional and demonstrates possible layout only; check any supplied rows for required fields and selected coverage." },
     ],
     related: [
       "bpo-call-centre-employees-database-india",

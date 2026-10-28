@@ -5,7 +5,7 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "landing",
-  updated: "2026-10-23",
+  updated: "2026-10-28",
   keyword: {
     slug: "apparel-garments-exporters-database-india",
     keyword: "apparel and garments exporters database India",
@@ -298,7 +298,7 @@ export default {
         ["Knitwear", "T-shirts, innerwear, kidswear"], ["Wovens & denim", "Shirts, trousers, denim"], ["Fashion & ethnic", "Womenswear, printed, embroidered"], ["Home textiles", "Linen, towels, furnishings"],
       ] },
       dataFields: ["Export house name", "Garment category", "Cluster, city and state", "Contact person and designation", "Business mobile number", "Business email ID", "Main buyer markets, where recorded", "Website, where available"],
-      sample: "trade",
+      sample: "garmentExporter",
       useCases: [
         { icon: Package, title: "Fabric, Yarn & Trims", description: "Supply mills and trim makers can reach merchandisers in the right cluster." },
         { icon: BadgeCheck, title: "Social & Quality Audits", description: "Offer compliance audits and testing to exporters serving global brands." },

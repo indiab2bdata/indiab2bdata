@@ -1,28 +1,28 @@
 import { siteConfig } from "@/config/site";
 
-const TITLE = "B2B Data Insights & Guides";
+const TITLE = "Business Database Selection Resources";
 const DESCRIPTION =
-  "Guides on B2B databases, GST & company data, business directories and lead generation in India - from the team at IndiaB2BData.com.";
+  "Compare business-data products and location pages for Indian markets. Review each page's audience, sample format and fields to confirm before requesting a quote.";
 
 /** /blog (guides hub) copy. FAQs are GUIDES_FAQS in content/pages/faqs.ts. */
 export const BLOG = {
-  meta: { title: TITLE, description: DESCRIPTION, path: "/blog", updated: "2026-10-07" },
+  meta: { title: TITLE, description: DESCRIPTION, path: "/blog", updated: "2026-10-28" },
   schemaName: `${TITLE} | ${siteConfig.name}`,
-  breadcrumb: "Guides",
+  breadcrumb: "Selection Resources",
   hero: {
-    eyebrow: "Insights & Guides",
-    title: "B2B Data Insights & Guides",
-    description: "Practical guides on B2B databases, GST & company records, business directories and lead generation - written for Indian sales and marketing teams.",
-    chips: ["Practical Guides", "Compliance Tips", "Free Sample Data"],
+    eyebrow: "Product Selection",
+    title: "Compare Business Database Selections",
+    description: "This page collects product and location pages. They describe different business-data selections; use them to compare audiences, fields to confirm and geographic scope.",
+    chips: ["Compare Products", "Explore Locations", "Review Sample Formats"],
     source: "guides-hero-form",
     requirement: "B2B Data Consultation",
     formTitle: "Not Sure Which Data You Need?",
   },
   guides: {
-    eyebrow: "Popular Guides",
-    heading: "Data & Compliance Guides",
+    eyebrow: "Product Pages",
+    heading: "Business Data Products to Compare",
     /** ItemList schema name. */
-    listName: "Data & Compliance Guides",
+    listName: "Business Data Product Pages",
     slugs: [
       "gst-database-india",
       "mca-company-database-india",
@@ -39,12 +39,12 @@ export const BLOG = {
     ],
   },
   sample: { slug: "b2b-leads-database-india", label: "B2B Leads Database" },
-  cta: { id: "blog-guides-cta", text: "Want data matched to a guide above? Tell us your exact requirement." },
-  cities: { eyebrow: "Coverage Guides", heading: "City-Wise Company Databases" },
+  cta: { id: "blog-guides-cta", text: "Want to discuss one of these product selections? Describe your audience and requested fields." },
+  cities: { eyebrow: "Location Pages", heading: "City-Wise Company Databases" },
   faq: { id: "guides-faq", eyebrow: "FAQs", heading: "B2B Data Questions, Answered" },
   footer: {
     title: "Talk to a B2B Data Specialist",
-    text: "Share your target audience, location and quantity - we'll send free sample records and a custom quote.",
+    text: "Share your target audience, location and requested fields; ask about sample options and a written quote.",
     source: "guides-footer-form",
     requirement: "B2B Data Consultation",
   },

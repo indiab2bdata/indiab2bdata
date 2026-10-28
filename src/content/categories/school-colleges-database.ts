@@ -3,13 +3,13 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "keyword",
-  updated: "2026-10-16",
+  updated: "2026-10-28",
   keyword: {
     slug: "school-colleges-database",
     keyword: "schools and colleges database India",
     title: "School & Colleges Database India",
     metaDescription:
-      "Schools and colleges database for India - CBSE, ICSE, state board schools, colleges and universities with principal and admin contacts. Free sample.",
+      "Schools and colleges database for India - CBSE, ICSE, state board schools, colleges and universities with principal and admin contacts. Ask whether a matching real sample is available.",
     eyebrow: "Schools & Colleges Database",
     h1: "Schools & Colleges Database India - Institutions, Principals and Administrators",
     answer:
@@ -79,7 +79,7 @@ export default {
       {
         question: "How much does a schools and colleges database cost?",
         answer:
-          "Packages start at ₹2,999 for up to 5,000 records in one city or district, and ₹8,999 for up to 25,000 records across 5 cities or states. State-wide or pan-India lists are custom-quoted.",
+          "Specify school or college types, locations and the contact fields you need. Ask which can be supported in the proposed file and confirm the count basis, total price and delivery terms in writing.",
       },
       {
         question: "Is this the same as a students database?",
@@ -87,7 +87,7 @@ export default {
       },
       {
         question: "Can I get a free sample?",
-        answer: "Yes. Every enquiry includes 15–20 free sample records before you place an order.",
+        answer: "Ask whether a real sample for the school or college contact selection is available. The public CSV is fictional and demonstrates possible layout only; check any supplied rows for required fields and selected coverage.",
       },
     ],
     related: [

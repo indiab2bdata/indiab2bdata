@@ -3,26 +3,26 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "keyword",
-  updated: "2026-10-16",
+  updated: "2026-10-28",
   keyword: {
     slug: "business-database-india",
     keyword: "business database India",
-    title: "Business Database India | 50L+ Business Contacts",
+    title: "Business Database India | Company & Contact Selections",
     metaDescription:
-      "Access a business database across India - 50L+ contacts, 700+ cities, every major industry. Built for sales prospecting and marketing outreach.",
+      "Discuss a company or business-contact selection for sales prospecting, market research or partner discovery. Confirm available fields, locations, source, date and count for your brief.",
     eyebrow: "Business Database India",
-    h1: "Business Database India - Reach Every Industry, Every City",
+    h1: "Business Database India - Company and Contact Selections",
     answer:
-      "A business database is a structured collection of company and contact records - names, phone numbers, emails and industry classification - used to identify and reach potential customers or partners. IndiaB2BData.com's business database spans 50L+ records across real estate, EdTech, finance, manufacturing, healthcare, e-commerce and 500+ other industries.",
+      "A business database organizes company and contact records for prospecting, market research or partner discovery. State the business types, locations and fields you need, then confirm the source, available filters and dated count for the selected data.",
     intro: [
-      "Growing a business in India means reaching prospects across a huge range of cities, languages and industries. A generic contact list rarely fits - you need a business database that can be filtered down to exactly who you're trying to reach.",
-      "Our business database covers 700+ cities and lets you filter by city, pincode, industry, turnover band or job role, so every list you receive is built for your specific outreach - not a one-size-fits-all export.",
+      "Business requirements vary by industry, location and role. Describe the audience you need, then confirm which filters and fields are available for the selected records.",
+      "A brief can specify location, industry, company size or role. Ask which filters are available for the selected records and request a dated count before purchase.",
     ],
     highlights: [
-      { icon: Target, title: "Precisely Filtered", description: "Narrow by city, industry, turnover or designation." },
-      { icon: MapPinned, title: "Pan-India Reach", description: "Every state, city and pincode cluster covered." },
-      { icon: RefreshCcw, title: "Regularly Refreshed", description: "De-duplicated and refreshed on a monthly cycle." },
-      { icon: Zap, title: "Quick Turnaround", description: "Delivery timeline confirmed in your quote." },
+      { icon: Target, title: "Selection Criteria", description: "Ask which industry, company and role fields can be used as filters." },
+      { icon: MapPinned, title: "Location Scope", description: "Specify states, cities or pincodes and confirm matching coverage." },
+      { icon: RefreshCcw, title: "Update Information", description: "Ask when the selected records were last sourced or checked." },
+      { icon: Zap, title: "Delivery Terms", description: "Confirm file format and delivery timing in your written quote." },
     ],
     useCases: [
       "Sales prospecting and pipeline building",
@@ -33,20 +33,20 @@ export default {
     faqs: [
       {
         question: "What's included in the business database?",
-        answer: "Company name, mobile number, email (where available), city/location and industry category, filtered to your requirement.",
+        answer: "Potential fields include company name, business contact details, location and industry. Confirm which are available in the selected dataset.",
       },
       {
         question: "Can I get data for just one city or industry?",
-        answer: "Yes - the Starter package covers a single city or district; larger packages cover multiple cities or states.",
+        answer: "State the locations in your brief and ask which can be supported; confirm the matching count before purchase.",
       },
       {
         question: "Do you offer a free sample first?",
-        answer: "Yes, every enquiry gets 15–20 free sample records so you can verify quality before paying.",
+        answer: "The CSV download is a fictional format preview. Ask whether a matching real sample is available for your selection, and confirm its fields and coverage.",
       },
       {
         question: "How do I place an order?",
         answer:
-          "Share your requirement, review the free sample, choose a package and confirm payment. Delivery timelines are confirmed in the quote for each order.",
+          "Share your requirement, confirm the available fields and sample options, then request a written quote with the counting unit and delivery terms.",
       },
     ],
   },

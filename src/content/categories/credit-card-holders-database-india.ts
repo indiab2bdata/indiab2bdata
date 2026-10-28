@@ -3,7 +3,7 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "keyword",
-  updated: "2026-10-16",
+  updated: "2026-10-28",
   keyword: {
     slug: "credit-card-holders-database-india",
     keyword: "credit card holders database India",
@@ -69,7 +69,7 @@ export default {
       { question: "Can I target a specific city?", answer: "Yes. Audience data can be filtered by city, state and pincode." },
       { question: "Can I filter by card tier?", answer: "Where available, records can be filtered by entry, premium or super-premium card tier band." },
       { question: "Who uses credit card holder audience data?", answer: "Insurers, wealth managers, premium real estate, travel, luxury and automobile brands." },
-      { question: "Can I see a sample?", answer: "Yes. Download the sample format on this page or request sample records." },
+      { question: "Can I see a sample?", answer: "Ask whether a real sample for the credit-card-holder audience selection is available. The public CSV is fictional and demonstrates possible layout only; check any supplied rows for required fields and selected coverage." },
     ],
     related: [
       "car-owners-database",

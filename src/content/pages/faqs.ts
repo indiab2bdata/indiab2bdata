@@ -33,24 +33,24 @@ export const HOME_FAQS: Faq[] = [
 
 export const DEFAULT_FAQS: Faq[] = [
   {
-    question: "Is the data legally compliant to use?",
+    question: "What should I check before using a data selection?",
     answer:
-      "Yes, all data is sourced from publicly available and permission-based channels, and supplied for lawful B2B use only. See our Data Sourcing & Compliance page for details.",
+      "A database listing does not by itself establish permission to contact anyone. Review the published sourcing information and terms, then check the rules that apply to your audience, purpose and communication channel before outreach.",
   },
   {
-    question: "Can I get a free sample before buying?",
+    question: "Can I review a sample before buying?",
     answer:
-      "Absolutely - every enquiry gets 15–20 free sample records so you can verify quality before payment.",
+      "Public CSV downloads contain fictional, masked format examples. Ask whether a real sample is available for your requested audience and filters, and confirm its fields and coverage before placing an order.",
   },
   {
-    question: "In what format is the data delivered?",
+    question: "What format is the data delivered in?",
     answer:
-      "You'll receive a clean Excel (.xlsx) or CSV file over email/WhatsApp, ready to import into your CRM or dialer.",
+      "Confirm the paid file format, delivery method, field order and timing in the written quote. The public preview is a fictional CSV format example.",
   },
   {
-    question: "Do you offer a data refresh if numbers go inactive?",
+    question: "Can data be refreshed or corrected after delivery?",
     answer:
-      "Yes, Business and Enterprise packages include periodic refreshes to replace inactive contacts at no extra cost.",
+      "Ask which update, correction, replacement or refresh terms apply to the specific quote, and have any included service confirmed in writing before purchase.",
   },
 ];
 
@@ -86,7 +86,7 @@ export const GUIDES_FAQS: Faq[] = [
   {
     question: "How do I choose the right B2B data for my business in India?",
     answer:
-      "Start with your ideal customer: industry, city or state, company size and job title. Then pick a matching product - for example the GST database for verified registered firms, MCA data for private limited companies, or industry-wise lists for a specific sector - and always ask for a free sample.",
+      "Start with your target industry, location, company size and role. Then compare product pages for the relevant account, registration or industry selection. Ask which fields and sample options can be confirmed for your filters.",
   },
   {
     question: "What is the difference between GST data and MCA company data?",
@@ -96,7 +96,7 @@ export const GUIDES_FAQS: Faq[] = [
   {
     question: "How can I generate B2B leads in India quickly?",
     answer:
-      "Combine a targeted B2B leads database with multi-channel outreach - telecalling, email, WhatsApp Business and bulk SMS. Newly registered company lists work especially well, because new businesses actively buy services in their first months.",
+      "A B2B leads page describes contact-level selections for outreach, not proven buying intent. Newly registered company records describe an incorporation event; that alone does not show that a company is actively buying a service.",
   },
 ];
 
@@ -104,7 +104,7 @@ export const DATABASE_HUB_FAQS: Faq[] = [
   {
     question: "Can I buy a state-wise business database in India?",
     answer:
-      "Yes. IndiaB2BData.com offers state-wise B2B databases for every Indian state, including Maharashtra, Gujarat, Tamil Nadu, Delhi, Uttar Pradesh, Karnataka, Haryana and Telangana, filterable by city, district, pincode and industry.",
+      "This site publishes dedicated pages for selected states and cities. Ask about any other location, and confirm the geographic boundary, available fields and dated count for your brief.",
   },
   {
     question: "Which Indian state has the most businesses?",
@@ -114,16 +114,16 @@ export const DATABASE_HUB_FAQS: Faq[] = [
   {
     question: "Can I get a city-wise company database instead of a full state?",
     answer:
-      "Yes. You can order data for a single city such as Mumbai, Pune, Noida, Greater Noida or Gurgaon, or a custom set of cities and pincodes, so you only pay for the territory your team covers.",
+      "You can ask about a single city or a set of locations. Confirm which city, district and pincode fields are available, how nearby boundaries are treated, and the quoted counting unit and price.",
   },
   {
     question: "What fields are included in a state database?",
     answer:
-      "Typical fields include company name, contact person, designation, mobile number, email ID, full address, city, state, pincode, industry category and, where available, GSTIN and website.",
+      "Possible fields to discuss include business name, contact role, phone or email, address, location and industry. Availability and completeness vary; confirm the field list against a matching sample and written quote.",
   },
   {
     question: "How fast is a state-wise database delivered?",
     answer:
-      "State and city databases are delivered in Excel or CSV on a timeline agreed with your quote, after a free sample.",
+      "The public samples are fictional. Confirm whether a real sample is available, then agree the paid file format, delivery timing and other terms in writing.",
   },
 ];

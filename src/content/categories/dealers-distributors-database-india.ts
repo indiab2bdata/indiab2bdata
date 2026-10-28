@@ -294,7 +294,7 @@ const custom = {
   "cta": {
     "formTitle": "Request a Dealers & Distributors List India Sample",
     "formSubtitle": "Describe the Dealers & Distributors List India selection, locations and fields you need.",
-    "buttonLabel": "Request Free Sample",
+    "buttonLabel": "Ask About a Sample",
     "whatsappMessage": "Hi, I need a Dealers & Distributors List India sample. My filters are:",
     "footerTitle": "Plan Your Dealers & Distributors List India Selection",
     "footerText": "Send your Dealers & Distributors List India criteria and quantity. Ask for a matching sample, dated coverage count, field availability and quote."
@@ -304,7 +304,7 @@ const custom = {
 
 export default {
   template: "custom",
-  updated: "2026-10-26",
+  updated: "2026-10-28",
   keyword: {
   "slug": "dealers-distributors-database-india",
   "keyword": "Dealers & Distributors List India",

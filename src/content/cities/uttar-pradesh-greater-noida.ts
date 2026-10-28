@@ -2,7 +2,7 @@ import { Briefcase, Factory, GraduationCap, Truck, Warehouse, Wrench } from "luc
 import { cityContent } from "@/content/shared/city-template";
 
 export default cityContent(
-  { updated: "2026-10-22" },
+  { updated: "2026-10-28" },
   {
     slug: "greater-noida",
     city: "Greater Noida",
@@ -42,10 +42,10 @@ export default cityContent(
       { icon: Briefcase, title: "Industrial Safety & Compliance", description: "Sell safety audits, fire systems and compliance services to factories by industrial area." },
     ],
     faqs: [
-      { question: "Can I filter by Ecotech sector, Surajpur or Kasna?", answer: "Yes. Records carry the industrial area and pincode, so you can choose specific Ecotech sectors or the Surajpur and Kasna estates." },
-      { question: "Is Greater Noida West (Noida Extension) included?", answer: "It is tagged separately. Greater Noida West is mostly residential and retail, so most industrial buyers leave it out. Add it if your offer suits it." },
-      { question: "Can I separate factories from registered offices?", answer: "Yes, where the record shows it. Ask for operating units only and the file marks each row as an office or a factory." },
-      { question: "Do you cover the colleges in Knowledge Park?", answer: "Yes. Institutions in Knowledge Park I-V are covered at organisation level, with admin, placement or principal contacts where recorded." },
+      { question: "Can I filter by Ecotech sector, Surajpur or Kasna?", answer: "Name the Ecotech sectors, Surajpur or Kasna areas you need. Ask which location and pincode fields are populated, and confirm them in a matching sample." },
+      { question: "Is Greater Noida West (Noida Extension) included?", answer: "Define whether your brief includes Greater Noida West / Noida Extension. Ask how the boundary is applied and whether those locations are available; do not assume they are included in an industrial selection." },
+      { question: "Can I separate factories from registered offices?", answer: "Ask whether office, factory or other operating-unit fields are available for your selection, and confirm their definitions in the sample." },
+      { question: "Do you cover the colleges in Knowledge Park?", answer: "Ask which Knowledge Park areas and institution types are represented. Confirm whether organisation-level records and requested contact roles are available in a dated sample." },
     ],
     related: [
       { label: "Manufacturing Companies Database", href: "/manufacturing-companies-database-india" },

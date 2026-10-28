@@ -3,7 +3,7 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "keyword",
-  updated: "2026-10-16",
+  updated: "2026-10-28",
   keyword: {
     slug: "b2b-companies-database-india",
     keyword: "B2B companies database India",
@@ -22,7 +22,7 @@ export default {
       { icon: Network, title: "B2B-Focused Segment", description: "Companies that sell to businesses, not consumers." },
       { icon: Building2, title: "Manufacturers & Distributors", description: "Covers the full B2B supply chain." },
       { icon: Users, title: "Vendor & Partner Discovery", description: "Find companies to buy from or sell to." },
-      { icon: ShieldCheck, title: "Business Records", description: "Checked and deduplicated before delivery." },
+      { icon: ShieldCheck, title: "Business Records", description: "The published methodology describes deduplication before delivery; ask which other checks apply to the selected records." },
     ],
     useCases: [
       "Finding B2B vendors or suppliers in a specific category",

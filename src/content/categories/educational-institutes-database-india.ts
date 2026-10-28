@@ -3,7 +3,7 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "keyword",
-  updated: "2026-10-16",
+  updated: "2026-10-28",
   keyword: {
     slug: "educational-institutes-database-india",
     keyword: "educational institutes database India",
@@ -69,7 +69,7 @@ export default {
       { question: "Can I get coaching institutes in Kota or Delhi only?", answer: "Yes. Records can be filtered by city and locality, including coaching hubs such as Kota, Delhi, Hyderabad, Patna and Pune." },
       { question: "Can I filter by courses or exams?", answer: "Where recorded, you can filter by courses or exams offered, such as JEE, NEET, UPSC, IT or vocational trades." },
       { question: "Who is the contact person in each record?", answer: "Typically the director, owner, principal or admissions head, depending on the institute type." },
-      { question: "Can I see a sample?", answer: "Yes. Download the sample format on this page or request real sample records." },
+      { question: "Can I see a sample?", answer: "Ask whether a real sample for the educational-institute type and location selection is available. The public CSV is fictional and demonstrates possible layout only; check any supplied rows for required fields and selected coverage." },
     ],
     related: [
       "school-colleges-database",

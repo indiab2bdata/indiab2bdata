@@ -3,7 +3,7 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "keyword",
-  updated: "2026-10-19",
+  updated: "2026-10-28",
   keyword: {
     slug: "graphic-designers-database-india",
     keyword: "Graphic Designers Database India",
@@ -149,7 +149,7 @@ export default {
       },
       {
         question: "How do I request a sample and price?",
-        answer: "Use the enquiry form to share your specialisations, work types, locations, fields and approximate quantity. The public download demonstrates the format with fictional records; ask our team for matching sample options and a quote."
+        answer: "Share the specialisations, work types, locations and fields relevant to your brief. Ask whether a matching sample is available, which filters can be supported and what the written quote includes."
       }
     ],
     related: [

@@ -3,7 +3,7 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "keyword",
-  updated: "2026-10-16",
+  updated: "2026-10-28",
   keyword: {
     slug: "registered-companies-database-india",
     keyword: "registered companies database India",
@@ -45,7 +45,7 @@ export default {
       },
       {
         question: "Can I get a free sample to check registration accuracy?",
-        answer: "Yes, every enquiry includes 15–20 free sample records before you commit to a package.",
+        answer: "The CSV download is a fictional format preview. Ask whether a matching real sample is available for your selection, and confirm its fields and coverage.",
       },
     ],
   },

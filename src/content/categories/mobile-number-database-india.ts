@@ -3,13 +3,13 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "custom",
-  updated: "2026-10-26",
+  updated: "2026-10-28",
   keyword: {
     slug: "mobile-number-database-india",
     keyword: "mobile number database India",
     title: "Mobile Number Database India for B2B",
     metaDescription:
-      "Buy a mobile number database for India - business owner & decision-maker numbers by city, pincode and industry. Deduplicated Excel/CSV, from ₹2,999.",
+      "Buy a mobile number database for India - business owner & decision-maker numbers by city, pincode and industry. Excel/CSV; request a written quote.",
     eyebrow: "Mobile Number Database India",
     h1: "Mobile Number Database India - Business Owner & Decision-Maker Numbers",
     answer:
@@ -68,7 +68,7 @@ export default {
       {
         question: "How much does a mobile number database cost in India?",
         answer:
-          "Our Starter package is ₹2,999 for up to 5,000 records in one city or district. The Business package is ₹8,999 for up to 25,000 records across 5 cities or states. Pan-India lists are custom-quoted.",
+          "For a mobile-number selection, state the industries, locations, roles and approximate size. Ask the quote to identify whether price is based on numbers or complete records, which fields are included, and the total and delivery terms.",
       },
       {
         question: "Do I need to check the numbers against DND?",
@@ -107,11 +107,11 @@ export default {
     name: "Mobile Number Database",
     title: "Mobile Number Database India for B2B",
     metaDescription:
-      "Mobile number database India of business owners and decision-makers by industry, city and pincode, for calling and WhatsApp. Excel or CSV. Free sample.",
+      "Mobile number database India of business owners and decision-makers by industry, city and pincode, for calling and WhatsApp. Excel or CSV. Ask whether a matching real sample is available.",
     eyebrow: "Business Owner Mobile Numbers",
     h1: "Mobile Number Database India: Business Owners and Decision-Makers",
     lead:
-      "For telecalling teams, field sales managers, B2B service sellers and distributors who sell over the phone. Our mobile number database India lists the mobiles of business owners and decision-makers, each tied to a company name, designation, industry and city, so your callers know who they are speaking to before the first ring.",
+      "For telecalling and field-sales teams considering business-contact data. Describe the target industries, locations and roles, then confirm whether the selected records include a mobile number and which company, role or location fields are available.",
     image: {
       src: "/images/mobile-numbers/mobile-number-database-india.jpg",
       alt: "Person holding a smartphone with the screen lit",
@@ -133,8 +133,8 @@ export default {
         type: "prose",
         heading: "A Calling List Built Around the Business",
         paragraphs: [
-          "A bare list of ten-digit numbers is close to useless for B2B sales. A caller who does not know the company, the industry or the person's role sounds like spam within five seconds. That is why every number in this mobile number database India sits on a row with the business behind it.",
-          "Your team sees the company, the contact's name and designation, the industry and the city before dialling. They can open with something relevant, such as a product that suits a textile trader in Surat, instead of a generic pitch. If email is your first channel, the email database carries the same kind of business-linked records.",
+          "For B2B calling, company, role and location context may matter alongside a phone field. Ask which of those fields are available in the selected records and how the contact-to-business relationship is described.",
+          "A sample can help review the format and any populated fields. Confirm whether company name, contact role, industry and location appear in the selection; do not assume all numbers have these fields.",
         ],
         image: {
           src: "/images/mobile-numbers/mobile-number-database-india.jpg",
@@ -146,7 +146,7 @@ export default {
       {
         type: "table",
         heading: "Ways to Slice a Mobile Number List",
-        intro: "Most orders combine two or three filters. The narrower the slice, the better your callers' hit rate.",
+        intro: "These are possible selection dimensions. Ask which filters are available for your chosen records and request a dated count.",
         columns: ["Filter", "Example", "Best for"],
         rows: [
           ["Industry", "Garment wholesalers, hardware dealers, clinics", "Offers that fit one trade"],
@@ -161,25 +161,25 @@ export default {
         heading: "From Brief to First Calls in Four Steps",
         steps: [
           { title: "Write a one-line brief", text: "Industry, cities and the role you want to reach, for example: hardware wholesalers in Maharashtra, owner or partner." },
-          { title: "Review a free sample", text: "We send matching rows. Dial a few yourself and check that the business and contact match." },
-          { title: "Approve the count and quote", text: "You get the number of available records for your slice and a per-record price." },
-          { title: "Load and call", text: "The Excel or CSV file imports into your dialer or CRM with one row per contact." },
+          { title: "Review sample options", text: "The public download is fictional. Ask whether a matching real sample is available and what fields it contains." },
+          { title: "Confirm count and quote", text: "Request a dated count, counting unit and written price for the agreed selection." },
+          { title: "Confirm file format", text: "Ask which file format, field order and row structure can be supplied for your system." },
         ],
       },
-      { type: "cta", text: "Have a city and an industry in mind? Ask for sample mobile numbers before you buy.", buttonLabel: "Get Mobile Sample" },
+      { type: "cta", text: "Have a city and an industry in mind? Ask for sample mobile numbers before you buy.", buttonLabel: "Ask About a Sample" },
       {
         type: "scenario",
-        label: "Buyer scenario",
+        label: "Illustrative workflow",
         heading: "A Billing-Software Firm Calling Hardware Wholesalers",
         paragraphs: [
-          "A company selling GST billing software to traders runs a six-person telecalling team in Pune. It orders hardware and building-material wholesalers in Pune, Nashik and Aurangabad, owner or partner only, through a Maharashtra business database brief.",
-          "Callers open with the trade and city: a short question about how the shop handles e-invoices. Interested owners get a WhatsApp demo link from a registered business account; others are marked and not called again. When Pune is worked through, the team adds Nagpur using the same columns, and checks key accounts in our GST database before offering annual plans on credit.",
+          "Hypothetical example, not a customer result: a billing-software seller could ask about hardware and building-material businesses in selected Maharashtra cities, with a defined contact role. Availability and fields would need confirmation.",
+          "If the requested records and contact fields are available, a team could plan a relevant first call, respect any refusal and confirm permitted follow-up methods. This example does not describe an actual buyer, campaign outcome or guaranteed file schema.",
         ],
       },
       {
         type: "table",
-        heading: "Columns Delivered with Each Number",
-        intro: "Email and website are included only where a source publishes them. Nothing is guessed to complete a row.",
+        heading: "Fields to Confirm for a Number Selection",
+        intro: "This table illustrates possible fields only. Confirm source, availability and completeness for the selected records.",
         columns: ["Field", "Contents", "Why it helps"],
         rows: [
           ["Company name", "Trading or registered name", "Open the call by name"],
@@ -195,10 +195,10 @@ export default {
         heading: "Calling Habits That Keep a List Useful",
         intro: "The quality of a calling campaign depends as much on how the team works as on the file.",
         items: [
-          { title: "Call in business hours", text: "Owners pick up between mid-morning and early evening. Calls at night or on holidays get numbers blocked." },
-          { title: "Mark every outcome", text: "Wrong number, not interested, call later. A clean disposition column stops two callers repeating the same number." },
-          { title: "Ask once, then respect no", text: "One clear offer and one follow-up is enough. Anyone who says no is removed from future campaigns." },
-          { title: "Pair calls with one message", text: "A short WhatsApp after a positive call works better than a bulk broadcast to the whole list." },
+          { title: "Plan an appropriate time", text: "Choose call windows that fit your audience and your team’s process; do not assume a listed contact is available at a particular time." },
+          { title: "Track outcomes", text: "Record wrong numbers, refusals and requested callbacks so your team can manage follow-up consistently." },
+          { title: "Respect refusals", text: "Stop outreach when someone declines and apply your documented suppression process." },
+          { title: "Choose permitted follow-up", text: "Use another channel only when the recipient context and applicable requirements allow it." },
         ],
       },
       {
@@ -206,12 +206,12 @@ export default {
         tone: "warning",
         heading: "What This Database Is Not",
         items: [
-          { title: "Not a consumer list", text: "Numbers are linked to businesses. For individual consumers, look at our consumer databases and their specific rules." },
-          { title: "Not for bulk SMS blasts", text: "Promotional SMS needs DLT-registered templates and headers, and DND preferences apply. Sending to the whole file at once is a fast way to lose your sender ID." },
-          { title: "Not only senior executives", text: "Most rows are owners and managers of small and mid-size firms. For large-company leadership, the CEO, CFO and IT heads database is the better fit." },
+          { title: "Confirm business context", text: "This page is intended for business-contact selections. Ask how the proposed records are associated with businesses and roles; consumer selections have separate scope and terms." },
+          { title: "Confirm channel requirements", text: "Buying a list does not establish permission for each communication. Confirm the requirements for the channels and use you intend before outreach." },
+          { title: "Confirm the contact role", text: "Ask whether owner, manager or senior leadership roles are represented in your selection. For large-company leadership, compare the CEO, CFO and IT heads page." },
         ],
       },
-      { type: "sample", heading: "Sample Mobile Number Rows", intro: "Masked, fictional rows in the delivered column order. Your free sample will be real records for your industry and city." },
+      { type: "sample", heading: "Sample Mobile Number Rows", intro: "Fictional, masked rows illustrate a possible format only. They do not confirm inventory or field availability. Ask whether a matching sample is available for your selection." },
       {
         type: "sourcing",
         heading: "Where the Numbers Come From",
@@ -227,36 +227,36 @@ export default {
           "A common mistake is ordering an all-India file when the sales team can only call a few hundred people a week. Numbers bought months before anyone dials them lose value as people change businesses and handsets. Order what your team can work through in the next few weeks, measure what converts, then order the next slice with what you learned. Teams that track which industries and cities produced meetings usually find that two or three segments deliver most of the results, and those are the slices worth reordering first.",
         ],
       },
-      { type: "cta", text: "Send your industries, cities and target roles; we'll reply with sample rows and a record count.", buttonLabel: "Request a Free Sample" },
+      { type: "cta", text: "Send your industries, cities and target roles; ask whether a matching sample is available and request a written quote.", buttonLabel: "Ask About a Sample" },
     ],
     faqs: [
       {
         question: "Are these personal or business mobile numbers?",
-        answer: "They are mobiles linked to businesses: the number a shop owner, director or manager uses for work. In small firms that is often the owner's own phone, so treat every number with care and keep calls to business offers in working hours.",
+        answer: "This page is intended for business-contact selections. Ask how a number is associated with a business and contact role in the selected source; a mobile number can still be personal information. Review applicable requirements before use.",
       },
       {
         question: "Can I use the numbers for WhatsApp marketing?",
-        answer: "Use WhatsApp Business with approved templates and send only to people who have shown interest or agreed to hear from you. Broadcasting to a whole bought list breaks WhatsApp's policies and usually gets the sending number banned quickly.",
+        answer: "Do not assume that purchasing a contact list grants permission to message. Review current platform terms and applicable requirements, and contact people only when your use is permitted.",
       },
       {
         question: "Do you remove numbers registered on DND?",
-        answer: "No. We do not scrub against the NCPR registry for you, because preferences change and the check must happen close to the time you call. Run the numbers through a registry check yourself before each campaign.",
+        answer: "DND/NCPR screening is not claimed for these selected records. Confirm the current preference status close to any campaign and follow applicable communication requirements.",
       },
       {
         question: "Can I order numbers for a single pincode?",
-        answer: "Yes. Pincode is recorded for every row, so you can order one market, an industrial estate or a handful of pincodes around your branch. Very small areas may have few records, and the quote will show the exact count.",
+        answer: "Ask whether the selected records contain a pincode and whether the requested area can be supported. Request a dated count for small areas before purchase.",
       },
       {
         question: "Which file format do I receive?",
-        answer: "Excel or CSV, with one contact per row and the columns shown above. Both import into common dialers and CRMs. Tell us if your system needs a specific column order and we will match it.",
+        answer: "Ask which file formats, row structure and field order are available. Confirm that the agreed fields can be imported into your system before purchase.",
       },
       {
         question: "What happens if many numbers do not connect?",
-        answer: "Report the non-connecting numbers soon after delivery with the row details. We review them and replace records that were invalid at delivery. Numbers that connect but reach someone uninterested are not counted as faulty.",
+        answer: "Ask for the written post-delivery correction or replacement terms, including the reporting window and what evidence is required. Do not assume a replacement applies unless it is included in the quote or agreement.",
       },
       {
         question: "How is a mobile number list priced?",
-        answer: "Pricing is per record and depends on industries, locations, designations and how many fields you need. A narrow city and trade costs less than a nationwide pull. Every quote is custom and comes with a free sample first.",
+        answer: "For a mobile-number selection, state the industries, locations, roles and approximate size. Ask the quote to identify whether price is based on numbers or complete records, which fields are included, and the total and delivery terms.",
       },
     ],
     related: [
@@ -268,12 +268,12 @@ export default {
       { label: "Manufacturing Companies Database", href: "/manufacturing-companies-database-india" },
     ],
     cta: {
-      formTitle: "Get a Free Mobile Number Sample",
+      formTitle: "Discuss a Mobile Number Selection",
       formSubtitle: "Tell us the industries, cities or pincodes and roles (owner, director, manager) you want to call.",
-      buttonLabel: "Get Mobile Sample",
+      buttonLabel: "Ask About a Sample",
       whatsappMessage: "Hi, I need a business mobile number database sample. Industry and cities:",
       footerTitle: "Call Business Owners Who Fit Your Offer",
-      footerText: "Send the industries, locations and roles you need. You'll get matching sample records and a quote.",
+      footerText: "Send the industries, locations and roles you need. Ask whether a matching sample is available and request a written quote.",
     },
     disclaimer: "Business-linked mobile numbers for lawful B2B outreach. Check the NCPR registry before calling. Any business or person can request removal at any time.",
   },

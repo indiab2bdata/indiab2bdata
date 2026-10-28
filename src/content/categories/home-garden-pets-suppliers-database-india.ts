@@ -3,7 +3,7 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "keyword",
-  updated: "2026-10-18",
+  updated: "2026-10-28",
   keyword: {
     slug: "home-garden-pets-suppliers-database-india",
     keyword: "Home / Garden / Pets Suppliers Database India",
@@ -144,7 +144,7 @@ export default {
       },
       {
         question: "How do I request a sample and price?",
-        answer: "Use the enquiry form to send your product categories, supplier types, target locations, required fields and approximate quantity. The public CSV is a fictional format preview; ask our team for matching sample options, availability, delivery timing and a quote."
+        answer: "For home, garden or pet suppliers, specify product categories, supplier types and locations. Ask which fields can be supplied and confirm the count basis, total price and delivery terms in writing."
       }
     ],
     related: [

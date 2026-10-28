@@ -3,7 +3,7 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "keyword",
-  updated: "2026-10-16",
+  updated: "2026-10-28",
   keyword: {
     slug: "verified-business-database-india",
     keyword: "business database India",
@@ -43,7 +43,7 @@ export default {
       },
       {
         question: "Can I verify the quality myself before paying?",
-        answer: "Yes - every enquiry includes 15–20 free sample records to check before you commit.",
+        answer: "The CSV download is a fictional format preview. Ask whether a matching real sample is available for your selection, and confirm its fields and coverage.",
       },
       {
         question: "What happens if a number turns out to be inactive?",

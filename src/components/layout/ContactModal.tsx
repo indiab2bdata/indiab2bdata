@@ -30,13 +30,13 @@ function contextFor(pathname: string, cityPages: CityEnquiryPage[]): SampleConte
     if (hit) return { requirement: hit.label, slug: route.slice(1) };
   }
   const city = cityPages.find((page) => page.href === route);
-  if (city) return { requirement: `${city.city} Company Database`, slug: "b2b-database-india", state: city.state, city: city.city };
+  if (city) return { requirement: `${city.city} Company Database`, slug: "city-sample-preview", state: city.state, city: city.city };
   const state = states.find((s) => route === `/database/${s.slug}`);
-  if (state) return { requirement: `${state.name} B2B Database`, slug: "b2b-database-india", state: state.name };
+  if (state) return { requirement: `${state.name} B2B Database`, slug: "state-sample-preview", state: state.name };
   return { requirement: GENERAL, slug: "b2b-database-india", state: undefined };
 }
 
-/** First 3 columns x 3 rows of the masked dummy sample - a visual of what the buyer will receive. */
+/** First 3 columns x 3 rows of the fictional preview; it does not establish delivered fields or inventory. */
 function previewRows(slug: string, state?: string, city?: string) {
   const lines = buildSampleCsv(sampleProfileFor(slug), 3, state || city ? { state, city } : undefined)
     .replace(/^﻿/, "")
@@ -85,7 +85,7 @@ export function ContactModal({ cityPages }: { cityPages: CityEnquiryPage[] }) {
   }, [isOpen, closeModal]);
 
   const product = ctx.requirement === GENERAL ? "B2B Data" : ctx.requirement;
-  const whatsappText = `Hi, I'd like a free sample of ${ctx.requirement === GENERAL ? "your B2B data" : `the ${formatDataProduct(ctx.requirement)}`}.`;
+  const whatsappText = `Hi, I'd like to ask about sample options for ${ctx.requirement === GENERAL ? "your B2B data" : `the ${formatDataProduct(ctx.requirement)}`}.`;
 
   if (!isOpen) return null;
 
@@ -119,7 +119,7 @@ export function ContactModal({ cityPages }: { cityPages: CityEnquiryPage[] }) {
         <aside className="relative hidden flex-col justify-center overflow-hidden bg-gradient-to-br from-[#eaf5fd] via-[#f4f9fe] to-white p-9 lg:flex">
           <div aria-hidden="true" className="absolute -left-24 -top-24 h-72 w-72 rounded-full bg-teal/10 blur-3xl" />
           <span className="relative inline-flex w-fit items-center gap-1.5 rounded-full bg-white px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.14em] text-teal ring-1 ring-[#DCEAF3]">
-            <span className="h-1.5 w-1.5 rounded-full bg-teal" /> Free sample
+            <span className="h-1.5 w-1.5 rounded-full bg-teal" /> Sample format preview
           </span>
           <p className="relative mt-4 font-display text-[26px] font-extrabold leading-tight text-navy">{COPY.headline}</p>
 
@@ -173,7 +173,7 @@ export function ContactModal({ cityPages }: { cityPages: CityEnquiryPage[] }) {
         <div className="flex flex-col justify-center overflow-y-auto px-5 pb-[max(1.25rem,env(safe-area-inset-bottom))] pt-3 sm:p-9">
           <span aria-hidden="true" className="mx-auto mb-4 h-1.5 w-10 rounded-full bg-slate-200 sm:hidden" />
           <span className="mb-2 inline-flex w-fit items-center gap-1.5 rounded-full bg-bgsoft px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.14em] text-teal lg:hidden">
-            <span className="h-1.5 w-1.5 rounded-full bg-teal" /> Free sample
+            <span className="h-1.5 w-1.5 rounded-full bg-teal" /> Sample format preview
           </span>
           <h3 id="sample-modal-title" className="pr-10 font-display text-xl font-extrabold text-navy sm:text-2xl">
             {COPY.title}

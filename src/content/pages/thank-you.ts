@@ -4,7 +4,7 @@ import { ClipboardCheck, FileSpreadsheet, Phone } from "lucide-react";
 export const THANK_YOU = {
   meta: {
     title: "Thank You",
-    description: "Your request has been received. Our team will share sample records and a quote shortly.",
+    description: "Your request has been received. Review related products or use WhatsApp to discuss your brief.",
     path: "/thank-you",
   },
   /** "{prefix}{, Name}{suffix}" */
@@ -13,7 +13,7 @@ export const THANK_YOU = {
   received: {
     prefix: "We've received your request",
     forWord: " for ",
-    suffix: ". Our team will reach out shortly with free sample records and a custom quote.",
+    suffix: ".",
   },
   whatsappCta: "Get a faster reply on WhatsApp",
   whatsappText: (requirement?: string, firstName?: string) =>
@@ -21,8 +21,8 @@ export const THANK_YOU = {
   nextLabel: "What happens next",
   steps: [
     { icon: ClipboardCheck, title: "We review your requirement", text: "A data specialist checks your target audience, location and filters." },
-    { icon: Phone, title: "We call or WhatsApp you", text: "Usually within a few working hours, to confirm details and quantity." },
-    { icon: FileSpreadsheet, title: "You get free sample records", text: "Check the quality yourself before you pay for anything." },
+    { icon: Phone, title: "Discuss the requirement", text: "Use the published phone or WhatsApp details if you want to clarify your audience, fields or quantity." },
+    { icon: FileSpreadsheet, title: "Ask about sample options", text: "Public downloads are fictional format examples. Confirm whether a matching real-data sample is available before ordering." },
   ],
   exploreLabel: "While you wait, explore more databases",
   popular: [

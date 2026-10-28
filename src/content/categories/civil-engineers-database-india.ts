@@ -3,13 +3,13 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "keyword",
-  updated: "2026-10-16",
+  updated: "2026-10-28",
   keyword: {
     slug: "civil-engineers-database-india",
     keyword: "civil engineers database India",
     title: "Civil Engineers Database India",
     metaDescription:
-      "Civil engineers database in India - site engineers, project managers, structural consultants and contractors with contact details, city-wise. Free sample.",
+      "Civil engineers database in India - site engineers, project managers, structural consultants and contractors with contact details, city-wise. Ask whether a matching real sample is available.",
     eyebrow: "Civil Engineers Database",
     h1: "Civil Engineers Database in India",
     answer:
@@ -22,7 +22,7 @@ export default {
       { icon: Building2, title: "Engineers & Contractors", description: "Site, project, structural and contractors." },
       { icon: Users, title: "Experience Bands", description: "Freshers to senior project managers." },
       { icon: MapPinned, title: "City-Wise", description: "Metro and growing infrastructure cities." },
-      { icon: ShieldCheck, title: "Business Contacts", description: "Checked and deduplicated." },
+      { icon: ShieldCheck, title: "Business Contacts", description: "The published methodology describes deduplication before delivery; confirm other checks for the selected records." },
     ],
     dataFields: [
       "Engineer / contractor name",
@@ -64,7 +64,7 @@ export default {
       { question: "Can I filter by experience?", answer: "Yes, where recorded - from freshers to senior project managers with 15+ years of experience." },
       { question: "Can I get civil engineers in one city?", answer: "Yes. Records can be filtered by city, state and pincode." },
       { question: "Who buys civil engineer data?", answer: "Building material brands, construction equipment dealers, engineering software companies and recruiters." },
-      { question: "Is a free sample available?", answer: "Yes. Download the sample format on this page or request real sample records." },
+      { question: "Is a free sample available?", answer: "Ask whether a real sample for the civil-engineering role selection is available. The public CSV is fictional and demonstrates possible layout only; check any supplied rows for required fields and selected coverage." },
     ],
     related: [
       "building-material-database-india",

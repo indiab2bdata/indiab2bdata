@@ -6,11 +6,11 @@ import type { CategoryContent } from "@/types/landing";
 /** Intent: campaign-ready decision-maker contacts. */
 export default {
   template: "landing",
-  updated: "2026-10-22",
+  updated: "2026-10-28",
   keyword: {
     slug: "b2b-leads-database-india",
     keyword: "B2B leads database India",
-    title: "B2B Leads Database India | Decision-Maker Contacts",
+    title: "B2B Leads Database India | Contact-Level Selections",
     metaDescription:
       "A B2B leads database with decision-maker contacts across India - filtered by industry, designation and company size for outbound sales teams.",
     eyebrow: "B2B Leads Database India",
@@ -24,7 +24,7 @@ export default {
     highlights: [
       { icon: Users, title: "Decision-Maker Contacts", description: "Filtered toward relevant roles and designations." },
       { icon: Target, title: "Industry & Size Filters", description: "Built around your specific target segment." },
-      { icon: BadgeCheck, title: "Checked for Outreach", description: "Checked and deduplicated before delivery." },
+      { icon: BadgeCheck, title: "Checks to Confirm", description: "Ask which source, contact and duplicate checks apply to your selected segment." },
       { icon: TrendingUp, title: "Built for B2B Sales Motions", description: "Cold calling, email and account-based selling." },
     ],
     useCases: [
@@ -64,19 +64,19 @@ export default {
     {
       slug: "b2b-leads-database-india",
       name: "B2B Leads Database",
-      title: "B2B Leads Database India | Campaign-Ready Decision-Maker Contacts",
+      title: "B2B Leads Database India | Contact-Level Outbound Selections",
       metaDescription:
-        "B2B leads database for India: decision-makers with a direct mobile and business email, filtered by industry, role and city and formatted for tele-calling, email and CRM import. Sample rows on the page.",
+        "Contact-level B2B selection for outbound teams by industry, role and location. Confirm which contact fields, coverage and file format are available for your brief; public sample rows are fictional.",
       eyebrow: "Campaign-Ready Leads",
-      h1: "B2B Leads Database: Decision-Makers Ready for Your Next Campaign",
+      h1: "B2B Leads Database: Contact-Level Selections for Outbound Teams",
       lead:
-        "Contacts filtered to the people who buy, with a direct mobile and business email on each lead, formatted for your dialler, email tool or CRM. Built to start a campaign, not to research a market.",
+        "A contact-level selection for teams that already know their target audience. Request the roles and contact fields you need, then confirm which are available and how complete they are in a dated matching sample. This is for outreach planning, not market research or buying-intent signals.",
       segmentSummary:
-        "A lead list is judged by the share of rows your team can actually work. This database is selected for contactability: decision-maker roles, a direct mobile and a business email together, and columns ready for import into diallers, email platforms and CRMs. Use it when you know who you sell to and need the next 5,000 conversations, not when you're still mapping the market.",
+        "A leads selection is contact-oriented. Describe the roles, company types and locations you want, and confirm whether mobile, email and other requested fields are available for that segment. A contact record does not establish that a business is interested in buying; use the sample and field list to check fit before deciding how to use it.",
       segmentCards: [
-        { icon: Phone, title: "Mobile + Email on Every Lead", description: "Leads are selected for having both channels, so tele-calling and email can run on the same list." },
+        { icon: Phone, title: "Contact Fields to Confirm", description: "Ask which business phone and email fields are available for your chosen audience and review their completeness in a matching sample." },
         { icon: Target, title: "Decision-Maker Roles", description: "Owners, directors and functional heads, not general staff." },
-        { icon: Network, title: "Import-Ready Format", description: "Clean columns mapped for diallers, Mailchimp/Brevo-style tools and Zoho, HubSpot or Salesforce." },
+        { icon: Network, title: "Format for Your Workflow", description: "Confirm the agreed file format and field order for your team's dialler, email or CRM workflow." },
       ],
       segmentTabs: {
         heading: "Choose leads by how you'll work them",
@@ -90,22 +90,22 @@ export default {
         heading: "Coverage by campaign channel",
         label: "Channel",
         rows: [
-          ["Tele-calling", "Direct mobile + name + role"],
-          ["Email campaigns", "Business email + company + role"],
-          ["WhatsApp business messaging", "Mobile numbers for opted-in flows"],
-          ["Field sales", "Address and pincode for route planning"],
+          ["Tele-calling", "Request business phone, contact name and role"],
+          ["Email campaigns", "Request business email, company and role"],
+          ["WhatsApp business messaging", "Confirm applicable channel fields and use"],
+          ["Field sales", "Ask whether address and pincode support the territory"],
         ],
       },
       dataFields: [
         "Contact name",
         "Designation / role",
-        "Direct mobile number",
-        "Business email ID",
+        "Business phone number, where available",
+        "Business email ID, where available",
         "Company name and industry",
         "City, state and pincode",
-        "Lead segment tag (your campaign filter)",
+        "Campaign segment tag (illustrative; confirm availability)",
       ],
-      sample: "business",
+      sample: "b2bLead",
       useCases: [
         { icon: Headphones, title: "Tele-Calling Teams", description: "Load a dialler with role-filtered decision-makers and measure connect rate by segment." },
         { icon: Mail, title: "Cold Email Sequences", description: "Run segmented email sequences with consistent, CRM-ready fields." },
@@ -113,12 +113,12 @@ export default {
         { icon: Users, title: "Agency Lead Generation", description: "Agencies running outbound for clients can buy lead batches segment by segment." },
       ],
       faqs: [
-        { question: "How is a leads database different from a B2B database?", answer: "The B2B database is the full cross-section of businesses. Leads are a campaign-ready subset: decision-maker roles with both a direct mobile and a business email, formatted for import." },
-        { question: "Are these leads interested in my product?", answer: "No. These are contact leads, not intent or inbound leads. They match your filters for industry, role and city. Your campaign creates the interest." },
-        { question: "Can you format the file for my CRM or dialler?", answer: "Yes. Tell us the tool and we'll map the columns, for example for Zoho, HubSpot, Salesforce or a CSV for your dialler." },
-        { question: "Can I buy in batches?", answer: "Yes. Many teams buy in weekly or monthly batches by segment, so the data stays fresh and each campaign result can be compared." },
+        { question: "How is a leads database different from a B2B database?", answer: "The B2B database is a broad business selection. The leads page focuses on contact-level filters for outreach; it does not indicate that a contact or business has buying intent. Confirm roles, channels and file fields for your segment." },
+        { question: "Does a lead record show buying intent?", answer: "No. The page describes contact-level selection criteria, not buying intent or inbound enquiries. Confirm which contact fields and filters are available for your segment." },
+        { question: "Can you format the file for my CRM or dialler?", answer: "Ask whether the agreed fields can be arranged for your CRM or dialler, and confirm the required format and field order in writing." },
+        { question: "Can I request a batch selection?", answer: "Include the segment and volume in your brief. Ask whether a batch arrangement is available and confirm any update, repeat-order or freshness terms in writing." },
       ],
-      pricingNote: "Priced per lead. Leads with both a mobile and an email cost more than single-channel records, and batch subscriptions are discounted.",
+      pricingNote: "Request a written quote for the selected roles, locations, fields and volume; confirm the counting unit and total price.",
       related: [
         L("B2B Database", "b2b-database-india"),
         L("Mobile Number Database", "mobile-number-database-india"),
@@ -127,12 +127,12 @@ export default {
         L("Business Development & Sales Professionals Database", "business-development-sales-professionals-database-india"),
         L("Company Proprietors Database", "company-proprietors-database-india"),
       ],
-      disclaimer: `Contact leads for lawful B2B outreach. Follow TRAI and DND rules when calling or messaging.${dnd} Any person can request removal at any time.`,
-      formTitle: "Get Free Sample Leads",
+      disclaimer: `Contact-level fields for B2B outreach planning. Review published sourcing and usage terms and follow the rules that apply to your audience and channel.${dnd} Any person can request removal at any time.`,
+      formTitle: "Ask About a Leads Sample",
       bands: [
-        "Want to test a segment before you scale? Start with a small batch.",
-        "Need the file mapped to your CRM or dialler? Just tell us which one.",
-        "Get sample leads for your next campaign.",
+        "Want to evaluate a segment? Ask whether a matching sample is available.",
+        "Need a particular CRM or dialler format? Ask whether the fields can be supplied in that structure.",
+        "Discuss contact-level fields for your next outreach brief.",
       ],
       footerTitle: "Start Your Next Outbound Campaign",
     },

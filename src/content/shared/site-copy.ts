@@ -4,12 +4,12 @@ export const SITE_COPY = {
   /** Default alt text for the photo behind inner-page heroes. */
   heroImageAlt: "Sales team working with B2B business data",
   header: {
-    sampleCta: "Get Free Sample",
+    sampleCta: "Ask About a Sample",
     menuLabel: "Menu",
   },
   footer: {
     taglineLead: "B2B business data across India",
-    tagline: " - mobile numbers, emails and company records for smarter sales & marketing.",
+    tagline: " - business-contact and company-data selections for sales and research teams.",
     quickLinks: "Quick Links",
     states: "Database by State",
     coreDatabases: "Core Databases",
@@ -17,18 +17,18 @@ export const SITE_COPY = {
     followX: "Follow IndiaB2BData on X",
     contact: "Get in Touch",
     copyright: "© 2026 IndiaB2BData.com - All rights reserved.",
-    legalNote: "Data provided for legitimate marketing use only.",
+    legalNote: "Review the published usage terms before outreach.",
     privacy: "Privacy Policy",
     terms: "Terms & Conditions",
   },
-  mobileBar: { label: "Quick contact", call: "Call", whatsapp: "WhatsApp", sample: "Get Sample" },
+  mobileBar: { label: "Quick contact", call: "Call", whatsapp: "WhatsApp", sample: "Ask About a Sample" },
   floating: { call: "Call us", whatsapp: "Chat on WhatsApp" },
-  inlineCta: { button: "Get Free Sample", whatsapp: "Discuss on WhatsApp" },
+  inlineCta: { button: "Ask About a Sample", whatsapp: "Discuss on WhatsApp" },
   sampleDownload: {
-    eyebrow: "Free Sample Format",
+    eyebrow: "Fictional Sample Format",
     /** "{titlePrefix}{product}" */
     titlePrefix: "Download Sample Data - ",
-    text: "See exactly how your file will look. The sample has 20 dummy records (masked, for format preview only) with these columns:",
+    text: "This fictional, masked CSV demonstrates possible columns only; it does not confirm available inventory or fields for a paid selection:",
     button: "Download Sample (CSV)",
   },
   popularCities: { heading: "Popular Cities", eyebrow: "City Databases" },
@@ -41,7 +41,7 @@ export const SITE_COPY = {
     morePrefix: "More ",
     moreSuffix: " Databases",
     chipSuffix: " Database",
-    text: "This data is available across all Indian states and 700+ cities. Browse our state and city hubs to see local coverage, key industries and business clusters, or",
+    text: "Browse the state and city pages published on this site for location context. The pages do not establish inventory availability; ask us to confirm your target areas and fields, or",
     link: "view every state database",
   },
   directory: {

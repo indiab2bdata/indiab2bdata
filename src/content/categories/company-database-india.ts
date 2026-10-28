@@ -292,7 +292,7 @@ const custom = {
   "cta": {
     "formTitle": "Request a Company Database India Sample",
     "formSubtitle": "Describe the Company Database India selection, locations and fields you need.",
-    "buttonLabel": "Request Free Sample",
+    "buttonLabel": "Ask About a Sample",
     "whatsappMessage": "Hi, I need a Company Database India sample. My filters are:",
     "footerTitle": "Plan Your Company Database India Selection",
     "footerText": "Send your Company Database India criteria and quantity. Ask for a matching sample, dated coverage count, field availability and quote."
@@ -302,7 +302,7 @@ const custom = {
 
 export default {
   template: "custom",
-  updated: "2026-10-26",
+  updated: "2026-10-28",
   keyword: {
   "slug": "company-database-india",
   "keyword": "Company Database India",

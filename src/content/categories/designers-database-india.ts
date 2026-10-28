@@ -3,13 +3,13 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "keyword",
-  updated: "2026-10-17",
+  updated: "2026-10-28",
   keyword: {
     slug: "designers-database-india",
     keyword: "designers database India",
     title: "Designers Database India",
     metaDescription:
-      "Designers database in India - graphic, UI/UX, web, fashion, product and jewellery designers and design studios with contact details, city-wise. Free sample.",
+      "Designers database in India - graphic, UI/UX, web, fashion, product and jewellery designers and design studios with contact details, city-wise. Ask whether a matching real sample is available.",
     eyebrow: "Designers Database",
     h1: "Designers Database in India",
     answer:
@@ -73,7 +73,7 @@ export default {
       { question: "Can I get only fashion designers?", answer: "Yes. Records can be filtered by specialisation, such as fashion, graphic, UI/UX or jewellery design." },
       { question: "Are freelancers included?", answer: "Yes. You can choose freelancers, in-house designers, design studios or all three." },
       { question: "Which cities are covered?", answer: "All major cities, including design hubs such as Mumbai, Delhi NCR, Bengaluru, Pune, Hyderabad, Jaipur and Ahmedabad." },
-      { question: "Can I see a sample?", answer: "Yes. Download the sample format on this page or request real sample records." },
+      { question: "Can I see a sample?", answer: "Ask whether a real sample for the design specialisation selection is available. The public CSV is fictional and demonstrates possible layout only; check any supplied rows for required fields and selected coverage." },
     ],
     related: [
       "architect-interior-designers-database-india",

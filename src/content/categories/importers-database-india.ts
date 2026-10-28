@@ -5,7 +5,7 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "landing",
-  updated: "2026-10-23",
+  updated: "2026-10-28",
   keyword: {
     slug: "importers-database-india",
     keyword: "Importers Database India",
@@ -150,7 +150,7 @@ export default {
       },
       {
         question: "How do I request a sample and price?",
-        answer: "Send your product categories, trade roles, locations, contact fields and approximate quantity. The public download is a fictional format preview. Ask our team about matching sample options, coverage, delivery timing and a quote."
+        answer: "Request a written quote for the agreed selection, locations, fields and volume. Confirm the counting unit, total price and delivery terms before purchase."
       }
     ],
     related: [

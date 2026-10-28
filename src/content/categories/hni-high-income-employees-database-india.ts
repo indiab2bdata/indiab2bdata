@@ -3,7 +3,7 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "keyword",
-  updated: "2026-10-17",
+  updated: "2026-10-28",
   keyword: {
     slug: "hni-high-income-employees-database-india",
     keyword: "HNI / High Income Employees Database India",
@@ -148,7 +148,7 @@ export default {
       },
       {
         question: "How do I get a matching sample and price?",
-        answer: "Use the enquiry form to describe the audience criteria, locations, professional context, fields and approximate quantity you need. We will confirm available coverage, classification details, sample options, delivery timing and pricing."
+        answer: "Describe the audience criteria and locations, and ask how any proposed segment is defined. Confirm the available fields, count basis, total price and delivery terms in the written quote."
       }
     ],
     related: [

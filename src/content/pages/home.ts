@@ -9,10 +9,10 @@ export const HOME = {
     /** The home route uses this complete title as an absolute metadata title. */
     title: "B2B Business Data Provider in India | IndiaB2BData",
     titleTag: null,
-    description: "Company, GST, MCA, manufacturer and dealer data across Indian states. Review business-record samples before you buy.",
+    description: "Company, GST, MCA, manufacturer and dealer data selections for Indian markets. Review fictional format previews and ask about a matching real sample.",
     path: "/",
     /** Sitemap <lastmod>: bump when this page's main copy changes (not for header/footer/styling changes). */
-    updated: "2026-10-26",
+    updated: "2026-10-28",
     about: "B2B data provider India",
     itemListName: "B2B & Company Databases",
   },
@@ -22,10 +22,10 @@ export const HOME = {
     /** "{lead} {accent} {and}{accent2}" */
     h1: { lead: "B2B Business Data", accent: "for Sales Teams", and: "Across ", accent2: "India" },
     subhead:
-      "IndiaB2BData.com helps sales teams select company records and business contacts by industry, state, city and role. Start with a sample, confirm the available fields and record count, then request a quote for your market.",
-    sampleCta: "Request Free Sample Data",
+      "IndiaB2BData.com helps sales teams discuss company records and business contacts by industry, state, city and role. Review the fictional format preview, ask which fields and coverage can be confirmed, then request a written quote.",
+    sampleCta: "Ask About a Sample",
     whatsappCta: "Chat on WhatsApp",
-    trustDivider: "Trusted by sales teams",
+    trustDivider: "Company and business-contact data",
     stats: [],
   },
   directory: {
@@ -135,54 +135,54 @@ export const HOME = {
   ]
 },
   trustStrip: {
-    lead: "Trusted by teams across:",
+    lead: "Examples of sectors in our product directory:",
     industries: ["Real Estate", "EdTech", "Finance & Insurance", "Manufacturing", "Healthcare", "E-commerce"],
   },
   products: {
     eyebrow: "What We Offer",
-    title: "Data Products Built for Every Team",
-    text: "Pick a ready-made database or tell us exactly who you want to reach - we'll customise it by city, industry, turnover or designation.",
+    title: "Company and Business Data Selections",
+    text: "Explore company, registry, trade and contact categories. Describe your audience and ask which locations, roles and fields can be confirmed for your selection.",
     items: [
       {
         href: "/mobile-number-database-india",
         icon: Smartphone,
         title: "Mobile Number Database",
-        description: "Direct-dial mobile numbers of decision-makers, filtered by city, pincode and job role.",
+        description: "Discuss business mobile fields, roles and locations; confirm availability and completeness for your segment.",
       },
       {
         href: "/email-database-india",
         icon: Mail,
         title: "Email Database",
-        description: "Bounce-checked corporate email IDs, ready for your next outreach or newsletter campaign.",
+        description: "Ask which business email fields are available and how any deliverability checks are scoped.",
       },
       {
         href: "/gst-database-india",
         icon: Building2,
         title: "GST & Company Database",
-        description: "Registered company details with GSTIN, turnover band and business category for B2B targeting.",
+        description: "Explore company and registry selections; confirm which identifiers and firmographic fields are available for your brief.",
       },
       {
         href: "/industry-wise-company-database-india",
         icon: Layers,
-        title: "Industry-Wise Leads",
-        description: "Pre-segmented lists across 500+ industries - real estate, education, finance, healthcare and more.",
+        title: "Industry-Wise Company Data",
+        description: "Discuss sector and sub-industry criteria; ask how classifications are sourced and what coverage can be confirmed.",
       },
       {
         href: "/bulk-sms-database-india",
         icon: MessageSquareText,
         title: "Bulk WhatsApp/SMS Data",
-        description: "Number sets filtered by city and segment, formatted for your bulk WhatsApp or SMS campaigns.",
+        description: "Ask which business-number fields and locations may be available, and confirm the rules for your intended channel.",
       },
       {
         href: "/contact",
         icon: Globe2,
         title: "Custom / Pan-India Data",
-        description: "Tell us your exact target - state, city cluster or niche - we'll build a custom list for you.",
+        description: "Share a target state, city cluster or niche and ask what can be supplied for that brief.",
       },
     ],
     /** Hand-written directory blurbs where the meta description does not make a good one-liner. */
     blurbOverrides: {
-      "/industry-wise-company-database-india": "Company lists segmented across 500+ industries and sub-sectors",
+      "/industry-wise-company-database-india": "Company selections by sector and sub-industry, subject to classification and coverage confirmation",
       "/teachers-database-india": "School and college teachers by subject, board and city",
       "/advocates-lawyers-database-india": "Advocates, law firms and legal practitioners by court and practice area",
       "/agents-database-india": "Real estate, insurance, travel and other agents by city and category",
@@ -211,7 +211,7 @@ export const HOME = {
       General: {
         image: "/images/industries/general.jpg",
         alt: "Bandra Kurla Complex business district, Mumbai",
-        summary: "Pan-India B2B and company data for any sales or marketing team.",
+        summary: "Company and business-contact selections for defined Indian markets.",
       },
       "Company Records": {
         image: "/images/industries/company.jpg",
@@ -231,17 +231,17 @@ export const HOME = {
       Professionals: {
         image: "/images/industries/professionals.jpg",
         alt: "IT professionals at a technology campus in Bengaluru",
-        summary: "Decision-makers and specialists across every function.",
+        summary: "Decision-makers and specialists across selected functions.",
       },
       Channel: {
         image: "/images/industries/channel.jpg",
         alt: "Mobile phone market in Kochi, Kerala",
-        summary: "Mobile, email, WhatsApp and bulk SMS-ready contact data.",
+        summary: "Contact selections for mobile, email and messaging requirements.",
       },
       Consumer: {
         image: "/images/industries/consumer.jpg",
         alt: "Busy shopping street in Mumbai",
-        summary: "Consumer audience segments for B2C and premium campaigns.",
+        summary: "Consumer audience selections; confirm each product’s scope and terms.",
       },
       "Education & Web": {
         image: "/images/industries/education.jpg",
@@ -253,7 +253,7 @@ export const HOME = {
   folders: {
     eyebrow: "Open a Folder",
     title: "Your Data, Neatly Filed",
-    text: "Every database is organised, checked and ready to use. Click a folder to see what's inside, then pick a file to explore that dataset.",
+    text: "Browse database selections by group. Open a product page to review its intended audience, fields to confirm and sample-format guidance.",
     hint: "Hover to peek · Click to open · Choose a file",
     /** `art` names a look defined in the DataFolders component ("brand") or a GlassFolder preset. */
     items: [
@@ -267,7 +267,7 @@ export const HOME = {
           { name: "B2B Database", meta: "Business records", href: "/b2b-database-india", art: "glacier" },
           { name: "GST Data", meta: "GSTIN", href: "/gst-database-india" },
           { name: "MCA / ROC Records", meta: "CIN", href: "/mca-company-database-india" },
-          { name: "New Registrations", meta: "Monthly", href: "/newly-registered-companies-india", art: "brand" },
+          { name: "New Registrations", meta: "By period", href: "/newly-registered-companies-india", art: "brand" },
         ],
       },
       {
@@ -292,7 +292,7 @@ export const HOME = {
         files: [
           { name: "Mobile Numbers", meta: "By city & role", href: "/mobile-number-database-india", art: "brand" },
           { name: "Email Lists", meta: "Business", href: "/email-database-india" },
-          { name: "WhatsApp Numbers", meta: "Active", href: "/whatsapp-number-database-india" },
+          { name: "WhatsApp Numbers", meta: "Business selection", href: "/whatsapp-number-database-india" },
           { name: "Bulk SMS Data", meta: "Business format", href: "/bulk-sms-database-india", art: "glacier" },
         ],
       },
@@ -309,12 +309,12 @@ export const HOME = {
     imageAlt: "Data analytics dashboard on laptop",
     eyebrow: "Why Choose Us",
     title: "Review the Selection Before Ordering",
-    text: "Our published methodology describes deduplication and invalid-number removal before delivery. Review the available fields, source context and date for your selected segment.",
+    text: "Review the published sourcing methodology and limitations. Ask which source and contact checks apply to your selected segment, and when they were performed.",
     cta: "Talk to Our Team",
     points: [
-      { icon: Sparkles, title: "Checked Before Delivery", description: "De-duplicated and checked for invalid numbers before delivery." },
-      { icon: IndianRupee, title: "Affordable Pricing", description: "Pay only for the records and filters you actually need." },
-      { icon: Zap, title: "Fast Delivery", description: "Review a sample and agree the delivery timeline." },
+      { icon: Sparkles, title: "Checks to Confirm", description: "Ask what source, contact and duplicate checks apply to your selected segment." },
+      { icon: IndianRupee, title: "Written Quote", description: "Confirm the counting unit, fields, delivery terms and total price in writing." },
+      { icon: Zap, title: "Delivery Terms", description: "Confirm the format and delivery timing in the written quote." },
       { icon: MapPinned, title: "Plan Your Territory", description: "Define the states, cities and industrial areas your sales team serves." },
     ],
   },
@@ -323,9 +323,9 @@ export const HOME = {
     title: "From Request to Ready List in Four Steps",
     steps: [
       { number: "01", title: "Share Your Requirement", description: "Tell us the industry, city and role you want to target." },
-      { number: "02", title: "Get a Free Sample", description: "Review 15–20 sample records before you commit." },
-      { number: "03", title: "Confirm & Pay", description: "Choose a package that fits your budget and volume." },
-      { number: "04", title: "Receive Your Data", description: "Get a clean Excel/CSV file, ready to import and use." },
+      { number: "02", title: "Review a Sample Format", description: "Public CSV examples are fictional and illustrate possible columns only." },
+      { number: "03", title: "Confirm the Quote", description: "Review the final fields, count, price and delivery terms before ordering." },
+      { number: "04", title: "Receive the Agreed File", description: "Use the format and timing confirmed in your written quote." },
     ],
   },
   testimonials: {
@@ -337,8 +337,8 @@ export const HOME = {
   ctas: {
     products: { id: "home-products-cta", text: "Not sure which data product fits? Tell us what you need.", buttonLabel: "Talk to Our Team" },
     process: { id: "home-process-cta", text: "Ready to start? Describe your business audience and request a sample." },
-    testimonials: { id: "home-testimonials-cta", text: "Join hundreds of teams already reaching real decision-makers." },
-    faq: { id: "home-faq-cta", text: "Still have questions? Get a free sample and see the data for yourself." },
+    testimonials: { id: "home-testimonials-cta", text: "Ask which contact roles and fields can be confirmed for your selected segment." },
+    faq: { id: "home-faq-cta", text: "Still have questions? Review a fictional format example and ask which fields can be confirmed for your brief." },
   },
   sample: { slug: "b2b-database-india", label: "B2B Business Database" },
 };

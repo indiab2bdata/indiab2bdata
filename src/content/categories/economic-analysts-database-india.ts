@@ -3,13 +3,13 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "keyword",
-  updated: "2026-10-16",
+  updated: "2026-10-28",
   keyword: {
     slug: "economic-analysts-database-india",
     keyword: "economic analysts database India",
     title: "Economic Analysts Database India",
     metaDescription:
-      "Economic analysts database in India - economists, research analysts, policy and market analysts in banks, think tanks, consultancies and government bodies. Free sample.",
+      "Economic analysts database in India - economists, research analysts, policy and market analysts in banks, think tanks, consultancies and government bodies. Ask whether a matching real sample is available.",
     eyebrow: "Economic Analysts Database",
     h1: "Economic Analysts Database in India",
     answer:
@@ -74,7 +74,7 @@ export default {
       { question: "How is this different from the business analysts database?", answer: "Economic analysts study the economy, markets and sectors. Business analysts work inside companies on processes, requirements and IT systems." },
       { question: "Can I filter by specialisation?", answer: "Yes, where recorded - for example macroeconomics, policy, credit research, equity research or market research." },
       { question: "Which cities have the most economic analysts?", answer: "Mumbai is the largest hub because of banks, brokerages and rating agencies, followed by Delhi NCR for policy and think tanks, and Bengaluru for research and analytics firms." },
-      { question: "Can I see a sample?", answer: "Yes. Download the sample format on this page or request real sample records." },
+      { question: "Can I see a sample?", answer: "Ask whether a real sample for the economic-analyst organisation and role selection is available. The public CSV is fictional and demonstrates possible layout only; check any supplied rows for required fields and selected coverage." },
     ],
     related: [
       "financial-analysts-managers-industry-database",

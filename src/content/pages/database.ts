@@ -102,11 +102,11 @@ export const DATABASE_HUB = {
   },
   cities: { eyebrow: "Browse by Location", heading: "City Databases" },
   sample: { slug: "state-wise-business-database", label: "State-Wise Business Database" },
-  cta: { id: "database-hub-cta", text: "Don't see your state listed? We cover all of India - tell us what you need.", buttonLabel: "Talk to Our Team" },
+  cta: { id: "database-hub-cta", text: "Don't see your state listed? Share the locations and business types you need so availability can be checked.", buttonLabel: "Talk to Our Team" },
   faq: { id: "database-hub-faq", eyebrow: "FAQs", heading: "State-Wise Database FAQs" },
   footer: {
     title: "Need Data for a Specific State or City?",
-    text: "Share your target audience, location and quantity - we'll send free sample records and a custom quote.",
+    text: "Share your target audience, location and quantity. Ask which sample options and coverage can be confirmed, then request a written quote.",
     source: "database-hub-footer-form",
     requirement: "State-Wise Business Database",
   },

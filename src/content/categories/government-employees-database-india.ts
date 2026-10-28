@@ -15,7 +15,7 @@ const GOV_FIELDS = [
 
 export default {
   template: "landing",
-  updated: "2026-10-22",
+  updated: "2026-10-28",
   keyword: {
     slug: "government-employees-database-india",
     keyword: "Government Employees Database India",
@@ -160,7 +160,7 @@ export default {
       },
       {
         question: "How do I request a sample and price?",
-        answer: "Use the enquiry form to send your department, role, employer type, location, field and quantity requirements. The public download is a fictional format preview; ask our team about matching sample options, coverage and pricing."
+        answer: "Request a written quote for the agreed selection, locations, fields and volume. Confirm the counting unit, total price and delivery terms before purchase."
       }
     ],
     related: [
@@ -186,32 +186,32 @@ export default {
     name: "Government Employees Database",
     title: "Government Employees Database India | Central, State & PSU Staff",
     metaDescription:
-      "Government employees database for India, segmented into central, state, PSU and local-body staff by department, designation and city. Preview 5 masked sample rows on the page.",
+      "Discuss a public-sector employee selection by employer type, department, role or location. Ask which fields and groups are available; the on-page rows are fictional.",
     eyebrow: "Public Sector Audience Data",
     h1: "Government Employees Database in India",
     lead:
-      "Reach central, state, PSU and municipal staff by department, designation and city. Every list is built for the roles your offer serves, with work contact fields and a free sample before you pay.",
+      "Describe the public-sector audience and locations relevant to your brief. Confirm whether the requested role and work-contact fields are available, and ask about a matching sample before requesting a quote.",
     breadcrumbs: [
       { label: "Databases", href: "/database" },
       { label: "Government Employees Database", href: "/government-employees-database-india" },
     ],
     segmentSummary:
-      "India's public sector is not one audience. A section officer in a central ministry, an accounts clerk in a district collectorate, an engineer at a power PSU and a ward officer at a municipal corporation differ in how they buy, what they need and the time they have for you. This database keeps those four employer types apart, so a training institute, a salary-account bank or a GovTech vendor reaches the right desk.",
+      "Public-sector organizations include different employer types and roles. If those distinctions matter to your offer, name the bodies, departments and designations in your brief, then confirm the source, fields, coverage and counts for each group. Examples on this page do not establish that a group or contact field is available.",
     segmentCards: [
       {
         icon: Landmark,
         title: "Ministries & Departments",
-        description: "Central and state secretariat staff, directorates and attached offices, tagged by department and grade.",
+        description: "Ask whether selected records can be grouped by department or grade, and which offices are represented.",
       },
       {
         icon: Building2,
         title: "PSU & Public Bank Employees",
-        description: "Officers and staff at central and state public-sector undertakings, kept separate from ministry employees.",
+        description: "Specify the undertaking or public-bank scope and confirm whether it can be separated from ministry records.",
       },
       {
         icon: Users,
         title: "Local Body Employees",
-        description: "Municipal corporations, councils and district-level offices for city-specific outreach.",
+        description: "Name the local bodies or districts you need and confirm whether they appear in the selected records.",
       },
     ],
     segmentTabs: {
@@ -294,17 +294,17 @@ export default {
       {
         question: "Which government employees are covered?",
         answer:
-          "Staff in central ministries and their field offices, state secretariats and district offices, central and state PSUs, public-sector banks, and municipal and local bodies. Every record is tagged with its employer type, so you buy only the groups you need.",
+          "Examples of possible groups include central and state offices, PSUs, public-sector banks and local bodies. Ask which groups appear in the selected data and whether employer type is recorded for those records.",
       },
       {
         question: "Can I filter by department, designation or grade?",
         answer:
-          "Yes. Filter by department or ministry, by designation (for example Section Officer, Accounts Officer or Engineer) and by state, city or pincode. Grade is available where the source records it.",
+          "Ask which department, role and location fields are present in the selected records, whether they can be used as filters, and request a dated count for each requested group.",
       },
       {
         question: "Are these personal or work contact details?",
         answer:
-          "The database holds work-context records: name, designation, office and the work mobile and email linked to that role. We do not sell home addresses, family details, salary slips or service-book data.",
+          "Ask which personal or work-context fields are included, how they are sourced and what is excluded from the proposed selection. The sample is fictional and does not establish inventory.",
       },
       ...trustFaqs({
         name: "Government Employees Database",
@@ -313,14 +313,14 @@ export default {
         fields: GOV_FIELDS,
         segments: ["Central Government", "State Government", "PSUs & Public Banks", "Local Bodies"],
         segmentLabel: "Employer type",
-        pricingNote: "Bigger state-wise orders get a lower rate per record.",
+        pricingNote: "Request a written quote for the agreed employer types, locations, fields and volume. Confirm the counting unit and total price.",
         notIncluded: "It is not an official government database, and it holds no service-book data.",
       }),
     ],
     pricingHint: {
       from: "{{PRICE}}",
       unit: "per record",
-      note: "The price depends on the employer types, fields and volume you choose. Bigger state-wise orders get a lower rate per record.",
+      note: "Request a written quote for the agreed employer types, locations, fields and volume. Confirm the counting unit and total price.",
     },
     relatedLinks: [
       { label: "Teachers Database", href: "/teachers-database-india" },
@@ -337,18 +337,18 @@ export default {
     areaServed: undefined,
     image: { src: "/images/keywords/office-team.jpg", alt: "Government office staff working at their desks" },
     cta: {
-      formTitle: "Get a Free Government Data Sample",
-      formSubtitle: "Tell us the employer type, departments and cities. We'll send matching sample rows and a quote.",
-      buttonLabel: "Get Free Sample",
+      formTitle: "Ask About a Government Data Sample",
+      formSubtitle: "Tell us the employer types, departments and cities. Ask whether a matching sample is available and request a written quote.",
+      buttonLabel: "Ask About a Sample",
       whatsappMessage: "Hi, I need a Government Employees Database sample. Employer type / departments / cities:",
       bands: [
-        "Need only central ministries, or only one state's collectorates? We build the list to your exact department brief.",
-        "Want PSU engineers or bank officers instead of ministry staff? Ask for a split sample covering each employer type.",
-        "Planning around a departmental exam or a pay-commission update? Lock your list in early.",
+        "Need a specific ministry, state or district? Ask which departments are represented and request a dated count.",
+        "Need PSU engineers or bank officers? Ask whether those groups can be separated and whether a matching sample is available.",
+        "Planning a campaign around an event? Confirm the extract date and available fields before setting a schedule.",
       ],
-      footerTitle: "Ready to Reach the Right Government Desk?",
+      footerTitle: "Discuss a Public-Sector Selection",
       footerText:
-        "Send the employer types, departments, designations and cities you need. You'll get sample rows, a record count and a quote, usually within a few working hours.",
+        "Send the employer types, departments, roles and locations you need. Ask which fields and sample options can be confirmed, and request a dated count and written quote.",
     },
   },
 } satisfies CategoryContent;

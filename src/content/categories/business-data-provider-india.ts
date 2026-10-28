@@ -3,26 +3,26 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "keyword",
-  updated: "2026-10-16",
+  updated: "2026-10-28",
   keyword: {
     slug: "business-data-provider-india",
     keyword: "business data provider India",
-    title: "Business Data Provider India | Data Quality Checks",
+    title: "Business Data Provider India | Compare Data Terms",
     metaDescription:
-      "A business data provider in India with a transparent verification pipeline - collection, verification and deduplication before delivery.",
+      "Compare business-data providers by documented sources, record dates, fields, checks, duplicate handling and delivery terms for the dataset you need.",
     eyebrow: "Business Data Provider India",
     h1: "Business Data Provider India - How Our Data Pipeline Works",
     answer:
-      "A business data provider supplies contact and company data for sales and marketing use, typically on a one-time or recurring basis. IndiaB2BData.com operates a three-stage pipeline - collection, verification and deduplication - before any business data reaches a client.",
+      "A business data provider supplies company or contact records for a defined business use. Before purchase, ask for the source, extract date, included fields, duplicate-handling method, price basis and any recurring-delivery terms. This page does not certify a particular dataset.",
     intro: [
-      "Agencies, call centres and internal sales teams all need a steady, reliable feed of business data - not just a single list. As a business data provider, our focus is on the pipeline behind the data, not just the export file you receive.",
-      "Every batch goes through the same three steps: records are collected from public and permission-based sources, cross-checked for accuracy, and deduplicated against our existing database before delivery.",
+      "A buyer considering a one-time or recurring selection should confirm the source and date of each extract, what changes between deliveries, how duplicate records are handled, and whether the agreed fields can be supplied in the requested format.",
+      "Request a written description of the collection sources, checks and duplicate handling applied to the specific selection. Do not treat a general process statement as evidence about a particular field or record.",
     ],
     highlights: [
-      { icon: Search, title: "Multi-Source Collection", description: "Records gathered from public and permission-based channels." },
-      { icon: UserCheck, title: "Verification Pipeline", description: "Manual and automated checks before delivery." },
-      { icon: ListChecks, title: "Deduplication", description: "Cross-checked against our existing database." },
-      { icon: RefreshCcw, title: "Monthly Refresh Cycle", description: "Inactive contacts identified and replaced regularly." },
+      { icon: Search, title: "Source Details", description: "Ask for the source information for the proposed selection." },
+      { icon: UserCheck, title: "Checks to Confirm", description: "Ask which checks were applied to which fields and when." },
+      { icon: ListChecks, title: "Duplicate Handling", description: "Confirm the deduplication basis and counting unit." },
+      { icon: RefreshCcw, title: "Repeat Deliveries", description: "Ask whether repeat extracts are available and what changes between them." },
     ],
     useCases: [
       "Agencies needing a white-label data supply for clients",
@@ -33,11 +33,11 @@ export default {
     faqs: [
       {
         question: "Can you supply data on a recurring basis, not just once?",
-        answer: "Yes - Business and Enterprise packages include periodic refreshes so you get a continuing feed, not a one-off list.",
+        answer: "Ask whether recurring delivery is available for your selection. Confirm the frequency, snapshot basis, duplicate handling, price and replacement terms in writing.",
       },
       {
         question: "Do you support white-label or agency use?",
-        answer: "Yes, agencies regularly use our data to service their own clients under their own branding.",
+        answer: "Ask whether agency or white-label terms are available and confirm permitted use, attribution, support and resale restrictions in the written agreement.",
       },
       {
         question: "Who is responsible for DND compliance?",

@@ -3,12 +3,12 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "custom",
-  updated: "2026-10-25",
+  updated: "2026-10-28",
   keyword: {
     slug: "male-gents-database-india",
     keyword: "Male / Gents Database India",
     title: "Male Consumer Database India by City",
-    metaDescription: "Male consumer database India for local retail: adult men by city, pincode and age band for apparel, grooming and gyms. Compliance notes and free sample.",
+    metaDescription: "Male consumer database India for local retail: adult men by city, pincode and age band for apparel, grooming and gyms. Compliance notes; ask whether a matching real sample is available.",
     eyebrow: "Male / Gents Database",
     h1: "Male / Gents Consumer Database in India",
     answer: "A male or gents database enquiry concerns an adult male consumer audience, with the locations and recorded audience details relevant to your offer. Share your product or service, target areas and selection criteria so we can check available coverage, fields and matching sample options.",
@@ -147,7 +147,7 @@ export default {
       },
       {
         question: "How do I request a matching sample and price?",
-        answer: "Use the enquiry form to send your offer, target areas, adult criteria, contact channel, required fields and approximate quantity. We will confirm available coverage, source context, sample options and pricing."
+        answer: "Request a written quote for the agreed selection, locations, fields and volume. Confirm the counting unit, total price and delivery terms before purchase."
       }
     ],
     related: [
@@ -172,7 +172,7 @@ export default {
     name: "Male Consumer Database",
     title: "Male Consumer Database India by City",
     metaDescription:
-      "Male consumer database India for local retail: adult men by city, pincode and age band for apparel, grooming and gyms. Compliance notes and free sample.",
+      "Male consumer database India for local retail: adult men by city, pincode and age band for apparel, grooming and gyms. Compliance notes; ask whether a matching real sample is available.",
     eyebrow: "Adult Male Consumer Audience",
     h1: "Male Consumer Database India for City and Pincode Campaigns",
     lead:
@@ -281,7 +281,7 @@ export default {
           { title: "Using WhatsApp as a broadcast tool", text: "WhatsApp Business rules require that people agreed to hear from you. Keep it for customers who reply or ask first; see our WhatsApp number database page for the rules." },
         ],
       },
-      { type: "sample", heading: "Preview of a Consumer Record", intro: "Fictional, masked rows in the delivered column order. Your free sample shows real rows for the pincodes you choose." },
+      { type: "sample", heading: "Preview of a Consumer Record", intro: "Fictional, masked rows illustrate a possible format only. They do not confirm inventory or field availability. Ask whether a matching sample is available for your selection." },
       {
         type: "sourcing",
         heading: "How Consumer Records Are Sourced",
@@ -290,7 +290,7 @@ export default {
           "Anyone on the list can ask to be removed through our removal process, and we delete the record. For business audiences instead of consumers, our mobile number database and bulk SMS database cover professionals and firms. Our B2B data guides explain SMS and DND rules in more detail.",
         ],
       },
-      { type: "cta", text: "Send your store location and the pincodes you serve; we'll reply with matching sample rows and a quote.", buttonLabel: "Request a Free Sample" },
+      { type: "cta", text: "Send your store location and the pincodes you serve; ask whether a matching sample is available and request a written quote.", buttonLabel: "Ask About a Sample" },
     ],
     faqs: [
       {
@@ -335,7 +335,7 @@ export default {
       buttonLabel: "Get Consumer Sample",
       whatsappMessage: "Hi, I need a male consumer database sample. City and pincodes:",
       footerTitle: "Reach Male Customers Near Your Store",
-      footerText: "Send your city, pincodes, age bands and the fields you need. You'll get matching sample records, a record count and a quote.",
+      footerText: "Send your city, pincodes, age bands and the fields you need. Ask whether a matching sample is available and request a written quote.",
     },
     disclaimer:
       "Consumer contact data for lawful, relevant local marketing only. We do not hold proof of consent for every record; check DND, use DLT-registered SMS and honour every opt-out. Anyone can request removal at any time.",

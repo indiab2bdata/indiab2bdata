@@ -3,13 +3,13 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "keyword",
-  updated: "2026-10-19",
+  updated: "2026-10-28",
   keyword: {
     slug: "entertainment-media-database-india",
     keyword: "entertainment and media database India",
     title: "Entertainment & Media Database India",
     metaDescription:
-      "Entertainment and media database in India - production houses, ad agencies, publishers, broadcasters, event companies and media professionals by city. Free sample.",
+      "Entertainment and media database in India - production houses, ad agencies, publishers, broadcasters, event companies and media professionals by city. Ask whether a matching real sample is available.",
     eyebrow: "Entertainment & Media Database",
     h1: "Entertainment & Media Database in India",
     answer:
@@ -75,7 +75,7 @@ export default {
       { question: "Can I get only advertising agencies?", answer: "Yes. Records can be filtered by segment, such as advertising, digital agencies, production or events." },
       { question: "Does it include individual media professionals?", answer: "Records focus on companies and their decision-makers, such as founders, producers and department heads." },
       { question: "Who buys media industry data?", answer: "Equipment and software suppliers, brands, recruiters, financiers and event sponsors." },
-      { question: "Can I see a sample?", answer: "Yes. Download the sample format on this page or request real sample records." },
+      { question: "Can I see a sample?", answer: "Ask whether a real sample for the entertainment or media business category selection is available. The public CSV is fictional and demonstrates possible layout only; check any supplied rows for required fields and selected coverage." },
     ],
     related: [
       "digital-photography-studios-database-india",

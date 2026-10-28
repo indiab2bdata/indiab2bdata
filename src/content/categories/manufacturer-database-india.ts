@@ -299,7 +299,7 @@ const custom = {
   "cta": {
     "formTitle": "Request a Manufacturers Database India Sample",
     "formSubtitle": "Describe the Manufacturers Database India selection, locations and fields you need.",
-    "buttonLabel": "Request Free Sample",
+    "buttonLabel": "Ask About a Sample",
     "whatsappMessage": "Hi, I need a Manufacturers Database India sample. My filters are:",
     "footerTitle": "Plan Your Manufacturers Database India Selection",
     "footerText": "Send your Manufacturers Database India criteria and quantity. Ask for a matching sample, dated coverage count, field availability and quote."
@@ -309,7 +309,7 @@ const custom = {
 
 export default {
   template: "custom",
-  updated: "2026-10-26",
+  updated: "2026-10-28",
   keyword: {
   "slug": "manufacturer-database-india",
   "keyword": "Manufacturer Database India by Cluster",

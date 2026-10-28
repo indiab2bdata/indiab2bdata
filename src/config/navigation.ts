@@ -19,7 +19,7 @@ export const HEADER_LINKS: NavLink[] = [
 export const FOOTER_QUICK_LINKS: NavLink[] = [
   { href: "/#offer", label: "Data Products" },
   { href: "/#why", label: "Why Us" },
-  { href: "/blog", label: "B2B Data Guides" },
+  { href: "/blog", label: "Database Selection" },
   { href: "/about", label: "About Us" },
   { href: "/contact", label: "Contact Us" },
   { href: "/privacy-policy", label: "Privacy Policy" },
@@ -66,6 +66,7 @@ const ALL_PRODUCT_GROUPS: ProductGroup[] = [
       { href: "/it-companies-database-india", label: "IT Companies" },
       { href: "/consultants-consulting-services-database-india", label: "Consulting Firms" },
       { href: "/legal-firms-database-india", label: "Legal Firms" },
+      { href: "/b2b-b2c-companies-database", label: "Companies by Customer Model (B2B / B2C)" },
     ],
   },
   {
@@ -168,7 +169,7 @@ const ALL_PRODUCT_GROUPS: ProductGroup[] = [
     heading: "Consumer",
     description: "Consumer audiences segmented by profile, interest and spend.",
     links: [
-      { href: "/b2b-b2c-companies-database", label: "B2B & B2C Data" },
+
       { href: "/car-owners-database", label: "Car Owners" },
       { href: "/job-seekers-database", label: "Job Seekers" },
       { href: "/cab-users-database-india", label: "Cab Users" },

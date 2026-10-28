@@ -3,13 +3,13 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "keyword",
-  updated: "2026-10-16",
+  updated: "2026-10-28",
   keyword: {
     slug: "contractors-database-india",
     keyword: "contractors database India",
     title: "Contractors Database India | Civil, Electrical & Govt",
     metaDescription:
-      "Contractors database in India - civil, electrical, plumbing, interior, road and government contractors with owner contacts, trade and city. Free sample format.",
+      "Contractors database in India - civil, electrical, plumbing, interior, road and government contractors with owner contacts, trade and city. Fictional sample format preview; ask whether a matching real sample is available.",
     eyebrow: "Contractors Database",
     h1: "Contractors Database in India",
     answer:
@@ -22,7 +22,7 @@ export default {
       { icon: Building2, title: "All Major Trades", description: "Civil, electrical, plumbing, HVAC, interiors, roads." },
       { icon: Landmark, title: "Govt-Registered Firms", description: "PWD, CPWD and municipal contractors where available." },
       { icon: MapPinned, title: "City & District-Wise", description: "Metros, tier-2 cities and district towns." },
-      { icon: ShieldCheck, title: "Business Contacts", description: "Checked and deduplicated before delivery." },
+      { icon: ShieldCheck, title: "Business Contacts", description: "The published methodology describes deduplication before delivery; ask which other checks apply to the selected records." },
     ],
     dataFields: [
       "Contractor / firm name",
@@ -69,7 +69,7 @@ export default {
       { question: "Can I filter by contractor type?", answer: "Yes. You can choose civil, electrical, plumbing, HVAC, interior, road or other trades." },
       { question: "Can I get contractors in a specific district?", answer: "Yes. Records can be filtered by city, district and pincode." },
       { question: "How is this different from the civil engineers database?", answer: "This database covers contracting firms and their owners. The civil engineers database covers individual engineers, project managers and consultants." },
-      { question: "Can I see a sample?", answer: "Yes. Download the sample format on this page or request real sample records." },
+      { question: "Can I see a sample?", answer: "Ask whether a real sample for the contractor type and location selection is available. The public CSV is fictional and demonstrates possible layout only; check any supplied rows for required fields and selected coverage." },
     ],
     related: [
       "civil-engineers-database-india",

@@ -3,13 +3,13 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "keyword",
-  updated: "2026-10-16",
+  updated: "2026-10-28",
   keyword: {
     slug: "chartered-accountants-database-india",
     keyword: "chartered accountants database India",
     title: "Chartered Accountants Database India | CA Firms",
     metaDescription:
-      "Chartered accountants database in India - CA practitioners and CA firms with contact details, city, specialisation and firm size. Get a free sample.",
+      "Chartered accountants database in India - CA practitioners and CA firms with contact details, city, specialisation and firm size. Ask whether a matching real sample is available.",
     eyebrow: "Chartered Accountants Database",
     h1: "Chartered Accountants Database in India",
     answer:
@@ -22,7 +22,7 @@ export default {
       { icon: Landmark, title: "CAs & CA Firms", description: "Individual practitioners and partnership firms." },
       { icon: Filter, title: "Practice Filters", description: "Audit, direct tax, GST, advisory and more." },
       { icon: MapPinned, title: "City-Wise Coverage", description: "Metro, tier-2 and tier-3 cities across India." },
-      { icon: ShieldCheck, title: "Business Contacts", description: "Checked and deduplicated." },
+      { icon: ShieldCheck, title: "Business Contacts", description: "The published methodology describes deduplication before delivery; confirm other checks for the selected records." },
     ],
     dataFields: [
       "CA / partner name",
@@ -68,7 +68,7 @@ export default {
       { question: "Can I get a city-wise list of CA firms?", answer: "Yes. CA records can be filtered by city, state and pincode, for example CA firms in Mumbai, Delhi, Ahmedabad or Pune." },
       { question: "Can I filter CAs by specialisation?", answer: "Where recorded, you can filter by practice area such as audit, income tax, GST, company law or advisory." },
       { question: "In what format is the CA database delivered?", answer: "In Excel or CSV, ready to import into a CRM, dialer or email tool." },
-      { question: "Can I get a free sample?", answer: "Yes. Download the sample format on this page or request 15-20 real sample records before ordering." },
+      { question: "Can I get a free sample?", answer: "Ask whether a real sample for the chartered-accountant firm or professional selection is available. The public CSV is fictional and demonstrates possible layout only; check any supplied rows for required fields and selected coverage." },
     ],
     related: [
       "gst-database-india",

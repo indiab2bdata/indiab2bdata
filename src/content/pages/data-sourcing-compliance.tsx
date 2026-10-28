@@ -3,17 +3,18 @@ import { LegalSection } from "@/components/sections/LegalSection";
 import { ProtectedEmail } from "@/components/ui/ProtectedEmail";
 import { CLAIMS } from "@/config/claims";
 import { siteConfig } from "@/config/site";
-import { isPlaceholder, monthYear, shown } from "@/lib/utils";
+import { isPlaceholder, monthYear } from "@/lib/utils";
 import type { LegalPageContent } from "@/types/landing";
 
 const PATH = "/data-sourcing-compliance";
 const TITLE = "Data Sourcing & Compliance";
 const DESCRIPTION =
-  `How IndiaB2BData.com sources business contact data, aligns with the DPDP Act 2023${CLAIMS.dndScrubbing ? ", checks numbers against DND" : ""} and handles opt-out and removal requests, with grievance officer contact details.`;
+  `Published information about data sourcing, handling and removal requests. Confirm dataset-specific sources and the designated grievance contact before purchase.`;
 
 const c = siteConfig.compliance;
 const sources = c.dataSources.filter((s) => !isPlaceholder(s));
 const removalDays = isPlaceholder(c.removalDays) ? null : c.removalDays;
+const grievanceContactConfigured = !isPlaceholder(c.grievanceOfficerName) && !isPlaceholder(c.grievanceOfficerEmail);
 
 /**
  * /data-sourcing-compliance. Long-form legal copy is authored as JSX: <LegalSection> blocks, plain links and
@@ -21,7 +22,7 @@ const removalDays = isPlaceholder(c.removalDays) ? null : c.removalDays;
  * when the DND section (CLAIMS.dndScrubbing) is shown.
  */
 export const COMPLIANCE_PAGE: LegalPageContent = {
-  meta: { title: TITLE, description: DESCRIPTION, path: PATH, updated: "2026-10-22" },
+  meta: { title: TITLE, description: DESCRIPTION, path: PATH, updated: "2026-10-28" },
   schemaName: `${TITLE} | ${siteConfig.name}`,
   breadcrumb: TITLE,
   hero: {
@@ -32,9 +33,8 @@ export const COMPLIANCE_PAGE: LegalPageContent = {
   body: (
     <>
       <p className="max-w-[70ch]">
-        IndiaB2BData.com supplies business-contact data for B2B sales and marketing. This page explains where the data comes from, how
-        it is processed under India&apos;s Digital Personal Data Protection Act, 2023 (DPDP Act), and how any person or business can
-        have their details removed.
+        IndiaB2BData.com supplies business-contact data for B2B sales and marketing. This page describes the sourcing and removal
+        information currently published by the business. Ask about the source, date and fields for a specific dataset before purchase.
       </p>
 
       <LegalSection title="1. How the data is collected">
@@ -60,7 +60,7 @@ export const COMPLIANCE_PAGE: LegalPageContent = {
         )}
       </LegalSection>
 
-      <LegalSection title="2. DPDP Act 2023 alignment">
+      <LegalSection title="2. Published data-handling practices">
         <ul className="list-disc space-y-1.5 pl-5">
           <li>
             <strong>Purpose limitation:</strong> data is supplied for lawful B2B outreach only. Our terms prohibit resale, fraud,
@@ -71,7 +71,7 @@ export const COMPLIANCE_PAGE: LegalPageContent = {
             financial, health or identity-document details.
           </li>
           <li>
-            <strong>Accuracy:</strong> {CLAIMS.showRefreshDates ? "records are refreshed on a rolling basis, and " : ""}invalid numbers are removed before each delivery.
+            <strong>Record information:</strong> ask for the source, relevant fields and an as-of date for the selected dataset; this page does not establish that every record has been recently checked.
           </li>
           <li>
             <strong>Rights of individuals:</strong> any person can ask what we hold about them, correct it or have it erased, using the
@@ -103,32 +103,23 @@ export const COMPLIANCE_PAGE: LegalPageContent = {
       </LegalSection>
 
       <LegalSection title={`${CLAIMS.dndScrubbing ? 5 : 4}. Grievance officer`}>
-        <p className="max-w-[70ch]">
-          For complaints about how your data is processed, contact our grievance officer. We acknowledge every complaint and respond
-          within the timelines required by law.
-        </p>
-        <address className="mt-3 not-italic">
-          <strong>{shown(c.grievanceOfficerName, "Grievance Officer")}</strong>, {siteConfig.name}
-          <br />
-          {siteConfig.address.display}
-          <br />
-          Phone: {siteConfig.phoneDisplay}
-          <br />
-          Email:{" "}
-          {isPlaceholder(c.grievanceOfficerEmail) ? (
-            <ProtectedEmail className="text-teal hover:underline" />
-          ) : (
-            <a href={`mailto:${c.grievanceOfficerEmail}`} className="text-teal hover:underline">
-              {c.grievanceOfficerEmail}
-            </a>
-          )}
-        </address>
+        {grievanceContactConfigured ? (
+          <>
+            <p className="max-w-[70ch]">Use the designated contact below for grievances about data handling.</p>
+            <address className="mt-3 not-italic">
+              <strong>{c.grievanceOfficerName}</strong>, {siteConfig.name}
+              <br />
+              <a href={`mailto:${c.grievanceOfficerEmail}`} className="text-teal hover:underline">{c.grievanceOfficerEmail}</a>
+            </address>
+          </>
+        ) : (
+          <p className="max-w-[70ch]">A named grievance-officer contact is not configured for publication. General business contact details appear on the <Link href="/contact" className="font-semibold text-teal hover:underline">Contact page</Link>; they are not identified here as grievance-officer details.</p>
+        )}
       </LegalSection>
 
       <LegalSection title={`${CLAIMS.dndScrubbing ? 6 : 5}. Buyer responsibilities`}>
         <p className="max-w-[70ch]">
-          Buyers act as data fiduciaries for the data they receive. They must use it for the stated B2B purpose, honour opt-outs
-          immediately and follow DND and TRAI rules. We may refuse or end service when data is misused.
+          A buyer&apos;s obligations depend on the buyer&apos;s role, the data and the intended processing. Confirm your responsibilities under applicable law and the written terms before use. Honour opt-outs and use communications channels only when lawfully permitted.
         </p>
       </LegalSection>
     </>

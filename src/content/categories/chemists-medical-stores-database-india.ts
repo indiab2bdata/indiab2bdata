@@ -3,13 +3,13 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "keyword",
-  updated: "2026-10-16",
+  updated: "2026-10-28",
   keyword: {
     slug: "chemists-medical-stores-database-india",
     keyword: "chemists and medical stores database India",
     title: "Chemists & Medical Stores Database India",
     metaDescription:
-      "Chemists and medical stores database in India - retail pharmacies and drug distributors with owner name, mobile number and address, city-wise. Free sample.",
+      "Chemists and medical stores database in India - retail pharmacies and drug distributors with owner name, mobile number and address, city-wise. Ask whether a matching real sample is available.",
     eyebrow: "Chemists & Medical Stores Database",
     h1: "Chemists & Medical Stores Database in India",
     answer:
@@ -22,7 +22,7 @@ export default {
       { icon: Stethoscope, title: "Retail & Wholesale", description: "Medical stores, pharmacy chains, distributors." },
       { icon: MapPinned, title: "Pincode-Level", description: "Plan beats and territories precisely." },
       { icon: Smartphone, title: "Owner Mobile Numbers", description: "Direct to the store owner or pharmacist." },
-      { icon: ShieldCheck, title: "Checked & Deduplicated", description: "Checked before every delivery." },
+      { icon: ShieldCheck, title: "Checked & Deduplicated", description: "Ask which checks apply to the selected records and when they were performed." },
     ],
     dataFields: [
       "Medical store / pharmacy name",
@@ -68,7 +68,7 @@ export default {
       { question: "Does it include drug licence numbers?", answer: "Drug licence details are included where available. Confirm the fields you need when you request a sample." },
       { question: "Are wholesale distributors included?", answer: "Yes. You can choose retail chemists, wholesalers/distributors or both." },
       { question: "Who buys chemist and pharmacy data?", answer: "Pharma and OTC companies, nutraceutical brands, pharmacy software vendors, e-pharmacies and distributors." },
-      { question: "Can I see a sample before buying?", answer: "Yes. Download the sample format on this page or request real sample records." },
+      { question: "Can I see a sample before buying?", answer: "Ask whether a real sample for the chemist or medical-store category selection is available. The public CSV is fictional and demonstrates possible layout only; check any supplied rows for required fields and selected coverage." },
     ],
     related: [
       "doctors-database",

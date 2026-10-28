@@ -86,12 +86,12 @@ export function categoryLanding(c: CategoryInput, trust: CategoryTrust): Landing
     image: { src: `/images/topics/${c.slug}.jpg`, alt: `${c.name} - IndiaB2BData.com` },
     cta: {
       formTitle: c.formTitle,
-      formSubtitle: "Tell us the industries, locations and roles you need. We'll reply with sample rows, a record count and a quote.",
-      buttonLabel: "Get Free Sample",
+      formSubtitle: "Describe the industries, locations and roles you need, then ask which fields, sample options and coverage can be confirmed.",
+      buttonLabel: "Ask About a Sample",
       whatsappMessage: `Hi, I need a ${c.name} sample. Industries / locations / roles:`,
       bands: c.bands,
       footerTitle: c.footerTitle,
-      footerText: "Send your industries, locations, company size, roles and quantity. You'll get matching sample rows, a record count and a quote.",
+      footerText: "Send your industries, locations, company size, roles and quantity. Ask for the available fields, a matching count and written quote.",
     },
   };
 }

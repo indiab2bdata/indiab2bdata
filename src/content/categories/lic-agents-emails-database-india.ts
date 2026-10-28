@@ -3,12 +3,12 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "custom",
-  updated: "2026-10-23",
+  updated: "2026-10-28",
   keyword: {
     slug: "lic-agents-emails-database-india",
     keyword: "LIC Agents Email Database India",
     title: "LIC Agents Email Database India by City",
-    metaDescription: "LIC agents email database India: agent emails and mobile numbers by city and branch, for insurtech, training and CRM sellers. Ask for a free sample.",
+    metaDescription: "LIC agents email database India: agent emails and mobile numbers by city and branch, for insurtech, training and CRM sellers. Ask whether a matching real sample is available.",
     eyebrow: "LIC Agents Emails Database",
     h1: "LIC Agents Email Database in India",
     answer: "An LIC agents email database enquiry starts with the agent audience, locations and professional contact fields you need. Tell us what your product or service helps agents do, then ask about available email coverage, source context and matching sample options before ordering.",
@@ -167,7 +167,7 @@ export default {
     name: "LIC Agents Email Database",
     title: "LIC Agents Email Database India by City",
     metaDescription:
-      "LIC agents email database India: agent emails and mobile numbers by city and branch, for insurtech, training and CRM sellers. Ask for a free sample.",
+      "LIC agents email database India: agent emails and mobile numbers by city and branch, for insurtech, training and CRM sellers. Ask whether a matching real sample is available.",
     eyebrow: "Insurance Agent Audience",
     h1: "LIC Agents Email Database India, by City and Branch",
     lead:
@@ -238,7 +238,7 @@ export default {
           ["Segment tag", "LIC agent (life insurance)", "Kept separate from general and health insurance agents"],
         ],
       },
-      { type: "cta", text: "Planning an email-first push to LIC agents in two or three cities? Ask for matching sample records first.", buttonLabel: "Get LIC Agent Sample" },
+      { type: "cta", text: "Planning an email-first push to LIC agents in two or three cities? Ask for matching sample records first.", buttonLabel: "Ask About a Sample" },
       {
         type: "scenario",
         label: "Buyer scenario",
@@ -294,7 +294,7 @@ export default {
           "Agents are individuals, so their details are personal data under the DPDP Act 2023. Use them only for the business purpose you state, include an unsubscribe option in every email, check numbers against DND before calls or SMS, and act on opt-outs at once. Our B2B data guides cover email and SMS rules in more detail.",
         ],
       },
-      { type: "cta", text: "Tell us your cities and your offer for agents, and we'll send matching sample rows with a quote.", buttonLabel: "Request a Free Sample" },
+      { type: "cta", text: "Tell us your cities and your offer for agents; ask whether a matching sample is available and request a written quote.", buttonLabel: "Ask About a Sample" },
     ],
     faqs: [
       {
@@ -315,7 +315,7 @@ export default {
       },
       {
         question: "How is pricing worked out for agent data?",
-        answer: "Price depends on the number of cities, the fields you need (email only, or email with mobile) and the volume. Send your cities and approximate quantity and we will quote with a record count for that exact brief.",
+        answer: "State the target cities and whether email alone or additional contact fields are needed. Ask which fields are available and have the quote identify the count basis, total price and delivery terms.",
       },
       {
         question: "Can I send SMS or WhatsApp messages to these agents?",
@@ -336,11 +336,11 @@ export default {
     ],
     cta: {
       formTitle: "Get a Free LIC Agent Sample",
-      formSubtitle: "Name your cities and whether you need email, mobile or both. We'll reply with matching sample records and a quote.",
-      buttonLabel: "Get LIC Agent Sample",
+      formSubtitle: "Name your cities and whether you need email, mobile or both. Ask whether a matching sample is available and request a written quote.",
+      buttonLabel: "Ask About a Sample",
       whatsappMessage: "Hi, I need an LIC agents email database sample. Cities:",
       footerTitle: "Reach LIC Agents in Your Cities",
-      footerText: "Send your target cities, the fields you need and an approximate quantity. You'll get matching sample records and a quote.",
+      footerText: "Send your target cities, the fields you need and an approximate quantity. Ask whether a matching sample is available and request a written quote.",
     },
     disclaimer:
       "Independent B2B data provider; not affiliated with Life Insurance Corporation of India. For lawful professional outreach only. Any agent can request removal at any time.",

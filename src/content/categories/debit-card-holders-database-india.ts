@@ -3,7 +3,7 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "keyword",
-  updated: "2026-10-16",
+  updated: "2026-10-28",
   keyword: {
     slug: "debit-card-holders-database-india",
     keyword: "debit card holders database India",
@@ -69,7 +69,7 @@ export default {
       { question: "How is this different from the credit card holders database?", answer: "Debit card holders are a much broader mass-market audience. Credit card holders are a smaller, more affluent and credit-active segment." },
       { question: "Can I target a specific state or city?", answer: "Yes. Audience data can be filtered by state, city and pincode." },
       { question: "Who uses debit card holder audience data?", answer: "Insurers, fintech apps, e-commerce and D2C brands, telecom providers and education platforms." },
-      { question: "Can I see a sample?", answer: "Yes. Download the sample format on this page or request sample records." },
+      { question: "Can I see a sample?", answer: "Ask whether a real sample for the debit-card-holder audience selection is available. The public CSV is fictional and demonstrates possible layout only; check any supplied rows for required fields and selected coverage." },
     ],
     related: [
       "credit-card-holders-database-india",

@@ -3,30 +3,30 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "keyword",
-  updated: "2026-10-16",
+  updated: "2026-10-28",
   keyword: {
     slug: "whatsapp-number-database-india",
     keyword: "WhatsApp number database India",
     title: "WhatsApp Number Database India | B2B Data",
     metaDescription:
-      "WhatsApp number database for Indian businesses - WhatsApp-active owner & decision-maker numbers by city and industry. Ready for WhatsApp API campaigns.",
+      "Discuss business mobile-number selections by industry and location. Ask whether WhatsApp status is recorded, which fields are available and what format can be supplied.",
     eyebrow: "WhatsApp Number Database India",
     h1: "WhatsApp Number Database India - Reach Businesses Where They Actually Reply",
     answer:
-      "A WhatsApp number database is a list of business mobile numbers that are active on WhatsApp, filtered by city and industry, used for WhatsApp Business and WhatsApp API campaigns. IndiaB2BData.com supplies WhatsApp-active business owner and decision-maker numbers across 700+ Indian cities, delivered in a format you can upload straight to WhatsApp API platforms.",
+      "A WhatsApp-number selection is intended for buyers considering business contacts for that channel. Ask whether WhatsApp status is recorded for the selected numbers, when it was observed, which business and location fields are available, and what file format can be supplied. Status may change and does not establish permission to message.",
     intro: [
-      "In India, WhatsApp is where business actually happens. Owners who ignore calls from unknown numbers still read their WhatsApp, often within minutes. That's why more sales and marketing teams now open conversations on WhatsApp instead of on a cold call.",
-      "But WhatsApp campaigns only work if the numbers are actually on WhatsApp. Send to a general mobile list and a large share of your messages simply won't deliver, which wastes API credits and makes your campaign reports misleading.",
-      "Our WhatsApp number database focuses on business numbers that are active on WhatsApp, segmented by industry and city. You get fewer undelivered messages, cleaner reports and more replies from the owners and decision-makers you actually want to reach.",
+      "Some teams consider WhatsApp for business communication. Whether it is suitable depends on the audience, contact source, consent or other applicable basis, and current platform terms.",
+      "If WhatsApp availability matters to your campaign, ask whether it was checked for the selected numbers and on what date. A previous status check does not guarantee a future delivery.",
+      "Define the business types and locations you need, then confirm whether the selected records include a WhatsApp-status field, how it is determined and which other contact fields are available.",
     ],
     highlights: [
-      { icon: MessageSquare, title: "WhatsApp-Active Numbers", description: "Business numbers active on WhatsApp." },
-      { icon: Target, title: "Targeted Segments", description: "Filter by industry, city and business type." },
-      { icon: ShieldCheck, title: "Deduplicated & Clean", description: "No duplicate or malformed numbers in your list." },
-      { icon: Zap, title: "Campaign-Ready Format", description: "Numbers in country-code format, ready for WhatsApp API tools." },
+      { icon: MessageSquare, title: "Status to Confirm", description: "Ask whether WhatsApp status is recorded and when it was observed." },
+      { icon: Target, title: "Selection Criteria", description: "Specify business types and locations; confirm supported filters." },
+      { icon: ShieldCheck, title: "Duplicate Handling", description: "Ask how duplicates and invalid numbers are handled." },
+      { icon: Zap, title: "File Format", description: "Confirm the available format and country-code convention." },
     ],
     dataFields: [
-      "WhatsApp-active mobile number (with +91 country code)",
+      "Business mobile number; confirm WhatsApp-status and country-code fields",
       "Contact person / business owner name",
       "Company or business name",
       "Industry and business category",
@@ -61,17 +61,17 @@ export default {
     faqs: [
       {
         question: "Are all numbers active on WhatsApp?",
-        answer: "The database focuses on business numbers that are active on WhatsApp, which keeps undelivered messages low compared with a general mobile list.",
+        answer: "Do not assume all records are WhatsApp-active. Ask whether status is recorded for your selection, how it was checked and when; status can change.",
       },
       {
         question: "How much does WhatsApp number data cost?",
         answer:
-          "Packages start at ₹2,999 for up to 5,000 records in one city, and ₹8,999 for up to 25,000 records across 5 cities or states. Larger or pan-India lists are custom-quoted.",
+          "Describe the business audience and locations you need. Confirm which number and business fields can be supplied, how the count is calculated, and the total price and delivery terms in writing.",
       },
       {
         question: "Can I use this data with the WhatsApp Business API?",
         answer:
-          "Yes. Numbers are delivered with the +91 country code in a clean CSV you can upload to WhatsApp API platforms. Follow Meta's messaging and opt-in policies when you run campaigns.",
+          "Ask which file format, country-code and status fields are available. Review current platform messaging terms and applicable requirements before sending; purchase alone does not establish permission to message.",
       },
       {
         question: "Can I send bulk messages from my normal WhatsApp?",
@@ -80,11 +80,11 @@ export default {
       },
       {
         question: "Can I target one city or industry on WhatsApp?",
-        answer: "Yes. WhatsApp number lists can be filtered by city, state, pincode and industry, the same as our other databases.",
+        answer: "State the locations and industries you need. Ask which filters can be supported and request a dated matching count.",
       },
       {
         question: "Is there a free sample?",
-        answer: "Yes. Every enquiry includes 15–20 free sample records so you can check quality before you order.",
+        answer: "Ask whether a real sample for the business WhatsApp-number selection is available. The public CSV is fictional and demonstrates possible layout only; check any supplied rows for required fields and selected coverage.",
       },
     ],
     related: [

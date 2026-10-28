@@ -3,13 +3,13 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "keyword",
-  updated: "2026-10-18",
+  updated: "2026-10-28",
   keyword: {
     slug: "event-management-organisers-database-india",
     keyword: "event management organisers database India",
     title: "Event Management Database India",
     metaDescription:
-      "Event management organisers database in India - corporate event agencies, wedding planners, exhibition organisers and event companies with owner contacts, city-wise. Free sample.",
+      "Event management organisers database in India - corporate event agencies, wedding planners, exhibition organisers and event companies with owner contacts, city-wise. Ask whether a matching real sample is available.",
     eyebrow: "Event Organisers Database",
     h1: "Event Management Organisers Database in India",
     answer:
@@ -75,7 +75,7 @@ export default {
       { question: "Which cities are covered?", answer: "All major cities and event hubs, including Delhi NCR, Mumbai, Bengaluru, Hyderabad, Pune, Jaipur, Udaipur and Goa." },
       { question: "Who buys event organiser data?", answer: "Venues, decorators, caterers, AV and lighting suppliers, event-tech platforms and gifting companies." },
       { question: "How is this different from the entertainment and media database?", answer: "This database focuses on event organisers and planners. The entertainment and media database covers production houses, agencies, publishers and broadcasters." },
-      { question: "Can I see a sample?", answer: "Yes. Download the sample format on this page or request real sample records." },
+      { question: "Can I see a sample?", answer: "Ask whether a real sample for the event-management organiser type selection is available. The public CSV is fictional and demonstrates possible layout only; check any supplied rows for required fields and selected coverage." },
     ],
     related: [
       "entertainment-media-database-india",

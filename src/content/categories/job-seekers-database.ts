@@ -3,13 +3,13 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "keyword",
-  updated: "2026-10-16",
+  updated: "2026-10-28",
   keyword: {
     slug: "job-seekers-database",
     keyword: "job seekers database India",
     title: "Job Seekers Database India | Candidates",
     metaDescription:
-      "Job seekers database for India - freshers and experienced candidates by skill, qualification and city. For recruiters & HR teams. Free sample.",
+      "Job seekers database for India - freshers and experienced candidates by skill, qualification and city. For recruiters & HR teams. Ask whether a matching real sample is available.",
     eyebrow: "Job Seekers Database India",
     h1: "Job Seekers Database India - Candidates by Skill, Experience and City",
     answer:
@@ -80,7 +80,7 @@ export default {
       {
         question: "How much does a job seekers database cost?",
         answer:
-          "Packages start at ₹2,999 for up to 5,000 records in one city, and ₹8,999 for up to 25,000 records across 5 cities or states. Pan-India or multi-role lists are custom-quoted.",
+          "Specify the role or experience criteria and locations you need. Ask which filters and contact fields are available, then confirm the count basis, total price and delivery terms in the quote.",
       },
       {
         question: "Who usually buys this data?",
@@ -88,7 +88,7 @@ export default {
       },
       {
         question: "Can I get a free sample?",
-        answer: "Yes. Every enquiry includes 15–20 free sample records before you place an order.",
+        answer: "Ask whether a real sample for the job-role and location selection is available. The public CSV is fictional and demonstrates possible layout only; check any supplied rows for required fields and selected coverage.",
       },
     ],
     related: [

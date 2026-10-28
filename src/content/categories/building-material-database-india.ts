@@ -3,7 +3,7 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "keyword",
-  updated: "2026-10-16",
+  updated: "2026-10-28",
   keyword: {
     slug: "building-material-database-india",
     keyword: "building material database India",
@@ -148,7 +148,7 @@ export default {
       },
       {
         question: "Can I see a sample first?",
-        answer: "Yes. Request sample records to check categories, locations and fields before ordering.",
+        answer: "Ask whether a real sample for the building-material supplier category selection is available. The public CSV is fictional and demonstrates possible layout only; check any supplied rows for required fields and selected coverage.",
       },
     ],
     related: [

@@ -3,30 +3,30 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "keyword",
-  updated: "2026-10-16",
+  updated: "2026-10-28",
   keyword: {
     slug: "email-database-india",
     keyword: "email database India",
     title: "Email Database India | B2B Emails",
     metaDescription:
-      "Business email database for India - company & decision-maker emails by industry and city. Deliverability-checked lists for B2B email marketing, from ₹2,999.",
+      "Discuss business email selections by industry and location. Ask which fields and checks are available for the selected records, and request a written quote.",
     eyebrow: "Email Database India",
     h1: "Email Database India - Business Email Lists for B2B Marketing",
     answer:
-      "An email database is a list of business email addresses, such as company, founder and decision-maker emails, used for B2B email marketing and cold outreach. IndiaB2BData.com's email database for India is segmented by industry and city, checked for deliverability before delivery, and supplied as an Excel/CSV file ready for any email tool.",
+      "An email database can include business or role-based email fields for a defined B2B selection. Ask whether your chosen segment and locations are available, which checks were applied to email fields and when, and what format can be supplied. A check at one point does not guarantee future delivery or permission to send.",
     intro: [
-      "Email is still the cheapest way to reach thousands of businesses at once. One well-written campaign can go to 10,000 prospects for less than the cost of a single day of field sales. That's why almost every B2B company in India, from SaaS startups to industrial suppliers, runs email outreach.",
-      "The problem is list quality. A list full of dead addresses and spam traps drives up your bounce rate, and once your sender reputation drops, even your good emails start landing in spam. Many cheap email lists sold online are scraped free-mail dumps that do exactly this.",
-      "Our email database is built around business and corporate addresses, tied to a real company, industry and city. Lists are deduplicated and checked for deliverability before delivery, so your campaigns reach inboxes instead of bouncing. You can review free sample records before you order.",
+      "Email can be one channel in a B2B outreach plan. Before using any list, define the audience and purpose, confirm available fields and check the rules that apply to your source and sending method.",
+      "For an email selection, ask what address types are included, whether email checks were performed, which fields they covered and the check date. Consider testing a limited sample and monitor your own delivery results.",
+      "Describe the business type, roles and locations you need. Confirm which address and company fields are available, ask how duplicates are handled, and request a written source and check-date description before purchase.",
     ],
     highlights: [
       { icon: Mail, title: "Business Email Addresses", description: "Company and decision-maker emails, not random free-mail lists." },
-      { icon: BadgeCheck, title: "Deliverability-Checked", description: "Invalid and dead addresses removed to protect your sender reputation." },
-      { icon: Network, title: "500+ Industry Segments", description: "Separate lists for every major industry." },
+      { icon: BadgeCheck, title: "Email Checks to Confirm", description: "Ask which email checks were applied, to which fields and on what date." },
+      { icon: Network, title: "Industry Selection", description: "Specify the industry and ask which categories are currently available." },
       { icon: MapPinned, title: "City & State Filters", description: "Target one city or run a pan-India campaign." },
     ],
     dataFields: [
-      "Business email address (deliverability-checked)",
+      "Business email address, where available; ask whether and when it was checked",
       "Contact person name and designation, where available",
       "Company name and website",
       "Industry and business category",
@@ -66,17 +66,17 @@ export default {
       {
         question: "How much does an email database cost?",
         answer:
-          "Packages start at ₹2,999 for up to 5,000 records in one city. The Business package is ₹8,999 for up to 25,000 records across 5 cities or states with industry filters. Pan-India lists are custom-quoted.",
+          "For an email selection, specify audience, locations, address types and required fields. Ask the written quote to state the count basis, total price, any checks and dates represented, and delivery terms.",
       },
       {
         question: "Will the emails bounce?",
         answer:
-          "Lists are checked for deliverability before delivery to remove invalid addresses. No list is 100% bounce-free, but a checked list keeps bounce rates low.",
+          "Ask what email checks were performed, on which fields and on what date. A past check does not establish future delivery or consent for a campaign.",
       },
       {
         question: "Can I use this for cold email campaigns?",
         answer:
-          "Yes. Most customers use it for B2B cold email and newsletters. Send from a warmed-up domain, keep volumes gradual and always include an unsubscribe option.",
+          "A purchase does not by itself establish permission to send. Confirm your lawful basis, source restrictions and applicable email-marketing requirements before contacting anyone.",
       },
       {
         question: "Which email tools can I use with this data?",
@@ -84,11 +84,11 @@ export default {
       },
       {
         question: "Can I get only emails for one industry or city?",
-        answer: "Yes. Tell us the industry, city or company size you need and we'll build a matching email list.",
+        answer: "State the industry, city or company size in your brief. Ask which filters can be supported and request a dated count.",
       },
       {
         question: "Is a free sample available?",
-        answer: "Yes. Every enquiry includes 15–20 free sample records so you can check quality before ordering.",
+        answer: "Ask whether a real sample for the business email selection is available. The public CSV is fictional and demonstrates possible layout only; check any supplied rows for required fields and selected coverage.",
       },
     ],
     related: [

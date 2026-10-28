@@ -3,7 +3,7 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "keyword",
-  updated: "2026-10-16",
+  updated: "2026-10-28",
   keyword: {
     slug: "channel-sales-professionals-database-india",
     keyword: "channel sales persons database India",
@@ -81,7 +81,7 @@ export default {
       { question: "Can I filter by industry?", answer: "Where the industry is recorded, records can be filtered by sector, such as FMCG, telecom, pharma or IT hardware." },
       { question: "Can I filter by territory?", answer: "Yes, where location fields are available. Share your target regions and ask us to confirm coverage." },
       { question: "Is it available in Excel format?", answer: "Excel or CSV delivery may be available. Confirm the format and columns before purchase." },
-      { question: "Can I see a sample first?", answer: "Yes. Request sample records to check roles and fields before ordering." },
+      { question: "Can I see a sample first?", answer: "Ask whether a real sample for the channel-sales role selection is available. The public CSV is fictional and demonstrates possible layout only; check any supplied rows for required fields and selected coverage." },
     ],
     related: [
       "business-development-sales-professionals-database-india",

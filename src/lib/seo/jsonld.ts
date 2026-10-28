@@ -132,6 +132,7 @@ export const localBusinessJsonLd = {
   name: siteConfig.name,
   url: siteConfig.url,
   image: DEFAULT_OG_IMAGE.url,
+  priceRange: "Custom quotes based on list size and requirements",
   telephone: siteConfig.phoneDisplay,
   email: siteConfig.email,
   address: organizationJsonLd.address,

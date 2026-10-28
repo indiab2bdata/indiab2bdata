@@ -3,12 +3,12 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "custom",
-  updated: "2026-10-25",
+  updated: "2026-10-28",
   keyword: {
     slug: "logistics-management-service-providers-database-india",
     keyword: "Logistics Management Service Providers Database India",
     title: "Logistics Companies Database India",
-    metaDescription: "Logistics companies database India: transporters, freight forwarders, couriers, 3PL and warehouses by city and corridor, with owner contacts. Free sample.",
+    metaDescription: "Logistics companies database India: transporters, freight forwarders, couriers, 3PL and warehouses by city and corridor, with owner contacts. Ask whether a matching real sample is available.",
     eyebrow: "Logistics Management Service Providers Database",
     h1: "Logistics Management Service Providers Database in India",
     answer: "A logistics management service providers database helps you shortlist businesses offering freight, transport, warehousing and related supply-chain services. Share the service categories, locations and business contacts you need so we can check matching provider coverage and sample options.",
@@ -144,7 +144,7 @@ export default {
       },
       {
         question: "How do I request a sample and price?",
-        answer: "Send your service categories, locations, contact roles, fields and approximate quantity. The public download is a fictional format preview. Ask our team for matching sample options, available records, timing and pricing."
+        answer: "For logistics providers, specify service segments, cities or corridors and requested fields. Ask which filters can be supported and confirm the count basis, total price and delivery terms."
       }
     ],
     related: [
@@ -169,7 +169,7 @@ export default {
     name: "Logistics Companies Database",
     title: "Logistics Companies Database India",
     metaDescription:
-      "Logistics companies database India: transporters, freight forwarders, couriers, 3PL and warehouses by city and corridor, with owner contacts. Free sample.",
+      "Logistics companies database India: transporters, freight forwarders, couriers, 3PL and warehouses by city and corridor, with owner contacts. Ask whether a matching real sample is available.",
     eyebrow: "Transport, Freight & Warehousing",
     h1: "Logistics Companies Database India: Transporters, Forwarders & 3PLs",
     lead:
@@ -280,7 +280,7 @@ export default {
           { title: "One script for every segment", text: "A courier franchisee and a customs broker need different openers. Write one first line per segment, not one per list." },
         ],
       },
-      { type: "sample", heading: "What a Logistics Record Looks Like", intro: "Placeholder rows with masked details, laid out exactly like a delivered file. Before paying, request live sample rows for the segment and corridor you picked." },
+      { type: "sample", heading: "What a Logistics Record Looks Like", intro: "Fictional, masked rows illustrate a possible format only. They do not confirm inventory or field availability. Ask whether a matching sample is available for your selection." },
       {
         type: "sourcing",
         heading: "How the Logistics Data Is Put Together",
@@ -289,12 +289,12 @@ export default {
           "A transport owner's mobile is still an individual's data, which the DPDP Act 2023 protects even in a business setting. Keep outreach to genuine B2B offers, screen mobiles against the NCPR registry before dialling, send SMS only through DLT-approved templates and drop anyone who says no. Our B2B data guides go deeper on each rule.",
         ],
       },
-      { type: "cta", text: "Name the segment and the corridor; we'll send matching sample records with a quote.", buttonLabel: "Request a Free Sample" },
+      { type: "cta", text: "Name the segment and the corridor; ask whether a matching sample is available and request a written quote.", buttonLabel: "Ask About a Sample" },
     ],
     faqs: [
       {
         question: "Can I order only transporters, without courier or warehouse firms?",
-        answer: "Yes. Every record carries a service category, so you can order road transporters, freight forwarders, couriers, warehousing and 3PL firms or cold-chain operators separately, or any mix of them with the category kept on each row.",
+        answer: "Yes. Ask whether the selected records have a service-category field and whether the requested transport, forwarding, courier, warehousing or cold-chain groups can be separated. Confirm the field and row treatment in a sample or written specification.",
       },
       {
         question: "Do you record fleet size for transporters?",
@@ -310,7 +310,7 @@ export default {
       },
       {
         question: "How is a logistics list priced?",
-        answer: "Price depends on the segments, the number of cities or corridors, the fields you need and the volume. A single segment in two or three hubs costs less per record than a mixed all-India pull. We quote with a record count for your brief.",
+        answer: "For logistics providers, specify service segments, cities or corridors and requested fields. Ask which filters can be supported and confirm the count basis, total price and delivery terms.",
       },
       {
         question: "Can I use the numbers for WhatsApp campaigns?",
@@ -335,7 +335,7 @@ export default {
       buttonLabel: "Get Logistics Sample",
       whatsappMessage: "Hi, I need a logistics companies database sample. Segment and cities:",
       footerTitle: "Reach Logistics Businesses on Your Routes",
-      footerText: "Send the segments, cities or corridors and the fields you need. You'll get matching sample records and a quote.",
+      footerText: "Send the segments, cities or corridors and the fields you need. Ask whether a matching sample is available and request a written quote.",
     },
     disclaimer:
       "Business contact data for lawful B2B outreach to logistics businesses. Any business or person can request removal at any time.",

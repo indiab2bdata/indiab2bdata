@@ -3,7 +3,7 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "keyword",
-  updated: "2026-10-17",
+  updated: "2026-10-28",
   keyword: {
     slug: "beauty-parlours-salons-spa-database-india",
     keyword: "beauty parlours, salons and spa database India",
@@ -158,7 +158,7 @@ export default {
       },
       {
         question: "Can I see a sample first?",
-        answer: "Yes. Request sample records so you can check categories, locations and fields before ordering.",
+        answer: "Ask whether a real sample for the beauty-parlour, salon or spa business selection is available. The public CSV is fictional and demonstrates possible layout only; check any supplied rows for required fields and selected coverage.",
       },
     ],
     related: [

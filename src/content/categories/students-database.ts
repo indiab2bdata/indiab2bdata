@@ -3,13 +3,13 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "keyword",
-  updated: "2026-10-16",
+  updated: "2026-10-28",
   keyword: {
     slug: "students-database",
     keyword: "students database India",
     title: "Students Database India | School & College",
     metaDescription:
-      "Students database for India - school, college and competitive exam aspirants by city, class and stream. For EdTech, coaching & admissions. Free sample.",
+      "Students database for India - school, college and competitive exam aspirants by city, class and stream. For EdTech, coaching & admissions. Ask whether a matching real sample is available.",
     eyebrow: "Students Database India",
     h1: "Students Database India - Reach Students and Parents by City, Class and Stream",
     answer:
@@ -22,7 +22,7 @@ export default {
       { icon: GraduationCap, title: "School to Post-Graduate", description: "Class 9–12, undergraduate, PG and exam aspirants." },
       { icon: Filter, title: "Stream & Course Filters", description: "Science, commerce, arts, engineering, medical and more." },
       { icon: MapPinned, title: "City-Wise Targeting", description: "Filter by city, district, state or pincode." },
-      { icon: ShieldCheck, title: "Checked & Deduplicated", description: "Checked and deduplicated before delivery." },
+      { icon: ShieldCheck, title: "Checked & Deduplicated", description: "The published methodology describes deduplication before delivery; ask which other checks apply to the selected records." },
     ],
     dataFields: [
       "Student name",
@@ -80,7 +80,7 @@ export default {
       {
         question: "How much does a students database cost?",
         answer:
-          "Packages start at ₹2,999 for up to 5,000 records in one city, and ₹8,999 for up to 25,000 records across 5 cities or states. State-wide or pan-India lists are custom-quoted.",
+          "Describe the student audience and institution context, locations and requested fields. Ask which parts of the brief can be supported, and confirm the count basis, total price and delivery terms in a written quote.",
       },
       {
         question: "Can I also get a list of schools and colleges?",
@@ -88,7 +88,7 @@ export default {
       },
       {
         question: "Can I get a free sample?",
-        answer: "Yes. Every enquiry includes 15–20 free sample records before you place an order.",
+        answer: "Ask whether a real sample for the student-segment and institution selection is available. The public CSV is fictional and demonstrates possible layout only; check any supplied rows for required fields and selected coverage.",
       },
     ],
     related: [

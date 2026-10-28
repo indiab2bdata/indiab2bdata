@@ -5,7 +5,7 @@ export const siteConfig = {
   url: "https://www.indiab2bdata.com",
   defaultTitle: "IndiaB2BData.com | B2B Business Data Across India",
   defaultDescription:
-    "IndiaB2BData.com provides checked B2B mobile number, email and company databases across 700+ Indian cities. Boost your sales & marketing with genuine data.",
+    "IndiaB2BData.com publishes company and business-contact data selections for Indian markets. Compare product purposes and ask which fields, locations and sample options can be confirmed for your brief.",
   /** Used in JSON-LD only - visible links use <ProtectedEmail> so the address stays out of the HTML body. */
   email: "info@indiab2bdata.com",
   phoneDisplay: "+91 89296 95846",

@@ -3,7 +3,7 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "custom",
-  updated: "2026-10-26",
+  updated: "2026-10-28",
   keyword: {
     slug: "mobile-accessories-shops-database-india",
     keyword: "cell phones and accessories shops database India",
@@ -96,7 +96,7 @@ export default {
     name: "Mobile Shops Database",
     title: "Mobile Shops Database India by Market",
     metaDescription:
-      "Mobile shops database India: phone retailers, accessories sellers and repair shops by city, market and pincode, with owner name and mobile. Free sample.",
+      "Mobile shops database India: phone retailers, accessories sellers and repair shops by city, market and pincode, with owner name and mobile. Ask whether a matching real sample is available.",
     eyebrow: "Phone Retail, Accessories & Repair",
     h1: "Mobile Shops Database India for Brands and Distributors",
     lead:
@@ -201,7 +201,7 @@ export default {
           { title: "Mass messaging the whole file", text: "Shop owners get many sales messages. One relevant offer works; repeated broadcasts get your number blocked. For plain calling lists across trades, see the mobile number database." },
         ],
       },
-      { type: "sample", heading: "Sample Mobile Shop Rows", intro: "Masked, fictional shops in the delivered column order. Your free sample is real shops from your cities or markets." },
+      { type: "sample", heading: "Sample Mobile Shop Rows", intro: "Fictional, masked rows illustrate a possible format only. They do not confirm inventory or field availability. Ask whether a matching sample is available for your selection." },
       {
         type: "sourcing",
         heading: "How Shop Records Are Compiled",
@@ -217,7 +217,7 @@ export default {
           "Start with shop data for two or three cities your team can actually visit. Shop data is most valuable when calls are followed by a visit within days, so a smaller file worked properly beats a national list that sits in a spreadsheet. Expand market by market once you know your conversion rate. Keep notes on which shop types reorder and which only take a first trial; that pattern tells you where to send the field team next and which markets to skip.",
         ],
       },
-      { type: "cta", text: "Send the shop types, cities and markets you want; we'll reply with sample shops and a quote.", buttonLabel: "Request a Free Sample" },
+      { type: "cta", text: "Send the shop types, cities and markets you want; ask whether a matching sample is available and request a written quote.", buttonLabel: "Ask About a Sample" },
     ],
     faqs: [
       {
@@ -242,7 +242,7 @@ export default {
       },
       {
         question: "How is a mobile shops list priced?",
-        answer: "Pricing is per shop record and depends on shop types, cities and fields. A few markets in one city cost less than a statewide pull. Each quote includes the exact count and a free sample of matching shops.",
+        answer: "For a mobile-shop selection, state shop types, target markets and requested contact fields. Ask the quote to identify the count basis, total price, file format and delivery terms.",
       },
     ],
     related: [
@@ -259,7 +259,7 @@ export default {
       buttonLabel: "Get Shops Sample",
       whatsappMessage: "Hi, I need a mobile shops database sample. Shop type and cities:",
       footerTitle: "Reach Phone Shop Owners Market by Market",
-      footerText: "Send the shop types, cities and fields you need. You'll get matching sample shops and a quote.",
+      footerText: "Send the shop types, cities and fields you need. Ask whether a matching sample is available and request a written quote.",
     },
     disclaimer: "Business contact data for lawful B2B outreach to mobile phone shops. Any business or person can request removal at any time.",
   },

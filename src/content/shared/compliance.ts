@@ -6,7 +6,7 @@ import { CLAIMS } from "@/config/claims";
 export const METHODOLOGY_NOTE = {
   eyebrow: "Data Sourcing",
   title: "Where This Data Comes From",
-  text: "We compile records from our own research and from third-party providers, then deduplicate them and remove invalid numbers before delivery. Coverage, sources and freshness vary by dataset, and no business contact list is 100% accurate - ask for the details behind any dataset with your sample.",
+  text: "Sources, fields and checks vary by dataset. Review the published sourcing methodology and limitations, then ask which checks and source context apply to the segment you are considering.",
   link: "Read our data sourcing methodology",
 };
 
@@ -14,17 +14,17 @@ export const METHODOLOGY_NOTE = {
 export const COMPLIANCE_BLOCK = {
   eyebrow: "Trust & compliance",
   title: "Data Sourcing & Compliance",
-  text: `Every list we deliver follows the same sourcing, ${CLAIMS.dndScrubbing ? "DND scrubbing" : "checking"} and removal rules. Read the full policy, including our grievance officer contact.`,
+  text: "Review the published sourcing information, limitations and process for raising a removal request before planning outreach.",
   link: "Read our data sourcing & compliance policy",
   methodologyLink: "How we source and check data",
   points: [
-    { icon: BadgeCheck, title: "Lawfully sourced", text: "Compiled from business-context sources. We never use leaked or hacked data." },
-    { icon: ShieldCheck, title: "DPDP Act 2023 aligned", text: "Purpose-limited B2B use, minimal fields and documented processing." },
+    { icon: BadgeCheck, title: "Sourcing information", text: "Ask about the sources and limits that apply to the dataset you are considering." },
+    { icon: ShieldCheck, title: "Purpose and limitations", text: "Review the published terms and sourcing information before planning outreach." },
     CLAIMS.dndScrubbing && { icon: Filter, title: "DND scrubbing", text: "Each delivery is checked against the DND registry before it is sent." },
     {
       icon: UserX,
-      title: "Opt-out honoured",
-      text: CLAIMS.suppressionList ? "Removal requests are actioned and suppressed from all future files." : "Removal requests are actioned promptly.",
+      title: "Removal process",
+      text: "See the published process for submitting a removal request.",
     },
   ].filter(Boolean) as { icon: LucideIcon; title: string; text: string }[],
 };

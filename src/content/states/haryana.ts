@@ -3,7 +3,7 @@ import { L } from "@/content/shared/helpers";
 import { stateContent } from "@/content/shared/state-template";
 
 export default stateContent(
-  { updated: "2026-10-22", hubCities: ["Gurgaon", "Faridabad", "Panipat", "Karnal", "Hisar", "Rohtak", "Ambala", "Sonipat", "Panchkula", "Yamuna Nagar"], moreCities: 14 },
+  { updated: "2026-10-28", hubCities: ["Gurgaon", "Faridabad", "Panipat", "Karnal", "Hisar", "Rohtak", "Ambala", "Sonipat", "Panchkula", "Yamuna Nagar"], moreCities: 14 },
   {
     slug: "haryana",
     name: "Haryana",

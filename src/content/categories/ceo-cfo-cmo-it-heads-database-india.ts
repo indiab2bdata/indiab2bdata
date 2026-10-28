@@ -5,7 +5,7 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "landing",
-  updated: "2026-10-23",
+  updated: "2026-10-28",
   keyword: {
     slug: "ceo-cfo-cmo-it-heads-database-india",
     keyword: "CEO, CFO, CMO and IT heads database India",

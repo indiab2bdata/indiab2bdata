@@ -3,7 +3,7 @@ import type { CategoryContent } from "@/types/landing";
 
 export default {
   template: "keyword",
-  updated: "2026-10-17",
+  updated: "2026-10-28",
   keyword: {
     slug: "gymnasiums-database-india",
     keyword: "Gymnasiums Database India",
@@ -144,7 +144,7 @@ export default {
       },
       {
         question: "How do I get a gym database sample and price?",
-        answer: "Send your outlet types, cities, required fields and approximate quantity through the enquiry form. The public download is a fictional format preview; ask our team for matching sample options, availability and pricing."
+        answer: "Describe the gym or fitness-outlet types and locations you need. Ask which fields and segments are available, and confirm the count basis, total price and delivery terms before ordering."
       }
     ],
     related: [

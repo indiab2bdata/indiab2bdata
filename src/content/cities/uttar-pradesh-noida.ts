@@ -2,7 +2,7 @@ import { Building2, Cpu, Factory, Laptop, Truck } from "lucide-react";
 import { cityContent } from "@/content/shared/city-template";
 
 export default cityContent(
-  { updated: "2026-10-22" },
+  { updated: "2026-10-28" },
   {
     slug: "noida",
     city: "Noida",
@@ -42,10 +42,10 @@ export default cityContent(
       { icon: Building2, title: "Facilities & Office Services", description: "Sell housekeeping, security, cafeteria and fit-out services to offices sector by sector." },
     ],
     faqs: [
-      { question: "Can I target specific Noida sectors?", answer: "Yes. Every record carries its sector and pincode, so you can buy only Sectors 62-63, only the Expressway belt, or any list of sectors you name." },
-      { question: "Is Greater Noida included in a Noida list?", answer: "No. Greater Noida has its own database page. Order both together if you need them, and the file labels each city separately." },
-      { question: "Can I get only electronics or garment manufacturers?", answer: "Yes. Filter by industry to get electronics and component makers, or garment exporters, without IT and corporate offices." },
-      { question: "Do you have HR and admin contacts at Noida IT companies?", answer: "Yes, where the role is recorded. Name the functions you need (HR, admin, IT or procurement) and the quote shows how many matching records are available." },
+      { question: "Can I target specific Noida sectors?", answer: "Name the sectors you want and ask which sector and pincode fields are populated for that selection. Confirm their coverage in a matching sample before ordering." },
+      { question: "Is Greater Noida included in a Noida list?", answer: "Noida and Greater Noida have separate pages. State whether both are in scope and ask us to confirm the boundary, available fields and separate counts in a dated sample." },
+      { question: "Can I get only electronics or garment manufacturers?", answer: "Ask whether electronics, component or garment categories can be separated from office records for your selected sectors; confirm the labels in a matching sample." },
+      { question: "Do you have HR and admin contacts at Noida IT companies?", answer: "Name the functions you need (HR, admin, IT or procurement). Ask which role fields are available and request a dated matching count and sample." },
     ],
     related: [
       { label: "IT Companies Database", href: "/it-companies-database-india" },
