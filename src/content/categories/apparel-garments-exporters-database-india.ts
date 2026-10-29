@@ -314,7 +314,7 @@ export default {
         { question: "Are home-textile exporters included?", answer: "Yes. Linen, towel and furnishing exporters are tagged separately, including Panipat and Karur." },
       ],
       pricingNote: "Priced by cluster, category and fields.",
-      related: [L("Importers & Exporters Database", "importers-exporters-database-india"), L("Fabric & Clothing Stores Database", "fabric-clothing-stores-database-india"), L("Machinery Suppliers Database", "machinery-suppliers-services-database-india"), L("Manufacturing Companies Database", "manufacturing-companies-database-india"), L("Logistics Service Providers Database", "logistics-management-service-providers-database-india"), L("Importers Database", "importers-database-india")],
+      related: [L("Importers & Exporters Database", "importers-exporters-database-india"), L("Fabric & Clothing Stores Database", "fabric-clothing-stores-database-india"), L("Machinery Suppliers Database", "machinery-suppliers-services-database-india"), L("Manufacturer Database", "manufacturer-database-india"), L("Logistics Service Providers Database", "logistics-management-service-providers-database-india"), L("Dealers & Distributors Database", "dealers-distributors-database-india")],
       disclaimer: legal,
       formTitle: "Get a Free Garment Exporters Sample",
       bands: ["Selling into one cluster? Ask for a Tiruppur, NCR or Bengaluru sample.", "Need merchandisers rather than owners? We filter by role.", "Get garment exporter samples for your offer."],

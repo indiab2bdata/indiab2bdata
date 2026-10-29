@@ -65,14 +65,14 @@ export default {
     ],
     faqs: [
       { question: "What is an educational institutes database?", answer: "It is a list of coaching centres, universities, ITIs, polytechnics and training institutes in India with institute type, courses, decision-maker contacts and location." },
-      { question: "How is this different from the school and colleges database?", answer: "The school and colleges database covers K-12 schools and degree colleges. This database covers coaching centres, universities, ITIs, polytechnics and skill-training institutes." },
+      { question: "Which educational institutions are included?", answer: "The database covers K-12 schools, degree colleges, universities, coaching centres, ITIs, polytechnics and vocational training institutes across India." },
       { question: "Can I get coaching institutes in Kota or Delhi only?", answer: "Yes. Records can be filtered by city and locality, including coaching hubs such as Kota, Delhi, Hyderabad, Patna and Pune." },
       { question: "Can I filter by courses or exams?", answer: "Where recorded, you can filter by courses or exams offered, such as JEE, NEET, UPSC, IT or vocational trades." },
       { question: "Who is the contact person in each record?", answer: "Typically the director, owner, principal or admissions head, depending on the institute type." },
       { question: "Can I see a sample?", answer: "Ask whether a real sample for the educational-institute type and location selection is available. The public CSV is fictional and demonstrates possible layout only; check any supplied rows for required fields and selected coverage." },
     ],
     related: [
-      "school-colleges-database",
+      "lecturers-professors-database-india",
       "cbse-schools-email-database-india",
       "teachers-database-india",
       "students-database",

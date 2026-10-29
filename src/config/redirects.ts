@@ -10,7 +10,6 @@ export const retiredKeywordRedirects: Record<string, string> = {
   "business-database-india": "/b2b-database-india",
   "verified-business-database-india": "/b2b-database-india",
   "b2b-companies-database-india": "/b2b-database-india",
-  "corporate-database-india": "/b2b-database-india",
   "company-contact-database-india": "/company-database-india",
   "indian-company-database": "/company-database-india",
   "business-directory-india": "/company-database-india",

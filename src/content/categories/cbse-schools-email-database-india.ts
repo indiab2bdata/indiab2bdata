@@ -74,11 +74,11 @@ export default {
       { question: "Does every record include an email address?", answer: "Not necessarily. Review a sample to see email completeness for your target region before ordering." },
       { question: "Can I filter by state or city?", answer: "Yes, where location fields are available. Share your target regions and ask us to confirm coverage." },
       { question: "Can I get only senior secondary schools?", answer: "Where the school level is recorded, records can be filtered by primary, secondary or senior secondary." },
-      { question: "Do you have schools from other boards?", answer: "Yes. Our schools and colleges database covers ICSE, IB, Cambridge and state board schools, plus colleges and universities." },
+      { question: "Do you have schools from other boards?", answer: "Yes. Our educational institutes database covers ICSE, IB, Cambridge and state board schools, plus colleges and universities." },
       { question: "Can I see a sample first?", answer: "Ask whether a real sample for the CBSE-school email and contact fields selection is available. The public CSV is fictional and demonstrates possible layout only; check any supplied rows for required fields and selected coverage." },
     ],
     related: [
-      "school-colleges-database",
+      "educational-institutes-database-india",
       "teachers-database-india",
       "students-database",
       "email-database-india",

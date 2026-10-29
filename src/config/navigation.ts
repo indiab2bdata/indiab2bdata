@@ -60,6 +60,7 @@ const ALL_PRODUCT_GROUPS: ProductGroup[] = [
     heading: "Company Records",
     description: "Company-level records filtered by industry, size and ownership.",
     links: [
+      { href: "/corporate-database-india", label: "Corporate Data" },
       { href: "/industry-wise-company-database-india", label: "Industry-Wise Lists" },
       { href: "/company-proprietors-database-india", label: "Company Proprietors" },
       { href: "/computer-it-telecom-services-database-india", label: "IT & Telecom Services" },
