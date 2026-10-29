@@ -105,7 +105,7 @@ export type SampleProfile =
   | "mfInvestor";
 
 const NAMES = ["Rahul Sharma", "Priya Mehta", "Amit Verma", "Sneha Iyer", "Vikram Singh", "Neha Gupta", "Arjun Reddy", "Kavita Joshi", "Rohan Das", "Pooja Nair", "Sanjay Patel", "Anjali Rao"];
-const COMPANIES = ["Sample Tech Pvt Ltd", "Demo Industries", "Example Traders", "Test Solutions LLP", "Dummy Enterprises", "Placeholder Exports", "Mock Infra Pvt Ltd", "Specimen Foods", "Trial Textiles", "Prototype Pharma"];
+const COMPANIES = ["Apex Global Enterprises", "Heritage Business Solutions", "Kaveri Industrial Systems", "Vertex Trade Network", "Zenith Commercial Corp", "Horizon Enterprise LLP", "Metro Logistics & Supply", "Pioneer Engineering Works", "Bluechip Infotech Solutions", "Sterling Manufacturing Pvt Ltd"];
 const INDUSTRIES = ["IT Services", "Manufacturing", "Real Estate", "Pharma", "Textiles", "FMCG", "Logistics", "Construction", "Education", "Finance"];
 const PLACES: [string, string, string][] = [
   ["Mumbai", "Maharashtra", "4000XX"], ["Pune", "Maharashtra", "4110XX"], ["Delhi", "Delhi", "1100XX"],
@@ -628,6 +628,17 @@ export function sampleProfileFor(slug: string): SampleProfile {
   return rules.find(([re]) => re.test(slug))?.[1] ?? "business";
 }
 
+const STATE_CITIES: Record<string, string[]> = {
+  Maharashtra: ["Mumbai", "Pune", "Nashik", "Nagpur", "Thane", "Aurangabad"],
+  Gujarat: ["Ahmedabad", "Surat", "Vadodara", "Rajkot", "Gandhinagar", "Bhavnagar"],
+  "Tamil Nadu": ["Chennai", "Coimbatore", "Madurai", "Tiruchirappalli", "Salem", "Tiruppur"],
+  Delhi: ["New Delhi", "North Delhi", "South Delhi", "West Delhi", "East Delhi", "Dwarka"],
+  "Uttar Pradesh": ["Noida", "Greater Noida", "Lucknow", "Kanpur", "Varanasi", "Agra"],
+  Karnataka: ["Bengaluru", "Mysuru", "Hubli", "Mangaluru", "Belagavi", "Shivamogga"],
+  Haryana: ["Gurgaon", "Faridabad", "Panipat", "Ambala", "Karnal", "Sonipat"],
+  Telangana: ["Hyderabad", "Warangal", "Nizamabad", "Karimnagar", "Khammam", "Secunderabad"],
+};
+
 /** Fictional, masked sample rows as a header + rows table (used for the on-page preview and the CSV). */
 export function buildSampleTable(profile: SampleProfile, rows = 20, place?: { city?: string; state?: string }) {
   const columns = PROFILES[profile];
@@ -639,7 +650,7 @@ export function buildSampleTable(profile: SampleProfile, rows = 20, place?: { ci
       name: pick(NAMES, i, 5),
       company: pick(COMPANIES, i, 3),
       industry: pick(INDUSTRIES, i, 7),
-      city: place?.city ?? (place?.state ? `Sample city ${i + 1}` : city),
+      city: place?.city ?? (place?.state && STATE_CITIES[place.state] ? pick(STATE_CITIES[place.state], i) : (place?.state ? `City ${i + 1}` : city)),
       state: place?.state ?? state,
       pin: place?.state || place?.city ? "XXXXXX" : pin,
     };

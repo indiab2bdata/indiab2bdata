@@ -1,8 +1,8 @@
-import { sitemapIndexResponse } from "@/lib/seo/sitemap";
+import { flatSitemapResponse } from "@/lib/seo/sitemap";
 
-/** Sitemap index - points to sitemap-core.xml, sitemap-states.xml and sitemap-guides.xml. */
+/** Single flat XML sitemap - lists all clean 200 OK canonical URLs directly. */
 export const dynamic = "force-static";
 
 export function GET() {
-  return sitemapIndexResponse();
+  return flatSitemapResponse();
 }

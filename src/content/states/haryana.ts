@@ -6,6 +6,8 @@ export default stateContent(
   { updated: "2026-10-28", hubCities: ["Gurgaon", "Faridabad", "Panipat", "Karnal", "Hisar", "Rohtak", "Ambala", "Sonipat", "Panchkula", "Yamuna Nagar"], moreCities: 14 },
   {
     slug: "haryana",
+    authoredFaqsOnly: true,
+    showCoverageFigures: false,
     name: "Haryana",
     title: "Haryana Business Database by City",
     metaDescription:
@@ -42,7 +44,7 @@ export default stateContent(
       { question: "Do you cover Panipat textile exporters?", answer: "Yes. Panipat's home-textile, blanket and recycled-yarn businesses are covered, and exporters are tagged where recorded." },
     ],
     related: [
-      L("Manufacturing Companies Database", "manufacturing-companies-database-india"),
+      L("Manufacturer Database", "manufacturer-database-india"),
       L("CEO, CFO, CMO & IT Heads Database", "ceo-cfo-cmo-it-heads-database-india"),
       L("General & Senior Managers Database", "general-senior-managers-database-india"),
       L("HR Professionals Database", "hr-human-resources-database-india"),

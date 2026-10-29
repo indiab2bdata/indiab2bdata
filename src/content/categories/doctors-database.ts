@@ -85,7 +85,7 @@ export default {
       },
     ],
     related: [
-      "school-colleges-database",
+      "educational-institutes-database-india",
       "advocates-lawyers-database-india",
       "industry-wise-company-database-india",
       "students-database",

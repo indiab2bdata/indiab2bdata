@@ -6,6 +6,8 @@ export default stateContent(
   { updated: "2026-10-28", hubCities: ["Hyderabad", "Secunderabad", "Warangal", "Karimnagar", "Khammam", "Rangareddy", "Medak"], moreCities: 0 },
   {
     slug: "telangana",
+    authoredFaqsOnly: true,
+    showCoverageFigures: false,
     name: "Telangana",
     title: "Telangana Business Database by City",
     metaDescription:

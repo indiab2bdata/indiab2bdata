@@ -14,9 +14,12 @@ import { getDatabaseDirectoryGroups } from "@/lib/database-directory";
 
 type Entry = { url: string; lastModified: string };
 
-const entry = (path: string, lastModified: string): Entry => ({ url: `${siteConfig.url}${path}`, lastModified });
+const entry = (path: string, lastModified: string): Entry => ({
+  url: `${siteConfig.url}${path === "/" ? "/" : path.startsWith("/") ? path : `/${path}`}`,
+  lastModified,
+});
 /** A one-off page: its path and lastmod come from its content file's `meta`. */
-const page = (meta: { path: string; updated: string }) => entry(meta.path === "/" ? "" : meta.path, meta.updated);
+const page = (meta: { path: string; updated: string }) => entry(meta.path, meta.updated);
 
 /**
  * Sitemap groups, each served as its own file (see app/sitemap-*.xml/route.ts) and listed in the
@@ -54,7 +57,33 @@ export function sitemapResponse(name: SitemapName) {
   return xml(`<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>`);
 }
 
-/** The index's lastmod for each file is the newest lastmod inside it. */
+/**
+ * Single flat XML sitemap containing all clean, 200 OK canonical URLs across the site.
+ * Used for /sitemap.xml to avoid GSC "0 Discovered Pages" sitemap-index issues.
+ */
+export function flatSitemapResponse() {
+  const allEntries: Entry[] = [
+    ...SITEMAPS.core(),
+    ...SITEMAPS.states(),
+    ...SITEMAPS.guides(),
+  ];
+
+  // Deduplicate URLs
+  const seen = new Set<string>();
+  const unique = allEntries.filter((e) => {
+    if (seen.has(e.url)) return false;
+    seen.add(e.url);
+    return true;
+  });
+
+  const urls = unique
+    .map((e) => `  <url>\n    <loc>${e.url}</loc>\n    <lastmod>${e.lastModified}</lastmod>\n  </url>`)
+    .join("\n");
+
+  return xml(`<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>`);
+}
+
+/** The index's lastmod for each file is the newest lastmod inside it. Kept for backwards compatibility. */
 export function sitemapIndexResponse() {
   const items = (Object.keys(SITEMAPS) as SitemapName[])
     .map((name) => {

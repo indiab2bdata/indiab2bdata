@@ -10,14 +10,15 @@ export const COMPLIANCE_PATH = "/data-sourcing-compliance";
 export const METHODOLOGY_PATH = "/data-sourcing-methodology";
 
 export const HEADER_LINKS: NavLink[] = [
-  { href: "/#offer", label: "Data Products" },
-  { href: "/database", label: "Database by State" },
+  { href: "/database", label: "All Data Products" },
+  { href: "/database#locations", label: "Database by State" },
   { href: "/about", label: "About Us" },
   { href: "/contact", label: "Contact Us" },
 ];
 
 export const FOOTER_QUICK_LINKS: NavLink[] = [
-  { href: "/#offer", label: "Data Products" },
+  { href: "/database", label: "All Data Products" },
+  { href: "/database#locations", label: "Database by State" },
   { href: "/#why", label: "Why Us" },
   { href: "/blog", label: "Database Selection" },
   { href: "/about", label: "About Us" },
@@ -59,7 +60,6 @@ const ALL_PRODUCT_GROUPS: ProductGroup[] = [
     heading: "Company Records",
     description: "Company-level records filtered by industry, size and ownership.",
     links: [
-      { href: "/corporate-database-india", label: "Corporate Data" },
       { href: "/industry-wise-company-database-india", label: "Industry-Wise Lists" },
       { href: "/company-proprietors-database-india", label: "Company Proprietors" },
       { href: "/computer-it-telecom-services-database-india", label: "IT & Telecom Services" },
@@ -85,12 +85,10 @@ const ALL_PRODUCT_GROUPS: ProductGroup[] = [
     description: "Manufacturers, traders, dealers, retailers and service businesses.",
     links: [
       { href: "/manufacturer-database-india", label: "Manufacturer Database" },
-      { href: "/manufacturing-companies-database-india", label: "Manufacturing Companies" },
       { href: "/metals-minerals-industries-database-india", label: "Metals & Minerals Industries" },
       { href: "/machinery-suppliers-services-database-india", label: "Machinery Suppliers / Services" },
       { href: "/apparel-garments-exporters-database-india", label: "Garment Exporters" },
       { href: "/importers-exporters-database-india", label: "Importers & Exporters" },
-      { href: "/importers-database-india", label: "Importers Database" },
       { href: "/logistics-management-service-providers-database-india", label: "Logistics Management Service Providers" },
       { href: "/dealers-distributors-database-india", label: "Dealers & Distributors" },
       { href: "/building-material-database-india", label: "Building Material" },
@@ -114,7 +112,6 @@ const ALL_PRODUCT_GROUPS: ProductGroup[] = [
       { href: "/home-garden-pets-suppliers-database-india", label: "Home / Garden / Pets Suppliers" },
       { href: "/gas-petroleum-companies-database-india", label: "Gas & Petroleum Companies" },
       { href: "/gems-jewellery-shops-database-india", label: "Gems & Jewellery Shops" },
-      { href: "/jewellers-database-india", label: "Retail Jewellers" },
     ],
   },
   {
@@ -194,7 +191,6 @@ const ALL_PRODUCT_GROUPS: ProductGroup[] = [
     description: "Schools, institutes, educators and online business data.",
     links: [
       { href: "/students-database", label: "Students Database" },
-      { href: "/school-colleges-database", label: "Schools & Colleges" },
       { href: "/educational-institutes-database-india", label: "Educational Institutes" },
       { href: "/cbse-schools-email-database-india", label: "CBSE Schools Emails" },
       { href: "/teachers-database-india", label: "Teachers Database" },

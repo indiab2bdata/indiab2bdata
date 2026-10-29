@@ -60,7 +60,7 @@ export function DatabaseHubTemplate() {
           <h2 className="font-display font-extrabold text-2xl md:text-3xl text-navy mt-3 tracking-tight">{H.categories.title}</h2>
           <p className="mt-4 text-muted leading-relaxed">{H.categories.text}</p>
         </Reveal>
-        <DirectoryBrowser groups={groups} previewLimit={DIRECTORY_PREVIEW_LIMIT} />
+        <DirectoryBrowser groups={groups} />
       </section>
 
       <section id="locations" className="scroll-mt-24 py-16 md:py-20 max-w-7xl mx-auto px-5 md:px-8">

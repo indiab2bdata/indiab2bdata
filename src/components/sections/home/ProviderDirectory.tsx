@@ -31,6 +31,14 @@ export function ProviderDirectory() {
                 <Link href={link.href} prefetch={false} className="block rounded-xl border border-slate-200 bg-white px-5 py-4 text-sm font-semibold text-navy shadow-sm transition-colors hover:border-teal hover:text-teal-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal">{link.label}</Link>
               </li>)}</ul>
             </nav>)}
+            <div className="sm:col-span-2 pt-2">
+              <Link
+                href="/database"
+                className="inline-flex items-center gap-2 rounded-xl bg-teal px-6 py-4 text-sm font-bold text-white shadow-sm transition-all hover:bg-teal-dark hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal"
+              >
+                Browse All 90+ B2B Industry Databases & State Directory →
+              </Link>
+            </div>
           </div>
         </div>
       </div>
