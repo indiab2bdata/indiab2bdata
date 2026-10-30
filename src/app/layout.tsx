@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
-import Script from "next/script";
 import "@/styles/globals.css";
 import { ModalProvider } from "@/components/layout/ModalContext";
 import { Header } from "@/components/layout/Header";
@@ -32,6 +31,10 @@ if (gtmId && !/^GTM-[A-Z0-9]+$/.test(gtmId)) {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${montserrat.variable} h-full antialiased`}>
+      <head>
+        {/* Inline in the server HTML so SEO checkers detect GA; gtag.js itself is still fetched on first interaction or 5s after load (see lib/analytics.ts). */}
+        <script id="ga-init" dangerouslySetInnerHTML={{ __html: GA_INIT }} />
+      </head>
       <body className="min-h-full flex flex-col bg-bgsoft pb-16 text-ink md:pb-0" suppressHydrationWarning>
         {gtmId && (
           <noscript>
@@ -50,10 +53,6 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         </ModalProvider>
       </body>
       {gtmId && <GoogleTagManager gtmId={gtmId} />}
-      {/* gtag.js is fetched on first interaction or 5s after load, never during rendering (see lib/analytics.ts). */}
-      <Script id="ga-init" strategy="lazyOnload">
-        {GA_INIT}
-      </Script>
     </html>
   );
 }
