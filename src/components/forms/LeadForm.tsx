@@ -26,7 +26,7 @@ export function LeadForm({
 
   return (
     <div className="rounded-2xl bg-white p-6 shadow-[0_30px_60px_-25px_rgba(10,35,71,0.55)] ring-1 ring-[#DCEAF3] md:p-7">
-      <h2 className="font-display text-xl font-extrabold text-navy">{title}</h2>
+      <p className="font-display text-xl font-extrabold text-navy">{title}</p>
       <p className="mt-1.5 text-sm leading-relaxed text-muted">{subtitle}</p>
       <div className="mt-5 h-px bg-[#EEF4F8]" />
 

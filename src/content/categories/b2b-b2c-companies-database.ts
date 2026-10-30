@@ -58,7 +58,7 @@ export default {
     {
       slug: "b2b-b2c-companies-database",
       name: "B2B & B2C Companies Database",
-      title: "B2B & B2C Companies Database India | Companies by Customer Model",
+      title: "B2B & B2C Companies Database India",
       metaDescription: "Discuss Indian companies by customer model—B2B, B2C/D2C or hybrid—alongside industry, size and location. Confirm the classification basis and available fields against a dated sample.",
       eyebrow: "By Customer Model",
       h1: "B2B & B2C Companies Database: Companies by Who They Sell To",

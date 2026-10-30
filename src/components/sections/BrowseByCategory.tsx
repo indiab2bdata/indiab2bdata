@@ -14,7 +14,7 @@ export function BrowseByCategory({ groups }: { groups: { id: string; heading: st
             <LayoutGrid className="h-4 w-4" />
             {COPY.eyebrow}
           </p>
-          <h2 className="mt-2 font-display text-xl font-bold text-navy md:text-2xl">{COPY.title}</h2>
+          <p className="mt-2 font-display text-xl font-bold text-navy md:text-2xl">{COPY.title}</p>
         </div>
         <Link href="/database" className="inline-flex items-center gap-1.5 text-sm font-semibold text-teal hover:underline">
           {COPY.viewAll}

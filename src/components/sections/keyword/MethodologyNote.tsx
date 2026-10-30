@@ -15,7 +15,7 @@ export function MethodologyNote() {
           </span>
           <div>
             <span className="text-xs font-semibold uppercase tracking-[0.16em] text-teal-dark">{METHODOLOGY_NOTE.eyebrow}</span>
-            <h2 className="mt-2 font-display text-xl font-extrabold tracking-tight text-navy md:text-2xl">{METHODOLOGY_NOTE.title}</h2>
+            <p className="mt-2 font-display text-xl font-extrabold tracking-tight text-navy md:text-2xl">{METHODOLOGY_NOTE.title}</p>
             <p className="mt-2 max-w-[70ch] text-sm leading-relaxed text-muted md:text-base">{METHODOLOGY_NOTE.text}</p>
             <Link href={METHODOLOGY_PATH} className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-teal hover:underline">
               {METHODOLOGY_NOTE.link}

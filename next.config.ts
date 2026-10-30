@@ -21,6 +21,10 @@ const contentSecurityPolicy = [
 ].join("; ");
 
 const nextConfig: NextConfig = {
+  /** Tailwind CSS is ~15 KB compressed; inlining it removes the render-blocking stylesheet request for first-time (search) visitors. */
+  experimental: {
+    inlineCss: true,
+  },
   images: {
     formats: ["image/avif", "image/webp"],
     remotePatterns: [

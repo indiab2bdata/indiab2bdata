@@ -7,9 +7,9 @@ export default {
   keyword: {
     slug: "advocates-lawyers-database-india",
     keyword: "advocates and lawyers database India",
-    title: "Advocates & Lawyers Database in India | Contact List",
+    title: "Advocates & Lawyers Database in India",
     metaDescription:
-      "Explore an advocates and lawyers database in India. Check available professional fields, location coverage, sample records and data formats.",
+      "Get an advocates and lawyers database in India with law firms, practice areas and city-wise records. Check available fields, location coverage, sample data and Excel/CSV formats.",
     eyebrow: "Advocates Database",
     h1: "Advocates and Lawyers Database in India",
     answer:
@@ -52,7 +52,9 @@ export default {
       },
       {
         heading: "Types of Legal Professionals and Records",
-        paragraphs: [],
+        paragraphs: [
+          "A useful dataset should match the audience you need to reach or study. Depending on available data, records may be organised by state, city or district, professional category, practice area and individual professional versus law firm.",
+        ],
         subsections: [
           {
             heading: "Advocates Database",
@@ -74,19 +76,6 @@ export default {
             heading: "State-Wise and City-Wise Advocates Database",
             text: "Ask about coverage for specific states, cities, districts or court locations. Availability may differ by region, and not all locations will have equal record coverage.",
           },
-        ],
-      },
-      {
-        heading: "Find Relevant Advocates by Location and Professional Profile",
-        paragraphs: [
-          "A useful dataset should match the audience you need to reach or study. Depending on available data, records may be organised by:",
-        ],
-        bullets: [
-          "State, city or district",
-          "Professional or organisation category",
-          "Practice area, where recorded",
-          "Individual professional versus law firm",
-          "Publicly listed professional information",
         ],
         closing: [
           "Share your preferred geography and required fields before requesting a sample. Clear requirements make it easier to assess relevance and avoid ordering records that do not fit your use case.",
@@ -130,24 +119,8 @@ export default {
         ],
       },
       {
-        heading: "What to Check Before Choosing a Lawyers Database",
-        paragraphs: [],
-        bullets: [
-          "Source transparency: ask where the records come from and whether their collection and proposed use are permitted.",
-          "Professional relevance: check whether the data covers advocates, lawyers, law firms or a combination of categories.",
-          "Field completeness: review a representative sample to see which columns are populated and how missing fields are represented.",
-          "Duplicate management: ask how duplicate or repeated records are identified and handled.",
-          "Update information: confirm when the dataset was last reviewed or updated. Contact details and professional affiliations can change over time.",
-          "Contact permissions: check whether the intended communication is allowed and whether the provider can explain the source and relevant permissions for the data.",
-          "Privacy and opt-out process: confirm how requests to correct, suppress or remove personal information are handled, where applicable.",
-        ],
-        closing: [
-          "Avoid relying on claims such as “100% accurate” or “fully verified” unless the provider can substantiate what those terms mean and how the checks are performed.",
-        ],
-      },
-      {
         heading: "How to Choose an Advocates and Lawyers Database",
-        paragraphs: [],
+        paragraphs: ["Follow these steps, then use the checklist below to compare providers before you order."],
         subsections: [
           {
             heading: "Step 1: Define your requirements",
@@ -173,6 +146,18 @@ export default {
             heading: "Step 6: Check the delivered file",
             text: "Compare the delivered format and scope with the details agreed with the provider.",
           },
+        ],
+        bullets: [
+          "Source transparency: ask where the records come from and whether their collection and proposed use are permitted.",
+          "Professional relevance: check whether the data covers advocates, lawyers, law firms or a combination of categories.",
+          "Field completeness: review a representative sample to see which columns are populated and how missing fields are represented.",
+          "Duplicate management: ask how duplicate or repeated records are identified and handled.",
+          "Update information: confirm when the dataset was last reviewed or updated. Contact details and professional affiliations can change over time.",
+          "Contact permissions: check whether the intended communication is allowed and whether the provider can explain the source and relevant permissions for the data.",
+          "Privacy and opt-out process: confirm how requests to correct, suppress or remove personal information are handled, where applicable.",
+        ],
+        closing: [
+          "Avoid relying on claims such as “100% accurate” or “fully verified” unless the provider can substantiate what those terms mean and how the checks are performed.",
         ],
       },
     ],

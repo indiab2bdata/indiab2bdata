@@ -7,9 +7,9 @@ export default {
   keyword: {
     slug: "agents-database-india",
     keyword: "agents database India",
-    title: "Agents Database in India | Agent Contact List",
+    title: "Agents Database in India: Contact List",
     metaDescription:
-      "Explore an agents database in India by location and agent category. Review available fields, coverage, sample records and permitted uses.",
+      "Get an agents database in India covering sales, commission, real estate, insurance and travel agents. Filter by state and city, then review fields, sample records and Excel/CSV formats.",
     eyebrow: "Agents Database",
     h1: "Agents Database in India",
     answer:
@@ -78,13 +78,10 @@ export default {
             heading: "Other Business and Trade Agents",
             text: "Some datasets may include representatives or intermediaries working across different business and trade categories. Request a category list to check whether your target segment is covered.",
           },
-        ],
-      },
-      {
-        heading: "State-Wise and City-Wise Agents Database",
-        paragraphs: [
-          "For many business campaigns, location is an important way to narrow the audience. Depending on the records available, an agents database may be organised by state, city, district or region.",
-          "Before selecting a regional list, ask for the specific locations covered and the approximate number of usable records in each area. Confirm whether the geography refers to the agent's business address, service area or another source field. This can help you avoid selecting a dataset that does not match your intended market.",
+          {
+            heading: "State-Wise and City-Wise Agents Database",
+            text: "Records may be organised by state, city, district or region. Ask which locations are covered, the approximate number of usable records in each, and whether the geography refers to the agent's business address or service area.",
+          },
         ],
       },
       {
@@ -137,22 +134,7 @@ export default {
       },
       {
         heading: "How to Choose the Right Agents Database",
-        paragraphs: [],
-        bullets: [
-          "Source transparency: ask where the records came from and what rights or permissions support their collection and use.",
-          "Category fit: confirm that the database covers the type of agent you need rather than a broad, unrelated list.",
-          "Geographic coverage: check that the locations match your intended market.",
-          "Field completeness: review a representative sample to see which fields are filled in and how consistently they are presented.",
-          "Duplicates and outdated entries: ask how duplicate records are handled and whether any freshness checks are performed.",
-          "Use restrictions: review the terms and determine whether your planned processing, storage and communication are permitted.",
-        ],
-        closing: [
-          "Do not assume that a record is accurate, current or legally usable merely because it appears in a purchased file. Validate the dataset against your requirements.",
-        ],
-      },
-      {
-        heading: "How to Get an Agents Database That Matches Your Requirements",
-        paragraphs: [],
+        paragraphs: ["Follow these steps, then use the checklist below to compare datasets before you order."],
         subsections: [
           {
             heading: "Step 1: Define your target category",
@@ -179,10 +161,16 @@ export default {
             text: "Check whether the file matches the agreed category, field and coverage requirements.",
           },
         ],
-      },
-      {
-        heading: "Privacy, Permissions and Responsible Outreach",
-        paragraphs: [
+        bullets: [
+          "Source transparency: ask where the records came from and what rights or permissions support their collection and use.",
+          "Category fit: confirm that the database covers the type of agent you need rather than a broad, unrelated list.",
+          "Geographic coverage: check that the locations match your intended market.",
+          "Field completeness: review a representative sample to see which fields are filled in and how consistently they are presented.",
+          "Duplicates and outdated entries: ask how duplicate records are handled and whether any freshness checks are performed.",
+          "Use restrictions: review the terms and determine whether your planned processing, storage and communication are permitted.",
+        ],
+        closing: [
+          "Do not assume that a record is accurate, current or legally usable merely because it appears in a purchased file. Validate the dataset against your requirements.",
           "The inclusion of a person's contact details in a database does not automatically mean that the information can be used for any marketing purpose. Before processing personal data or contacting individuals, assess the source, applicable permissions, purpose limitations and relevant Indian privacy and marketing requirements.",
           "Prefer business contact information intended for professional use, maintain records of the source and permitted purpose, honour applicable opt-outs and suppression requests, and avoid using data where the rights or permissions are unclear. Requirements may differ depending on whether the records relate to an individual, a business, a regulated professional or a publicly listed office.",
         ],

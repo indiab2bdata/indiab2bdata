@@ -20,7 +20,7 @@ export function ContactSplit({ title, text, source, requirement, formTitle, form
       <div className="mx-auto grid max-w-7xl items-center gap-10 px-5 md:px-8 lg:grid-cols-2 lg:gap-14">
         <Reveal>
           <Eyebrow>{COPY.eyebrow}</Eyebrow>
-          <h2 className="mt-3 font-display text-3xl font-extrabold tracking-tight text-navy md:text-4xl">{title}</h2>
+          <p className="mt-3 font-display text-3xl font-extrabold tracking-tight text-navy md:text-4xl">{title}</p>
           <p className="mt-4 leading-relaxed text-muted">{text}</p>
           <ul className="mt-8 space-y-5">
             {items.map((it) => (

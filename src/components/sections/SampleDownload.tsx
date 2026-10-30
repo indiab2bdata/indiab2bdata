@@ -47,10 +47,10 @@ export function SampleDownload({
             </div>
             <div className="flex-1">
               <span className="text-teal-dark text-xs font-semibold uppercase tracking-[0.16em]">{COPY.eyebrow}</span>
-              <h2 className="font-display font-extrabold text-xl md:text-2xl text-navy mt-2 tracking-tight">
+              <p className="font-display font-extrabold text-xl md:text-2xl text-navy mt-2 tracking-tight">
                 {COPY.titlePrefix}
                 {label}
-              </h2>
+              </p>
               <p className="mt-2 text-sm text-muted leading-relaxed">
                 {COPY.text}
               </p>
